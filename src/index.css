@@ -1,0 +1,13 @@
+@import "@nss-workshops/nss-core/styles.css";
+
+section pre[class^="language-"] {
+    background-color: #ffffff;
+    border: 1px dotted var(--border-medium);
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+}
+
+div[class$="contentContainer"] {
+  padding: 3.5rem;
+  line-height: 1.6rem;
+}
