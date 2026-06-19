@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_fd_intro_to_fetch",
+    id: "book_4_fox_y_dog_intro_to_fetch",
     title: "First We \"Fetch\"",
-    previousChapterId: "kneel_diamonds_fd_setup",
-    nextChapterId: "kneel_diamonds_fd_intro_to_then",
+    previousChapterId: "book_4_fox_y_dog_setup",
+    nextChapterId: "book_4_fox_y_dog_intro_to_then",
     content,
 }

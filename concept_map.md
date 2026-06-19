@@ -27,6 +27,7 @@
 | Developer Tools | `breakpoint` | A marker set in DevTools to pause code execution at a specific line | Setup → Debugging Shortcuts | Book 1 |
 | Developer Tools | `Event Listeners panel` | A DevTools panel showing all event listeners attached to a selected element | Book 3 → Brewed Awakenings → Displaying Number of Products Sold | — |
 | Developer Tools | `Event Listener Breakpoints` | A DevTools setting that automatically pauses code when specific event types fire | Book 3 → Brewed Awakenings → Displaying Number of Products Sold | — |
+| Developer Tools | `Network tab` | A DevTools panel for monitoring HTTP requests made by the browser | Book 4 → Fox y Dog → First We "Fetch" | Books 4–5 |
 
 ---
 
@@ -264,7 +265,10 @@
 
 ## Domain: Async JavaScript & APIs
 
-*Book 4 — Pending*
+*Book 4 → Fox y Dog — Reviewed ✓*
+*Book 4 → Indiana Jeans — Pending*
+*Book 4 → Kneel Diamonds — Pending*
+*Book 4 → Cars 'R Us — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -273,6 +277,9 @@
 | HTTP | `request` | A message sent from the browser to a server asking for data or an action | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
 | HTTP | `response` | The data the server sends back after receiving a request | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
 | HTTP | `endpoint` | A specific URL that an API exposes for a particular kind of request | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
+| HTTP | `client` | The application (usually a browser) that sends requests to a server | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
+| HTTP | `server` | A computer that receives requests and sends back responses | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
+| HTTP | `status code` | A number in the HTTP response indicating success (200), not found (404), or server error (500) | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
 | HTTP | `GET` | An HTTP method for retrieving data from an API | Book 4 → Fox y Dog → First We "Fetch" | Books 4–5 |
 | HTTP | `POST` | An HTTP method for sending new data to an API to be saved | Book 4 → Kneel Diamonds → Saving Orders to Permanent State | Books 4–5 |
 | HTTP | `PUT` / `PATCH` | HTTP methods for updating existing data on an API | Book 5 → Honey Rae's → Employee Edit | Book 5 |
@@ -383,3 +390,4 @@ Inconsistencies found during chapter reviews. To be resolved in a dedicated refa
 | ⚠️ | `default export` → Book 2 → Movie Majesty → Setup | Movie Majesty exercises only use named exports (`export const`). No student-facing content introduces `default export` here. Verify where this term is actually first taught, or remove if only present in platform scaffolding. |
 | ⚠️ | `CSS Grid` → Book 2 → Movie Majesty → Grid Layout for Movie Cards | Exercise 15 uses Flexbox (`display: flex; flex-wrap: wrap`), not CSS Grid. The exercise title says "Grid Layout" but the implementation is entirely Flexbox. Either re-attribute `CSS Grid` to where it is actually taught, or correct the entry to point to Flexbox. |
 | ⚠️ | `filter` → Book 2 → Martin's Aquarium → Filtering Fish | Exercise 20 teaches filtering using `for...of` + `if` (manual approach), not the `.filter()` array method. The concept map entry labels this as "an array method" but the teaching content doesn't use the array method. Verify where `.filter()` is actually introduced, or revise the entry to describe the manual filtering pattern taught here. |
+| ⚠️ | `try / catch` → Book 4 → Fox y Dog → Awaiting Data | Exercise 05 covers `async/await` syntax but never introduces or shows `try/catch`. The "First Introduced" attribution is incorrect. Identify where `try/catch` is actually first taught and update accordingly, or remove the entry if it isn't covered in the curriculum. |

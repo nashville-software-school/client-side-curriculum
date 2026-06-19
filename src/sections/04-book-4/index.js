@@ -7,8 +7,8 @@ const chapterModules = import.meta.glob('./*/index.jsx', { eager: true })
 
 // Section configuration
 const config = {
-  id: "kneel_diamonds",
-  title: "Kneel Diamonds",
+  id: "book_4",
+  title: "Book 4",
   order: 40,
   description: "HTTP requests, async/await, JSON-server, and array methods.",
 }
