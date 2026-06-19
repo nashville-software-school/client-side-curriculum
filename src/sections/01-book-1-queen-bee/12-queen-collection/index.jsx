@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_queen_collection",
+    id: "book_1_queen_bee_collection",
     title: "Queen Colony",
-    previousChapterId: "queen_bee_queen_errors",
-    nextChapterId: "queen_bee_queen_iteration",
+    previousChapterId: "book_1_queen_bee_errors",
+    nextChapterId: "book_1_queen_bee_iteration",
     content,
 }

@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_queen_iteration",
+    id: "book_1_queen_bee_iteration",
     title: "Iterating the Queens",
-    previousChapterId: "queen_bee_queen_collection",
-    nextChapterId: "queen_bee_queen_tribute",
+    previousChapterId: "book_1_queen_bee_collection",
+    nextChapterId: "book_1_queen_bee_tribute",
     content,
 }

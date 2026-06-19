@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_queen_hail",
+    id: "book_1_queen_bee_hail",
     title: "Her Majesty Function",
-    previousChapterId: "queen_bee_queen_intro",
-    nextChapterId: "queen_bee_queen_debugger",
+    previousChapterId: "book_1_queen_bee_intro",
+    nextChapterId: "book_1_queen_bee_debugger",
     content,
 }

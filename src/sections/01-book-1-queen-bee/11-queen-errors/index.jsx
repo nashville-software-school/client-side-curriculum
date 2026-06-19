@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_queen_errors",
+    id: "book_1_queen_bee_errors",
     title: "Bug Queen",
-    previousChapterId: "queen_bee_queen_debugger",
-    nextChapterId: "queen_bee_queen_collection",
+    previousChapterId: "book_1_queen_bee_debugger",
+    nextChapterId: "book_1_queen_bee_collection",
     content,
 }

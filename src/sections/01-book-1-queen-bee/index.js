@@ -7,8 +7,8 @@ const chapterModules = import.meta.glob('./*/index.jsx', { eager: true })
 
 // Section configuration
 const config = {
-  id: "queen_bee",
-  title: "Queen Bee",
+  id: "book_1",
+  title: "Book 1",
   order: 10,
   description: "Core fundamentals: functions, debugging, data, and iteration.",
 }

@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_queen_tribute_by_queen",
+    id: "book_1_queen_bee_tribute_by_queen",
     title: "Show Tribute By Queen",
-    previousChapterId: "queen_bee_queen_tribute",
-    nextChapterId: "queen_bee_surf_intro",
+    previousChapterId: "book_1_queen_bee_tribute",
+    nextChapterId: "book_1_surf_shop_intro",
     content,
 }
