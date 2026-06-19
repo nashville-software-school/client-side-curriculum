@@ -166,8 +166,8 @@ Work **one chapter at a time** per session:
 | 5 ✓ | Restructure Book 1 → Björn (exercises 24–30), self-assessment, explorers, group project |
 | 6 ✓ | Restructure Book 2 → Dynamite Duo (exercises 01–08) |
 | 7 ✓ | Restructure Book 2 → Movie Majesty (exercises 09–15) |
-| 8 (next) | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
-| 9 | Restructure Book 3 → DeShawn's Dog Walking (exercises 01–09) |
+| 8 ✓ | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
+| 9 (next) | Restructure Book 3 → DeShawn's Dog Walking (exercises 01–09) |
 | 10 | Restructure Book 3 → Shipping Ship Haulers (exercises 10–18) |
 | 11 | Restructure Book 3 → Brewed Awakenings (exercises 19–23), self-assessment, group project |
 | 12 | Restructure Book 4 → Fox y Dog (exercises 01–05) |

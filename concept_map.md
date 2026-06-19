@@ -35,6 +35,7 @@
 *Book 1 → Björn — Reviewed ✓*
 *Book 2 → Dynamite Duo — Pending*
 *Book 2 → Movie Majesty — Reviewed ✓*
+*Book 2 → Martin's Aquarium — Reviewed ✓*
 *Books 2–5 (remaining) — Pending*
 
 ### Variables & Data Types
@@ -144,6 +145,12 @@
 | Modules | `dependency diagram` | A visual showing which files import from which other files | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 1 → Björn → Visualizations for Björn, Book 3 |
 | Modules | `sequence diagram` | A diagram showing the sequence of function calls and data exchanges between modules | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 1 → Björn → Visualizations for Björn, Book 2 → Movie Majesty → Setup |
 
+### Operators
+
+| Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
+|---------|----------------|------------|------------------|---------------|
+| Operators | `remainder operator` (`%`) | Returns the leftover after dividing two numbers — used to test divisibility | Book 2 → Martin's Aquarium → Filtering Fish | Books 3–5 |
+
 ### Control Flow
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -162,6 +169,7 @@
 
 *Book 2 → Dynamite Duo — Pending*
 *Book 2 → Movie Majesty — Reviewed ✓*
+*Book 2 → Martin's Aquarium — Reviewed ✓*
 *Books 2–5 (remaining) — Pending*
 
 ### HTML
@@ -192,6 +200,7 @@
 
 *Book 2 → Dynamite Duo — Pending*
 *Book 2 → Movie Majesty — Reviewed ✓*
+*Book 2 → Martin's Aquarium — Reviewed ✓*
 *Books 2–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -266,7 +275,10 @@
 
 ## Domain: Component Architecture (Vanilla JS)
 
-*Books 2–4 — Pending*
+*Book 2 → Dynamite Duo — Pending*
+*Book 2 → Movie Majesty — Reviewed ✓*
+*Book 2 → Martin's Aquarium — Reviewed ✓*
+*Books 3–4 — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -312,7 +324,7 @@
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
 | Soft Skills | `growth mindset` | The belief that abilities can be developed through effort and learning | Setup → Core Professional Skills | All books |
-| Soft Skills | `wireframe` | A simple sketch or diagram of a UI before any code is written | Book 5 → Honey Rae's → Repair Wireframe | Book 5 |
+| Soft Skills | `wireframe` | A simple sketch or diagram of a UI before any code is written | Book 2 → Martin's Aquarium → Styling and Layout | Book 5 → Honey Rae's → Repair Wireframe |
 | Soft Skills | `MVP` | Minimum Viable Product — the simplest version of a feature that still works | Book 5 → Learning Moments → MVP and Wireframe | — |
 
 ---
@@ -351,3 +363,4 @@ Inconsistencies found during chapter reviews. To be resolved in a dedicated refa
 |------|-------|-------|
 | ⚠️ | `default export` → Book 2 → Movie Majesty → Setup | Movie Majesty exercises only use named exports (`export const`). No student-facing content introduces `default export` here. Verify where this term is actually first taught, or remove if only present in platform scaffolding. |
 | ⚠️ | `CSS Grid` → Book 2 → Movie Majesty → Grid Layout for Movie Cards | Exercise 15 uses Flexbox (`display: flex; flex-wrap: wrap`), not CSS Grid. The exercise title says "Grid Layout" but the implementation is entirely Flexbox. Either re-attribute `CSS Grid` to where it is actually taught, or correct the entry to point to Flexbox. |
+| ⚠️ | `filter` → Book 2 → Martin's Aquarium → Filtering Fish | Exercise 20 teaches filtering using `for...of` + `if` (manual approach), not the `.filter()` array method. The concept map entry labels this as "an array method" but the teaching content doesn't use the array method. Verify where `.filter()` is actually introduced, or revise the entry to describe the manual filtering pattern taught here. |
