@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_ij_location_component",
+    id: "book_4_indiana_jeans_location_component",
     title: "Building the Location Choices Component",
-    previousChapterId: "kneel_diamonds_ij_jeans_component",
-    nextChapterId: "kneel_diamonds_ij_transient_state",
+    previousChapterId: "book_4_indiana_jeans_jeans_component",
+    nextChapterId: "book_4_indiana_jeans_transient_state",
     content,
 }

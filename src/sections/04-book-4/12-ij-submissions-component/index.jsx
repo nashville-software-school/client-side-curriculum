@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_ij_submissions_component",
+    id: "book_4_indiana_jeans_submissions_component",
     title: "Displaying Submissions with .map()",
-    previousChapterId: "kneel_diamonds_ij_permanent_state",
-    nextChapterId: "kneel_diamonds_ij_custom_event",
+    previousChapterId: "book_4_indiana_jeans_permanent_state",
+    nextChapterId: "book_4_indiana_jeans_custom_event",
     content,
 }

@@ -63,6 +63,7 @@
 | Data Types | `reference type` | A data type (object, array) where the variable stores a pointer to data in memory | Book 2 → Explorer: Duo → Are you primitive? | — |
 | Data Types | `pass by value` | When a primitive is copied when assigned to a new variable or passed to a function | Book 2 → Explorer: Duo → Copy me if you can | — |
 | Data Types | `pass by reference` | When an object/array shares its memory location rather than being copied | Book 2 → Explorer: Duo → Copy me if you can | — |
+| Type Conversion | `parseInt()` | Converts a string to an integer number | Book 4 → Indiana Jeans → Capturing User Choices | Books 4–5 |
 
 ### Functions
 
@@ -130,6 +131,7 @@
 | Arrays | `filter` | An array method that returns a new array containing only elements that pass a test | Book 2 → Martin's Aquarium → Filtering Fish | Books 2–5 |
 | Arrays | `find` | An array method that returns the first element that passes a test | Book 1 → Explorer: Queen Bee → Finding Tribute | Books 3–4 |
 | Arrays | `sort()` | An array method that sorts elements in place; pass a comparator function for alphabetical or numeric order | Book 3 → Shipping Ship Ships → Your Learning Goals | Books 3–5 |
+| Arrays | `.join()` | An array method that combines all elements into a single string, using the given separator (e.g., `""` to join with nothing) | Book 4 → Indiana Jeans → Displaying Submissions with .map() | Books 4–5 |
 
 ### String Methods
 
@@ -212,6 +214,7 @@
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Book 3 → Brewed Awakenings — Reviewed ✓*
+*Book 4 → Indiana Jeans — Reviewed ✓*
 *Books 2–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -243,6 +246,7 @@
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Book 3 → Brewed Awakenings — Reviewed ✓*
+*Book 4 → Indiana Jeans — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -260,13 +264,16 @@
 | State | `permanent state` | State that is saved to a database and persists between sessions | Book 4 → Indiana Jeans → Saving Survey Submissions | Books 4–5 |
 | JSON | `JSON` | JavaScript Object Notation — a text format for transmitting data as objects and arrays | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
 | JSON | `JSON-Server` | A tool that creates a local REST API from a JSON file | Book 4 → Indiana Jeans → Your own API with JSON-Server | Book 4 |
+| JSON | `JSON.parse()` | Converts a JSON string into a JavaScript value (e.g., `"true"` → `true`) | Book 4 → Indiana Jeans → Capturing User Choices | Books 4–5 |
+| JSON | `JSON.stringify()` | Converts a JavaScript object or array into a JSON string for sending to a server | Book 4 → Indiana Jeans → Saving Survey Submissions | Books 4–5 |
+| State | `setter function` | A function that updates exactly one property of the transient state object, keeping state changes controlled and explicit | Book 4 → Indiana Jeans → Capturing User Choices | Book 4 |
 
 ---
 
 ## Domain: Async JavaScript & APIs
 
 *Book 4 → Fox y Dog — Reviewed ✓*
-*Book 4 → Indiana Jeans — Pending*
+*Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Pending*
 *Book 4 → Cars 'R Us — Pending*
 
@@ -281,7 +288,9 @@
 | HTTP | `server` | A computer that receives requests and sends back responses | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
 | HTTP | `status code` | A number in the HTTP response indicating success (200), not found (404), or server error (500) | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
 | HTTP | `GET` | An HTTP method for retrieving data from an API | Book 4 → Fox y Dog → First We "Fetch" | Books 4–5 |
-| HTTP | `POST` | An HTTP method for sending new data to an API to be saved | Book 4 → Kneel Diamonds → Saving Orders to Permanent State | Books 4–5 |
+| HTTP | `POST` | An HTTP method for sending new data to an API to be saved | Book 4 → Indiana Jeans → Your own API with JSON-Server | Books 4–5 |
+| HTTP | `request body` | Data sent to the server in a POST request, typically serialized as a JSON string | Book 4 → Indiana Jeans → Your own API with JSON-Server | Books 4–5 |
+| HTTP | `query parameter` | A key-value pair appended to a URL after `?` to filter or expand a response (e.g., `?_expand=socioLocation`) | Book 4 → Indiana Jeans → Displaying Submissions with .map() | Books 4–5 |
 | HTTP | `PUT` / `PATCH` | HTTP methods for updating existing data on an API | Book 5 → Honey Rae's → Employee Edit | Book 5 |
 | HTTP | `DELETE` | An HTTP method for removing data from an API | Book 5 → Chuckle Checklist → Rejected Chuckles | Book 5 |
 | Fetch & Promises | `fetch()` | The browser function for making HTTP requests | Book 4 → Fox y Dog → First We "Fetch" | Books 4–5 |
@@ -304,6 +313,7 @@
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Book 3 → Brewed Awakenings — Reviewed ✓*
+*Book 4 → Indiana Jeans — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |

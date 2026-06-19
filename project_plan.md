@@ -171,8 +171,8 @@ Work **one chapter at a time** per session:
 | 10 ✓ | Restructure Book 3 → Shipping Ship Ships (exercises 10–18) |
 | 11 ✓ | Restructure Book 3 → Brewed Awakenings (exercises 19–23), self-assessment, group project |
 | 12 ✓ | Restructure Book 4 → Fox y Dog (exercises 01–05) |
-| 13 (next) | Restructure Book 4 → Indiana Jeans (exercises 06–13) |
-| 14 | Restructure Book 4 → Kneel Diamonds (exercises 14–22) |
+| 13 ✓ | Restructure Book 4 → Indiana Jeans (exercises 06–13) |
+| 14 (next) | Restructure Book 4 → Kneel Diamonds (exercises 14–22) |
 | 15 | Restructure Book 4 → Cars 'R Us (exercises 23–28), self-assessment, explorers |
 | 16 | Restructure Book 4 → Pioneer projects (exercises 35–50) |
 | 17 | Restructure Book 4 → Advanced projects and group project (exercises 51–55) |

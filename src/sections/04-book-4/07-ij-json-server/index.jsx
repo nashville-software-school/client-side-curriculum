@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_ij_json_server",
+    id: "book_4_indiana_jeans_json_server",
     title: "Your own API with JSON-Server",
-    previousChapterId: "kneel_diamonds_ij_setup",
-    nextChapterId: "kneel_diamonds_ij_jeans_component",
+    previousChapterId: "book_4_indiana_jeans_setup",
+    nextChapterId: "book_4_indiana_jeans_jeans_component",
     content,
 }
