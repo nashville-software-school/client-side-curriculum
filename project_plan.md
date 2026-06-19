@@ -15,8 +15,12 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ## How We Work
 
 - Work **one chapter at a time** per session to keep context clean and changes focused.
-- At the end of every session, before running `/clear`, transfer all needed context to the memory files at `.claude/projects/.../memory/`. Update `project_curriculum_restructure.md` with what was done, what decisions were made, and what session comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
 - At the start of every session, read `project_plan.md` and the relevant memory files before touching any code.
+- At the end of every session, update all three governing documents as needed before running `/clear`:
+  1. **`project_plan.md`** — mark the session complete, advance "next" to the following session
+  2. **`concept_map.md`** — review exercises just completed; add missing terms, update Reinforced In, mark chapter as Reviewed ✓, flag any inconsistencies with ⚠️
+  3. **`curriculum_map.md`** — verify IDs are correct (usually no changes needed, but confirm)
+  - Then update the memory file at `.claude/projects/.../memory/project_curriculum_restructure.md` with what was done and what comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
 
 ---
 
@@ -161,8 +165,8 @@ Work **one chapter at a time** per session:
 | 4 ✓ | Restructure Book 1 → Sequina's Surf Shop (exercises 16–23) |
 | 5 ✓ | Restructure Book 1 → Björn (exercises 24–30), self-assessment, explorers, group project |
 | 6 ✓ | Restructure Book 2 → Dynamite Duo (exercises 01–08) |
-| 7 (next) | Restructure Book 2 → Movie Majesty (exercises 09–15) |
-| 8 | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
+| 7 ✓ | Restructure Book 2 → Movie Majesty (exercises 09–15) |
+| 8 (next) | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
 | 9 | Restructure Book 3 → DeShawn's Dog Walking (exercises 01–09) |
 | 10 | Restructure Book 3 → Shipping Ship Haulers (exercises 10–18) |
 | 11 | Restructure Book 3 → Brewed Awakenings (exercises 19–23), self-assessment, group project |
@@ -175,6 +179,7 @@ Work **one chapter at a time** per session:
 | 18 | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
+| — | **Phase 2: Concept Map Refactor** — resolve all ⚠️ flagged issues, audit Dynamite Duo concept map (skipped in Session 6), verify First Introduced accuracy across all chapters |
 
 ---
 

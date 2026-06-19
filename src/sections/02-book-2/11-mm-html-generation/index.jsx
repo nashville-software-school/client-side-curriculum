@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_mm_html_generation",
+    id: "book_2_movie_majesty_html_generation",
     title: "Build Movie HTML From Data",
-    previousChapterId: "martins_aquarium_mm_data",
-    nextChapterId: "martins_aquarium_mm_render",
+    previousChapterId: "book_2_movie_majesty_data",
+    nextChapterId: "book_2_movie_majesty_render",
     content,
 }

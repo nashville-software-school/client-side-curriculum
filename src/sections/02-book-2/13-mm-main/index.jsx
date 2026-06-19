@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_mm_main",
+    id: "book_2_movie_majesty_main",
     title: "The Main Algorithm",
-    previousChapterId: "martins_aquarium_mm_render",
-    nextChapterId: "martins_aquarium_mm_card_style",
+    previousChapterId: "book_2_movie_majesty_render",
+    nextChapterId: "book_2_movie_majesty_card_style",
     content,
 }

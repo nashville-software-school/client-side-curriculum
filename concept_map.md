@@ -33,7 +33,9 @@
 *Book 1 → Queen Bee — Reviewed ✓*
 *Book 1 → Surf Shop — Reviewed ✓*
 *Book 1 → Björn — Reviewed ✓*
-*Books 2–5 — Pending*
+*Book 2 → Dynamite Duo — Pending*
+*Book 2 → Movie Majesty — Reviewed ✓*
+*Books 2–5 (remaining) — Pending*
 
 ### Variables & Data Types
 
@@ -137,10 +139,10 @@
 | Modules | `import` | A keyword that brings an exported value from another file into the current file | Book 1 → Surf Shop → Just a Function | All books |
 | Modules | `data module` | A file dedicated to holding and exporting data | Book 1 → Surf Shop → Just the Data | Books 2–4 |
 | Modules | `function module` | A file dedicated to holding and exporting functions | Book 1 → Surf Shop → Just a Function | Books 2–4 |
-| Modules | `default export` | A module that exports a single main value without a name | Book 2 → Movie Majesty → Setup | Books 2–5 |
+| Modules | `default export` | A module that exports a single main value without a name | Book 2 → Movie Majesty → Setup ⚠️ | Books 2–5 |
 | Modules | `named export` | A module that exports one or more values by name | Book 1 → Surf Shop → Just the Data | Books 2–4 |
 | Modules | `dependency diagram` | A visual showing which files import from which other files | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 1 → Björn → Visualizations for Björn, Book 3 |
-| Modules | `sequence diagram` | A diagram showing the sequence of function calls and data exchanges between modules | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 1 → Björn → Visualizations for Björn |
+| Modules | `sequence diagram` | A diagram showing the sequence of function calls and data exchanges between modules | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 1 → Björn → Visualizations for Björn, Book 2 → Movie Majesty → Setup |
 
 ### Control Flow
 
@@ -158,7 +160,9 @@
 
 ## Domain: HTML & CSS
 
-*Books 2–5 — Pending*
+*Book 2 → Dynamite Duo — Pending*
+*Book 2 → Movie Majesty — Reviewed ✓*
+*Books 2–5 (remaining) — Pending*
 
 ### HTML
 
@@ -180,19 +184,22 @@
 | CSS | `CSS selector` | The part of a CSS rule that targets which elements to style | Book 2 → Movie Majesty → Card Styles | Books 2–4 |
 | CSS | `box model` | The concept that every element has content, padding, border, and margin | Book 2 → Movie Majesty → Card Styles | — |
 | CSS | `Flexbox` | A CSS layout system for arranging items in a row or column | Book 2 → Movie Majesty → Card Styles | Books 2–3 |
-| CSS | `CSS Grid` | A CSS layout system for arranging items in rows and columns simultaneously | Book 2 → Movie Majesty → Grid Layout for Movie Cards | — |
+| CSS | `CSS Grid` | A CSS layout system for arranging items in rows and columns simultaneously | Book 2 → Movie Majesty → Grid Layout for Movie Cards ⚠️ | — |
 
 ---
 
 ## Domain: DOM Manipulation
 
-*Books 2–4 — Pending*
+*Book 2 → Dynamite Duo — Pending*
+*Book 2 → Movie Majesty — Reviewed ✓*
+*Books 2–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
 | Selecting Elements | `DOM` | The Document Object Model; the browser's live tree structure of the HTML page | Book 2 → Dynamite Duo → Targeting a DOM Element | Books 2–4 |
 | Selecting Elements | `querySelector` | Finds the first HTML element matching a CSS selector | Book 2 → Dynamite Duo → Targeting a DOM Element | Books 2–4 |
 | Selecting Elements | `querySelectorAll` | Finds all HTML elements matching a CSS selector | Book 2 → Dynamite Duo → Targeting a DOM Element | — |
+| Selecting Elements | `getElementById` | Finds a single HTML element by its `id` attribute | Book 2 → Movie Majesty → Displaying Movies in the Browser | Books 2–3 |
 | Updating the DOM | `innerHTML` | Gets or sets the HTML content inside an element | Book 2 → Dynamite Duo → Dynamically Adding HTML to the DOM | Books 2–4 |
 | Updating the DOM | `render` | The act of putting HTML into the DOM so it appears on the page | Book 2 → Movie Majesty → Displaying Movies in the Browser | Books 2–4 |
 | Events | `event` | Something that happens in the browser that code can respond to | Book 3 → DeShawn → Using State for an Interactive Experience | Books 3–4 |
@@ -263,6 +270,7 @@
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
+| Signal Flow | `serialization` | Converting a data object into another format (e.g., a JavaScript object → an HTML string) | Book 2 → Movie Majesty → Converting Movie Data to HTML | Books 2–4 |
 | Signal Flow | `component` | A function that generates and returns an HTML string for a piece of the UI | Book 2 → Dynamite Duo → Composing All HTML | Books 2–4 |
 | Signal Flow | `render` | A function that places generated HTML into the DOM | Book 2 → Movie Majesty → Displaying Movies in the Browser | Books 2–4 |
 | Signal Flow | `signal flow` | The sequence: get data → generate HTML → render to DOM | Book 2 → Dynamite Duo → Review of Signal Flow | Books 2–4 |
@@ -332,3 +340,14 @@
 | Learning Moments | | | | | ✓✓ | ✓ | | ✓✓✓ |
 
 *✓ = touched, ✓✓ = core focus, ✓✓✓ = primary emphasis*
+
+---
+
+## Flagged Issues ⚠️
+
+Inconsistencies found during chapter reviews. To be resolved in a dedicated refactor phase.
+
+| Flag | Entry | Issue |
+|------|-------|-------|
+| ⚠️ | `default export` → Book 2 → Movie Majesty → Setup | Movie Majesty exercises only use named exports (`export const`). No student-facing content introduces `default export` here. Verify where this term is actually first taught, or remove if only present in platform scaffolding. |
+| ⚠️ | `CSS Grid` → Book 2 → Movie Majesty → Grid Layout for Movie Cards | Exercise 15 uses Flexbox (`display: flex; flex-wrap: wrap`), not CSS Grid. The exercise title says "Grid Layout" but the implementation is entirely Flexbox. Either re-attribute `CSS Grid` to where it is actually taught, or correct the entry to point to Flexbox. |

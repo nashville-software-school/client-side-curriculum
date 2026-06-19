@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_mm_data",
+    id: "book_2_movie_majesty_data",
     title: "Building the Movie Database",
-    previousChapterId: "martins_aquarium_mm_setup",
-    nextChapterId: "martins_aquarium_mm_html_generation",
+    previousChapterId: "book_2_movie_majesty_setup",
+    nextChapterId: "book_2_movie_majesty_html_generation",
     content,
 }

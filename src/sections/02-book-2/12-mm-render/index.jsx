@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_mm_render",
+    id: "book_2_movie_majesty_render",
     title: "Displaying Movies in the Browser",
-    previousChapterId: "martins_aquarium_mm_html_generation",
-    nextChapterId: "martins_aquarium_mm_main",
+    previousChapterId: "book_2_movie_majesty_html_generation",
+    nextChapterId: "book_2_movie_majesty_main",
     content,
 }
