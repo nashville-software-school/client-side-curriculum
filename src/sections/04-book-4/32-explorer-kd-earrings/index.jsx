@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_explorer_kd_earrings",
+    id: "book_4_explorer_kneel_diamonds_earrings",
     title: "Ordering Earrings & Necklaces",
-    previousChapterId: "kneel_diamonds_explorer_ij_state_map",
-    nextChapterId: "kneel_diamonds_explorer_kd_advanced_state",
+    previousChapterId: "book_4_explorer_indiana_jeans_state_map",
+    nextChapterId: "book_4_explorer_kneel_diamonds_advanced_state",
     content,
 }
