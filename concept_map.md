@@ -25,6 +25,8 @@
 | Developer Tools | `Developer Tools` | The browser's built-in panel for inspecting and debugging web pages | Setup → Debugging Shortcuts | Books 2–5 |
 | Developer Tools | `console` | The DevTools tab where `console.log()` output appears | Setup → Debugging Shortcuts | All books |
 | Developer Tools | `breakpoint` | A marker set in DevTools to pause code execution at a specific line | Setup → Debugging Shortcuts | Book 1 |
+| Developer Tools | `Event Listeners panel` | A DevTools panel showing all event listeners attached to a selected element | Book 3 → Brewed Awakenings → Displaying Number of Products Sold | — |
+| Developer Tools | `Event Listener Breakpoints` | A DevTools setting that automatically pauses code when specific event types fire | Book 3 → Brewed Awakenings → Displaying Number of Products Sold | — |
 
 ---
 
@@ -38,6 +40,7 @@
 *Book 2 → Martin's Aquarium — Reviewed ✓*
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
+*Book 3 → Brewed Awakenings — Reviewed ✓*
 *Books 3–5 (remaining) — Pending*
 
 ### Variables & Data Types
@@ -207,6 +210,7 @@
 *Book 2 → Martin's Aquarium — Reviewed ✓*
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
+*Book 3 → Brewed Awakenings — Reviewed ✓*
 *Books 2–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -227,6 +231,7 @@
 | Events | `event bubbling` | The way events travel upward through parent elements after firing | Book 3 → DeShawn → Adding State to HTML | — |
 | Events | `event delegation` | Attaching a listener to a parent to catch events from its children | Book 3 → DeShawn → Adding State to HTML | Books 3–4 |
 | Events | `click event` | An event that fires when an element is clicked | Book 3 → DeShawn → Using State for an Interactive Experience | Books 3–4 |
+| Browser Dialog | `alert()` | A browser function that shows a popup message box | Book 3 → DeShawn → Using State for an Interactive Experience | Book 3 → Brewed Awakenings |
 | Events | `change event` | An event that fires when a form input's value changes | Book 4 → Indiana Jeans → Capturing User Choices | Book 4 |
 | Events | `custom event` | A programmer-defined event that can be dispatched and listened for | Book 4 → Indiana Jeans → Reacting to State Changes | Book 4 |
 
@@ -236,6 +241,7 @@
 
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
+*Book 3 → Brewed Awakenings — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -246,6 +252,7 @@
 | ERD | `foreign key` | A field that stores another entity's `id` to create a link between them | Book 3 → DeShawn → Adding Foreign Keys to State | Books 3–4 |
 | ERD | `one-to-many relationship` | One record in entity A can relate to many records in entity B | Book 3 → DeShawn → Adding Foreign Keys to State | Books 3–4 |
 | ERD | `many-to-many relationship` | Records in both entities can relate to many records in the other | Book 3 → Shipping Ship Ships → Your Learning Goals | Books 3–4 |
+| ERD | `join table` | An intersection table that stores the relationships between two entities in a many-to-many relationship | Book 3 → Brewed Awakenings → Expand the Business | Books 3–4 |
 | State | `state` | The current data an application holds that can change over time | Book 3 → DeShawn → Adding State to HTML | Books 3–5 |
 | State | `metadata` | Data that describes other data — used in `data-*` attributes to indicate what type of element something is | Book 3 → DeShawn → Adding Metadata as State | Books 3–4 |
 | State | `transient state` | Temporary state that lives only in the browser and is not saved | Book 4 → Indiana Jeans → Capturing User Choices | Book 4 |
@@ -289,6 +296,7 @@
 *Book 2 → Martin's Aquarium — Reviewed ✓*
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
+*Book 3 → Brewed Awakenings — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |

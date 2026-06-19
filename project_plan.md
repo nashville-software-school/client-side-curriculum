@@ -169,8 +169,8 @@ Work **one chapter at a time** per session:
 | 8 ✓ | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
 | 9 ✓ | Restructure Book 3 → DeShawn's Dog Walking (exercises 01–09) |
 | 10 ✓ | Restructure Book 3 → Shipping Ship Ships (exercises 10–18) |
-| 11 (next) | Restructure Book 3 → Brewed Awakenings (exercises 19–23), self-assessment, group project |
-| 12 | Restructure Book 4 → Fox y Dog (exercises 01–05) |
+| 11 ✓ | Restructure Book 3 → Brewed Awakenings (exercises 19–23), self-assessment, group project |
+| 12 (next) | Restructure Book 4 → Fox y Dog (exercises 01–05) |
 | 13 | Restructure Book 4 → Indiana Jeans (exercises 06–13) |
 | 14 | Restructure Book 4 → Kneel Diamonds (exercises 14–22) |
 | 15 | Restructure Book 4 → Cars 'R Us (exercises 23–28), self-assessment, explorers |
