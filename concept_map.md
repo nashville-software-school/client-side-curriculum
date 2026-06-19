@@ -37,6 +37,7 @@
 *Book 2 → Movie Majesty — Reviewed ✓*
 *Book 2 → Martin's Aquarium — Reviewed ✓*
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
+*Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Books 3–5 (remaining) — Pending*
 
 ### Variables & Data Types
@@ -124,12 +125,14 @@
 | Arrays | `map` | An array method that transforms each element and returns a new array of the same length | Book 4 → Indiana Jeans → Displaying Submissions with .map() | Books 4–5 |
 | Arrays | `filter` | An array method that returns a new array containing only elements that pass a test | Book 2 → Martin's Aquarium → Filtering Fish | Books 2–5 |
 | Arrays | `find` | An array method that returns the first element that passes a test | Book 1 → Explorer: Queen Bee → Finding Tribute | Books 3–4 |
+| Arrays | `sort()` | An array method that sorts elements in place; pass a comparator function for alphabetical or numeric order | Book 3 → Shipping Ship Ships → Your Learning Goals | Books 3–5 |
 
 ### String Methods
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
 | String Methods | `string method` | A built-in function called on a string value to transform or inspect it: `str.toUpperCase()`, `str.includes()`, etc. | Book 1 → Surf Shop → Sequina's Accounting | All books |
+| Object Methods | `structuredClone()` | A built-in function that creates a true deep copy of an object or array, with no shared references | Book 3 → Shipping Ship Ships → Your Learning Goals | Books 3–5 |
 | String Methods | `toUpperCase()` | A string method that returns a new string with all characters converted to uppercase | Book 1 → Surf Shop → Sequina's Accounting | — |
 
 ### Modules
@@ -203,6 +206,7 @@
 *Book 2 → Movie Majesty — Reviewed ✓*
 *Book 2 → Martin's Aquarium — Reviewed ✓*
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
+*Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Books 2–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -231,6 +235,7 @@
 ## Domain: Data Modeling
 
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
+*Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -240,7 +245,7 @@
 | ERD | `primary key` | A unique identifier field (usually `id`) that identifies each record | Book 3 → DeShawn → Visualizing Data and Relationships | Books 3–4 |
 | ERD | `foreign key` | A field that stores another entity's `id` to create a link between them | Book 3 → DeShawn → Adding Foreign Keys to State | Books 3–4 |
 | ERD | `one-to-many relationship` | One record in entity A can relate to many records in entity B | Book 3 → DeShawn → Adding Foreign Keys to State | Books 3–4 |
-| ERD | `many-to-many relationship` | Records in both entities can relate to many records in the other | Book 3 → Shipping → Haulers List | Books 3–4 |
+| ERD | `many-to-many relationship` | Records in both entities can relate to many records in the other | Book 3 → Shipping Ship Ships → Your Learning Goals | Books 3–4 |
 | State | `state` | The current data an application holds that can change over time | Book 3 → DeShawn → Adding State to HTML | Books 3–5 |
 | State | `metadata` | Data that describes other data — used in `data-*` attributes to indicate what type of element something is | Book 3 → DeShawn → Adding Metadata as State | Books 3–4 |
 | State | `transient state` | Temporary state that lives only in the browser and is not saved | Book 4 → Indiana Jeans → Capturing User Choices | Book 4 |
@@ -283,6 +288,7 @@
 *Book 2 → Movie Majesty — Reviewed ✓*
 *Book 2 → Martin's Aquarium — Reviewed ✓*
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
+*Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -292,7 +298,7 @@
 | Signal Flow | `render` | A function that places generated HTML into the DOM | Book 2 → Movie Majesty → Displaying Movies in the Browser | Books 2–4 |
 | Signal Flow | `signal flow` | The sequence: get data → generate HTML → render to DOM | Book 2 → Dynamite Duo → Review of Signal Flow | Books 2–4 |
 | Signal Flow | `main algorithm` | The entry-point function that calls all other functions in the correct order | Book 2 → Movie Majesty → The Main Algorithm | Books 2–4 |
-| Signal Flow | `dependency graph` | A diagram showing which modules depend on which other modules | Book 3 → Shipping → Dependency Graph | — |
+| Signal Flow | `dependency graph` | A diagram showing which modules depend on which other modules | Book 3 → Shipping Ship Ships → Designing Dependencies | — |
 
 ---
 
@@ -346,7 +352,7 @@
 | Movie Majesty | ✓ | ✓ | ✓✓ | ✓✓ | | | ✓✓ | |
 | Martin's Aquarium | | ✓ | ✓✓ | ✓✓ | | | ✓✓ | |
 | DeShawn's Dog Walking | | ✓ | | ✓✓ | ✓✓✓ | | ✓ | |
-| Shipping Ship Haulers | | | | ✓ | ✓✓✓ | | ✓ | |
+| Shipping Ship Ships | | | | ✓ | ✓✓✓ | | ✓ | |
 | Brewed Awakenings | | ✓ | | ✓✓ | ✓✓ | | ✓ | |
 | Fox y Dog | | ✓ | | | | ✓✓✓ | | |
 | Indiana Jeans | | ✓ | ✓✓ | ✓✓ | ✓✓ | ✓✓ | ✓✓ | |

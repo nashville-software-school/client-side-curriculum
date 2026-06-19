@@ -173,7 +173,7 @@
 | 8 | `03-book-3/08-dd-find-city-walker` | `deshawns_dog_walking_dd_find_city_walker` | Finding the Walker for a City | `book_3_deshawn_find_city_walker` |
 | 9 | `03-book-3/09-dd-city-multiple-walkers` | `deshawns_dog_walking_dd_city_multiple_walkers` | There Ain't Room in This City for the Both of Us | `book_3_deshawn_city_multiple_walkers` |
 
-### Shipping Ship Haulers
+### Shipping Ship Ships
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|

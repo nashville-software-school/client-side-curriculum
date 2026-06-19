@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "deshawns_dog_walking_ss_learning",
+    id: "book_3_shipping_learning",
     title: "Your Learning Goals",
-    previousChapterId: "deshawns_dog_walking_ss_docks",
-    nextChapterId: "deshawns_dog_walking_ba_debugging",
+    previousChapterId: "book_3_shipping_docks",
+    nextChapterId: "book_3_brewed_awakenings_debugging",
     content,
 }

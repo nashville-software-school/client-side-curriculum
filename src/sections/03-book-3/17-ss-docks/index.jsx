@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "deshawns_dog_walking_ss_docks",
+    id: "book_3_shipping_docks",
     title: "Dock Current Service",
-    previousChapterId: "deshawns_dog_walking_ss_ships_docks",
-    nextChapterId: "deshawns_dog_walking_ss_learning",
+    previousChapterId: "book_3_shipping_ships_docks",
+    nextChapterId: "book_3_shipping_learning",
     content,
 }
