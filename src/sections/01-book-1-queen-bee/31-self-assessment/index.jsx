@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_self_assessment",
+    id: "book_1_self_assessment",
     title: "Self-Assess Your Debugging Skills",
-    previousChapterId: "queen_bee_bjorn_diagram",
-    nextChapterId: "queen_bee_explorer_queen_modular",
+    previousChapterId: "book_1_bjorn_diagram",
+    nextChapterId: "book_1_explorer_queen_bee_modular",
     content,
 }
