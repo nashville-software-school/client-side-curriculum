@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_surf_undefined",
+    id: "book_1_surf_shop_undefined",
     title: "Underwater Undefined",
-    previousChapterId: "queen_bee_surf_intro",
-    nextChapterId: "queen_bee_surf_const",
+    previousChapterId: "book_1_surf_shop_intro",
+    nextChapterId: "book_1_surf_shop_const",
     content,
 }

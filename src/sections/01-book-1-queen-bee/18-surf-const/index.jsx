@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_surf_const",
+    id: "book_1_surf_shop_const",
     title: "Constant Tide",
-    previousChapterId: "queen_bee_surf_undefined",
-    nextChapterId: "queen_bee_surf_not_a_function",
+    previousChapterId: "book_1_surf_shop_undefined",
+    nextChapterId: "book_1_surf_shop_not_a_function",
     content,
 }

@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_surf_diagram",
+    id: "book_1_surf_shop_diagram",
     title: "Diagrams: A Visual for Code",
-    previousChapterId: "queen_bee_surf_functions_module",
-    nextChapterId: "queen_bee_bjorn_intro",
+    previousChapterId: "book_1_surf_shop_functions_module",
+    nextChapterId: "book_1_bjorn_intro",
     content,
 }

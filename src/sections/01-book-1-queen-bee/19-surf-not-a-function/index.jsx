@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_surf_not_a_function",
+    id: "book_1_surf_shop_not_a_function",
     title: "Wave Function",
-    previousChapterId: "queen_bee_surf_const",
-    nextChapterId: "queen_bee_surf_array_properties",
+    previousChapterId: "book_1_surf_shop_const",
+    nextChapterId: "book_1_surf_shop_array_properties",
     content,
 }

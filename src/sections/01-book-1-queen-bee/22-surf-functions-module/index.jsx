@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_surf_functions_module",
+    id: "book_1_surf_shop_functions_module",
     title: "Just a Function",
-    previousChapterId: "queen_bee_surf_data_module",
-    nextChapterId: "queen_bee_surf_diagram",
+    previousChapterId: "book_1_surf_shop_data_module",
+    nextChapterId: "book_1_surf_shop_diagram",
     content,
 }
