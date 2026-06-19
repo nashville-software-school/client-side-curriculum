@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_explorer_queen_modular",
+    id: "book_1_explorer_queen_bee_modular",
     title: "Modular Majesty",
-    previousChapterId: "queen_bee_self_assessment",
-    nextChapterId: "queen_bee_explorer_queen_database",
+    previousChapterId: "book_1_self_assessment",
+    nextChapterId: "book_1_explorer_queen_bee_database",
     content,
 }

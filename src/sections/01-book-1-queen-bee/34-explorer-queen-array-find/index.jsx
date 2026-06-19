@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_explorer_queen_array_find",
+    id: "book_1_explorer_queen_bee_array_find",
     title: "Finding Tribute",
-    previousChapterId: "queen_bee_explorer_queen_database",
-    nextChapterId: "queen_bee_explorer_surf_modular",
+    previousChapterId: "book_1_explorer_queen_bee_database",
+    nextChapterId: "book_1_explorer_surf_shop_modular",
     content,
 }

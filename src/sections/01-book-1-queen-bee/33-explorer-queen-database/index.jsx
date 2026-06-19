@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_explorer_queen_database",
+    id: "book_1_explorer_queen_bee_database",
     title: "Combined Data",
-    previousChapterId: "queen_bee_explorer_queen_modular",
-    nextChapterId: "queen_bee_explorer_queen_array_find",
+    previousChapterId: "book_1_explorer_queen_bee_modular",
+    nextChapterId: "book_1_explorer_queen_bee_array_find",
     content,
 }

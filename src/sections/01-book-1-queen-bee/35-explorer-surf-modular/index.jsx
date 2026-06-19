@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_explorer_surf_modular",
+    id: "book_1_explorer_surf_shop_modular",
     title: "Separate Reports",
-    previousChapterId: "queen_bee_explorer_queen_array_find",
-    nextChapterId: "queen_bee_explorer_bjorn_module_madness",
+    previousChapterId: "book_1_explorer_queen_bee_array_find",
+    nextChapterId: "book_1_explorer_bjorn_module_madness",
     content,
 }
