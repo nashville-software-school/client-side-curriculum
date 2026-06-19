@@ -160,8 +160,8 @@ Work **one chapter at a time** per session:
 | 3 ✓ | Restructure Book 1 → Queen Bee chapter (exercises 08–15) |
 | 4 ✓ | Restructure Book 1 → Sequina's Surf Shop (exercises 16–23) |
 | 5 ✓ | Restructure Book 1 → Björn (exercises 24–30), self-assessment, explorers, group project |
-| 6 (next) | Restructure Book 2 → Dynamite Duo (exercises 01–08) |
-| 7 | Restructure Book 2 → Movie Majesty (exercises 09–15) |
+| 6 ✓ | Restructure Book 2 → Dynamite Duo (exercises 01–08) |
+| 7 (next) | Restructure Book 2 → Movie Majesty (exercises 09–15) |
 | 8 | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
 | 9 | Restructure Book 3 → DeShawn's Dog Walking (exercises 01–09) |
 | 10 | Restructure Book 3 → Shipping Ship Haulers (exercises 10–18) |
