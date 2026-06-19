@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_cb_select_elements",
+    id: "book_4_cars_r_us_select_elements",
     title: "Dropdown Controls",
-    previousChapterId: "kneel_diamonds_cb_setup",
-    nextChapterId: "kneel_diamonds_cb_radio_buttons",
+    previousChapterId: "book_4_cars_r_us_setup",
+    nextChapterId: "book_4_cars_r_us_radio_buttons",
     content,
 }

@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_cb_radio_buttons",
+    id: "book_4_cars_r_us_radio_buttons",
     title: "Modules and Components Setup",
-    previousChapterId: "kneel_diamonds_cb_select_elements",
-    nextChapterId: "kneel_diamonds_cb_change_listeners",
+    previousChapterId: "book_4_cars_r_us_select_elements",
+    nextChapterId: "book_4_cars_r_us_change_listeners",
     content,
 }
