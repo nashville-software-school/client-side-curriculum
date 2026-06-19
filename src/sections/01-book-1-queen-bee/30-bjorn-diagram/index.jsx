@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_bjorn_diagram",
+    id: "book_1_bjorn_diagram",
     title: "Visualizations for Björn",
-    previousChapterId: "queen_bee_bjorn_cleanup",
-    nextChapterId: "queen_bee_self_assessment",
+    previousChapterId: "book_1_bjorn_cleanup",
+    nextChapterId: "book_1_self_assessment",
     content,
 }

@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "queen_bee_bjorn_rivers",
+    id: "book_1_bjorn_rivers",
     title: "River Tours",
-    previousChapterId: "queen_bee_bjorn_intro",
-    nextChapterId: "queen_bee_bjorn_price_ranges",
+    previousChapterId: "book_1_bjorn_intro",
+    nextChapterId: "book_1_bjorn_price_ranges",
     content,
 }
