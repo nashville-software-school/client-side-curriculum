@@ -189,6 +189,7 @@ Work **one chapter at a time** per session:
 - **Chapter names come from the first exercise's markdown content** — not the abbreviated directory prefix.
 - **Concept map is vocabulary-first** — it lists terms that appear (or should appear) in exercise text, paired with the concept domain they belong to.
 - **Work one chapter per session** to keep context clean and changes focused.
+- **Section directories use short names:** `src/sections/01-book-1/`, `02-book-2/`, etc. — the legacy verbose suffixes (`-queen-bee`, `-martins-aquarium`, etc.) were removed. `00-setup` keeps its name since it is not a book.
 
 ---
 
