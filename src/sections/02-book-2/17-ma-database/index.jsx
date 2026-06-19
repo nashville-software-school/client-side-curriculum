@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_ma_database",
+    id: "book_2_martins_aquarium_database",
     title: "Generating Fish HTML",
-    previousChapterId: "martins_aquarium_ma_setup",
-    nextChapterId: "martins_aquarium_ma_location_tips",
+    previousChapterId: "book_2_martins_aquarium_setup",
+    nextChapterId: "book_2_martins_aquarium_location_tips",
     content,
 }

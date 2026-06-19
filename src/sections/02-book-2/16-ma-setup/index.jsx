@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_ma_setup",
+    id: "book_2_martins_aquarium_setup",
     title: "Project Setup",
     previousChapterId: "book_2_movie_majesty_card_layout",
-    nextChapterId: "martins_aquarium_ma_database",
+    nextChapterId: "book_2_martins_aquarium_database",
     content,
 }

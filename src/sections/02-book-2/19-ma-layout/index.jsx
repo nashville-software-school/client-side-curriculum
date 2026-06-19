@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_ma_layout",
+    id: "book_2_martins_aquarium_layout",
     title: "Style and Layout",
-    previousChapterId: "martins_aquarium_ma_location_tips",
-    nextChapterId: "martins_aquarium_ma_filtering_fish",
+    previousChapterId: "book_2_martins_aquarium_location_tips",
+    nextChapterId: "book_2_martins_aquarium_filtering_fish",
     content,
 }

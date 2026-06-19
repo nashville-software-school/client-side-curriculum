@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_ma_filtering_fish",
+    id: "book_2_martins_aquarium_filtering_fish",
     title: "Filtering Fish",
-    previousChapterId: "martins_aquarium_ma_layout",
-    nextChapterId: "martins_aquarium_self_assessment",
+    previousChapterId: "book_2_martins_aquarium_layout",
+    nextChapterId: "book_2_self_assessment",
     content,
 }
