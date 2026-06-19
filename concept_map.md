@@ -31,8 +31,8 @@
 ## Domain: JavaScript Fundamentals
 
 *Book 1 → Queen Bee — Reviewed ✓*
-*Book 1 → Surf Shop — Partial ✓*
-*Book 1 → Björn — Partial ✓*
+*Book 1 → Surf Shop — Reviewed ✓*
+*Book 1 → Björn — Reviewed ✓*
 *Books 2–5 — Pending*
 
 ### Variables & Data Types
@@ -46,6 +46,7 @@
 | Variable Declaration | `const` | A keyword for declaring a variable that cannot be reassigned | Book 1 → Surf Shop → Constant Tide | All books |
 | Variable Declaration | `reassign` | Changing the value stored in a variable after it was first declared | Book 1 → Surf Shop → Constant Tide | — |
 | Data Types | `undefined` | The value JavaScript gives to a variable that has been declared but not yet assigned | Book 1 → Surf Shop → Underwater Undefined | All books |
+| Data Types | `NaN` | "Not a Number" — a special value produced when a math operation receives a non-numeric value | Book 1 → Surf Shop → Average Prices | All books |
 | Data Types | `string` | A sequence of text characters surrounded by quotes | Book 1 → Queen Bee → Introduction to Functions | All books |
 | Data Types | `number` | A numeric value | Book 1 → Queen Bee → Introduction to Functions | All books |
 | Data Types | `boolean` | A value that is either `true` or `false` | Book 3 → DeShawn → Adding State to HTML | All books |
@@ -109,6 +110,7 @@
 | Arrays | `element` | A single item inside an array | Book 1 → Queen Bee → Queen Colony | All books |
 | Arrays | `index` | The position number of an element in an array | Book 1 → Queen Bee → Queen Colony | All books |
 | Arrays | `zero-based indexing` | The rule that the first element is at index 0, not 1 | Book 1 → Queen Bee → Queen Colony | — |
+| Arrays | `array.length` | The number of elements in an array, accessed via the `.length` property | Book 1 → Surf Shop → Average Prices | All books |
 | Arrays | `array of objects` | A list where every item is an object — the most common data pattern | Book 1 → Björn → River Tours | All books |
 | Arrays | `iteration` | Repeating an action for each item in a collection | Book 1 → Queen Bee → Iterating the Queens | All books |
 | Arrays | `for...of` | A loop that iterates over the elements of an array or other iterable | Book 1 → Queen Bee → Iterating the Queens | Books 2–4 |
@@ -118,6 +120,13 @@
 | Arrays | `map` | An array method that transforms each element and returns a new array of the same length | Book 4 → Indiana Jeans → Displaying Submissions with .map() | Books 4–5 |
 | Arrays | `filter` | An array method that returns a new array containing only elements that pass a test | Book 2 → Martin's Aquarium → Filtering Fish | Books 2–5 |
 | Arrays | `find` | An array method that returns the first element that passes a test | Book 1 → Explorer: Queen Bee → Finding Tribute | Books 3–4 |
+
+### String Methods
+
+| Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
+|---------|----------------|------------|------------------|---------------|
+| String Methods | `string method` | A built-in function called on a string value to transform or inspect it: `str.toUpperCase()`, `str.includes()`, etc. | Book 1 → Surf Shop → Sequina's Accounting | All books |
+| String Methods | `toUpperCase()` | A string method that returns a new string with all characters converted to uppercase | Book 1 → Surf Shop → Sequina's Accounting | — |
 
 ### Modules
 
@@ -130,7 +139,8 @@
 | Modules | `function module` | A file dedicated to holding and exporting functions | Book 1 → Surf Shop → Just a Function | Books 2–4 |
 | Modules | `default export` | A module that exports a single main value without a name | Book 2 → Movie Majesty → Setup | Books 2–5 |
 | Modules | `named export` | A module that exports one or more values by name | Book 1 → Surf Shop → Just the Data | Books 2–4 |
-| Modules | `dependency diagram` | A visual showing which files import from which other files | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 3 |
+| Modules | `dependency diagram` | A visual showing which files import from which other files | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 1 → Björn → Visualizations for Björn, Book 3 |
+| Modules | `sequence diagram` | A diagram showing the sequence of function calls and data exchanges between modules | Book 1 → Surf Shop → Diagrams: A Visual for Code | Book 1 → Björn → Visualizations for Björn |
 
 ### Control Flow
 

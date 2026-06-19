@@ -157,10 +157,10 @@ Work **one chapter at a time** per session:
 |---------|------|
 | 1 ✓ | Create planning documents; define new structure; map all chapters and target IDs |
 | 2 ✓ | Create `00-setup` section; migrate chapters 01–07 from Book 1; rename Book 1 section |
-| 3 (next) | Restructure Book 1 → Queen Bee chapter (exercises 08–15) |
-| 4 | Restructure Book 1 → Sequina's Surf Shop (exercises 16–23) |
-| 5 | Restructure Book 1 → Björn (exercises 24–30), self-assessment, explorers, group project |
-| 6 | Restructure Book 2 → Dynamite Duo (exercises 01–08) |
+| 3 ✓ | Restructure Book 1 → Queen Bee chapter (exercises 08–15) |
+| 4 ✓ | Restructure Book 1 → Sequina's Surf Shop (exercises 16–23) |
+| 5 ✓ | Restructure Book 1 → Björn (exercises 24–30), self-assessment, explorers, group project |
+| 6 (next) | Restructure Book 2 → Dynamite Duo (exercises 01–08) |
 | 7 | Restructure Book 2 → Movie Majesty (exercises 09–15) |
 | 8 | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
 | 9 | Restructure Book 3 → DeShawn's Dog Walking (exercises 01–09) |
@@ -198,3 +198,4 @@ Work **one chapter at a time** per session:
 - What is the skill-scoring schema for the gamification model?
 - Should the concept map drive which exercises need content review/updates (e.g., to ensure the vocabulary term is actually present in the text before tagging it)?
 - What does an `<Analogy>` tag look like in JSX, and what data does it pass to the API (term, book/chapter context, student profile)?
+- **Explorer/Pioneer `previousChapterId` navigation:** Should the first exercise of an Explorer or Pioneer chapter have its `previousChapterId` point back to the last exercise of the original chapter it expands (e.g., Explorer: Queen Bee exercise 1 → `book_1_queen_bee_tribute_by_queen`), or should it continue chaining linearly through the Self-Assessment? The linear chain is simpler but severs the conceptual connection between the Explorer and its parent chapter.
