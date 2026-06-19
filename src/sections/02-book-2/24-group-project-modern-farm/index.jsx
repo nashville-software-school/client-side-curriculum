@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "martins_aquarium_group_project_modern_farm",
+    id: "book_2_group_project_modern_farm",
     title: "Modern Farm",
-    previousChapterId: "martins_aquarium_explorer_duo_copies",
+    previousChapterId: "book_2_explorer_duo_copies",
     nextChapterId: null,
     content,
 }
