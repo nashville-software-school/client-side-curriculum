@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_kd_post_order_to_api",
+    id: "book_4_kneel_diamonds_post_order_to_api",
     title: "Saving Orders to Permanent State",
-    previousChapterId: "kneel_diamonds_kd_change_events",
-    nextChapterId: "kneel_diamonds_kd_custom_event",
+    previousChapterId: "book_4_kneel_diamonds_change_events",
+    nextChapterId: "book_4_kneel_diamonds_custom_event",
     content,
 }

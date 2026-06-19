@@ -42,7 +42,10 @@
 *Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Book 3 → Brewed Awakenings — Reviewed ✓*
-*Books 3–5 (remaining) — Pending*
+*Book 4 → Fox y Dog — Reviewed ✓*
+*Book 4 → Indiana Jeans — Reviewed ✓*
+*Book 4 → Kneel Diamonds — Reviewed ✓*
+*Books 4–5 (remaining) — Pending*
 
 ### Variables & Data Types
 
@@ -215,6 +218,7 @@
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Book 3 → Brewed Awakenings — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
+*Book 4 → Kneel Diamonds — Reviewed ✓*
 *Books 2–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -247,6 +251,7 @@
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Book 3 → Brewed Awakenings — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
+*Book 4 → Kneel Diamonds — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -274,7 +279,7 @@
 
 *Book 4 → Fox y Dog — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
-*Book 4 → Kneel Diamonds — Pending*
+*Book 4 → Kneel Diamonds — Reviewed ✓*
 *Book 4 → Cars 'R Us — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -291,6 +296,7 @@
 | HTTP | `POST` | An HTTP method for sending new data to an API to be saved | Book 4 → Indiana Jeans → Your own API with JSON-Server | Books 4–5 |
 | HTTP | `request body` | Data sent to the server in a POST request, typically serialized as a JSON string | Book 4 → Indiana Jeans → Your own API with JSON-Server | Books 4–5 |
 | HTTP | `query parameter` | A key-value pair appended to a URL after `?` to filter or expand a response (e.g., `?_expand=socioLocation`) | Book 4 → Indiana Jeans → Displaying Submissions with .map() | Books 4–5 |
+| HTTP | `_expand` | A JSON Server query parameter that tells the server to expand a foreign key field into its full related object (e.g., `?_expand=metal` adds the matched metal object to each order) | Book 4 → Kneel Diamonds → Displaying Prices for Orders | — |
 | HTTP | `PUT` / `PATCH` | HTTP methods for updating existing data on an API | Book 5 → Honey Rae's → Employee Edit | Book 5 |
 | HTTP | `DELETE` | An HTTP method for removing data from an API | Book 5 → Chuckle Checklist → Rejected Chuckles | Book 5 |
 | Fetch & Promises | `fetch()` | The browser function for making HTTP requests | Book 4 → Fox y Dog → First We "Fetch" | Books 4–5 |
@@ -314,6 +320,7 @@
 *Book 3 → Shipping Ship Ships — Reviewed ✓*
 *Book 3 → Brewed Awakenings — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
+*Book 4 → Kneel Diamonds — Reviewed ✓*
 *Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |

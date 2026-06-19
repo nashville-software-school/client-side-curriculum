@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_kd_setup",
+    id: "book_4_kneel_diamonds_setup",
     title: "Project Setup",
-    previousChapterId: "kneel_diamonds_kd_narrative",
-    nextChapterId: "kneel_diamonds_kd_erd",
+    previousChapterId: "book_4_kneel_diamonds_narrative",
+    nextChapterId: "book_4_kneel_diamonds_erd",
     content,
 }
