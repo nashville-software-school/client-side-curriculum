@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "deshawns_dog_walking_ba_debugging",
+    id: "book_3_brewed_awakenings_debugging",
     title: "Broken Receipts",
     previousChapterId: "book_3_shipping_learning",
-    nextChapterId: "deshawns_dog_walking_ba_erd",
+    nextChapterId: "book_3_brewed_awakenings_erd",
     content,
 }

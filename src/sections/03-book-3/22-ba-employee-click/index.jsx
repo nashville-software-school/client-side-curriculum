@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "deshawns_dog_walking_ba_employee_click",
+    id: "book_3_brewed_awakenings_employee_click",
     title: "Top Salesperson",
-    previousChapterId: "deshawns_dog_walking_ba_product_click",
-    nextChapterId: "deshawns_dog_walking_ba_locations",
+    previousChapterId: "book_3_brewed_awakenings_product_click",
+    nextChapterId: "book_3_brewed_awakenings_locations",
     content,
 }
