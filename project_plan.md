@@ -1,0 +1,200 @@
+# NSS Client-Side Curriculum — Project Plan
+
+## Purpose
+This document is the guiding reference for restructuring the NSS client-side curriculum platform. It governs how we work, what we're building toward, and the order in which we tackle each session.
+
+---
+
+## Source Reference
+- **Local repo:** `/home/gmkorte/workspace/nss/curriculum/client-side-curriculum`
+- **GitHub reference:** https://github.com/nashville-software-school/client-side-mastery
+- Use the GitHub repo as a structural guide for content; it is not the source of truth for the new ID/chapter organization.
+
+---
+
+## How We Work
+
+- Work **one chapter at a time** per session to keep context clean and changes focused.
+- At the end of every session, before running `/clear`, transfer all needed context to the memory files at `.claude/projects/.../memory/`. Update `project_curriculum_restructure.md` with what was done, what decisions were made, and what session comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
+- At the start of every session, read `project_plan.md` and the relevant memory files before touching any code.
+
+---
+
+## Vision
+
+### Near-Term
+Restructure the curriculum into a clean **Section → Chapter → Exercise** hierarchy with accurate IDs and naming conventions.
+
+### Long-Term
+- `<Analogy>` tags on vocabulary terms throughout exercises, triggering API calls to Anthropic for student-personalized analogies
+- Agent-tested code that scores student submissions on specific skills
+- Gamification: badges, skill trees, progress tracking
+- Skill levels graded from the concept map's vocabulary terms
+
+---
+
+## Core Structural Rules
+
+### Hierarchy
+```
+Section (Book or Setup)
+  └── Chapter (a named sub-project or topic cluster)
+        └── Exercise (individual lesson/step)
+```
+
+### Section Types
+- **Section 00: Setup** — Prerequisite before Book 1. Not a "book."
+- **Books 1–5** — Named by their primary narrative project. The book name is separate from the chapter names inside it.
+- **Explorer Chapters** — High-flier optional chapters structured like core chapters. Named "Explorer: [Chapter Name]"
+- **Pioneer Projects** — Advanced multi-exercise projects. Named "Pioneer: [Project Name]"
+- **Group Projects** — Collaborative end-of-book projects.
+- **Self-Assessments** — Standalone chapters.
+
+### ID Convention (new)
+```
+{section_slug}_{exercise_slug}
+```
+Where section is `setup`, `book_1`, `book_2`, etc.
+Example: `book_1_queen_bee_intro` instead of the legacy `queen_bee_queen_intro`
+
+---
+
+## Books and Their Chapters (Target Structure)
+
+### Section 00: Setup
+*Extracted from Book 1's first 7 chapters. A prerequisite, not a book.*
+- Installations for Everyone
+- Installations for Mac Users
+- Installations for Windows Users (Python)
+- Installations for Windows Users (C#)
+- Core Professional Skills
+- Debugging Shortcuts
+- ADHD Strategies
+
+### Book 1: Functions & Modules
+*The book is renamed. "Queen Bee" becomes a chapter inside it.*
+- **Queen Bee** *(functions, debugging, iteration)*
+- **Sequina's Surf Shop** *(debugging practice, modules)*
+- **Björn's Wilderness Adventures** *(data, objects, modules combined)*
+- Self-Assessment
+- Explorer: Queen Bee
+- Explorer: Sequina's Surf Shop
+- Explorer: Björn's Wilderness Adventures
+- Group Project: Fish Fusion
+
+### Book 2: Martin's Aquarium
+*HTML, CSS, DOM manipulation*
+- **Dynamite Duo** *(HTML generation, DOM updates)*
+- **Movie Majesty** *(components, rendering, algorithm)*
+- **Martin's Aquarium** *(filtering, layout)*
+- Self-Assessment
+- Explorer: Dynamite Duo
+- Group Project: Modern Farm
+
+### Book 3: DeShawn's Dog Walking
+*State management, data relationships, interactive UIs*
+- **DeShawn's Dog Walking** *(state, foreign keys)*
+- **Shipping Ship Haulers** *(ERD, dependency graph)*
+- **Brewed Awakenings** *(click events, locations)*
+- Self-Assessment
+- Group Project: Cider Falls Park
+
+### Book 4: Kneel Diamonds
+*HTTP, async/await, JSON-server, array methods*
+- **Fox y Dog** *(fetch, then, async/await)*
+- **Indiana Jeans** *(JSON-server, components, state)*
+- **Kneel Diamonds** *(radio buttons, map method, change events)*
+- **Cars 'R Us** *(dropdowns, factories)*
+- Self-Assessment
+- Explorer: Indiana Jeans
+- Explorer: Kneel Diamonds
+- Explorer: Cars 'R Us
+- Pioneer: The Big Company
+- Pioneer: Bouquet
+- Pioneer: Honest Abe
+- Advanced Project: Pen Pal Society
+- Advanced Project: Giffygram
+- Advanced Project: Truncheons & Flagons
+- Advanced Project: Holiday Road
+- Group Project: Exomine
+
+### Book 5: Honey Rae's Repair Shop
+*React: components, hooks, routing, CRUD*
+- **Honey Rae's Repair Shop** *(React basics, tickets, routes)*
+- **Chuckle Checklist** *(full CRUD)*
+- **Learning Moments** *(auth, routes, full CRUD at scale)*
+- Explorer: Deployment
+- Capstone Resources
+- Group Project
+
+---
+
+## Artifacts to Maintain
+
+| File | Purpose |
+|------|---------|
+| `project_plan.md` | This document — guiding reference |
+| `curriculum_map.md` | Full Book → Chapter → Exercise directory with current and target IDs |
+| `concept_map.md` | Vocabulary terms mapped to exercises, with `<Analogy>` tagging context |
+
+---
+
+## Session Workflow
+
+Work **one chapter at a time** per session:
+1. Review the chapter's exercises (read the markdown content)
+2. Confirm or update the chapter's target IDs in `curriculum_map.md`
+3. Add/update vocabulary terms in `concept_map.md` based on what the exercises actually contain
+4. Restructure the exercise files: rename directories, update IDs, update `previousChapterId`/`nextChapterId` navigation links
+5. Update the book's `index.js` if the section ID or chapter list changes
+6. Clear session, move to next chapter
+
+---
+
+## Session Order
+
+| Session | Task |
+|---------|------|
+| 1 ✓ | Create planning documents; define new structure; map all chapters and target IDs |
+| 2 ✓ | Create `00-setup` section; migrate chapters 01–07 from Book 1; rename Book 1 section |
+| 3 (next) | Restructure Book 1 → Queen Bee chapter (exercises 08–15) |
+| 4 | Restructure Book 1 → Sequina's Surf Shop (exercises 16–23) |
+| 5 | Restructure Book 1 → Björn (exercises 24–30), self-assessment, explorers, group project |
+| 6 | Restructure Book 2 → Dynamite Duo (exercises 01–08) |
+| 7 | Restructure Book 2 → Movie Majesty (exercises 09–15) |
+| 8 | Restructure Book 2 → Martin's Aquarium (exercises 16–20), self-assessment, explorers, group project |
+| 9 | Restructure Book 3 → DeShawn's Dog Walking (exercises 01–09) |
+| 10 | Restructure Book 3 → Shipping Ship Haulers (exercises 10–18) |
+| 11 | Restructure Book 3 → Brewed Awakenings (exercises 19–23), self-assessment, group project |
+| 12 | Restructure Book 4 → Fox y Dog (exercises 01–05) |
+| 13 | Restructure Book 4 → Indiana Jeans (exercises 06–13) |
+| 14 | Restructure Book 4 → Kneel Diamonds (exercises 14–22) |
+| 15 | Restructure Book 4 → Cars 'R Us (exercises 23–28), self-assessment, explorers |
+| 16 | Restructure Book 4 → Pioneer projects (exercises 35–50) |
+| 17 | Restructure Book 4 → Advanced projects and group project (exercises 51–55) |
+| 18 | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
+| 19 | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
+| 20 | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
+
+---
+
+## Key Decisions Made
+
+- **`queen_bee_` prefix is wrong.** "Queen Bee" is a chapter inside Book 1, not the book itself. New IDs: `book_1_queen_bee_*`.
+- **Setup is a prerequisite section** (`00-setup`), not part of Book 1. Gated — students must complete Setup before Book 1.
+- **Setup chapter IDs use `setup_` prefix** (e.g., `setup_getting_started`, `setup_adhd_strategies`).
+- **Book 1 section ID is `book_1`, title is `"Book 1"`** — no subtitle. Chapters carry their own names.
+- **Explorer chapters are first-class chapters** — structured like any other chapter, named "Explorer: [Chapter Name]".
+- **Group Projects, Self-Assessments, Pioneer Projects** are all treated as named chapters at the same level.
+- **Chapter names come from the first exercise's markdown content** — not the abbreviated directory prefix.
+- **Concept map is vocabulary-first** — it lists terms that appear (or should appear) in exercise text, paired with the concept domain they belong to.
+- **Work one chapter per session** to keep context clean and changes focused.
+
+---
+
+## Open Questions / Future Decisions
+
+- Should Explorer and Pioneer chapters appear in the primary navigation alongside core chapters, or in a separate "challenge" track?
+- What is the skill-scoring schema for the gamification model?
+- Should the concept map drive which exercises need content review/updates (e.g., to ensure the vocabulary term is actually present in the text before tagging it)?
+- What does an `<Analogy>` tag look like in JSX, and what data does it pass to the API (term, book/chapter context, student profile)?
