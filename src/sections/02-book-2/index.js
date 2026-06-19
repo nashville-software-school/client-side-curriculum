@@ -7,8 +7,8 @@ const chapterModules = import.meta.glob('./*/index.jsx', { eager: true })
 
 // Section configuration
 const config = {
-  id: "martins_aquarium",
-  title: "Martin's Aquarium",
+  id: "book_2",
+  title: "Book 2",
   order: 20,
   description: "Build your first dynamic web page with HTML, CSS, and JavaScript.",
 }
