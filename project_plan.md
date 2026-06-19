@@ -173,8 +173,8 @@ Work **one chapter at a time** per session:
 | 12 ✓ | Restructure Book 4 → Fox y Dog (exercises 01–05) |
 | 13 ✓ | Restructure Book 4 → Indiana Jeans (exercises 06–13) |
 | 14 ✓ | Restructure Book 4 → Kneel Diamonds (exercises 14–22) |
-| 15 (next) | Restructure Book 4 → Cars 'R Us (exercises 23–28), self-assessment, explorers |
-| 16 | Restructure Book 4 → Pioneer projects (exercises 35–50) |
+| 15 ✓ | Restructure Book 4 → Cars 'R Us (exercises 23–28), self-assessment, explorers |
+| 16 (next) | Restructure Book 4 → Pioneer projects (exercises 35–50) |
 | 17 | Restructure Book 4 → Advanced projects and group project (exercises 51–55) |
 | 18 | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |

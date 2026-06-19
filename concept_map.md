@@ -143,6 +143,7 @@
 | String Methods | `string method` | A built-in function called on a string value to transform or inspect it: `str.toUpperCase()`, `str.includes()`, etc. | Book 1 → Surf Shop → Sequina's Accounting | All books |
 | Object Methods | `structuredClone()` | A built-in function that creates a true deep copy of an object or array, with no shared references | Book 3 → Shipping Ship Ships → Your Learning Goals | Books 3–5 |
 | String Methods | `toUpperCase()` | A string method that returns a new string with all characters converted to uppercase | Book 1 → Surf Shop → Sequina's Accounting | — |
+| Number Methods | `toLocaleString()` | A number method that formats a number as a locale-aware string — e.g., currency with `{ style: "currency", currency: "USD" }` | Book 4 → Cars 'R Us → Price Quotes | — |
 
 ### Modules
 
@@ -280,7 +281,7 @@
 *Book 4 → Fox y Dog — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
-*Book 4 → Cars 'R Us — Pending*
+*Book 4 → Cars 'R Us — Reviewed ✓*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
