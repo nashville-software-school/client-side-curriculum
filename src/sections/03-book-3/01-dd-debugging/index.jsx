@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "deshawns_dog_walking_dd_debugging",
+    id: "book_3_deshawn_debugging",
     title: "Fixing DeShawn's Project",
     previousChapterId: null,
-    nextChapterId: "deshawns_dog_walking_dd_erd",
+    nextChapterId: "book_3_deshawn_erd",
     content,
 }

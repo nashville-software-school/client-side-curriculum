@@ -36,7 +36,8 @@
 *Book 2 → Dynamite Duo — Pending*
 *Book 2 → Movie Majesty — Reviewed ✓*
 *Book 2 → Martin's Aquarium — Reviewed ✓*
-*Books 2–5 (remaining) — Pending*
+*Book 3 → DeShawn's Dog Walking — Reviewed ✓*
+*Books 3–5 (remaining) — Pending*
 
 ### Variables & Data Types
 
@@ -201,6 +202,7 @@
 *Book 2 → Dynamite Duo — Pending*
 *Book 2 → Movie Majesty — Reviewed ✓*
 *Book 2 → Martin's Aquarium — Reviewed ✓*
+*Book 3 → DeShawn's Dog Walking — Reviewed ✓*
 *Books 2–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -228,7 +230,8 @@
 
 ## Domain: Data Modeling
 
-*Books 3–4 — Pending*
+*Book 3 → DeShawn's Dog Walking — Reviewed ✓*
+*Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -239,6 +242,7 @@
 | ERD | `one-to-many relationship` | One record in entity A can relate to many records in entity B | Book 3 → DeShawn → Adding Foreign Keys to State | Books 3–4 |
 | ERD | `many-to-many relationship` | Records in both entities can relate to many records in the other | Book 3 → Shipping → Haulers List | Books 3–4 |
 | State | `state` | The current data an application holds that can change over time | Book 3 → DeShawn → Adding State to HTML | Books 3–5 |
+| State | `metadata` | Data that describes other data — used in `data-*` attributes to indicate what type of element something is | Book 3 → DeShawn → Adding Metadata as State | Books 3–4 |
 | State | `transient state` | Temporary state that lives only in the browser and is not saved | Book 4 → Indiana Jeans → Capturing User Choices | Book 4 |
 | State | `permanent state` | State that is saved to a database and persists between sessions | Book 4 → Indiana Jeans → Saving Survey Submissions | Books 4–5 |
 | JSON | `JSON` | JavaScript Object Notation — a text format for transmitting data as objects and arrays | Book 4 → Fox y Dog → Introduction to APIs | Books 4–5 |
@@ -278,7 +282,8 @@
 *Book 2 → Dynamite Duo — Pending*
 *Book 2 → Movie Majesty — Reviewed ✓*
 *Book 2 → Martin's Aquarium — Reviewed ✓*
-*Books 3–4 — Pending*
+*Book 3 → DeShawn's Dog Walking — Reviewed ✓*
+*Books 3–4 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|

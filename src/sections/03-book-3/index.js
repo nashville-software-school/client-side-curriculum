@@ -7,8 +7,8 @@ const chapterModules = import.meta.glob('./*/index.jsx', { eager: true })
 
 // Section configuration
 const config = {
-  id: "deshawns_dog_walking",
-  title: "DeShawn's Dog Walking Service",
+  id: "book_3",
+  title: "Book 3",
   order: 30,
   description: "State management, data relationships, and interactive UIs.",
 }
