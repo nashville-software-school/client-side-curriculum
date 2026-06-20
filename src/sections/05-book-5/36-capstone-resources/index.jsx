@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "honey_rae_repairs_capstone_resources",
+    id: "book_5_capstone_resources",
     title: "Capstone Resources",
-    previousChapterId: "honey_rae_repairs_explorer_cloud_static",
-    nextChapterId: "honey_rae_repairs_group_project",
+    previousChapterId: "book_5_explorer_deploy_static",
+    nextChapterId: "book_5_group_project",
     content,
 }
