@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "honey_rae_repairs_learn_all_posts",
+    id: "book_5_learn_all_posts",
     title: "All Posts",
-    previousChapterId: "honey_rae_repairs_learn_wireframe",
-    nextChapterId: "honey_rae_repairs_learn_filter",
+    previousChapterId: "book_5_learn_wireframe",
+    nextChapterId: "book_5_learn_filter",
     content,
 }

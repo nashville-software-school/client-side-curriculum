@@ -178,7 +178,7 @@ Work **one chapter at a time** per session:
 | 17 ✓ | Restructure Book 4 → Advanced projects and group project (exercises 51–55) |
 | 18 ✓ | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 ✓ | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
-| 20 (next) | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
+| 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | — | **Phase 2: Concept Map Refactor** — resolve all ⚠️ flagged issues, audit Dynamite Duo concept map (skipped in Session 6), verify First Introduced accuracy across all chapters |
 
 ---

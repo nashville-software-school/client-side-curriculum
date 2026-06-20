@@ -350,6 +350,7 @@
 
 *Book 5 → Honey Rae's Repair Shop — Reviewed ✓*
 *Book 5 → Chuckle Checklist — Reviewed ✓*
+*Book 5 → Learning Moments — Reviewed ✓*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -382,6 +383,9 @@
 | CRUD | `Read` | Fetching and displaying data from the database (GET request) | Book 5 → Honey Rae's → List All Tickets | Book 5 |
 | CRUD | `Update` | Modifying an existing record in the database (PUT or PATCH request) | Book 5 → Chuckle Checklist → Fulfilled Chuckles | Book 5 |
 | CRUD | `Delete` | Removing a record from the database (DELETE request) | Book 5 → Chuckle Checklist → Rejected Chuckles | Book 5 |
+| Authentication | `localStorage` | A browser API for storing persistent key-value string pairs that survive page reloads, used here to remember who is logged in | Book 5 → Learning Moments → Auth & Routes | — |
+| Authentication | `authentication` | The process of verifying that a user is who they claim to be before granting access to protected content | Book 5 → Learning Moments → Auth & Routes | — |
+| Authentication | `protected route` | A route wrapped in an auth check that redirects unauthenticated users to the login page | Book 5 → Learning Moments → Auth & Routes | — |
 
 ---
 
@@ -424,6 +428,10 @@
 | Honey Rae's Repair Shop | | | ✓ | | ✓✓ | ✓✓ | | ✓✓✓ |
 | Chuckle Checklist | | | | | ✓ | ✓ | | ✓✓✓ |
 | Learning Moments | | | | | ✓✓ | ✓ | | ✓✓✓ |
+| Explorer: Deploy API | ✓ | | | | | | | ✓ |
+| Explorer: Deploy Client | ✓ | | | | | | | ✓ |
+| Capstone Resources | | | | | | | | |
+| Group Project: Book 5 | | | | | ✓ | ✓ | | ✓✓ |
 
 *✓ = touched, ✓✓ = core focus, ✓✓✓ = primary emphasis*
 
