@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "honey_rae_repairs_repair_cust_details",
+    id: "book_5_honey_rae_cust_details",
     title: "Customer Details",
-    previousChapterId: "honey_rae_repairs_repair_routes_intro",
-    nextChapterId: "honey_rae_repairs_repair_claim_vs_close",
+    previousChapterId: "book_5_honey_rae_routes_intro",
+    nextChapterId: "book_5_honey_rae_claim_vs_close",
     content,
 }

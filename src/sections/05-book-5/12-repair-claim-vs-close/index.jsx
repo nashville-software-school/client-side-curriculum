@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "honey_rae_repairs_repair_claim_vs_close",
+    id: "book_5_honey_rae_claim_vs_close",
     title: "Claim vs Close",
-    previousChapterId: "honey_rae_repairs_repair_cust_details",
-    nextChapterId: "honey_rae_repairs_repair_employee_edit",
+    previousChapterId: "book_5_honey_rae_cust_details",
+    nextChapterId: "book_5_honey_rae_employee_edit",
     content,
 }

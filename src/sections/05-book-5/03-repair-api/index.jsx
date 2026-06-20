@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "honey_rae_repairs_repair_api",
+    id: "book_5_honey_rae_api",
     title: "Repair API",
-    previousChapterId: "honey_rae_repairs_repair_first_component",
-    nextChapterId: "honey_rae_repairs_repair_wireframe",
+    previousChapterId: "book_5_honey_rae_first_component",
+    nextChapterId: "book_5_honey_rae_wireframe",
     content,
 }

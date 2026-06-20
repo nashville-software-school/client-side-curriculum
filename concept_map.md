@@ -165,6 +165,7 @@
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
 | Operators | `remainder operator` (`%`) | Returns the leftover after dividing two numbers — used to test divisibility | Book 2 → Martin's Aquarium → Filtering Fish | Books 3–5 |
+| Operators | `optional chaining` (`?.`) | Accesses an object's property, but returns `undefined` instead of throwing an error if the object is `null` or `undefined` | Book 5 → Honey Rae's → Ticket Assignee | All Book 5 |
 
 ### Control Flow
 
@@ -305,6 +306,7 @@
 | HTTP | `request body` | Data sent to the server in a POST request, typically serialized as a JSON string | Book 4 → Indiana Jeans → Your own API with JSON-Server | Books 4–5 |
 | HTTP | `query parameter` | A key-value pair appended to a URL after `?` to filter or expand a response (e.g., `?_expand=socioLocation`) | Book 4 → Indiana Jeans → Displaying Submissions with .map() | Books 4–5 |
 | HTTP | `_expand` | A JSON Server query parameter that tells the server to expand a foreign key field into its full related object (e.g., `?_expand=metal` adds the matched metal object to each order) | Book 4 → Kneel Diamonds → Displaying Prices for Orders | — |
+| HTTP | `_embed` | A JSON Server query parameter that embeds a related array of child records into the parent object (e.g., `?_embed=employeeTickets` adds matching tickets to each employee) | Book 5 → Honey Rae's → Customer Details | — |
 | HTTP | `third-party API` | A publicly available API provided by an external service (not your own JSON-Server) that returns real-world data | Book 4 → Advanced: Holiday Road | Book 5 |
 | HTTP | `PUT` / `PATCH` | HTTP methods for updating existing data on an API | Book 5 → Honey Rae's → Employee Edit | Book 5 |
 | HTTP | `DELETE` | An HTTP method for removing data from an API | Book 5 → Chuckle Checklist → Rejected Chuckles | Book 5 |
@@ -346,23 +348,32 @@
 
 ## Domain: React
 
-*Book 5 — Pending*
+*Book 5 → Honey Rae's Repair Shop — Reviewed ✓*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
 | React Fundamentals | `React` | A JavaScript library for building component-based user interfaces | Book 5 → Honey Rae's → Getting Started with React | All Book 5 |
 | React Fundamentals | `JSX` | A syntax extension that lets you write HTML-like code inside JavaScript | Book 5 → Honey Rae's → Your First Component | All Book 5 |
 | React Fundamentals | `component` | A React function that returns JSX describing a piece of the UI | Book 5 → Honey Rae's → Your First Component | All Book 5 |
+| React Fundamentals | `Fragment` | `<>...</>` syntax that groups elements without adding an extra DOM node | Book 5 → Honey Rae's → Your First Component | All Book 5 |
 | React Fundamentals | `props` | Data passed from a parent component to a child component | Book 5 → Honey Rae's → Ticket Assignee | All Book 5 |
-| React Fundamentals | `re-render` | When React automatically updates the UI because state has changed | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
-| React Hooks | `hook` | A special React function that lets a component tap into React features | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
-| React Hooks | `useState` | A hook that declares a state variable and a function to update it | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
+| React Fundamentals | `prop drilling` | Passing props through multiple component layers to reach a deeply nested child | Book 5 → Honey Rae's → Claim vs Close | — |
+| React Fundamentals | `re-render` | When React automatically updates the UI because state has changed | Book 5 → Honey Rae's → Your First Component | All Book 5 |
+| React Fundamentals | `key prop` | A required prop on each element in a `.map()` list that helps React track which items changed | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
+| React Hooks | `hook` | A special React function that lets a component tap into React features | Book 5 → Honey Rae's → Your First Component | All Book 5 |
+| React Hooks | `useState` | A hook that declares a state variable and a function to update it | Book 5 → Honey Rae's → Your First Component | All Book 5 |
 | React Hooks | `useEffect` | A hook that runs code after the component renders | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
+| React Hooks | `initial render` | The first time a component renders; state variables hold their initial values at this point | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
 | React Hooks | `dependency array` | The list passed to `useEffect` that controls when it re-runs | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
-| React Hooks | `useCallback` | A hook that memoizes a function so it is not recreated on every render | Book 5 → Honey Rae's → Search Tickets | — |
+| React Hooks | `useCallback` | A hook that memoizes a function so it is not recreated on every render | — ⚠️ | — |
 | React Router | `client-side routing` | Navigation that happens in the browser without requesting a new page from the server | Book 5 → Honey Rae's → Intro to Routes | All Book 5 |
+| React Router | `BrowserRouter` | A react-router-dom component that wraps the app to keep UI in sync with the browser URL | Book 5 → Honey Rae's → Intro to Routes | All Book 5 |
 | React Router | `route` | A mapping between a URL path and a React component | Book 5 → Honey Rae's → Intro to Routes | All Book 5 |
-| React Router | `useNavigate` | A hook for programmatically changing the current route | Book 5 → Honey Rae's → Claim vs Close | All Book 5 |
+| React Router | `Outlet` | A react-router-dom component that marks where a child route's element should render | Book 5 → Honey Rae's → Intro to Routes | All Book 5 |
+| React Router | `Link` | A react-router-dom component that navigates to a new URL when clicked | Book 5 → Honey Rae's → Intro to Routes | All Book 5 |
+| React Router | `index route` | The default child route rendered when the parent path matches exactly | Book 5 → Honey Rae's → Customer Details | All Book 5 |
+| React Router | `route params` | Placeholders in a URL (prefixed with `:`) that capture dynamic values like IDs | Book 5 → Honey Rae's → Customer Details | All Book 5 |
+| React Router | `useNavigate` | A hook for programmatically changing the current route | Book 5 → Honey Rae's → Employee Edit | All Book 5 |
 | React Router | `useParams` | A hook for reading dynamic path segments from the current URL | Book 5 → Honey Rae's → Customer Details | All Book 5 |
 | CRUD | `CRUD` | Create, Read, Update, Delete — the four fundamental operations on persistent data | Book 5 → Chuckle Checklist → Chuckle Setup | Book 5 |
 | CRUD | `Create` | Adding a new record to the database (POST request) | Book 5 → Chuckle Checklist → New Chuckles | Book 5 |
@@ -424,5 +435,6 @@ Inconsistencies found during chapter reviews. To be resolved in a dedicated refa
 |------|-------|-------|
 | ⚠️ | `default export` → Book 2 → Movie Majesty → Setup | Movie Majesty exercises only use named exports (`export const`). No student-facing content introduces `default export` here. Verify where this term is actually first taught, or remove if only present in platform scaffolding. |
 | ⚠️ | `CSS Grid` → Book 2 → Movie Majesty → Grid Layout for Movie Cards | Exercise 15 uses Flexbox (`display: flex; flex-wrap: wrap`), not CSS Grid. The exercise title says "Grid Layout" but the implementation is entirely Flexbox. Either re-attribute `CSS Grid` to where it is actually taught, or correct the entry to point to Flexbox. |
-| ⚠️ | `filter` → Book 2 → Martin's Aquarium → Filtering Fish | Exercise 20 teaches filtering using `for...of` + `if` (manual approach), not the `.filter()` array method. The concept map entry labels this as "an array method" but the teaching content doesn't use the array method. Verify where `.filter()` is actually introduced, or revise the entry to describe the manual filtering pattern taught here. Note: Pioneer: The Big Company (exercise 38) does use `.filter()` explicitly, but not all students reach Pioneer chapters, so `.filter()` still needs to be introduced in a core chapter. |
+| ⚠️ | `filter` → Book 2 → Martin's Aquarium → Filtering Fish | Exercise 20 (Martin's Aquarium) teaches filtering with `for...of` + `if` (manual), not `.filter()`. Exercise 05 (Honey Rae's → List All Tickets) is the first core chapter to use `.filter()` explicitly. Decision pending: update First Introduced to Book 5, or find an earlier mandatory chapter that teaches the array method. |
 | ⚠️ | `try / catch` → Book 4 → Fox y Dog → Awaiting Data | Exercise 05 covers `async/await` syntax but never introduces or shows `try/catch`. The "First Introduced" attribution is incorrect. Identify where `try/catch` is actually first taught and update accordingly, or remove the entry if it isn't covered in the curriculum. |
+| ⚠️ | `useCallback` → Book 5 → Honey Rae's → Search Tickets | Exercise 07 (Search Tickets) teaches filtering with `.filter()` inside a `useEffect` and discusses the ESLint missing-dependency warning, but never introduces or demonstrates `useCallback`. The "First Introduced" attribution is incorrect. Identify where (or if) `useCallback` is actually taught, or remove the entry. |

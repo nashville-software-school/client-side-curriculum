@@ -7,8 +7,8 @@ const chapterModules = import.meta.glob('./*/index.jsx', { eager: true })
 
 // Section configuration
 const config = {
-  id: "honey_rae_repairs",
-  title: "Honey Rae's Repair Shop",
+  id: "book_5",
+  title: "Book 5",
   order: 50,
   description: "React fundamentals: components, hooks, routing, and full CRUD.",
 }
