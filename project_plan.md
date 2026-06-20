@@ -209,28 +209,73 @@ Work **one chapter at a time** per session:
 
 ---
 
-## Phase 3: Navigation UX — Open Questions
+## Phase 3: Navigation UX
 
-*Requires team discussion before any nss-core changes. Background: the nss-core `Navigation` component renders one flat ordered list of chapters per book (Book 1 → 32 chapters, no sub-grouping). There is no concept of chapter groups or chapter types in the current data model or nss-core UI.*
+*Background: nss-core's `Navigation` component renders one flat ordered list of chapters per book — Book 1 has ~32 nav entries with no sub-grouping. There is no chapter-group or chapter-type concept in the current data model or nss-core UI. Two change paths are available; the team must decide which to pursue.*
 
 ### Problems to Solve
 
 1. **No chapter grouping** — within each book, Queen Bee, Surf Shop, Björn, Self-Assessment, Explorers, and Group Project all appear as one undifferentiated list. Students cannot orient themselves.
-2. **No chapter type distinction** — there is no visual signal in the nav that distinguishes a core exercise from a Self-Assessment, Explorer, Pioneer, or Group Project.
-3. **Book-boundary navigation** — currently `previousChapterId: null` on the first chapter of each book means there is no prev/next link across book boundaries. Decide if cross-book navigation is desired.
+2. **No chapter type distinction** — no visual signal distinguishes a core exercise from a Self-Assessment, Explorer, Pioneer, or Group Project.
+3. **Book-boundary navigation** — `previousChapterId: null` on each book's first chapter means no prev/next link crosses book boundaries. Decide if cross-book navigation is desired.
 
-### Design Questions for the Team
+---
 
-- **Grouping approach:** Should chapter groups (Queen Bee, Surf Shop, etc.) appear as:
-  - (a) Non-clickable sub-headings within the book's nav list — flat but labeled
-  - (b) Collapsible sub-sections within each book — a true 3-level tree
-  - (c) No grouping — rely on title naming and visual type badges only
-- **Chapter type treatment:** Should Explorer, Pioneer, Assessment, and Group Project chapters be:
-  - (a) Visually badged/colored within the main list
-  - (b) Separated into an "Optional Work" or "Challenges" section in the nav (nss-core already splits nav into "Required Work" / optional using a `required` flag on section configs)
-  - (c) Hidden by default and revealed when a student reaches them
-- **What data fields would be added to each chapter's `index.jsx`?** Candidates: `chapterGroup`, `type` (`"core"`, `"explorer"`, `"assessment"`, `"group_project"`, `"pioneer"`, `"capstone"`), `optional` (boolean).
-- **Who makes nss-core changes?** nss-core is a separate package (`@nss-workshops/nss-core`). Any nav improvements require publishing a new version there before this repo can consume them.
+### Path A — Index Pages (no nss-core changes required)
+
+Add a single "index" chapter at the head of each chapter group. The index page's markdown content describes the group and links to every exercise within it. Two sub-variants:
+
+**Path A1 — Index as orientation (exercises stay in nav)**
+- ~20 new chapter files added (one per chapter group across all books)
+- No exercise files touched
+- Nav grows slightly (e.g., Book 1: ~32 → ~40 items) but each group now has a named landing page
+- Students can navigate directly to any exercise from the nav OR go through the index page
+- Links in index pages trigger a full page reload (nss-core renders markdown as static HTML — no React Router interception)
+- **Effort:** low (~20 new files, no existing file changes)
+- **Does not solve:** exercises still run together in the nav; no type distinction
+
+**Path A2 — Index as gateway (exercises hidden from nav)**
+- Add `chapterGroup` field to each exercise's `index.jsx` (e.g., `chapterGroup: "book_1_queen_bee"`)
+- Update each book's `index.js` by one line: `sectionId: chapter.default.chapterGroup || config.id`
+- Exercises whose `sectionId` doesn't match a registered nav section disappear from the sidebar
+- Book 1 nav shrinks from ~32 items to ~8 (one index page per group)
+- Students navigate exercises via prev/next buttons only; index pages link to exercises
+- **Known UX regressions:**
+  - When a student is on an exercise page, no nav item is highlighted as active
+  - Nav progress bar per book counts only index page completions, not individual exercises
+- **Effort:** large — `chapterGroup` must be added to ~175 exercise files; ~20 new index files
+- **Resolves:** grouping problem; does not resolve type distinction without additional `type` field work
+
+---
+
+### Path B — nss-core changes
+
+Modify `@nss-workshops/nss-core` to support chapter groups and/or chapter types natively, then consume the updated package here.
+
+**What nss-core would need:**
+- `chapterGroup` field on chapters → nav renders sub-headings or collapsible sub-sections within each book
+- `type` field on chapters (`"core"`, `"explorer"`, `"assessment"`, `"group_project"`, `"pioneer"`, `"capstone"`) → nav renders type badges/icons; optional chapters could move to a separate "Optional Work" nav section (nss-core already supports a `required` split on sections)
+
+**Advantages over Path A:**
+- Active nav state works correctly for all chapters (no regression)
+- Progress tracking per exercise is preserved in the nav
+- Type badges solve the assessment/explorer/group-project distinction cleanly
+- Clean separation of concerns: data model defines structure; nss-core renders it
+
+**Effort:** requires a new nss-core release before this repo can consume it; two-repo coordination
+
+---
+
+### Team Decision Needed
+
+| Question | Options |
+|----------|---------|
+| Which path? | A1 / A2 / B |
+| Chapter type distinction | Badges/icons in nav, separate optional section, or deferred |
+| Cross-book prev/next | Yes (nss-core fix to `rF`) / No (keep book boundaries as hard stops) |
+| Data fields to add to exercise files | `chapterGroup`, `type`, `optional` — decide before any data work starts |
+
+---
 
 ### Known Bug Fixed (Session 20)
 
