@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_pioneer_tbc_customer_report",
+    id: "book_4_pioneer_tbc_customer_report",
     title: "Customer Report",
-    previousChapterId: "kneel_diamonds_pioneer_tbc_customers",
-    nextChapterId: "kneel_diamonds_pioneer_bouquet_flowers",
+    previousChapterId: "book_4_pioneer_tbc_customers",
+    nextChapterId: "book_4_pioneer_bouquet_flowers",
     content,
 }

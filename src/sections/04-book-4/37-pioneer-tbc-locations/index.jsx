@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_pioneer_tbc_locations",
+    id: "book_4_pioneer_tbc_locations",
     title: "Growing the Business",
-    previousChapterId: "kneel_diamonds_pioneer_tbc_departments",
-    nextChapterId: "kneel_diamonds_pioneer_tbc_customers",
+    previousChapterId: "book_4_pioneer_tbc_departments",
+    nextChapterId: "book_4_pioneer_tbc_customers",
     content,
 }

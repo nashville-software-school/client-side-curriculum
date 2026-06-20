@@ -253,7 +253,9 @@
 *Book 3 → Brewed Awakenings — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
-*Books 3–4 (remaining) — Pending*
+*Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Pioneer Projects — Reviewed ✓*
+*Books 3–5 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -264,6 +266,7 @@
 | ERD | `one-to-many relationship` | One record in entity A can relate to many records in entity B | Book 3 → DeShawn → Adding Foreign Keys to State | Books 3–4 |
 | ERD | `many-to-many relationship` | Records in both entities can relate to many records in the other | Book 3 → Shipping Ship Ships → Your Learning Goals | Books 3–4 |
 | ERD | `join table` | An intersection table that stores the relationships between two entities in a many-to-many relationship | Book 3 → Brewed Awakenings → Expand the Business | Books 3–4 |
+| ERD | `normalization` | The process of restructuring a database to reduce repeated data, typically by extracting repeated values into their own table | Book 4 → Pioneer: Bouquet → Normalization Challenge | — |
 | State | `state` | The current data an application holds that can change over time | Book 3 → DeShawn → Adding State to HTML | Books 3–5 |
 | State | `metadata` | Data that describes other data — used in `data-*` attributes to indicate what type of element something is | Book 3 → DeShawn → Adding Metadata as State | Books 3–4 |
 | State | `transient state` | Temporary state that lives only in the browser and is not saved | Book 4 → Indiana Jeans → Capturing User Choices | Book 4 |
@@ -282,6 +285,7 @@
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
 *Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Pioneer Projects — Reviewed ✓*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -309,6 +313,7 @@
 | Async/Await | `async function` | A function that returns a Promise and can use the `await` keyword | Book 4 → Fox y Dog → Awaiting Data | Books 4–5 |
 | Async/Await | `await` | A keyword that pauses an async function until the awaited Promise resolves | Book 4 → Fox y Dog → Awaiting Data | Books 4–5 |
 | Async/Await | `try / catch` | A structure for handling errors that may occur in async code | Book 4 → Fox y Dog → Awaiting Data | — |
+| Fetch & Promises | `Promise.all()` | A method that takes an array of Promises and resolves when all of them complete, returning an array of results | Book 4 → Pioneer: Honest Abe → Final Challenge | Book 5 |
 
 ---
 
@@ -391,6 +396,9 @@
 | Indiana Jeans | | ✓ | ✓✓ | ✓✓ | ✓✓ | ✓✓ | ✓✓ | |
 | Kneel Diamonds | | ✓ | ✓✓ | ✓✓ | ✓✓ | ✓✓ | ✓✓ | |
 | Cars 'R Us | | ✓ | ✓✓ | ✓✓ | ✓✓ | ✓ | ✓✓ | |
+| Pioneer: The Big Company | | | | | ✓✓✓ | ✓ | | |
+| Pioneer: Bouquet | | | | | ✓✓✓ | ✓ | | |
+| Pioneer: Honest Abe | | | | | ✓✓✓ | ✓✓ | | |
 | Honey Rae's Repair Shop | | | ✓ | | ✓✓ | ✓✓ | | ✓✓✓ |
 | Chuckle Checklist | | | | | ✓ | ✓ | | ✓✓✓ |
 | Learning Moments | | | | | ✓✓ | ✓ | | ✓✓✓ |
@@ -407,5 +415,5 @@ Inconsistencies found during chapter reviews. To be resolved in a dedicated refa
 |------|-------|-------|
 | ⚠️ | `default export` → Book 2 → Movie Majesty → Setup | Movie Majesty exercises only use named exports (`export const`). No student-facing content introduces `default export` here. Verify where this term is actually first taught, or remove if only present in platform scaffolding. |
 | ⚠️ | `CSS Grid` → Book 2 → Movie Majesty → Grid Layout for Movie Cards | Exercise 15 uses Flexbox (`display: flex; flex-wrap: wrap`), not CSS Grid. The exercise title says "Grid Layout" but the implementation is entirely Flexbox. Either re-attribute `CSS Grid` to where it is actually taught, or correct the entry to point to Flexbox. |
-| ⚠️ | `filter` → Book 2 → Martin's Aquarium → Filtering Fish | Exercise 20 teaches filtering using `for...of` + `if` (manual approach), not the `.filter()` array method. The concept map entry labels this as "an array method" but the teaching content doesn't use the array method. Verify where `.filter()` is actually introduced, or revise the entry to describe the manual filtering pattern taught here. |
+| ⚠️ | `filter` → Book 2 → Martin's Aquarium → Filtering Fish | Exercise 20 teaches filtering using `for...of` + `if` (manual approach), not the `.filter()` array method. The concept map entry labels this as "an array method" but the teaching content doesn't use the array method. Verify where `.filter()` is actually introduced, or revise the entry to describe the manual filtering pattern taught here. Note: Pioneer: The Big Company (exercise 38) does use `.filter()` explicitly, but not all students reach Pioneer chapters, so `.filter()` still needs to be introduced in a core chapter. |
 | ⚠️ | `try / catch` → Book 4 → Fox y Dog → Awaiting Data | Exercise 05 covers `async/await` syntax but never introduces or shows `try/catch`. The "First Introduced" attribution is incorrect. Identify where `try/catch` is actually first taught and update accordingly, or remove the entry if it isn't covered in the curriculum. |
