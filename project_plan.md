@@ -180,6 +180,7 @@ Work **one chapter at a time** per session:
 | 19 ✓ | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | — | **Phase 2: Concept Map Refactor** — resolve all ⚠️ flagged issues, audit Dynamite Duo concept map (skipped in Session 6), verify First Introduced accuracy across all chapters |
+| — | **Phase 3: Navigation UX** — see open questions below; requires team discussion before nss-core changes |
 
 ---
 
@@ -205,3 +206,32 @@ Work **one chapter at a time** per session:
 - Should the concept map drive which exercises need content review/updates (e.g., to ensure the vocabulary term is actually present in the text before tagging it)?
 - What does an `<Analogy>` tag look like in JSX, and what data does it pass to the API (term, book/chapter context, student profile)?
 - **Explorer/Pioneer `previousChapterId` navigation:** Should the first exercise of an Explorer or Pioneer chapter have its `previousChapterId` point back to the last exercise of the original chapter it expands (e.g., Explorer: Queen Bee exercise 1 → `book_1_queen_bee_tribute_by_queen`), or should it continue chaining linearly through the Self-Assessment? The linear chain is simpler but severs the conceptual connection between the Explorer and its parent chapter.
+
+---
+
+## Phase 3: Navigation UX — Open Questions
+
+*Requires team discussion before any nss-core changes. Background: the nss-core `Navigation` component renders one flat ordered list of chapters per book (Book 1 → 32 chapters, no sub-grouping). There is no concept of chapter groups or chapter types in the current data model or nss-core UI.*
+
+### Problems to Solve
+
+1. **No chapter grouping** — within each book, Queen Bee, Surf Shop, Björn, Self-Assessment, Explorers, and Group Project all appear as one undifferentiated list. Students cannot orient themselves.
+2. **No chapter type distinction** — there is no visual signal in the nav that distinguishes a core exercise from a Self-Assessment, Explorer, Pioneer, or Group Project.
+3. **Book-boundary navigation** — currently `previousChapterId: null` on the first chapter of each book means there is no prev/next link across book boundaries. Decide if cross-book navigation is desired.
+
+### Design Questions for the Team
+
+- **Grouping approach:** Should chapter groups (Queen Bee, Surf Shop, etc.) appear as:
+  - (a) Non-clickable sub-headings within the book's nav list — flat but labeled
+  - (b) Collapsible sub-sections within each book — a true 3-level tree
+  - (c) No grouping — rely on title naming and visual type badges only
+- **Chapter type treatment:** Should Explorer, Pioneer, Assessment, and Group Project chapters be:
+  - (a) Visually badged/colored within the main list
+  - (b) Separated into an "Optional Work" or "Challenges" section in the nav (nss-core already splits nav into "Required Work" / optional using a `required` flag on section configs)
+  - (c) Hidden by default and revealed when a student reaches them
+- **What data fields would be added to each chapter's `index.jsx`?** Candidates: `chapterGroup`, `type` (`"core"`, `"explorer"`, `"assessment"`, `"group_project"`, `"pioneer"`, `"capstone"`), `optional` (boolean).
+- **Who makes nss-core changes?** nss-core is a separate package (`@nss-workshops/nss-core`). Any nav improvements require publishing a new version there before this repo can consume them.
+
+### Known Bug Fixed (Session 20)
+
+- **Book 1 was missing from the nav.** Root cause: nss-core's `rF` function finds the head of each section's chapter chain by looking for `!previousChapterId`. Book 1's first chapter had `previousChapterId: "setup_adhd_strategies"` (a cross-section reference), so `rF` returned an empty list and Book 1 disappeared. **Fixed:** set `previousChapterId: null` on `01-book-1/08-queen-intro/index.jsx`. Books 2–5 were unaffected because their first chapters already had `previousChapterId: null`.
