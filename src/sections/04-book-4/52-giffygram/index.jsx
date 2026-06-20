@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_giffygram",
+    id: "book_4_advanced_giffygram",
     title: "Giffygram",
-    previousChapterId: "kneel_diamonds_pen_pal_society",
-    nextChapterId: "kneel_diamonds_truncheons_and_flagons",
+    previousChapterId: "book_4_advanced_pen_pal_society",
+    nextChapterId: "book_4_advanced_truncheons_and_flagons",
     content,
 }

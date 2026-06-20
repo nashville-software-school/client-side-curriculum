@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_pen_pal_society",
+    id: "book_4_advanced_pen_pal_society",
     title: "Pen Pal Society",
     previousChapterId: "book_4_pioneer_abe_legislation",
-    nextChapterId: "kneel_diamonds_giffygram",
+    nextChapterId: "book_4_advanced_giffygram",
     content,
 }

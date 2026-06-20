@@ -28,6 +28,7 @@
 | Developer Tools | `Event Listeners panel` | A DevTools panel showing all event listeners attached to a selected element | Book 3 → Brewed Awakenings → Displaying Number of Products Sold | — |
 | Developer Tools | `Event Listener Breakpoints` | A DevTools setting that automatically pauses code when specific event types fire | Book 3 → Brewed Awakenings → Displaying Number of Products Sold | — |
 | Developer Tools | `Network tab` | A DevTools panel for monitoring HTTP requests made by the browser | Book 4 → Fox y Dog → First We "Fetch" | Books 4–5 |
+| Developer Tools | `API client` | A standalone tool for sending HTTP requests to and inspecting API responses outside the browser (e.g., Thunder Client, Postman) | Book 4 → Advanced: Holiday Road | — |
 
 ---
 
@@ -255,6 +256,7 @@
 *Book 4 → Kneel Diamonds — Reviewed ✓*
 *Book 4 → Cars 'R Us — Reviewed ✓*
 *Book 4 → Pioneer Projects — Reviewed ✓*
+*Book 4 → Advanced Projects — Reviewed ✓*
 *Books 3–5 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
@@ -286,6 +288,7 @@
 *Book 4 → Kneel Diamonds — Reviewed ✓*
 *Book 4 → Cars 'R Us — Reviewed ✓*
 *Book 4 → Pioneer Projects — Reviewed ✓*
+*Book 4 → Advanced Projects — Reviewed ✓*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -302,6 +305,7 @@
 | HTTP | `request body` | Data sent to the server in a POST request, typically serialized as a JSON string | Book 4 → Indiana Jeans → Your own API with JSON-Server | Books 4–5 |
 | HTTP | `query parameter` | A key-value pair appended to a URL after `?` to filter or expand a response (e.g., `?_expand=socioLocation`) | Book 4 → Indiana Jeans → Displaying Submissions with .map() | Books 4–5 |
 | HTTP | `_expand` | A JSON Server query parameter that tells the server to expand a foreign key field into its full related object (e.g., `?_expand=metal` adds the matched metal object to each order) | Book 4 → Kneel Diamonds → Displaying Prices for Orders | — |
+| HTTP | `third-party API` | A publicly available API provided by an external service (not your own JSON-Server) that returns real-world data | Book 4 → Advanced: Holiday Road | Book 5 |
 | HTTP | `PUT` / `PATCH` | HTTP methods for updating existing data on an API | Book 5 → Honey Rae's → Employee Edit | Book 5 |
 | HTTP | `DELETE` | An HTTP method for removing data from an API | Book 5 → Chuckle Checklist → Rejected Chuckles | Book 5 |
 | Fetch & Promises | `fetch()` | The browser function for making HTTP requests | Book 4 → Fox y Dog → First We "Fetch" | Books 4–5 |
@@ -399,6 +403,11 @@
 | Pioneer: The Big Company | | | | | ✓✓✓ | ✓ | | |
 | Pioneer: Bouquet | | | | | ✓✓✓ | ✓ | | |
 | Pioneer: Honest Abe | | | | | ✓✓✓ | ✓✓ | | |
+| Advanced: Pen Pal Society | | | | ✓ | ✓✓ | ✓✓ | | |
+| Advanced: Giffygram | | | | ✓ | ✓✓ | ✓✓ | ✓✓ | |
+| Advanced: Truncheons & Flagons | | | | ✓✓ | ✓✓ | ✓ | ✓✓ | |
+| Advanced: Holiday Road | | | | ✓ | ✓✓ | ✓✓✓ | | |
+| Group Project: Exomine | | | | ✓ | ✓✓✓ | ✓✓ | ✓✓ | |
 | Honey Rae's Repair Shop | | | ✓ | | ✓✓ | ✓✓ | | ✓✓✓ |
 | Chuckle Checklist | | | | | ✓ | ✓ | | ✓✓✓ |
 | Learning Moments | | | | | ✓✓ | ✓ | | ✓✓✓ |

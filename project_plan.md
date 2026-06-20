@@ -175,8 +175,8 @@ Work **one chapter at a time** per session:
 | 14 ✓ | Restructure Book 4 → Kneel Diamonds (exercises 14–22) |
 | 15 ✓ | Restructure Book 4 → Cars 'R Us (exercises 23–28), self-assessment, explorers |
 | 16 ✓ | Restructure Book 4 → Pioneer projects (exercises 35–50) |
-| 17 (next) | Restructure Book 4 → Advanced projects and group project (exercises 51–55) |
-| 18 | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
+| 17 ✓ | Restructure Book 4 → Advanced projects and group project (exercises 51–55) |
+| 18 (next) | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | — | **Phase 2: Concept Map Refactor** — resolve all ⚠️ flagged issues, audit Dynamite Duo concept map (skipped in Session 6), verify First Introduced accuracy across all chapters |

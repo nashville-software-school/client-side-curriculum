@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_holiday_road",
+    id: "book_4_advanced_holiday_road",
     title: "Holiday Road",
-    previousChapterId: "kneel_diamonds_truncheons_and_flagons",
-    nextChapterId: "kneel_diamonds_group_project_exomine",
+    previousChapterId: "book_4_advanced_truncheons_and_flagons",
+    nextChapterId: "book_4_group_project_exomine",
     content,
 }

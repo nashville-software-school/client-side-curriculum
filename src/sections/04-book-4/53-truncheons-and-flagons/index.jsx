@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "kneel_diamonds_truncheons_and_flagons",
+    id: "book_4_advanced_truncheons_and_flagons",
     title: "Truncheons & Flagons",
-    previousChapterId: "kneel_diamonds_giffygram",
-    nextChapterId: "kneel_diamonds_holiday_road",
+    previousChapterId: "book_4_advanced_giffygram",
+    nextChapterId: "book_4_advanced_holiday_road",
     content,
 }
