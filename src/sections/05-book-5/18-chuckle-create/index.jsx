@@ -1,9 +1,9 @@
 import content from "./index.md?raw";
 
 export default {
-    id: "honey_rae_repairs_chuckle_create",
+    id: "book_5_chuckle_create",
     title: "New Chuckles",
-    previousChapterId: "honey_rae_repairs_chuckle_setup",
-    nextChapterId: "honey_rae_repairs_chuckle_read",
+    previousChapterId: "book_5_chuckle_setup",
+    nextChapterId: "book_5_chuckle_read",
     content,
 }

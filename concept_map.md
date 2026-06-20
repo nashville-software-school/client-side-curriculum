@@ -349,6 +349,7 @@
 ## Domain: React
 
 *Book 5 → Honey Rae's Repair Shop — Reviewed ✓*
+*Book 5 → Chuckle Checklist — Reviewed ✓*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -358,6 +359,7 @@
 | React Fundamentals | `Fragment` | `<>...</>` syntax that groups elements without adding an extra DOM node | Book 5 → Honey Rae's → Your First Component | All Book 5 |
 | React Fundamentals | `props` | Data passed from a parent component to a child component | Book 5 → Honey Rae's → Ticket Assignee | All Book 5 |
 | React Fundamentals | `prop drilling` | Passing props through multiple component layers to reach a deeply nested child | Book 5 → Honey Rae's → Claim vs Close | — |
+| React Fundamentals | `controlled input` | An input whose `value` attribute is tied to state, so the displayed value always matches the current state and can be reset by updating state | Book 5 → Chuckle Checklist → New Chuckles | Book 5 |
 | React Fundamentals | `re-render` | When React automatically updates the UI because state has changed | Book 5 → Honey Rae's → Your First Component | All Book 5 |
 | React Fundamentals | `key prop` | A required prop on each element in a `.map()` list that helps React track which items changed | Book 5 → Honey Rae's → List All Tickets | All Book 5 |
 | React Hooks | `hook` | A special React function that lets a component tap into React features | Book 5 → Honey Rae's → Your First Component | All Book 5 |
