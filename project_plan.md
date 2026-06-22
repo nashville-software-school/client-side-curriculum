@@ -179,8 +179,12 @@ Work **one chapter at a time** per session:
 | 18 ✓ | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 ✓ | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
-| — | **Phase 2: Concept Map Refactor** — resolve all ⚠️ flagged issues, audit Dynamite Duo concept map (skipped in Session 6), verify First Introduced accuracy across all chapters |
-| — | **Phase 3: Navigation UX** — see open questions below; requires team discussion before nss-core changes |
+| — | **Phase 2: Navigation UX** — team decision required (Path A1 / A2 / B); see Phase 2 detail below |
+| — | **Phase 3: Curriculum Scripts** — audit and repair `course-bash-scripts` repo; document findings in this plan |
+| — | **Phase 4: Broken Links** — audit and fix all internal and external links across all exercises |
+| — | **Phase 5: General Errors** — typos, broken code examples, outdated syntax |
+| — | **Phase 6: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
+| — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 6 |
 
 ---
 
@@ -201,82 +205,175 @@ Work **one chapter at a time** per session:
 
 ## Open Questions / Future Decisions
 
-- Should Explorer and Pioneer chapters appear in the primary navigation alongside core chapters, or in a separate "challenge" track?
 - What is the skill-scoring schema for the gamification model?
-- Should the concept map drive which exercises need content review/updates (e.g., to ensure the vocabulary term is actually present in the text before tagging it)?
 - What does an `<Analogy>` tag look like in JSX, and what data does it pass to the API (term, book/chapter context, student profile)?
-- **Explorer/Pioneer `previousChapterId` navigation:** Should the first exercise of an Explorer or Pioneer chapter have its `previousChapterId` point back to the last exercise of the original chapter it expands (e.g., Explorer: Queen Bee exercise 1 → `book_1_queen_bee_tribute_by_queen`), or should it continue chaining linearly through the Self-Assessment? The linear chain is simpler but severs the conceptual connection between the Explorer and its parent chapter.
+- **Explorer/Pioneer `previousChapterId` navigation:** Should the first exercise of an Explorer or Pioneer chapter point back to the last exercise of the chapter it expands, or continue chaining linearly through the Self-Assessment?
+- Should Explorer and Pioneer chapters appear in the primary nav alongside core chapters, or in a separate "challenge" track? (Deferred to Phase 2 decision.)
+- Should the concept map drive which exercises need content review? (Relevant to Phase 7.)
 
 ---
 
-## Phase 3: Navigation UX
+## Phase 2: Navigation UX
 
-*Background: nss-core's `Navigation` component renders one flat ordered list of chapters per book — Book 1 has ~32 nav entries with no sub-grouping. There is no chapter-group or chapter-type concept in the current data model or nss-core UI. Two change paths are available; the team must decide which to pursue.*
+*Background: nss-core's `Navigation` component renders one flat ordered list of chapters per book — Book 1 has ~32 nav entries with no sub-grouping. There is no chapter-group or chapter-type concept in the current data model or nss-core UI. The team must choose a path before any implementation begins.*
 
 ### Problems to Solve
 
-1. **No chapter grouping** — within each book, Queen Bee, Surf Shop, Björn, Self-Assessment, Explorers, and Group Project all appear as one undifferentiated list. Students cannot orient themselves.
+1. **No chapter grouping** — within each book, Queen Bee, Surf Shop, Björn, Self-Assessment, Explorers, and Group Project appear as one undifferentiated list. Students cannot orient themselves.
 2. **No chapter type distinction** — no visual signal distinguishes a core exercise from a Self-Assessment, Explorer, Pioneer, or Group Project.
 3. **Book-boundary navigation** — `previousChapterId: null` on each book's first chapter means no prev/next link crosses book boundaries. Decide if cross-book navigation is desired.
 
----
-
 ### Path A — Index Pages (no nss-core changes required)
 
-Add a single "index" chapter at the head of each chapter group. The index page's markdown content describes the group and links to every exercise within it. Two sub-variants:
+Add a single "index" chapter at the head of each chapter group whose markdown content describes the group and links to every exercise within it.
 
 **Path A1 — Index as orientation (exercises stay in nav)**
-- ~20 new chapter files added (one per chapter group across all books)
-- No exercise files touched
-- Nav grows slightly (e.g., Book 1: ~32 → ~40 items) but each group now has a named landing page
-- Students can navigate directly to any exercise from the nav OR go through the index page
+- ~20 new chapter files (one per chapter group across all books); no existing exercise files touched
+- Nav grows slightly (e.g., Book 1: ~32 → ~40 items) but each group has a named landing page
 - Links in index pages trigger a full page reload (nss-core renders markdown as static HTML — no React Router interception)
-- **Effort:** low (~20 new files, no existing file changes)
-- **Does not solve:** exercises still run together in the nav; no type distinction
+- **Effort:** low | **Does not solve:** exercises still run together in the nav; no type distinction
 
 **Path A2 — Index as gateway (exercises hidden from nav)**
-- Add `chapterGroup` field to each exercise's `index.jsx` (e.g., `chapterGroup: "book_1_queen_bee"`)
-- Update each book's `index.js` by one line: `sectionId: chapter.default.chapterGroup || config.id`
-- Exercises whose `sectionId` doesn't match a registered nav section disappear from the sidebar
-- Book 1 nav shrinks from ~32 items to ~8 (one index page per group)
-- Students navigate exercises via prev/next buttons only; index pages link to exercises
-- **Known UX regressions:**
-  - When a student is on an exercise page, no nav item is highlighted as active
-  - Nav progress bar per book counts only index page completions, not individual exercises
-- **Effort:** large — `chapterGroup` must be added to ~175 exercise files; ~20 new index files
-- **Resolves:** grouping problem; does not resolve type distinction without additional `type` field work
-
----
+- Add `chapterGroup` field to each exercise's `index.jsx`; update each book's `index.js` by one line to use it as `sectionId`
+- Exercises whose `sectionId` is not a registered nav section disappear from the sidebar; Book 1 nav shrinks from ~32 to ~8 items
+- Students navigate exercises via prev/next only; index pages link into them
+- **Known UX regressions:** no active nav highlight when on an exercise; nav progress bar counts index completions only
+- **Effort:** large (~175 exercise files + ~20 index files) | **Resolves:** grouping; type distinction requires additional `type` field work
 
 ### Path B — nss-core changes
 
-Modify `@nss-workshops/nss-core` to support chapter groups and/or chapter types natively, then consume the updated package here.
+Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields natively, publish a new version, then consume it here.
 
-**What nss-core would need:**
-- `chapterGroup` field on chapters → nav renders sub-headings or collapsible sub-sections within each book
-- `type` field on chapters (`"core"`, `"explorer"`, `"assessment"`, `"group_project"`, `"pioneer"`, `"capstone"`) → nav renders type badges/icons; optional chapters could move to a separate "Optional Work" nav section (nss-core already supports a `required` split on sections)
-
-**Advantages over Path A:**
-- Active nav state works correctly for all chapters (no regression)
-- Progress tracking per exercise is preserved in the nav
-- Type badges solve the assessment/explorer/group-project distinction cleanly
-- Clean separation of concerns: data model defines structure; nss-core renders it
-
-**Effort:** requires a new nss-core release before this repo can consume it; two-repo coordination
-
----
+- `chapterGroup` → nav renders sub-headings or collapsible sub-sections per book
+- `type` (`"core"`, `"explorer"`, `"assessment"`, `"group_project"`, `"pioneer"`, `"capstone"`) → type badges/icons in nav; optional chapters can move to the existing "Optional Work" nav section
+- No UX regressions; active state and progress tracking preserved
+- **Effort:** two-repo coordination; requires a new nss-core release before this repo can consume it
 
 ### Team Decision Needed
 
 | Question | Options |
 |----------|---------|
 | Which path? | A1 / A2 / B |
-| Chapter type distinction | Badges/icons in nav, separate optional section, or deferred |
-| Cross-book prev/next | Yes (nss-core fix to `rF`) / No (keep book boundaries as hard stops) |
-| Data fields to add to exercise files | `chapterGroup`, `type`, `optional` — decide before any data work starts |
-
----
+| Chapter type distinction | Badges/icons, separate optional section, or deferred |
+| Cross-book prev/next | Yes (nss-core `rF` fix) / No (hard book boundaries) |
+| Data fields to add | `chapterGroup`, `type`, `optional` — decide before any data work starts |
 
 ### Known Bug Fixed (Session 20)
 
-- **Book 1 was missing from the nav.** Root cause: nss-core's `rF` function finds the head of each section's chapter chain by looking for `!previousChapterId`. Book 1's first chapter had `previousChapterId: "setup_adhd_strategies"` (a cross-section reference), so `rF` returned an empty list and Book 1 disappeared. **Fixed:** set `previousChapterId: null` on `01-book-1/08-queen-intro/index.jsx`. Books 2–5 were unaffected because their first chapters already had `previousChapterId: null`.
+**Book 1 was missing from the nav.** nss-core's `rF` function finds the head of each section's chapter chain by looking for `!previousChapterId`. Book 1's first chapter had `previousChapterId: "setup_adhd_strategies"` (cross-section), so `rF` returned an empty list. **Fixed:** set `previousChapterId: null` on `01-book-1/08-queen-intro/index.jsx`.
+
+---
+
+## Phase 3: Curriculum Scripts
+
+*Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown content — students run them to scaffold project files, seed databases, and configure their environments. Problems: scripts are outdated, broken on some setups, and inconsistent across Mac/Windows/Linux.*
+
+*This phase is in a separate repo. Work here should be coordinated with any content changes in Phases 4–6 that reference or depend on those scripts.*
+
+### Problems to Solve
+
+1. **Broken scripts** — some scripts fail on current OS versions or shell environments
+2. **Machine inconsistency** — scripts that work on Mac fail on Windows (WSL), or vice versa
+3. **Outdated scaffolding** — scripts create file structures or seed data that no longer match the exercise expectations
+4. **Undocumented dependencies** — scripts assume tools (e.g., specific Node versions, Python, curl) are already installed without checking
+
+### Work to Do
+
+- Audit every script referenced in exercise markdown across all 5 books
+- Document which exercises reference which scripts (build a cross-reference map)
+- Test each script on Mac and Windows/WSL; log failures
+- Rewrite or replace broken scripts; add OS detection where behavior differs
+- Verify that scaffolded output matches what the exercise expects students to start with
+- Coordinate with exercise content: if a script changes what it generates, the exercise instructions may need updating (Phase 5)
+
+---
+
+## Phase 4: Broken Links
+
+*Scope: all exercise markdown files across all 5 books and Setup. Both internal links (references to other exercises within the curriculum) and external links (GitHub repos, documentation sites, tool download pages) need to be audited.*
+
+### Categories
+
+- **Internal links** — references like `[See the ERD chapter](./DD_ERD.md)` that use old file paths or chapter names that no longer exist after Phase 1 restructuring
+- **External links** — links to documentation, GitHub repos, download pages, and other external resources that may have moved, been deprecated, or gone offline
+- **Image references** — `<img src="...">` and markdown image syntax pointing to files that were moved or renamed
+
+### Work to Do
+
+- Build a script or use tooling to extract all links from all markdown files
+- Categorize: internal vs. external, broken vs. redirected vs. valid
+- Fix internal links to use current file paths and exercise IDs
+- For external links: update to current URLs, replace deprecated resources, or note where no replacement exists
+- Flag any links that require a content decision (e.g., a linked resource that no longer reflects current best practices)
+
+---
+
+## Phase 5: General Errors
+
+*Scope: all exercise markdown content across all 5 books and Setup. This is an editorial pass — finding and fixing errors that would confuse or block students.*
+
+### Categories
+
+- **Typos and grammar** — misspelled words, broken sentences, incorrect terminology
+- **Broken code examples** — code blocks that use outdated syntax, reference variables that don't exist, or won't run in the current environment
+- **Inconsistent naming** — exercises that refer to files, functions, or variables by names that don't match what was created in prior steps
+- **Outdated tool references** — instructions for tools or versions that have changed (e.g., deprecated npm packages, renamed CLI commands)
+- **Instruction drift** — step-by-step instructions that skip steps, assume context that hasn't been established, or contradict the preceding exercise
+
+### Work to Do
+
+- Read every exercise in order, within each book
+- Log errors by type and exercise ID
+- Fix errors that have a clear correct answer
+- Flag errors that require a curriculum design decision (e.g., whether to update an approach or remove the exercise)
+
+---
+
+## Phase 6: New Material Threads
+
+*Two parallel threads of new content to weave into the existing curriculum. These are additive — they do not replace existing exercises but expand them.*
+
+### Thread 1: LLM Integration
+
+Add an LLM-focused component to every book and chapter, teaching students to work effectively with AI tools as a learning accelerator — not a shortcut.
+
+**Goals:**
+- Students learn to prompt LLMs to explain concepts, not just generate code
+- Students learn to critically evaluate LLM output
+- Each chapter gets at least one LLM-specific callout, exercise, or sidebar
+
+**Open questions:**
+- What is the standard format? (A dedicated exercise per chapter? An inline callout? A recurring `<LLMThread>` component?)
+- Which LLM tool(s) are recommended? (Claude? ChatGPT? Tool-agnostic prompting?)
+- How do LLM exercises interact with the `<Analogy>` tag vision in the long-term roadmap?
+
+### Thread 2: Longhand React Hooks Scaffolding
+
+Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patterns, so that when students encounter `useState` and `useEffect` in Book 5 the ideas are already familiar.
+
+**Goals:**
+- Students arrive at Book 5 with an intuition for state, side effects, and derived values — even if they've never seen React
+- Each hook concept is foreshadowed in the book where it naturally appears in vanilla JS:
+  - `useState` → Books 1–3 (tracking values that change over time)
+  - `useEffect` → Book 4 (side effects triggered by data arrival / fetch)
+  - `useCallback` / `useMemo` → Book 4 (functions that depend on state)
+  - `useNavigate` / `useParams` → scaffolded via manual URL parsing concepts in Book 4
+
+**Open questions:**
+- Should foreshadowing be explicit ("You're doing what React calls state management") or implicit (same pattern, different vocabulary)?
+- Where exactly in each book does each hook concept map to existing exercises?
+- Does this require new exercises, or additions to existing ones?
+
+---
+
+## Phase 7: Concept Map Refactor
+
+*Deferred to last because Phases 3–6 will introduce new concepts, fix existing attributions, and add material that changes what terms need to be mapped. Running this phase before new material is stable guarantees re-work.*
+
+### Work to Do
+
+1. **Resolve all ⚠️ flagged issues** — there are currently 5 open flags in `concept_map.md` covering `default export`, `CSS Grid`, `filter`, `try/catch`, and `useCallback`
+2. **Audit Dynamite Duo** — concept map review was skipped in Session 6; Book 2 → Dynamite Duo is the only chapter marked *Pending* without a plan to revisit it
+3. **Incorporate new material** — add vocabulary terms introduced by Phase 6 (LLM concepts, React hook foreshadowing terms)
+4. **Verify First Introduced accuracy** — re-confirm all First Introduced attributions after Phases 4–5 may have moved or corrected content
+5. **Phase 2 follow-up** — if Phase 2 adds `type` or `chapterGroup` fields, ensure the concept map's coverage table is updated to reflect the new chapter types
