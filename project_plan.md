@@ -180,11 +180,11 @@ Work **one chapter at a time** per session:
 | 19 ✓ | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | — | **Phase 2: Navigation UX** — team decision required (Path A1 / A2 / B); see Phase 2 detail below |
-| — | **Phase 3: Curriculum Scripts** — audit and repair `course-bash-scripts` repo; document findings in this plan |
-| — | **Phase 4: Broken Links** — audit and fix all internal and external links across all exercises |
-| — | **Phase 5: General Errors** — typos, broken code examples, outdated syntax |
-| — | **Phase 6: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
-| — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 6 |
+| — | **Phase 3: Broken Links** — audit and fix all internal and external links across all exercises |
+| — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
+| — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
+| — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
+| — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
 
 ---
 
@@ -264,38 +264,14 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 3: Curriculum Scripts
+## Phase 3: Broken Links
 
-*Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown content — students run them to scaffold project files, seed databases, and configure their environments. Problems: scripts are outdated, broken on some setups, and inconsistent across Mac/Windows/Linux.*
-
-*This phase is in a separate repo. Work here should be coordinated with any content changes in Phases 4–6 that reference or depend on those scripts.*
-
-### Problems to Solve
-
-1. **Broken scripts** — some scripts fail on current OS versions or shell environments
-2. **Machine inconsistency** — scripts that work on Mac fail on Windows (WSL), or vice versa
-3. **Outdated scaffolding** — scripts create file structures or seed data that no longer match the exercise expectations
-4. **Undocumented dependencies** — scripts assume tools (e.g., specific Node versions, Python, curl) are already installed without checking
-
-### Work to Do
-
-- Audit every script referenced in exercise markdown across all 5 books
-- Document which exercises reference which scripts (build a cross-reference map)
-- Test each script on Mac and Windows/WSL; log failures
-- Rewrite or replace broken scripts; add OS detection where behavior differs
-- Verify that scaffolded output matches what the exercise expects students to start with
-- Coordinate with exercise content: if a script changes what it generates, the exercise instructions may need updating (Phase 5)
-
----
-
-## Phase 4: Broken Links
-
-*Scope: all exercise markdown files across all 5 books and Setup. Both internal links (references to other exercises within the curriculum) and external links (GitHub repos, documentation sites, tool download pages) need to be audited.*
+*Scope: all exercise markdown files across all 5 books and Setup. Both internal links (references to other exercises) and external links (GitHub repos, documentation sites, tool download pages) need to be audited.*
 
 ### Categories
 
 - **Internal links** — references like `[See the ERD chapter](./DD_ERD.md)` that use old file paths or chapter names that no longer exist after Phase 1 restructuring
-- **External links** — links to documentation, GitHub repos, download pages, and other external resources that may have moved, been deprecated, or gone offline
+- **External links** — links to documentation, GitHub repos, download pages, and other resources that may have moved, been deprecated, or gone offline
 - **Image references** — `<img src="...">` and markdown image syntax pointing to files that were moved or renamed
 
 ### Work to Do
@@ -308,7 +284,7 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 5: General Errors
+## Phase 4: General Errors
 
 *Scope: all exercise markdown content across all 5 books and Setup. This is an editorial pass — finding and fixing errors that would confuse or block students.*
 
@@ -329,9 +305,9 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 6: New Material Threads
+## Phase 5: New Material Threads
 
-*Two parallel threads of new content to weave into the existing curriculum. These are additive — they do not replace existing exercises but expand them.*
+*Two parallel threads of new content to weave into the existing curriculum. These are additive — they do not replace existing exercises but expand them. Phase 6 (Curriculum Scripts) follows this phase so scripts can be updated to reflect whatever scaffolding the new material requires.*
 
 ### Thread 1: LLM Integration
 
@@ -349,31 +325,65 @@ Add an LLM-focused component to every book and chapter, teaching students to wor
 
 ### Thread 2: Longhand React Hooks Scaffolding
 
-Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patterns, so that when students encounter `useState` and `useEffect` in Book 5 the ideas are already familiar.
+Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patterns, so that when students encounter hooks in Book 5 the ideas are already familiar. Not all hooks can be scaffolded before React — some are React-specific and will only appear in Book 5.
 
 **Goals:**
-- Students arrive at Book 5 with an intuition for state, side effects, and derived values — even if they've never seen React
-- Each hook concept is foreshadowed in the book where it naturally appears in vanilla JS:
-  - `useState` → Books 1–3 (tracking values that change over time)
-  - `useEffect` → Book 4 (side effects triggered by data arrival / fetch)
-  - `useCallback` / `useMemo` → Book 4 (functions that depend on state)
-  - `useNavigate` / `useParams` → scaffolded via manual URL parsing concepts in Book 4
+- Students arrive at Book 5 with an intuition for state, side effects, derived values, and DOM references
+- Foreshadowing is woven into existing chapters, not bolted on as separate exercises
+
+**Hook reference materials** (slide decks for each hook):
+
+| Hook | Pre-React? | Vanilla JS analogue | Google Slides |
+|------|-----------|---------------------|---------------|
+| `useState` | Yes — Books 1–3 | Tracking a value that changes over time | https://docs.google.com/presentation/d/1Dlx4UfswyfLYqB-GwTv_MzsKMEMuHZB7 |
+| `useEffect` | Yes — Book 4 | Side effect triggered by data arriving (fetch) | https://docs.google.com/presentation/d/1_QwsRQIoSEkrH1xpj6Vx878xqJ_kRIgW |
+| `useRef` | Yes — Books 2–3 | `document.querySelector()` / `getElementById()` | https://docs.google.com/presentation/d/1k68eMySuXwGheV3pKmcIZ9yKqd96yLON |
+| `useMemo` | Partial — Book 4 | A value computed from state, recalculated only when inputs change | https://docs.google.com/presentation/d/1XqqXyCpeUjV8NJcC4ve1lmW0vs_DsIxc |
+| `useCallback` | Partial — Book 4 | A function that depends on state, only recreated when state changes | https://docs.google.com/presentation/d/1nHg7CtWWLnpH-lCjqlnaCsR2AAiNiYd6 |
+| `useReducer` | React only | No clean vanilla JS analogue before components | https://docs.google.com/presentation/d/1-TwO23FdO2mq9TKjV8D6XCF11o0dUUIJ |
+| `useContext` | React only | Global state sharing requires the component model | https://docs.google.com/presentation/d/1GJv2sqDEcd_nioaBZFHWrbyzfEbO7WHW |
+| `React.memo` | React only | Component memoization has no pre-React equivalent | https://docs.google.com/presentation/d/1cqxZyJ9FjdSuDULQt86qQOGB8Sc-W3p7 |
+| `useTransition` | React only | React concurrent feature | https://docs.google.com/presentation/d/1OdnfuS3tRsgdKjPkHPewjQjUEnvbt-y9 |
+| `useDeferredValue` | React only | React concurrent feature | https://docs.google.com/presentation/d/1ygfnCuoUX1ubXYiCyDsLA5jSXeY8kZ8j |
 
 **Open questions:**
 - Should foreshadowing be explicit ("You're doing what React calls state management") or implicit (same pattern, different vocabulary)?
-- Where exactly in each book does each hook concept map to existing exercises?
+- Where exactly in each book does each pre-React hook concept map to existing exercises?
 - Does this require new exercises, or additions to existing ones?
+
+---
+
+## Phase 6: Curriculum Scripts
+
+*Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown — students run them to scaffold project files, seed databases, and configure their environments. This phase follows Phase 5 so that scripts can be updated to match whatever the new material requires, avoiding a second pass.*
+
+*Problems: scripts are outdated, broken on some setups, and inconsistent across Mac/Windows/Linux.*
+
+### Problems to Solve
+
+1. **Broken scripts** — some scripts fail on current OS versions or shell environments
+2. **Machine inconsistency** — scripts that work on Mac fail on Windows (WSL), or vice versa
+3. **Outdated scaffolding** — scripts create file structures or seed data that no longer match exercise expectations
+4. **Undocumented dependencies** — scripts assume tools (e.g., specific Node versions, Python, curl) are installed without checking
+
+### Work to Do
+
+- Audit every script referenced in exercise markdown across all 5 books (build a cross-reference map of exercise → script)
+- Test each script on Mac and Windows/WSL; log failures
+- Rewrite or replace broken scripts; add OS detection where behavior differs
+- Verify that scaffolded output matches what the exercise expects students to start with
+- If a script changes what it generates, update the exercise instructions in this repo accordingly
 
 ---
 
 ## Phase 7: Concept Map Refactor
 
-*Deferred to last because Phases 3–6 will introduce new concepts, fix existing attributions, and add material that changes what terms need to be mapped. Running this phase before new material is stable guarantees re-work.*
+*Deferred to last because Phases 3–5 will introduce new concepts, fix existing attributions, and add material that changes what terms need to be mapped. Running this phase before new material is stable guarantees re-work.*
 
 ### Work to Do
 
 1. **Resolve all ⚠️ flagged issues** — there are currently 5 open flags in `concept_map.md` covering `default export`, `CSS Grid`, `filter`, `try/catch`, and `useCallback`
 2. **Audit Dynamite Duo** — concept map review was skipped in Session 6; Book 2 → Dynamite Duo is the only chapter marked *Pending* without a plan to revisit it
-3. **Incorporate new material** — add vocabulary terms introduced by Phase 6 (LLM concepts, React hook foreshadowing terms)
-4. **Verify First Introduced accuracy** — re-confirm all First Introduced attributions after Phases 4–5 may have moved or corrected content
-5. **Phase 2 follow-up** — if Phase 2 adds `type` or `chapterGroup` fields, ensure the concept map's coverage table is updated to reflect the new chapter types
+3. **Incorporate new material** — add vocabulary terms introduced by Phase 5 (LLM concepts, React hook foreshadowing terms)
+4. **Verify First Introduced accuracy** — re-confirm all attributions after Phases 3–4 may have moved or corrected content
+5. **Phase 2 follow-up** — if Phase 2 adds `type` or `chapterGroup` fields, update the concept map's coverage table to reflect the new chapter types
