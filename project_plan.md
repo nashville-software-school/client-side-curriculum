@@ -351,6 +351,59 @@ Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patt
 - Where exactly in each book does each pre-React hook concept map to existing exercises?
 - Does this require new exercises, or additions to existing ones?
 
+### Thread 3: CS Theory Foreshadowing (OOP / SOLID / ACID)
+
+Introduce selected OOP pillars, SOLID principles, and ACID properties at the exercises where the pattern already exists naturally — so students arrive at Python/Django and C#/.NET with the vocabulary already partially formed. Concepts with no genuine client-side analog are left entirely to the server-side courses.
+
+**Goals:**
+- Name the concept at the point where students are already doing it
+- Give server-side instructors a shared vocabulary to build on
+- Keep additions lightweight — a sentence or callout, not a new exercise
+
+**Mapping — what gets introduced client-side:**
+
+| Concept | Type | Exercise |
+|---------|------|----------|
+| Encapsulation | OOP Pillar | Book 1 → Surf Shop → Just the Data / Just a Function |
+| Abstraction | OOP Pillar | Book 4 → Fox y Dog → First We "Fetch" |
+| Polymorphism | OOP Pillar | Book 4 → Kneel Diamonds → Building Options with Map |
+| Single Responsibility | SOLID | Book 1 → Surf Shop → Just the Data |
+| Interface Segregation | SOLID | Book 1 → Surf Shop → Just a Function |
+| Open/Closed | SOLID | Book 2 → Movie Majesty → The Main Algorithm |
+| Dependency Inversion | SOLID | Book 4 → Indiana Jeans → Your own API with JSON-Server |
+| Durability | ACID | Book 4 → Indiana Jeans → Saving Survey Submissions |
+
+**Deferred to server-side courses (Python/Django, C#/.NET):**
+- Inheritance, Liskov Substitution (OOP)
+- Atomicity, Consistency, Isolation (ACID)
+
+**Open questions:**
+- Should the callout be a named sidebar component (`<CSTheory>` tag) or inline prose?
+- Do these get their own concept map entries in Phase 7, or a separate theory section?
+
+### Thread 4: Testing Mindset
+
+Introduce testing as a practice starting in Book 1 by connecting it to what students already do — verifying output with `console.log`. Build the vocabulary and mental model progressively so that when students encounter automated tests and GitHub Actions in the dedicated testing infrastructure phase, none of it is foreign.
+
+**Goals:**
+- Students understand that verification is part of writing code, not a separate activity
+- Each book gets at least one explicit testing callout that names what they're doing and connects it to formal testing practice
+- Students arrive at the infrastructure phase having already internalized why tests exist
+
+**Progression through books:**
+
+| Book | Testing concept | What students already do |
+|------|----------------|--------------------------|
+| Book 1 | Manual verification / `console.log` as a test | Log return values to confirm functions work |
+| Book 2 | Expected vs. actual output | Inspect the DOM to verify rendered HTML matches data |
+| Book 3 | Testing state changes | Check that clicking/interacting produces the right state update |
+| Book 4 | Testing async behavior | Verify fetch returns the expected data before rendering |
+| Book 5 | Component-level verification | Confirm React state changes produce the correct UI |
+
+**Open questions:**
+- Should each book get a dedicated testing callout exercise, or inline additions to existing exercises?
+- What vocabulary gets introduced here vs. saved for the infrastructure phase? (e.g., `assertion`, `test suite`, `test runner`)
+
 ---
 
 ## Phase 6: Curriculum Scripts
@@ -376,7 +429,35 @@ Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patt
 
 ---
 
-## Phase 7: Concept Map Refactor
+## Phase 7: Testing Infrastructure
+
+*Scope: GitHub Actions CI/CD setup and test suite authoring for all core book chapters. This phase depends on Phase 6 (Curriculum Scripts) because GH Actions workflow files need to be scaffolded into student projects via the bash scripts. Thread 4 (Testing Mindset) in Phase 5 prepares students conceptually; this phase builds the actual hidden grading mechanism.*
+
+*Currently some assessments have tests — those are the starting reference point for format and tooling decisions.*
+
+### Goals
+
+- Tests run automatically when students push to GitHub — no student action required beyond normal git workflow
+- Tests are invisible as a grading mechanism; students experience them as feedback, not a quiz
+- Each core chapter has at least one test that verifies the primary concept was applied correctly
+
+### Work to Do
+
+1. **Tooling decision** — confirm test runner (Jest / Vitest), assertion style, and how test files are distributed to student repos
+2. **GH Actions workflow** — write the workflow YAML; coordinate with Phase 6 so bash scripts scaffold it into new projects
+3. **Test authoring** — write test suites for each core chapter, one book at a time, starting from Book 1
+4. **Calibration** — run tests against sample student solutions; adjust to avoid false positives/negatives
+5. **Failure messaging** — ensure test output gives students useful feedback, not just pass/fail
+
+### Open Questions
+
+- Are tests scoped per exercise, per chapter, or per book?
+- Do students see test output in the terminal, in GitHub Actions UI, or surfaced back into the platform?
+- How does test scoring connect to the gamification/skill-tree long-term vision?
+
+---
+
+## Phase 8: Concept Map Refactor
 
 *Deferred to last because Phases 3–5 will introduce new concepts, fix existing attributions, and add material that changes what terms need to be mapped. Running this phase before new material is stable guarantees re-work.*
 
@@ -387,3 +468,19 @@ Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patt
 3. **Incorporate new material** — add vocabulary terms introduced by Phase 5 (LLM concepts, React hook foreshadowing terms)
 4. **Verify First Introduced accuracy** — re-confirm all attributions after Phases 3–4 may have moved or corrected content
 5. **Phase 2 follow-up** — if Phase 2 adds `type` or `chapterGroup` fields, update the concept map's coverage table to reflect the new chapter types
+
+---
+
+## Phase 9: Analogy Tag Refactor
+
+*Scope: all exercise files that introduce vocabulary terms added or moved during Phases 5–8 — specifically new terms from Thread 2 (React hook foreshadowing), Thread 3 (CS theory foreshadowing), Thread 4 (testing mindset), and any terms whose First Introduced attribution changed during Phase 8. The `<Analogy>` component is being developed in parallel as a separate project and is expected to be available before this phase runs.*
+
+*This phase does not tag the entire curriculum — only the net-new terms from Phase 5 that weren't in the original content. A full curriculum-wide Analogy pass is a separate future effort.*
+
+### Work to Do
+
+1. Pull the list of new/moved terms from Phase 7's concept map final state
+2. For each term, locate its First Introduced exercise file
+3. Wrap the vocabulary term's first appearance with `<Analogy term="..." />`
+4. Verify the component renders correctly in the platform for each tagged term
+5. Flag any terms where the natural sentence position makes tagging awkward — may need minor prose edits
