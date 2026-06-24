@@ -5,5 +5,7 @@ export default {
     title: "Creating Departments",
     previousChapterId: "book_4_pioneer_tbc_employees",
     nextChapterId: "book_4_pioneer_tbc_locations",
+    chapterGroup: "Pioneer Chapters",
+    type: "expert",
     content,
 }

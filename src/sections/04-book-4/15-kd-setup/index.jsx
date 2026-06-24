@@ -5,5 +5,6 @@ export default {
     title: "Project Setup",
     previousChapterId: "book_4_kneel_diamonds_narrative",
     nextChapterId: "book_4_kneel_diamonds_erd",
+    chapterGroup: "Kneel Diamonds",
     content,
 }

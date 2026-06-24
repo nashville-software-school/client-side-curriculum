@@ -5,5 +5,7 @@ export default {
     title: "Tours Consolidated",
     previousChapterId: "book_1_explorer_bjorn_module_madness",
     nextChapterId: "book_1_explorer_bjorn_array_find",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

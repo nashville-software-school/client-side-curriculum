@@ -5,5 +5,7 @@ export default {
     title: "Self-Assess Your Debugging Skills",
     previousChapterId: "book_1_bjorn_diagram",
     nextChapterId: "book_1_explorer_queen_bee_modular",
+    chapterGroup: "Self-Assessment",
+    type: "assessment",
     content,
 }

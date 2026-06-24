@@ -5,5 +5,6 @@ export default {
     title: "Composing All HTML",
     previousChapterId: "book_2_duo_html_element_reference",
     nextChapterId: "book_2_duo_dom_update",
+    chapterGroup: "Dynamite Duo",
     content,
 }

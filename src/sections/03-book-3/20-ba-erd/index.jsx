@@ -5,5 +5,6 @@ export default {
     title: "Brewed Awakenings ERD",
     previousChapterId: "book_3_brewed_awakenings_debugging",
     nextChapterId: "book_3_brewed_awakenings_product_click",
+    chapterGroup: "Brewed Awakenings",
     content,
 }

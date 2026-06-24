@@ -5,5 +5,6 @@ export default {
     title: "Dropdown Controls",
     previousChapterId: "book_4_cars_r_us_setup",
     nextChapterId: "book_4_cars_r_us_radio_buttons",
+    chapterGroup: "Cars 'R Us",
     content,
 }

@@ -5,5 +5,7 @@ export default {
     title: "Expanded Auto Offerings",
     previousChapterId: "book_4_explorer_kneel_diamonds_advanced_state",
     nextChapterId: "book_4_pioneer_tbc_employees",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

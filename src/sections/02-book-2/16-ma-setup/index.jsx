@@ -5,5 +5,6 @@ export default {
     title: "Project Setup",
     previousChapterId: "book_2_movie_majesty_card_layout",
     nextChapterId: "book_2_martins_aquarium_database",
+    chapterGroup: "Martin's Aquarium",
     content,
 }

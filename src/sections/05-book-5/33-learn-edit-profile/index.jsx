@@ -5,5 +5,6 @@ export default {
     title: "Edit Profile",
     previousChapterId: "book_5_learn_view_profile",
     nextChapterId: "book_5_explorer_deploy_api",
+    chapterGroup: "Learning Moments",
     content,
 }

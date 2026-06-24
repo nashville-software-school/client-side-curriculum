@@ -5,5 +5,6 @@ export default {
     title: "Displaying Prices for Orders",
     previousChapterId: "book_4_kneel_diamonds_custom_event",
     nextChapterId: "book_4_cars_r_us_setup",
+    chapterGroup: "Kneel Diamonds",
     content,
 }

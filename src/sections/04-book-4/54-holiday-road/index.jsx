@@ -5,5 +5,7 @@ export default {
     title: "Holiday Road",
     previousChapterId: "book_4_advanced_truncheons_and_flagons",
     nextChapterId: "book_4_group_project_exomine",
+    chapterGroup: "Advanced Projects",
+    type: "advanced",
     content,
 }

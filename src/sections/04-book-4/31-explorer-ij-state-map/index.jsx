@@ -5,5 +5,7 @@ export default {
     title: "Replace Object With Map",
     previousChapterId: "book_4_explorer_indiana_jeans_more_inputs",
     nextChapterId: "book_4_explorer_kneel_diamonds_earrings",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

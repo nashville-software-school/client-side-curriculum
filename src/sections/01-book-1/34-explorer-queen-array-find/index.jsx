@@ -5,5 +5,7 @@ export default {
     title: "Finding Tribute",
     previousChapterId: "book_1_explorer_queen_bee_database",
     nextChapterId: "book_1_explorer_surf_shop_modular",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

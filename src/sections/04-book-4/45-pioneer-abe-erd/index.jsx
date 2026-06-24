@@ -5,5 +5,7 @@ export default {
     title: "Honest Abe ERD",
     previousChapterId: "book_4_pioneer_bouquet_normalize",
     nextChapterId: "book_4_pioneer_abe_politicians",
+    chapterGroup: "Pioneer Chapters",
+    type: "expert",
     content,
 }

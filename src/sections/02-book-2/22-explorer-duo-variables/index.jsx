@@ -5,5 +5,7 @@ export default {
     title: "Are you primitive?",
     previousChapterId: "book_2_self_assessment",
     nextChapterId: "book_2_explorer_duo_copies",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Cars 'R Us Data and ERD",
     previousChapterId: "book_4_kneel_diamonds_order_price",
     nextChapterId: "book_4_cars_r_us_select_elements",
+    chapterGroup: "Cars 'R Us",
     content,
 }

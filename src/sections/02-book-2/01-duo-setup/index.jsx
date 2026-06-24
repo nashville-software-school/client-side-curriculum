@@ -5,5 +5,6 @@ export default {
     title: "Project Setup",
     previousChapterId: null,
     nextChapterId: "book_2_duo_dev_tools_intro",
+    chapterGroup: "Dynamite Duo",
     content,
 }

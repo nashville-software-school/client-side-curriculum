@@ -5,5 +5,6 @@ export default {
     title: "Repair API",
     previousChapterId: "book_5_honey_rae_first_component",
     nextChapterId: "book_5_honey_rae_wireframe",
+    chapterGroup: "Honey Rae's Repair Shop",
     content,
 }

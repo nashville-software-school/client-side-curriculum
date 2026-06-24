@@ -5,5 +5,6 @@ export default {
     title: "Displaying Submissions with .map()",
     previousChapterId: "book_4_indiana_jeans_permanent_state",
     nextChapterId: "book_4_indiana_jeans_custom_event",
+    chapterGroup: "Indiana Jeans",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Saving Survey Submissions",
     previousChapterId: "book_4_indiana_jeans_transient_state",
     nextChapterId: "book_4_indiana_jeans_submissions_component",
+    chapterGroup: "Indiana Jeans",
     content,
 }

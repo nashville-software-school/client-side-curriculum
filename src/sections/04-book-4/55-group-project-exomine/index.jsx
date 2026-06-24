@@ -5,5 +5,7 @@ export default {
     title: "Exomine",
     previousChapterId: "book_4_advanced_holiday_road",
     nextChapterId: null,
+    chapterGroup: "Group Project",
+    type: "group-project",
     content,
 }

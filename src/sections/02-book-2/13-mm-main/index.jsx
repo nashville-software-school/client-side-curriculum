@@ -5,5 +5,6 @@ export default {
     title: "The Main Algorithm",
     previousChapterId: "book_2_movie_majesty_render",
     nextChapterId: "book_2_movie_majesty_card_style",
+    chapterGroup: "Movie Majesty",
     content,
 }

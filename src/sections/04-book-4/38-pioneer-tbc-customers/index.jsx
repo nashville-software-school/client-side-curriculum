@@ -5,5 +5,7 @@ export default {
     title: "Bigger Customers",
     previousChapterId: "book_4_pioneer_tbc_locations",
     nextChapterId: "book_4_pioneer_tbc_customer_report",
+    chapterGroup: "Pioneer Chapters",
+    type: "expert",
     content,
 }

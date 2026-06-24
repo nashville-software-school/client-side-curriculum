@@ -5,5 +5,6 @@ export default {
     title: "All Posts",
     previousChapterId: "book_5_learn_wireframe",
     nextChapterId: "book_5_learn_filter",
+    chapterGroup: "Learning Moments",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Shipping Ship Hauler",
     previousChapterId: "book_3_shipping_hauler_cargo",
     nextChapterId: "book_3_shipping_docks",
+    chapterGroup: "Shipping Ship Ships",
     content,
 }

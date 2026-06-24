@@ -5,5 +5,6 @@ export default {
     title: "Price Quotes",
     previousChapterId: "book_4_cars_r_us_showing_updated_state",
     nextChapterId: "book_4_self_assessment",
+    chapterGroup: "Cars 'R Us",
     content,
 }

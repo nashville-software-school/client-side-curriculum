@@ -5,5 +5,6 @@ export default {
     title: "Claim vs Close",
     previousChapterId: "book_5_honey_rae_cust_details",
     nextChapterId: "book_5_honey_rae_employee_edit",
+    chapterGroup: "Honey Rae's Repair Shop",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Kneel Diamonds ERD",
     previousChapterId: "book_4_kneel_diamonds_setup",
     nextChapterId: "book_4_kneel_diamonds_radio_buttons",
+    chapterGroup: "Kneel Diamonds",
     content,
 }

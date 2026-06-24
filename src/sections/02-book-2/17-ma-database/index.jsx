@@ -5,5 +5,6 @@ export default {
     title: "Generating Fish HTML",
     previousChapterId: "book_2_martins_aquarium_setup",
     nextChapterId: "book_2_martins_aquarium_location_tips",
+    chapterGroup: "Martin's Aquarium",
     content,
 }

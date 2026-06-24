@@ -5,5 +5,6 @@ export default {
     title: "First We \"Fetch\"",
     previousChapterId: "book_4_fox_y_dog_setup",
     nextChapterId: "book_4_fox_y_dog_intro_to_then",
+    chapterGroup: "Fox y Dog",
     content,
 }

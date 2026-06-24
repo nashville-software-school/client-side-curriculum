@@ -5,5 +5,6 @@ export default {
     title: "Visualizing Data and Relationships",
     previousChapterId: "book_3_deshawn_debugging",
     nextChapterId: "book_3_deshawn_add_state_to_dom",
+    chapterGroup: "DeShawn's Dog Walking",
     content,
 }

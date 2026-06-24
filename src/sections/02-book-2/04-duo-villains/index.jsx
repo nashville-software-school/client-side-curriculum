@@ -5,5 +5,6 @@ export default {
     title: "Defining Villains",
     previousChapterId: "book_2_duo_heroes",
     nextChapterId: "book_2_duo_html_element_reference",
+    chapterGroup: "Dynamite Duo",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Trail Tour Prices",
     previousChapterId: "book_1_bjorn_rivers",
     nextChapterId: "book_1_bjorn_river_price_ranges",
+    chapterGroup: "Björn's Wilderness Adventures",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Card Styles",
     previousChapterId: "book_2_movie_majesty_main",
     nextChapterId: "book_2_movie_majesty_card_layout",
+    chapterGroup: "Movie Majesty",
     content,
 }

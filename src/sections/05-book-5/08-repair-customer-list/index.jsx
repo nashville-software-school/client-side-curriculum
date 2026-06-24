@@ -5,5 +5,6 @@ export default {
     title: "Customer List",
     previousChapterId: "book_5_honey_rae_search_tickets",
     nextChapterId: "book_5_honey_rae_employee_list",
+    chapterGroup: "Honey Rae's Repair Shop",
     content,
 }

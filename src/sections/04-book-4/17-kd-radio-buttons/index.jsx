@@ -5,5 +5,6 @@ export default {
     title: "Displaying Jewelry Options",
     previousChapterId: "book_4_kneel_diamonds_erd",
     nextChapterId: "book_4_kneel_diamonds_map_method_intro",
+    chapterGroup: "Kneel Diamonds",
     content,
 }

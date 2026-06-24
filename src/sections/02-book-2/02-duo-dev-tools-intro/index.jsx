@@ -5,5 +5,6 @@ export default {
     title: "Introduction to Developer Tools",
     previousChapterId: "book_2_duo_setup",
     nextChapterId: "book_2_duo_heroes",
+    chapterGroup: "Dynamite Duo",
     content,
 }

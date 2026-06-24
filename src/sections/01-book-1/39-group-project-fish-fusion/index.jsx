@@ -5,5 +5,7 @@ export default {
     title: "Fish Fusion",
     previousChapterId: "book_1_explorer_bjorn_array_find",
     nextChapterId: null,
+    chapterGroup: "Group Project",
+    type: "group-project",
     content,
 }

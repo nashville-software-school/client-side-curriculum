@@ -179,7 +179,8 @@ Work **one chapter at a time** per session:
 | 18 ✓ | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 ✓ | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
-| — | **Phase 2: Navigation UX** — team decision required (Path A1 / A2 / B); see Phase 2 detail below |
+| ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
+| — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
 | — | **Phase 3: Broken Links** — audit and fix all internal and external links across all exercises |
 | — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
@@ -213,7 +214,30 @@ Work **one chapter at a time** per session:
 
 ---
 
-## Phase 2: Navigation UX
+## Phase 2: Navigation UX ◑
+
+### Where We Stopped (2026-06-23)
+
+**Completed:**
+- Team chose **Path B** — `nss-core` changes (Greg completed this externally on the platform repo)
+- `nss-core` now supports two new optional fields on chapter data: `chapterGroup: string` and `type: string`
+- All 173 chapter `index.jsx` files across Books 1–5 updated with the correct `chapterGroup` and `type` values per the `nav-refactor-context.md` mapping
+- Dev server running at `http://localhost:5174/client-side-curriculum/` pointed at the local platform build via `npm link @nss-workshops/nss-core`
+
+**Remaining before Phase 2 is fully closed:**
+- Cross-course regression testing — verify the new `nss-core` branch doesn't break any existing courses
+- Once testing passes: publish the new `nss-core` version and `npm unlink`/`npm install` in this repo
+- Fix the hardcoded chapter IDs in `IntroPage.jsx` and `IntroRedirect` (`/what-is-algorithm`, `/github-account`) — these don't exist in this curriculum and will 404 for any unauthenticated or first-time visitor
+
+**To restore the published package when done testing:**
+```sh
+# In this repo
+npm unlink @nss-workshops/nss-core && npm install
+# In platform repo
+npm unlink
+```
+
+---
 
 *Background: nss-core's `Navigation` component renders one flat ordered list of chapters per book — Book 1 has ~32 nav entries with no sub-grouping. There is no chapter-group or chapter-type concept in the current data model or nss-core UI. The team must choose a path before any implementation begins.*
 
@@ -261,6 +285,40 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 ### Known Bug Fixed (Session 20)
 
 **Book 1 was missing from the nav.** nss-core's `rF` function finds the head of each section's chapter chain by looking for `!previousChapterId`. Book 1's first chapter had `previousChapterId: "setup_adhd_strategies"` (cross-section), so `rF` returned an empty list. **Fixed:** set `previousChapterId: null` on `01-book-1/08-queen-intro/index.jsx`.
+
+---
+
+## Phase 2b: Course Landing Page
+
+*Motivation: long course repositories like this one have a meaningful README that serves as the student-facing introduction to the course — its goals, structure, and what students will build. Currently the platform's intro page is a generic animated screen with a "Start Learning!" button and no course-specific content. Surfacing the README as the actual landing page makes the first impression intentional and course-specific.*
+
+### What Needs to Happen
+
+**Platform changes (`@nss-workshops/nss-core`) — requires team decision:**
+
+1. **`Course.jsx`** — add an optional `introContent` prop (raw markdown string); pass it to `<IntroPage />`.
+2. **`IntroPage.jsx`** — accept a `content` prop; render it as markdown using the same renderer used in `Chapter.jsx`. Decide whether to keep the existing header/button UI above the content or replace it entirely.
+3. **`IntroRedirect` / `IntroPage` navigation** — `IntroRedirect` currently hardcodes `/what-is-algorithm` and `/github-account` as chapter destinations. These don't exist in this curriculum. Fix to navigate to the first chapter in the first section (or accept a `firstChapterId` prop from `Course`).
+
+**Curriculum change (this repo — trivial once platform is updated):**
+
+- **`src/App.jsx`** — import `README.md` as a raw string and pass it as `introContent` to `<Course />`:
+  ```jsx
+  import introContent from '../README.md?raw'
+  // ...
+  <Course chapters={chapters} config={config} nav={sections} introContent={introContent} />
+  ```
+  The `?raw` import already works — every chapter exercise uses it.
+
+### Team Discussion Points
+
+| Question | Options |
+|----------|---------|
+| Where does the README land relative to GitHub auth? | Pre-auth only (static, no login required) / Post-auth only (inside the SPA) / Both (root always shows README; login button overlaid or linked) |
+| Keep the existing header/button above the README content? | Yes (README supplements) / No (README replaces) |
+| What triggers "I've seen the intro"? | Same cookie as today / A scroll-to-bottom + button / Always show |
+| Should `firstChapterId` be a prop on `Course`, or derived automatically? | Prop (explicit) / Derive from `chapters` (automatic) |
+| Does every course repo get its own README/landing, or is this opt-in? | Required / Optional via prop |
 
 ---
 
@@ -404,6 +462,20 @@ Introduce testing as a practice starting in Book 1 by connecting it to what stud
 - Should each book get a dedicated testing callout exercise, or inline additions to existing exercises?
 - What vocabulary gets introduced here vs. saved for the infrastructure phase? (e.g., `assertion`, `test suite`, `test runner`)
 
+### Thread 5: Tandem Pair Programming Integration
+
+[Tandem](https://github.com/Valerie-Freeman/tandem) is a pair programming interface for students. Each chapter project's parameters — roadmaps, PRDs, and session configuration — are defined in the chapter's scripts. Phase 5 should identify which chapters are good candidates for Tandem sessions and document what Tandem-specific context (goals, constraints, starting state) each chapter project needs to provide.
+
+**Goals:**
+- Identify which chapters and projects are well-suited for structured pair programming via Tandem
+- Determine what Tandem-facing metadata each chapter needs (roadmap, PRD, session goals)
+- Ensure exercise instructions introduce students to Tandem at the right point in the curriculum
+
+**Open questions:**
+- Which books/chapters get Tandem sessions — all chapters, or selected ones?
+- What does a Tandem-ready chapter look like from the student's perspective?
+- Does Tandem require a dedicated exercise introducing it, or is it woven into existing project setup steps?
+
 ---
 
 ## Phase 6: Curriculum Scripts
@@ -411,6 +483,8 @@ Introduce testing as a practice starting in Book 1 by connecting it to what stud
 *Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown — students run them to scaffold project files, seed databases, and configure their environments. This phase follows Phase 5 so that scripts can be updated to match whatever the new material requires, avoiding a second pass.*
 
 *Problems: scripts are outdated, broken on some setups, and inconsistent across Mac/Windows/Linux.*
+
+*Note: [Tandem](https://github.com/Valerie-Freeman/tandem) parameters (roadmaps, PRDs, session configuration) are set per chapter project in these scripts. When auditing and rewriting scripts in this phase, include the Tandem configuration for any chapter identified in Phase 5 Thread 5 as a Tandem candidate.*
 
 ### Problems to Solve
 

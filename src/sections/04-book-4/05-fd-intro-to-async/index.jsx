@@ -5,5 +5,6 @@ export default {
     title: "Awaiting Data",
     previousChapterId: "book_4_fox_y_dog_intro_to_then",
     nextChapterId: "book_4_indiana_jeans_setup",
+    chapterGroup: "Fox y Dog",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Adding State to HTML",
     previousChapterId: "book_3_deshawn_erd",
     nextChapterId: "book_3_deshawn_accessing_state",
+    chapterGroup: "DeShawn's Dog Walking",
     content,
 }

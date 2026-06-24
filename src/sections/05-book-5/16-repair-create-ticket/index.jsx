@@ -5,5 +5,6 @@ export default {
     title: "Create Ticket",
     previousChapterId: "book_5_honey_rae_customer_tickets",
     nextChapterId: "book_5_chuckle_setup",
+    chapterGroup: "Honey Rae's Repair Shop",
     content,
 }

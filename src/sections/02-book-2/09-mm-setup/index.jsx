@@ -5,5 +5,6 @@ export default {
     title: "Project Setup",
     previousChapterId: "book_2_duo_review",
     nextChapterId: "book_2_movie_majesty_data",
+    chapterGroup: "Movie Majesty",
     content,
 }

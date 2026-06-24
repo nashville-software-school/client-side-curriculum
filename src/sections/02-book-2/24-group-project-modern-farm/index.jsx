@@ -5,5 +5,7 @@ export default {
     title: "Modern Farm",
     previousChapterId: "book_2_explorer_duo_copies",
     nextChapterId: null,
+    chapterGroup: "Group Project",
+    type: "group-project",
     content,
 }

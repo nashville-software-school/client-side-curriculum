@@ -5,5 +5,6 @@ export default {
     title: "Auth & Routes",
     previousChapterId: "book_5_learn_filter",
     nextChapterId: "book_5_learn_post_details",
+    chapterGroup: "Learning Moments",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Modules and Components Setup",
     previousChapterId: "book_4_cars_r_us_select_elements",
     nextChapterId: "book_4_cars_r_us_change_listeners",
+    chapterGroup: "Cars 'R Us",
     content,
 }

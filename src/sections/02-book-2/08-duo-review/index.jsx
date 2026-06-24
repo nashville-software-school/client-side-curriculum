@@ -5,5 +5,6 @@ export default {
     title: "Review of Signal Flow",
     previousChapterId: "book_2_duo_dom_update",
     nextChapterId: "book_2_movie_majesty_setup",
+    chapterGroup: "Dynamite Duo",
     content,
 }

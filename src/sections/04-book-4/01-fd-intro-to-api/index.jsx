@@ -5,5 +5,6 @@ export default {
     title: "Introduction to APIs",
     previousChapterId: null,
     nextChapterId: "book_4_fox_y_dog_setup",
+    chapterGroup: "Fox y Dog",
     content,
 }

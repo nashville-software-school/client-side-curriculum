@@ -5,5 +5,6 @@ export default {
     title: "Reacting to State Changes",
     previousChapterId: "book_4_indiana_jeans_submissions_component",
     nextChapterId: "book_4_kneel_diamonds_narrative",
+    chapterGroup: "Indiana Jeans",
     content,
 }

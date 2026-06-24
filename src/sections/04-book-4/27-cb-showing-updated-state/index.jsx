@@ -5,5 +5,6 @@ export default {
     title: "Construction Queue",
     previousChapterId: "book_4_cars_r_us_change_listeners",
     nextChapterId: "book_4_cars_r_us_build_cost",
+    chapterGroup: "Cars 'R Us",
     content,
 }

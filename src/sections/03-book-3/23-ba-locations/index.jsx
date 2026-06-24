@@ -5,5 +5,6 @@ export default {
     title: "Expand the Business",
     previousChapterId: "book_3_brewed_awakenings_employee_click",
     nextChapterId: "book_3_self_assessment",
+    chapterGroup: "Brewed Awakenings",
     content,
 }

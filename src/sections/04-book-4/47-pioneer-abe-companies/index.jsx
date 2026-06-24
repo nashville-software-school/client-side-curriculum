@@ -5,5 +5,7 @@ export default {
     title: "Interested Companies",
     previousChapterId: "book_4_pioneer_abe_politicians",
     nextChapterId: "book_4_pioneer_abe_company_donations",
+    chapterGroup: "Pioneer Chapters",
+    type: "expert",
     content,
 }

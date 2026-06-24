@@ -5,5 +5,7 @@ export default {
     title: "Flowers",
     previousChapterId: "book_4_pioneer_tbc_customer_report",
     nextChapterId: "book_4_pioneer_bouquet_retailers",
+    chapterGroup: "Pioneer Chapters",
+    type: "expert",
     content,
 }

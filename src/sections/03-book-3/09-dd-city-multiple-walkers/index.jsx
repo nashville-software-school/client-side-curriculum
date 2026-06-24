@@ -5,5 +5,6 @@ export default {
     title: "There Ain't Room in This City for the Both of Us",
     previousChapterId: "book_3_deshawn_find_city_walker",
     nextChapterId: "book_3_shipping_erd",
+    chapterGroup: "DeShawn's Dog Walking",
     content,
 }

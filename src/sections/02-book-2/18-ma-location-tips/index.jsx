@@ -5,5 +5,6 @@ export default {
     title: "Tips and Locations",
     previousChapterId: "book_2_martins_aquarium_database",
     nextChapterId: "book_2_martins_aquarium_layout",
+    chapterGroup: "Martin's Aquarium",
     content,
 }

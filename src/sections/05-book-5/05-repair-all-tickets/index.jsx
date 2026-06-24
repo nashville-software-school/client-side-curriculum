@@ -5,5 +5,6 @@ export default {
     title: "List All Tickets",
     previousChapterId: "book_5_honey_rae_wireframe",
     nextChapterId: "book_5_honey_rae_ticket_assignee",
+    chapterGroup: "Honey Rae's Repair Shop",
     content,
 }

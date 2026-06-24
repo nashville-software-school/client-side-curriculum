@@ -5,5 +5,6 @@ export default {
     title: "Showing Hauler Inventory Count",
     previousChapterId: "book_3_shipping_ship_list",
     nextChapterId: "book_3_shipping_ships_docks",
+    chapterGroup: "Shipping Ship Ships",
     content,
 }

@@ -5,5 +5,7 @@ export default {
     title: "Modular Madness",
     previousChapterId: "book_1_explorer_surf_shop_modular",
     nextChapterId: "book_1_explorer_bjorn_database",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Learning Setup",
     previousChapterId: "book_5_chuckle_delete",
     nextChapterId: "book_5_learn_wireframe",
+    chapterGroup: "Learning Moments",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Your Learning Goals",
     previousChapterId: "book_3_shipping_docks",
     nextChapterId: "book_3_brewed_awakenings_debugging",
+    chapterGroup: "Shipping Ship Ships",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Build Movie HTML From Data",
     previousChapterId: "book_2_movie_majesty_data",
     nextChapterId: "book_2_movie_majesty_render",
+    chapterGroup: "Movie Majesty",
     content,
 }

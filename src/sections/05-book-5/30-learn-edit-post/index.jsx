@@ -5,5 +5,6 @@ export default {
     title: "Edit Post",
     previousChapterId: "book_5_learn_my_posts",
     nextChapterId: "book_5_learn_favorites",
+    chapterGroup: "Learning Moments",
     content,
 }

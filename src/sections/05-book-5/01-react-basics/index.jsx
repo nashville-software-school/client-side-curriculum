@@ -5,5 +5,6 @@ export default {
     title: "Getting Started with React",
     previousChapterId: null,
     nextChapterId: "book_5_honey_rae_first_component",
+    chapterGroup: "Honey Rae's Repair Shop",
     content,
 }

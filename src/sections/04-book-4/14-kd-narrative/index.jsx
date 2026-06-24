@@ -5,5 +5,6 @@ export default {
     title: "Kneel Diamonds",
     previousChapterId: "book_4_indiana_jeans_custom_event",
     nextChapterId: "book_4_kneel_diamonds_setup",
+    chapterGroup: "Kneel Diamonds",
     content,
 }

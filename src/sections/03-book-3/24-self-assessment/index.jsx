@@ -5,5 +5,7 @@ export default {
     title: "Book 3 Self-Assessment",
     previousChapterId: "book_3_brewed_awakenings_locations",
     nextChapterId: "book_3_group_project_cider_falls",
+    chapterGroup: "Self-Assessment",
+    type: "assessment",
     content,
 }

@@ -5,5 +5,6 @@ export default {
     title: "Dock List",
     previousChapterId: "book_3_shipping_dependency_graph",
     nextChapterId: "book_3_shipping_hauler_list",
+    chapterGroup: "Shipping Ship Ships",
     content,
 }

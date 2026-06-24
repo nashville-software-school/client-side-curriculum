@@ -5,5 +5,6 @@ export default {
     title: "Building the Movie Database",
     previousChapterId: "book_2_movie_majesty_setup",
     nextChapterId: "book_2_movie_majesty_html_generation",
+    chapterGroup: "Movie Majesty",
     content,
 }

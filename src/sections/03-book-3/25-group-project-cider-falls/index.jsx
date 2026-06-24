@@ -5,5 +5,7 @@ export default {
     title: "Cider Falls Park",
     previousChapterId: "book_3_self_assessment",
     nextChapterId: null,
+    chapterGroup: "Group Project",
+    type: "group-project",
     content,
 }

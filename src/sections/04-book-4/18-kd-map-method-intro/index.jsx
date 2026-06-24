@@ -5,5 +5,6 @@ export default {
     title: "Building Options with Map Array Method",
     previousChapterId: "book_4_kneel_diamonds_radio_buttons",
     nextChapterId: "book_4_kneel_diamonds_change_events",
+    chapterGroup: "Kneel Diamonds",
     content,
 }

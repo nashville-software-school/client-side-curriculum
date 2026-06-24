@@ -5,5 +5,6 @@ export default {
     title: "Your own API with JSON-Server",
     previousChapterId: "book_4_indiana_jeans_setup",
     nextChapterId: "book_4_indiana_jeans_jeans_component",
+    chapterGroup: "Indiana Jeans",
     content,
 }

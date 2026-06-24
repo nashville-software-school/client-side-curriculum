@@ -5,5 +5,7 @@ export default {
     title: "Ordering Earrings & Necklaces",
     previousChapterId: "book_4_explorer_indiana_jeans_state_map",
     nextChapterId: "book_4_explorer_kneel_diamonds_advanced_state",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

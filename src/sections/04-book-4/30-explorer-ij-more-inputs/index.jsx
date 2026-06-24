@@ -5,5 +5,7 @@ export default {
     title: "Adding Form Inputs",
     previousChapterId: "book_4_self_assessment",
     nextChapterId: "book_4_explorer_indiana_jeans_state_map",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

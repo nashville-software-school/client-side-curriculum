@@ -5,5 +5,7 @@ export default {
     title: "Deploy your client to Digital Ocean",
     previousChapterId: "book_5_explorer_deploy_api",
     nextChapterId: "book_5_capstone_resources",
+    chapterGroup: "Explorer Chapters",
+    type: "advanced",
     content,
 }

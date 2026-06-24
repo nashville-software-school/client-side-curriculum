@@ -5,5 +5,6 @@ export default {
     title: "Targeting a DOM Element",
     previousChapterId: "book_2_duo_villains",
     nextChapterId: "book_2_duo_html_generators",
+    chapterGroup: "Dynamite Duo",
     content,
 }
