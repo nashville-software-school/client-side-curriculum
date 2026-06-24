@@ -18,6 +18,14 @@ Secrets and variables are **not** copied from the template — they must be set 
 
 Go to **Settings → Secrets and variables → Actions** in the new repo and add the secrets and variables listed in the [Customization Checklist](#customization-checklist) below.
 
+### GitHub OAUTH app details
+#### Use for localhost
+https://github.com/organizations/nashville-software-school/settings/applications/3687637
+
+#### Use for Prod
+https://github.com/organizations/nashville-software-school/settings/applications/3687647
+
+
 ### 3. Enable GitHub Actions
 
 GitHub copies the workflow files but **does not copy secrets, variables, or workflow permissions** — you must configure these on the new repo.

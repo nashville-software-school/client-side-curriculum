@@ -11,6 +11,14 @@ const processMarkdownContent = (content) => {
     /(<img[^>]*\s)src="\.\/([^"]+\.(png|jpg|jpeg|svg|gif|webp|avif))"([^>]*>)/g,
     `$1src="${basePath}/assets/$2"$4`
   );
+
+  // Convert <analogy>CONCEPT</analogy> into interactive spans
+  processedContent = processedContent.replace(
+    /<analogy>([^<]+)<\/analogy>/g,
+    (_, concept) =>
+      `<span class="analogy-term" data-analogy="${concept.trim()}" role="button" tabindex="0">${concept.trim()}</span>`
+  );
+
   return processedContent;
 };
 
@@ -25,6 +33,7 @@ Object.values(sectionModules)
     // Process each chapter's content to handle relative image paths
     const processedChapters = section?.chapters?.map(chapter => ({
       ...chapter,
+      requiresAuth: true,
       content: processMarkdownContent(chapter.content)
     }));
 
