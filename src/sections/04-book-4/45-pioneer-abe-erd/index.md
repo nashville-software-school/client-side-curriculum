@@ -1,6 +1,6 @@
 # Honest Abe
 
-You need to design an ERD with dbdiagram.io to represent the financial relationship between political candidates and corporate entities. Since corporations can contribute to political action committees (PAC), your job is to help see how politicians are being funded, and if that funding is directly translating into bills that politicians [sponsor](https://en.wikipedia.org/wiki/Sponsor_(legislative)).
+You need to design an <analogy>ERD</analogy> with dbdiagram.io to represent the financial relationship between political candidates and corporate entities. Since corporations can contribute to political action committees (PAC), your job is to help see how politicians are being funded, and if that funding is directly translating into bills that politicians [sponsor](https://en.wikipedia.org/wiki/Sponsor_(legislative)).
 
 1. Politicians can receive donations from many PACs.
 1. A legislative bill can be categorized to support only one, particular commercial interest.
@@ -18,6 +18,6 @@ The obvious resources in this system are as follows:
 1. Politician
 1. Legislative Bill
 
-There are other resources that you will need to create to fulfill the requirements and represent the complex relationships. Build an ERD to visualize these relationships.
+There are other resources that you will need to <analogy>create</analogy> to fulfill the requirements and represent the complex relationships. Build an <analogy>ERD</analogy> to visualize these relationships.
 
-> **Important:** Before moving on to the next chapter in Honest Abe, you need to review your ERD with a member of the coaching team. It is critical that your ERD is structured correctly, or it will be impossible to complete this application.
+> **Important:** Before moving on to the next chapter in Honest Abe, you need to review your <analogy>ERD</analogy> with a member of the coaching team. It is critical that your <analogy>ERD</analogy> is structured correctly, or it will be impossible to complete this application.

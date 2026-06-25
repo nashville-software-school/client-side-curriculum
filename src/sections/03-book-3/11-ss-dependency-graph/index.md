@@ -1,6 +1,6 @@
 # Designing Dependencies
 
-Before you start building this project, you should draw a dependency graph to have a plan of attack before you begin coding. This project is nearly identical to DeShawn's Dog Walking, in that there are several collections of data, each of which need to be converted to HTML for display in the browser.
+Before you start building this project, you should draw a <analogy>dependency graph</analogy> to have a plan of attack before you begin coding. This project is nearly identical to DeShawn's Dog Walking, in that there are several collections of data, each of which need to be converted to HTML for display in the browser.
 
 ## Dependency Graph
 
@@ -10,7 +10,7 @@ Once you are done, you can compare with the one provided in the hint below.
 
 ## Sequence Diagram
 
-Now draw a sequence diagram for the algorithm of how the application will operate when the HTML is first rendered to the browser.
+Now draw a <analogy>sequence diagram</analogy> for the <analogy>algorithm</analogy> of how the application will operate when the HTML is first <analogy>rendered</analogy> to the browser.
 
 <details>
     <summary>Hint: Dependency Graph for Shipping Ships</summary>

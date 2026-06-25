@@ -1,6 +1,6 @@
 # Modular Intro
 
-In this chapter, you are going to start to split up all of the code that exists in your current module into multiple modules. This has two side-effects for a beginner.
+In this chapter, you are going to start to split up all of the code that exists in your current <analogy>module</analogy> into multiple modules. This has two side-effects for a beginner.
 
 1. It makes the code in each module easier to read.
 2. It taxes your limited working memory to know which module holds which code, and how it works together.
@@ -11,7 +11,7 @@ At the end of this chapter you should be able to...
 
 * Describe what a JavaScript module is, and why developers modularize their code.
 * Understand that each module does not automatically have access to code in other modules.
-* Understand that for modules to share code, they must export and import their code.
+* Understand that for modules to share code, they must <analogy>export</analogy> and <analogy>import</analogy> their code.
 
 ## A Data Module
 

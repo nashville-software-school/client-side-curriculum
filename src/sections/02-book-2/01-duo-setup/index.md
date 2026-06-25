@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-* You should be able to create new directories in the terminal with the `mkdir` command.
+* You should be able to create new directories in the <analogy>terminal</analogy> with the `mkdir` command.
 * You should be able to create new files in the terminal with the `touch` command.
 * You should be able to navigate directories in the terminal with the `cd` command.
 

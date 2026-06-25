@@ -111,8 +111,8 @@ First, watch the introduction to the [useParams hook](https://youtu.be/fPfQ4JjPQ
   ```
 </details>
 
-## Index Route
-The index route makes it _even_ easier to organize and set up our routes! Let's take a look at two examples fo routes we can simplify with nesting and using and `index` route. Let's say we've set up the following routes for our application. We also want each view to display the same header and footer. 
+## <analogy>Index Route</analogy>
+The <analogy>index route</analogy> makes it _even_ easier to organize and set up our <analogy>routes</analogy>! Let's take a look at two examples fo routes we can simplify with nesting and using and `index` route. Let's say we've set up the following routes for our application. We also want each view to display the same header and footer. 
 
 ```jsx
 <Routes>
@@ -149,7 +149,7 @@ The index route makes it _even_ easier to organize and set up our routes! Let's 
 </Route>
 ```
 
-Let's simplify this by nesting these routes and setting up an index route for the Welcome component. What's the common denominator for all of these routes? They all start at `/`, and they all have a `<Header />` and `<Footer />` component rendered with them. 
+Let's simplify this by nesting these <analogy>routes</analogy> and setting up an <analogy>index route</analogy> for the Welcome <analogy>component</analogy>. What's the common denominator for all of these routes? They all start at `/`, and they all have a `<Header />` and `<Footer />` component rendered with them. 
 
 ```jsx
 <Routes>
@@ -216,8 +216,8 @@ Let's try nesting these new routes. What's the common denominator between them? 
 </Routes>
 ```
 
-## Route Parameters and the useParams() hook
-Route parameters enable us to include specific pieces of information, like an `id`, in our URL. The `useParams` hook gives us a way to retrieve that information within the component that corresponds to that URL. Building on the example provided earlier, let's consider implementing a route for viewing the details of a particular project. We'll establish a new Route that incorporates the project's id (for instance, `/projects/2`). As the app navigates to this URL, we'll render a component tailored to displaying the details of a specific project.
+## <analogy>Route Params</analogy> and the useParams() <analogy>hook</analogy>
+<analogy>Route params</analogy> enable us to include specific pieces of information, like an `id`, in our URL. The `useParams` <analogy>hook</analogy> gives us a way to retrieve that information within the <analogy>component</analogy> that corresponds to that URL. Building on the example provided earlier, let's consider implementing a route for viewing the details of a particular project. We'll establish a new Route that incorporates the project's id (for instance, `/projects/2`). As the app navigates to this URL, we'll render a component tailored to displaying the details of a specific project.
 
 ```jsx
 <Routes>
@@ -352,7 +352,7 @@ Time to code to learn! Write the routing functionality for the Employees Details
   <summary>💡 EmployeeService.js</summary>
 
   ### The url
-  We're wanting to display _all_ the information for the employee, therefore we'll want to get the employee object from the database and expand the user object. This way you will have access to the `specialty`, `rate`, `fullName`, and `email` for the employee. In the `EmployeeDetails` component where you'll be invoking this function, you'll have the `userId`. You'll want to add an additional query to this url to get the employee by the `userId`. Lastly, we want to see how many tickets this employee is working on. Looking at the ***ERD***, this information can be gathered from the `EmployeeTickets` table. Add one last query to `embed` the `EmployeeTickets` on this employee object.
+  We're wanting to display _all_ the information for the employee, therefore we'll want to get the employee object from the database and expand the user object. This way you will have access to the `specialty`, `rate`, `fullName`, and `email` for the employee. In the `EmployeeDetails` component where you'll be invoking this function, you'll have the `userId`. You'll want to add an additional query to this url to get the employee by the `userId`. Lastly, we want to see how many tickets this employee is working on. Looking at the ***<analogy>ERD</analogy>***, this information can be gathered from the `EmployeeTickets` table. Add one last query to `embed` the `EmployeeTickets` on this employee object.
 
   <details>
     <summary>Still stuck? Here's the url</summary>
@@ -368,10 +368,10 @@ Time to code to learn! Write the routing functionality for the Employees Details
 **Copy and pasting is _boring_**
 
 ## 📓 Vocabulary 
-> **Index Route:** The child Route we want to render at the path of the parent Route. Consider it the "default" child Route.
+> **<analogy>Index Route</analogy>:** The child <analogy>Route</analogy> we want to render at the path of the parent <analogy>Route</analogy>. Consider it the "default" child <analogy>Route</analogy>.
 
-> **Route Params:**  Placeholders in the URL that begin with a colon `:`. 
+> **<analogy>Route Params</analogy>:**  Placeholders in the URL that begin with a colon `:`. 
 
-> **usePrams:** A hook from the react-router-dom library that returns the route parameter as a key/value pair on an object. The key being the route parameter defined for the Route that rendered the component and the value being the value in the url at the position the route parameter was defined. 
+> **<analogy>useParams</analogy>:** A <analogy>hook</analogy> from the react-router-dom library that returns the <analogy>route</analogy> parameter as a key/value pair on an object. The key being the route parameter defined for the Route that rendered the component and the value being the value in the url at the position the route parameter was defined. 
 
 Up Next: [Introducing authentication](./REPAIR_CLAIM_VS_CLOSE.md)

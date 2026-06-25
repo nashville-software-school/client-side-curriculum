@@ -13,7 +13,7 @@
 
 ## Setup
 
-In your terminal, run the following commands. These create a directory, and a file in that directory for the code you will write in this chapter.
+In your <analogy>terminal</analogy>, run the following commands. These create a directory, and a file in that directory for the code you will write in this chapter.
 
 ```sh
 cd ~/workspace
@@ -25,7 +25,7 @@ code .
 
 ## First Function
 
-Here is an example of a function with a parameter. A function can be invoked as many times as needed. If there is a parameter defined, then a value _(a.k.a argument)_ must be provided when the function runs.
+Here is an example of a function with a <analogy>parameter</analogy>. A function can be <analogy>invoked</analogy> as many times as needed. If there is a parameter defined, then a value _(a.k.a <analogy>argument</analogy>)_ must be provided when the function runs.
 
 Open the `main.js` file in Visual Studio Code and paste the following function into it.
 
@@ -43,7 +43,7 @@ This is a task that you can execute later. It doesn't execute when you define it
 
 ### Invoking a Function
 
-Now that you have a function defined, you can invoke it and pass a string to it as an argument. In this invocation, the argument is the string of "Athena Perez".
+Now that you have a function defined, you can invoke it and pass a <analogy>string</analogy> to it as an argument. In this invocation, the argument is the string of "Athena Perez".
 
 Copy pasta the follow code into the `main.js` file below the function definition.
 

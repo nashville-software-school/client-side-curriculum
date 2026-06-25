@@ -14,7 +14,7 @@ Dear Developer,
 Great news! My research grant has been expanded, and I've been given additional funding to collect more detailed data about blue jeans ownership. I need to expand our survey immediately to include two critical new data points:
 
 1. The **brand name** of the jeans (text input)
-2. The **year of purchase** (number input)
+2. The **year of purchase** (<analogy>number</analogy> input)
 
 My presentation to the grant committee is tomorrow afternoon, and I need to show them our expanded survey capabilities. Can you implement these changes before then?
 
@@ -40,19 +40,19 @@ As Dr. Jones' trusted developer, your task is to expand the Indiana Jeans survey
 As you approach this challenge, here are some questions to think about:
 
 ### Database Considerations
-- How will you need to update the ERD to accommodate these new fields?
+- How will you need to <analogy>update</analogy> the <analogy>ERD</analogy> to accommodate these new fields?
 - What changes are needed in your `database.json` file?
 - Do you need to modify existing submissions?
 
 ### Application Architecture
 - Which modules will need to be updated?
 - How will you capture the new input values?
-- Where will you store these values in your transient state?
+- Where will you store these values in your <analogy>transient state</analogy>?
 
 ### User Interface
 - How will you design the input fields?
 - Where should they appear in relation to existing fields?
 
 ### Display
-- How will you update the `SubmissionList` component to display the new data?
+- How will you <analogy>update</analogy> the `SubmissionList` <analogy>component</analogy> to display the new data?
 - Should the brand be displayed if the user doesn't own jeans?

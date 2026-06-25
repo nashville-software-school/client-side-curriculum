@@ -1,16 +1,16 @@
 ## Handling Large Customers
 
-In this exercise, you will be implementing a many-to-many relationship. As you gain more customers, you need to start assigning more than one employee to a job. You also find that you need to shift employees from job to job as the complexities change for each one.
+In this exercise, you will be implementing a <analogy>many-to-many relationship</analogy>. As you gain more customers, you need to start assigning more than one employee to a job. You also <analogy>find</analogy> that you need to shift employees from job to job as the complexities change for each one.
 
 One customer can have many employees assigned.
 
 One employee can work for many customers.
 
-This is a many-to-many relationship. This means that you need a join, or intersection, table to handle the relationships between these two resources.
+This is a <analogy>many-to-many relationship</analogy>. This means that you need a join, or intersection, table to handle the relationships between these two resources.
 
 ### The Workforce ERD
 
-Update your ERD with the following two tables. Then make sure that the relationship lines are drawn between all the related tables.
+<analogy>Update</analogy> your <analogy>ERD</analogy> with the following two tables. Then make sure that the relationship lines are drawn between all the related tables.
 
 ```js
 Table Customers {
@@ -43,7 +43,7 @@ Then add two new resources in your `database.json`.
 ]
 ```
 
-Create at least 4 customers. Then assign each employee to 2 customers. In the example above, I am recording the fact that the employee with an `id` of 2 worked for the customer with an `id` of 1.
+<analogy>Create</analogy> at least 4 customers. Then <analogy>assign</analogy> each employee to 2 customers. In the example above, I am recording the fact that the employee with an `id` of 2 worked for the customer with an `id` of 1.
 
 ### HTML Representations
 
@@ -51,7 +51,7 @@ To get all the related data for a single employee, you won't be using the `find(
 
 #### Example
 
-Here's some example code _(not complete)_ of how your algorithm might be designed.
+Here's some example code _(not complete)_ of how your <analogy>algorithm</analogy> might be designed.
 
 ```js
 const EmployeeList = () => {

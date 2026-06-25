@@ -6,7 +6,7 @@
 
 ## Add Ability to Choose Type
 
-Add a radio button group above the order button that allows the user to choose a ring, earrings, or a necklace to be made with the materials chosen.
+Add a <analogy>radio button</analogy> group above the order button that allows the user to choose a ring, earrings, or a necklace to be made with the materials chosen.
 
 <img src="./images/kneel-diamonds-types.png" width="250rem">
 

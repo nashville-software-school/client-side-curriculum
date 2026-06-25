@@ -2,7 +2,7 @@
 
 A `Map` in JavaScript is very similar to an `Object`, but it has some very powerful differences.
 
-Like an object, a map is a collection of keys and values. The syntax is quite different, and more verbose. Here's how to define the keys and values for a toy using an object versus a map.
+Like an <analogy>object</analogy>, a <analogy>map</analogy> is a collection of keys and values. The syntax is quite different, and more verbose. Here's how to define the keys and values for a toy using an <analogy>object</analogy> versus a <analogy>map</analogy>.
 
 ## Creating
 
@@ -63,8 +63,8 @@ iPhone2.set("color", "yellow")
 
 ## Challenge
 
-Modify the **TransientState** module in Indiana Jeans to store transient state as a **Map** data structure. Also update the setter functions to update the value of the key instead of updating the value of an object key.
+Modify the **TransientState** <analogy>module</analogy> in Indiana Jeans to store <analogy>transient state</analogy> as a **<analogy>Map</analogy>** data structure. Also <analogy>update</analogy> the setter functions to <analogy>update</analogy> the <analogy>value</analogy> of the <analogy>key</analogy> instead of updating the <analogy>value</analogy> of an <analogy>object</analogy> <analogy>key</analogy>.
 
-You will also need to update your code where you use `JSON.stringify()` to turn your state into a string before sending to your local API. You will need to convert the **Map** into an **Object** before stringifying it. `JSON.stringify()` does not work with a **Map**.
+You will also need to <analogy>update</analogy> your code where you use `JSON.stringify()` to turn your <analogy>state</analogy> into a <analogy>string</analogy> before sending to your local <analogy>API</analogy>. You will need to convert the **<analogy>Map</analogy>** into an **<analogy>Object</analogy>** before stringifying it. `JSON.stringify()` does not work with a **<analogy>Map</analogy>**.
 
 Hint: `Object.fromEntries`

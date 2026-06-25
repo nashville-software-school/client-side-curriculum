@@ -4,7 +4,7 @@ In this exercise, you are going list politicians
 
 ### The Workforce ERD
 
-Below is a JSON representation of a politician. Update your  **Politicians** resource in your ERD to have these properties.
+Below is a <analogy>JSON</analogy> representation of a politician. <analogy>Update</analogy> your  **Politicians** resource in your <analogy>ERD</analogy> to have these properties.
 
 ```json
 {
@@ -20,10 +20,10 @@ Below is a JSON representation of a politician. Update your  **Politicians** res
 
 ### HTML Representations
 
-1. Create a `~/workspace/honest-abe` directory for this exercise.
-1. Create an `api/database.json` file.
-1. Copy the contents of the pre-built [honestabe.json](./data/honestabe.json) file into your `database.json`.
-1. Create a provider, list, and individual component for politicians and list each one in the database.
+1. <analogy>Create</analogy> a `~/workspace/honest-abe` <analogy>directory</analogy> for this exercise.
+1. <analogy>Create</analogy> an `api/database.json` file.
+1. Copy the contents of the pre-built [honestabe.<analogy>json</analogy>](./data/honestabe.json) file into your `database.json`.
+1. <analogy>Create</analogy> a provider, list, and individual <analogy>component</analogy> for politicians and list each one in the database.
 
 The final HTML representation should look like this.
 

@@ -55,7 +55,7 @@ If you get stuck, check out the hints below.
 
 ## Watch Your Code Run
 
-Time to practice using the debugger again. Put a breakpoint on the first line of code and step through your code, making sure you step into your new function to watch its logic.
+Time to practice using the debugger again. Put a <analogy>breakpoint</analogy> on the first line of code and step through your code, making sure you <analogy>step into</analogy> your new function to watch its logic.
 
 For a review, you can watch a video that steps through the code and examines that values of variables as they change.
 

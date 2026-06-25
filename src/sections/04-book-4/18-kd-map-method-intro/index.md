@@ -1,8 +1,8 @@
 # The Map Array Method
 
-> **Pro tip**: It is strongly recommended that you practice your learning efficiency when learning about array methods. They are a significant cognitive challenge for beginners who are transitioning from using `for..of` loops for everything. YouTube videos, W3Schools, GeekForGeeks, and ChatGPT should all be used as resources as you learn these methods.
+> **Pro tip**: It is strongly recommended that you practice your learning efficiency when learning about <analogy>array</analogy> methods. They are a significant cognitive challenge for beginners who are transitioning from using `for..of` loops for everything. YouTube videos, W3Schools, GeekForGeeks, and ChatGPT should all be used as resources as you learn these methods.
 
-Open the **`Metals`** module in VS Code. You will see that the list items for metals uses the `for..of` loop that you have seen in previous projects for building all of the HTML representations of data.
+Open the **`Metals`** <analogy>module</analogy> in VS Code. You will see that the list items for metals uses the `for..of` loop that you have seen in previous projects for building all of the HTML representations of data.
 
 
 ```js
@@ -22,15 +22,15 @@ export const MetalOptions = async () => {
 }
 ```
 
-Each object gets a corresponding `<div>` created for it. None are skipped. Each `<div>` is then appended to the singular string that will be returned from this component function.
+Each <analogy>object</analogy> gets a corresponding `<div>` created for it. None are skipped. Each `<div>` is then appended to the singular <analogy>string</analogy> that will be returned from this <analogy>component</analogy> <analogy>function</analogy>.
 
 You can accomplish this same feat with the `Array.map()` method.
 
-* **find()** is for when you need to locate a single item in an array
-* **filter()** is for when you need to locate _some_ of the items in an array
-* **map()** is for when you to to _convert_ everything in an array
+* **<analogy>find</analogy>()** is for when you need to locate a single item in an <analogy>array</analogy>
+* **<analogy>filter</analogy>()** is for when you need to locate _some_ of the items in an <analogy>array</analogy>
+* **<analogy>map</analogy>()** is for when you to to _convert_ everything in an <analogy>array</analogy>
 
-Here is how you would accomplish the same goal with **map()**.
+Here is how you would accomplish the same goal with **<analogy>map</analogy>()**.
 
 ```js
 export const MetalOptions = async () => {
@@ -55,11 +55,11 @@ export const MetalOptions = async () => {
 }
 ```
 
-The `.map()` method also iterates the array, just like `for..of` does. Unlike a `for..of` loop, it invokes the function that you define.
+The `.map()` method also iterates the <analogy>array</analogy>, just like `for..of` does. Unlike a `for..of` loop, it invokes the <analogy>function</analogy> that you define.
 
-Wait, what function?
+Wait, what <analogy>function</analogy>?
 
-This function. It returns a string, which gets added to the array that is getting built up during the iteration.
+This <analogy>function</analogy>. It returns a <analogy>string</analogy>, which gets added to the <analogy>array</analogy> that is getting built up during the <analogy>iteration</analogy>.
 
 ```js
 (metal) => {
@@ -69,19 +69,19 @@ This function. It returns a string, which gets added to the array that is gettin
 }
 ```
 
-That function is the first, and only, argument that the `map()` method will accept. As it iterates the array, it will take the object at the current location and pass it as an argument to **your** function. Your function defines the `size` parameter.
+That <analogy>function</analogy> is the first, and only, <analogy>argument</analogy> that the `map()` method will accept. As it iterates the <analogy>array</analogy>, it will take the <analogy>object</analogy> at the current location and pass it as an <analogy>argument</analogy> to **your** <analogy>function</analogy>. Your <analogy>function</analogy> defines the `size` <analogy>parameter</analogy>.
 
-So an _object_ comes into your function, and a _string_ gets returned. That string goes into a new _array_.
+So an _object_ comes into your <analogy>function</analogy>, and a _string_ gets returned. That <analogy>string</analogy> goes into a new _array_.
 
 ## The join() Array Method
 
-The `.join()` array method, luckily, does exactly what its name infers - it _joins_ things together.
+The `.join()` <analogy>array</analogy> method, luckily, does exactly what its name infers - it _joins_ things together.
 
-More specifically, it join **all** of the individual items in the array into a single string... all squished together.
+More specifically, it join **all** of the individual items in the <analogy>array</analogy> into a single <analogy>string</analogy>... all squished together.
 
 ![](./images/array-join-method-demo.gif)
 
-If you join the strings in this array...
+If you join the strings in this <analogy>array</analogy>...
 
 ```js
 [
@@ -93,7 +93,7 @@ If you join the strings in this array...
 ]
 ```
 
-...you end up with one long string filled with HTML.
+...you end up with one long <analogy>string</analogy> filled with HTML.
 
 ```html
 "<li> <input type="radio" name="size" value="1" /> 0.5 </li>
@@ -107,4 +107,4 @@ If you join the strings in this array...
 
 Now it's your turn.
 
-Use the `map()` array method in the other component functions to convert the objects into HTML strings in a new array. Then use the `join()` method to squash the array of strings into a single string and return it.
+Use the `map()` <analogy>array</analogy> method in the other <analogy>component</analogy> functions to convert the objects into HTML strings in a new <analogy>array</analogy>. Then use the `join()` method to squash the <analogy>array</analogy> of strings into a single <analogy>string</analogy> and <analogy>return</analogy> it.

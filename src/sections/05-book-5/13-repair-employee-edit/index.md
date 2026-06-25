@@ -56,8 +56,8 @@ fieldset {
 ```
 </details>
 
-## The `useNavigate` hook
-In this chapter you were introduced to another hook we get from the **react-router-dom** library called `useNavigate`. This hook returns a function that allows us to navigate to a different url, much like the `Link` component. 
+## The `useNavigate` <analogy>hook</analogy>
+In this chapter you were introduced to another <analogy>hook</analogy> we get from the **react-router-dom** library called `useNavigate`. This hook returns a function that allows us to navigate to a different url, much like the `Link` component. 
 
 ```javascript
 const navigate = useNavigate() // returns a function
@@ -97,7 +97,7 @@ The reason for this warning is the values we passed to the inputs:
 />
 ```
 
-The initial value for `employee` when the component renders is an empty object. Therefore, on the initial render, `employee.specialty` and `employee.rate` are `undefined`. Take a look at that error one more time. It doesn't like when we set the value of an input to undefined. So how do we get rid of this error? Two ways. We could add `specialty` and `rate` as properties with `''` and `0` as values to the initial object we give our `employee` state. This way way `specialty` and `rate` will never be undefined. Or we could use a ternary statement when setting the value of the input.
+The initial value for `employee` when the component renders is an empty object. Therefore, on the initial render, `employee.specialty` and `employee.rate` are `undefined`. Take a look at that error one more time. It doesn't like when we set the value of an input to undefined. So how do we get rid of this error? Two ways. We could add `specialty` and `rate` as properties with `''` and `0` as values to the initial object we give our `employee` state. This way way `specialty` and `rate` will never be undefined. Or we could use a <analogy>ternary statement</analogy> when setting the value of the input.
 
 ```jsx
 <input

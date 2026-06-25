@@ -1,6 +1,6 @@
 # Creating the Movie Data
 
-In this chapter, we will create the movie data that will be used to generate the movie cards in our showcase. We'll store the movie data in a JavaScript file as an array of objects, where each object represents a movie with its properties.
+In this chapter, we will create the movie data that will be used to generate the movie cards in our showcase. We'll store the movie data in a JavaScript file as an <analogy>array of objects</analogy>, where each object represents a movie with its properties.
 
 ## Step 1: Create the `movies-data.js` File
 

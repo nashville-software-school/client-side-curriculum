@@ -1,6 +1,6 @@
 # Functions Module
 
-In this chapter, you are going to move all of your functions into a separate module, export them, and then import them back into the `averagePrice.js` module.
+In this chapter, you are going to move all of your functions into a separate <analogy>module</analogy>, <analogy>export</analogy> them, and then <analogy>import</analogy> them back into the `averagePrice.js` module.
 
 ## Learning Objectives and Competencies
 

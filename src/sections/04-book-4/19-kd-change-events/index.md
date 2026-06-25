@@ -2,20 +2,20 @@
 
 ## Learning Objectives
 
-* You should be able to remember that radio button controls generate a _change_ event that you can listen for.
-* You should be able to remember that when the user selects a radio input options, that the _value_ of the event target will be the value attribute of the chosen option.
-* You should be able to implement an event listener for a group of radio input options.
-* You should be able to implement a module that stores the user choices as they are made - the transient state.
+* You should be able to remember that <analogy>radio button</analogy> controls generate a _change_ <analogy>event</analogy> that you can listen for.
+* You should be able to remember that when the user selects a radio input options, that the _value_ of the <analogy>event</analogy> target will be the <analogy>value</analogy> <analogy>attribute</analogy> of the chosen option.
+* You should be able to implement an <analogy>event listener</analogy> for a group of radio input options.
+* You should be able to implement a <analogy>module</analogy> that stores the user choices as they are made - the <analogy>transient state</analogy>.
 
 ## Transient State
 
-Add a new module into your application that will store the transient state as the customers make their choices. Remember that initial state should be established to look exactly like how the data will be stored in your API, but with default values.
+Add a new <analogy>module</analogy> into your application that will store the <analogy>transient state</analogy> as the customers make their choices. Remember that initial <analogy>state</analogy> should be established to look exactly like how the data will be stored in your <analogy>API</analogy>, but with default values.
 
-* Boolean values should default to `false`
+* <analogy>Boolean</analogy> values should default to `false`
 * Integer values should defualt to `0`
-* String values should default to an empty string `""`
+* <analogy>String</analogy> values should default to an empty <analogy>string</analogy> `""`
 
-Then write a setter function to update the value of each property. Make sure you export those functions for use in other modules.
+Then write a <analogy>setter function</analogy> to <analogy>update</analogy> the <analogy>value</analogy> of each <analogy>property</analogy>. Make sure you <analogy>export</analogy> those functions for use in other modules.
 
 ## Change Listeners
 
@@ -34,7 +34,7 @@ const handleMetalChoice = (event) => {
 }
 ```
 
-And in your component function, listen for the change event and specify the above function as the handler of that event being broadcast by the browser.
+And in your <analogy>component</analogy> <analogy>function</analogy>, listen for the <analogy>change event</analogy> and specify the above <analogy>function</analogy> as the handler of that <analogy>event</analogy> being broadcast by the browser.
 
 ```js
  document.addEventListener("change", handleMetalChoice)
@@ -42,6 +42,6 @@ And in your component function, listen for the change event and specify the abov
 
 ## Log the New State
 
-If you want to make sure that transient state is changing correctly, use a `console.log()` inside the setter functions.
+If you want to make sure that <analogy>transient state</analogy> is changing correctly, use a `console.log()` inside the setter functions.
 
 ![](./images/kneel-diamonds-transient-state.gif)

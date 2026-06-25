@@ -4,7 +4,7 @@ In this chapter, you will continue to use data attributes to embed more state in
 
 <img src="./images/deshawns-related-walker.gif" width="800px" alt="Animation showing a window alert that displays the walker name when a pet is clicked." />
 
-Since those two bits of information are in different arrays, you will need to access state that is stored in the DOM, and then use that state to find a related object in a different array.
+Since those two bits of information are in different arrays, you will need to access <analogy>state</analogy> that is stored in the DOM, and then use that state to find a related object in a different array.
 
 ## Finding Related Data with JavaScript
 

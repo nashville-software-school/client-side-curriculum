@@ -4,6 +4,6 @@ In this exercise, you will be implementing a many-to-many relationships just lik
 
 Instead of listing employees and the customer they have worked for, you need to display all customers and the employees that have worked for them.
 
-1. Create a **`CustomerList`** list component function in an approrpriately named module.
-1. Feel free to use your employee list code as a boilerplate for build this function's algorithm.
+1. <analogy>Create</analogy> a **`CustomerList`** list <analogy>component</analogy> <analogy>function</analogy> in an approrpriately named <analogy>module</analogy>.
+1. Feel free to use your employee list code as a boilerplate for build this <analogy>function</analogy>'s <analogy>algorithm</analogy>.
 1. Refactor it to show employees per customer.

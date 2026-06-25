@@ -2,7 +2,7 @@
 
 In this chapter, you are going to iterate the queens array to hail each one.
 
-> Definition of iteration:
+> Definition of <analogy>iteration</analogy>:
 >
 > To iterate an array means to write code that starts at the first item in the array, then move to each subsequent one until there are no more items in the array.
 
@@ -28,7 +28,7 @@ Type in `forof` in the editor, and then press your Tab key and you will have som
 
 Then replace the default variable names it provides with more appropriate variable names.
 
-* The first variable will store each queen object in the array, so `queen` or `queenObject` would be appropriate
+* The first <analogy>variable</analogy> will store each queen object in the array, so `queen` or `queenObject` would be appropriate
 * The second variable must be the one whose value is the array, so this **must** be `queens`
 
 ![](./images/queen-for-of-loop.gif)
@@ -57,7 +57,7 @@ const hailMessage = hailTheQueen(queen.name)
 
 ## Understand the Flow with the Debugger
 
-Before you move on to the next chapter, put a breakpoint on the very first line of code in the `main.js` module and step through each line of code and follow the flow of logic, and the values of your variables.
+Before you move on to the next chapter, put a <analogy>breakpoint</analogy> on the very first line of code in the `main.js` module and step through each line of code and follow the flow of logic, and the values of your variables.
 
 This is a top priority skill that you must have as a developer, so skipping this step is folly.
 

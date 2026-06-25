@@ -33,7 +33,7 @@ Go ahead and fix the logical error by providing a valid argument.
 
 ## Syntactical Errors
 
-When you make a mistake with the syntax rules of the language itself, JavaScript can, and will tell you exactly where you messed up, and how. Unfortuntely, as a beginner, sometimes the error message can be as confusing as the error itself.
+When you make a mistake with the syntax rules of the language itself, JavaScript can, and will tell you exactly where you messed up, and how. Unfortuntely, as a beginner, sometimes the <analogy>error message</analogy> can be as confusing as the error itself.
 
 Time to make a common, beginner syntactical error.
 

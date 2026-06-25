@@ -2,16 +2,22 @@ import { useState, useEffect, useRef } from 'react'
 import { useAnalogy } from '../hooks/useAnalogy'
 
 const MASTERY_OPTIONS = [
-  { value: 0,  label: '0 — Never heard of it' },
-  { value: 2,  label: '1–2 — Heard of it' },
-  { value: 4,  label: '3–4 — Basic awareness' },
-  { value: 6,  label: '5–6 — Can use with help' },
-  { value: 8,  label: '7–8 — Can use independently' },
-  { value: 10, label: '9–10 — Could teach it' },
+  { value: 0,  label: 'No knowledge' },
+  { value: 1,  label: 'Heard of it' },
+  { value: 2,  label: 'Recognize the term' },
+  { value: 3,  label: "Know what it's for" },
+  { value: 4,  label: 'Seen it in code' },
+  { value: 5,  label: 'Can follow with help' },
+  { value: 6,  label: 'Can use with guidance' },
+  { value: 7,  label: 'Can use independently' },
+  { value: 8,  label: 'Comfortable and confident' },
+  { value: 9,  label: 'Could explain it well' },
+  { value: 10, label: 'Could teach it' },
 ]
 
 export function AnalogyPopover({ concept, context, background, anchorEl, onClose }) {
   const [masteryLevel, setMasteryLevel] = useState(null)
+  const [hoveredLevel, setHoveredLevel] = useState(null)
   const { analogy, isLoading, error, requestAnalogy, reset } = useAnalogy()
   const popoverRef = useRef(null)
 
@@ -63,15 +69,24 @@ export function AnalogyPopover({ concept, context, background, anchorEl, onClose
       {!masteryLevel && masteryLevel !== 0 ? (
         <div className="analogy-mastery-picker">
           <p>How familiar are you with this concept?</p>
-          <ul>
+          <div className="mastery-grid">
             {MASTERY_OPTIONS.map(opt => (
-              <li key={opt.value}>
-                <button onClick={() => handleMasterySelect(opt.value)}>
-                  {opt.label}
-                </button>
-              </li>
+              <button
+                key={opt.value}
+                className="mastery-num-btn"
+                onClick={() => handleMasterySelect(opt.value)}
+                onMouseEnter={() => setHoveredLevel(opt.value)}
+                onMouseLeave={() => setHoveredLevel(null)}
+              >
+                {opt.value}
+              </button>
             ))}
-          </ul>
+          </div>
+          <p className="mastery-description">
+            {hoveredLevel !== null
+              ? `${hoveredLevel} — ${MASTERY_OPTIONS[hoveredLevel].label}`
+              : ' '}
+          </p>
         </div>
       ) : isLoading ? (
         <div className="analogy-loading">Generating analogy…</div>

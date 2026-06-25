@@ -1,6 +1,6 @@
 # Adding State to the DOM
 
-When you look at any interactive web application, like Facebook or Amazon, you are viewing the state, or data, that the developers of the application want you to see. Lurking beneath the surface of the visible, is often an invisible layer of additional state that is being used to make the page more interactive.
+When you look at any interactive web application, like Facebook or Amazon, you are viewing the <analogy>state</analogy>, or data, that the developers of the application want you to see. Lurking beneath the surface of the visible, is often an invisible layer of additional state that is being used to make the page more interactive.
 
 <img src="./images/lurking.jpeg" width="350px" />
 

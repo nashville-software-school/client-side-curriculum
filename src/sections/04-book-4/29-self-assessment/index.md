@@ -4,10 +4,10 @@ This project will help you assess your ability to apply the JavaScript skills th
 
 1. Generating custom events
 2. Handling browser generated, and custom, events
-4. State management (transient and permanent)
-5. Displaying state as HTML
+4. <analogy>State</analogy> management (transient and permanent)
+5. Displaying <analogy>state</analogy> as HTML
 6. User input with radio options
-7. HTTP requests with async/await
+7. <analogy>HTTP</analogy> requests with async/<analogy>await</analogy>
 
 ## Overview
 
@@ -23,8 +23,8 @@ A customer should be able to choose a base dish, a vegetable, and a side dish an
 
 1. Go to the [Learning Platform](https://learning.nss.team) and click the button that you are ready for your self-assessment project.
 2. You will receive a Slack message with the repository you will use.
-3. Clone the project, making sure you use the **SSH** connection string.
-4. Open the directory that gets created for you after cloning in VS Code.
+3. Clone the project, making sure you use the **SSH** connection <analogy>string</analogy>.
+4. Open the <analogy>directory</analogy> that gets created for you after cloning in VS Code.
 5. Follow the instructions in the main README.
 
 When you are done, go back to the [Learning Platform](https://learning.nss.team) and click the button that notifies the coaching team that it's ready for review.

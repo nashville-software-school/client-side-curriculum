@@ -1,6 +1,6 @@
 # Power to the Developer
 
-The developer tools of the browser is where you, as a developer, look at the evidence of what is happening in main browser window where the HTML is rendered. It is where you will spend most of your time when diagnosing problems, working with CSS, and debugging your code.
+The <analogy>developer tools</analogy> of the browser is where you, as a developer, look at the evidence of what is happening in main browser window where the HTML is rendered. It is where you will spend most of your time when diagnosing problems, working with CSS, and debugging your code.
 
 > Your DevTools should be open **all the time** while working on a project.
 
@@ -61,7 +61,7 @@ When your developer tools are open, there are several panels listed at the top. 
 
 ![](./images/elements-dev-panel.png)
 
-This is where you will inspect the structure of your DOM _(Document Object Model)_ and view the CSS used for styling the document.
+This is where you will inspect the structure of your <analogy>DOM</analogy> _(Document Object Model)_ and view the CSS used for styling the document.
 
 ## Learn More
 

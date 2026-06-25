@@ -4,7 +4,7 @@ Nurseries are responsible for growing flowers. A single nursery can grow multipl
 
 ### The Bouquet ERD
 
-In your ERD create a resource for **Nurseries** and any other tables needed to visualize the relationship between **Nurseries** and **Flowers**.
+In your <analogy>ERD</analogy> <analogy>create</analogy> a resource for **Nurseries** and any other tables needed to visualize the relationship between **Nurseries** and **Flowers**.
 
 ```html
 Table Nurseries {
@@ -17,7 +17,7 @@ Once you are done with that, the next step is to define the relationship between
 * A distributor can purchase flowers from multiple nurseries
 * A nursery can sell flowers to multiple distributors
 
-Update your ERD to visualize that relationship between **Nurseries** and **Distributors**.
+<analogy>Update</analogy> your <analogy>ERD</analogy> to visualize that relationship between **Nurseries** and **Distributors**.
 
 ### API Resources
 
@@ -33,7 +33,7 @@ Update your ERD to visualize that relationship between **Nurseries** and **Distr
 
 ### HTML Representations
 
-Create your data provider for nurseries. Then refactor your list of retailers so that each one displays the following information.
+<analogy>Create</analogy> your data provider for nurseries. Then refactor your list of retailers so that each one displays the following information.
 
 1. Distributor purchased from.
 1. Source nurseries that the distributor purchased from.
