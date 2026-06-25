@@ -1,11 +1,11 @@
 # Entity Relationship Diagrams
 
-In this chapter, you are going to use, discuss, and learn how to create your first Entity Relationship Diagram (ERD). An ERD is a vital tool for software developers so that the data and the relationships between them can be visualized.
+In this chapter, you are going to use, discuss, and learn how to create your first Entity Relationship Diagram (<analogy>ERD</analogy>). An ERD is a vital tool for software developers so that the data and the relationships between them can be visualized.
 
 ## Learning Objectives
 
 * You should be able to explain the purpose of an ERD.
-* You should be able to identify resources, fields, primary keys, and foreign keys on an ERD.
+* You should be able to identify resources, fields, <analogy>primary keys</analogy>, and <analogy>foreign keys</analogy> on an ERD.
 * You should be able to define resources, their fields, and their relationships in dbdiagram.
 * You should be able to explain what a _1 -> many_ relationship is.
 

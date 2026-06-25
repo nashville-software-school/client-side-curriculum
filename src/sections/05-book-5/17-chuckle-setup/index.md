@@ -4,14 +4,14 @@
 ## The Project
 This a fairly simple application designed to help you practice some of the basics of React that you learned while building Honey Rae's.
 
-It has a simple database and full CRUD functionality. Here's what you'll be building throughout these chapters:
+It has a simple database and full <analogy>CRUD</analogy> functionality. Here's what you'll be building throughout these chapters:
 
 <img src="./images/chuckle-wireframe.png" width="10000" />
 
 This application involves **C**reating, **R**eading, **U**pdating, and **D**eleting a One Liner from the database.
 
 ### Learning Objectives
-After building this application, you should have a deepened understanding of: ***JSX***, handling ***events***, ***useState***, and ***useEffect***
+After building this application, you should have a deepened understanding of: ***<analogy>JSX</analogy>***, handling ***<analogy>events</analogy>***, ***<analogy>useState</analogy>***, and ***<analogy>useEffect</analogy>***
 
 ### Setup
 

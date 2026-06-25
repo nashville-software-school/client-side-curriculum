@@ -21,7 +21,7 @@ Having duplicate state, especially without additional context, show up in your u
 
 Your task for this chapter is to think about, discuss, and design a plan for how to ensure that each city only shows up once in the city list. Over time, there may be dozens of walkers working in a single city as DeShawn's business grows.
 
-Consider making the `city` property on a walker a foreign key instead of a string value. Design an algorithm before you make any code changes.
+Consider making the `city` property on a walker a <analogy>foreign key</analogy> instead of a string value. Design an <analogy>algorithm</analogy> before you make any code changes.
 
 Remember that your job is to solve the problem, and then write the code for the solution. Never try to solve a problem with code.
 

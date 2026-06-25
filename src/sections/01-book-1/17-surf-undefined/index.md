@@ -10,7 +10,7 @@ Now that you have a paying job working for the Surf Shop, you are going to build
 3. Open the `undefined.js` file.
 4. Run the code with your debugger.
 
-You will immediately see a stack trace in the **Debug Console** at the bottom. Your job is understand the error message, read the stack trace to determine exactly where the error is, and then fix the error.
+You will immediately see a <analogy>stack trace</analogy> in the **Debug Console** at the bottom. Your job is understand the <analogy>error message</analogy>, read the stack trace to determine exactly where the error is, and then fix the error.
 
 Run the debugger every time you change the code to see if you have fixed the error.
 

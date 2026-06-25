@@ -13,7 +13,7 @@ cd martins-aquarium
 touch index.html
 ```
 
-Create the JavaScript modules
+Create the JavaScript <analogy>modules</analogy>
 
 ```bash
 mkdir scripts

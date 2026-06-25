@@ -1,13 +1,13 @@
 # Fox y Dog Project Setup
 
-In your workspace directory, create a new project directory.
+In your workspace <analogy>directory</analogy>, <analogy>create</analogy> a new project <analogy>directory</analogy>.
 
 ```sh
 mkdir fox-y-dog
 cd fox-y-dog
 ```
 
-Then create your HTML file, a main CSS file, and a main JavaScript file.
+Then <analogy>create</analogy> your HTML file, a main CSS file, and a main JavaScript file.
 
 ```sh
 touch index.html
@@ -19,7 +19,7 @@ touch scripts/main.js
 
 ### HTML
 
-Copy pasta the following code into your HTML file. As you can see, there is just a header, and a main element that contains two image elements with no URL for a source yet. You will be updating those dynamically after you fetch some URLs from
+Copy pasta the following code into your HTML file. As you can see, there is just a header, and a main <analogy>element</analogy> that contains two image elements with no URL for a source yet. You will be updating those dynamically after you fetch some URLs from
 
 ```html
 <!doctype html>
@@ -247,8 +247,8 @@ dogButton.addEventListener("click", () => {
 })
 ```
 
-Then run the `serve` command in your terminal and open the URL in your browser. You should see something that looks like your 12 year old niece's art project. The buttons don't work yet, that's our job for the next few chapters.
+Then run the `serve` command in your <analogy>terminal</analogy> and open the URL in your browser. You should see something that looks like your 12 year old niece's art project. The buttons don't work yet, that's our job for the next few chapters.
 
-On to the next chapter to write your first `fetch()` function to get remote data from the Web.
+On to the next chapter to write your first `fetch()` <analogy>function</analogy> to get remote data from the Web.
 
 Up Next: [First We "Fetch"](./FD_INTRO_TO_FETCH.md)

@@ -2,7 +2,7 @@
 
 In this chapter, you are going to continue to add state to the DOM using data attributes. This part of the project is setting up for the interactivity we want to have in the next chapter for showing a walker when a pet is clicked.
 
-The foreign key of `walkerId` is on each pet in the database. You will inject this state as a data attribute of each pet. Here's some example code to view.
+The <analogy>foreign key</analogy> of `walkerId` is on each pet in the database. You will inject this state as a data attribute of each pet. Here's some example code to view.
 
 The foreign key isn't enough to show the walker name, so you will complete this feature in the next chapter.
 

@@ -2,19 +2,19 @@
 
 ## Project Directories
 
-Create the following directory for your project.
+<analogy>Create</analogy> the following <analogy>directory</analogy> for your project.
 
 ```sh
 ~/workspace/kneel-diamonds
 ```
 
-Then create three sub-directories in that directory.
+Then <analogy>create</analogy> three sub-directories in that <analogy>directory</analogy>.
 
-* api
+* <analogy>api</analogy>
 * styles
 * scripts
 
-Then create the starter files.
+Then <analogy>create</analogy> the starter files.
 
 ```sh
 touch index.html
@@ -23,11 +23,11 @@ touch styles/main.css
 touch scripts/main.js
 ```
 
-Once done, open the `kneel-diamonds` directory in Visual Studio Code.
+Once done, open the `kneel-diamonds` <analogy>directory</analogy> in Visual Studio Code.
 
 ## HTML
 
-Open your `index.html` file in the main project directory and then use a cool shortcut in VS Code to start with a basic HTML structure.
+Open your `index.html` file in the main project <analogy>directory</analogy> and then use a cool shortcut in VS Code to start with a basic HTML structure.
 
 The `!` character.
 
@@ -37,7 +37,7 @@ Then you can use the `link` Intellisense helper to include your `main.css` file.
 
 ## JSON Database
 
-Time to create your database file that will be managed by the `json-server` application that you run in your terminal. In the first chapter, you had seen how to define the data that is needed for this application. Time to put it in your database.
+Time to <analogy>create</analogy> your database file that will be managed by the `json-server` application that you run in your <analogy>terminal</analogy>. In the first chapter, you had seen how to define the data that is needed for this application. Time to put it in your database.
 
 Open the `api/database.json` file and add the following data.
 

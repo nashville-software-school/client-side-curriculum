@@ -27,7 +27,7 @@ This script will make the following directories and files in your project:
 ```
 
 ### Wrapping your app with `BrowserRouter`
-In `index.js`, wrap the `<App />` component in the `root.render` function with the `<BrowserRouter>` component. You will need to import this from ***react-router-dom***
+In `index.js`, wrap the `<App />` <analogy>component</analogy> in the `root.render` function with the `<BrowserRouter>` <analogy>component</analogy>. You will need to import this from ***react-router-dom***
 
 <details>
   <summary>🔎 Finished Code for index.js</summary>
@@ -83,7 +83,7 @@ const registerNewUser = () => {
 ## The Routes
 
 ### ApplicationViews
-Create an `ApplicationViews` component in the `views` directory. Here you are going to define the routes for your application the same way you have done in _Honey Rae Repairs_. ***Don't forget to wrap all your `Route` components in a `Routes` component.***
+Create an `ApplicationViews` component in the `views` directory. Here you are going to define the <analogy>routes</analogy> for your application the same way you have done in _Honey Rae Repairs_. ***Don't forget to wrap all your `Route` <analogy>components</analogy> in a `Routes` <analogy>component</analogy>.***
 
 Define a parent `Route` for the `/` _(home)_ path. Nested inside that route, define a child `Route` to render `AllPosts`. Consider the user story for all posts:
 
@@ -171,7 +171,7 @@ Time to add your NavBar! Create a `NavBar` component like the one you have in Ho
 )}
 ```
 
-The logout Link will remove the `learning_user` from local storage and then navigate back to the login route. However, the navigate function has not bee defined yet. Import `useNavigate` from *react-router-dom* and store the returned function in a variable called `navigate`.
+The logout <analogy>Link</analogy> will remove the `learning_user` from <analogy>local storage</analogy> and then navigate back to the login <analogy>route</analogy>. However, the navigate function has not bee defined yet. Import `useNavigate` from *react-router-dom* and store the returned <analogy>function</analogy> in a variable called `navigate`.
 
 <details>
   <summary>🔎 Need some help?</summary>
@@ -183,10 +183,10 @@ The logout Link will remove the `learning_user` from local storage and then navi
 </details>
 
 ### Render The Navbar
-Render the NavBar in the parent home route in `ApplicationViews` so that it renders with all other child routes. Don't forget the `Outlet` component!
+Render the NavBar in the parent home route in `ApplicationViews` so that it renders with all other child routes. Don't forget the `Outlet` <analogy>component</analogy>!
 
 ## Get The Current User
-Finally, let's add state to hold our current user. In `ApplicationViews` create a new state variable for `currentUser`. On the initial render of the application, get the user from local storage and set your `currentUser`.
+Finally, let's add <analogy>state</analogy> to hold our current user. In `ApplicationViews` create a new <analogy>state</analogy> variable for `currentUser`. On the <analogy>initial render</analogy> of the application, get the user from <analogy>local storage</analogy> and set your `currentUser`.
 
 ```javascript
 const [currentUser, setCurrentUser] = useState({})
@@ -199,6 +199,6 @@ useEffect(() => {
 ```
 
 ### Time to Test!
-When you click on "Logout" in the navbar, the `learning_user` in local storage should be removed and you should be navigated to the login page. Log back in. Open the devtool and inspect the `ApplicationViews` component. Confirm that your user is being stored in state.
+When you click on "Logout" in the navbar, the `learning_user` in <analogy>local storage</analogy> should be removed and you should be navigated to the login page. Log back in. Open the devtool and inspect the `ApplicationViews` <analogy>component</analogy>. Confirm that your user is being stored in <analogy>state</analogy>.
 
 Up Next: [Viewing a post's details](./LEARN_POST_DETAILS.md)

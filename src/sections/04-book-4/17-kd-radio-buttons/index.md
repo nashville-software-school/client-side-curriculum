@@ -1,18 +1,18 @@
 # Showing Custom Jewelry Options
 
-Time to create all of the component functions for each of the option groups. Just like the **UrbanDweller** function in the Indian Jeans project, you will need to fetch the data from your local API for each of these components since all of the options are in the `database.json` file.
+Time to <analogy>create</analogy> all of the <analogy>component</analogy> functions for each of the option groups. Just like the **UrbanDweller** <analogy>function</analogy> in the Indian Jeans project, you will need to fetch the data from your local <analogy>API</analogy> for each of these components since all of the options are in the `database.json` file.
 
 ## Learning Objectives
 
-* You should be able to correct use **async** and **await** keywords to request data from an API.
-* You should be able to use a `for..of` loop to generate HTML representations of each object in the array.
-* You should be able to import the component functions into the main module, invoke them in the correct place, and compose all of the responses into a single HTML string.
-* You should be able to update the correct element on the DOM with your generated HTML.
+* You should be able to correct use **async** and **<analogy>await</analogy>** keywords to <analogy>request</analogy> data from an <analogy>API</analogy>.
+* You should be able to use a `for..of` loop to generate HTML representations of each <analogy>object</analogy> in the <analogy>array</analogy>.
+* You should be able to <analogy>import</analogy> the <analogy>component</analogy> functions into the main <analogy>module</analogy>, <analogy>invoke</analogy> them in the correct place, and compose all of the responses into a single HTML <analogy>string</analogy>.
+* You should be able to <analogy>update</analogy> the correct <analogy>element</analogy> on the <analogy>DOM</analogy> with your generated HTML.
 
 
 ## Render the Metal Options
 
-Create a module to manage the display and selection of a metal by the customer. You can call this module **Metals**, or **MetalOptions** - whatever name makes sense to you. Then create your component function in that module. Don't forget to export the function for use in the main module.
+<analogy>Create</analogy> a <analogy>module</analogy> to manage the display and selection of a metal by the customer. You can call this <analogy>module</analogy> **Metals**, or **MetalOptions** - whatever name makes sense to you. Then <analogy>create</analogy> your <analogy>component</analogy> <analogy>function</analogy> in that <analogy>module</analogy>. Don't forget to <analogy>export</analogy> the <analogy>function</analogy> for use in the main <analogy>module</analogy>.
 
 Here's a bit of starter code for you.
 
@@ -24,9 +24,9 @@ export const MetalOptions = async () => {
 }
 ```
 
-Once you complete that, import the function into **main**, invoke it to get the generated HTML and use `innerHTML` to inject the HTML into the DOM. Again, here is some starter code, but it doesn't contain everything you need.
+Once you complete that, <analogy>import</analogy> the <analogy>function</analogy> into **main**, <analogy>invoke</analogy> it to get the generated HTML and use `innerHTML` to inject the HTML into the <analogy>DOM</analogy>. Again, here is some starter code, but it doesn't contain everything you need.
 
-Refer back to the **main** module in Indiana Jeans to remember what else is needed in this module to make it all work. In this starter code, we are providing an overall structure for your HTML that you can use.
+Refer back to the **main** <analogy>module</analogy> in Indiana Jeans to remember what else is needed in this <analogy>module</analogy> to make it all work. In this starter code, we are providing an overall structure for your HTML that you can use.
 
 ```js
 import { MetalOptions } from './MetalOptions.js'

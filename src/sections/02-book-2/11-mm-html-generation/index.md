@@ -4,7 +4,7 @@ In this chapter, we will create a JavaScript module that converts the movie data
 
 > 📖 Vocabulary: Serialization
 >
-> Serialization refers to the process of converting an object or data structure into a format that can be stored, transmitted, or reconstructed later. In this project, the JavaScript objects representing the movie data are being converted into an HTML string format. This process of converting the movie objects to HTML is a form of serialization.
+> <analogy>Serialization</analogy> refers to the process of converting an object or data structure into a format that can be stored, transmitted, or reconstructed later. In this project, the JavaScript objects representing the movie data are being converted into an HTML string format. This process of converting the movie objects to HTML is a form of serialization.
 
 ## Step 1: Create the `movie-converter.js` Module
 
@@ -45,10 +45,10 @@ export const generateMoviesHTML = () => {
 ```
 
 Let's break down the code:
-- We define a function called `generateMoviesHTML` using an arrow function syntax.
+- We define a function called `generateMoviesHTML` using an <analogy>arrow function</analogy> syntax.
 - Inside the function, we initialize an empty string variable called `movieHTML` to store the generated HTML markup.
 - We use a `for...of` loop to iterate over each `movie` object in the `movies` array.
-- For each `movie`, we generate an HTML structure using template literals:
+- For each `movie`, we generate an HTML structure using <analogy>template literals</analogy>:
   - We create an `<article>` element with the class `"movie"` to represent each movie card.
   - Inside the `<article>`, we have an `<img>` element that displays the movie poster image. The `src` attribute is set to the `poster` property of the movie object, and the `alt` attribute is set to the movie title followed by "poster" for accessibility.
   - We also have a `<div>` element with the class `"movie__details"` to hold the movie title and description.

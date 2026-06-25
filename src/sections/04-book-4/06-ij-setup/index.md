@@ -1,6 +1,6 @@
 # Meeting Dr. Henrietta Jones - Urbanologist
 
-Dr. Henrietta Jones is a prominent urbanologist who works for the University of Indianapolis. When she is not working on her regular coursework of teaching classes about urbanology and the history of urban life in the United States, she is out in the field trying to find lost artifacts from ancient, or abandoned, cities of the US.
+Dr. Henrietta Jones is a prominent urbanologist who works for the University of Indianapolis. When she is not working on her regular coursework of teaching classes about urbanology and the history of urban life in the United States, she is out in the field trying to <analogy>find</analogy> lost artifacts from ancient, or abandoned, cities of the US.
 
 Unfortunately, Dr. Jones is required, every year, to do research work and publish papers on her work in order to keep her good standing with the university. Her most recent research involves understanding the relationship of the history of the blue jean with the rise of the urban lifestyle.
 
@@ -12,7 +12,7 @@ She wants you to design the survey as a web application so that students can hav
 
 ## Project Setup
 
-Create the following directory and files.
+<analogy>Create</analogy> the following <analogy>directory</analogy> and files.
 
 ```sh
 mkdir ~/workspace/indiana-jeans
@@ -21,7 +21,7 @@ mkdir styles scripts api
 touch index.html styles/main.css scripts/main.js api/database.json
 ```
 
-Then open the directory in Visual Studio Code.
+Then open the <analogy>directory</analogy> in Visual Studio Code.
 You should see the following file structure:
 
 ```
@@ -61,7 +61,7 @@ Add the following boiler plate code to your `index.html` file.
 ```
 
 ### 💡 Did you know?
-In VSCode, there is a shortcut for creating HTML boilerplate code! Just type `!` in a blank `.html` file and hit enter. You will have a simple html boilerplate to get you started. Just don't forget to link your `.css` file in the `<head>` and add `<script type="module" src="scripts/main.js"></script>` in the `<body>`! It's also wise to give your document a proper `<title>`. 
+In VSCode, there is a shortcut for creating HTML boilerplate code! Just type `!` in a blank `.html` file and hit enter. You will have a simple html boilerplate to get you started. Just don't forget to <analogy>link</analogy> your `.css` file in the `<head>` and add `<script type="module" src="scripts/main.js"></script>` in the `<body>`! It's also wise to give your document a proper `<title>`. 
 
 ### CSS
 
@@ -265,4 +265,4 @@ input[type="radio"]:first-of-type {
 
 ---
 
-Up Next: [Your own API with JSON-Server](./IJ_JSON_SERVER.md)
+Up Next: [Your own <analogy>API</analogy> with <analogy>JSON-Server</analogy>](./IJ_JSON_SERVER.md)

@@ -49,33 +49,33 @@ Watch the [Customer List](https://youtu.be/JijX33KjDP4?si=Rj_Pp6-twBP4weVf) vide
 ## 🎓 Recap Time!
 We've reached the end of our learning objectives for parts _one_ and _two_ of this book. In the next chapter, you will implement the `EmployeesList` component on your own. Take some time to review what you've learned so far. Go back and reread the chapters and dig into the code for any of the concepts below if you need more practice. ***Don't be afraid to break something!***
 
-### JSX
-JSX allows us to write HTML elements in JavaScript and place them in the DOM without any `Document.querySelector` and appending to the `innerHTML` property.
+### <analogy>JSX</analogy>
+<analogy>JSX</analogy> allows us to write HTML elements in JavaScript and place them in the DOM without any `Document.querySelector` and appending to the `innerHTML` property.
 
 >For more information on JSX, revisit the [Your First Component](./REPAIR_FIRST_COMPONENT.md#component-structure-and-jsx) chapter.
 
-### useState
-The `useState` hook allows you to add and manage state in a functional component. It takes one argument: the initial value for our state. It returns an array with two values: the current value of the state and a function to update it.
+### <analogy>useState</analogy>
+The `useState` <analogy>hook</analogy> allows you to add and manage <analogy>state</analogy> in a functional <analogy>component</analogy>. It takes one argument: the initial value for our state. It returns an array with two values: the current value of the state and a function to update it.
 
 >For more information on how `useState` works, revisit the [Your First Component](./REPAIR_FIRST_COMPONENT.md#state-changed) chapter.
 
-### Destructuring
-The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+### <analogy>Destructuring</analogy>
+The <analogy>destructuring</analogy> assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 >For more information on how destructuring works, revisit the [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). _That "Try it" box is interactive and a great way to learn._
 
-### useEffect
-The `useEffect` hook will run a function when, and _only_ when we tell it to. It takes two arguments: the function we want to run and an array. 
+### <analogy>useEffect</analogy>
+The `useEffect` <analogy>hook</analogy> will run a function when, and _only_ when we tell it to. It takes two arguments: the function we want to run and an array. 
 
 >For more information on how `useEffect` works, revisit the [List All Tickets](./REPAIR_ALL_TICKETS.md#useeffect) chapter.
 
-### Event Handling
-Listening for events in React is easy peasy. You can just add the event right on the element you want to listen to!
+### <analogy>Event</analogy> Handling
+Listening for <analogy>events</analogy> in <analogy>React</analogy> is easy peasy. You can just add the event right on the element you want to listen to!
 The two events we've written so far are `onClick` for a button and `onChange` for a text input.
 
 >For more information on event handling, revisit the [Your First Component](./REPAIR_FIRST_COMPONENT.md#event-listener) chapter.
 
-### Optional Chaining
+### <analogy>Optional Chaining</analogy>
 The `?.` operator is like the `.` chaining operator, except that instead of causing an error if a reference is `null` or `undefined`, the expression short-circuits with a return value of `undefined.` This is very helpful if our state that were displaying in our JSX contains nested objects but the initial value is an empty object. 
 
 ```javascript
@@ -93,8 +93,8 @@ export const SomeComponent = () => {
 }
 ```
 
-### Ternary Statements
-A ternary statement is syntactical shorthand for a simple `if/else` block. 
+### <analogy>Ternary Statements</analogy>
+A <analogy>ternary statement</analogy> is syntactical shorthand for a simple `if/else` block. 
 
 ```javascript
   let answer
@@ -112,8 +112,8 @@ turns to
 
 It is possible to write nested ternaries. Don't do it. It's like taking the muffler off your vehicle and driving through a neighborhood at 11pm. No one is impressed and they're all just mad that you've woken up their kids. 
 
-### Rendering Components
-Rendering a component is like invoking a function. Components return HTML, therefore we render our components where we want that html to go. The syntax for rendering a component is:
+### Rendering <analogy>Components</analogy>
+Rendering a <analogy>component</analogy> is like invoking a function. Components return HTML, therefore we render our components where we want that html to go. The syntax for rendering a component is:
 
 ```jsx
 export const ParentComponent = () => {
@@ -129,8 +129,8 @@ export const ParentComponent = () => {
 
 >For more information about rendering components, revisit the [Ticket Assignee](./REPAIR_TICKET_ASSIGNEE.md#rendering-the-ticketlist-component) chapter
 
-### Props
-Props are arguments passed into a React component. When a child component needs access to state from a parent component, you can pass props to the child component.
+### <analogy>Props</analogy>
+<analogy>Props</analogy> are arguments passed into a <analogy>React</analogy> <analogy>component</analogy>. When a child <analogy>component</analogy> needs access to <analogy>state</analogy> from a parent <analogy>component</analogy>, you can pass <analogy>props</analogy> to the child <analogy>component</analogy>.
 
 ```jsx
 export const ParentComponent = () => {

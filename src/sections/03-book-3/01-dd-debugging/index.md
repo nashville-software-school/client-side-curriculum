@@ -15,7 +15,7 @@ Here's what the output of the application should look like.
 
 ## Setup
 
-Run the following command in your terminal.
+Run the following command in your <analogy>terminal</analogy>.
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/main/client/deshawn-setup.sh)"
@@ -25,7 +25,7 @@ That script will create the `workspace/dog-walking` directory for you. Just `cd`
 
 ## Dependency Graph
 
-You are required to have a dependency graph for every project, and in this book, the graph becomes a bit more complex as there are many modules. Your working memory will be stretched, which is why the visual representations are very important.
+You are required to have a <analogy>dependency graph</analogy> for every project, and in this book, the graph becomes a bit more complex as there are many modules. Your working memory will be stretched, which is why the visual representations are very important.
 
 Examine all of the imports and exports that exist in this project and build a dependency graph for it. Once you are done, you can expand the hint below and see if yours matches.
 

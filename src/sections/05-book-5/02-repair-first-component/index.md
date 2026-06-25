@@ -13,7 +13,7 @@ Keep these differences in mind as you follow along in this course.
 
 Watch the [First Component](https://youtu.be/-WMvlULvBeU) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
  
-## Component Structure and JSX
+## Component Structure and <analogy>JSX</analogy>
 You've been writing React-like components in vanilla JS, you just didn't know it! Take this code from _Tour Some Sugar On Me_ for example:
 ```javascript
 export const VenuesList = () => {
@@ -62,13 +62,13 @@ export const VenuesList = () => {
 }
 ```
 
-See? React is just Javascript. Just some new, slightly different syntax and much faster to implement! Notice how we don't have to add the `.join("")` to the end our `.map()` method. That's because with JSX we don't have to convert that returned array to a string!
+See? <analogy>React</analogy> is just Javascript. Just some new, slightly different syntax and much faster to implement! Notice how we don't have to add the `.join("")` to the end our `.map()` method. That's because with <analogy>JSX</analogy> we don't have to convert that returned array to a string!
 
 > Don't worry about trying to understand every bit of the code above, we'll continue to draw comparisons between what we already know and what we're learning in later chapters. 
 > 
-## Event listener
-React makes it easy to listen to user-triggered events.
-In the video, you saw an event listener added right on the element!
+## <analogy>Event listener</analogy>
+<analogy>React</analogy> makes it easy to listen to user-triggered <analogy>events</analogy>.
+In the video, you saw an <analogy>event listener</analogy> added right on the element!
 In vanilla JS we would have had to write something like this:
 ```javascript
 document.addEventListener('click', (event) => {
@@ -111,18 +111,18 @@ export const App = () => {
 }
 ``` 
 
-For functions that are single, small operations such as only setting state, an anonymous function works fine. But if your function is multiple lines of code, it's much cleaner to define a function instead in order to keep our JSX readable and tidy.
+For functions that are single, small operations such as only setting <analogy>state</analogy>, an anonymous function works fine. But if your function is multiple lines of code, it's much cleaner to define a function instead in order to keep our JSX readable and tidy.
 
 ## State Changed
-Remember back in Book 4 when the state changed? Think about the times when the user placed a new order or saved a submission, and you had to dispatch a custom event to notify your application about it. Afterward, you had to write an event listener for that custom event, allowing you to update your HTML with the new state. 
+Remember back in Book 4 when the <analogy>state</analogy> changed? Think about the times when the user placed a new order or saved a submission, and you had to dispatch a <analogy>custom event</analogy> to notify your application about it. Afterward, you had to write an <analogy>event listener</analogy> for that <analogy>custom event</analogy>, allowing you to update your HTML with the new state. 
 
-That's where the magic of the `useState` hook comes in. When it comes to defining and managing state within our components, `useState` streamlines the process.
+That's where the magic of the `useState` <analogy>hook</analogy> comes in. When it comes to defining and managing <analogy>state</analogy> within our <analogy>components</analogy>, `useState` streamlines the process.
 
 ```javascript
 const [count, setCount] = useState(0) // returns [value, setValueFunction]
 ```
 
-With `useState`, all we need to do is declare our state using the hook. The `useState` function takes a single argument: the initial value we want for our state variable. It then returns an array that we destructure into two parts: our state variable and a function to update that state variable.
+With `useState`, all we need to do is declare our <analogy>state</analogy> using the <analogy>hook</analogy>. The `useState` function takes a single argument: the initial value we want for our state variable. It then returns an array that we destructure into two parts: our state variable and a function to update that state variable.
 
 When we want to display our state within the JSX, we simply wrap it with curly braces:
 ```javascript
@@ -131,20 +131,20 @@ return (
 )
 ```
 
-Now, here's the exciting part. In vanilla JavaScript, whenever we changed the value of state, we'd have to dispatch an event to signal the state change, set up an event listener to catch that event, and then pass a function to update our HTML. However, the `useState` hook provides us with a more elegant solution. When we use the function provided by `useState` to update our state, React automatically detects the state change behind the scenes. As a result, React takes care of re-rendering our component for us!
+Now, here's the exciting part. In vanilla JavaScript, whenever we changed the value of state, we'd have to dispatch an event to signal the state change, set up an event listener to catch that event, and then pass a function to update our HTML. However, the `useState` hook provides us with a more elegant solution. When we use the function provided by `useState` to update our state, <analogy>React</analogy> automatically detects the <analogy>state</analogy> change behind the scenes. As a result, <analogy>React</analogy> takes care of <analogy>re-rendering</analogy> our <analogy>component</analogy> for us!
 
-In essence, `useState` simplifies and streamlines the way we handle state changes, making our components more efficient and our code more readable.
+In essence, `useState` simplifies and streamlines the way we handle <analogy>state</analogy> changes, making our <analogy>components</analogy> more efficient and our code more readable.
 
 
 ## 📓 Vocabulary
-> **React Components:**  Independent and reusable blocks of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+> **<analogy>React</analogy> Components:**  Independent and reusable blocks of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
 
-> **JSX:** A JavaScript syntax extension that enables you to write HTML-like markup within a JavaScript file.
+> **<analogy>JSX</analogy>:** A JavaScript syntax extension that enables you to write HTML-like markup within a JavaScript file.
 
-> **Fragment:** Used via `<>...</>` syntax, lets you group elements without a wrapper node. It has no effect on the resulting DOM; it is the same as if the elements were not grouped. 
+> **<analogy>Fragment</analogy>:** Used via `<>...</>` syntax, lets you group elements without a wrapper node. It has no effect on the resulting DOM; it is the same as if the elements were not grouped. 
 
-> **React Hooks:** Functions provided by the React library (prefixed with "use") that allow you to "hook" into state and lifecycle features of components.
+> **<analogy>React</analogy> Hooks:** Functions provided by the <analogy>React</analogy> library (prefixed with "use") that allow you to "<analogy>hook</analogy>" into <analogy>state</analogy> and lifecycle features of <analogy>components</analogy>.
 
-> **useState:** A crucial React Hook that empowers you to introduce state to a component. It takes an initial value as its argument and returns an array. This array contains the state value (index 0) and a function (index 1) to modify that state.
+> **<analogy>useState</analogy>:** A crucial <analogy>React</analogy> Hook that empowers you to introduce <analogy>state</analogy> to a <analogy>component</analogy>. It takes an initial value as its argument and returns an array. This array contains the state value (index 0) and a function (index 1) to modify that state.
 
 Up Next: [Setting up the API](./REPAIR_API.md)

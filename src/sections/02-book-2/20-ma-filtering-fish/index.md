@@ -4,7 +4,7 @@
 
 ### Why Are You Learning This?
 
-Filtering is a very common process that applications provide for their users. Think of Amazon, or Etsy, or really any site that sells a large number of products. They always provide a way to filter their list of products to help you find products that match your likes.
+<analogy>Filtering</analogy> is a very common process that applications provide for their users. Think of Amazon, or Etsy, or really any site that sells a large number of products. They always provide a way to filter their list of products to help you find products that match your likes.
 
 * Filter by price
 * Filter by category
@@ -81,7 +81,7 @@ for (const sock of socks) {
 
 Remember, Martin always pays his invoices promptly, so regardless of his strange requests, you promptly get to work. You wonder how to go about displaying fish the way he wants.
 
-Luckily, you know about the [remainder operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder) in JavaScript. Using this operator, the following code will only display even numbers.
+Luckily, you know about the [<analogy>remainder operator</analogy>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder) in JavaScript. Using this operator, the following code will only display even numbers.
 
 ##### Example
 

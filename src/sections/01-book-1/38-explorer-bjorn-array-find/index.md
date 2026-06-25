@@ -2,7 +2,7 @@
 
 Up to this point, you've been iterating arrays with `for..of` loops, which are very efficient. In this Explorer chapter, you will explore how to do the same with array methods.
 
-Array methods are complex abstractions for beginners because the syntax is not as straightforward and easy to read. You need to understand that iteration happens even though you don't see a `for..of` loop.
+Array methods are complex abstractions for beginners because the syntax is not as straightforward and easy to read. You need to understand that <analogy>iteration</analogy> happens even though you don't see a `for..of` loop.
 
 ## Finding River and Trail Adventures
 

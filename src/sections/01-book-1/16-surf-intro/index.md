@@ -14,7 +14,7 @@ She has contracted you to help manage the inventory of her business.
 
 At the end of this project you should be able to...
 
-* Correctly read a stack trace to determine the exact location of an error.
-* Understand the error message.
+* Correctly read a <analogy>stack trace</analogy> to determine the exact location of an error.
+* Understand the <analogy>error message</analogy>.
 * Explain the cause of the error.
 * Efficiently search the Web to deepen your understand of the error and solution.

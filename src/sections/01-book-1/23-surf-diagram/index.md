@@ -10,7 +10,7 @@ This is why professional developers use graphs to visually represent how a proje
 
 ## Dependency Graph
 
-Your first visual is a dependency graph. This shows how modules are dependent upon other modules in the project and can give you a quick reference of how the data and logic flows through the system.
+Your first visual is a <analogy>dependency graph</analogy>. This shows how modules are dependent upon other modules in the project and can give you a quick reference of how the data and logic flows through the system.
 
 This is a simple project for drawing dependencies. The main module imports things from the data module, and it also imports things from the functions module.
 
@@ -28,7 +28,7 @@ graph TD;
 
 One of your four Core Skills is [algoritmic thinking](https://www.wikihow.com/Think-Algorithmically). A person who cannot think algorithmically cannot be a high value software developer.
 
-A detailed way to visualize an algorithm for a problem is with a **Sequence Diagram**. This type of diagram shows all of the actors _(i.e. Properties, Data, and Functions)_ but also shows the interactions between them, and the precise order in which those operations happen. It also visualizes when data is iterated and what happens during iteration.
+A detailed way to visualize an <analogy>algorithm</analogy> for a problem is with a **<analogy>Sequence Diagram</analogy>**. This type of diagram shows all of the actors _(i.e. Properties, Data, and Functions)_ but also shows the interactions between them, and the precise order in which those operations happen. It also visualizes when data is iterated and what happens during iteration.
 
 It is a visualization of your algorithmic thinking.
 

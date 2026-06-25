@@ -35,11 +35,11 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create env file
         run: |
-          echo "VITE_OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID }}" > .env
-          echo "VITE_OAUTH_CLIENT_SECRET=${{ secrets.OAUTH_CLIENT_SECRET }}" >> .env
+          echo "VITE_OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID_S3_PREVIEW }}" > .env
+          echo "VITE_OAUTH_CLIENT_SECRET=${{ secrets.OAUTH_CLIENT_SECRET_S3_PREVIEW }}" >> .env
           echo "VITE_PROXY_DOMAIN=https://authproxy.nss.team" >> .env
           echo "VITE_LEARNING_PLATFORM_API=https://learningapi.nss.team" >> .env
-          echo "BASE_URL=pr-${{ github.event.pull_request.number }}" >> .env
+          echo "BASE_URL=auth/pr-${{ github.event.pull_request.number }}" >> .env
           echo "VITE_COURSE_NAME=${{secrets.WORKSHOP_NAME}}" >> .env
           echo "VITE_GLOBAL_PROGRESS_BAR=${{secrets.VITE_GLOBAL_PROGRESS_BAR}}" >> .env
           echo "VITE_REQUIRES_GITHUB_AUTHENTICATION=${{secrets.VITE_REQUIRES_GITHUB_AUTHENTICATION}}" >> .env
@@ -52,18 +52,22 @@ jobs:
       - name: Build Vite
         run: npm run build
 
+      - name: Patch 404.html for two-segment S3 prefix (auth/pr-N)
+        run: sed -i 's/var pathSegmentsToKeep = 1/var pathSegmentsToKeep = 2/' ./dist/404.html
+
       - name: Configure AWS (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      - name: Upload to S3 (prefix = pr-<num>)
+      - name: Upload to S3 (prefix = auth/pr-<num>)
         run: |
           set -euo pipefail
           PR=${{ github.event.pull_request.number }}
-          aws s3 sync ./dist "s3://${{  vars.S3_BUCKET }}/pr-${PR}/" --delete --only-show-errors
-          echo "PREVIEW_URL=${{ vars.S3_WEBSITE_BASE }}/pr-${PR}/" >> "$GITHUB_ENV"
+          aws s3 sync ./dist "s3://${{  vars.S3_BUCKET }}/auth/pr-${PR}/" --delete --only-show-errors
+          aws s3 cp ./dist/404.html "s3://${{ vars.S3_BUCKET }}/404.html"
+          echo "PREVIEW_URL=${{ vars.S3_WEBSITE_BASE }}/auth/pr-${PR}/" >> "$GITHUB_ENV"
 
       - name: Comment PR with preview URL
         uses: actions/github-script@v7
@@ -104,8 +108,8 @@ jobs:
         run: |
           set -euo pipefail
           PR=${{ github.event.pull_request.number }}
-          aws s3 rm "s3://${{ vars.S3_BUCKET }}/pr-${PR}/" --recursive --only-show-errors
-          echo "PREVIEW_URL=${{ vars.S3_WEBSITE_BASE }}/pr-${PR}/" >> "$GITHUB_ENV"
+          aws s3 rm "s3://${{ vars.S3_BUCKET }}/auth/pr-${PR}/" --recursive --only-show-errors
+          echo "PREVIEW_URL=${{ vars.S3_WEBSITE_BASE }}/auth/pr-${PR}/" >> "$GITHUB_ENV"
 
       - name: Comment PR with cleanup confirmation
         uses: actions/github-script@v7

@@ -53,11 +53,11 @@ Watch the [Intro to Routes](https://youtu.be/IIb47gZBFbY?si=_ZhOwvEDdOQL_3y1) vi
 ## Setting Up Routes
 In the video you learned how to set up up routes for your application. 
 
-We started off by wrapping our entire application with the `<BrowserRouter>` component. This keeps our application in sync with the URL, which we need because we want to render different components depending on which url the user visits.
+We started off by wrapping our entire application with the `<BrowserRouter>` <analogy>component</analogy>. This keeps our application in sync with the URL, which we need because we want to render different <analogy>components</analogy> depending on which url the user visits.
 
-Then we defined some routes using the `<Route>` component.
+Then we defined some <analogy>routes</analogy> using the `<Route>` <analogy>component</analogy>.
 
-A `<Route>` component tells our application, "Hey, when the url is _here_, I want you to render _this_." Let's see that in action.
+A `<Route>` <analogy>component</analogy> tells our application, "Hey, when the url is _here_, I want you to render _this_." Let's see that in action.
 
 ```jsx
 <Route 
@@ -82,7 +82,7 @@ Similar to creating an unordered list in html where all of your `<li>` elements 
 </Routes>
 ```
 
-## Child Routes
+## Child <analogy>Routes</analogy>
 We also learned how to nest routes: 
 
 ```jsx
@@ -113,7 +113,7 @@ Here, if the user navigates to _/about_, the `<AboutUs />` component will render
   </Route>
 </Routes>
 ```
- We then added an `<Outlet />` component to tell the parent route where to render the child route element. Now when the user visits _/about_, they will see:
+ We then added an `<Outlet />` <analogy>component</analogy> to tell the parent <analogy>route</analogy> where to render the child <analogy>route</analogy> element. Now when the user visits _/about_, they will see:
 
  ```jsx
 <Header />
@@ -121,10 +121,10 @@ Here, if the user navigates to _/about_, the `<AboutUs />` component will render
 <Footer />
  ```
 
-If you forget to add the `<Outlet />`, however, you child route elements will not render.
+If you forget to add the `<Outlet />`, however, you child <analogy>route</analogy> elements will not render.
 
-## Creating a Link
-A `<Link>` is an element that lets the user navigate to another page by clicking or tapping on it. A `Link` tells our application, "Hey, go _to_ this URL."
+## Creating a <analogy>Link</analogy>
+A `<Link>` is an element that lets the user navigate to another page by clicking or tapping on it. A `<analogy>Link</analogy>` tells our application, "Hey, go _to_ this URL."
 
 ```jsx
 <Link to="/about">About</Link>
@@ -140,13 +140,13 @@ Now that you're an expert, write the routing functionality for the Employees Lis
 **Copy and pasting is _boring_**
 
 ## 📓 Vocabulary 
-> **Route:** A component from the react-router-dom library that allows us to define which components or jsx should render on the page depending on the url of our application.
+> **<analogy>Route</analogy>:** A <analogy>component</analogy> from the react-router-dom library that allows us to define which <analogy>components</analogy> or <analogy>jsx</analogy> should render on the page depending on the url of our application.
 
-> **Routes:**  A component from the react-router-dom library that is used to define our list of routes. All `Route` components defined in an application must be wrapped with the `Routes` component.
+> **<analogy>Routes</analogy>:**  A <analogy>component</analogy> from the react-router-dom library that is used to define our list of <analogy>routes</analogy>. All `Route` <analogy>components</analogy> defined in an application must be wrapped with the `Routes` <analogy>component</analogy>.
 
-> **Outlet:** A component from the react-router-dom library that defines where a child Route element should render in relation to it's parent Route element. If a parent Route has an element, the `<Outlet />` component must be rendered within it or the child elements will not display.
+> **<analogy>Outlet</analogy>:** A <analogy>component</analogy> from the react-router-dom library that defines where a child <analogy>Route</analogy> element should render in relation to it's parent <analogy>Route</analogy> element. If a parent <analogy>Route</analogy> has an element, the `<Outlet />` <analogy>component</analogy> must be rendered within it or the child elements will not display.
 
-> **Link:** A component from the react-router-dom library that navigates to the url defined in the `to` prop passed to the component.
+> **<analogy>Link</analogy>:** A <analogy>component</analogy> from the react-router-dom library that navigates to the url defined in the `to` <analogy>prop</analogy> passed to the <analogy>component</analogy>.
 
 ### _Disclaimer_
 React-Router-Dom is a very powerful tool and it's constantly evolving. In this course, you will learn the basics of routing with React-Router-Dom, enough to build a solid application, but this is only the tip of the iceberg and it does not include the latest features. If at any point you are feeling curious and would like to learn more about React-Router-Dom and what it can do, visit the [docs](https://reactrouter.com/en/main). We will continue to cover more features of React Router Dom as you make your way through this project.

@@ -1,6 +1,6 @@
 # Arranging Movie Cards in a Grid Layout
 
-In this chapter, we will focus on arranging the movie cards in a grid layout using CSS Flexbox. By applying flexbox properties to the container element, we can create a responsive and visually appealing movie showcase that adapts to different screen sizes.
+In this chapter, we will focus on arranging the movie cards in a grid layout using CSS <analogy>Flexbox</analogy>. By applying flexbox properties to the container element, we can create a responsive and visually appealing movie showcase that adapts to different screen sizes.
 
 ## Step 1: Open the `layout.css` File
 

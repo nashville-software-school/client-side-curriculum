@@ -1,6 +1,6 @@
 # Displaying Number of Products Sold
 
-Using code from the last project as an example, attempt adding a click event listener that presents an alert box showing how many products an employee has sold when their name is clicked.
+Using code from the last project as an example, attempt adding a click <analogy>event listener</analogy> that presents an alert box showing how many products an employee has sold when their name is clicked.
 
 ![](./images/employee-sales.gif)
 
@@ -10,6 +10,6 @@ You can peek at [some of the solution](./code/employeeSales.js) if you need to.
 
 ## Dev Tools Practice
 
-Use the Event Listeners panel to discover, and the Event Listener Breakpoints panel to debug, the events in your code. If you don't know what this means, then you skipped chapter 5 of the guided tour.
+Use the <analogy>Event Listeners panel</analogy> to discover, and the <analogy>Event Listener Breakpoints</analogy> panel to debug, the events in your code. If you don't know what this means, then you skipped chapter 5 of the guided tour.
 
 Go read that chapter now and watch the accompanying video.

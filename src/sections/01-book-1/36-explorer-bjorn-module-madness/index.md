@@ -6,5 +6,5 @@ In your project, you still very likely have all of the display code in the `bjor
 2. Information about trails
 3. Information about rivers
 
-In this Explorer chapter, your challenge is to move each of these chunks of display logic into their own module, and their own function in those modules. Then import each into `bjorn.js` and invoke the appropriate functions there.
+In this Explorer chapter, your challenge is to move each of these chunks of display logic into their own <analogy>module</analogy>, and their own function in those modules. Then <analogy>import</analogy> each into `bjorn.js` and invoke the appropriate functions there.
 

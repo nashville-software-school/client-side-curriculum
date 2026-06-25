@@ -1,6 +1,6 @@
 # Collection of Queens
 
-In this chapter, you are going to define a new function that will perform the task of adding objects that represent each queen to an array. Thus, you will practice the syntax for arrays and objects that you were introduced to in the Foundations Course.
+In this chapter, you are going to define a new function that will perform the task of adding <analogy>objects</analogy> that represent each queen to an <analogy>array</analogy>. Thus, you will practice the syntax for arrays and objects that you were introduced to in the Foundations Course.
 
 ## Learning Objectives and Competencies
 
@@ -19,7 +19,7 @@ Add the following line of code to the very top of the `main.js`, even before the
 const queens = []
 ```
 
-This array, which starts off empty, will contain all of the queens. Each queen will be represented as an object. So far, you have only used strings for the queen's name, but in this chapter, the queen's name will be a property on an object.
+This array, which starts off empty, will contain all of the queens. Each queen will be represented as an object. So far, you have only used strings for the queen's name, but in this chapter, the queen's name will be a <analogy>property</analogy> on an object.
 
 ## Anoint a Queen
 
@@ -43,7 +43,7 @@ The function will need to be given both the unique numerical identifier you want
 
 Here is some starter code. Paste this into your `main.js` module and immediately run it with the debugger. You will be told by JavaScript that there is a syntax error.
 
-Read the stack trace and determine exactly which line of code in your module has the error.
+Read the <analogy>stack trace</analogy> and determine exactly which line of code in your module has the error.
 
 ```js
 const queens = []
@@ -117,6 +117,6 @@ const createQueen = (queenId, queenName) => {
 
 Now that you have the function working correctly. Invoke the function several times to create multiple queen objects in the array. Then set a breakpoint on the line of code where the function is invoked the very first time and run the debugger again.
 
-Watch the queen array get items added to it as you step over each line of code.
+Watch the queen array get items added to it as you <analogy>step over</analogy> each line of code.
 
 ![animation of debugger showing the queens array getting items added to it](./images/debugger-queen-array.gif)

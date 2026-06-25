@@ -1,6 +1,6 @@
 # Targeting DOM With JavaScript
 
-When you hear a developer use the acronym DOM, they are talking about the HTML. Even though DOM is something much more complex and subtle, for now, just consider it the HTML that is being rendered to be visible to your users.
+When you hear a developer use the acronym <analogy>DOM</analogy>, they are talking about the HTML. Even though DOM is something much more complex and subtle, for now, just consider it the HTML that is being rendered to be visible to your users.
 
 The end goal is to take all of that HTML that is being generated in the **VillainList**, and **HeroList** functions and get it into the DOM.
 
@@ -26,7 +26,7 @@ Look in your `index.html` file again to see it.
 
 ## Debugger Breakpoints
 
-On the line after the query selector code, type the 'debugger' keyword. Then, refresh the page and inspect the value of `theExistingMainElement` in the **Sources** tab when it appears.
+On the line after the query selector code, type the '<analogy>debugger</analogy>' keyword. Then, refresh the page and inspect the value of `theExistingMainElement` in the **Sources** tab when it appears.
 
 The `debugger` keyword works just like your breakpoints did in Book 1. It pauses the execution of code on that line. Then you can inspect the values of all of your variables in the **Scope** panel that exists to the right.
 

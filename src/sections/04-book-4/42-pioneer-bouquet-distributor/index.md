@@ -4,7 +4,7 @@ Each flower shop buys their flowers from a single distributor. Flower distributo
 
 ### The Bouquet ERD
 
-Use dbdiagram.io to create an ERD that visualizes the relationship between a **Retailers** and **Distributors** resources. Each of these businesses should have a name, city, state, and address. Just dummy data. Don't worry about creating real addresses.
+Use dbdiagram.io to <analogy>create</analogy> an <analogy>ERD</analogy> that visualizes the relationship between a **Retailers** and **Distributors** resources. Each of these businesses should have a name, city, <analogy>state</analogy>, and address. Just dummy data. Don't worry about creating real addresses.
 
 ```html
 Table Retailers {
@@ -27,5 +27,5 @@ Add the new distributor resource to your database and at least 3 distributors. T
 
 ### HTML Representations
 
-Create your data provider for distributors, and then refactor your list of retailers to also display the name of the distibutor business from which each purchases its flowers.
+<analogy>Create</analogy> your data provider for distributors, and then refactor your list of retailers to also display the name of the distibutor business from which each purchases its flowers.
 

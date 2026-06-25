@@ -28,11 +28,11 @@ Watch the [Search Tickets](https://youtu.be/WPG09-cUJYg?si=sYHT7adRJVgaL0qr) vid
 </details>
 
 ## Missing Dependencies
-When we created the useEffect to watch for the searchTerm state change, we saw a green squiggly (if Eslint is installed) under our dependency array. This isn't an error but more of a warning that this code _might_ cause a bug. 
+When we created the useEffect to watch for the searchTerm <analogy>state</analogy> change, we saw a green squiggly (if Eslint is installed) under our dependency array. This isn't an error but more of a warning that this code _might_ cause a bug. 
 ```sh
 React Hook useEffect has a missing dependency: 'allTickets'. 
 ```
-The reason for this warning is that in our callback function we're using a variable that is not in our dependency array. 
+The reason for this warning is that in our callback function we're using a variable that is not in our <analogy>dependency array</analogy>. 
 ```javascript
 useEffect(() => {
     const foundTickets = allTickets.filter((ticket) =>
@@ -41,7 +41,7 @@ useEffect(() => {
     setFilteredTickets(foundTickets)
   }, [searchTerm])
 ```
-Though the point of this useEffect is to _watch_ for whenever the searchTerm changes so that we can filter our tickets, we are _depending_ on the allTickets state. 
+Though the point of this useEffect is to _watch_ for whenever the searchTerm changes so that we can filter our tickets, we are _depending_ on the allTickets <analogy>state</analogy>. 
 
 Not including `allTickets` in the dependency array may not cause any problems, but Eslint sees it as a potential bug. What if the value of allTickets changes? You may want to rerun this function this function if it does. 
 

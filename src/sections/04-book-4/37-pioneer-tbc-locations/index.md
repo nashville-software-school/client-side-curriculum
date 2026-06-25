@@ -4,12 +4,12 @@ In this exercise, you are going to refactor you application to include office lo
 
 ### The Workforce ERD
 
-Add a new table to your ERD in dbdiagram.io to visualize the locations resource and its relationship to the employees resource.
+Add a new table to your <analogy>ERD</analogy> in dbdiagram.io to visualize the locations resource and its relationship to the employees resource.
 
 ### HTML Representations
 
-1. Add a new resource in your database named `locations` and create an object representation of each office location.
-1. Modify each employee object to have a foreign key to one office location.
+1. Add a new resource in your database named `locations` and <analogy>create</analogy> an <analogy>object</analogy> representation of each office location.
+1. Modify each employee <analogy>object</analogy> to have a <analogy>foreign key</analogy> to one office location.
 1. Refactor the employee list code to display the office location in the employee's HTML representation.
 
 The final HTML representation should look like this.

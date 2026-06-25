@@ -1,15 +1,15 @@
 # Cars 'R Us
 
-For this application, you are going to allow customers to design their own car detailing package and place an order for a new car with those options. In the Guided Tour, you generated radio buttons to allow customers to choose their option for each kind of resources, but in this project, you will be using `<select>` elements to create the dropdown controls.
+For this application, you are going to allow customers to design their own car detailing package and place an order for a new car with those options. In the Guided Tour, you generated radio buttons to allow customers to choose their option for each kind of resources, but in this project, you will be using `<select>` elements to <analogy>create</analogy> the <analogy>dropdown</analogy> controls.
 
 <img src="./images/car-builder-overview.gif" alt="animataion of car builder user interface" width="800px">
 
 ## Setup
 
-1. Create `workspace/cars-r-us` directory.
-1. Create `scripts`, `database`, and `styles` sub-directories
-2. Create `main.js` in scripts directory
-3. Create `database.json` in API directory
+1. <analogy>Create</analogy> `workspace/cars-r-us` <analogy>directory</analogy>.
+1. <analogy>Create</analogy> `scripts`, `database`, and `styles` sub-directories
+2. <analogy>Create</analogy> `main.js` in scripts <analogy>directory</analogy>
+3. <analogy>Create</analogy> `database.json` in <analogy>API</analogy> <analogy>directory</analogy>
 
 ## Options
 
@@ -53,10 +53,10 @@ Customer can choose from the follow options for wheels. You set the price for ea
 
 ## ERD
 
-Before you create any actual state data structures in your code, create an ERD for this application. Consider not only the resources above, but also how the customer's order will be stored and the properties on those objects.
+Before you <analogy>create</analogy> any actual <analogy>state</analogy> data structures in your code, <analogy>create</analogy> an <analogy>ERD</analogy> for this application. Consider not only the resources above, but also how the customer's order will be stored and the properties on those objects.
 
-Once you have an ERD created, but are unsure if you got it right, feel free to run it by your peers or an mentor.
+Once you have an <analogy>ERD</analogy> created, but are unsure if you got it right, feel free to run it by your peers or an mentor.
 
 ## API
 
-Once your ERD is complete, create the basic structure in your `database.json` file and enter in the data for the options above.
+Once your <analogy>ERD</analogy> is complete, <analogy>create</analogy> the basic structure in your `database.json` file and enter in the data for the options above.

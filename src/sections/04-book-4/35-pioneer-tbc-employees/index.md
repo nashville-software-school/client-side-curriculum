@@ -1,20 +1,20 @@
 # Listing Employees
 
-In this first chapter, your task is to create a list of employees.
+In this first chapter, your task is to <analogy>create</analogy> a list of employees.
 
 ## Practice: Small Business Workforce
 
-> Create a `~/workspace/workforce` directory for this exercise.
+> <analogy>Create</analogy> a `~/workspace/workforce` <analogy>directory</analogy> for this exercise.
 
 A small software consulting business wants to keep track of its employees and the computers that they use. Each employee is assigned a computer when they join the company.
 
-Create an API to be served with `json-server` and create the following resources in your `database.json` file. **Do not** build the arrays of objects in your JavaScript code.
+<analogy>Create</analogy> an <analogy>API</analogy> to be served with `json-server` and <analogy>create</analogy> the following resources in your `database.json` file. **Do not** build the arrays of objects in your JavaScript code.
 
 1. Build arrays of objects that represent _Employees_, and _Computers_ in your `database.json` file.
-1. Assign every resource a unique `id` property.
-1. Assign each employee a computer using a foreign key.
+1. <analogy>Assign</analogy> every resource a unique `id` <analogy>property</analogy>.
+1. <analogy>Assign</analogy> each employee a computer using a <analogy>foreign key</analogy>.
 
-Here's some JSON to get you started. Add at least 4 more computers, and 4 more employees to your database. Assign each employee a different computer.
+Here's some <analogy>JSON</analogy> to get you started. Add at least 4 more computers, and 4 more employees to your database. <analogy>Assign</analogy> each employee a different computer.
 
 > #### `workforce/api/database.json`
 
@@ -41,5 +41,5 @@ Here's some JSON to get you started. Add at least 4 more computers, and 4 more e
 ## HTML Representations
 
 1. Using the strategies that you learned in previous projects in this book, generate the initial modules that you will need to generate HTML representations of employees _(e.g. main.js, employees.js)_.
-1. Use the employee and computer data in the employee list component to display the employee's name, and age. Also display the model and manufacture year for the computer she is using. Remember to use the `_expand` query string parameter when fetching employees.
+1. Use the employee and computer data in the employee list <analogy>component</analogy> to display the employee's name, and age. Also display the model and manufacture year for the computer she is using. Remember to use the `_expand` query <analogy>string</analogy> <analogy>parameter</analogy> when fetching employees.
 

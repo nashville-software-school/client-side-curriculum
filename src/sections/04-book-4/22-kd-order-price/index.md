@@ -4,14 +4,14 @@ You are currently showing a simple message for each jewelry order. Natasha wants
 
 ## Expanding the Response
 
-JSON Server has a cool feature that you haven't seen yet. Up to this point, you have been making simple requests to get all objects in a collection...
+<analogy>JSON</analogy> <analogy>Server</analogy> has a cool feature that you haven't seen yet. Up to this point, you have been making simple requests to get all objects in a collection...
 
 ```js
 const ordersFetch = await fetch("http://localhost:8088/orders")
 const orders = await ordersFetch.json()
 ```
 
-Here is the data you get in the response.
+Here is the data you get in the <analogy>response</analogy>.
 
 ```json
 [
@@ -30,15 +30,15 @@ Here is the data you get in the response.
 ]
 ```
 
-You also have the ability to tell JSON Server to expand the objects based on the foreign keys.
+You also have the ability to tell <analogy>JSON</analogy> <analogy>Server</analogy> to expand the objects based on the foreign keys.
 
-Open Postman and request orders again, but with the following URL. Note that there is a query string parameter at the end.
+Open Postman and <analogy>request</analogy> orders again, but with the following URL. Note that there is a query <analogy>string</analogy> <analogy>parameter</analogy> at the end.
 
 ```txt
 http://localhost:8088/orders?_expand=metal
 ```
 
-Notice that each order now has a new key on it called metal, which is the corresponding metal for the order.
+Notice that each order now has a new <analogy>key</analogy> on it called metal, which is the corresponding metal for the order.
 
 ```json
 [
@@ -67,14 +67,14 @@ Notice that each order now has a new key on it called metal, which is the corres
 ]
 ```
 
-Next, expand the style by adding another query string parameter.
+Next, expand the style by adding another query <analogy>string</analogy> <analogy>parameter</analogy>.
 
 ```txt
 http://localhost:8088/orders?_expand=metal&_expand=style
 ```
 
-There is now an expanded style object embedded in each order.
-Lastly, expand the size by adding a third query string parameter. You will now see all of the related objects for the order embedded in the response.
+There is now an expanded style <analogy>object</analogy> embedded in each order.
+Lastly, expand the size by adding a third query <analogy>string</analogy> <analogy>parameter</analogy>. You will now see all of the related objects for the order embedded in the <analogy>response</analogy>.
 
 ```txt
 http://localhost:8088/orders?_expand=metal&_expand=style&_expand=size
@@ -82,15 +82,15 @@ http://localhost:8088/orders?_expand=metal&_expand=style&_expand=size
 
 ## Calculating and Using Total Price
 
-Next, update your component function code to fetch the orders with all foreign keys expanded to their full, related objects. Each order object will now have the prices of the chosen metal, size and style that the user made.
+Next, <analogy>update</analogy> your <analogy>component</analogy> <analogy>function</analogy> code to fetch the orders with all foreign keys expanded to their full, related objects. Each order <analogy>object</analogy> will now have the prices of the chosen metal, size and style that the user made.
 
-Update your iteration code to add up the price of the metal, style, and size.
+<analogy>Update</analogy> your <analogy>iteration</analogy> code to add up the price of the metal, style, and size.
 
 ```js
 const orderPrice = order.metal.price + order.style.price + order.size.price
 ```
 
-Once that is calculated, interpolate that total in the HTML string that you currently are generating. Here is an example.
+Once that is calculated, interpolate that total in the HTML <analogy>string</analogy> that you currently are generating. Here is an example.
 
 ```js
 `<div>Order #${order.id} cost ${orderPrice}</div>`

@@ -18,7 +18,7 @@ Run the following command in your terminal to receive the boilerplate code:
 
 
 ## The Data
-The first step of planning this application is to design the ERD and build the database.
+The first step of planning this application is to design the <analogy>ERD</analogy> and build the database.
 ```shell
 cd ~/workspace
 mkdir learning-api

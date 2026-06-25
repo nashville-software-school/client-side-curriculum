@@ -1,6 +1,6 @@
 # Villains
 
-In your `database.js` module, add a new villains key that is an array of fun villain names that you come up with.
+In your `database.js` <analogy>module</analogy>, add a new villains key that is an <analogy>array</analogy> of fun villain names that you come up with.
 
 ```js
 const database = {

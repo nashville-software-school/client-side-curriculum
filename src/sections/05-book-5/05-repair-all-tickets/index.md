@@ -1,5 +1,5 @@
 # List all the tickets
-In this chapter you will begin modularizing your code by creating a `services` directory for interacting with the API and you will learn how to use the `useEffect` hook.
+In this chapter you will begin modularizing your code by creating a `services` directory for interacting with the API and you will learn how to use the `useEffect` <analogy>hook</analogy>.
 
 ## 📺 Watch The Video
 Watch the [All Tickets](https://youtu.be/hoaH8RQjQBo) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
@@ -81,7 +81,7 @@ export const App = () => {
 }
 ```
 
-During the initial render of a component, the state is assigned its initial value. In our example, since no initial value is provided for `allTickets`, our code breaks with this error: 
+During the <analogy>initial render</analogy> of a <analogy>component</analogy>, the <analogy>state</analogy> is assigned its initial value. In our example, since no initial value is provided for `allTickets`, our code breaks with this error: 
 
 ```sh
 Uncaught TypeError: Cannot read properties of undefined (reading 'map')
@@ -89,14 +89,14 @@ Uncaught TypeError: Cannot read properties of undefined (reading 'map')
 
 Since we did not give an initial value for `allTickets`, the initial value is `undefined`. Therefore, on the initial render of this component, `.map()` is called on `undefined`, which is a big no-no. To fix this, we give the `allTickets` state an initial value of an empty array. This is necessary because, in our JSX, we assume that `allTickets` will always be an array when displaying it.
 
-## The `Key` Prop
+## The `Key` <analogy>Prop</analogy>
 Another issue we encountered was this warning message:
 
 ```sh
 Warning: Each child in a list should have a unique "key" prop.
 ```
 
-When mapping an array in JSX, React wants some way to uniquely identify each element. It asks you to provide a `key` prop to each item returned within your `map`.
+When mapping an array in JSX, React wants some way to uniquely identify each element. It asks you to provide a `key` <analogy>prop</analogy> to each item returned within your `map`.
 
 ```javascript
 return (
@@ -114,10 +114,10 @@ return (
 )
 ```
 
-The `key` prop value for each ticket should be its unique identifier, in this case, its id. _Be sure to add the `key` prop to the parent element._ 
+The `key` prop value for each ticket should be its unique identifier, in this case, its id. _Be sure to add the `key` <analogy>prop</analogy> to the parent element._ 
 ## useEffect
 ### The Anatomy of useEffect
-It's easy to be intimidated by `useEffect`, but it's just more Javascript! Remember that `useEffect` is a hook, which is a function provided by the React library enabling us to harness the state and lifecycle capabilities of components.
+It's easy to be intimidated by `useEffect`, but it's just more Javascript! Remember that `useEffect` is a <analogy>hook</analogy>, which is a function provided by the <analogy>React</analogy> library enabling us to harness the <analogy>state</analogy> and lifecycle capabilities of <analogy>components</analogy>.
 
 Let's dive into useEffect once more:
 ```javascript
@@ -126,7 +126,7 @@ useEffect(() => {}, [])
 
 Looking at this we can see that `useEffect` is a function that takes two arguments: A function and an array.
 
-The function is _what_ we want to happen, and the array is _when_ we want it to happen. This function is referred to as a _callback function_, where it's passed as an argument to another function and invoked within it to perform a specific task. You've used callback functions before with `addEventListener()`. The array is known as the dependency array, dictating when the function runs based on changes in the values within the array. With one exception:
+The function is _what_ we want to happen, and the array is _when_ we want it to happen. This function is referred to as a _<analogy>callback function</analogy>_, where it's passed as an argument to another function and invoked within it to perform a specific task. You've used <analogy>callback functions</analogy> before with `addEventListener()`. The array is known as the <analogy>dependency array</analogy>, dictating when the function runs based on changes in the values within the array. With one exception:
 
 ### Initial Rendering
 In Chapter 2, you learned that invoking the state's setter function triggers a component rerender. However, when calling this function at the component level, it gets triggered during each render leading to excessive rerenders and an infinite loop. You saw this happen in the video with the code below: 
@@ -143,7 +143,7 @@ export const App = () => {
 }
 ```
 
-In order to prevent this from happening, we can use `useEffect` to run this code _**only** on the initial render_ of the component. To do this, we pass an **empty** dependency array to the `useEffect`. This tells the `useEffect`, "Only run this function on the **initial render** of this component."
+In order to prevent this from happening, we can use `useEffect` to run this code _**only** on the <analogy>initial render</analogy>_ of the <analogy>component</analogy>. To do this, we pass an **empty** dependency array to the `useEffect`. This tells the `useEffect`, "Only run this function on the **initial render** of this component."
 
 ```javascript
 export const App = () => {
@@ -160,7 +160,7 @@ export const App = () => {
 ```
 
 ### Watching for State Change
-Now, when we include a state variable in the dependency array, the `useEffect` callback function gets executed on **two occasions**. First, on the initial render of the component, and second, whenever the state variable is updated.
+Now, when we include a <analogy>state</analogy> variable in the <analogy>dependency array</analogy>, the `useEffect` <analogy>callback function</analogy> gets executed on **two occasions**. First, on the initial render of the component, and second, whenever the state variable is updated.
 
 ```javascript
 export const App = () => {
@@ -222,17 +222,17 @@ Now, with allTickets included in the dependency array, if the value of `showEmer
 
 That's a lot, I know. But the more you practice, the more sense it will make. Continue progressing through the course and and feel free to revisit this chapter if you need a refresher on how `useEffect` operates.
 ## 📓 Vocabulary
-> **Initial Render:**
-The _first_ time a React component renders. On the initial render of a component, the component's state variables contain the initial values passed to useState.
+> **<analogy>Initial Render</analogy>:**
+The _first_ time a <analogy>React</analogy> <analogy>component</analogy> renders. On the <analogy>initial render</analogy> of a <analogy>component</analogy>, the <analogy>component</analogy>'s <analogy>state</analogy> variables contain the initial values passed to <analogy>useState</analogy>.
 
-> **useEffect:**
-The hook that manages the side-effects in functional components.
-It accepts two arguments, a callback function and a dependency array. It can watch for the initial render of the component or for any changes in state.
+> **<analogy>useEffect</analogy>:**
+The <analogy>hook</analogy> that manages the side-effects in functional <analogy>components</analogy>.
+It accepts two arguments, a <analogy>callback function</analogy> and a <analogy>dependency array</analogy>. It can watch for the <analogy>initial render</analogy> of the <analogy>component</analogy> or for any changes in <analogy>state</analogy>.
 
-> **Dependency Array:** 
-The second argument passed to the useEffect hook. If the array is empty, the callback function passed to useEffect executes only on the initial render of the component. If the array contains state variables, the callback function will execute anytime the value of the passed state variables change.
+> **<analogy>Dependency Array</analogy>:** 
+The second argument passed to the <analogy>useEffect</analogy> <analogy>hook</analogy>. If the array is empty, the <analogy>callback function</analogy> passed to <analogy>useEffect</analogy> executes only on the <analogy>initial render</analogy> of the <analogy>component</analogy>. If the array contains <analogy>state</analogy> variables, the <analogy>callback function</analogy> will execute anytime the value of the passed <analogy>state</analogy> variables change.
 
-> **Callback Function:**
+> **<analogy>Callback Function</analogy>:**
 A function passed as an argument to another function to be later executed.
 
 Up Next: [Introducing Chuckle Checklist](./CHUCKLE_SETUP.md)

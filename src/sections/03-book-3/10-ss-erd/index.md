@@ -16,4 +16,4 @@ In this project, you are going to be displaying 3 lists of information.
 
 ## ERD
 
-Given those requirements, design an ERD in dbdiagram that fulfills them correctly.
+Given those requirements, design an <analogy>ERD</analogy> in dbdiagram that fulfills them correctly.

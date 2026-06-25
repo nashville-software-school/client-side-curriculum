@@ -4,7 +4,7 @@ Now that you have some hidden, developer-only, state in your HTML, you can extra
 
 ## Event Listeners
 
-When the user does _something_, you can react to it with an event listener. Common events that a developer's code reacts to are.
+When the user does _something_, you can react to it with an <analogy>event listener</analogy>. Common events that a developer's code reacts to are.
 
 1. User types something into an input field
 1. User clicks on some HTML element

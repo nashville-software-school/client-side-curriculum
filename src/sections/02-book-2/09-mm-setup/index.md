@@ -4,7 +4,7 @@ In this chapter, we will set up the foundation for our movie collection project.
 
 ## Project Algorithm
 
-This sequence diagram visualizes the algorithm of the project you are about to build.
+This <analogy>sequence diagram</analogy> visualizes the <analogy>algorithm</analogy> of the project you are about to build.
 
 ```mermaid
 sequenceDiagram

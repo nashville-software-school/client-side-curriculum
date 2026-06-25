@@ -8,7 +8,7 @@ Look in the `database.js` module and identify the resources, the fields/attribut
 
 Use dbdiagram to visualize your database.
 
-There should be two 1 -> many relationships visualized in your ERD. They both will converge on a single entity.
+There should be two <analogy>one-to-many relationships</analogy> visualized in your ERD. They both will converge on a single <analogy>entity</analogy>.
 
 This is a great opportunity to discuss these concepts with your teammates and your coaching team, because if you don't understand your data structure, data types, and relationships, then it simply doesn't matter how much knowledge you have of a programming language.
 
