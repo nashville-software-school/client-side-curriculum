@@ -22,6 +22,9 @@ Go to **Settings → Secrets and variables → Actions** in the new repo and add
 #### Use for localhost
 https://github.com/organizations/nashville-software-school/settings/applications/3687637
 
+### Use for previews (PRs) deployed to S3 AWS 
+https://github.com/organizations/nashville-software-school/settings/applications/3690311
+
 #### Use for Prod
 https://github.com/organizations/nashville-software-school/settings/applications/3687647
 
