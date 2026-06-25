@@ -66,6 +66,7 @@ jobs:
           set -euo pipefail
           PR=${{ github.event.pull_request.number }}
           aws s3 sync ./dist "s3://${{  vars.S3_BUCKET }}/auth/pr-${PR}/" --delete --only-show-errors
+          aws s3 cp ./dist/404.html "s3://${{ vars.S3_BUCKET }}/404.html"
           echo "PREVIEW_URL=${{ vars.S3_WEBSITE_BASE }}/auth/pr-${PR}/" >> "$GITHUB_ENV"
 
       - name: Comment PR with preview URL
