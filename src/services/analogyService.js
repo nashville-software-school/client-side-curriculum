@@ -1,6 +1,8 @@
 const ANALOGY_SERVICE_URL = import.meta.env.VITE_ANALOGY_SERVICE_URL
 
 export async function fetchAnalogy({ concept, background, masteryLevel, context }) {
+  if (!ANALOGY_SERVICE_URL) throw new Error('Analogy service is not configured for this environment.')
+
   const token = localStorage.getItem('github_token')
 
   const res = await fetch(`${ANALOGY_SERVICE_URL.replace(/\/$/, '')}/analogy`, {

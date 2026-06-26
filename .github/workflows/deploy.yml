@@ -48,6 +48,7 @@ jobs:
           echo "BASE_URL=${{ secrets.WORKSHOP_BASE_URL }}" >> .env
           echo "VITE_GLOBAL_PROGRESS_BAR=${{ secrets.WORKSHOP_GLOBAL_PROGRESS_BAR }}" >> .env
           echo "VITE_REQUIRES_GITHUB_AUTHENTICATION=${{ env.REQUIRES_AUTH == 'true' }}" >> .env
+          echo "VITE_ANALOGY_SERVICE_URL=${{ secrets.VITE_ANALOGY_SERVICE_URL }}" >> .env
     - name: Install dependencies
       run: npm ci
 
