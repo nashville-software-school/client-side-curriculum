@@ -11,6 +11,7 @@ const BACKGROUNDS = [
   'Transportation & Logistics',
   'Military / Veterans',
   'Arts & Creative Industries',
+  'Everyday / General Life',
 ]
 
 export function BackgroundQuestionnaire({ onComplete }) {

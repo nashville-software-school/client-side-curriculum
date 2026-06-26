@@ -2,17 +2,11 @@ import { useState, useEffect, useRef } from 'react'
 import { useAnalogy } from '../hooks/useAnalogy'
 
 const MASTERY_OPTIONS = [
-  { value: 0,  label: 'No knowledge' },
-  { value: 1,  label: 'Heard of it' },
-  { value: 2,  label: 'Recognize the term' },
-  { value: 3,  label: "Know what it's for" },
-  { value: 4,  label: 'Seen it in code' },
-  { value: 5,  label: 'Can follow with help' },
-  { value: 6,  label: 'Can use with guidance' },
-  { value: 7,  label: 'Can use independently' },
-  { value: 8,  label: 'Comfortable and confident' },
-  { value: 9,  label: 'Could explain it well' },
-  { value: 10, label: 'Could teach it' },
+  { value: 0, label: 'No knowledge' },
+  { value: 1, label: 'Heard of it' },
+  { value: 2, label: 'Can follow with help' },
+  { value: 3, label: 'Can use independently' },
+  { value: 4, label: 'Could teach it' },
 ]
 
 export function AnalogyPopover({ concept, context, background, anchorEl, onClose }) {
