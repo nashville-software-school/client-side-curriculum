@@ -8,6 +8,7 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ## Source Reference
 - **Local repo:** `/home/gmkorte/workspace/nss/curriculum/client-side-curriculum`
 - **GitHub reference:** https://github.com/nashville-software-school/client-side-mastery
+- **nss-core reference:** `/home/gmkorte/workspace/nss/curriculum/platform`
 - Use the GitHub repo as a structural guide for content; it is not the source of truth for the new ID/chapter organization.
 
 ---
