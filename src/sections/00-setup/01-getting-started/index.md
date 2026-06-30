@@ -2,7 +2,7 @@
 
 ## Journal
 
-Get a nice journal and a comfortable pen, and start keeping a daily journal of what you are learning every day. Writing your thoughts on a regular basis [increases your ability to remember it](https://www.lifehack.org/articles/featured/writing-and-remembering-why-we-remember-what-we-write.html). There are even studies that found writing is [beneficial for your health](https://www.apa.org/monitor/sep01/keepdiary.aspx).
+Get a nice journal and a comfortable pen, and start keeping a daily journal of what you are learning every day. Writing your thoughts on a regular basis [increases your ability to remember it](https://web.archive.org/web/20230706192424/https://www.lifehack.org/articles/featured/writing-and-remembering-why-we-remember-what-we-write.html). There are even studies that found writing is [beneficial for your health](https://www.apa.org/monitor/sep01/keepdiary.aspx).
 
 ## Hardware
 
@@ -29,7 +29,7 @@ After you make your account you need to make sure your full name is updated in y
 1. Enter your full name in the "Name" field.
 1. Scroll down and click "Update Profile".
 
-Visit the [sign up page](https://github.com/join) to get started.
+Visit the [sign up page](https://github.com/signup) to get started.
 
 ## dbdiagram.io
 
