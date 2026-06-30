@@ -50,4 +50,4 @@ document.addEventListener("nameYouChose", event => {
 
 Now make some choices and place a custom order. You should see a new order show up in the browser.
 
-![](./images/kneel-diamonds-first-order.gif)
+<img src="./images/kneel-diamonds-first-order.gif">

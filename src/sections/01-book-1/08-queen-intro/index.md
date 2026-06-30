@@ -20,7 +20,7 @@ The key is understanding the problem, and then knowing the <analogy>algorithm</a
 
 ## Anatomy of a Function
 
-![](./images/function-anatomy.png)
+<img src="./images/function-anatomy.png">
 
 Think of functions like minions that work for you. Each minion is designated a specific task that makes up your life.
 

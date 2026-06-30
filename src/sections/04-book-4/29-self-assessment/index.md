@@ -15,7 +15,7 @@ You will be building an application for a local food truck that offers food that
 
 A customer should be able to choose a base dish, a vegetable, and a side dish and place their order. Once the order is placed, the total amount for the chosen foods will appear at the bottom.
 
-![](./images/book-4-assessment.gif)
+<img src="./images/book-4-assessment.gif">
 
 ## Setup
 

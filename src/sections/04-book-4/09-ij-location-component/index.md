@@ -221,7 +221,7 @@ You should now see:
 - The "Do you own a pair of blue jeans?" question with Yes/No options
 - A new question "What type of area do you live in?" with four <analogy>radio button</analogy> options: Urban, Suburban, Semi-Rural, and Rural
 
-![](./images/indiana-jeans-location-component.png)
+<img src="./images/indiana-jeans-location-component.png">
 
 ## 📓 Key Concepts to Remember
 

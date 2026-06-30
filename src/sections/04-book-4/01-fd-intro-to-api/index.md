@@ -6,7 +6,7 @@ Software developers have access to a bountiful world of data that companies, and
 
 In this introduction, you are going to <analogy>request</analogy> data from someone else's computer somewhere else in the world via the World Wide Web (WWW). 
 
-![](./images/request-response.png)
+<img src="./images/request-response.png">
 
 You will be able to access this data by making requests to an <analogy>API</analogy>.
 
@@ -73,7 +73,7 @@ Yaak is an <analogy>API</analogy> testing tool that allows developers to send re
 
 Now that you have Yaak installed, let's make our first <analogy>GET</analogy> <analogy>request</analogy> to the Random Fox <analogy>API</analogy>:
 
-![](./images/yaak-request-breakdown.png)
+<img src="./images/yaak-request-breakdown.png">
 
 1. Open Yaak
 2. Click on the + or use the keyboard shortcut to open a new <analogy>request</analogy>
@@ -84,7 +84,7 @@ Now that you have Yaak installed, let's make our first <analogy>GET</analogy> <a
 
 You should see a <analogy>response</analogy> that looks something like this:
 
-![](./images/yaak-response-breakdown.png)
+<img src="./images/yaak-response-breakdown.png">
 
 ### Understanding the Response
 
@@ -107,7 +107,7 @@ The <analogy>client</analogy>, Yaak, made a <analogy>request</analogy> to the ra
 
 Let's see what that looks like. 
 
-![](./images/yaak-fox-diagram.png)
+<img src="./images/yaak-fox-diagram.png">
 
 
 ## 📓 Key Concepts to Remember

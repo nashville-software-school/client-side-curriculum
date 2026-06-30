@@ -8,7 +8,7 @@ Create a directory of your choice in the `workspace` directory. Then create the 
 
 Now it's time to prepare some docks in a list.
 
-![](./chapters/../images/docks.png)
+<img src="./images/docks.png">
 
 Here are some dock objects that you can add to your database module.
 

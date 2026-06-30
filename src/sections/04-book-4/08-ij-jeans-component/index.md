@@ -96,7 +96,7 @@ You should see:
 - A question "Do you own a pair of blue jeans?"
 - Two radio buttons for "Yes" and "No"
 
-![](./images/indiana-jeans-jeans-component.png)
+<img src="./images/indiana-jeans-jeans-component.png">
 
 <analogy>Try</analogy> clicking the radio buttons. Notice how selecting one automatically deselects the other. This is the default behavior of radio buttons with the same name <analogy>attribute</analogy>.
 

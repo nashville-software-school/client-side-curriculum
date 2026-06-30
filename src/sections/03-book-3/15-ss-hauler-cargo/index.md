@@ -2,7 +2,7 @@
 
 The next step for you is to add a click event listener that displays the number of ships that each hauler is carrying.
 
-![](./images/haulers-click.gif)
+<img src="./images/haulers-click.gif">
 
 ## Handling Click Event
 

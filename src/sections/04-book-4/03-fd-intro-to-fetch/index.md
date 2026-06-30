@@ -17,7 +17,7 @@ Think of fetch as your web browser's way of "reaching out" across the internet t
 3. The <analogy>server</analogy> processes the <analogy>request</analogy> and sends back a <analogy>response</analogy>
 4. Your code can then use the data from the <analogy>response</analogy>
 
-![](./images/chrome-foxy-diagram.png)
+<img src="./images/chrome-foxy-diagram.png">
 
 ## Writing Your First Fetch Call
 
@@ -56,7 +56,7 @@ With the <analogy>Network tab</analogy> open:
 5. The "Status" column should show "200" (meaning the <analogy>request</analogy> was successful)
 6. The "Type" column will show "fetch" or "xhr" (depending on the browser)
 
-![](./images/floof-request.png)
+<img src="./images/floof-request.png">
 
 ### Understanding the Network Tab Information
 
@@ -70,7 +70,7 @@ This tab shows important <analogy>metadata</analogy> about the <analogy>request<
   - <analogy>Request</analogy> Method: <analogy>GET</analogy> (in this case)
   - <analogy>Status Code</analogy>: 200 OK (for a successful <analogy>request</analogy>)
 
-![](./images/network-headers.png)
+<img src="./images/network-headers.png">
 
 #### Preview/Response Tab
 This tab shows the actual data returned by the <analogy>server</analogy>:
@@ -78,7 +78,7 @@ This tab shows the actual data returned by the <analogy>server</analogy>:
 - **Preview**: A nicely formatted view of the <analogy>JSON</analogy> data
 - **<analogy>Response</analogy>**: The raw <analogy>response</analogy> text
 
-![](./images/network-preview.png)
+<img src="./images/network-preview.png">
 
 ## Testing Error Scenarios
 

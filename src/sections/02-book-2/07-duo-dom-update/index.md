@@ -22,4 +22,4 @@ theExistingMainElement.innerHTML = theWholeEnchilada
 
 Refresh your browser and you will see the new, dynamically created HTML get injected into the DOM.
 
-![](./images/heroes-villains-html.png)
+<img src="./images/heroes-villains-html.png">

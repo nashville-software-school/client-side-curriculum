@@ -2,7 +2,7 @@
 
 Using code from the last project as an example, attempt adding a click <analogy>event listener</analogy> that presents an alert box showing how many products an employee has sold when their name is clicked.
 
-![](./images/employee-sales.gif)
+<img src="./images/employee-sales.gif">
 
 If you find yourself creeping up on 30 minutes of trying to get the code to work, it's time to go to a peer, or an mentor for assistance.
 

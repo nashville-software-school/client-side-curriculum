@@ -8,7 +8,7 @@ Brewed Awakenings is a local coffee shop that wants a web site that shows which 
 
 Here's what the output of the application should look like.
 
-![](./images/brewed-awakenings-final.png)
+<img src="./images/brewed-awakenings-final.png">
 
 ## Setup
 

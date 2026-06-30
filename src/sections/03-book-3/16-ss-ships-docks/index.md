@@ -2,7 +2,7 @@
 
 The next step for you is to add a click event listener that displays the hauler for each shipping ship.
 
-![](./images/shipping-ships-click.gif)
+<img src="./images/shipping-ships-click.gif">
 
 ## Handling Click Event
 

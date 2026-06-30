@@ -4,7 +4,7 @@ This chapter provides information, and the data needed, for the API that will be
 
 ## <analogy>ERD</analogy>
 
-![](./images/honey-rae-erd.png)
+<img src="./images/honey-rae-erd.png">
 
 ### Explanation of Data and Relationships
 

@@ -181,7 +181,7 @@ Work **one chapter at a time** per session:
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
 | — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
-| — | **Phase 3: Broken Links** — audit and fix all internal and external links across all exercises |
+| ◑ | **Phase 3: Broken Links** — Categories A–C complete; D–G not started |
 | — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
@@ -322,23 +322,118 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 3: Broken Links
+## Phase 3: Broken Links ◑
 
-*Scope: all exercise markdown files across all 5 books and Setup. Both internal links (references to other exercises) and external links (GitHub repos, documentation sites, tool download pages) need to be audited.*
+### Audit Summary (2026-06-30)
+- **Internal broken links:** 166 across 181 exercise files
+- **External links:** 124 (107 unique) across 44 domains — spot-check deferred to Category G
+- **Non-HTTP image references (`<img src>`):** 51
 
-### Categories
+Work is divided into categories, each handled in its own session.
 
-- **Internal links** — references like `[See the ERD chapter](./DD_ERD.md)` that use old file paths or chapter names that no longer exist after Phase 1 restructuring
-- **External links** — links to documentation, GitHub repos, download pages, and other resources that may have moved, been deprecated, or gone offline
-- **Image references** — `<img src="...">` and markdown image syntax pointing to files that were moved or renamed
+---
 
-### Work to Do
+### Category A: Navigation Cruft ✓ COMPLETE (2026-06-30)
 
-- Build a script or use tooling to extract all links from all markdown files
-- Categorize: internal vs. external, broken vs. redirected vs. valid
-- Fix internal links to use current file paths and exercise IDs
-- For external links: update to current URLs, replace deprecated resources, or note where no replacement exists
-- Flag any links that require a content decision (e.g., a linked resource that no longer reflects current best practices)
+Dead-end navigation links left over from the legacy file structure. The platform has built-in prev/next navigation so these were redundant AND broken.
+
+**Types removed:**
+- 41× `Up Next: [Chapter Title](./CHAPTER_FILE.md)` — bottom of exercises in Books 4 & 5
+- 7× `Back to [Table of Contents](../README.md)` — bottom of Setup exercises
+- 4× `Next chapter: [Title](./MA_FILE.md)` — Martin's Aquarium chain (Book 2)
+- 2× `[Table of Contents](../README.md)` — Book 4 exercises 05 and 13
+
+**Result:** 54 links removed across 52 files. Entire link lines deleted, including any preceding `---` separator.
+
+---
+
+### Category B: Book 5 Cross-Reference Links ✓ COMPLETE (2026-06-30)
+
+Inline callouts pointing students back to earlier exercises. Clicking them 404'd because the SPA routes by chapter ID, not file path.
+
+**Types fixed:**
+- 9× wireframe links → SPA chapter IDs
+- 15× "Skills used" prereq list links → chapter IDs (anchor fragments dropped — SPA doesn't support in-page scroll)
+- 6× "For more information" blockquote callout links → chapter IDs
+- 2× Book 4 inline links to `FD_INTRO_TO_API.md` → `/book_4_fox_y_dog_intro_to_api`
+
+**Result:** 32 links fixed across 12 files. One link intentionally left broken: `[explorer chapter](./EXPLORE_CSS.md)` in `24-learn-all-posts` — placeholder for a CSS explorer chapter not yet ported.
+
+---
+
+### Category C: Images via Markdown `![]()` Syntax ✓ COMPLETE (2026-06-30)
+
+Two problems: (1) `![alt](url)` isn't path-rewritten (only `<img src>` is); (2) image files were never migrated from the source repo.
+
+**Approach:**
+- Downloaded each referenced image from the GitHub source repo (`client-side-mastery`) into the exercise's local `images/` directory
+- Converted all `![]()` syntax to `<img src="./images/...">` via sed
+- Only images currently referenced were downloaded; images for unported chapters deferred until those pages are ported
+
+**Source book → GitHub directory mapping:**
+- Book 1 → `book-1-queen-bee/chapters/images/`
+- Book 2 → `book-2-martins-aquarium/chapters/images/`
+- Book 3 → `book-3-deshawns-dog-walking/chapters/images/`
+- Book 4 → `book-4-kneel-diamonds/chapters/images/`
+- Book 5 → `book-5-honey-rae-repairs/chapters/images/`
+
+**Result:** 34 exercise `images/` directories created; 47 images downloaded; 47 syntax conversions. Also fixed 3 files that used `./chapters/../images/` path (normalized to `./images/`).
+
+---
+
+### Category D: Group Project Sub-Chapter Files — 21 links
+
+Three group projects link to sub-chapter `.md` files that were never migrated:
+- **Modern Farm** (`02-book-2/24-group-project-modern-farm`) — 8 files (`./chapters/MF_*.md`), source at `projects/tier-1/modern-farm/chapters/`
+- **Cider Falls Park** (`03-book-3/25-group-project-cider-falls`) — 5 files (`./chapters/CIDERFALLS_*.md`), source at `projects/tier-2/cider-falls/chapters/`
+- **Truncheons & Flagons** (`04-book-4/53-truncheons-and-flagons`) — 8 files (`./chapters/TF_*.md`), source at (TBD in source repo)
+
+**Approach:** TBD — source from the GitHub reference repo or redesign inline.
+
+**Status:** Not started.
+
+---
+
+### Category E: Broken `<img src>` References — 51 references
+
+Uses correct HTML syntax but paths are wrong:
+- `../../book-1-queen-bee/chapters/images/video-play-icon.gif` — old directory path, used across many Books 1–3 exercises
+- `./images/...` — image files not migrated (same fix as Category C)
+- `./learning-objectives.png` in intro — actually lives at `public/assets/learning-objectives.png`
+
+**Approach:** Download missing images from source repo (same process as Category C). The `learning-objectives.png` path is a trivial one-liner fix.
+
+**Status:** Not started.
+
+---
+
+### Category F: Misc One-Offs — 6 links
+
+| Link | File | Notes |
+|------|------|-------|
+| `./TROUBLESHOOT_VSCODE.md` | `00-setup/02-getting-started-mac/index.md` | File not migrated; source at `book-1-queen-bee/chapters/` |
+| `./data/honestabe.json` | `04-book-4/46-pioneer-abe-politicians/index.md` | Data file not migrated; source at `projects/tier-3/honest-abe/chapters/data/` |
+| `../../../supplement-api/chapters/API_CLIENTS.md` | Holiday Road exercise | Cross-section reference; supplement track not ported |
+| `./code/productPrice.js` | `03-book-3/21-ba-product-click/index.md` | Code snippet not migrated |
+| `./code/employeeSales.js` | `03-book-3/22-ba-employee-click/index.md` | Code snippet not migrated |
+
+**Approach:** Handle individually. Likely convert to inline content or port from source repo.
+
+**Status:** Not started.
+
+---
+
+### Category G: External Links — 124 links (107 unique, 44 domains)
+
+Spot-check for dead or moved URLs. Notable domains:
+- `watch.screencastify.com` — 15 links (screencasts; service may have changed)
+- `youtu.be` / `www.youtube.com` — 32 links (videos)
+- `learning.nss.team` — 2 links (internal NSS tool; verify still live)
+- `marketplace.visualstudio.com` — 9 links (VSCode extensions)
+- `developer.mozilla.org` — 5 links (stable)
+- `giffygram.nss.team` — 1 link (NSS demo app; verify still live)
+
+**Status:** Not started.
 
 ---
 

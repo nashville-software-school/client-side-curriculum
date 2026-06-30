@@ -4,7 +4,7 @@ In the previous chapter, we learned about Dr. Henrietta Jones and her research p
 
 Let's look at the <analogy>ERD</analogy> for our Indiana Jeans survey:
 
-![](./images/indiana-jeans-erd.png)
+<img src="./images/indiana-jeans-erd.png">
 
 This diagram shows:
 - Two tables: `submissions` and `socioLocations`
@@ -136,7 +136,7 @@ First, let's retrieve all the socioLocations from our database:
 
 You should have received a <analogy>response</analogy> with a <analogy>status code</analogy> of `200 OK` and a <analogy>JSON</analogy> <analogy>array</analogy> containing all four socioLocations. This data should look pretty familiar! It's the socioLocation data we added to the `database.json` file. 🎉 Yaak made an <analogy>HTTP</analogy> <analogy>GET</analogy> <analogy>request</analogy> to the <analogy>JSON</analogy> <analogy>server</analogy> <analogy>api</analogy> we spun up on localhost:8088. The <analogy>JSON-server</analogy> <analogy>api</analogy> retrieved the socioLocations from our <analogy>JSON</analogy> "database". The <analogy>JSON-server</analogy> <analogy>api</analogy> then returned the socioLocations back to Yaak in the <analogy>HTTP</analogy> <analogy>response</analogy>. Let's see that in color:
 
-![](./images/yaak-ij-json-server.png)
+<img src="./images/yaak-ij-json-server.png">
 
 ### Understanding the POST Method
 
@@ -172,7 +172,7 @@ To verify the submission was saved, make a <analogy>GET</analogy> <analogy>reque
 
 Let's break down what happened again: Yaak made an <analogy>HTTP</analogy> <analogy>POST</analogy> <analogy>request</analogy> to the <analogy>JSON</analogy> <analogy>server</analogy> <analogy>api</analogy> we spun up on localhost:8088, sending along the data for a new submission in the <analogy>request body</analogy>. The <analogy>JSON-server</analogy> <analogy>api</analogy> received this data and added it to our <analogy>JSON</analogy> 'database' in the submissions <analogy>array</analogy>. The <analogy>JSON-server</analogy> <analogy>api</analogy> then returned the newly created submission (now with an ID) back to Yaak in the <analogy>HTTP</analogy> <analogy>response</analogy>. Let's see that in color:
 
-![](./images/yaak-ij-json-server-post.png)
+<img src="./images/yaak-ij-json-server-post.png">
 
 ## 📓 Key Concepts to Remember
 

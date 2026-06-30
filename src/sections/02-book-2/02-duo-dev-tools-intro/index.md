@@ -43,11 +43,11 @@ Then go back to your terminal and type in the `serve` command. This starts a sim
 
 It should give you the output below. If you don't see this, talk to an mentor for guidance.
 
-![](./images/running-serve.gif)
+<img src="./images/running-serve.gif">
 
 In that output, you will see a **Local:** URL that you can go to in your browser. Type `localhost:3000` in the URL bar of the browser and you should see **The Dynamite Duo** appear.
 
-![](./images/visit-localhost.gif)
+<img src="./images/visit-localhost.gif">
 
 ## Developer Tools: Elements
 
@@ -59,7 +59,7 @@ Now you can look at your developer tools for the first time. You can open them i
 
 When your developer tools are open, there are several panels listed at the top. Make sure you are on the **Elements** panel.
 
-![](./images/elements-dev-panel.png)
+<img src="./images/elements-dev-panel.png">
 
 This is where you will inspect the structure of your <analogy>DOM</analogy> _(Document Object Model)_ and view the CSS used for styling the document.
 

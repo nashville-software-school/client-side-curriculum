@@ -142,7 +142,7 @@ The `.join("")` method is necessary because `.map()` returns an <analogy>array</
 ## Time to Test!
 You should immediately see the the results when you refresh the page, however, get some more practice observing the <analogy>network tab</analogy>. Remember to check the **<analogy>Request</analogy> URL**, **<analogy>Request</analogy> Method**, **<analogy>Status Code</analogy>**, and **Preview/<analogy>Response</analogy>**. 
 
-![](./images/indiana-jeans-submissions.png)
+<img src="./images/indiana-jeans-submissions.png">
 
 ## Exploring Related Data
 
@@ -150,7 +150,7 @@ Looking at our current output, you'll notice we're displaying the `socioLocation
 
 Let's review our <analogy>ERD</analogy>:
 
-![](./images/indiana-jeans-erd.png)
+<img src="./images/indiana-jeans-erd.png">
 
 The `socioLocationId` in the submissions table is a <analogy>foreign key</analogy> that references the `id` in the socioLocations table. This allows us to establish a relationship between the two tables.
 
@@ -184,7 +184,7 @@ Now, instead of showing just the location ID, we'll display the human-readable l
 
 After making this change to the submissions fetch call, check the <analogy>network tab</analogy> to view the structure of the <analogy>response</analogy> data. Refactor the `SubmissionList` <analogy>component</analogy> to display the Location name rather than the Location ID. 
 
-![](./images/indiana-jeans-submissions-locations.png)
+<img src="./images/indiana-jeans-submissions-locations.png">
 
 ## 📓 Key Concepts to Remember
 

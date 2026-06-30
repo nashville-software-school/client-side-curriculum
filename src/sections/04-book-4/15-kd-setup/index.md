@@ -33,7 +33,7 @@ The `!` character.
 
 Then you can use the `link` Intellisense helper to include your `main.css` file.
 
-![](./images/kneel-diamonds-html.gif)
+<img src="./images/kneel-diamonds-html.gif">
 
 ## JSON Database
 

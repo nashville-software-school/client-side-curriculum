@@ -20,4 +20,4 @@ That means that every time you regenerate the HTML for the radio buttons, you ne
 
 Reference: [How to <analogy>select</analogy> a <analogy>radio button</analogy> by default?](https://stackoverflow.com/questions/5592345/how-to-select-a-radio-button-by-default)
 
-![](./images/kneel-diamonds-options-as-state.gif)
+<img src="./images/kneel-diamonds-options-as-state.gif">

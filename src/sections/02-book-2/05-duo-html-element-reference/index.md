@@ -32,6 +32,6 @@ The `debugger` keyword works just like your breakpoints did in Book 1. It pauses
 
 Watch the animation below to see what happens when the browser hits the `debugger` keyword in your JavaScript. Then the value of the `theExistingMainElement` variable can be viewed on the right.
 
-![](./images/intro-to-sources-dev-panel.gif)
+<img src="./images/intro-to-sources-dev-panel.gif">
 
 Once you have seen how the debugger works and evaluated the variable, go back and remove the `debugger` keyword and head to the next chapter.

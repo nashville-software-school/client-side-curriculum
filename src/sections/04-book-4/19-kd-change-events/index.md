@@ -44,4 +44,4 @@ And in your <analogy>component</analogy> <analogy>function</analogy>, listen for
 
 If you want to make sure that <analogy>transient state</analogy> is changing correctly, use a `console.log()` inside the setter functions.
 
-![](./images/kneel-diamonds-transient-state.gif)
+<img src="./images/kneel-diamonds-transient-state.gif">

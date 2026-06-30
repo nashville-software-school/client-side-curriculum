@@ -18,7 +18,7 @@ At the end of this chapter you should be able to...
 
 You are going to automate the hailing of each queen in your array, so the first thing to do is remove all of the invocations of `hailTheQueen()` that you currently have.
 
-![](./images/delete-current-hails.gif)
+<img src="./images/delete-current-hails.gif">
 
 ## Hail Each Queen
 
@@ -31,7 +31,7 @@ Then replace the default variable names it provides with more appropriate variab
 * The first <analogy>variable</analogy> will store each queen object in the array, so `queen` or `queenObject` would be appropriate
 * The second variable must be the one whose value is the array, so this **must** be `queens`
 
-![](./images/queen-for-of-loop.gif)
+<img src="./images/queen-for-of-loop.gif">
 
 The final step is to invoke the hailing function and pass the queen's name to it. This time the syntax will be different for the argument. You won't manually type in the queen's name, since it is already a property of each queen object.
 
