@@ -7,7 +7,7 @@ You and your teammates have been contracted by the National Parks Service to bui
 This project will focus on the following concepts:
 
 1. Working with public <analogy>API</analogy> data from multiple sources.
-1. Using an <analogy>API client</analogy> to communicate with, and explore, 3rd-party APIs before you start coding (e.g. [Thunder <analogy>Client</analogy> or Postman](../../../supplement-api/chapters/API_CLIENTS.md)).
+1. Using an <analogy>API client</analogy> to communicate with, and explore, 3rd-party APIs before you start coding (e.g. Thunder <analogy>Client</analogy> or Postman).
 1. Building a user experience (UX) that is tailored to a specific demographic.
 
 ## Feature List

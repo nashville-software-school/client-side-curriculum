@@ -1,33 +1,3 @@
-## Elected Representatives (in theory)
-
-In this exercise, you are going list politicians
-
-### The Workforce ERD
-
-Below is a <analogy>JSON</analogy> representation of a politician. <analogy>Update</analogy> your  **Politicians** resource in your <analogy>ERD</analogy> to have these properties.
-
-```json
-{
-    "id": 1,
-    "age": 45,
-    "firstName": "Charlene",
-    "lastName": "Harding",
-    "phone": "+1 (941) 415-3565",
-    "district": "Bethpage, Maine",
-    "platform": "Laborum pariatur elit eiusmod voluptate. Anim sit eu magna reprehenderit do ea reprehenderit minim eu non aliquip laboris reprehenderit sint. In quis occaecat exercitation mollit sunt ut Lorem irure aute occaecat pariatur. Do in Lorem laborum anim. Sit ipsum ut tempor reprehenderit elit. Magna ut aute laboris esse irure id. Reprehenderit aliquip dolore cupidatat cillum sunt consectetur consequat dolore ullamco do voluptate sunt."
-}
-```
-
-### HTML Representations
-
-1. <analogy>Create</analogy> a `~/workspace/honest-abe` <analogy>directory</analogy> for this exercise.
-1. <analogy>Create</analogy> an `api/database.json` file.
-1. Copy the contents of the pre-built database below into your `api/database.json`.
-
-<details>
-<summary>honestabe.json — click to expand and copy</summary>
-
-```json
 {
     "politicians": [
         {
@@ -312,92 +282,354 @@ Below is a <analogy>JSON</analogy> representation of a politician. <analogy>Upda
         }
     ],
     "politicianlegislations": [
-        { "id": 1, "politicianId": 1, "legislationId": 1 },
-        { "id": 2, "politicianId": 1, "legislationId": 2 },
-        { "id": 3, "politicianId": 3, "legislationId": 2 },
-        { "id": 4, "politicianId": 4, "legislationId": 9 },
-        { "id": 5, "politicianId": 5, "legislationId": 9 },
-        { "id": 6, "politicianId": 6, "legislationId": 9 },
-        { "id": 7, "politicianId": 7, "legislationId": 7 },
-        { "id": 8, "politicianId": 7, "legislationId": 2 }
+        {
+            "id": 1,
+            "politicianId": 1,
+            "legislationId": 1
+        },
+        {
+            "id": 2,
+            "politicianId": 1,
+            "legislationId": 2
+        },
+        {
+            "id": 3,
+            "politicianId": 3,
+            "legislationId": 2
+        },
+        {
+            "id": 4,
+            "politicianId": 4,
+            "legislationId": 9
+        },
+        {
+            "id": 5,
+            "politicianId": 5,
+            "legislationId": 9
+        },
+        {
+            "id": 6,
+            "politicianId": 6,
+            "legislationId": 9
+        },
+        {
+            "id": 7,
+            "politicianId": 7,
+            "legislationId": 7
+        },
+        {
+            "id": 8,
+            "politicianId": 7,
+            "legislationId": 2
+        }
     ],
     "pacdonations": [
-        { "id": 1, "pacId": 5, "politicianId": 5, "amount": 30102 },
-        { "id": 2, "pacId": 3, "politicianId": 6, "amount": 1022 },
-        { "id": 3, "pacId": 4, "politicianId": 4, "amount": 51922 },
-        { "id": 4, "pacId": 4, "politicianId": 1, "amount": 9441 },
-        { "id": 5, "pacId": 5, "politicianId": 7, "amount": 5939 },
-        { "id": 6, "pacId": 1, "politicianId": 8, "amount": 2049 },
-        { "id": 7, "pacId": 4, "politicianId": 4, "amount": 69224 },
-        { "id": 8, "pacId": 4, "politicianId": 6, "amount": 6499 },
-        { "id": 9, "pacId": 7, "politicianId": 4, "amount": 10423 },
-        { "id": 10, "pacId": 4, "politicianId": 2, "amount": 2291 },
-        { "id": 11, "pacId": 4, "politicianId": 7, "amount": 5012 },
-        { "id": 12, "pacId": 1, "politicianId": 6, "amount": 58493 },
-        { "id": 13, "pacId": 2, "politicianId": 7, "amount": 9134 },
-        { "id": 14, "pacId": 2, "politicianId": 7, "amount": 89358 },
-        { "id": 15, "pacId": 4, "politicianId": 6, "amount": 54822 },
-        { "id": 16, "pacId": 5, "politicianId": 4, "amount": 7584 },
-        { "id": 17, "pacId": 3, "politicianId": 5, "amount": 57483 },
-        { "id": 18, "pacId": 3, "politicianId": 1, "amount": 30193 }
+        {
+            "id": 1,
+            "pacId": 5,
+            "politicianId": 5,
+            "amount": 30102
+        },
+        {
+            "id": 2,
+            "pacId": 3,
+            "politicianId": 6,
+            "amount": 1022
+        },
+        {
+            "id": 3,
+            "pacId": 4,
+            "politicianId": 4,
+            "amount": 51922
+        },
+        {
+            "id": 4,
+            "pacId": 4,
+            "politicianId": 1,
+            "amount": 9441
+        },
+        {
+            "id": 5,
+            "pacId": 5,
+            "politicianId": 7,
+            "amount": 5939
+        },
+        {
+            "id": 6,
+            "pacId": 1,
+            "politicianId": 8,
+            "amount": 2049
+        },
+        {
+            "id": 7,
+            "pacId": 4,
+            "politicianId": 4,
+            "amount": 69224
+        },
+        {
+            "id": 8,
+            "pacId": 4,
+            "politicianId": 6,
+            "amount": 6499
+        },
+        {
+            "id": 9,
+            "pacId": 7,
+            "politicianId": 4,
+            "amount": 10423
+        },
+        {
+            "id": 10,
+            "pacId": 4,
+            "politicianId": 2,
+            "amount": 2291
+        },
+        {
+            "id": 11,
+            "pacId": 4,
+            "politicianId": 7,
+            "amount": 5012
+        },
+        {
+            "id": 12,
+            "pacId": 1,
+            "politicianId": 6,
+            "amount": 58493
+        },
+        {
+            "id": 13,
+            "pacId": 2,
+            "politicianId": 7,
+            "amount": 9134
+        },
+        {
+            "id": 14,
+            "pacId": 2,
+            "politicianId": 7,
+            "amount": 89358
+        },
+        {
+            "id": 15,
+            "pacId": 4,
+            "politicianId": 6,
+            "amount": 54822
+        },
+        {
+            "id": 16,
+            "pacId": 5,
+            "politicianId": 4,
+            "amount": 7584
+        },
+        {
+            "id": 17,
+            "pacId": 3,
+            "politicianId": 5,
+            "amount": 57483
+        },
+        {
+            "id": 18,
+            "pacId": 3,
+            "politicianId": 1,
+            "amount": 30193
+        }
     ],
     "corporateinterests": [
-        { "id": 1, "corporationId": 5, "interestId": 5 },
-        { "id": 2, "corporationId": 5, "interestId": 8 },
-        { "id": 3, "corporationId": 5, "interestId": 2 },
-        { "id": 4, "corporationId": 3, "interestId": 7 },
-        { "id": 5, "corporationId": 1, "interestId": 2 },
-        { "id": 6, "corporationId": 5, "interestId": 8 },
-        { "id": 7, "corporationId": 2, "interestId": 5 },
-        { "id": 8, "corporationId": 6, "interestId": 7 },
-        { "id": 9, "corporationId": 1, "interestId": 6 },
-        { "id": 10, "corporationId": 4, "interestId": 6 },
-        { "id": 11, "corporationId": 4, "interestId": 5 },
-        { "id": 12, "corporationId": 2, "interestId": 6 },
-        { "id": 13, "corporationId": 2, "interestId": 5 },
-        { "id": 14, "corporationId": 6, "interestId": 4 },
-        { "id": 15, "corporationId": 4, "interestId": 1 }
+        {
+            "id": 1,
+            "corporationId": 5,
+            "interestId": 5
+        },
+        {
+            "id": 2,
+            "corporationId": 5,
+            "interestId": 8
+        },
+        {
+            "id": 3,
+            "corporationId": 5,
+            "interestId": 2
+        },
+        {
+            "id": 4,
+            "corporationId": 3,
+            "interestId": 7
+        },
+        {
+            "id": 5,
+            "corporationId": 1,
+            "interestId": 2
+        },
+        {
+            "id": 6,
+            "corporationId": 5,
+            "interestId": 8
+        },
+        {
+            "id": 7,
+            "corporationId": 2,
+            "interestId": 5
+        },
+        {
+            "id": 8,
+            "corporationId": 6,
+            "interestId": 7
+        },
+        {
+            "id": 9,
+            "corporationId": 1,
+            "interestId": 6
+        },
+        {
+            "id": 10,
+            "corporationId": 4,
+            "interestId": 6
+        },
+        {
+            "id": 11,
+            "corporationId": 4,
+            "interestId": 5
+        },
+        {
+            "id": 12,
+            "corporationId": 2,
+            "interestId": 6
+        },
+        {
+            "id": 13,
+            "corporationId": 2,
+            "interestId": 5
+        },
+        {
+            "id": 14,
+            "corporationId": 6,
+            "interestId": 4
+        },
+        {
+            "id": 15,
+            "corporationId": 4,
+            "interestId": 1
+        }
     ],
     "corporatedonations": [
-        { "id": 1, "corporationId": 5, "pacId": 2, "amount": 84853 },
-        { "id": 2, "corporationId": 1, "pacId": 1, "amount": 453 },
-        { "id": 3, "corporationId": 4, "pacId": 6, "amount": 86753 },
-        { "id": 4, "corporationId": 6, "pacId": 2, "amount": 32465 },
-        { "id": 5, "corporationId": 1, "pacId": 4, "amount": 7465 },
-        { "id": 6, "corporationId": 1, "pacId": 3, "amount": 45634 },
-        { "id": 7, "corporationId": 3, "pacId": 7, "amount": 494 },
-        { "id": 8, "corporationId": 2, "pacId": 5, "amount": 50209 },
-        { "id": 9, "corporationId": 1, "pacId": 4, "amount": 12341 },
-        { "id": 10, "corporationId": 4, "pacId": 2, "amount": 4532 },
-        { "id": 11, "corporationId": 3, "pacId": 4, "amount": 776 },
-        { "id": 12, "corporationId": 4, "pacId": 2, "amount": 9302 },
-        { "id": 13, "corporationId": 1, "pacId": 1, "amount": 6435 },
-        { "id": 14, "corporationId": 4, "pacId": 1, "amount": 1942 },
-        { "id": 15, "corporationId": 1, "pacId": 6, "amount": 43244 },
-        { "id": 16, "corporationId": 6, "pacId": 3, "amount": 4521 },
-        { "id": 17, "corporationId": 3, "pacId": 7, "amount": 8484 },
-        { "id": 18, "corporationId": 4, "pacId": 1, "amount": 3534 },
-        { "id": 19, "corporationId": 3, "pacId": 2, "amount": 8482 },
-        { "id": 20, "corporationId": 4, "pacId": 3, "amount": 5894 }
+        {
+            "id": 1,
+            "corporationId": 5,
+            "pacId": 2,
+            "amount": 84853
+        },
+        {
+            "id": 2,
+            "corporationId": 1,
+            "pacId": 1,
+            "amount": 453
+        },
+        {
+            "id": 3,
+            "corporationId": 4,
+            "pacId": 6,
+            "amount": 86753
+        },
+        {
+            "id": 4,
+            "corporationId": 6,
+            "pacId": 2,
+            "amount": 32465
+        },
+        {
+            "id": 5,
+            "corporationId": 1,
+            "pacId": 4,
+            "amount": 7465
+        },
+        {
+            "id": 6,
+            "corporationId": 1,
+            "pacId": 3,
+            "amount": 45634
+        },
+        {
+            "id": 7,
+            "corporationId": 3,
+            "pacId": 7,
+            "amount": 494
+        },
+        {
+            "id": 8,
+            "corporationId": 2,
+            "pacId": 5,
+            "amount": 50209
+        },
+        {
+            "id": 9,
+            "corporationId": 1,
+            "pacId": 4,
+            "amount": 12341
+        },
+        {
+            "id": 10,
+            "corporationId": 4,
+            "pacId": 2,
+            "amount": 4532
+        },
+        {
+            "id": 11,
+            "corporationId": 3,
+            "pacId": 4,
+            "amount": 776
+        },
+        {
+            "id": 12,
+            "corporationId": 4,
+            "pacId": 2,
+            "amount": 9302
+        },
+        {
+            "id": 13,
+            "corporationId": 1,
+            "pacId": 1,
+            "amount": 6435
+        },
+        {
+            "id": 14,
+            "corporationId": 4,
+            "pacId": 1,
+            "amount": 1942
+        },
+        {
+            "id": 15,
+            "corporationId": 1,
+            "pacId": 6,
+            "amount": 43244
+        },
+        {
+            "id": 16,
+            "corporationId": 6,
+            "pacId": 3,
+            "amount": 4521
+        },
+        {
+            "id": 17,
+            "corporationId": 3,
+            "pacId": 7,
+            "amount": 8484
+        },
+        {
+            "id": 18,
+            "corporationId": 4,
+            "pacId": 1,
+            "amount": 3534
+        },
+        {
+            "id": 19,
+            "corporationId": 3,
+            "pacId": 2,
+            "amount": 8482
+        },
+        {
+            "id": 20,
+            "corporationId": 4,
+            "pacId": 3,
+            "amount": 5894
+        }
     ]
 }
-```
-
-</details>
-1. <analogy>Create</analogy> a provider, list, and individual <analogy>component</analogy> for politicians and list each one in the database.
-
-The final HTML representation should look like this.
-
-```html
-<article class="politicians">
-    <section class="politician">
-        <header class="politician__name">
-            <h1>Charlene Harding</h1>
-        </header>
-        <div class="politician__info">
-            <div>Age: 45</div>
-            <div>Represents: Bethpage, Maine</div>
-        </div>
-    </section>
-</article>
-```

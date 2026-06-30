@@ -6,7 +6,45 @@ Using code from the last project as an example, attempt adding a click <analogy>
 
 If you find yourself creeping up on 30 minutes of trying to get the code to work, it's time to go to a peer, or an mentor for assistance.
 
-You can peek at [some of the solution](./code/employeeSales.js) if you need to.
+You can peek at some of the solution if you need to:
+
+<details>
+<summary>Peek at some of the solution</summary>
+
+```js
+const employeeOrders = (id) => {
+    const fulfilledOrders = 0
+
+    for (const order of orders) {
+        if (order.employeeId === id) {
+            // Increment the number of fulfilled orders
+        }
+    }
+
+    // Return how many orders were fulfilled
+}
+
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target
+        if (itemClicked.dataset.type === "employee") {
+            const employeeId = itemClicked.dataset.id
+
+            for (const employee of employees) {
+                if ( === parseInt(employeeId)) {
+
+                    const orderCount = employeeOrders()
+
+                    window.alert(` ${employee.name} sold ${} products `)
+                }
+            }
+        }
+    }
+)
+```
+
+</details>
 
 ## Dev Tools Practice
 

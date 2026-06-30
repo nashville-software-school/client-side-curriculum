@@ -182,7 +182,7 @@ Work **one chapter at a time** per session:
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
 | — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
-| ◑ | **Phase 3: Broken Links** — Categories A–D complete; E–G not started |
+| ◑ | **Phase 3: Broken Links** — Categories A–F complete; G not started |
 | — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
@@ -410,19 +410,17 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 
 ---
 
-### Category F: Misc One-Offs — 6 links
+### Category F: Misc One-Offs ✓ COMPLETE (2026-06-30)
 
-| Link | File | Notes |
-|------|------|-------|
-| `./TROUBLESHOOT_VSCODE.md` | `00-setup/02-getting-started-mac/index.md` | File not migrated; source at `book-1-queen-bee/chapters/` |
-| `./data/honestabe.json` | `04-book-4/46-pioneer-abe-politicians/index.md` | Data file not migrated; source at `projects/tier-3/honest-abe/chapters/data/` |
-| `../../../supplement-api/chapters/API_CLIENTS.md` | Holiday Road exercise | Cross-section reference; supplement track not ported |
-| `./code/productPrice.js` | `03-book-3/21-ba-product-click/index.md` | Code snippet not migrated |
-| `./code/employeeSales.js` | `03-book-3/22-ba-employee-click/index.md` | Code snippet not migrated |
+| Link | File | Fix |
+|------|------|-----|
+| `./TROUBLESHOOT_VSCODE.md` | `00-setup/02-getting-started-mac/index.md` | Inlined full content from source (`book-1-queen-bee/chapters/TROUBLESHOOT_VSCODE.md`) directly in the mentor `<details>` block |
+| `./data/honestabe.json` | `04-book-4/46-pioneer-abe-politicians/index.md` | Inlined full 634-line JSON database in a `<details>` block (Vite doesn't serve arbitrary files from `src/`) |
+| `../../../supplement-api/chapters/API_CLIENTS.md` | `04-book-4/54-holiday-road/index.md` | Supplement track not in platform; removed link, kept "Thunder Client or Postman" as plain text |
+| `./code/productPrice.js` | `03-book-3/21-ba-product-click/index.md` | Downloaded from source, then inlined as `<details>` code block |
+| `./code/employeeSales.js` | `03-book-3/22-ba-employee-click/index.md` | Downloaded from source, then inlined as `<details>` code block |
 
-**Approach:** Handle individually. Likely convert to inline content or port from source repo.
-
-**Status:** Not started.
+**Status:** ✓ Complete. 5 files edited; 3 source files downloaded (honestabe.json, productPrice.js, employeeSales.js) but kept as local copies only — content served inline.
 
 ---
 
