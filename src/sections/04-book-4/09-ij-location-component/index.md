@@ -251,5 +251,3 @@ In this chapter, we've:
 ## 🔜 Next Steps
 
 Our radio buttons now appear correctly but they don't actually capture the user's choices yet. In the next chapter, we'll learn about "<analogy>transient state</analogy>" - a way to temporarily store user selections before saving them to the database. We'll add <analogy>event</analogy> listeners to our radio buttons to capture the user's choices and store them in this <analogy>transient state</analogy>.
-
-Up Next: [Capturing User Choices](./IJ_TRANSIENT_STATE.md)

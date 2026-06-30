@@ -234,5 +234,3 @@ The second argument passed to the <analogy>useEffect</analogy> <analogy>hook</an
 
 > **<analogy>Callback Function</analogy>:**
 A function passed as an argument to another function to be later executed.
-
-Up Next: [Introducing Chuckle Checklist](./CHUCKLE_SETUP.md)

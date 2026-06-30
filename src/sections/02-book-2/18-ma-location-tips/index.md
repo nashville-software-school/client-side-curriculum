@@ -54,5 +54,3 @@ Then update the inner HTML of the correct DOM elements.
 Open the `index.html` file in a web browser and verify that the care tips and location list are displayed in the aquarium showcase.
 
 Congratulations! You have now implemented the basic functionality of Martin's Aquarium showcase.
-
-Next chapter: [Styling and Layout >](./MA_LAYOUT.md)

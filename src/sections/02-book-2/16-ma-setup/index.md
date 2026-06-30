@@ -116,5 +116,3 @@ Open the `index.html` file in a web browser to ensure that the basic structure i
 At this point, the aquarium showcase page is still empty, but we have set up the necessary files and structure to build upon in the upcoming chapters.
 
 In the next chapter, we will focus on creating the fish data and rendering the fish list in the aquarium showcase.
-
-Next chapter: [Database >](./MA_DATABASE.md)

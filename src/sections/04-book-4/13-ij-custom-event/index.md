@@ -145,5 +145,3 @@ In this chapter, we've:
 ## 🔜 Next Steps
 
 With our Indiana Jeans survey application now complete, we've covered important concepts in <analogy>client</analogy>-side web development: working with APIs, capturing user input, managing <analogy>state</analogy>, and implementing <analogy>event</analogy>-driven updates. These concepts will serve as a foundation as we move on to more complex applications.
-
-[Table of Contents](../README.md)

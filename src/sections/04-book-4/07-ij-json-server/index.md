@@ -215,5 +215,3 @@ In this chapter, we've:
 ## 🔜 Next Steps
 
 In the upcoming chapters, we'll build the <analogy>client</analogy>-side interface for our survey, allowing users to <analogy>select</analogy> from radio buttons and submit their responses to our <analogy>API</analogy>.
-
-Up Next: [Creating a <analogy>Radio Button</analogy> <analogy>Component</analogy>](./IJ_JEANS_COMPONENT.md)

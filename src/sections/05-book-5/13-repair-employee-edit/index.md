@@ -200,5 +200,3 @@ By adding the `name` attribute to our input, we were able to define which proper
   className="form-control"
 />
 ```
-
-Up Next: [Setting up routes and authentication in Learning Moments](./LEARN_ROUTES_SETUP.md)

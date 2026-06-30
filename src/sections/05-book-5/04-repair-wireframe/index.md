@@ -17,5 +17,3 @@ Building a <analogy>wireframe</analogy> is an important part of the planning pro
 ### Adding links
 Links make your wireframe interactive and easier to understand. Adding links in your wireframe is easy with [Miro](https://miro.com/)
 <img src="./images/wireframe-links.gif" width="1000px" alt="Animation showing a new joke being created" />
-
-Up Next: [Listing all the tickets](./REPAIR_ALL_TICKETS.md)

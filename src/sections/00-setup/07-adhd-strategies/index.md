@@ -155,6 +155,3 @@ So please, _please_, DO NOT let fear, shame, or guilt keep you from asking us fo
 > "I am doing my best"
 
 > "Take things one step at a time"
-
----
-⬅ Back to [Table of Contents](../README.md)

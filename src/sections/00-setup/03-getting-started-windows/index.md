@@ -74,9 +74,6 @@ Once Windows Terminal is installed:
 
 1. Once Ubuntu is done installing, you'll be prompted to create a new user (and its password).
 
----
-⬅ Back to [Table of Contents](../README.md)
-
 <br/>
 <br/>
 <br/>

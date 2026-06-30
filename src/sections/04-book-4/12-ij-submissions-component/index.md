@@ -212,5 +212,3 @@ In this chapter, we've:
 ## 🔜 Next Steps
 
 Now that we can display submissions, our next step is to add an <analogy>event listener</analogy> that refreshes the submission list automatically whenever a new submission is created. This will involve using custom events to communicate between different parts of our application.
-
-Up Next: [Reacting To <analogy>State</analogy> Changes](./IJ_CUSTOM_EVENT.md)

@@ -146,5 +146,3 @@ In essence, `useState` simplifies and streamlines the way we handle <analogy>sta
 > **<analogy>React</analogy> Hooks:** Functions provided by the <analogy>React</analogy> library (prefixed with "use") that allow you to "<analogy>hook</analogy>" into <analogy>state</analogy> and lifecycle features of <analogy>components</analogy>.
 
 > **<analogy>useState</analogy>:** A crucial <analogy>React</analogy> Hook that empowers you to introduce <analogy>state</analogy> to a <analogy>component</analogy>. It takes an initial value as its argument and returns an array. This array contains the state value (index 0) and a function (index 1) to modify that state.
-
-Up Next: [Setting up the API](./REPAIR_API.md)

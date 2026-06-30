@@ -34,6 +34,3 @@ Visit the [sign up page](https://github.com/join) to get started.
 ## dbdiagram.io
 
 Sign up on [dbdiagram.io](https://dbdiagram.io) and bookmark the site.
-
----
-⬅ Back to [Table of Contents](../README.md)
