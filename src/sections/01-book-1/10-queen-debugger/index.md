@@ -13,6 +13,6 @@ In this chapter, you are going to see how to run a tool called the <analogy>debu
 
 Watch the following video to learn how to use Visual Studio Code to execute your code, evaluate values, and use the debugger toolbar.
 
-[<img src="../../book-1-queen-bee/chapters/images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/Bm3DhMNMdYIUaFWzNraO)
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/Bm3DhMNMdYIUaFWzNraO)
 
 

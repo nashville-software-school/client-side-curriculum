@@ -396,17 +396,17 @@ Each exercise has `index.md` (content + images), `index.jsx` (chapter ID + nav c
 
 ---
 
-### Category E: Broken `<img src>` References — 50 references
+### Category E: Broken `<img src>` References ✓ COMPLETE (2026-06-30)
 
 Uses correct HTML syntax but paths are wrong. Two sub-types:
 
-**E1 — `video-play-icon.gif` (18 refs, Books 1–3):** All use the old path `../../book-1-queen-bee/chapters/images/video-play-icon.gif`. The image is always a click target wrapping a Screencastify or YouTube video link. Fix: source the gif (it's in `book-1-queen-bee/chapters/images/` in `client-side-mastery`) and either copy to each exercise's `images/` dir or a shared location, then fix the paths.
+**E1 — `video-play-icon.gif` (18 refs, 17 files, Books 1–3):** All used the old path `../../book-1-queen-bee/chapters/images/video-play-icon.gif`, which also didn't match the `./`-prefixed regex so the path rewriter ignored it entirely. **Fix:** Downloaded one canonical copy to `src/sections/shared/images/video-play-icon.gif` (the `shared/` dir has no `index.js` so it's invisible to the nav glob). Updated all 18 refs to `./images/video-play-icon.gif` to match the path rewriter regex.
 
-**E2 — `./images/...` missing locally (32 refs):** Image files that use the correct `./images/` path but were never downloaded during migration. Affected exercises span Setup, Books 1, 3, 4, and 5. See `phase3_broken_links.md` for the full per-exercise table. Fix: same process as Category C — download from source repo into each exercise's `images/` dir.
+**E2 — `./images/...` missing locally (31 refs, 26 exercises):** Image files that used the correct `./images/` path but were never downloaded during migration. Affected exercises span Setup, Books 1, 3, 4, and 5. All source images confirmed in `client-side-mastery` (`master` branch). Note: the github-token-*.gif files are in `book-1-queen-bee/chapters/images/`, not a setup/ directory. **Fix:** Downloaded all 31 images into each affected exercise's `images/` dir. No markdown changes needed — syntax was already correct.
 
-**Important:** Stop the npm dev server before this session. Vite's eager rebuild on file creation causes command timeouts during bulk image downloads.
+**Final audit:** 0 broken `./images/` refs; 0 legacy-path img src attributes remaining across all 181 exercise files.
 
-**Status:** Not started.
+**Status:** ✓ Complete.
 
 ---
 
