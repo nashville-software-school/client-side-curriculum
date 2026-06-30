@@ -1,5 +1,5 @@
 # Viewing My Posts
-In this chapter you will add a link to My Posts in the Nav Bar and implement the following user stories for the [My Posts](./LEARN_WIREFRAME.md#-my-posts) view:
+In this chapter you will add a link to My Posts in the Nav Bar and implement the following user stories for the [My Posts](/book_5_learn_wireframe) view:
 
 **Given** the user wishes to view a list of posts they have written<br>
 **When** the user visits the My Posts view<br>
@@ -24,5 +24,5 @@ In this chapter you will add a link to My Posts in the Nav Bar and implement the
 
 ### Helpful Chapters To Revisit
 
-*[Creating a Link](./REPAIR_ROUTES_INTRO.md#creating-a-link)*<br>
-*[The useNavigate Hook](./REPAIR_EMPLOYEE_EDIT.md#the-usenavigate-hook)*
+*[Creating a Link](/book_5_honey_rae_routes_intro)*<br>
+*[The useNavigate Hook](/book_5_honey_rae_employee_edit)*

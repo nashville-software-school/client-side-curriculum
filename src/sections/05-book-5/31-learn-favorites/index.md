@@ -1,5 +1,5 @@
 # My Favorite Posts
-In this chapter you will add a link to Favorites in the Nav Bar and implement the following user stories for the [Favorites](./LEARN_WIREFRAME.md#-favorites) view:
+In this chapter you will add a link to Favorites in the Nav Bar and implement the following user stories for the [Favorites](/book_5_learn_wireframe) view:
 
 **Given** the user wishes to view a list of the posts they have liked<br>
 **When** the user visits the Favorites view<br>

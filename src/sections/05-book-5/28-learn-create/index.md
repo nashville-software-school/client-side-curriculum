@@ -1,5 +1,5 @@
 # Creating a New Post
-In this chapter you will add a link to New Post in the Nav Bar and implement the following user stories for the [New Post](./LEARN_WIREFRAME.md#-new-post) view:
+In this chapter you will add a link to New Post in the Nav Bar and implement the following user stories for the [New Post](/book_5_learn_wireframe) view:
 
 **Given** the user wishes to create a new post<br>
 **When** the user clicks on ***New Post*** in the Nav Bar<br>
@@ -24,6 +24,6 @@ In this chapter you will add a link to New Post in the Nav Bar and implement the
 >💡 Try adding some TODO comments for yourself to keep track of where you need to add additional functionality in the future.
 ### Helpful Chapters To Revisit
 
-*[Creating a Link](./REPAIR_ROUTES_INTRO.md#creating-a-link)*<br>
-*[Refactoring the onChange functions](./REPAIR_EMPLOYEE_EDIT.md#refactoring-the-onchange-functions)*<br>
-*[Prevent Default for Forms](./REPAIR_EMPLOYEE_EDIT.md#prevent-default-for-forms)*
+*[Creating a Link](/book_5_honey_rae_routes_intro)*<br>
+*[Refactoring the onChange functions](/book_5_honey_rae_employee_edit)*<br>
+*[Prevent Default for Forms](/book_5_honey_rae_employee_edit)*

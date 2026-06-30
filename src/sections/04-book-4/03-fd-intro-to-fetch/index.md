@@ -92,7 +92,7 @@ This demonstrates how to identify network errors in your fetch requests - a crit
 
 ## 🎓 Practice Exercise: Experimenting with Fetch Calls
 
-Now it's your turn to practice! Make a fetch call to the [random dog <analogy>api</analogy>](./FD_INTRO_TO_API.md#-introducing-fun-image-apis) when the user clicks on the **<analogy>Get</analogy> Dog** button.
+Now it's your turn to practice! Make a fetch call to the [random dog <analogy>api</analogy>](/book_4_fox_y_dog_intro_to_api) when the user clicks on the **<analogy>Get</analogy> Dog** button.
 
 1. Use the <analogy>Network tab</analogy> to observe the <analogy>request</analogy> and <analogy>response</analogy>
 2. Take notes on:

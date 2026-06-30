@@ -1,5 +1,5 @@
 # Viewing a User's Profile
-In this chapter you will add a link to Profile in the Nav Bar and implement the following user stories for the [User Profile](./LEARN_WIREFRAME.md#-user-profile) view:
+In this chapter you will add a link to Profile in the Nav Bar and implement the following user stories for the [User Profile](/book_5_learn_wireframe) view:
 
 **Given** the user wishes to view either their profile or another user's profile<br>
 **When** the user visits the User Profile view<br>
@@ -21,8 +21,8 @@ In this chapter you will add a link to Profile in the Nav Bar and implement the 
 
 ### Helpful Chapters To Revisit
 
-*[Route Parameters and the useParams hook](./REPAIR_CUST_DETAILS.md#route-parameters-and-the-useparams-hook)*<br>
-*[Ternary Statements](./REPAIR_CUSTOMER_LIST.md#ternary-statements)*
+*[Route Parameters and the useParams hook](/book_5_honey_rae_cust_details)*<br>
+*[Ternary Statements](/book_5_honey_rae_customer_list)*
 
 ### 💡 Which Profile?
 Try making only one component for this view. If the user clicks on the Profile link in the NavBar, their details should be displayed in the profile component. If the user clicks on another user's name in the Post Details view, that user's details should be displayed in the profile component. 

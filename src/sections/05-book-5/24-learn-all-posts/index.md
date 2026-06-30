@@ -1,5 +1,5 @@
 # Displaying All The Posts
-In this chapter you will implement the following user story for the ***[All Posts](./LEARN_WIREFRAME.md#-homeall-posts)*** view:
+In this chapter you will implement the following user story for the ***[All Posts](/book_5_learn_wireframe)*** view:
 
 **Given** the user wishes to view a list of all the posts<br>
 **When** the user is at the home route or visits the All Posts view<br>

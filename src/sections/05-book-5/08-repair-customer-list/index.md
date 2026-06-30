@@ -52,12 +52,12 @@ We've reached the end of our learning objectives for parts _one_ and _two_ of th
 ### <analogy>JSX</analogy>
 <analogy>JSX</analogy> allows us to write HTML elements in JavaScript and place them in the DOM without any `Document.querySelector` and appending to the `innerHTML` property.
 
->For more information on JSX, revisit the [Your First Component](./REPAIR_FIRST_COMPONENT.md#component-structure-and-jsx) chapter.
+>For more information on JSX, revisit the [Your First Component](/book_5_honey_rae_first_component) chapter.
 
 ### <analogy>useState</analogy>
 The `useState` <analogy>hook</analogy> allows you to add and manage <analogy>state</analogy> in a functional <analogy>component</analogy>. It takes one argument: the initial value for our state. It returns an array with two values: the current value of the state and a function to update it.
 
->For more information on how `useState` works, revisit the [Your First Component](./REPAIR_FIRST_COMPONENT.md#state-changed) chapter.
+>For more information on how `useState` works, revisit the [Your First Component](/book_5_honey_rae_first_component) chapter.
 
 ### <analogy>Destructuring</analogy>
 The <analogy>destructuring</analogy> assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
@@ -67,13 +67,13 @@ The <analogy>destructuring</analogy> assignment syntax is a JavaScript expressio
 ### <analogy>useEffect</analogy>
 The `useEffect` <analogy>hook</analogy> will run a function when, and _only_ when we tell it to. It takes two arguments: the function we want to run and an array. 
 
->For more information on how `useEffect` works, revisit the [List All Tickets](./REPAIR_ALL_TICKETS.md#useeffect) chapter.
+>For more information on how `useEffect` works, revisit the [List All Tickets](/book_5_honey_rae_all_tickets) chapter.
 
 ### <analogy>Event</analogy> Handling
 Listening for <analogy>events</analogy> in <analogy>React</analogy> is easy peasy. You can just add the event right on the element you want to listen to!
 The two events we've written so far are `onClick` for a button and `onChange` for a text input.
 
->For more information on event handling, revisit the [Your First Component](./REPAIR_FIRST_COMPONENT.md#event-listener) chapter.
+>For more information on event handling, revisit the [Your First Component](/book_5_honey_rae_first_component) chapter.
 
 ### <analogy>Optional Chaining</analogy>
 The `?.` operator is like the `.` chaining operator, except that instead of causing an error if a reference is `null` or `undefined`, the expression short-circuits with a return value of `undefined.` This is very helpful if our state that were displaying in our JSX contains nested objects but the initial value is an empty object. 
@@ -127,7 +127,7 @@ export const ParentComponent = () => {
 }
 ```
 
->For more information about rendering components, revisit the [Ticket Assignee](./REPAIR_TICKET_ASSIGNEE.md#rendering-the-ticketlist-component) chapter
+>For more information about rendering components, revisit the [Ticket Assignee](/book_5_honey_rae_ticket_assignee) chapter
 
 ### <analogy>Props</analogy>
 <analogy>Props</analogy> are arguments passed into a <analogy>React</analogy> <analogy>component</analogy>. When a child <analogy>component</analogy> needs access to <analogy>state</analogy> from a parent <analogy>component</analogy>, you can pass <analogy>props</analogy> to the child <analogy>component</analogy>.
@@ -146,4 +146,4 @@ export const ParentComponent = () => {
 }
 ```
 
->For more information for how props work, revisit the [Ticket Assignee](./REPAIR_TICKET_ASSIGNEE.md#props) chapter.
+>For more information for how props work, revisit the [Ticket Assignee](/book_5_honey_rae_ticket_assignee) chapter.

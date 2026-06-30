@@ -1,5 +1,5 @@
 # Editing My Post
-In this chapter you will implement the following user stories for the [Edit Post](./LEARN_WIREFRAME.md#-edit-post) view:
+In this chapter you will implement the following user stories for the [Edit Post](/book_5_learn_wireframe) view:
 
 ### Let's Finish This User Story for Post Details!
 **Given** the user ***is*** the author of the post<br>
@@ -21,8 +21,8 @@ In this chapter you will implement the following user stories for the [Edit Post
 
 ### Helpful Chapters To Revisit
 
-*[The useNavigate Hook](./REPAIR_EMPLOYEE_EDIT.md#the-usenavigate-hook)*<br>
-*[Route Parameters and the useParams hook](./REPAIR_CUST_DETAILS.md#route-parameters-and-the-useparams-hook)*<br>
-*[Prevent Default for Forms](./REPAIR_EMPLOYEE_EDIT.md#prevent-default-for-forms)*<br>
-*[Uncontrolled input warning](./REPAIR_EMPLOYEE_EDIT.md#whats-up-with-that-warning)*<br>
-*[Refactoring the onChange functions](./REPAIR_EMPLOYEE_EDIT.md#refactoring-the-onchange-functions)*
+*[The useNavigate Hook](/book_5_honey_rae_employee_edit)*<br>
+*[Route Parameters and the useParams hook](/book_5_honey_rae_cust_details)*<br>
+*[Prevent Default for Forms](/book_5_honey_rae_employee_edit)*<br>
+*[Uncontrolled input warning](/book_5_honey_rae_employee_edit)*<br>
+*[Refactoring the onChange functions](/book_5_honey_rae_employee_edit)*

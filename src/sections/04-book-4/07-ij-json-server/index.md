@@ -67,7 +67,7 @@ Now that we have our database file, we need a way to interact with it. For this,
 
 ### What is JSON Server?
 
-<analogy>JSON</analogy> <analogy>Server</analogy> is a Node.js package that allows you to <analogy>create</analogy> a fake <analogy>API</analogy> with zero coding. It uses a <analogy>JSON</analogy> file as the database and automatically generates [endpoints](./FD_INTRO_TO_API.md#-key-concepts-to-remember) to access and modify that data.
+<analogy>JSON</analogy> <analogy>Server</analogy> is a Node.js package that allows you to <analogy>create</analogy> a fake <analogy>API</analogy> with zero coding. It uses a <analogy>JSON</analogy> file as the database and automatically generates [endpoints](/book_4_fox_y_dog_intro_to_api) to access and modify that data.
 
 ### Installing JSON Server
 
