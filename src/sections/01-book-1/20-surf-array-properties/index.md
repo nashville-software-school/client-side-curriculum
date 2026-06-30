@@ -11,7 +11,7 @@ Sequina now wants to find out the average price of her entire inventory to see i
 3. Open the `averagePrice.js` file in VS Code.
 4. Run the code with your debugger.
 
-Instead of a stack trace this time, you will see a weird output text of **<analogy>NaN</analogy>**. In JavaScript, this is shorthand for "not a number". There are [several ways](https://linguinecode.com/post/how-to-avoid-nan-in-javascript) that **NaN** can be generated.
+Instead of a stack trace this time, you will see a weird output text of **<analogy>NaN</analogy>**. In JavaScript, this is shorthand for "not a number". There are <a href="https://linguinecode.com/post/how-to-avoid-nan-in-javascript" target="_blank" rel="noopener noreferrer">several ways</a> that **NaN** can be generated.
 
 Unfortunately, the development team thought that they did everything correctly and were expecting to see the value of $137.49 in the output.
 

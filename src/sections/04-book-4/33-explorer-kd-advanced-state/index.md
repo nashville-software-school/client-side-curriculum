@@ -18,6 +18,6 @@ In the animation below, you will see that there are logging messages that the HT
 
 That means that every time you regenerate the HTML for the radio buttons, you need to determine which one should be checked by default - based on the current <analogy>state</analogy> of `orderBuilder`.
 
-Reference: [How to <analogy>select</analogy> a <analogy>radio button</analogy> by default?](https://stackoverflow.com/questions/5592345/how-to-select-a-radio-button-by-default)
+Reference: <a href="https://stackoverflow.com/questions/5592345/how-to-select-a-radio-button-by-default" target="_blank" rel="noopener noreferrer">How to <analogy>select</analogy> a <analogy>radio button</analogy> by default?</a>
 
 <img src="./images/kneel-diamonds-options-as-state.gif">

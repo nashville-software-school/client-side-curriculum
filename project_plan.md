@@ -182,7 +182,7 @@ Work **one chapter at a time** per session:
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
 | — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
-| ◑ | **Phase 3: Broken Links** — Categories A–F complete; G not started |
+| ✓ | **Phase 3: Broken Links** — All categories A–G complete |
 | — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
@@ -424,17 +424,21 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 
 ---
 
-### Category G: External Links — 124 links (107 unique, 44 domains)
+### Category G: External Links ✓ COMPLETE (2026-06-30)
 
-Spot-check for dead or moved URLs. Notable domains:
-- `watch.screencastify.com` — 15 links (screencasts; service may have changed)
-- `youtu.be` / `www.youtube.com` — 32 links (videos)
-- `learning.nss.team` — 2 links (internal NSS tool; verify still live)
-- `marketplace.visualstudio.com` — 9 links (VSCode extensions)
-- `developer.mozilla.org` — 5 links (stable)
-- `giffygram.nss.team` — 1 link (NSS demo app; verify still live)
+**Spot-check results:**
+- `watch.screencastify.com` (15 links) — 200 ✓
+- `app.screencastify.com/v3/watch/...` (2 links) — 302 → 200 ✓ (redirect works)
+- `learning.nss.team` (2 links) — 200 ✓
+- `giffygram.nss.team` (1 link) — 200 ✓
+- `truncheons.nss.team` (1 link) — DEAD (502). Removed "Previous Cohort Implementation" section from `04-book-4/56-tf-structure-layout/index.md`.
+- YouTube, MDN, VSCode Marketplace, GitHub — all presumed stable.
 
-**Status:** Not started.
+**Also fixed:** `lcoalhost:3000` typo → `localhost:3000` in `02-book-2/13-mm-main/index.md`.
+
+**New tab conversion:** All 122 external `[text](url)` markdown links converted to `<a href="url" target="_blank" rel="noopener noreferrer">text</a>` across 67 files. URLs inside fenced code blocks left untouched.
+
+**Status:** ✓ Complete.
 
 ---
 

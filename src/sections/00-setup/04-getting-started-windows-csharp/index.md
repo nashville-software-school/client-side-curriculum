@@ -2,27 +2,27 @@
 
 ## Visual Studio Code
 
-Visit the [Visual Studio Code](https://code.visualstudio.com/) website to download and install the code editor. This is the editor you will be using for the next 6 months.
+Visit the <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> website to download and install the code editor. This is the editor you will be using for the next 6 months.
 
 ### Extensions
 
 Once Visual Studio Code is installed, there are several extensions that will be helpful for you as a beginner. Click on the links below to visit each extension page and click the **Install** button for each one.
 
-* [Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [Auto close tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-* [Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-* [Multiple cursor case preserve](https://marketplace.visualstudio.com/items?itemName=Cardinal90.multi-cursor-case-preserve)
-* [Code spell checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+* <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" rel="noopener noreferrer">Prettier Code Formatter</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" target="_blank" rel="noopener noreferrer">Auto close tag</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare" target="_blank" rel="noopener noreferrer">Live share</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=Cardinal90.multi-cursor-case-preserve" target="_blank" rel="noopener noreferrer">Multiple cursor case preserve</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" rel="noopener noreferrer">Code spell checker</a>
 
 ## Git Bash (i.e. the terminal)
 
 Later in the instructions, we will ask you to type a command into your terminal. For Windows, this is the **Git Bash** application.
 
-Visit the [Git Bash](http://www.git-scm.com/downloads) download page click the "Download for Windows" button, and once complete, install the software.
+Visit the <a href="http://www.git-scm.com/downloads" target="_blank" rel="noopener noreferrer">Git Bash</a> download page click the "Download for Windows" button, and once complete, install the software.
 
 ## Windows Terminal
 
-Visit the [Windows Terminal](https://apps.microsoft.com/detail/9N0DX20HK701?cid=msft_web_chart&activetab=pivot%3Aoverviewtab&hl=en-us&gl=US) download page and open it in the Microsoft Store App. This will be your default terminal which you will use to navigate your file system, and run development tools throughout the course.
+Visit the <a href="https://apps.microsoft.com/detail/9N0DX20HK701?cid=msft_web_chart&activetab=pivot%3Aoverviewtab&hl=en-us&gl=US" target="_blank" rel="noopener noreferrer">Windows Terminal</a> download page and open it in the Microsoft Store App. This will be your default terminal which you will use to navigate your file system, and run development tools throughout the course.
 
 Once Windows Terminal is installed:
 
@@ -37,7 +37,7 @@ Once Windows Terminal is installed:
 
 ## Node
 
-Visit the [Node.js](https://www.nodejs.org) site and click on the install button that has **"LTS"** in it. Once you download the software, install it, accepting all of the defaults along the way.
+Visit the <a href="https://www.nodejs.org" target="_blank" rel="noopener noreferrer">Node.js</a> site and click on the install button that has **"LTS"** in it. Once you download the software, install it, accepting all of the defaults along the way.
 
 ## Node Packages - Web and API Servers
 
@@ -52,7 +52,7 @@ Visit the [Node.js](https://www.nodejs.org) site and click on the install button
 > ##### _NOTE: This step requires your GitHub username and email._
 > ##### _If you have not yet registered for a [GitHub](#github) account, do that first._
 
-Watch the video on how to [set up global Git configuration](https://youtu.be/66EB9oxGMzQ) using your GitHub username and the email address associated with your GitHub account. This will allow you to successfully back up your code to GitHub in a few days... once we show you how to do it.
+Watch the video on how to <a href="https://youtu.be/66EB9oxGMzQ" target="_blank" rel="noopener noreferrer">set up global Git configuration</a> using your GitHub username and the email address associated with your GitHub account. This will allow you to successfully back up your code to GitHub in a few days... once we show you how to do it.
 
 ## SSH Key
 
@@ -63,8 +63,8 @@ SSH is a technology that allows you to create a very secure connection between y
 
 ## Creating Your SSH Key
 
-Watch a short video for [creating an SSH key in the terminal](https://youtu.be/znRMcNG9_qQ) so that you an work with GitHub.
+Watch a short video for <a href="https://youtu.be/znRMcNG9_qQ" target="_blank" rel="noopener noreferrer">creating an SSH key in the terminal</a> so that you an work with GitHub.
 
 ## Add SSH Key to GitHub Account
 
-Now watch the video for [adding your SSH key to your GitHub account](https://youtu.be/8hlmIObpMd4).
+Now watch the video for <a href="https://youtu.be/8hlmIObpMd4" target="_blank" rel="noopener noreferrer">adding your SSH key to your GitHub account</a>.

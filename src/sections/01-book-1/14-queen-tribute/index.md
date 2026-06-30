@@ -59,7 +59,7 @@ Time to practice using the debugger again. Put a <analogy>breakpoint</analogy> o
 
 For a review, you can watch a video that steps through the code and examines that values of variables as they change.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/MUKQNQMgqHOH3OFYnQOB)
+<a href="https://watch.screencastify.com/v/MUKQNQMgqHOH3OFYnQOB" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
 ## Hints
 

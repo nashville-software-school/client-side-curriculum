@@ -13,6 +13,6 @@ In this chapter, you are going to see how to run a tool called the <analogy>debu
 
 Watch the following video to learn how to use Visual Studio Code to execute your code, evaluate values, and use the debugger toolbar.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/Bm3DhMNMdYIUaFWzNraO)
+<a href="https://watch.screencastify.com/v/Bm3DhMNMdYIUaFWzNraO" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
 

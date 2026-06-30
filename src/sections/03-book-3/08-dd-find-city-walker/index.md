@@ -6,4 +6,4 @@ In this chapter, you continue your journey of embedding hidden state into the DO
 
 Watch the following video another example of using data attributes stored in the DOM to make your project interactive.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/bMwSf4OEeaHtua9axA5g)
+<a href="https://watch.screencastify.com/v/bMwSf4OEeaHtua9axA5g" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>

@@ -2,13 +2,13 @@
 
 ## Getting Started
 
-1. Visit the [Learning Platform](https://learning.nss.team/) and click the **Proposal Template** button. Make a copy of the Google Doc that you see to use for your proposal.
+1. Visit the <a href="https://learning.nss.team/" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the **Proposal Template** button. Make a copy of the Google Doc that you see to use for your proposal.
 2. Make sure you track that your proposal meets all requirements by click the **Capstones** link on the Learning Platform.
 3. Start with your <analogy>wireframes</analogy>.
    * [View an example of good wireframes](./images/capstone-wireframe-example.png)
    * [View another example of good wireframes](./images/wireframe-example-001.png)
 4. Then build your <analogy>ERD</analogy> with dbdiagram.io.
-5. When you have completed the ERD, wireframes, and user stories, submit your proposal on the [Learning Platform](https://learning.nss.team/) by clicking the **Submit Proposal** button.
+5. When you have completed the ERD, wireframes, and user stories, submit your proposal on the <a href="https://learning.nss.team/" target="_blank" rel="noopener noreferrer">Learning Platform</a> by clicking the **Submit Proposal** button.
 
 ---
 

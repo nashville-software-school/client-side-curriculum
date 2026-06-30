@@ -84,6 +84,3 @@ Given those feature requests, what you need to do in this chapter is the followi
 
 > **Reminder:** Remember to create a CSS file for each component, and use the `@import` statement in `main.css` to include each one. Also consider what sub-directories you will need under the `scripts` directory, if any. Discuss with your mentor.
 
-## Previous Cohort Implementation
-
-Visit a [live-demo of one implementation of Truncheons &amp; Flagons](http://truncheons.nss.team/) so you can get a feel for how it can work.

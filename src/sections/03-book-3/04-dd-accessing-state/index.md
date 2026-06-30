@@ -15,8 +15,8 @@ There are many more possible events, but those are some of the most common ones 
 
 ## Accessing State for Interactivity
 
-Again, refer to the [Using data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) article to see how the `dataset` property on an HTML element is available to JavaScript for accessing state.
+Again, refer to the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank" rel="noopener noreferrer">Using data attributes</a> article to see how the `dataset` property on an HTML element is available to JavaScript for accessing state.
 
 Watch the following video to see how to access state when the user clicks on an HTML element, and then use state to present a message.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://app.screencastify.com/v3/watch/bucIF1owlPbSfI0gdJl7)
+<a href="https://app.screencastify.com/v3/watch/bucIF1owlPbSfI0gdJl7" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>

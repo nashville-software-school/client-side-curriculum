@@ -5,7 +5,7 @@
 ### ⚠️ Note on the video: 
 This video instructs you to make the file `components/customers/CustomerDetails.js`. Make sure your file ends in `.jsx` instead of `.js`.
 
-First, watch the introduction to the [useParams hook](https://youtu.be/fPfQ4JjPQps?si=BvCeRUgf9YvKZpkD) video and implement the code yourself. Next, watch the [Customer Details](https://youtu.be/aiVEFIHDj4k?si=32JIaDbJwxbJ1P3I) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
+First, watch the introduction to the <a href="https://youtu.be/fPfQ4JjPQps?si=BvCeRUgf9YvKZpkD" target="_blank" rel="noopener noreferrer">useParams hook</a> video and implement the code yourself. Next, watch the <a href="https://youtu.be/aiVEFIHDj4k?si=32JIaDbJwxbJ1P3I" target="_blank" rel="noopener noreferrer">Customer Details</a> video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>

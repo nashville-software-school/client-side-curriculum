@@ -24,6 +24,6 @@ That's where metadata comes in. Data about data.
 
 Watch the following video to see an implementation of metadata for your list items and then practice it in your code.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://app.screencastify.com/v3/watch/KII3QjvTnTqeU4Zizmvv)
+<a href="https://app.screencastify.com/v3/watch/KII3QjvTnTqeU4Zizmvv" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
 

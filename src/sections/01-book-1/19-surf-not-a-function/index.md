@@ -14,7 +14,7 @@ console.log(upper)
 
 The development team tried to convert all of the data to uppercase, but couldn't quite figure it out. They tried to use the `toUpperCase()` method, but they keep getting errors that it's not a function.
 
-They know it's a function because they found this [W3Schools article](https://www.w3schools.com/jsref/jsref_toUpperCase.asp) that proves it.
+They know it's a function because they found this <a href="https://www.w3schools.com/jsref/jsref_toUpperCase.asp" target="_blank" rel="noopener noreferrer">W3Schools article</a> that proves it.
 
 
 Once again they need to rely upon your debugging skills to find out why JavaScript says it's not a function.

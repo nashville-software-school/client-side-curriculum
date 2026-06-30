@@ -64,7 +64,7 @@ Yaak is an <analogy>API</analogy> testing tool that allows developers to send re
 
 ### Installing Yaak
 
-1. Visit [https://yaak.app/](https://yaak.app/)
+1. Visit <a href="https://yaak.app/" target="_blank" rel="noopener noreferrer">https://yaak.app/</a>
 2. Click on the download button for your operating system
 3. Follow the installation instructions
 4. Launch the application

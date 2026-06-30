@@ -65,4 +65,4 @@ This is where you will inspect the structure of your <analogy>DOM</analogy> _(Do
 
 ## Learn More
 
-Take a few minutes and read the official [Open Chrome DevTools](https://developer.chrome.com/docs/devtools/open/) article published by the Chrome team to learn more about the basics of the DevTools.
+Take a few minutes and read the official <a href="https://developer.chrome.com/docs/devtools/open/" target="_blank" rel="noopener noreferrer">Open Chrome DevTools</a> article published by the Chrome team to learn more about the basics of the DevTools.

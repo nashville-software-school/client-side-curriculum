@@ -46,4 +46,4 @@ console.log(monica)
 
 Now watch the following video for an overview of how to read and understand a JavaScript syntax error.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/cN8Vw8dWNvwb4L2avTq8)
+<a href="https://watch.screencastify.com/v/cN8Vw8dWNvwb4L2avTq8" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>

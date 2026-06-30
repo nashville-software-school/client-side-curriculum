@@ -1,6 +1,6 @@
 # Debugger Overview and Keyboard Shortcuts
 
-Watch the [Debugging Keyboard Shortcuts](https://watch.screencastify.com/v/HBJhwo3JlAaLrD7xhfvw) video that shows you how to customize Visual Studio Code keyboard shortcuts so that you can start debugging your code, which is a crucial skill for a beginner.
+Watch the <a href="https://watch.screencastify.com/v/HBJhwo3JlAaLrD7xhfvw" target="_blank" rel="noopener noreferrer">Debugging Keyboard Shortcuts</a> video that shows you how to customize Visual Studio Code keyboard shortcuts so that you can start debugging your code, which is a crucial skill for a beginner.
 
 ## Activities
 

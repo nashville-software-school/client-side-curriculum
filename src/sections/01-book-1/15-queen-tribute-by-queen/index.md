@@ -17,10 +17,10 @@ At the end of this chapter you should be able to...
 
 This first video talks about nested loops, and why that logic is needed for this chapter. Once you are done watching it, write the same code in your `main.js` module.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/kGLzdJaGEaQufUSqThU9)
+<a href="https://watch.screencastify.com/v/kGLzdJaGEaQufUSqThU9" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
 The next video walks through how to use the power of the debugger to help you determine what logic you need to write. Then it explains how to use an `if` statement to check if two values are the same, and if so, run some conditional logic.
 
 Once you are done watching it, write the same code in your `main.js` module.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/hpBX2f5IJZab30CpP8cy)
+<a href="https://watch.screencastify.com/v/hpBX2f5IJZab30CpP8cy" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>

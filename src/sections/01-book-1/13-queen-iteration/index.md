@@ -63,4 +63,4 @@ This is a top priority skill that you must have as a developer, so skipping this
 
 Watch the following video for an overview of using the debugger for this version of your code.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/1sIKYzOFt8qEfrlIic6T)
+<a href="https://watch.screencastify.com/v/1sIKYzOFt8qEfrlIic6T" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>

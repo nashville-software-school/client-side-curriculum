@@ -1,6 +1,6 @@
 # Deploying API to Digital Ocean
 
-First, if you haven't used Digital Ocean yet, [sign up for $100 credit](https://m.do.co/c/47e5e578d1cd) which is good for 60 days. Deploying your first three static sites is cost free, and deploying a small Django app is only $5.00 per month, so you get two months of having a deployed API on credit.
+First, if you haven't used Digital Ocean yet, <a href="https://m.do.co/c/47e5e578d1cd" target="_blank" rel="noopener noreferrer">sign up for $100 credit</a> which is good for 60 days. Deploying your first three static sites is cost free, and deploying a small Django app is only $5.00 per month, so you get two months of having a deployed API on credit.
 
 Your applicatons are considered to be static apps, so you won't be charged for them, unless you go over your 3 free static deployed apps.
 

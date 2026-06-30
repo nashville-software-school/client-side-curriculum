@@ -6,7 +6,7 @@ In this chapter you will learn how to render a React component, pass props, use 
 ### ⚠️ Note on the video: 
 This video instructs you to make the files `components/Ticket.js` and `components/TicketList.js`. Make sure your files end in `.jsx` instead of `.js`.
 
-Watch the [Ticket Assignee](https://youtu.be/8s4TQdJ3EBk) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
+Watch the <a href="https://youtu.be/8s4TQdJ3EBk" target="_blank" rel="noopener noreferrer">Ticket Assignee</a> video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
 ## Rendering the TicketList component
 Breaking our code into components to later be rendered as part of one large whole is nothing new to us. Take this code from DeShawn's Dog Walking: 
@@ -114,7 +114,7 @@ But why would we do that when <analogy>destructuring</analogy> is _so much_ cool
 <analogy>Destructuring</analogy> is not new with <analogy>React</analogy>, though we do use it with <analogy>destructuring</analogy> our <analogy>props</analogy> object and <analogy>useState</analogy>. You can do this in vanilla js, and it's likely you have! Just another example of how <analogy>React</analogy> is _just_ Javascript!
 
 ## 🧭 📺 Explorer Video _(optional)_
-If you're feeling comfortable with what we've learned so far and would like to see an alternative solution to what we did in this chapter, watch [this video](https://youtu.be/Sq4CzHMLXTk?si=_PKOdYncLfGx-hHa)! 
+If you're feeling comfortable with what we've learned so far and would like to see an alternative solution to what we did in this chapter, watch <a href="https://youtu.be/Sq4CzHMLXTk?si=_PKOdYncLfGx-hHa" target="_blank" rel="noopener noreferrer">this video</a>! 
 >_This is optional and the solution in this video will not be used in the rest of this walkthrough of Honey Rae Repairs._
 
 ## ���� Vocabulary

@@ -196,8 +196,8 @@ After making this change to the submissions fetch call, check the <analogy>netwo
 
 ## 🎓 Practice Exercises
 
-1. <analogy>Read</analogy> [the MDN Docs on `.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map). Practice using this <analogy>array</analogy> method in the provided interactive code window. You can type whatever javascript code you want in this code window. This makes it an excellent way to build understanding of how this <analogy>array</analogy> method works.
-2. <analogy>Read</analogy> [the MDN Docs on `.join()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join). Practice using this <analogy>array</analogy> method in the provided interactive code window. Experiment passing different separators (ex. "") to the method.
+1. <analogy>Read</analogy> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" target="_blank" rel="noopener noreferrer">the MDN Docs on `.map()`</a>. Practice using this <analogy>array</analogy> method in the provided interactive code window. You can type whatever javascript code you want in this code window. This makes it an excellent way to build understanding of how this <analogy>array</analogy> method works.
+2. <analogy>Read</analogy> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" target="_blank" rel="noopener noreferrer">the MDN Docs on `.join()`</a>. Practice using this <analogy>array</analogy> method in the provided interactive code window. Experiment passing different separators (ex. "") to the method.
 3. Refactor the `LocationChoices` <analogy>component</analogy> to use `.map()` instead of a <analogy>for...of</analogy> loop to generate the html inputs for each Location.
 
 ## 📝 What We've Learned

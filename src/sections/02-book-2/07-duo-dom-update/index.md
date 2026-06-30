@@ -9,7 +9,7 @@ This is accomplished by using the <analogy>innerHTML</analogy> property of any H
 You can watch a brief video that shows how the `.innerHTML` and `.textContent` properties of HTML elements work.
 
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://www.youtube.com/watch?v=1UsllDMhvN4)
+<a href="https://www.youtube.com/watch?v=1UsllDMhvN4" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
 
 ## Updating Your DOM

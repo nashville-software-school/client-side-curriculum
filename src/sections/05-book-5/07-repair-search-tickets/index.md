@@ -6,7 +6,7 @@ In this chapter you will practice what you learned in the previous chapters by i
 ### ⚠️ Note on the video: 
 This video instructs you to make the file `components/TicketFilterBar.js`. Make sure your file ends in `.jsx` instead of `.js`.u
 
-Watch the [Search Tickets](https://youtu.be/WPG09-cUJYg?si=sYHT7adRJVgaL0qr) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
+Watch the <a href="https://youtu.be/WPG09-cUJYg?si=sYHT7adRJVgaL0qr" target="_blank" rel="noopener noreferrer">Search Tickets</a> video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>
@@ -49,4 +49,4 @@ The “React Hook useEffect has a missing dependency” error is a common issue 
 
 When fixing the error, it’s important to consider your specific use case. Try to address the issue by including the missing dependency in the dependency array or ignore it if you're certain it's not needed. 
 
-However, if you run into some tricky bugs while developing your react application, it's very likely you do have a missing dependency. Try installing [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) if you haven't already to help you find these tricky bugs.
+However, if you run into some tricky bugs while developing your react application, it's very likely you do have a missing dependency. Try installing <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank" rel="noopener noreferrer">Eslint</a> if you haven't already to help you find these tricky bugs.

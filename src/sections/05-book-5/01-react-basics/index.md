@@ -30,7 +30,7 @@ We are giving you some boilerplate (starter) code that you will then customize a
 ```
 ## Installing React Developer Tools
 
-You can install the React Developer Tools via the [Chrome Store](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi).
+You can install the React Developer Tools via the <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi" target="_blank" rel="noopener noreferrer">Chrome Store</a>.
 You will get two new tabs in your Chrome DevTools:
 
 * ⚛️ Components
@@ -42,7 +42,7 @@ These tools will help you debug and inspect your React applications.
 
 Watch the Intro to React Dev Tools video below to review their usage. Again, just like with VanillaJS, your use of the React dev tools is the only other way than using the debugger to gather evidence.
 
-[<img src="./images/react-dev-tools-video.png" />](https://www.youtube.com/watch?v=rb1GWqCJid4)
+<a href="https://www.youtube.com/watch?v=rb1GWqCJid4" target="_blank" rel="noopener noreferrer"><img src="./images/react-dev-tools-video.png" /></a>
 
 
 ## Starting Your React Application

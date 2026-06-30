@@ -7,7 +7,7 @@ Remember the two questions to ask. Look at two main resources in the diagram and
 1. Can X be assigned to many of Y?
 2. Can Y be assigned to many of X?
 
-If the answer to only one of the questions is **yes**, then you have a one-to-many relationship. If the answer to _both_ of the questions is **yes**, then you have a [many-to-many relationship](https://community.dbdiagram.io/t/tutorial-many-to-many-relationships/412#h-2-use-the-associative-join-table-3) and need an intersection _(join)_ table to store that more complex relationship.
+If the answer to only one of the questions is **yes**, then you have a one-to-many relationship. If the answer to _both_ of the questions is **yes**, then you have a <a href="https://community.dbdiagram.io/t/tutorial-many-to-many-relationships/412#h-2-use-the-associative-join-table-3" target="_blank" rel="noopener noreferrer">many-to-many relationship</a> and need an intersection _(join)_ table to store that more complex relationship.
 
 #### Visual Example of Join Table
 

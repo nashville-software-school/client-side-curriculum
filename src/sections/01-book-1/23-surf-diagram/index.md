@@ -26,7 +26,7 @@ graph TD;
 
 ## Sequence Diagram for Detailed Algorithm Visualizations
 
-One of your four Core Skills is [algoritmic thinking](https://www.wikihow.com/Think-Algorithmically). A person who cannot think algorithmically cannot be a high value software developer.
+One of your four Core Skills is <a href="https://www.wikihow.com/Think-Algorithmically" target="_blank" rel="noopener noreferrer">algoritmic thinking</a>. A person who cannot think algorithmically cannot be a high value software developer.
 
 A detailed way to visualize an <analogy>algorithm</analogy> for a problem is with a **<analogy>Sequence Diagram</analogy>**. This type of diagram shows all of the actors _(i.e. Properties, Data, and Functions)_ but also shows the interactions between them, and the precise order in which those operations happen. It also visualizes when data is iterated and what happens during iteration.
 
@@ -34,12 +34,12 @@ It is a visualization of your algorithmic thinking.
 
 ### Favorite Tools of Learners Past
 
-1. The [sequencediagram.org](https://sequencediagram.org/) site is a wonderful cloud-based option to build your sequence diagram.
-2. The [draw.io VS Code Extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) allows you to have a local file in your project that contains your diagram.
+1. The <a href="https://sequencediagram.org/" target="_blank" rel="noopener noreferrer">sequencediagram.org</a> site is a wonderful cloud-based option to build your sequence diagram.
+2. The <a href="https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio" target="_blank" rel="noopener noreferrer">draw.io VS Code Extension</a> allows you to have a local file in your project that contains your diagram.
 
 Below is a sample sequence diagram, and you can watch how it was built by watching the following video.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/GvHoKaYhf17v0rQAbbmb)
+<a href="https://watch.screencastify.com/v/GvHoKaYhf17v0rQAbbmb" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
 ### Example Diagram
 

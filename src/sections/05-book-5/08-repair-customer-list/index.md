@@ -6,7 +6,7 @@ In this chapter you will create a new component for listing the customers.
 ### ⚠️ Note on the video: 
 This video instructs you to make the file `components/customers/CustomerList.js`. Make sure your file ends in `.jsx` instead of `.js`.
 
-Watch the [Customer List](https://youtu.be/JijX33KjDP4?si=Rj_Pp6-twBP4weVf) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
+Watch the <a href="https://youtu.be/JijX33KjDP4?si=Rj_Pp6-twBP4weVf" target="_blank" rel="noopener noreferrer">Customer List</a> video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>
@@ -62,7 +62,7 @@ The `useState` <analogy>hook</analogy> allows you to add and manage <analogy>sta
 ### <analogy>Destructuring</analogy>
 The <analogy>destructuring</analogy> assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
->For more information on how destructuring works, revisit the [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). _That "Try it" box is interactive and a great way to learn._
+>For more information on how destructuring works, revisit the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener noreferrer">mdn web docs</a>. _That "Try it" box is interactive and a great way to learn._
 
 ### <analogy>useEffect</analogy>
 The `useEffect` <analogy>hook</analogy> will run a function when, and _only_ when we tell it to. It takes two arguments: the function we want to run and an array. 

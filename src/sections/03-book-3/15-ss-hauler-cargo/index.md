@@ -70,7 +70,7 @@ erDiagram
     }
 ```
 
-To enable getting the `id` property of the hauler that is clicked on, you will set a data attribute _(see [MDN: Using data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to learn more)_ on each list item the store the id.
+To enable getting the `id` property of the hauler that is clicked on, you will set a data attribute _(see <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank" rel="noopener noreferrer">MDN: Using data attributes</a> to learn more)_ on each list item the store the id.
 
 ```js
 shipsHTML += `<li data-id="${ship.id}">${ship.name}</li>`
@@ -105,5 +105,5 @@ That will generate list items in this format.
 
 Now watch a 7:23 long video that demonstrates how to use those data attributes on the list items to implement the algorithm. After watching the video, implement the code yourself.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/kaWPyxCnewek1lgFyX7e)
+<a href="https://watch.screencastify.com/v/kaWPyxCnewek1lgFyX7e" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 

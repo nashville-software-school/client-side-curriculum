@@ -32,7 +32,7 @@ Think of functions like minions that work for you. Each minion is designated a s
 
 ## Functions for Beginners
 
-Many students in the past have found the [JavaScript Functions: Explain Like I'm Five](https://dev.to/sumusiriwardana/javascript-functions-explain-like-i-m-five-5009) article a helpful resource to understand the basics. Read it now. Read it tomorrow. Keep coming back to this entire chapter over and over again to keep reinforcing your vocabulary and basic concepts.
+Many students in the past have found the <a href="https://dev.to/sumusiriwardana/javascript-functions-explain-like-i-m-five-5009" target="_blank" rel="noopener noreferrer">JavaScript Functions: Explain Like I'm Five</a> article a helpful resource to understand the basics. Read it now. Read it tomorrow. Keep coming back to this entire chapter over and over again to keep reinforcing your vocabulary and basic concepts.
 
 It's difficult to express how critically important it is for you to understand functions before you try any further concepts in this course like events, asynchronous code, modules, forms, and component-based applications. Functions are the foundation of all of those concepts.
 

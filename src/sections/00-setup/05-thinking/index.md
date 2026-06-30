@@ -11,15 +11,15 @@ Successful software developers are highly proficient at a the follow skills.
 1. **Efficient learning**. Efficient learners are able to objectively and critically identify gaps in their skills and devise a coherent strategy for gaining those skills.
 1. **Communication**. To be truly valuable, you have to master complex communication - both to your technical and non-technical teammates. Developers who cannot communicate effectively bring little value to modern teams.
 
-Visit the [Learning Platform](https://learning.nss.team) to learn more.
+Visit the <a href="https://learning.nss.team" target="_blank" rel="noopener noreferrer">Learning Platform</a> to learn more.
 
 ## Advice From Professionals
 
 Watch these videos to hear from professional developers and educators about how to reset your brain to start thinking like a software developer.
 
-* [How To Think Like A Programmer](https://www.youtube.com/watch?v=azcrPFhaY9k) by Andy Harris
-* [How to Think Like a Programmer - Problem Solving & Find Time to Code](https://www.youtube.com/watch?v=XpulVva97eU) by Joel Rivera
-* [How to THINK like a Programmer](https://www.youtube.com/watch?v=NNazO2tMHno) by Forrest Knight
+* <a href="https://www.youtube.com/watch?v=azcrPFhaY9k" target="_blank" rel="noopener noreferrer">How To Think Like A Programmer</a> by Andy Harris
+* <a href="https://www.youtube.com/watch?v=XpulVva97eU" target="_blank" rel="noopener noreferrer">How to Think Like a Programmer - Problem Solving & Find Time to Code</a> by Joel Rivera
+* <a href="https://www.youtube.com/watch?v=NNazO2tMHno" target="_blank" rel="noopener noreferrer">How to THINK like a Programmer</a> by Forrest Knight
 
 ## Your First Algorithm
 

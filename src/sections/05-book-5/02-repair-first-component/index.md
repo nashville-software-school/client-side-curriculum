@@ -11,7 +11,7 @@ These videos were recorded before a change to the course. There will be a few di
 
 Keep these differences in mind as you follow along in this course.
 
-Watch the [First Component](https://youtu.be/-WMvlULvBeU) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
+Watch the <a href="https://youtu.be/-WMvlULvBeU" target="_blank" rel="noopener noreferrer">First Component</a> video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
  
 ## Component Structure and <analogy>JSX</analogy>
 You've been writing React-like components in vanilla JS, you just didn't know it! Take this code from _Tour Some Sugar On Me_ for example:

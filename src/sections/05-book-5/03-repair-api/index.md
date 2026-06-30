@@ -8,7 +8,7 @@ This chapter provides information, and the data needed, for the API that will be
 
 ### Explanation of Data and Relationships
 
-Watch the [Honey Rae Client Side ERD](https://watch.screencastify.com/v/kZGoJhLMtuVFRjkrVm47) video for an explanation about the structure and relationships defined in the <analogy>ERD</analogy>.
+Watch the <a href="https://watch.screencastify.com/v/kZGoJhLMtuVFRjkrVm47" target="_blank" rel="noopener noreferrer">Honey Rae Client Side ERD</a> video for an explanation about the structure and relationships defined in the <analogy>ERD</analogy>.
 
 
 ### Copy of the <analogy>ERD</analogy>
@@ -253,7 +253,7 @@ json-server -p 8088 database.json
 
 Feel free to make more of each resource if you want to see more data in your API.
 
-| <h1>&#x2757;</h1> | _The [vscode-faker](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-faker) extension for Visual Studio Code or [ChatGPT](https://chat.openai.com/auth/login) are fast, easy ways to generate starter data._ |
+| <h1>&#x2757;</h1> | _The <a href="https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-faker" target="_blank" rel="noopener noreferrer">vscode-faker</a> extension for Visual Studio Code or <a href="https://chat.openai.com/auth/login" target="_blank" rel="noopener noreferrer">ChatGPT</a> are fast, easy ways to generate starter data._ |
 | --- | --- |
 ## Backup to Github
 

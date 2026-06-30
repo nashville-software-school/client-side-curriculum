@@ -8,7 +8,7 @@ In this chapter you will add a button to the jokes to either mark it as told or 
   <summary><b>OPTIONAL FUN!</b></summary>
 
   ### Want those fun icons in your app?
-  The icons in the animation are easy to implement! If you'd like to add them to your application, just sign up for Font Awesome [here](https://fontawesome.com/). Follow the "_start for free_" link, enter your email, and click "_send kit embed code_". Follow the steps to confirm your email address. You'll be redirected to a page with this script: 
+  The icons in the animation are easy to implement! If you'd like to add them to your application, just sign up for Font Awesome <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">here</a>. Follow the "_start for free_" link, enter your email, and click "_send kit embed code_". Follow the steps to confirm your email address. You'll be redirected to a page with this script: 
   ```javascript
   <script src="YourUniqueFontAwesomeLink" crossorigin="anonymous"></script>
   ```

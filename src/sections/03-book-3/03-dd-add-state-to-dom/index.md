@@ -13,7 +13,7 @@ That state hidden beneath what you are looking at enables developers to do some 
 
 ## HTML Data Attributes
 
-One way developer store invisible state in a web page is with [HTML Data Attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes). You have been using some basic attributes of HTML elements already.
+One way developer store invisible state in a web page is with <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank" rel="noopener noreferrer">HTML Data Attributes</a>. You have been using some basic attributes of HTML elements already.
 
 The `id` attribute is very common.
 
@@ -41,4 +41,4 @@ You also have the power to define your own attributes to store state, or data, i
 
 There is an article linked above that you are encourage to read. Then watch a video for how to implement additional state in your HTML when generating it with JavaScript.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/JI0eaiPwi4bZ8AmSoYCK)
+<a href="https://watch.screencastify.com/v/JI0eaiPwi4bZ8AmSoYCK" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>

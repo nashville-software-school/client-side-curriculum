@@ -40,7 +40,7 @@ This line calls the `renderMoviesToDOM` function, passing the `movieHTML` as an 
 ## Step 5: Test the Application
 
 1. In the project directory, run the `serve` command
-2. Open the URL is provides in your browser _(this is usually http://lcoalhost:3000)_
+2. Open the URL it provides in your browser _(this is usually http://localhost:3000)_
 3. You should see the movie cards displayed on the webpage, with the movie posters, titles, and descriptions.
 
 ## Step 6: Add to Commit History

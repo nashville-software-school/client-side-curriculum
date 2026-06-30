@@ -4,9 +4,9 @@ You have been contracted to build an interactive web site for a public park in y
 
 ## Setup
 
-Your mentors will provide a Github Classroom link that will create the Github repository. Make sure that the team follows the guidance provided in the [Github Workflow Guides](https://nashville-software-school.github.io/github-workflow/) during this project.
+Your mentors will provide a Github Classroom link that will create the Github repository. Make sure that the team follows the guidance provided in the <a href="https://nashville-software-school.github.io/github-workflow/" target="_blank" rel="noopener noreferrer">Github Workflow Guides</a> during this project.
 
-Once the team's repository has been made and everyone has joined the Github Classroom team, you will start with the [Begin a Project With Starter Code](https://nashville-software-school.github.io/github-workflow/START_REMOTE.html) process.
+Once the team's repository has been made and everyone has joined the Github Classroom team, you will start with the <a href="https://nashville-software-school.github.io/github-workflow/START_REMOTE.html" target="_blank" rel="noopener noreferrer">Begin a Project With Starter Code</a> process.
 
 ## Destinations
 

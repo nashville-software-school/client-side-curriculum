@@ -20,4 +20,4 @@ for (const trail of trails) {
 
 Watch a short video that shows the syntax and operation of the `.filter()` method on an array and see if you can replace your `for..of` loops in your code where appropriate.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://www.youtube.com/watch?v=3LOEGS4qcRM)
+<a href="https://www.youtube.com/watch?v=3LOEGS4qcRM" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>

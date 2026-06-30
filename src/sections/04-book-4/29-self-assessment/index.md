@@ -21,10 +21,10 @@ A customer should be able to choose a base dish, a vegetable, and a side dish an
 
 > 🧨 Make sure you answer the vocabulary and understanding questions at the end of the README in the project before notifying your coaches that you are done.
 
-1. Go to the [Learning Platform](https://learning.nss.team) and click the button that you are ready for your self-assessment project.
+1. Go to the <a href="https://learning.nss.team" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the button that you are ready for your self-assessment project.
 2. You will receive a Slack message with the repository you will use.
 3. Clone the project, making sure you use the **SSH** connection <analogy>string</analogy>.
 4. Open the <analogy>directory</analogy> that gets created for you after cloning in VS Code.
 5. Follow the instructions in the main README.
 
-When you are done, go back to the [Learning Platform](https://learning.nss.team) and click the button that notifies the coaching team that it's ready for review.
+When you are done, go back to the <a href="https://learning.nss.team" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the button that notifies the coaching team that it's ready for review.
