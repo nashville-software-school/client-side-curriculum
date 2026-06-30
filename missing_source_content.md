@@ -18,46 +18,48 @@ These are linked from existing exercises but the files were never migrated. Fixi
 | `book-3-deshawns-dog-walking/chapters/code/dogWalker.js` | Not directly linked (exists alongside above) | Related code snippet |
 | `projects/tier-3/honest-abe/chapters/data/honestabe.json` | `04-book-4/46-pioneer-abe-politicians/index.md` | Seed data for Pioneer: Honest Abe |
 
-### Group project chapter files
+### Group project chapter files ✓ PORTED (Phase 3 Category D, 2026-06-30)
 
-These group project exercises exist as single `index.md` files that link to sub-chapter files which were never migrated.
+These group project sub-chapters have been ported as individual exercises. The parent `index.md` tables and navigation chains have been updated.
 
-**Modern Farm** (`02-book-2/24-group-project-modern-farm/index.md` links to `./chapters/MF_*.md`):
+**Modern Farm** — ported as `02-book-2/25-mf-management` through `33-mf-process-queue`:
 
-| Source file | Source path |
-|---|---|
-| `MF_INSTALL_PLAN.md` | `projects/tier-1/modern-farm/chapters/MF_INSTALL_PLAN.md` |
-| `MF_SEED_MODULES.md` | `projects/tier-1/modern-farm/chapters/MF_SEED_MODULES.md` |
-| `MF_FIELD.md` | `projects/tier-1/modern-farm/chapters/MF_FIELD.md` |
-| `MF_SOWING.md` | `projects/tier-1/modern-farm/chapters/MF_SOWING.md` |
-| `MF_HARVEST.md` | `projects/tier-1/modern-farm/chapters/MF_HARVEST.md` |
-| `MF_RENDER_HARVEST.md` | `projects/tier-1/modern-farm/chapters/MF_RENDER_HARVEST.md` |
-| `MF_CHALLENGES.md` | `projects/tier-1/modern-farm/chapters/MF_CHALLENGES.md` |
-| `MF_SILO_STACK.md` | `projects/tier-1/modern-farm/chapters/MF_SILO_STACK.md` |
-| `MF_PROCESS_QUEUE.md` | `projects/tier-1/modern-farm/chapters/MF_PROCESS_QUEUE.md` |
+| Source file | Platform exercise | Chapter ID |
+|---|---|---|
+| `MF_INSTALL_PLAN.md` | `25-mf-management` | `book_2_modern_farm_management` |
+| `MF_SEED_MODULES.md` | `26-mf-seed-modules` | `book_2_modern_farm_seed_modules` |
+| `MF_FIELD.md` | `27-mf-tilling-field` | `book_2_modern_farm_tilling_field` |
+| `MF_SOWING.md` | `28-mf-sowing-field` | `book_2_modern_farm_sowing_field` |
+| `MF_HARVEST.md` | `29-mf-collecting-harvest` | `book_2_modern_farm_collecting_harvest` |
+| `MF_RENDER_HARVEST.md` | `30-mf-selling-harvest` | `book_2_modern_farm_selling_harvest` |
+| `MF_CHALLENGES.md` | `31-mf-optional-challenges` | `book_2_modern_farm_optional_challenges` |
+| `MF_SILO_STACK.md` | `32-mf-silo-stack` | `book_2_modern_farm_silo_stack` |
+| `MF_PROCESS_QUEUE.md` | `33-mf-process-queue` | `book_2_modern_farm_process_queue` |
 
-**Cider Falls Park** (`03-book-3/25-group-project-cider-falls/index.md` links to `./chapters/CIDERFALLS_*.md`):
+**Cider Falls Park** — ported as `03-book-3/26-cf-intro` through `30-cf-services`:
 
-| Source file | Source path |
-|---|---|
-| `CIDERFALLS_INTRO.md` | `projects/tier-2/cider-falls/chapters/CIDERFALLS_INTRO.md` |
-| `CIDERFALLS_DATA.md` | `projects/tier-2/cider-falls/chapters/CIDERFALLS_DATA.md` |
-| `CIDERFALLS_ALGORITHM.md` | `projects/tier-2/cider-falls/chapters/CIDERFALLS_ALGORITHM.md` |
-| `CIDERFALLS_RIVERS_AND_TRAILS.md` | `projects/tier-2/cider-falls/chapters/CIDERFALLS_RIVERS_AND_TRAILS.md` |
-| `CIDERFALLS_SERVICES.md` | `projects/tier-2/cider-falls/chapters/CIDERFALLS_SERVICES.md` |
+| Source file | Platform exercise | Chapter ID |
+|---|---|---|
+| `CIDERFALLS_INTRO.md` | `26-cf-intro` | `book_3_cider_falls_intro` |
+| `CIDERFALLS_DATA.md` | `27-cf-data-design` | `book_3_cider_falls_data_design` |
+| `CIDERFALLS_ALGORITHM.md` | `28-cf-algorithmic-thinking` | `book_3_cider_falls_algorithmic_thinking` |
+| `CIDERFALLS_RIVERS_AND_TRAILS.md` | `29-cf-you-are-here` | `book_3_cider_falls_you_are_here` |
+| `CIDERFALLS_SERVICES.md` | `30-cf-services` | `book_3_cider_falls_services` |
 
-**Truncheons & Flagons** (`04-book-4/53-truncheons-and-flagons/index.md` links to `./chapters/TF_*.md`):
+**Truncheons & Flagons** — ported as `04-book-4/56-tf-structure-layout` through `63-tf-round-scores`:
 
-| Source file | Source path |
-|---|---|
-| `TF_STRUCTURE_LAYOUT.md` | `projects/tier-4/truncheons/chapters/TF_STRUCTURE_LAYOUT.md` |
-| `TF_GAME_DATA.md` | `projects/tier-4/truncheons/chapters/TF_GAME_DATA.md` |
-| `TF_API.md` | `projects/tier-4/truncheons/chapters/TF_API.md` |
-| `TF_GAME_RENDER.md` | `projects/tier-4/truncheons/chapters/TF_GAME_RENDER.md` |
-| `TF_FORMS.md` | `projects/tier-4/truncheons/chapters/TF_FORMS.md` |
-| `TF_PLAYER_FORM.md` | `projects/tier-4/truncheons/chapters/TF_PLAYER_FORM.md` |
-| `TF_CHOOSE_TEAMS.md` | `projects/tier-4/truncheons/chapters/TF_CHOOSE_TEAMS.md` |
-| `TF_ROUND_SCORES.md` | `projects/tier-4/truncheons/chapters/TF_ROUND_SCORES.md` |
+| Source file | Platform exercise | Chapter ID |
+|---|---|---|
+| `TF_STRUCTURE_LAYOUT.md` | `56-tf-structure-layout` | `book_4_tf_structure_layout` |
+| `TF_GAME_DATA.md` | `57-tf-game-data` | `book_4_tf_game_data` |
+| `TF_API.md` | `58-tf-api` | `book_4_tf_api` |
+| `TF_GAME_RENDER.md` | `59-tf-game-render` | `book_4_tf_game_render` |
+| `TF_FORMS.md` | `60-tf-forms` | `book_4_tf_forms` |
+| `TF_PLAYER_FORM.md` | `61-tf-player-form` | `book_4_tf_player_form` |
+| `TF_CHOOSE_TEAMS.md` | `62-tf-choose-teams` | `book_4_tf_choose_teams` |
+| `TF_ROUND_SCORES.md` | `63-tf-round-scores` | `book_4_tf_round_scores` |
+
+Note: `bludgeon.jpg` referenced in `TF_STRUCTURE_LAYOUT.md` does not exist in the source repo and was not included.
 
 ### Cross-section reference
 
@@ -126,16 +128,16 @@ Projects that exist in the source repo under `projects/` with no corresponding e
 | Project | Source path | Size | Notes |
 |---|---|---|---|
 | Fish Fusion | `projects/tier-1/fish-fusion/` | 7 chapters | ✓ Already in platform as `39-group-project-fish-fusion` (single exercise) |
-| Modern Farm | `projects/tier-1/modern-farm/` | 9 chapters | ✓ In platform as `24-group-project-modern-farm` but sub-chapters missing (see above) |
+| Modern Farm | `projects/tier-1/modern-farm/` | 9 chapters | ✓ Fully ported — intro at `24-group-project-modern-farm`, sub-chapters at `25–33` |
 | Daily Journal | `projects/tier-2/daily-journal/` | 15 chapters | ✗ Not in platform |
 | Dothard & Simbleton | `projects/tier-2/dothard-simbleton/` | 4 chapters | ✗ Not in platform |
 | State Fair | `projects/tier-2/state-fair/` | 7 chapters | ✗ Not in platform |
-| Cider Falls Park | `projects/tier-2/cider-falls/` | 5 chapters | ✓ In platform as `25-group-project-cider-falls` but sub-chapters missing (see above) |
+| Cider Falls Park | `projects/tier-2/cider-falls/` | 5 chapters | ✓ Fully ported — intro at `25-group-project-cider-falls`, sub-chapters at `26–30` |
 | Glassdale Cold Case | `projects/tier-3/glassdale/` | 17 chapters | ✗ Not in platform |
 | Honest Abe | `projects/tier-3/honest-abe/` | 16 chapters | ✓ In platform as Pioneer: Honest Abe (exercises 48–50) |
 | Pen Pal Society | `projects/tier-4/` (chapters in book-4) | 1 chapter | ✓ In platform as exercise 51 |
 | GiffyGram | `projects/tier-4/giffygram/` | 20 chapters | ✓ In platform as exercise 52 (single exercise) |
-| Truncheons & Flagons | `projects/tier-4/truncheons/` | 8 chapters | ✓ In platform as exercise 53 but sub-chapters missing (see above) |
+| Truncheons & Flagons | `projects/tier-4/truncheons/` | 8 chapters | ✓ Fully ported — intro at `53-truncheons-and-flagons`, sub-chapters at `56–63` |
 | Holiday Road | `projects/tier-4/holidayroad/` | README only | ✓ In platform as exercise 54 |
 | Algorithms | `projects/tier-5/algorithms/` | 14 chapters | ✗ Not in platform |
 | Kennels (React) | `projects/tier-5/kennels/` | 13 chapters | ✗ Not in platform |

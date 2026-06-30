@@ -8,12 +8,12 @@ These 6 requirement documents **must** be implemented to deliver a working produ
 
 | # | 🚜 Modern Farm |
 | --- | --- |
-| 1 | [Harvest Plan](./chapters/MF_INSTALL_PLAN.md) |
-| 2 | [Creating Seeds](./chapters/MF_SEED_MODULES.md) |
-| 3 | [Tilling the Field](./chapters/MF_FIELD.md) |
-| 4 | [Sowing the Field](./chapters/MF_SOWING.md) |
-| 5 | [Harvest Time](./chapters/MF_HARVEST.md) |
-| 6 | [Selling the Harvest](./chapters/MF_RENDER_HARVEST.md) |
+| 1 | [Harvest Plan](/book_2_modern_farm_management) |
+| 2 | [Creating Seeds](/book_2_modern_farm_seed_modules) |
+| 3 | [Tilling the Field](/book_2_modern_farm_tilling_field) |
+| 4 | [Sowing the Field](/book_2_modern_farm_sowing_field) |
+| 5 | [Harvest Time](/book_2_modern_farm_collecting_harvest) |
+| 6 | [Selling the Harvest](/book_2_modern_farm_selling_harvest) |
 
 ## Optional Requirements
 
@@ -21,8 +21,8 @@ If your team wants some fun challenges to work on after the initial algorithm is
 
 | # | 🚜 Modern Farm |
 | --- | --- |
-| 1 | [Optional Advanced Challenges](./chapters/MF_CHALLENGES.md) |
-| 2 | [Storage Barn Stack](./chapters/MF_SILO_STACK.md) |
-| 3 | [Food Processing Queue](./chapters/MF_PROCESS_QUEUE.md) |
+| 1 | [Optional Advanced Challenges](/book_2_modern_farm_optional_challenges) |
+| 2 | [Storage Barn Stack](/book_2_modern_farm_silo_stack) |
+| 3 | [Food Processing Queue](/book_2_modern_farm_process_queue) |
 
 

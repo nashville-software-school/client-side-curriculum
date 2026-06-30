@@ -6,11 +6,11 @@ This project is for 1+ students to work on to practice making <analogy>component
 
 | #  | 🏏 🍺 <br/>Truncheons &amp; Flagons |
 |--|--|
-| 1 | [Application Requirements & Layout](./chapters/TF_STRUCTURE_LAYOUT.md) |  |  |
-| 2 | [Game Data Design](./chapters/TF_GAME_DATA.md) |  |  |
-| 3 | [The <analogy>API</analogy>](./chapters/TF_API.md) |  |  |
-| 4 | [Rendering Game Data](./chapters/TF_GAME_RENDER.md) |  |  |
-| 5 | [Adding Teams](./chapters/TF_FORMS.md) |
-| 6 | [Adding Players](./chapters/TF_PLAYER_FORM.md) |
-| 7 | [Selecting Teams for Game](./chapters/TF_CHOOSE_TEAMS.md) |
-| 8 | [Recording Scores](./chapters/TF_ROUND_SCORES.md) |
+| 1 | [Application Requirements & Layout](/book_4_tf_structure_layout) |  |  |
+| 2 | [Game Data Design](/book_4_tf_game_data) |  |  |
+| 3 | [The <analogy>API</analogy>](/book_4_tf_api) |  |  |
+| 4 | [Rendering Game Data](/book_4_tf_game_render) |  |  |
+| 5 | [Adding Teams](/book_4_tf_forms) |
+| 6 | [Adding Players](/book_4_tf_player_form) |
+| 7 | [Selecting Teams for Game](/book_4_tf_choose_teams) |
+| 8 | [Recording Scores](/book_4_tf_round_scores) |

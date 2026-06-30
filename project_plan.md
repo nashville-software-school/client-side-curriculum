@@ -21,6 +21,7 @@ This document is the guiding reference for restructuring the NSS client-side cur
   2. **`concept_map.md`** — review exercises just completed; add missing terms, update Reinforced In, mark chapter as Reviewed ✓, flag any inconsistencies with ⚠️
   3. **`curriculum_map.md`** — verify IDs are correct (usually no changes needed, but confirm)
   - Then update the memory file at `.claude/projects/.../memory/project_curriculum_restructure.md` with what was done and what comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
+- **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry.
 
 ---
 
@@ -181,7 +182,7 @@ Work **one chapter at a time** per session:
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
 | — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
-| ◑ | **Phase 3: Broken Links** — Categories A–C complete; D–G not started |
+| ◑ | **Phase 3: Broken Links** — Categories A–D complete; E–G not started |
 | — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
@@ -381,27 +382,29 @@ Two problems: (1) `![alt](url)` isn't path-rewritten (only `<img src>` is); (2) 
 
 ---
 
-### Category D: Group Project Sub-Chapter Files — 21 links
+### Category D: Group Project Sub-Chapter Files ✓ COMPLETE (2026-06-30)
 
-Three group projects link to sub-chapter `.md` files that were never migrated:
-- **Modern Farm** (`02-book-2/24-group-project-modern-farm`) — 8 files (`./chapters/MF_*.md`), source at `projects/tier-1/modern-farm/chapters/`
-- **Cider Falls Park** (`03-book-3/25-group-project-cider-falls`) — 5 files (`./chapters/CIDERFALLS_*.md`), source at `projects/tier-2/cider-falls/chapters/`
-- **Truncheons & Flagons** (`04-book-4/53-truncheons-and-flagons`) — 8 files (`./chapters/TF_*.md`), source at (TBD in source repo)
+Three group projects linked to sub-chapter `.md` files that were never migrated. Ported as individual exercises sourced from `client-side-mastery` (`master` branch).
 
-**Approach:** TBD — source from the GitHub reference repo or redesign inline.
+**Modern Farm** — 9 chapters ported as `02-book-2/25-mf-management` through `33-mf-process-queue` (chapterGroup: "Group Project")
+**Cider Falls Park** — 5 chapters ported as `03-book-3/26-cf-intro` through `30-cf-services` (chapterGroup: "Group Project")
+**Truncheons & Flagons** — 8 chapters ported as `04-book-4/56-tf-structure-layout` through `63-tf-round-scores` (chapterGroup: "Advanced Projects")
 
-**Status:** Not started.
+Each exercise has `index.md` (content + images), `index.jsx` (chapter ID + nav chain), and an `images/` dir. Parent `index.md` tables updated to SPA `/chapter_id` links. Navigation chains wired — T&F intro now points into sub-chapters; `54-holiday-road` previousChapterId updated to `book_4_tf_round_scores`. Source images downloaded; `bludgeon.jpg` not present in source repo and was dropped.
+
+**Status:** Complete.
 
 ---
 
-### Category E: Broken `<img src>` References — 51 references
+### Category E: Broken `<img src>` References — 50 references
 
-Uses correct HTML syntax but paths are wrong:
-- `../../book-1-queen-bee/chapters/images/video-play-icon.gif` — old directory path, used across many Books 1–3 exercises
-- `./images/...` — image files not migrated (same fix as Category C)
-- `./learning-objectives.png` in intro — actually lives at `public/assets/learning-objectives.png`
+Uses correct HTML syntax but paths are wrong. Two sub-types:
 
-**Approach:** Download missing images from source repo (same process as Category C). The `learning-objectives.png` path is a trivial one-liner fix.
+**E1 — `video-play-icon.gif` (18 refs, Books 1–3):** All use the old path `../../book-1-queen-bee/chapters/images/video-play-icon.gif`. The image is always a click target wrapping a Screencastify or YouTube video link. Fix: source the gif (it's in `book-1-queen-bee/chapters/images/` in `client-side-mastery`) and either copy to each exercise's `images/` dir or a shared location, then fix the paths.
+
+**E2 — `./images/...` missing locally (32 refs):** Image files that use the correct `./images/` path but were never downloaded during migration. Affected exercises span Setup, Books 1, 3, 4, and 5. See `phase3_broken_links.md` for the full per-exercise table. Fix: same process as Category C — download from source repo into each exercise's `images/` dir.
+
+**Important:** Stop the npm dev server before this session. Vite's eager rebuild on file creation causes command timeouts during bulk image downloads.
 
 **Status:** Not started.
 
