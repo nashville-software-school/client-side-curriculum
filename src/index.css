@@ -215,3 +215,8 @@ div[class$="contentContainer"] {
   padding: 3.5rem;
   line-height: 1.6rem;
 }
+
+div[class$="contentContainer"] img {
+  max-width: 100%;
+  height: auto;
+}
