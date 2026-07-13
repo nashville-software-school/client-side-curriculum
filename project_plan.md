@@ -473,7 +473,7 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Setup: Core Professional Skills | ✓ | "at a the follow skills", "This the ability", "functions implement" — 3 grammar fixes |
 | Setup: Debugging Shortcuts | ✓ | No errors found |
 | Setup: ADHD Strategies | ✓ | "an mentor", "Visit" typo, "earthy" → "earthly", "of if" → "or if" — 4 fixes |
-| Book 1: Queen Bee | — | |
+| Book 1: Queen Bee | ✓ | 09: "Copy pasta"×2, "the follow"×2, quoted console.log output removed; 11: "Copy pasta"×2, "queen's name" missing "the", Unfortunately typo; 12: comment added to starter code re: queens array; 14: tribute typo, "that values" → "the values", Hint 2 description wrong |
 | Book 1: Sequina's Surf Shop | — | |
 | Book 1: Björn's Wilderness Adventures | — | |
 | Book 1: Self-Assessment | — | |

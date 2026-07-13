@@ -26,7 +26,7 @@ const tributeChest = []
 
 A tribute object will have three properties.
 
-1. An `id` property for a unique numerical identifier of the tirbute.
+1. An `id` property for a unique numerical identifier of the tribute.
 2. A `description` property to store the string description of your tribute.
 3. A `queenId` property to store the unique numerical identifier of a specific queen.
 
@@ -57,7 +57,7 @@ If you get stuck, check out the hints below.
 
 Time to practice using the debugger again. Put a <analogy>breakpoint</analogy> on the first line of code and step through your code, making sure you <analogy>step into</analogy> your new function to watch its logic.
 
-For a review, you can watch a video that steps through the code and examines that values of variables as they change.
+For a review, you can watch a video that steps through the code and examines the values of variables as they change.
 
 <a href="https://watch.screencastify.com/v/MUKQNQMgqHOH3OFYnQOB" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
@@ -78,7 +78,7 @@ const payTribute = (tributeId, tributeDescription, queenId) => {
 <details>
     <summary>Hint 2 - Tribute object</summary>
 
-First define two parameters. You may pick your own variable names if you wish.
+Now create the tribute object inside the function using the parameters.
 
 ```js
 const payTribute = (tributeId, tributeDescription, queenId) => {
