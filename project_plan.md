@@ -23,6 +23,8 @@ This document is the guiding reference for restructuring the NSS client-side cur
   3. **`curriculum_map.md`** — verify IDs are correct (usually no changes needed, but confirm)
   - Then update the memory file at `.claude/projects/.../memory/project_curriculum_restructure.md` with what was done and what comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
 - **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry.
+- **Completed project reference.** When questions arise about a specific exercise — expected output, correct variable names, intended code structure — refer to `/home/gmkorte/workspace/client-side` for a completed working example of the full course project.
+- **Curl script boilerplate is the starting state.** Most chapters begin with a `curl` command that scaffolds the boilerplate for that exercise. That scaffolded code is the canonical starting point for the student. When evaluating whether code examples, variable names, or expected output in an exercise are correct, treat the curl script's output as the ground truth for the starting state, and the completed project at `/home/gmkorte/workspace/client-side` as the ground truth for the end state.
 
 ---
 
@@ -474,7 +476,7 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Setup: Debugging Shortcuts | ✓ | No errors found |
 | Setup: ADHD Strategies | ✓ | "an mentor", "Visit" typo, "earthy" → "earthly", "of if" → "or if" — 4 fixes |
 | Book 1: Queen Bee | ✓ | 09: "Copy pasta"×2, "the follow"×2, quoted console.log output removed; 11: "Copy pasta"×2, "queen's name" missing "the", Unfortunately typo; 12: comment added to starter code re: queens array; 14: tribute typo, "that values" → "the values", Hint 2 description wrong |
-| Book 1: Sequina's Surf Shop | — | |
+| Book 1: Sequina's Surf Shop | ✓ | 16: "understand" → "understanding"; 17: "job is understand" ×1; 18–20: step numbering fixed (1→3 became 1→2); 18–19: "job is understand" ×2; 19: "accounting form" → "firm", REPL notation removed from JS code block; 21: `properties.js` → `averagePrice.js` (stale name); 22: "odularize" typo, "import the data" → "import the functions"; 23: algorithmic typo, "Properties" → "AveragePrice" in actors list |
 | Book 1: Björn's Wilderness Adventures | — | |
 | Book 1: Self-Assessment | — | |
 | Book 1: Explorer chapters | — | |

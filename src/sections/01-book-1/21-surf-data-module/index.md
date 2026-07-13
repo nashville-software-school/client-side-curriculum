@@ -21,7 +21,7 @@ Your current module of code can be broken down into 3 main sections.
 2. Where the functions are defined that do operations on the data.
 3. Where the logic of your application is defined where the functions are invoked to obtain the required output for the business.
 
-You are going to move the data section into its own module. In that module you will export that data. Lastly, in the `properties.js` module, you will import it.
+You are going to move the data section into its own module. In that module you will export that data. Lastly, in the `averagePrice.js` module, you will import it.
 
 This will not cause any change in functionality. You are simply splitting up your code into multiple modules for greater readability.
 

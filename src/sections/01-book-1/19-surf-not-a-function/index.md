@@ -1,6 +1,6 @@
 # Sequina's Accounting
 
-Sequina recently hired an accounting form to handle all of her taxes and quarterly sales reports. The accounting firm has special software that required all of the data to be upper case. No lower case letters are allowed.
+Sequina recently hired an accounting firm to handle all of her taxes and quarterly sales reports. The accounting firm has special software that required all of the data to be upper case. No lower case letters are allowed.
 
 In JavaScript, you can convert any string into all caps like this.
 
@@ -8,8 +8,10 @@ In JavaScript, you can convert any string into all caps like this.
 const latin = "qui sed quisquam"
 const upper = latin.toUpperCase()
 console.log(upper)
+```
 
-> "QUI SED QUISQUAM"
+```txt
+QUI SED QUISQUAM
 ```
 
 The development team tried to convert all of the data to uppercase, but couldn't quite figure it out. They tried to use the `toUpperCase()` method, but they keep getting errors that it's not a function.
@@ -25,10 +27,10 @@ Once again they need to rely upon your debugging skills to find out why JavaScri
    ```sh
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/main/client/function.sh)"
    ```
-3. Open the `not-a-function.js` file in VS Code.
-4. Run the code with your debugger.
+2. Open the `not-a-function.js` file in VS Code.
+3. Run the code with your debugger.
 
-You will immediately see a stack trace in the **Debug Console** at the bottom. Your job is understand the error message, read the stack trace to determine exactly where the error is, and then fix the error.
+You will immediately see a stack trace in the **Debug Console** at the bottom. Your job is to understand the error message, read the stack trace to determine exactly where the error is, and then fix the error.
 
 Run the debugger every time you change the code to see if you have fixed the error.
 
