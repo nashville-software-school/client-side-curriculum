@@ -123,7 +123,7 @@ Let's see what that looks like.
 
 Now it's your turn to test the Random Dog <analogy>API</analogy>:
 
-Using Yaak, make a **<analogy>GET</analogy>** <analogy>request</analogy> to the [Random Dog <analogy>Api</analogy>](#-introducing-fun-image-apis).
+Using Yaak, make a **<analogy>GET</analogy>** <analogy>request</analogy> to the Random Dog <analogy>Api</analogy>.
 
 ### Questions to Answer:
 

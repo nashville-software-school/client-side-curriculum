@@ -2,7 +2,7 @@
 
 ## Journal
 
-Get a nice journal and a comfortable pen, and start keeping a daily journal of what you are learning every day. Writing your thoughts on a regular basis <a href="https://www.lifehack.org/articles/featured/writing-and-remembering-why-we-remember-what-we-write.html" target="_blank" rel="noopener noreferrer">increases your ability to remember it</a>. There are even studies that found writing is <a href="https://www.apa.org/monitor/sep01/keepdiary.aspx" target="_blank" rel="noopener noreferrer">beneficial for your health</a>.
+Get a nice journal and a comfortable pen, and start keeping a daily journal of what you are learning every day. Writing your thoughts on a regular basis <a href="https://web.archive.org/web/20220119040632/https://www.lifehack.org/articles/featured/writing-and-remembering-why-we-remember-what-we-write.html" target="_blank" rel="noopener noreferrer">increases your ability to remember it</a>. There are even studies that found writing is <a href="https://www.apa.org/monitor/sep01/keepdiary.aspx" target="_blank" rel="noopener noreferrer">beneficial for your health</a>.
 
 ## Hardware
 

@@ -1,4 +1,4 @@
-# Events and State Self-Assessment
+# Async, State, and Array Method Self-Assessment
 
 This project will help you assess your ability to apply the JavaScript skills that you practiced in this book.
 

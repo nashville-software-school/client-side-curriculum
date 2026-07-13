@@ -5,6 +5,6 @@ export default {
     title: "Top Salesperson",
     previousChapterId: "book_3_brewed_awakenings_product_click",
     nextChapterId: "book_3_brewed_awakenings_locations",
-    chapterGroup: "Brewed Awakenings",
+    chapterGroup: "☕ Brewed Awakenings",
     content,
 }

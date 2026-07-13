@@ -5,6 +5,6 @@ export default {
     title: "Underwater Undefined",
     previousChapterId: "book_1_surf_shop_intro",
     nextChapterId: "book_1_surf_shop_const",
-    chapterGroup: "Sequina's Surf Shop",
+    chapterGroup: "🏄 Sequina's Surf Shop",
     content,
 }

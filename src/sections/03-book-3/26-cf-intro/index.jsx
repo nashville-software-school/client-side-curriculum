@@ -6,6 +6,5 @@ export default {
     previousChapterId: "book_3_group_project_cider_falls",
     nextChapterId: "book_3_cider_falls_data_design",
     chapterGroup: "Group Project",
-    type: "group-project",
     content,
 }

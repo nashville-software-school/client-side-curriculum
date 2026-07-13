@@ -128,5 +128,3 @@ In this chapter, we've:
 ## 🔜 Next Steps
 
 In the next chapter, we'll explore a more modern way to work with Promises: the `async` and `await` keywords. These provide a cleaner, more readable syntax for working with <analogy>asynchronous</analogy> operations.
-
-Up Next [Awaiting Data](./FD_INTRO_TO_ASYNC.md)

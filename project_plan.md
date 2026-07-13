@@ -188,6 +188,9 @@ Work **one chapter at a time** per session:
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
+| — | **Phase 8: Concept Map Refactor** — see detail below |
+| — | **Phase 9: Analogy Tag Refactor** — see detail below |
+| 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
 
 ---
 
@@ -443,7 +446,7 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 
 ---
 
-## Phase 4: General Errors
+## Phase 4: General Errors ◑ ACTIVE
 
 *Scope: all exercise markdown content across all 5 books and Setup. This is an editorial pass — finding and fixing errors that would confuse or block students.*
 
@@ -659,3 +662,48 @@ Introduce testing as a practice starting in Book 1 by connecting it to what stud
 3. Wrap the vocabulary term's first appearance with `<Analogy term="..." />`
 4. Verify the component renders correctly in the platform for each tagged term
 5. Flag any terms where the natural sentence position makes tagging awkward — may need minor prose edits
+
+---
+
+## Phase 10: Source Content Integration 🛑 Team Decision Required
+
+*Two directories in the source repo (`client-side-mastery`) have not been fully incorporated into the platform. This phase cannot begin until the team decides whether and how to include them. All detail below is for scoping the conversation — no work has started.*
+
+---
+
+### Part A: Unincorporated Projects (`projects/`)
+
+Seven project directories exist in the source repo with no corresponding platform exercises. See `missing_source_content.md` for the full catalog.
+
+| Project | Tier | Chapters | Notes |
+|---|---|---|---|
+| Daily Journal | 2 | 15 | Standalone multi-session project |
+| Dothard & Simbleton | 2 | 4 | Short project |
+| State Fair | 2 | 7 | Intermediate project |
+| Glassdale Cold Case | 3 | 17 | Longer project; cross-cutting concerns |
+| Algorithms | 5 | 14 | Conceptual; no specific framework |
+| Kennels (React) | 5 | 13 | React; overlaps with Book 5 content |
+| Thorns & Roses | 5 | 7 | React; capstone-adjacent |
+
+**Total:** ~77 chapters across 7 projects.
+
+**Questions for the team:**
+
+1. Are any of these projects still actively used in the cohort curriculum, or are they legacy/retired?
+2. If included, do they become standalone books, chapters within existing books, or a separate "extended practice" track?
+3. Tier 2 projects (Daily Journal, Dothard & Simbleton, State Fair) — do they slot into Book 2 as optional extensions, or form their own section?
+4. Tier 5 projects (Algorithms, Kennels, Thorns & Roses) — do they extend Book 5, or live outside the main 5-book structure?
+5. Should Glassdale (17 chapters, tier 3) replace or supplement Cider Falls Park as the Book 3 group project?
+
+---
+
+### Part B: Supplement Foundations Track (`supplement-foundations/`)
+
+A fully separate foundational JavaScript track covering arrays, conditions, objects, and iteration. Three parallel practice threads run through it: Digital Notes, Library Tracker, and Meal Planner. 60+ files total. No presence in the platform.
+
+**Questions for the team:**
+
+1. Is this track still in use, or has its content been absorbed into Books 1–2?
+2. If included, does it become a prerequisite track (before Book 1), a parallel track students can opt into, or woven chapter-by-chapter into Books 1–2?
+3. The three practice threads (Digital Notes, Library Tracker, Meal Planner) — do they replace the current Book 1 chapter projects (Queen Bee, Surf Shop, Björn), supplement them, or form their own Explorer-style challenges?
+4. Would adding this track require nss-core changes to support multiple parallel tracks?

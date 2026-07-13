@@ -5,6 +5,6 @@ export default {
     title: "Dependency Graph",
     previousChapterId: "book_3_shipping_erd",
     nextChapterId: "book_3_shipping_dock_list",
-    chapterGroup: "Shipping Ship Ships",
+    chapterGroup: "🚢 Shipping Ship Ships",
     content,
 }

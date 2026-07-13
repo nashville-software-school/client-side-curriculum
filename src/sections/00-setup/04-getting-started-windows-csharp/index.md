@@ -50,7 +50,7 @@ Visit the <a href="https://www.nodejs.org" target="_blank" rel="noopener norefer
 ## Configuring Git
 
 > ##### _NOTE: This step requires your GitHub username and email._
-> ##### _If you have not yet registered for a [GitHub](#github) account, do that first._
+> ##### _If you have not yet registered for a <a href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2Fsignin&source=login" target="_blank" rel="noopener noreferrer">Github</a> account, do that first._
 
 Watch the video on how to <a href="https://youtu.be/66EB9oxGMzQ" target="_blank" rel="noopener noreferrer">set up global Git configuration</a> using your GitHub username and the email address associated with your GitHub account. This will allow you to successfully back up your code to GitHub in a few days... once we show you how to do it.
 

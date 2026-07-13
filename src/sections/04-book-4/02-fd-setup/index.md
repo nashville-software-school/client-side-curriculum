@@ -250,3 +250,7 @@ dogButton.addEventListener("click", () => {
 Then run the `serve` command in your <analogy>terminal</analogy> and open the URL in your browser. You should see something that looks like your 12 year old niece's art project. The buttons don't work yet, that's our job for the next few chapters.
 
 On to the next chapter to write your first `fetch()` <analogy>function</analogy> to get remote data from the Web.
+
+## 🔜 Next Steps
+
+In the next chapter, you'll write your first `fetch()` <analogy>function</analogy> to get remote data from the Web.

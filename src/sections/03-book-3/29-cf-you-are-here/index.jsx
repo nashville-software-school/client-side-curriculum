@@ -6,6 +6,5 @@ export default {
     previousChapterId: "book_3_cider_falls_algorithmic_thinking",
     nextChapterId: "book_3_cider_falls_services",
     chapterGroup: "Group Project",
-    type: "group-project",
     content,
 }
