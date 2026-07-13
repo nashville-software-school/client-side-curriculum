@@ -25,7 +25,7 @@ This line imports the `movies` array from the `movies-data.js` file, making it a
 In the `movie-converter.js` file, add the following code:
 
 ```javascript
-export const generateMoviesHTML = () => {
+const generateMoviesHTML = () => {
    let movieHTML = '';
 
    for (const movie of movies) {
@@ -59,7 +59,25 @@ Let's break down the code:
 
 ## Step 4: Export the HTML Generation Function
 
-To make the `generateMoviesHTML` function accessible from other modules, we export it using the `export` keyword.
+Right now `generateMoviesHTML` is only accessible inside `movie-converter.js`. Other modules that need to call it won't be able to.
+
+- What keyword have you used before to make a function available to other modules?
+- Where do you add it?
+
+Try making the change yourself. If you get stuck, the hint below shows you how.
+
+<details>
+<summary>Hint</summary>
+
+Add the `export` keyword to the function declaration:
+
+```javascript
+export const generateMoviesHTML = () => {
+    // ...
+}
+```
+
+</details>
 
 ## Step 5: Add to Commit History
 
@@ -83,4 +101,4 @@ In the next chapter, we will focus on rendering the generated movie HTML to the 
 
 ## What is the DOM?
 
-We've used that acronym a couple times but never explain what it means. You are encouraged to use Google or a generative AI tool to learn about this acronym yourself. It's an important term to understand.
+We've used that acronym a couple times but never explained what it means. You are encouraged to use Google or a generative AI tool to learn about this acronym yourself. It's an important term to understand.

@@ -29,12 +29,12 @@ Let's break down the CSS code:
   - `gap: 20px;` to add a gap of 20 pixels between the movie cards, both horizontally and vertically.
   - `padding: 20px;` to add some padding around the movie cards grid.
 
-## Step 3: Link the CSS File
+## Step 3: Verify the CSS Link
 
-Make sure the `layout.css` file is properly linked in the `index.html` file. Open the `index.html` file and ensure the following line is present in the `<head>` section:
+The `layout.css` file was already linked in the `index.html` file when you set up the project. Open the `index.html` file and confirm the following line is present in the `<head>` section:
 
 ```html
-<link rel="stylesheet" href="./styles/layout.css">
+<link rel="stylesheet" href="styles/layout.css">
 ```
 
 ## Step 4: Test the Grid Layout
@@ -81,4 +81,4 @@ Throughout this chapter, we learned how to:
 
 With these techniques, you can create visually appealing and responsive layouts for various components of your web application.
 
-In the upcoming chapters, we will explore additional features and enhancements to make our movie showcase even more interactive and user-friendly.
+Movie Majesty is complete. In the next chapter, you will start a new project — Martin's Aquarium — where you will apply these same patterns to a larger dataset and add filtering to the UI.

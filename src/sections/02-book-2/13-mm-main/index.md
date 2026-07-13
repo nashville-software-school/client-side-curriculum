@@ -65,12 +65,13 @@ By separating concerns into different modules (`movies-data.js`, `movie-converte
 
 ## Conclusion
 
-Congratulations! You have successfully built a movie showcase application using JavaScript modules, HTML, and CSS. You have learned how to:
+The JavaScript side of Movie Majesty is complete. You have learned how to:
 
 - Create and structure a project with multiple JavaScript modules
 - Store and import movie data using JavaScript objects and arrays
 - Generate HTML markup dynamically based on movie data
 - Render the generated HTML to the DOM
-- Use CSS to style the movie cards and create an appealing layout
 
-Feel free to enhance the application further by adding more movies to the `movies` array, styling the movie cards differently, or implementing additional features like sorting or filtering the movies.
+Feel free to add more movies to the `movies` array or experiment with sorting or filtering the list before rendering.
+
+In the next two chapters, you will style the movie cards with CSS to make the showcase look great.
