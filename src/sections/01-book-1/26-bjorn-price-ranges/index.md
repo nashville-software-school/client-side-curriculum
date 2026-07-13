@@ -1,6 +1,6 @@
 # Helping Customers Find The Right Trails Package
 
-Björn and his team have discovered from customer feedback that people would like to see a breakdown of the the least expensive trail tours and most expensive. He would like you to update the program to produce output simliar to what is shown below.
+Björn and his team have discovered from customer feedback that people would like to see a breakdown of the least expensive trail tours and most expensive. He would like you to update the program to produce output simliar to what is shown below.
 
 For the least expensive, only show trails where the number of dollar signs in the price is 1.
 
@@ -10,7 +10,7 @@ For the most expensive, only show trails where the number of dollar signs in the
 
 ### Example Output
 
-Yours should looks like this when complete. Please note that the data below is not necessarily correct, this is just an example.
+Yours should look like this when complete. Please note that the data below is not necessarily correct, this is just an example.
 
 
 ```sh

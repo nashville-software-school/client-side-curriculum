@@ -9,7 +9,7 @@ When he turned 20, he knew what he wanted to do with the rest of his life - shar
 
 Björn knew it was time to start managing his business with software. He has hired you as his first software developer after trying to do it himself, and quickly realizing that it was not his forte.
 
-You will quickly discover some of the mistakes he made, but some of the mistakes will not be so easily to find. It's up to you to use your proficiency with the debugger to meticulously step through the code and uncover the mysteries.
+You will quickly discover some of the mistakes he made, but some of the mistakes will not be so easy to find. It's up to you to use your proficiency with the debugger to meticulously step through the code and uncover the mysteries.
 
 ## Getting Started
 

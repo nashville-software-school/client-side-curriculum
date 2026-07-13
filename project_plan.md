@@ -477,10 +477,10 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Setup: ADHD Strategies | ✓ | "an mentor", "Visit" typo, "earthy" → "earthly", "of if" → "or if" — 4 fixes |
 | Book 1: Queen Bee | ✓ | 09: "Copy pasta"×2, "the follow"×2, quoted console.log output removed; 11: "Copy pasta"×2, "queen's name" missing "the", Unfortunately typo; 12: comment added to starter code re: queens array; 14: tribute typo, "that values" → "the values", Hint 2 description wrong |
 | Book 1: Sequina's Surf Shop | ✓ | 16: "understand" → "understanding"; 17: "job is understand" ×1; 18–20: step numbering fixed (1→3 became 1→2); 18–19: "job is understand" ×2; 19: "accounting form" → "firm", REPL notation removed from JS code block; 21: `properties.js` → `averagePrice.js` (stale name); 22: "odularize" typo, "import the data" → "import the functions"; 23: algorithmic typo, "Properties" → "AveragePrice" in actors list |
-| Book 1: Björn's Wilderness Adventures | — | |
-| Book 1: Self-Assessment | — | |
-| Book 1: Explorer chapters | — | |
-| Book 1: Group Project | — | |
+| Book 1: Björn's Wilderness Adventures | ✓ | 24: "so easily" → "so easy"; 25: "Bjorn" → "Björn", "should looks like" fixed across 25–28; 26: duplicate "the the"; 28: "produces does the same" → "does the same"; 36 explorer: `bjorn.js` → `adventure.js` ×2 (file never created) |
+| Book 1: Self-Assessment | ✓ | No errors found |
+| Book 1: Explorer chapters | ✓ | No additional errors (35, 37–38) |
+| Book 1: Group Project | ✓ | No errors found |
 | Book 2: Dynamite Duo | — | |
 | Book 2: Movie Majesty | — | |
 | Book 2: Martin's Aquarium | — | |
