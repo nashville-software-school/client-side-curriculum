@@ -16,7 +16,7 @@ Open the directory in Visual Studio Code with the following command. A single do
 code .
 ```
 
-Right now, your `index.html` file doesn't have any content to display, so you can start off with some standard HTML. Copy pasta the following HTML into that file.
+Right now, your `index.html` file doesn't have any content to display, so you can start off with some standard HTML. Copy and paste the following HTML into that file.
 
 ```html
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ Right now, your `index.html` file doesn't have any content to display, so you ca
 
 Then go back to your terminal and type in the `serve` command. This starts a simple web server that will load the contents of your `index.html` file into browser.
 
-It should give you the output below. If you don't see this, talk to an mentor for guidance.
+It should give you the output below. If you don't see this, talk to a mentor for guidance.
 
 <img src="./images/running-serve.gif">
 

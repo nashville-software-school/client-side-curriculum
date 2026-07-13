@@ -26,8 +26,47 @@ Then write a function to export a copy of that villain data.
 
 ```js
 export const getVillains = () => {
-    return structuredClone(database.villains);
+    return structuredClone(database.villains)
 }
+```
+
+Notice that `database` itself is no longer exported directly — only `getVillains` is. This keeps the raw data private to the module.
+
+## Updating the Heroes Module
+
+Now that `database` is no longer exported, your `heroes.js` module won't work — it still imports `{ database }` directly, which no longer exists.
+
+- How would you apply the same getter pattern to heroes?
+- What would you need to add to `database.js`?
+- What would you need to change in `heroes.js`?
+
+Try to make the update yourself. If you get stuck, the hints below walk you through it.
+
+<details>
+<summary>Hint 1 — What to add to database.js</summary>
+
+Add a `getHeroes` getter function alongside `getVillains`:
+
+```js
+export const getHeroes = () => {
+    return structuredClone(database.heroes)
+}
+```
+
+</details>
+
+<details>
+<summary>Hint 2 — What to change in heroes.js</summary>
+
+Replace the direct `database` import with the new getter function:
+
+```js
+import { getHeroes } from "./database.js"
+
+const heroes = getHeroes()
+```
+
+</details>
 ```
 
 ### What is structuredClone?

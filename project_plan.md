@@ -481,7 +481,7 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Book 1: Self-Assessment | ✓ | No errors found |
 | Book 1: Explorer chapters | ✓ | No additional errors (35, 37–38) |
 | Book 1: Group Project | ✓ | No errors found |
-| Book 2: Dynamite Duo | — | |
+| Book 2: Dynamite Duo | ✓ | 01: "don't any content" (missing "have"), "SSH options/command" ×2; 02: "Copy pasta", "an mentor"; 04: missing `getHeroes` getter + `heroes.js` update (broke after removing `export const database`) — fixed with Socratic prompt + hints; 07: "The goals is"; 08: "non-intuitive" |
 | Book 2: Movie Majesty | — | |
 | Book 2: Martin's Aquarium | — | |
 | Book 2: Self-Assessment | — | |

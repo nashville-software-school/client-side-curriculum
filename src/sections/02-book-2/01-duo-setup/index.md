@@ -55,7 +55,7 @@ First, stage these three files to be committed.
 git add .
 ```
 
-Then commit these files to your repository. Even though you don't any content in these files yet, you can still commit the fact that they were created.
+Then commit these files to your repository. Even though you don't have any content in these files yet, you can still commit the fact that they were created.
 
 ```sh
 git commit -m "Initial commit"
@@ -65,10 +65,10 @@ git commit -m "Initial commit"
 
 Follow the official documentation from Github on <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository" target="_blank">Creating a new repository</a>. You are not going to be doing any of the optional items.
 
-Now that you have a place to backup your code, make sure the SSH options is chosen and copy the repository's connection string.
+Now that you have a place to backup your code, make sure the SSH option is chosen and copy the repository's connection string.
 
 
-Then copy the second set of command, paste them into your terminal, and run them.
+Then copy the second set of commands, paste them into your terminal, and run them.
 
 Now that the code has successfully been backed up, go back to your browser, and refresh the Github page. You will see that your remote repository backup now has files uploaded.
 
