@@ -10,7 +10,7 @@ The inbox is a place for you to store every question and idea so your brain is n
 2.  Label it "Inbox"
 3.  Set up a key. A great start is to have an icon for questions and an icon for ideas. You can use whatever works best for you.
 4.  Every time a thought or a question comes to mind, record it as a bullet point with the correct icon.
-5.  When an mentor comes to you for help, reference your inbox questions. Mark it as completed.
+5.  When a mentor comes to you for help, reference your inbox questions. Mark it as completed.
 6.  At the end of the day, review your inbox. Strike through anything that is irrelevant.
 
 #### Example:
@@ -38,7 +38,7 @@ The inbox is a place for you to store every question and idea so your brain is n
 
 The daily log is where you keep track of your daily tasks as a running bullet list. Each list item _has_ to be _actionable_. This should be tracked in a fresh journal.
 
-This is a technique taken from _The Bullet Journal Method_. Vist <a href="https://bulletjournal.com/" target="_blank" rel="noopener noreferrer">the bullet journal website</a> to learn more.
+This is a technique taken from _The Bullet Journal Method_. Visit <a href="https://bulletjournal.com/" target="_blank" rel="noopener noreferrer">the bullet journal website</a> to learn more.
 
 **_Ex._**
 
@@ -103,9 +103,9 @@ X Fish Fusion Project
 
 ## Going Through the Course
 
-Reading with ADHD can be incredibly difficult. You may find yourself reading the same thing over and over and over again but the words are just sounds in your head and you have no earthy idea what you just read.
+Reading with ADHD can be incredibly difficult. You may find yourself reading the same thing over and over and over again but the words are just sounds in your head and you have no earthly idea what you just read.
 
-Or you may be following requirements for an exercise. You start coding along but all of a sudden you're lost and have no idea if you missed a step of if you even understand the assignment at all. Here are some tips to get you through.
+Or you may be following requirements for an exercise. You start coding along but all of a sudden you're lost and have no idea if you missed a step or if you even understand the assignment at all. Here are some tips to get you through.
 
 #### The Pomodoro technique
 

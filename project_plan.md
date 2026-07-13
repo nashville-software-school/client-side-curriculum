@@ -465,6 +465,45 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 - Fix errors that have a clear correct answer
 - Flag errors that require a curriculum design decision (e.g., whether to update an approach or remove the exercise)
 
+### Session Log
+
+| Chapter | Status | Notes |
+|---------|--------|-------|
+| Setup: Getting Started (all platforms) | ✓ | mac: "an mentor" ×5 fixed, duplicate Homebrew block removed; win: "Copy pasta" fixed; win-csharp: "you an work" fixed, "Windows Terminal Preview" → "Windows Terminal" |
+| Setup: Core Professional Skills | ✓ | "at a the follow skills", "This the ability", "functions implement" — 3 grammar fixes |
+| Setup: Debugging Shortcuts | ✓ | No errors found |
+| Setup: ADHD Strategies | ✓ | "an mentor", "Visit" typo, "earthy" → "earthly", "of if" → "or if" — 4 fixes |
+| Book 1: Queen Bee | — | |
+| Book 1: Sequina's Surf Shop | — | |
+| Book 1: Björn's Wilderness Adventures | — | |
+| Book 1: Self-Assessment | — | |
+| Book 1: Explorer chapters | — | |
+| Book 1: Group Project | — | |
+| Book 2: Dynamite Duo | — | |
+| Book 2: Movie Majesty | — | |
+| Book 2: Martin's Aquarium | — | |
+| Book 2: Self-Assessment | — | |
+| Book 2: Explorer chapters | — | |
+| Book 2: Group Project | — | |
+| Book 3: DeShawn's Dog Walking | — | |
+| Book 3: Shipping Ship Ships | — | |
+| Book 3: Brewed Awakenings | — | |
+| Book 3: Self-Assessment | — | |
+| Book 3: Group Project | — | |
+| Book 4: Fox y Dog | — | |
+| Book 4: Indiana Jeans | — | |
+| Book 4: Kneel Diamonds | — | |
+| Book 4: Cars 'R Us | — | |
+| Book 4: Self-Assessment | — | |
+| Book 4: Explorer chapters | — | |
+| Book 4: Pioneer projects | — | |
+| Book 4: Advanced projects | — | |
+| Book 4: Group Project | — | |
+| Book 5: Honey Rae's Repair Shop | — | |
+| Book 5: Chuckle Checklist | — | |
+| Book 5: Learning Moments | — | |
+| Book 5: Explorer / Capstone / Group Project | — | |
+
 ---
 
 ## Phase 5: New Material Threads

@@ -41,7 +41,7 @@ Visit the <a href="https://www.nodejs.org" target="_blank" rel="noopener norefer
 
 ## Node Packages - Web and API Servers
 
-1. Open Windows Terminal Preview and start a new **Git Bash** terminal window.
+1. Open Windows Terminal and start a new **Git Bash** terminal window.
 1. Run the following command in the terminal to install both `serve` and `json-server`:
     ```sh
     npm i -g serve json-server@0.17.4
@@ -63,7 +63,7 @@ SSH is a technology that allows you to create a very secure connection between y
 
 ## Creating Your SSH Key
 
-Watch a short video for <a href="https://youtu.be/znRMcNG9_qQ" target="_blank" rel="noopener noreferrer">creating an SSH key in the terminal</a> so that you an work with GitHub.
+Watch a short video for <a href="https://youtu.be/znRMcNG9_qQ" target="_blank" rel="noopener noreferrer">creating an SSH key in the terminal</a> so that you can work with GitHub.
 
 ## Add SSH Key to GitHub Account
 
