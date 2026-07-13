@@ -1,6 +1,6 @@
 # The Hairy Potter
 
-In this project, your task to build a workflow for making, and firing pottery, and then determining if it should be sold at a craft show. Then you will display the pottery to be sold in the DOM.
+In this project, your task is to build a workflow for making, and firing pottery, and then determining if it should be sold at a craft show. Then you will display the pottery to be sold in the DOM.
 
 > 🧨 Make sure you answer the vocabulary and understanding questions at the end of the README in the project before notifying your coaches that you are done.
 

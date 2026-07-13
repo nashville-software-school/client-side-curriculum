@@ -5,7 +5,7 @@
 1. Create a `scripts/tractor.js` module.
 1. In this module, define and export a `plantSeeds` function.
 1. The function must accept the year's planting plan as input _(i.e. it must define a parameter)_.
-1. The plan is an array. It contains 3 arrays representing the rows in the field to be plants. Figure out how to iterate both the parent array and the child arrays.
+1. The plan is an array. It contains 3 arrays representing the rows in the field to be planted. Figure out how to iterate both the parent array and the child arrays.
     ```js
     // Example growing plan. Actual plan is bigger.
     [
@@ -20,4 +20,4 @@
 
 #### Checking Your Logic
 
-In the `main.js` module, invoke the function that plants all of the seeds, and then get the plants array from the `fields.js` module. Then use `console.log()` to see if the plants array has been populated correctly.
+In the `main.js` module, invoke the function that plants all of the seeds, and then get the plants array from the `field.js` module. Then use `console.log()` to see if the plants array has been populated correctly.

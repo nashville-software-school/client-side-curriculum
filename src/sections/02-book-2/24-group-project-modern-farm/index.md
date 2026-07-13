@@ -2,7 +2,7 @@ This project has very specific requirements for how you should structure and org
 
 ## Core Requirements
 
-These 6 requirement documents **must** be implemented to deliver a working products for your customers. Complete all of these first, before you review any of the optional challenges below.
+These 6 requirement documents **must** be implemented to deliver a working product for your customers. Complete all of these first, before you review any of the optional challenges below.
 
 ## Optional Requirements
 

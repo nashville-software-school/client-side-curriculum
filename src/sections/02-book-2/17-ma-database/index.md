@@ -33,7 +33,7 @@ In this `aquariumData.js` file, we define the database object with an initial ke
 
 ## Step 2: Create the Fish List Component
 
-Create a new file named `fishList.js` in the `scripts` directory and add the following code:
+Open the `fishList.js` file in the `scripts` directory and add the following code:
 
 ```javascript
 import { database } from './aquariumData.js';
@@ -59,7 +59,7 @@ This code ensures that the `fishList` function is imported from the `fishList.js
 
 ## Step 4: Render the Fish List
 
-Under the following comment.
+Under the following comment in `main.js`.
 
 ```js
 // Render each HTML string to the correct DOM element
@@ -67,7 +67,7 @@ Under the following comment.
 
 Your job is to target the correct DOM element and update its inner HTML with the value of the `fishHTML` variable.
 
-## Step 4: Test the Fish List
+## Step 5: Test the Fish List
 
 Before testing the fish list, comment out the following lines in `main.js`
 

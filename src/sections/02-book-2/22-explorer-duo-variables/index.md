@@ -1,6 +1,6 @@
 # Variable types in JavaScript
 
-In JavaScript, <analogy>variables</analogy> act like containers that store data. This data can be described as being in two main categories: **value types**  _(which store the actual data directly)_ and **<analogy>reference types</analogy>** _(which store a reference to where the data actually exists in your computer's memory)_."
+In JavaScript, <analogy>variables</analogy> act like containers that store data. This data can be described as being in two main categories: **value types**  _(which store the actual data directly)_ and **<analogy>reference types</analogy>** _(which store a reference to where the data actually exists in your computer's memory)_.
 
 Another term for **value type** is **<analogy>primitive</analogy> type** which supports the idea that a variable's data type is simpler. Here's some examples.
 
@@ -58,7 +58,7 @@ Since both `obj1` and `obj2` point to the **same memory location**, changing one
 
 ### **Example of Comparison Differences**
 
-Copy the code below into a new file called `sandbox.js` in your editor, save and  and run the file from the terminal as `node sandbox.js` and answer the questions below the code snippet.
+Copy the code below into a new file called `sandbox.js` in your editor, save and run the file from the terminal as `node sandbox.js` and answer the questions below the code snippet.
 
 ```js
 let a = 10;
@@ -67,19 +67,19 @@ console.log("a equals b: ", a === b);
 ```
 
 #### Question 1: 
-Do you expect to a see "a equals b: true" OR "a equals b: false" in your terminal? 
+Do you expect to see "a equals b: true" OR "a equals b: false" in your terminal? 
 Why is this the case?
 
-Copy the code below into a new file called `sandbox1.js` in your editor, save and  and run the file from the terminal as `node sandbox1.js` and answer the questions below the code snippet.
+Copy the code below into a new file called `sandbox1.js` in your editor, save and run the file from the terminal as `node sandbox1.js` and answer the questions below the code snippet.
 
 ```js
 let objA = { name: "Alice" };
 let objB = { name: "Alice" };
-console.log("objA equals objB: " objA === objB);
+console.log("objA equals objB: ", objA === objB);
 ```
 
 #### Question 2: 
-Do you expect to a see "objA equals objB: true" OR "objA equals objB: false" in your terminal? 
+Do you expect to see "objA equals objB: true" OR "objA equals objB: false" in your terminal? 
 Why is this the case?
 
 ### Additional resources

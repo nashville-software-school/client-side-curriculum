@@ -26,10 +26,6 @@ touch styles/main.css
 touch styles/layout.css
 ```
 
-```bash
-
-```
-
 Create the following files and directories inside the project directory:
 
 - `index.html`: The main HTML file for the aquarium showcase.
@@ -82,7 +78,7 @@ Open the `index.html` file and add the following basic HTML structure:
 
 This HTML structure sets up the basic layout for Martin's Aquarium. We have a `<header>` to display the title, a `<main>` section that contains the `fishList`, `tipList`, and `locationList` sections where the respective content will be dynamically generated.
 
-We link the necessary CSS file (`main.css`) and the main JavaScript file (`main.js`) at the end of the `<body>` section.
+We link both CSS files (`main.css` and `layout.css`) in the `<head>` section, and the main JavaScript file (`main.js`) at the end of the `<body>`.
 
 ## Step 3: Set Up Main JavaScript Module
 

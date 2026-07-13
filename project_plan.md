@@ -483,10 +483,10 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Book 1: Group Project | ✓ | No errors found |
 | Book 2: Dynamite Duo | ✓ | 01: "don't any content" (missing "have"), "SSH options/command" ×2; 02: "Copy pasta", "an mentor"; 04: missing `getHeroes` getter + `heroes.js` update (broke after removing `export const database`) — fixed with Socratic prompt + hints; 07: "The goals is"; 08: "non-intuitive" |
 | Book 2: Movie Majesty | ✓ | 11: Step 3 code missing `export` (refactored to Socratic challenge in Step 4 + hint), "never explain" → "never explained"; 13: Conclusion incorrectly included CSS bullets before CSS chapters — trimmed to JS-only; 15: Step 3 implied link might be missing (it was set up in ex. 09) — updated to "verify", fixed `./styles/` → `styles/` consistency; conclusion "upcoming chapters" → correct handoff to Martin's Aquarium |
-| Book 2: Martin's Aquarium | — | |
-| Book 2: Self-Assessment | — | |
-| Book 2: Explorer chapters | — | |
-| Book 2: Group Project | — | |
+| Book 2: Martin's Aquarium | ✓ | 16: removed stray empty bash block, fixed description ("CSS at end of body" → in `<head>`); 17: duplicate Step 4 labels (second → Step 5), "Create a new file" → "Open the file" (already created in ex. 16); 20: narrative typos (Martin's/hurriedly/you eyes/could understanding/hard to understanding ×5), "three functions module" phrasing, "Martin's has specified"; added process-based hint below starter code skeleton |
+| Book 2: Self-Assessment | ✓ | 21: "your task to build" → "your task is to build" |
+| Book 2: Explorer chapters | ✓ | 22: stray `"` end of para 1, double "and" ×2, missing comma in `console.log` (SyntaxError), "to a see" ×2; 23: "Create a files" → "Create the following files" |
+| Book 2: Group Project | ✓ | 24: "working products" → "working product"; 25: "visit an mentor", "responsible" spelling; 28: `fields.js` → `field.js` (wrong filename), "to be plants" → "to be planted"; 32: "return the the last crop", "occasionally" spelling; 33: section header said "Stack Data Structures" for Queue chapter |
 | Book 3: DeShawn's Dog Walking | — | |
 | Book 3: Shipping Ship Ships | — | |
 | Book 3: Brewed Awakenings | — | |
