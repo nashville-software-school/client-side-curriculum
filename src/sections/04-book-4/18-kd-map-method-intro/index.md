@@ -28,7 +28,7 @@ You can accomplish this same feat with the `Array.map()` method.
 
 * **<analogy>find</analogy>()** is for when you need to locate a single item in an <analogy>array</analogy>
 * **<analogy>filter</analogy>()** is for when you need to locate _some_ of the items in an <analogy>array</analogy>
-* **<analogy>map</analogy>()** is for when you to to _convert_ everything in an <analogy>array</analogy>
+* **<analogy>map</analogy>()** is for when you want to _convert_ everything in an <analogy>array</analogy>
 
 Here is how you would accomplish the same goal with **<analogy>map</analogy>()**.
 
@@ -49,7 +49,7 @@ export const MetalOptions = async () => {
     )
 
     // This function needs to return a single string, not an array of strings
-    const optionsHTML += divStringArray.join("")
+    optionsHTML += divStringArray.join("")
 
     return optionsHTML
 }
@@ -69,7 +69,7 @@ This <analogy>function</analogy>. It returns a <analogy>string</analogy>, which 
 }
 ```
 
-That <analogy>function</analogy> is the first, and only, <analogy>argument</analogy> that the `map()` method will accept. As it iterates the <analogy>array</analogy>, it will take the <analogy>object</analogy> at the current location and pass it as an <analogy>argument</analogy> to **your** <analogy>function</analogy>. Your <analogy>function</analogy> defines the `size` <analogy>parameter</analogy>.
+That <analogy>function</analogy> is the first, and only, <analogy>argument</analogy> that the `map()` method will accept. As it iterates the <analogy>array</analogy>, it will take the <analogy>object</analogy> at the current location and pass it as an <analogy>argument</analogy> to **your** <analogy>function</analogy>. Your <analogy>function</analogy> defines the `metal` <analogy>parameter</analogy>.
 
 So an _object_ comes into your <analogy>function</analogy>, and a _string_ gets returned. That <analogy>string</analogy> goes into a new _array_.
 

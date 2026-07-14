@@ -12,7 +12,7 @@
 Add a new <analogy>module</analogy> into your application that will store the <analogy>transient state</analogy> as the customers make their choices. Remember that initial <analogy>state</analogy> should be established to look exactly like how the data will be stored in your <analogy>API</analogy>, but with default values.
 
 * <analogy>Boolean</analogy> values should default to `false`
-* Integer values should defualt to `0`
+* Integer values should default to `0`
 * <analogy>String</analogy> values should default to an empty <analogy>string</analogy> `""`
 
 Then write a <analogy>setter function</analogy> to <analogy>update</analogy> the <analogy>value</analogy> of each <analogy>property</analogy>. Make sure you <analogy>export</analogy> those functions for use in other modules.

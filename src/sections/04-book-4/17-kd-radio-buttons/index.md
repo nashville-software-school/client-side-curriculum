@@ -1,10 +1,10 @@
 # Showing Custom Jewelry Options
 
-Time to <analogy>create</analogy> all of the <analogy>component</analogy> functions for each of the option groups. Just like the **UrbanDweller** <analogy>function</analogy> in the Indian Jeans project, you will need to fetch the data from your local <analogy>API</analogy> for each of these components since all of the options are in the `database.json` file.
+Time to <analogy>create</analogy> all of the <analogy>component</analogy> functions for each of the option groups. Just like the **UrbanDweller** <analogy>function</analogy> in the Indiana Jeans project, you will need to fetch the data from your local <analogy>API</analogy> for each of these components since all of the options are in the `database.json` file.
 
 ## Learning Objectives
 
-* You should be able to correct use **async** and **<analogy>await</analogy>** keywords to <analogy>request</analogy> data from an <analogy>API</analogy>.
+* You should be able to correctly use **async** and **<analogy>await</analogy>** keywords to <analogy>request</analogy> data from an <analogy>API</analogy>.
 * You should be able to use a `for..of` loop to generate HTML representations of each <analogy>object</analogy> in the <analogy>array</analogy>.
 * You should be able to <analogy>import</analogy> the <analogy>component</analogy> functions into the main <analogy>module</analogy>, <analogy>invoke</analogy> them in the correct place, and compose all of the responses into a single HTML <analogy>string</analogy>.
 * You should be able to <analogy>update</analogy> the correct <analogy>element</analogy> on the <analogy>DOM</analogy> with your generated HTML.
@@ -31,7 +31,7 @@ Refer back to the **main** <analogy>module</analogy> in Indiana Jeans to remembe
 ```js
 import { MetalOptions } from './MetalOptions.js'
 
-const render = () => {
+const render = async () => {
     const metalOptionsHTML = await MetalOptions()
 
     const composedHTML = `

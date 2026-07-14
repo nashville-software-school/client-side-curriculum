@@ -1,4 +1,4 @@
-# Diplaying Order
+# Displaying Order
 
 If you haven't yet, <analogy>create</analogy> a new <analogy>module</analogy> that generates a list of placed orders. Here's a small bit of starter code for you if you want it.
 
@@ -7,7 +7,7 @@ For now, it's fine to just display the <analogy>primary key</analogy> of the ord
 ```js
 export const Orders = async () => {
     const fetchResponse = await fetch("http://localhost:8088/orders")
-    const orders = fetchResponse.json()
+    const orders = await fetchResponse.json()
 
     let ordersHTML = orders.map(
         (order) => {

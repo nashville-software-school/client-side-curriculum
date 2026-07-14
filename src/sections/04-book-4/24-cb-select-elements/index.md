@@ -2,7 +2,7 @@
 
 To display a group of options, the two most common controls used by designers and developers are:
 
-1. The <analogy>radio button</analogy>, which displayed each option an an individual item to be clicked on with a filled-in circle indicating the selected option.
+1. The <analogy>radio button</analogy>, which displays each option as an individual item to be clicked on with a filled-in circle indicating the selected option.
     ```html
     <input type="radio" value="1" name="resource"> First option
     <input type="radio" value="2" name="resource" checked> Second option

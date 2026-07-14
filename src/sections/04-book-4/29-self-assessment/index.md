@@ -4,10 +4,10 @@ This project will help you assess your ability to apply the JavaScript skills th
 
 1. Generating custom events
 2. Handling browser generated, and custom, events
-4. <analogy>State</analogy> management (transient and permanent)
-5. Displaying <analogy>state</analogy> as HTML
-6. User input with radio options
-7. <analogy>HTTP</analogy> requests with async/<analogy>await</analogy>
+3. <analogy>State</analogy> management (transient and permanent)
+4. Displaying <analogy>state</analogy> as HTML
+5. User input with radio options
+6. <analogy>HTTP</analogy> requests with async/<analogy>await</analogy>
 
 ## Overview
 

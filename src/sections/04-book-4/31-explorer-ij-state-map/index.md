@@ -23,7 +23,7 @@ const iPhone = {
 ##### Map Toy
 
 ```js
-// Map representaiton of toy
+// Map representation of toy
 const iPhone2 = new Map()
 iPhone2.set("id", 1)
 iPhone2.set("name", "iPhone2")
@@ -44,7 +44,7 @@ console.log(iPhone.price)
 ##### Map
 
 ```js
-iPhone2.get(price)
+iPhone2.get("price")
 ```
 
 ## Adding New Key Value Pairs

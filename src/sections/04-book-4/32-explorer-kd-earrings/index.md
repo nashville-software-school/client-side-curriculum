@@ -14,7 +14,7 @@ Add a <analogy>radio button</analogy> group above the order button that allows t
 
 * If the user chooses a ring, the default prices in the database will be used to show the cost.
 * If the user chooses earrings, the price will be 2x the default prices.
-* If the user chooses earrings, the price will be 4x the default prices.
+* If the user chooses a necklace, the price will be 4x the default prices.
 
 ## Animation of Implementation
 
