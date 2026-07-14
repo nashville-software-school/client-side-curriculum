@@ -142,11 +142,11 @@ Now it's time to set up our routes for authentication. In `App.jsx`, remove the 
 </details>
 
 ### Time to Test!
-Navigate to `localhost:3000/login` and confirm that the `Login` component renders. Try logging in! You should be navigated to `localhost:3000` and the `AllPosts` component should render. Open the devtools and check out the Application tab. Check to see that the key `learning_user` is added and the value is an object with an `id` property.
+Navigate to `localhost:5173/login` and confirm that the `Login` component renders. Try logging in! You should be navigated to `localhost:5173` and the `AllPosts` component should render. Open the devtools and check out the Application tab. Check to see that the key `learning_user` is added and the value is an object with an `id` property.
 
 <img src="./images/learning-user.png" width="700" />
 
-Right click on it to delete it. Refresh the page. You should be navigated back to `localhost:3000/login`. Now register a new user. After registering you should once again be navigated to `localhost:3000` and the `AllPosts` component should render. Check your JSON server to confirm the user was added to the database and that it's properties match the rest of your users.
+Right click on it to delete it. Refresh the page. You should be navigated back to `localhost:5173/login`. Now register a new user. After registering you should once again be navigated to `localhost:5173` and the `AllPosts` component should render. Check your JSON server to confirm the user was added to the database and that it's properties match the rest of your users.
 
 You're all set!
 

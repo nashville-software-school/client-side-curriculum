@@ -572,25 +572,20 @@ Ex 09 has no video — no change needed.
 
 ---
 
-### Session 4.5.2: Localhost Link Audit
+### Session 4.5.2: Localhost Link Audit ✓ COMPLETE (2026-07-14)
 
-**Known issues found during reconnaissance:**
+**Full grep results (excluding `localhost:8088` JSON server):**
 
-| File | Line | Found | Problem |
-|------|------|-------|---------|
-| `05-book-5/26-learn-routes-setup/index.md` | 145, 149 | `localhost:3000/login`, `localhost:3000` | Learning Moments is a Vite app → should be `localhost:5173` |
-| `02-book-2/02-duo-dev-tools-intro/index.md` | 48 | `localhost:3000` | Vite-era content → should be `localhost:5173` |
-| `05-book-5/01-react-basics/index.md` | 77, 81 | `localhost:5173/` | ✓ Correct — student's own Honey Rae's Vite project at root |
+| File | Line | Found | Disposition |
+|------|------|-------|-------------|
+| `05-book-5/26-learn-routes-setup/index.md` | 145, 149 | `localhost:3000/login`, `localhost:3000` ×4 | **Fixed** → `localhost:5173` — Learning Moments is a React/Vite app |
+| `02-book-2/02-duo-dev-tools-intro/index.md` | 48 | `localhost:3000` | ✓ Correct — Books 1–4 use `npx serve` (port 3000), not Vite; no `package.json` exists |
+| `02-book-2/13-mm-main/index.md` | 43 | `localhost:3000` | ✓ Correct — same reason |
+| `04-book-4/08-ij-jeans-component/index.md` | 92 | `localhost:3000` | ✓ Correct — same reason |
+| `05-book-5/01-react-basics/index.md` | 77, 81 | `localhost:5173/` | ✓ Correct — student's own Honey Rae's Vite app |
+| `05-book-5/05-repair-all-tickets/index.md` | (transcript) | "localhost 8088" in speech text | ✓ Correct — JSON server reference in transcript prose |
 
-**User-reported issue (unconfirmed via grep):** Links in Book 5 that read `localhost:5173/<chapter-path>` instead of `localhost:5173/client-side-curriculum/<chapter-path>`. Since `BASE_URL=client-side-curriculum` in `.env.local`, the dev platform is served at `localhost:5173/client-side-curriculum/`. Any direct link to a platform route that omits the base path will 404. **Ask user to identify the specific file(s) at session start.**
-
-**Session approach:**
-1. Full grep: `grep -rn "localhost" src/sections/ --include="*.md"` — review every result in context
-2. Fix `localhost:3000` → `localhost:5173` where the content refers to Vite-served student projects (Books 2–5). Be careful: some `localhost:3000` refs correctly refer to JSON server, not the student's app.
-3. Fix any `localhost:5173/<path>` → `localhost:5173/client-side-curriculum/<path>` instances
-4. Check Books 1–4 for the same patterns
-
-**Note on JSON server:** Many exercises reference `localhost:8088` (JSON server) — those are correct and should not be changed.
+**User-reported `localhost:5173/<path>` platform link issue:** Not present in any markdown files. No instances of `localhost:5173/` other than the correctly-scoped `01-react-basics` student app reference.
 
 ---
 
