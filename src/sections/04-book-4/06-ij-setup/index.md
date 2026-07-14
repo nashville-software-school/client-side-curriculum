@@ -4,7 +4,7 @@ Dr. Henrietta Jones is a prominent urbanologist who works for the University of 
 
 Unfortunately, Dr. Jones is required, every year, to do research work and publish papers on her work in order to keep her good standing with the university. Her most recent research involves understanding the relationship of the history of the blue jean with the rise of the urban lifestyle.
 
-To start, she's going to send a survey to students at all Indiana universities, her's included, to collect data on if the student owns a pair a blue jeans, the cost of the garment, and if the student lives in an urban or rural area.
+To start, she's going to send a survey to students at all Indiana universities, hers included, to collect data on if the student owns a pair of blue jeans, the cost of the garment, and if the student lives in an urban or rural area.
 
 She calls the study **"Indiana Jeans"**.
 
@@ -41,7 +41,7 @@ indiana-jeans/
 
 ### HTML
 
-Add the following boiler plate code to your `index.html` file. 
+Add the following boilerplate code to your `index.html` file. 
 ```html
 <!DOCTYPE html>
 <html lang="en">

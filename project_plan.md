@@ -492,8 +492,8 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Book 3: Brewed Awakenings | ✓ | 19: "Viual" → "Visual"; 21: "an mentor" → "a mentor"; 22: "an mentor" → "a mentor", `const fulfilledOrders` → `let fulfilledOrders`; 23: "many subject" → "many subjects" |
 | Book 3: Self-Assessment | ✓ | 24: "the would like" → "they would like", "should should contain" → "should contain" |
 | Book 3: Group Project | ✓ | 25: "challenging that" → "challenging than"; 26: "Ther eis" → "There is", "services is supports" → "services it supports", "area support" → "area supports"; 27: "you hav" → "you have", "be visting" → "be visiting", "the you have" → "then you have", "answer both one" → "answer to both of"; 28: "spcific" → "specific"; 30: "displayed show" → "displayed showing" |
-| Book 4: Fox y Dog | — | |
-| Book 4: Indiana Jeans | — | |
+| Book 4: Fox y Dog | ✓ | 01: duplicate "6." in key concepts fixed → "7.", "Api" → "API"; 02: "Copy pasta"×2, truncated sentence ("URLs from" → "URLs from the APIs."); 03: "javascript" → "JavaScript", "different two" → "two different"; 04: "That promises still fulfilled" → "That promise was still fulfilled"; 05: "who's" → "whose", spurious `<analogy>Key</analogy>` tag removed, list skips 3→fixed twice, missing `=` in ❌ code example |
+| Book 4: Indiana Jeans | ✓ | 06: "her's" → "hers", "pair a" → "pair of", "boiler plate" → "boilerplate"; 07: missing verb "Open" added, version `0.17.3` → `0.17.4` (install command installs 0.17.4); 09: "Fox y Cat" → "Fox y Dog", algorithm hint list 1,2,3,5,6 → 1,2,3,4,5; 10: code bug — handler checked `"ownJeans"` but radio buttons use `name="ownsJeans"` (fixed both code and description), removed false bullet "Each function logs to console"; 12: "the the" → "the", Key Concepts list 1,2,4 → 1,2,3; 13: "defined the type" → "define the type" |
 | Book 4: Kneel Diamonds | — | |
 | Book 4: Cars 'R Us | — | |
 | Book 4: Self-Assessment | — | |

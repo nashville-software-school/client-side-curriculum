@@ -25,7 +25,7 @@ In this project, we'll use a <analogy>JSON</analogy> file to store:
 
 ## Setting Up the JSON Database
 
-In `database.json` in your project's `api` <analogy>directory</analogy> and add the following <analogy>JSON</analogy> content:
+Open `database.json` in your project's `api` <analogy>directory</analogy> and add the following <analogy>JSON</analogy> content:
 
 ```json
 {
@@ -77,7 +77,7 @@ You should already have <analogy>json-server</analogy> installed. Check this by 
 json-server --version
 ```
 
-You should see `0.17.3` as the output. 
+You should see `0.17.4` as the output. 
 
 If you get a different version output or an error, run the following commands in your <analogy>terminal</analogy>:
 
@@ -86,7 +86,7 @@ npm uninstall -g json-server
 npm install -g json-server@0.17.4
 ```
 
-Run the `json-server --version` command in your <analogy>terminal</analogy> once more. If you *still* do not see `0.17.3`, ask an instructor for help.
+Run the `json-server --version` command in your <analogy>terminal</analogy> once more. If you *still* do not see `0.17.4`, ask an instructor for help.
 
 ### Starting JSON Server
 

@@ -24,7 +24,7 @@ Think of a <analogy>Promise</analogy> like ordering pizza at a restaurant:
 A <analogy>Promise</analogy> can be in one of three states:
 1. **Pending**: The initial <analogy>state</analogy>—the operation hasn't completed yet
 2. **Fulfilled**: The operation completed successfully, and the <analogy>Promise</analogy> has a resulting <analogy>value</analogy>
-3. **Rejected**: The operation failed, and the <analogy>Promise</analogy> has a reason for the failure. This is not the same as when we made a <analogy>request</analogy> to a nonexistent <analogy>endpoint</analogy>. That promises still fulfilled. It is unlikely that you will run into a rejected <analogy>promise</analogy> until you get to <analogy>server</analogy> side, so we will only talk about pending and fulfilled promises from here on out.
+3. **Rejected**: The operation failed, and the <analogy>Promise</analogy> has a reason for the failure. This is not the same as when we made a <analogy>request</analogy> to a nonexistent <analogy>endpoint</analogy>. That promise was still fulfilled. It is unlikely that you will run into a rejected <analogy>promise</analogy> until you get to <analogy>server</analogy> side, so we will only talk about pending and fulfilled promises from here on out.
 
 ## Fetch Returns a Promise
 

@@ -140,7 +140,7 @@ The `.join("")` method is necessary because `.map()` returns an <analogy>array</
 </details>
 
 ## Time to Test!
-You should immediately see the the results when you refresh the page, however, get some more practice observing the <analogy>network tab</analogy>. Remember to check the **<analogy>Request</analogy> URL**, **<analogy>Request</analogy> Method**, **<analogy>Status Code</analogy>**, and **Preview/<analogy>Response</analogy>**. 
+You should immediately see the results when you refresh the page, however, get some more practice observing the <analogy>network tab</analogy>. Remember to check the **<analogy>Request</analogy> URL**, **<analogy>Request</analogy> Method**, **<analogy>Status Code</analogy>**, and **Preview/<analogy>Response</analogy>**. 
 
 <img src="./images/indiana-jeans-submissions.png">
 
@@ -192,7 +192,7 @@ After making this change to the submissions fetch call, check the <analogy>netwo
 
 2. **<analogy>Array</analogy> to <analogy>String</analogy> Conversion**: Use `.join("")` to convert an <analogy>array</analogy> of strings into a single <analogy>string</analogy>.
 
-4. **<analogy>JSON</analogy> <analogy>Server</analogy> <analogy>_expand</analogy>**: The `_expand` <analogy>query parameter</analogy> allows you to include related data in your <analogy>API</analogy> responses.
+3. **<analogy>JSON</analogy> <analogy>Server</analogy> <analogy>_expand</analogy>**: The `_expand` <analogy>query parameter</analogy> allows you to include related data in your <analogy>API</analogy> responses.
 
 ## 🎓 Practice Exercises
 
