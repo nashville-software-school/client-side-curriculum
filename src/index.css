@@ -220,3 +220,82 @@ div[class$="contentContainer"] img {
   max-width: 100%;
   height: auto;
 }
+
+/* ── Exercise content: vertical rhythm ──────────────────────── */
+div[class$="contentContainer"] h1,
+div[class$="contentContainer"] h2,
+div[class$="contentContainer"] h3,
+div[class$="contentContainer"] h4 {
+  margin-top: 2rem;
+}
+
+div[class$="contentContainer"] > :first-child {
+  margin-top: 0;
+}
+
+div[class$="contentContainer"] ul,
+div[class$="contentContainer"] ol {
+  padding-left: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+div[class$="contentContainer"] li + li {
+  margin-top: 0.25rem;
+}
+
+div[class$="contentContainer"] blockquote {
+  border-left: 4px solid var(--border-medium);
+  margin: 1.25rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--text-secondary);
+}
+
+div[class$="contentContainer"] blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+div[class$="contentContainer"] details {
+  margin: 1.5rem 0;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+div[class$="contentContainer"] summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+div[class$="contentContainer"] details[open] > summary {
+  margin-bottom: 0.75rem;
+}
+
+div[class$="contentContainer"] iframe {
+  display: block;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+div[class$="contentContainer"] hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid var(--border-light);
+}
+
+/* ── User story containers ──────────────────────────────────── */
+.user-story {
+  border-left: 4px solid var(--primary-light);
+  background-color: var(--bg-dark);
+  border-radius: 0 4px 4px 0;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+.user-story p:last-child {
+  margin-bottom: 0;
+}
+
+.user-story ul {
+  margin-bottom: 0;
+}

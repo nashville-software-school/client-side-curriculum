@@ -1,26 +1,43 @@
 # Viewing My Posts
 In this chapter you will add a link to My Posts in the Nav Bar and implement the following user stories for the [My Posts](/book_5_learn_wireframe) view:
 
+<div class="user-story">
+
 **Given** the user wishes to view a list of posts they have written<br>
 **When** the user visits the My Posts view<br>
 **Then** the ***title*** will display for each post the user has written. A button to delete will display next to each post.
+
+</div>
+
+<div class="user-story">
 
 **Given** the user wishes to view their post<br>
 **When** the user clicks on the title of the post<br>
 **Then** the application will navigate to the Post Details view for the post
 
+</div>
+
+<div class="user-story">
+
 **Given** the user wishes to delete their post<br>
 **When** the user clicks on the delete button<br>
-**Then** the post will be deleted from the database and no longer display on the page. 
+**Then** the post will be deleted from the database and no longer display on the page.
+
+</div>
 
 ---
 
 ### Let's Finish This User Story For New Post!
+
+<div class="user-story">
+
 **Given** the user has entered a ***title*** for the post<br>
 **And** the user has entered the ***body*** for the post<br>
 **And** the user has selected a ***topic*** for the post<br>
 **When** the user clicks the save button<br>
 **Then** the post will save to the database and ***the application will navigate to the My Posts view***
+
+</div>
 
 ### Helpful Chapters To Revisit
 

@@ -557,46 +557,18 @@ Ex 09 has no video — no change needed.
 
 ---
 
-### Session 4.5.1: Spacing & Visual Formatting
+### Session 4.5.1: Spacing & Visual Formatting ✓ COMPLETE (2026-07-14)
 
-**Problems:**
+**A — Global vertical spacing:** Added a full vertical rhythm CSS block to `src/index.css` scoped to `div[class$="contentContainer"]`. Rules cover h1–h4 (`margin-top: 2rem`; first-child reset to 0), ul/ol (`padding-left: 1.75rem; margin-bottom: 1rem`), li spacing, blockquote (left border + tint), details (border + radius + padding; `details[open] summary` gets `margin-bottom: 0.75rem`), iframe (`display:block; margin: 1.5rem 0; border-radius: 6px`), and hr (`margin: 2rem 0`).
 
-**A — General vertical spacing throughout the curriculum.** Spacing between headings, paragraphs, lists, code blocks, and `<details>` blocks is inconsistently tight across the entire curriculum. Sections run together visually. This is a global CSS concern affecting all books.
+**B — Iframe/transcript spacing:** Covered by the global fix (iframe `margin: 1.5rem 0` + details `margin: 1.5rem 0` provide breathing room between consecutive iframes and transcripts on ex 11, 12, 15).
 
-**B — Iframe/transcript spacing.** On dual-video exercises (ex 11, 12, 15), the first transcript's `</details>` is immediately adjacent to the next `<iframe>` with no breathing room. Also affects the transition between intro text → iframe → transcript on any exercise.
-
-**C — User story containment.** User stories appear in **13 files** across Books 4–5. All use Gherkin-style Given/When/Then format:
-
-```
-**Given** the user wishes to view...<br>
-**When** the user visits...<br>
-**Then** the title, topic and number of likes will display...
-```
-
-Files:
-- `04-book-4/51-pen-pal-society` — 8 stories (uses `<br/>` variant)
-- `05-book-5/23-learn-wireframe` — 23 stories (wireframe overview for all Learning Moments views)
-- `05-book-5/24–33` (10 exercises) — 1–3 stories each
-- `05-book-5/36-capstone-resources` — stories in a markdown table template (review separately; may not need the same containment treatment)
-
-Minor format variation: `<br>` (Book 5, 51 occurrences) vs `<br/>` (Book 4, 8 occurrences) — renders identically; normalize to `<br>` as part of this pass.
-
-These blocks have no visual container — no border, background, or spacing that signals "this is the spec you are implementing." Students may not clearly distinguish the story from the surrounding instructions.
-
-**Approach — A (global spacing):**
-- Open the running platform and audit spacing across a representative sample: a Setup exercise, a Book 1 exercise, a Book 5 exercise with video, a Book 5 exercise without video
-- Add/adjust CSS in `src/index.css` targeting the exercise content area for headings, paragraphs, lists, blockquotes, `details`, `code`, `pre`, `img`, and `iframe`
-- Goal: consistent, readable vertical rhythm throughout — sections feel separated, not packed
-
-**Approach — B (iframe/transcript):**
-- Covered by the global spacing fix if `iframe` and `details` get proper margins; verify on ex 11, 12, 15 after the global pass
-
-**Approach — C (user stories):**
-- Audit the 13 files to confirm all are Given/When/Then and identify edge cases (multi-Then, stories inside lists, etc.)
-- Decide on containment: a `<div class="user-story">` wrapper in the markdown + CSS rule, or a `<blockquote>` with custom styling
-- Review ex 36 (capstone-resources) table format separately — may need table styling rather than story containment
-- Normalize `<br/>` → `<br>` in Book 4 (51-pen-pal-society) as part of this pass
-- Implement and verify in browser across both Book 4 and Book 5
+**C — User story containment:** Added `.user-story` CSS class (left border using `--primary-light`, `--bg-dark` background, `padding: 0.75rem 1rem`, `margin: 1rem 0`). Wrapped all Given/When/Then story blocks in `<div class="user-story">...</div>` across 11 files:
+- `04-book-4/51-pen-pal-society` — 8 stories; normalized `<br/>` → `<br>`
+- `05-book-5/23-learn-wireframe` — 23 stories across 8 view sections
+- `05-book-5/24–25, 27–33` (9 exercises) — 1–4 stories each
+- `05-book-5/26-learn-routes-setup` — 1 story left as blockquote (it's contextual reference inline in instructions, not an assigned story)
+- `05-book-5/36-capstone-resources` — table format; no change (template for students)
 
 ---
 

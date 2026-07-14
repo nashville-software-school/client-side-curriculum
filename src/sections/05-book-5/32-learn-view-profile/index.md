@@ -1,18 +1,30 @@
 # Viewing a User's Profile
 In this chapter you will add a link to Profile in the Nav Bar and implement the following user stories for the [User Profile](/book_5_learn_wireframe) view:
 
+<div class="user-story">
+
 **Given** the user wishes to view either their profile or another user's profile<br>
 **When** the user visits the User Profile view<br>
 **Then** the ***full name***, ***cohort number***, ***number of posts written*** will display for the selected user
+
+</div>
+
+<div class="user-story">
 
 **Given** the user wishes to view the profile of the author (in the Post Details view)<br>
 **When** the user clicks the author's name<br>
 **Then** the application will navigate to the Profile View for the author
 
+</div>
+
+<div class="user-story">
+
 **Given** the user is viewing ***their*** profile<br>
 **Then** a button to edit should display<br>
 **When** the user clicks the edit button<br>
 **Then** ~~the application will navigate to the Edit Profile view~~
+
+</div>
 
 ***No need to add the navigate functionality to Edit Profile since you have not implemented this view yet.*** 
 

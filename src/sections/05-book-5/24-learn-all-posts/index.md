@@ -1,9 +1,13 @@
 # Displaying All The Posts
 In this chapter you will implement the following user story for the ***[All Posts](/book_5_learn_wireframe)*** view:
 
+<div class="user-story">
+
 **Given** the user wishes to view a list of all the posts<br>
 **When** the user is at the home route or visits the All Posts view<br>
-**Then** the ***title***, ***topic*** and ***number of likes*** will display for each post in the database. 
+**Then** the ***title***, ***topic*** and ***number of likes*** will display for each post in the database.
+
+</div>
 
 ## Getting started
 
