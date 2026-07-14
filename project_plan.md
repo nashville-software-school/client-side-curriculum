@@ -487,11 +487,11 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Book 2: Self-Assessment | ✓ | 21: "your task to build" → "your task is to build" |
 | Book 2: Explorer chapters | ✓ | 22: stray `"` end of para 1, double "and" ×2, missing comma in `console.log` (SyntaxError), "to a see" ×2; 23: "Create a files" → "Create the following files" |
 | Book 2: Group Project | ✓ | 24: "working products" → "working product"; 25: "visit an mentor", "responsible" spelling; 28: `fields.js` → `field.js` (wrong filename), "to be plants" → "to be planted"; 32: "return the the last crop", "occasionally" spelling; 33: section header said "Stack Data Structures" for Queue chapter |
-| Book 3: DeShawn's Dog Walking | — | |
-| Book 3: Shipping Ship Ships | — | |
-| Book 3: Brewed Awakenings | — | |
-| Book 3: Self-Assessment | — | |
-| Book 3: Group Project | — | |
+| Book 3: DeShawn's Dog Walking | ✓ | 03: "encourage" → "encouraged", "developer store" → "developers store"; 05: "metadate" → "metadata" |
+| Book 3: Shipping Ship Ships | ✓ | 13: "Only the primary" → "Only the primary key"; 14: "hauling ship objects" → "shipping ship objects", same primary key fix; 15: "item the store" → "item to store"; 16: title was "Hauler Cargo" (copy of ex.15) → "Shipping Ship's Hauler" |
+| Book 3: Brewed Awakenings | ✓ | 19: "Viual" → "Visual"; 21: "an mentor" → "a mentor"; 22: "an mentor" → "a mentor", `const fulfilledOrders` → `let fulfilledOrders`; 23: "many subject" → "many subjects" |
+| Book 3: Self-Assessment | ✓ | 24: "the would like" → "they would like", "should should contain" → "should contain" |
+| Book 3: Group Project | ✓ | 25: "challenging that" → "challenging than"; 26: "Ther eis" → "There is", "services is supports" → "services it supports", "area support" → "area supports"; 27: "you hav" → "you have", "be visting" → "be visiting", "the you have" → "then you have", "answer both one" → "answer to both of"; 28: "spcific" → "specific"; 30: "displayed show" → "displayed showing" |
 | Book 4: Fox y Dog | — | |
 | Book 4: Indiana Jeans | — | |
 | Book 4: Kneel Diamonds | — | |

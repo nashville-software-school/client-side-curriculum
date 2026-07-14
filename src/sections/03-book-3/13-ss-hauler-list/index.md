@@ -4,7 +4,7 @@ Now build out the module to create the HTML for a list of available hauling ship
 
 <img src="./images/hauling-ships.png">
 
-Here is some starter code for adding an array of hauling ship objects to your database. Only the primary is provided. Refer back to your ERD and add the other two properties to the object. Then create 3 or 4 more hauling ships with names of your choice.
+Here is some starter code for adding an array of hauling ship objects to your database. Only the primary key is provided. Refer back to your ERD and add the other two properties to the object. Then create 3 or 4 more hauling ships with names of your choice.
 
 ```js
 const database = {

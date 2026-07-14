@@ -4,7 +4,7 @@ Using code from the last project as an example, attempt adding a <analogy>click 
 
 <img src="./images/product-prices.gif">
 
-If you find yourself creeping up on 30 minutes of trying to get the code to work, it's time to go to a peer, or an mentor for assistance.
+If you find yourself creeping up on 30 minutes of trying to get the code to work, it's time to go to a peer, or a mentor for assistance.
 
 As always, you can peek at most of the solution:
 

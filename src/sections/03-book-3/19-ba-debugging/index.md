@@ -18,7 +18,7 @@ Run the following command in your terminal.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/main/client/brewed-setup.sh)"
 ```
 
-That script will create the `workspace/brewed-awakenings` directory for you. Just `cd` to that directory and open it in Viual Studio Code.
+That script will create the `workspace/brewed-awakenings` directory for you. Just `cd` to that directory and open it in Visual Studio Code.
 
 Then run the `serve` command and open the URL in Chrome.
 

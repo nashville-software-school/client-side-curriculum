@@ -4,7 +4,7 @@ Now build out the module to create the HTML for a list of available shipping shi
 
 <img src="./images/shipping-ships.png">
 
-Here is some starter code for adding an array of hauling ship objects to your database. Only the primary is provided. Refer back to your ERD and add objects to the array that contain all of the needed properties. Create several ship objects that can be hauled around the world.
+Here is some starter code for adding an array of shipping ship objects to your database. Only the primary key is provided. Refer back to your ERD and add objects to the array that contain all of the needed properties. Create several ship objects that can be hauled around the world.
 
 ```js
 const database = {

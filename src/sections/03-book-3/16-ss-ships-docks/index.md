@@ -1,4 +1,4 @@
-# Hauler Cargo
+# Shipping Ship's Hauler
 
 The next step for you is to add a click event listener that displays the hauler for each shipping ship.
 

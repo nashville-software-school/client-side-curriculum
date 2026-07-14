@@ -3,7 +3,7 @@
 <analogy>Metadata</analogy> is data about data. In the context of this project, metadata will be used to describe what _kind of data_ is being displayed.
 
 * Each city list item will have a metadata attribute called `data-type` with a value of "city".
-* Each walker list item will have a metadate attribute called `data-type` with a value of "walker".
+* Each walker list item will have a metadata attribute called `data-type` with a value of "walker".
 
 These values aren't part of the actual data. For example, here's a walker object.
 
