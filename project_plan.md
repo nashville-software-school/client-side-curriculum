@@ -502,10 +502,28 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Book 4: Advanced projects | ✓ | 51: "an recipient" → "a recipient", missing "a" before textarea; 52: "An new" → "A new", "an mentor" → "a mentor"; 54: "will a national park" → "will be a national park", "fetures" → "features", "to the the latitude" → "to get the latitude" |
 | Book 4: Group Project | ✓ | 55: no errors |
 | Book 4: T&F sub-chapters | ✓ | 56: "are be arranged" → "are to be arranged", "distract a Knight" → "distracts", "Bludgeons" → "Truncheons", "cumulative of" → "cumulative total of"; 58: "one some game score" → "some game scores"; 59: "Create a array" × 3 → "an array"; 62: "immediate display" → "immediately display"; 63: "saves a round scores" → "a round of scores", "the score" → "the scores" |
-| Book 5: Honey Rae's Repair Shop | — | |
+| Book 5: Honey Rae's Repair Shop | ✓ | **Pre-pass (2026-07-14):** Extracted transcripts from all 18 YouTube videos via yt-dlp + VTT parser; embedded as collapsible `<details>` blocks with `[MM:SS]` topic markers in ex 01–16 (ex 03 skipped — Screencastify; ex 09 has no video). **Editorial fixes:** 01: "call in an mentor"; 02: missing backtick in template literal, extra `)` in onClick; 03: "Expand to the your"; 04: wrong alt text; 05: double `return (`, missing `}` in App fn, "it's value", "and and"; 06: JSX missing fragment wrapper, missing `}` in Ticket fn, broken emoji; 07: stray `u` in note, "this function this function"; 08: `</>` closing div, `<h1></h2>` ×2, `<>` instead of `</>` ×2; 09: "this exercises"; 10: missing space before backtick, "set up up", `path="/">`, "you child route", wrong alt text; 11: "fo routes", `</Route>` → `</Routes>`, `path="/">` ×4, missing fragment wrapper ×4, "/projcets", stray backtick, "the the user", value `3`→`2`, wrong alt text, "to the the new route"; 12: "we has to pass"; 14: missing space before backtick |
 | Book 5: Chuckle Checklist | — | |
 | Book 5: Learning Moments | — | |
 | Book 5: Explorer / Capstone / Group Project | — | |
+
+### Exploration: Embedded Video + Timestamp-Linked Transcripts
+
+During the Book 5 transcript pass, transcripts were embedded as collapsible `<details>` blocks with `[MM:SS]` markers grouped by topic. A natural next step is to explore:
+
+1. **Embedded video** — replace the `Watch The Video` link with an inline `<iframe>` (YouTube embed). Students wouldn't need to leave the platform to watch.
+2. **Timestamp-linked transcript** — each `[MM:SS]` marker in the transcript becomes a clickable link that seeks the embedded player to that point in the video. (YouTube's iframe API supports `seekTo()` via `postMessage`.)
+
+**Potential approach:**
+- Replace `<a href="https://youtu.be/...">` link with `<iframe src="https://www.youtube.com/embed/{VIDEO_ID}?enablejsapi=1" ...>`
+- Wrap the iframe + transcript in a small JS snippet that intercepts `[MM:SS]` link clicks, converts to seconds, and calls `seekTo` on the iframe via `postMessage`
+- The `<details>` transcript block stays collapsible — it just becomes interactive when open
+
+**Open questions:**
+- Does nss-core's markdown renderer support raw `<iframe>` tags in exercise markdown? (Need to verify — some renderers strip iframes for security.)
+- Is there a platform-side component (`<VideoPlayer>` with a `src` prop?) preferable to raw iframe + inline JS in every exercise file?
+- The Screencastify video in ex 03 has no YouTube URL — would need a separate solution or stay as-is.
+- Worth scoping as a Phase 5 or standalone feature spike before committing to a format.
 
 ---
 

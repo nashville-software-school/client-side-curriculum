@@ -16,7 +16,7 @@ Watch the <a href="https://watch.screencastify.com/v/kZGoJhLMtuVFRjkrVm47" targe
 Copy the code for the ERD below and paste it into dbdiagram to get your own copy of the ERD.
 
 <details>
-  <summary>Expand to the your ERD tables</summary>
+  <summary>Expand to see your ERD tables</summary>
 
   ```sql
   table serviceTickets {
