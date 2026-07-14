@@ -3,7 +3,7 @@
 ## Getting Started
 
 1. Visit the <a href="https://learning.nss.team/" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the **Proposal Template** button. Make a copy of the Google Doc that you see to use for your proposal.
-2. Make sure you track that your proposal meets all requirements by click the **Capstones** link on the Learning Platform.
+2. Make sure you track that your proposal meets all requirements by clicking the **Capstones** link on the Learning Platform.
 3. Start with your <analogy>wireframes</analogy>.
    * [View an example of good wireframes](./images/capstone-wireframe-example.png)
    * [View another example of good wireframes](./images/wireframe-example-001.png)
@@ -54,7 +54,7 @@ _For MVP stories, focus on the absolute basic <analogy>CRUD</analogy> operations
 
 ### Stretch Goals
 
-_Value enhancing stories are what you will work on **after** you and you coach agree that you have reached MVP._
+_Value enhancing stories are what you will work on **after** you and your coach agree that you have reached MVP._
 
 | As a person, I should be able to get this non-critical information  |
 | --- |

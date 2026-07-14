@@ -101,19 +101,19 @@ This route for the `AllPosts` view should render when the path is at the home ro
     <Route path="/">
       <Route index element={<AllPosts />} />
     </Route>
-  </Route>
+  </Routes>
   ```
 </details>
 
 ### Authentication Routes
-Now it's time to set up our routes for authentication. In `App.js`, remove the code to render the `<AllPosts />` component and define three more routes.
+Now it's time to set up our routes for authentication. In `App.jsx`, remove the code to render the `<AllPosts />` component and define three more routes.
 
 1. Add a route for the path `/login` that will render the `Login` component.
 2. Add a route for the path `/register` that will render the `Register` component.
 3. The last route will be a "catch all" route. We want the user to be authenticated before they can access any other path in our application. Add a route for the path `*`. _(This will catch all other paths that haven't been defined yet)_. For the element of this route, render the `ApplicationViews` component wrapped with the `Authorized` component. The `Authorized` component will first check if a user is logged in. If so, it will render the routes we defined in `ApplicationViews`. Otherwise, it will navigate to `/login`.
 
 <details>
-  <summary>🔎 Finished Code for app.js</summary>
+  <summary>🔎 Finished Code for App.jsx</summary>
 
   ```jsx
   import { Route, Routes } from "react-router-dom"
@@ -151,7 +151,7 @@ Right click on it to delete it. Refresh the page. You should be navigated back t
 You're all set!
 
 ## The NavBar
-Time to add your NavBar! Create a `NavBar` component like the one you have in Honey Rae's. Add a link for "All Posts". Where should it navigate to? Add another link to logout. Copy and past the code below for this.
+Time to add your NavBar! Create a `NavBar` component like the one you have in Honey Rae's. Add a link for "All Posts". Where should it navigate to? Add another link to logout. Copy and paste the code below for this.
 
 ```jsx
 {localStorage.getItem("learning_user") ? (
@@ -171,7 +171,7 @@ Time to add your NavBar! Create a `NavBar` component like the one you have in Ho
 )}
 ```
 
-The logout <analogy>Link</analogy> will remove the `learning_user` from <analogy>local storage</analogy> and then navigate back to the login <analogy>route</analogy>. However, the navigate function has not bee defined yet. Import `useNavigate` from *react-router-dom* and store the returned <analogy>function</analogy> in a variable called `navigate`.
+The logout <analogy>Link</analogy> will remove the `learning_user` from <analogy>local storage</analogy> and then navigate back to the login <analogy>route</analogy>. However, the navigate function has not been defined yet. Import `useNavigate` from *react-router-dom* and store the returned <analogy>function</analogy> in a variable called `navigate`.
 
 <details>
   <summary>🔎 Need some help?</summary>

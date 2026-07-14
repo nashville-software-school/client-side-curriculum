@@ -32,7 +32,7 @@ In this chapter you will implement the following user stories for the [Post Deta
 *[Ternary Statements](/book_5_honey_rae_customer_list)*
 
 ### 💡 JSON Server: Get by Id
-If you wish to get a resource by it's primary key (`id`) in json server, rather than adding a query to the url (ex. `?id=`) you can get the single resource by its `id` by adding the `id` to the end of the url: 
+If you wish to get a resource by its primary key (`id`) in json server, rather than adding a query to the url (ex. `?id=`) you can get the single resource by its `id` by adding the `id` to the end of the url: 
 
 ```javascript
 fetch(`http://localhost:8088/resources/${id}`)

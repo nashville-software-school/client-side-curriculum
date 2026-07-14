@@ -186,7 +186,7 @@ Work **one chapter at a time** per session:
 | ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
 | — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
 | ✓ | **Phase 3: Broken Links** — All categories A–G complete |
-| — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
+| ✓ | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
@@ -448,7 +448,7 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 
 ---
 
-## Phase 4: General Errors ◑ ACTIVE
+## Phase 4: General Errors ✓ COMPLETE
 
 *Scope: all exercise markdown content across all 5 books and Setup. This is an editorial pass — finding and fixing errors that would confuse or block students.*
 
@@ -504,26 +504,52 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Book 4: T&F sub-chapters | ✓ | 56: "are be arranged" → "are to be arranged", "distract a Knight" → "distracts", "Bludgeons" → "Truncheons", "cumulative of" → "cumulative total of"; 58: "one some game score" → "some game scores"; 59: "Create a array" × 3 → "an array"; 62: "immediate display" → "immediately display"; 63: "saves a round scores" → "a round of scores", "the score" → "the scores" |
 | Book 5: Honey Rae's Repair Shop | ✓ | **Pre-pass (2026-07-14):** Extracted transcripts from all 18 YouTube videos via yt-dlp + VTT parser; embedded as collapsible `<details>` blocks with `[MM:SS]` topic markers in ex 01–16 (ex 03 skipped — Screencastify; ex 09 has no video). **Editorial fixes:** 01: "call in an mentor"; 02: missing backtick in template literal, extra `)` in onClick; 03: "Expand to the your"; 04: wrong alt text; 05: double `return (`, missing `}` in App fn, "it's value", "and and"; 06: JSX missing fragment wrapper, missing `}` in Ticket fn, broken emoji; 07: stray `u` in note, "this function this function"; 08: `</>` closing div, `<h1></h2>` ×2, `<>` instead of `</>` ×2; 09: "this exercises"; 10: missing space before backtick, "set up up", `path="/">`, "you child route", wrong alt text; 11: "fo routes", `</Route>` → `</Routes>`, `path="/">` ×4, missing fragment wrapper ×4, "/projcets", stray backtick, "the the user", value `3`→`2`, wrong alt text, "to the the new route"; 12: "we has to pass"; 14: missing space before backtick |
 | Book 5: Chuckle Checklist | ✓ | 17: "This a" → "is a", `width="10000"` → `"1000px"`, missing `</details>` added; 18: `steve.png` copied to images dir (was missing), code fence `javascript` → `jsx`; 19: "your not" → "you're not", "joke are" → "jokes are", "in it's own" → "in its own"; 20: "same expect for" → "except", "If told it" → "If told is", "to it's opposite" → "its opposite"; 21: wrong alt text on delete gif (said "told and untold" → "being deleted") |
-| Book 5: Learning Moments | — | |
-| Book 5: Explorer / Capstone / Group Project | — | |
+| Book 5: Learning Moments | ✓ | 22: "an mentor"; 23: "an mentor", broken link `REPAIR_WIREFRAME.md` → `/book_5_honey_rae_wireframe`; 26: `</Route>` → `</Routes>` (code bug), `App.js` → `App.jsx` ×2, "Copy and past" → "paste", "not bee defined" → "been defined"; 27: "by it's" → "its"; 31: "remove to post" → "remove the post" |
+| Book 5: Explorer / Capstone / Group Project | ✓ | 34: "applications" spelling ×1; 35: "applications" spelling ×1; 36: "by click the" → "by clicking the", "you and you coach" → "your coach" |
 
-### Exploration: Embedded Video + Timestamp-Linked Transcripts
+### Embedded Video + Timestamp-Linked Transcripts ◑ IN PROGRESS
 
-During the Book 5 transcript pass, transcripts were embedded as collapsible `<details>` blocks with `[MM:SS]` markers grouped by topic. A natural next step is to explore:
+During the Book 5 transcript pass, transcripts were embedded as collapsible `<details>` blocks with `[MM:SS]` markers grouped by topic. **Proof-of-concept implemented on ex 01 (react-basics) — 2026-07-14.**
 
-1. **Embedded video** — replace the `Watch The Video` link with an inline `<iframe>` (YouTube embed). Students wouldn't need to leave the platform to watch.
-2. **Timestamp-linked transcript** — each `[MM:SS]` marker in the transcript becomes a clickable link that seeks the embedded player to that point in the video. (YouTube's iframe API supports `seekTo()` via `postMessage`.)
+#### What Was Learned (renderer research)
 
-**Potential approach:**
-- Replace `<a href="https://youtu.be/...">` link with `<iframe src="https://www.youtube.com/embed/{VIDEO_ID}?enablejsapi=1" ...>`
-- Wrap the iframe + transcript in a small JS snippet that intercepts `[MM:SS]` link clicks, converts to seconds, and calls `seekTo` on the iframe via `postMessage`
-- The `<details>` transcript block stays collapsible — it just becomes interactive when open
+- `marked` (used by nss-core) runs with no sanitizer and `gfm: true` — raw HTML blocks pass through unchanged
+- Content injected via `dangerouslySetInnerHTML` — **iframes render without restriction**
+- No CSP configured on the platform or curriculum Vite configs
+- `<script>` tags injected via innerHTML are **not executed** (browser security fundamental)
+- Inline `onclick="..."` attributes **do** execute when injected via innerHTML — but messy to write per-timestamp
 
-**Open questions:**
-- Does nss-core's markdown renderer support raw `<iframe>` tags in exercise markdown? (Need to verify — some renderers strip iframes for security.)
-- Is there a platform-side component (`<VideoPlayer>` with a `src` prop?) preferable to raw iframe + inline JS in every exercise file?
-- The Screencastify video in ex 03 has no YouTube URL — would need a separate solution or stay as-is.
-- Worth scoping as a Phase 5 or standalone feature spike before committing to a format.
+#### Chosen Approach: Named Iframe + `?start=` Target Links
+
+No JavaScript required. Pure HTML.
+
+1. Replace `<a href="https://youtu.be/..."><img .../></a>` with a named `<iframe>`:
+   ```html
+   <iframe name="yt-ex01" src="https://www.youtube.com/embed/VIDEO_ID"
+     width="700" height="394" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+     allowfullscreen></iframe>
+   ```
+
+2. Convert each `[M:SS]` timestamp in the transcript to a link targeting the iframe:
+   ```html
+   <a href="https://www.youtube.com/embed/VIDEO_ID?start=N&autoplay=1" target="yt-ex01">[M:SS]</a>
+   ```
+   Clicking the link reloads the iframe at that second position with autoplay. `N` is the timestamp converted to total seconds.
+
+3. Each exercise gets a unique `name` on its iframe (e.g., `yt-ex01`, `yt-ex02`, ...).
+
+#### Status
+
+- [x] ex 01 (react-basics) — proof-of-concept complete
+- [ ] ex 02–16 (minus ex 03 Screencastify, ex 09 no video) — roll out in next session
+
+#### Remaining Work
+
+- Roll out to all 13 remaining Honey Rae's exercises (ex 02, 04–08, 10–16)
+- Ex 03 (Screencastify, no YouTube URL) — stays as clickable thumbnail; no embed possible
+- Ex 09 — no video; no change needed
+- Decide: should the thumbnail image (`./images/*-video.png`) be kept as a fallback below the iframe, or removed entirely?
 
 ---
 

@@ -3,7 +3,7 @@ In this chapter you will add a link to Favorites in the Nav Bar and implement th
 
 **Given** the user wishes to view a list of the posts they have liked<br>
 **When** the user visits the Favorites view<br>
-**Then** the ***title*** will display for each post the user has liked. A button to remove to post from their favorites will display next to each post
+**Then** the ***title*** will display for each post the user has liked. A button to remove the post from their favorites will display next to each post
 
 **Given** the user wishes to view one of their favorite posts<br>
 **When** the user clicks on the title of the post<br>
