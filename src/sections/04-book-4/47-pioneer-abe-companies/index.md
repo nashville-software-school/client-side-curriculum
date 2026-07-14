@@ -1,6 +1,6 @@
-## Infuential Companies
+## Influential Companies
 
-In this exercise, you are going list all companies that are politically influential.
+In this exercise, you are going to list all companies that are politically influential.
 
 ### HTML Representations
 

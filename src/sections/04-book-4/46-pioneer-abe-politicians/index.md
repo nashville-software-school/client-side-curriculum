@@ -1,8 +1,8 @@
 ## Elected Representatives (in theory)
 
-In this exercise, you are going list politicians
+In this exercise, you are going to list politicians
 
-### The Workforce ERD
+### The Honest Abe ERD
 
 Below is a <analogy>JSON</analogy> representation of a politician. <analogy>Update</analogy> your  **Politicians** resource in your <analogy>ERD</analogy> to have these properties.
 

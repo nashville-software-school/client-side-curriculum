@@ -13,7 +13,7 @@ Nurseries are responsible for growing flowers. A single nursery can grow multipl
 
 ### The Bouquet ERD
 
-Use dbdiagram.io to <analogy>create</analogy> an <analogy>ERD</analogy> that visualizes the **Flowers**resource.
+Use dbdiagram.io to <analogy>create</analogy> an <analogy>ERD</analogy> that visualizes the **Flowers** resource.
 
 ```html
 Table Flowers {

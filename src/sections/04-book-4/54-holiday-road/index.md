@@ -1,6 +1,6 @@
 # Holiday Road from Nashville
 
-You and your teammates have been contracted by the National Parks Service to build an application that will allow people to build itineraries for their trips to the beautiful national parks that they maintain. The starting point of each trip will be Nashville, TN, but the destination will a national park selected by the user.
+You and your teammates have been contracted by the National Parks Service to build an application that will allow people to build itineraries for their trips to the beautiful national parks that they maintain. The starting point of each trip will be Nashville, TN, but the destination will be a national park selected by the user.
 
 ## Learning Objectives
 
@@ -32,11 +32,11 @@ This project will focus on the following concepts:
 
 ### Stretch Goal: Directions
 
-Only after the main fetures of the application listed above are complete, you can work on the stretch goal of providing directions. For this feature, you will be using the Graphhopper <analogy>API</analogy>.
+Only after the main features of the application listed above are complete, you can work on the stretch goal of providing directions. For this feature, you will be using the Graphhopper <analogy>API</analogy>.
 
 Once the user has saved an itinerary, and it is listed on the aside bar, refactor your application to add a _Get Directions_ button to each HTML representation of the itinerary. When the user clicks that button for an itinerary, the user should be presented with step-by-step instructions for the trip. It should include
 
-* All 4 locations _(Nashville, bizarrerie, eatery, and national park)_ need to be sent to Geocoding <analogy>API</analogy> to the the latitude and longitude for each one.
+* All 4 locations _(Nashville, bizarrerie, eatery, and national park)_ need to be sent to Geocoding <analogy>API</analogy> to get the latitude and longitude for each one.
 
 * Then all 4 lat/long pairs should be in the URL for the <analogy>request</analogy> to the Routing <analogy>API</analogy>.
 * The step-by-step instructions in the <analogy>response</analogy> from the Routing <analogy>API</analogy> should be displayed below the **Itinerary Preview** section.

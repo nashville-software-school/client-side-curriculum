@@ -1,6 +1,6 @@
 # Giffygram: Social Animation Platform
 
-Perhaps you've used other social media platforms that allow users to share beautiful pictures with each other. An new opportunity that none of these platforms specialize in Gif animation images. A team of developers went to some angel investors and convinced them that you have a solid business plan and that people around the world have been craving an app for sharing only gifs.
+Perhaps you've used other social media platforms that allow users to share beautiful pictures with each other. A new opportunity that none of these platforms specialize in Gif animation images. A team of developers went to some angel investors and convinced them that you have a solid business plan and that people around the world have been craving an app for sharing only gifs.
 
 That team of developers began coding, and quickly deployed their <a href="http://giffygram.nss.team/" target="_blank" rel="noopener noreferrer">first Minimally Viable Product</a> (<analogy>MVP</analogy>).
 
@@ -16,7 +16,7 @@ Your job is to deconstruct the deployed version of the application. Given your k
 6. What fetch calls are used in this application to modify <analogy>state</analogy>? What method (<analogy>GET</analogy>, <analogy>POST</analogy>, <analogy>DELETE</analogy>) is used on each?
 7. What bugs/incomplete features still need to be fixed or implemented?
 
-Once your team feels that you have adequately deconstructed Giffygram, schedule a review with an mentor and present your findings.
+Once your team feels that you have adequately deconstructed Giffygram, schedule a review with a mentor and present your findings.
 
 ## Accounts
 

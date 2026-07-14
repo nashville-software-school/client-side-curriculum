@@ -37,9 +37,9 @@ You likely have a nascent intuition that some of those names don't make sense, b
 
 Once your data is defined, your team should define some initial state for the project. Professional developers always start with dummy, or boilerplate, data to mock out a user interface before having to develop the forms needed to create new data.
 
-* Create a array of team names
-* Create a array of players. Display the id of the team the player is assigned to.
-* Create a array of scores. It should display the number of the team, the score, and the date of the score.
+* Create an array of team names
+* Create an array of players. Display the id of the team the player is assigned to.
+* Create an array of scores. It should display the number of the team, the score, and the date of the score.
 
 Yes, it's silly to be displaying the number of the team for the player, and the number of the team for the score, but this is just where you start. Then you will use the <a href="https://www.w3schools.com/jsref/jsref_find.asp" target="_blank" rel="noopener noreferrer">find()</a> method on arrays to join the two objects together so that you can actually display the team name - not the `id`.
 

@@ -8,9 +8,9 @@ Add a new table to your <analogy>ERD</analogy> in dbdiagram.io to visualize the 
 
 ### HTML Representations
 
-1. Add a new resource in your database named `departments` and <analogy>create</analogy> an 4 department objects in the <analogy>array</analogy>.
+1. Add a new resource in your database named `departments` and <analogy>create</analogy> 4 department objects in the <analogy>array</analogy>.
 1. Modify each employee <analogy>object</analogy> to have a <analogy>foreign key</analogy> to one department.
-1. Refactor the code the generates the employee HTML to display the department name in each representation.
+1. Refactor the code that generates the employee HTML to display the department name in each representation.
 
 The final HTML representation should look like this.
 

@@ -4,8 +4,8 @@ There are three rounds of scores to record. In the round score form component, l
 
 The total number of points entered cannot exceed 3.
 
-When the user saves a round scores, display the form again unless it is the final round.
+When the user saves a round of scores, display the form again unless it is the final round.
 
-Once the score for all three rounds have been recorded, display which team is the winner.
+Once the scores for all three rounds have been recorded, display which team is the winner.
 
 <img src="./images/tf-recording-scores.gif">

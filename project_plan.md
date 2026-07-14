@@ -496,11 +496,12 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 | Book 4: Indiana Jeans | ✓ | 06: "her's" → "hers", "pair a" → "pair of", "boiler plate" → "boilerplate"; 07: missing verb "Open" added, version `0.17.3` → `0.17.4` (install command installs 0.17.4); 09: "Fox y Cat" → "Fox y Dog", algorithm hint list 1,2,3,5,6 → 1,2,3,4,5; 10: code bug — handler checked `"ownJeans"` but radio buttons use `name="ownsJeans"` (fixed both code and description), removed false bullet "Each function logs to console"; 12: "the the" → "the", Key Concepts list 1,2,4 → 1,2,3; 13: "defined the type" → "define the type" |
 | Book 4: Kneel Diamonds | ✓ | 14: "Intead" → "Instead", "vitage" → "vintage"; 16: `database.js` → `database.json`; 17: "Indian Jeans" → "Indiana Jeans", "correct use" → "correctly use", `render` missing `async`; 18: "to to" → "want to", `const optionsHTML +=` → `optionsHTML +=` (syntax error), "`size` parameter" → "`metal` parameter"; 19: "defualt" → "default"; 21: "Diplaying" → "Displaying", missing `await` on `fetchResponse.json()` |
 | Book 4: Cars 'R Us | ✓ | 23: "animataion" → "animation" (alt text), "the follow options" ×3 → "following", "reat" → "rear", "an mentor" → "a mentor"; 24: "displayed...an an" → "displays...as an"; 25: extra "them" removed; 27: `?)__` → `?)_` (stray underscore broke italic close); 28: "paramter" → "parameter", "toLocalString()" → "toLocaleString()" in prose |
-| Book 4: Self-Assessment | — | |
-| Book 4: Explorer chapters | — | |
-| Book 4: Pioneer projects | — | |
-| Book 4: Advanced projects | — | |
-| Book 4: Group Project | — | |
+| Book 4: Self-Assessment | ✓ | 29: list numbering skipped 3 (1,2,4,5,6,7 → 1,2,3,4,5,6) |
+| Book 4: Explorer chapters | ✓ | 31: "representaiton" → "representation", `iPhone2.get(price)` → `get("price")` (unquoted key); 32: "earrings 4x" → "necklace 4x" (copy-paste error); 33: "You seen" → "You've seen", "styles, or metal" → "style, or metal"; 34: second "If a car" → "If a truck" (copy-paste error) |
+| Book 4: Pioneer projects | ✓ | 35: "name, and age" → "name" (no age field in data model); 36: "an 4" → "4", "code the generates" → "that generates"; 37: "refactor you" → "your"; 38: `EmployeeList` missing `async`, duplicate `const response` → `ecResponse`; 39: "relationships" → "relationship", "approrpriately" → "appropriately", "for build" → "for building"; 40: "**Flowers**resource" → "**Flowers** resource"; 42: "Distibutors" × 2 → "Distributors", missing period; 45: URL missing closing `)` in Wikipedia href; 46: "going list" → "going to list", "Workforce ERD" → "Honest Abe ERD"; 47: "Infuential" → "Influential", "going list" → "going to list"; 48–49: "going list" → "going to list"; 50: "you task" → "your task" |
+| Book 4: Advanced projects | ✓ | 51: "an recipient" → "a recipient", missing "a" before textarea; 52: "An new" → "A new", "an mentor" → "a mentor"; 54: "will a national park" → "will be a national park", "fetures" → "features", "to the the latitude" → "to get the latitude" |
+| Book 4: Group Project | ✓ | 55: no errors |
+| Book 4: T&F sub-chapters | ✓ | 56: "are be arranged" → "are to be arranged", "distract a Knight" → "distracts", "Bludgeons" → "Truncheons", "cumulative of" → "cumulative total of"; 58: "one some game score" → "some game scores"; 59: "Create a array" × 3 → "an array"; 62: "immediate display" → "immediately display"; 63: "saves a round scores" → "a round of scores", "the score" → "the scores" |
 | Book 5: Honey Rae's Repair Shop | — | |
 | Book 5: Chuckle Checklist | — | |
 | Book 5: Learning Moments | — | |

@@ -19,7 +19,7 @@ This project is for those who wish to learn the basics of working with forms, an
 **When** the Pen Pal app loads<br/>
 **Then** there should be a <analogy>select</analogy> <analogy>element</analogy> that displays all pen pals to choose for the author
 
-### User can choose an recipient
+### User can choose a recipient
 
 **Given** a pen pal wants to send a letter<br/>
 **When** the Pen Pal app loads<br/>
@@ -35,7 +35,7 @@ This project is for those who wish to learn the basics of working with forms, an
 
 **Given** a pen pal wants to send a letter<br/>
 **When** the Pen Pal app loads<br/>
-**Then** there should be textarea <analogy>element</analogy> in which the user can type in the letter body
+**Then** there should be a textarea <analogy>element</analogy> in which the user can type in the letter body
 
 ### User can save letter
 
