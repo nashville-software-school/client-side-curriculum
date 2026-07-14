@@ -565,7 +565,7 @@ Ex 09 has no video — no change needed.
 
 **B — Iframe/transcript spacing.** On dual-video exercises (ex 11, 12, 15), the first transcript's `</details>` is immediately adjacent to the next `<iframe>` with no breathing room. Also affects the transition between intro text → iframe → transcript on any exercise.
 
-**C — User story containment.** The Learning Moments exercises (ex 24–33) open with a Gherkin-style user story:
+**C — User story containment.** User stories appear in **13 files** across Books 4–5. All use Gherkin-style Given/When/Then format:
 
 ```
 **Given** the user wishes to view...<br>
@@ -573,7 +573,15 @@ Ex 09 has no video — no change needed.
 **Then** the title, topic and number of likes will display...
 ```
 
-These lines have no visual container — no border, background, or spacing that signals "this is the spec you are implementing." Students may not clearly distinguish the story from the surrounding instructions.
+Files:
+- `04-book-4/51-pen-pal-society` — 8 stories (uses `<br/>` variant)
+- `05-book-5/23-learn-wireframe` — 23 stories (wireframe overview for all Learning Moments views)
+- `05-book-5/24–33` (10 exercises) — 1–3 stories each
+- `05-book-5/36-capstone-resources` — stories in a markdown table template (review separately; may not need the same containment treatment)
+
+Minor format variation: `<br>` (Book 5, 51 occurrences) vs `<br/>` (Book 4, 8 occurrences) — renders identically; normalize to `<br>` as part of this pass.
+
+These blocks have no visual container — no border, background, or spacing that signals "this is the spec you are implementing." Students may not clearly distinguish the story from the surrounding instructions.
 
 **Approach — A (global spacing):**
 - Open the running platform and audit spacing across a representative sample: a Setup exercise, a Book 1 exercise, a Book 5 exercise with video, a Book 5 exercise without video
@@ -584,12 +592,11 @@ These lines have no visual container — no border, background, or spacing that 
 - Covered by the global spacing fix if `iframe` and `details` get proper margins; verify on ex 11, 12, 15 after the global pass
 
 **Approach — C (user stories):**
-- Inspect the 6 Learning Moments exercises with user stories to understand format variety
+- Audit the 13 files to confirm all are Given/When/Then and identify edge cases (multi-Then, stories inside lists, etc.)
 - Decide on containment: a `<div class="user-story">` wrapper in the markdown + CSS rule, or a `<blockquote>` with custom styling
-- Check if any other books have similar spec/story blocks that should match
-- Implement and verify in browser
-
-**Open question:** Do user stories appear in Books 1–4? If so, the containment style should be consistent across all books.
+- Review ex 36 (capstone-resources) table format separately — may need table styling rather than story containment
+- Normalize `<br/>` → `<br>` in Book 4 (51-pen-pal-society) as part of this pass
+- Implement and verify in browser across both Book 4 and Book 5
 
 ---
 
