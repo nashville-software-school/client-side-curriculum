@@ -539,17 +539,158 @@ No JavaScript required. Pure HTML.
 
 3. Each exercise gets a unique `name` on its iframe (e.g., `yt-ex01`, `yt-ex02`, ...).
 
-#### Status
+#### Status ✓ COMPLETE (2026-07-14)
 
 - [x] ex 01 (react-basics) — proof-of-concept complete
-- [ ] ex 02–16 (minus ex 03 Screencastify, ex 09 no video) — roll out in next session
+- [x] ex 02–16 (minus ex 03 Screencastify, ex 09 no video) — rolled out via `embed_videos.py` script
 
-#### Remaining Work
+All 13 remaining exercises processed. Each YouTube text link replaced with an embedded `<iframe>`, and all `[M:SS]` transcript timestamps converted to `<a href="...?start=N&autoplay=1" target="yt-exNN">` links. Multi-video exercises (11, 12, 15) received two iframes each; ex 06 also has a second optional-video iframe (`yt-ex06b`).
 
-- Roll out to all 13 remaining Honey Rae's exercises (ex 02, 04–08, 10–16)
-- Ex 03 (Screencastify, no YouTube URL) — stays as clickable thumbnail; no embed possible
-- Ex 09 — no video; no change needed
-- Decide: should the thumbnail image (`./images/*-video.png`) be kept as a fallback below the iframe, or removed entirely?
+Ex 03 (Screencastify) stays as clickable thumbnail — no YouTube URL to embed.
+Ex 09 has no video — no change needed.
+
+---
+
+## Phase 4.5: Polish Pass
+
+*Four improvement areas identified after completing the video embedding work. Independent sessions — no blocking dependencies between them. Recommended order: 1 → 2 → 3 → 4.*
+
+---
+
+### Session 4.5.1: Spacing & Visual Formatting
+
+**Problems:**
+
+**A — General vertical spacing throughout the curriculum.** Spacing between headings, paragraphs, lists, code blocks, and `<details>` blocks is inconsistently tight across the entire curriculum. Sections run together visually. This is a global CSS concern affecting all books.
+
+**B — Iframe/transcript spacing.** On dual-video exercises (ex 11, 12, 15), the first transcript's `</details>` is immediately adjacent to the next `<iframe>` with no breathing room. Also affects the transition between intro text → iframe → transcript on any exercise.
+
+**C — User story containment.** The Learning Moments exercises (ex 24–33) open with a Gherkin-style user story:
+
+```
+**Given** the user wishes to view...<br>
+**When** the user visits...<br>
+**Then** the title, topic and number of likes will display...
+```
+
+These lines have no visual container — no border, background, or spacing that signals "this is the spec you are implementing." Students may not clearly distinguish the story from the surrounding instructions.
+
+**Approach — A (global spacing):**
+- Open the running platform and audit spacing across a representative sample: a Setup exercise, a Book 1 exercise, a Book 5 exercise with video, a Book 5 exercise without video
+- Add/adjust CSS in `src/index.css` targeting the exercise content area for headings, paragraphs, lists, blockquotes, `details`, `code`, `pre`, `img`, and `iframe`
+- Goal: consistent, readable vertical rhythm throughout — sections feel separated, not packed
+
+**Approach — B (iframe/transcript):**
+- Covered by the global spacing fix if `iframe` and `details` get proper margins; verify on ex 11, 12, 15 after the global pass
+
+**Approach — C (user stories):**
+- Inspect the 6 Learning Moments exercises with user stories to understand format variety
+- Decide on containment: a `<div class="user-story">` wrapper in the markdown + CSS rule, or a `<blockquote>` with custom styling
+- Check if any other books have similar spec/story blocks that should match
+- Implement and verify in browser
+
+**Open question:** Do user stories appear in Books 1–4? If so, the containment style should be consistent across all books.
+
+---
+
+### Session 4.5.2: Localhost Link Audit
+
+**Known issues found during reconnaissance:**
+
+| File | Line | Found | Problem |
+|------|------|-------|---------|
+| `05-book-5/26-learn-routes-setup/index.md` | 145, 149 | `localhost:3000/login`, `localhost:3000` | Learning Moments is a Vite app → should be `localhost:5173` |
+| `02-book-2/02-duo-dev-tools-intro/index.md` | 48 | `localhost:3000` | Vite-era content → should be `localhost:5173` |
+| `05-book-5/01-react-basics/index.md` | 77, 81 | `localhost:5173/` | ✓ Correct — student's own Honey Rae's Vite project at root |
+
+**User-reported issue (unconfirmed via grep):** Links in Book 5 that read `localhost:5173/<chapter-path>` instead of `localhost:5173/client-side-curriculum/<chapter-path>`. Since `BASE_URL=client-side-curriculum` in `.env.local`, the dev platform is served at `localhost:5173/client-side-curriculum/`. Any direct link to a platform route that omits the base path will 404. **Ask user to identify the specific file(s) at session start.**
+
+**Session approach:**
+1. Full grep: `grep -rn "localhost" src/sections/ --include="*.md"` — review every result in context
+2. Fix `localhost:3000` → `localhost:5173` where the content refers to Vite-served student projects (Books 2–5). Be careful: some `localhost:3000` refs correctly refer to JSON server, not the student's app.
+3. Fix any `localhost:5173/<path>` → `localhost:5173/client-side-curriculum/<path>` instances
+4. Check Books 1–4 for the same patterns
+
+**Note on JSON server:** Many exercises reference `localhost:8088` (JSON server) — those are correct and should not be changed.
+
+---
+
+### Session 4.5.3: Full Video Audit (Books 1–4 + Setup)
+
+**What was found during reconnaissance:**
+
+| File | Format | Video type | Has transcript? |
+|------|--------|------------|-----------------|
+| `00-setup/02-getting-started-mac/index.md` | `<a href="youtu.be/...">text</a>` ×2 | Short utilities (Rectangle, Git config) | No |
+| `00-setup/04-getting-started-windows-csharp/index.md` | (check) | Unknown | No |
+| `00-setup/05-thinking/index.md` | (check) | Unknown | No |
+| `01-book-1/34-explorer-queen-array-find/index.md` | `<a><img src="video-play-icon.gif"></a>` | Short concept video (~3 min) | No |
+| `01-book-1/38-explorer-bjorn-array-find/index.md` | `<a><img src="video-play-icon.gif"></a>` | Short concept video | No |
+| `02-book-2/07-duo-dom-update/index.md` | `<a><img src="video-play-icon.gif"></a>` | Short concept video | No |
+| `02-book-2/22-explorer-duo-variables/index.md` | (check) | Short concept video | No |
+| `03-book-3/02-dd-erd/index.md` | `<a href="youtu.be/...">text</a>` ×2 + Vimeo thumbnail | External ERD tutorials + NSS walkthrough | No |
+
+**Decision framework for each video:**
+- **Embed as iframe:** Only if we're also going to add a transcript. A bare iframe (no transcript) is no better than a clickable thumbnail link.
+- **Worth adding a transcript:** Yes, if the video is NSS-authored primary instruction. No, if it's a short supplementary utility video or external third-party content.
+- **Leave as text/thumbnail link:** For short utilities, external tutorials, and any video < ~5 minutes where a transcript adds minimal navigation value.
+
+**Recommended decisions (to confirm during session):**
+- Setup utility videos → leave as text links (not NSS-authored, short, not instructional)
+- Books 1–2 `.find()` / DOM update explorer videos → use yt-dlp to get duration and topic. If short and supplementary, leave as thumbnails. If longer and instructional, consider transcripts.
+- Book 3 ERD videos → external tutorials → leave as text links; Vimeo walkthrough can't be embedded via YouTube iframe, leave as thumbnail
+- **Action:** Run `yt-dlp --get-duration` on each video ID to get lengths before deciding
+
+**Session approach:**
+1. Check the 3 remaining unverified Setup files (04, 05) for video format
+2. Get video durations via `yt-dlp --get-duration`
+3. Make embed/skip decision for each
+4. For any chosen for embedding: extract transcript via yt-dlp VTT, embed, convert timestamps (same process as Book 5)
+
+---
+
+### Sessions 4.5.4–4.5.X: Transcript Readability
+
+**Problem:** All 14 Book 5 video transcripts are raw speech-to-text output — no punctuation, no capitalization, no paragraph breaks beyond the `[M:SS]` markers, and no section headers. Wall-of-text format is difficult to read and impossible to skim.
+
+**Two improvements:**
+1. **Punctuation & capitalization** — Add periods, commas, sentence capitalization (preserve the exact words)
+2. **Topic section headers** — Insert `### [Topic]` headings at natural topic transitions to allow quick navigation
+
+**Scope:**
+
+| Exercise | Video(s) | Est. length |
+|----------|----------|-------------|
+| ex 01 | React Dev Tools | ~4 min |
+| ex 02 | First Component | ~12 min |
+| ex 04 | Wireframe Walkthrough | ~4 min |
+| ex 05 | All Tickets | ~12 min |
+| ex 06a | Ticket Assignee | ~14 min |
+| ex 06b | Alternative Solution | ~9 min |
+| ex 07 | Search Tickets | ~6 min |
+| ex 08 | Customer List | ~8 min |
+| ex 10 | Intro to Routes | ~11 min |
+| ex 11a | useParams Hook | ~17 min |
+| ex 11b | Customer Details | ~10 min |
+| ex 12a | Authentication Setup | ~17 min |
+| ex 12b | Claim vs Close | ~13 min |
+| ex 13 | Employee Form | ~8 min |
+| ex 14 | Employee vs Customer | ~9 min |
+| ex 15a | Customer Tickets | ~7 min |
+| ex 15b | Customer Ticket Buttons | ~7 min |
+| ex 16 | Create Ticket | ~5 min |
+
+**Approach: AI-assisted per transcript, human-reviewed**
+1. For each transcript block, pass the raw text to Claude: "Add punctuation and sentence capitalization. Preserve the exact words. Identify 3–5 natural topic transitions and insert `### [Topic]` headers."
+2. Human reviews and accepts/edits the output
+3. Paste final text back into the `<details>` block — timestamp links are unaffected (they're HTML not plain text)
+4. Verify timestamps still link correctly after the edit
+
+**Decision needed before starting:** Should words be preserved exactly (punctuation only), or is light paraphrasing acceptable to fix filler/repetition?
+
+**Suggested session order:** Longest transcripts first (ex 12a, ex 11a, ex 12b, ex 11b). Short ones (ex 01, ex 04, ex 16) can be batched in one session.
+
+**Note:** This is independent of 4.5.1 and 4.5.2 and can run in parallel.
 
 ---
 
