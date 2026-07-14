@@ -62,7 +62,7 @@ Would you like the Head Coach of Dad Jokes to be the logo of your app? If so, fo
    import stevePic from "./assets/steve.png"
    ```
 3. Paste this code inside your `app-heading` div (if you're using the styles given to you) and above the "Chuckle Checklist" heading. 
-   ```javascript
+   ```jsx
    <div className="app-heading-circle">
       <img className="app-logo" src={stevePic} alt="Good job Steve" />
     </div>

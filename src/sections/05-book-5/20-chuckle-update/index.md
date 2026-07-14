@@ -41,7 +41,7 @@ Try implementing this code on your own. If you get stuck, reference previous cod
   <summary><b><i>The Action</i></b></summary>
 
   Write a function to pass to the `onClick` of the buttons. This function should accept a joke as a parameter. It's responsibility will be to create an editedJoke object to pass to the edit joke function from the `jokeService`. 
-  All the property values should remain the same expect for the `told` property. If told is `true`, it should change to `false`. If told it `false`, it should change to `true`. _Remember the `!` operator will convert a value to it's opposite boolean._
+  All the property values should remain the same except for the `told` property. If told is `true`, it should change to `false`. If told is `false`, it should change to `true`. _Remember the `!` operator will convert a value to its opposite boolean._
   <br>
   Post that edited joke! Don't forget to get your new list of jokes from the database after posting.
 </details>
