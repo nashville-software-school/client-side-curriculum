@@ -673,9 +673,9 @@ Ex 09 has no video — no change needed.
 | ex 12a | `12-repair-claim-vs-close/index.md` | ✓ COMPLETE | Setting Up the Auth Script / Reviewing the Login and Register Components / Adding Routes for Login and Register / Protecting Routes with the Authorized Component / Testing Auth Flow and Adding Logout / Storing the Current User in State |
 | ex 12b | `12-repair-claim-vs-close/index.md` | ✓ COMPLETE | Overview: Claim and Close Logic / Adding the Button Container / Passing currentUser Down via Prop Drilling / Writing the Claim Button / Writing the Close Button / Implementing handleClaim and assignedTicket / Testing Claim and Introducing getAndSetTickets / Implementing handleClose / Recap: Claim, Close, and Prop Drilling |
 | ex 11a | `11-repair-cust-details/index.md` | ✓ COMPLETE | Building the Welcome Component / Using the Index Route / Wrapping Customers with Links / Setting Up Route Parameters / The useParams Hook / How Route Parameters and useParams Work Together |
-| ex 11b | `11-repair-cust-details/index.md` | ◑ IN PROGRESS — 0 of 15 paragraphs done | Overview: What Customer Details Needs / Understanding the Data / Building the Fetch Function / Setting Up State and useEffect / Building the JSX / Fixing the Array Issue / Recap |
-| ex 02 | `02-repair-first-component/index.md` | ○ pending | |
-| ex 05 | `05-repair-all-tickets/index.md` | ○ pending | |
+| ex 11b | `11-repair-cust-details/index.md` | ✓ COMPLETE | Overview: What Customer Details Needs / Understanding the Data / Building the Fetch Function / Setting Up State and useEffect / Building the JSX / Fixing the Array Issue / Recap |
+| ex 02 | `02-repair-first-component/index.md` | ✓ COMPLETE | Introduction and JSX Basics / JSX Rules: Parent Elements and Fragments / Adding a Button with onClick / Tracking State with useState / The Setter Function and React Dev Tools |
+| ex 05 | `05-repair-all-tickets/index.md` | ✓ COMPLETE | Setting Up Services and Fetching Tickets / Introducing useEffect to Prevent Infinite Re-renders / Building the Ticket JSX / Filtering Tickets with a Toggle / Managing filteredTickets and the Component Lifecycle |
 | ex 06a | `06-repair-ticket-assignee/index.md` | ○ pending | |
 | ex 06b | `06-repair-ticket-assignee/index.md` | ○ pending | |
 | ex 08 | `08-repair-customer-list/index.md` | ○ pending | |
