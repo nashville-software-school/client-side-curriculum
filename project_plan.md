@@ -590,37 +590,34 @@ Ex 09 has no video — no change needed.
 
 ---
 
-### Session 4.5.3: Full Video Audit (Books 1–4 + Setup)
+### Session 4.5.3: Full Video Audit (Books 1–4 + Setup) ✓ COMPLETE (2026-07-14)
 
-**What was found during reconnaissance:**
+**Complete video inventory with durations (yt-dlp):**
 
-| File | Format | Video type | Has transcript? |
-|------|--------|------------|-----------------|
-| `00-setup/02-getting-started-mac/index.md` | `<a href="youtu.be/...">text</a>` ×2 | Short utilities (Rectangle, Git config) | No |
-| `00-setup/04-getting-started-windows-csharp/index.md` | (check) | Unknown | No |
-| `00-setup/05-thinking/index.md` | (check) | Unknown | No |
-| `01-book-1/34-explorer-queen-array-find/index.md` | `<a><img src="video-play-icon.gif"></a>` | Short concept video (~3 min) | No |
-| `01-book-1/38-explorer-bjorn-array-find/index.md` | `<a><img src="video-play-icon.gif"></a>` | Short concept video | No |
-| `02-book-2/07-duo-dom-update/index.md` | `<a><img src="video-play-icon.gif"></a>` | Short concept video | No |
-| `02-book-2/22-explorer-duo-variables/index.md` | (check) | Short concept video | No |
-| `03-book-3/02-dd-erd/index.md` | `<a href="youtu.be/...">text</a>` ×2 + Vimeo thumbnail | External ERD tutorials + NSS walkthrough | No |
+| File | Video | Duration | Decision |
+|------|-------|----------|----------|
+| `00-setup/02-getting-started-mac` | Rectangle (`tFeDyqZG4z4`) | 9:11 | Leave — external tutorial |
+| `00-setup/02-getting-started-mac` | Git Config Dir (`exva3J_jojc`) | 1:57 | Leave — short utility, mentor section |
+| `00-setup/04-getting-started-windows-csharp` | Git global config (`66EB9oxGMzQ`) | 1:24 | Leave — short utility |
+| `00-setup/04-getting-started-windows-csharp` | Creating SSH key (`znRMcNG9_qQ`) | 1:58 | Leave — short utility |
+| `00-setup/04-getting-started-windows-csharp` | SSH key → GitHub (`8hlmIObpMd4`) | 2:05 | Leave — short utility |
+| `00-setup/05-thinking` | Andy Harris (`azcrPFhaY9k`) | 1:00:07 | Leave — external |
+| `00-setup/05-thinking` | Joel Rivera (`XpulVva97eU`) | 9:21 | Leave — external |
+| `00-setup/05-thinking` | Forrest Knight (`NNazO2tMHno`) | 11:10 | Leave — external |
+| `01-book-1/34-explorer-queen-array-find` | `.find()` (`N1QcR8F3xFY`) | 2:55 | Leave — too short for transcript |
+| `01-book-1/38-explorer-bjorn-array-find` | `.filter()` (`3LOEGS4qcRM`) | 5:44 | Leave — optional explorer, supplementary |
+| `02-book-2/07-duo-dom-update` | innerHTML/textContent (`1UsllDMhvN4`) | 4:38 | Leave — < 5 min, supplementary |
+| `02-book-2/22-explorer-duo-variables` | Ref vs Value (`-hBJz2PPIVE`) | 15:11 | Leave — external (not NSS-authored) |
+| `03-book-3/02-dd-erd` | ERD Tutorial pt 1 (`QpdhBUYk7Kk`) | 6:57 | Leave — external (Lucidchart) |
+| `03-book-3/02-dd-erd` | ERD Tutorial pt 2 (`-CuY5ADwn24`) | 13:50 | Leave — external (Lucidchart) |
+| `03-book-3/02-dd-erd` | NSS ERD walkthrough (Vimeo `520416989`) | — | Leave — Vimeo, can't embed as YouTube iframe |
+| `04-book-4/16-kd-erd` | KD ERD hint (Vimeo `523171683`) | — | Leave — Vimeo, last-resort hint only |
 
-**Decision framework for each video:**
-- **Embed as iframe:** Only if we're also going to add a transcript. A bare iframe (no transcript) is no better than a clickable thumbnail link.
-- **Worth adding a transcript:** Yes, if the video is NSS-authored primary instruction. No, if it's a short supplementary utility video or external third-party content.
-- **Leave as text/thumbnail link:** For short utilities, external tutorials, and any video < ~5 minutes where a transcript adds minimal navigation value.
+**Result: No video changes made.** All 16 videos fall into the "leave as-is" category — external content, sub-5-minute utilities, or Vimeo videos that can't use YouTube `<iframe>`. The 3 NSS-authored thumbnail videos (`.find()`, `.filter()`, `innerHTML`) are too short or too supplementary to warrant transcript work.
 
-**Recommended decisions (to confirm during session):**
-- Setup utility videos → leave as text links (not NSS-authored, short, not instructional)
-- Books 1–2 `.find()` / DOM update explorer videos → use yt-dlp to get duration and topic. If short and supplementary, leave as thumbnails. If longer and instructional, consider transcripts.
-- Book 3 ERD videos → external tutorials → leave as text links; Vimeo walkthrough can't be embedded via YouTube iframe, leave as thumbnail
-- **Action:** Run `yt-dlp --get-duration` on each video ID to get lengths before deciding
-
-**Session approach:**
-1. Check the 3 remaining unverified Setup files (04, 05) for video format
-2. Get video durations via `yt-dlp --get-duration`
-3. Make embed/skip decision for each
-4. For any chosen for embedding: extract transcript via yt-dlp VTT, embed, convert timestamps (same process as Book 5)
+**Decision framework used:**
+- **Embed + transcript:** Only for NSS-authored primary instruction. A bare iframe (no transcript) adds no value over a thumbnail.
+- **Leave as text/thumbnail link:** External tutorials, short utilities (< 5 min), supplementary/optional content, Vimeo.
 
 ---
 
@@ -661,11 +658,36 @@ Ex 09 has no video — no change needed.
 3. Paste final text back into the `<details>` block — timestamp links are unaffected (they're HTML not plain text)
 4. Verify timestamps still link correctly after the edit
 
-**Decision needed before starting:** Should words be preserved exactly (punctuation only), or is light paraphrasing acceptable to fix filler/repetition?
+**Decision (2026-07-14):** Exact words only — punctuation and capitalization only; no words added, removed, or changed. Filler words and repetition stay in.
+
+**Approach:** Single-paragraph Edit replacements are reliable for these files; multi-paragraph matches spanning blank lines are unreliable due to subtle encoding/whitespace variations. Match one paragraph at a time.
 
 **Suggested session order:** Longest transcripts first (ex 12a, ex 11a, ex 12b, ex 11b). Short ones (ex 01, ex 04, ex 16) can be batched in one session.
 
 **Note:** This is independent of 4.5.1 and 4.5.2 and can run in parallel.
+
+**Session log:**
+
+| Exercise | File | Status | Topic headers |
+|----------|------|--------|---------------|
+| ex 12a | `12-repair-claim-vs-close/index.md` | ✓ COMPLETE | Setting Up the Auth Script / Reviewing the Login and Register Components / Adding Routes for Login and Register / Protecting Routes with the Authorized Component / Testing Auth Flow and Adding Logout / Storing the Current User in State |
+| ex 12b | `12-repair-claim-vs-close/index.md` | ✓ COMPLETE | Overview: Claim and Close Logic / Adding the Button Container / Passing currentUser Down via Prop Drilling / Writing the Claim Button / Writing the Close Button / Implementing handleClaim and assignedTicket / Testing Claim and Introducing getAndSetTickets / Implementing handleClose / Recap: Claim, Close, and Prop Drilling |
+| ex 11a | `11-repair-cust-details/index.md` | ✓ COMPLETE | Building the Welcome Component / Using the Index Route / Wrapping Customers with Links / Setting Up Route Parameters / The useParams Hook / How Route Parameters and useParams Work Together |
+| ex 11b | `11-repair-cust-details/index.md` | ◑ IN PROGRESS — 0 of 15 paragraphs done | Overview: What Customer Details Needs / Understanding the Data / Building the Fetch Function / Setting Up State and useEffect / Building the JSX / Fixing the Array Issue / Recap |
+| ex 02 | `02-repair-first-component/index.md` | ○ pending | |
+| ex 05 | `05-repair-all-tickets/index.md` | ○ pending | |
+| ex 06a | `06-repair-ticket-assignee/index.md` | ○ pending | |
+| ex 06b | `06-repair-ticket-assignee/index.md` | ○ pending | |
+| ex 08 | `08-repair-customer-list/index.md` | ○ pending | |
+| ex 10 | `10-repair-routes-intro/index.md` | ○ pending | |
+| ex 13 | `13-repair-employee-edit/index.md` | ○ pending | |
+| ex 14 | `14-repair-employee-vs-customer/index.md` | ○ pending | |
+| ex 15a | `15-repair-customer-tickets/index.md` | ○ pending | |
+| ex 15b | `15-repair-customer-tickets/index.md` | ○ pending | |
+| ex 07 | `07-repair-search-tickets/index.md` | ○ pending | |
+| ex 01 | `01-react-basics/index.md` | ○ pending | |
+| ex 04 | `04-repair-wireframe/index.md` | ○ pending | |
+| ex 16 | `16-repair-create-ticket/index.md` | ○ pending | |
 
 ---
 
