@@ -218,6 +218,7 @@ Work **one chapter at a time** per session:
 - **Explorer/Pioneer `previousChapterId` navigation:** Should the first exercise of an Explorer or Pioneer chapter point back to the last exercise of the chapter it expands, or continue chaining linearly through the Self-Assessment?
 - Should Explorer and Pioneer chapters appear in the primary nav alongside core chapters, or in a separate "challenge" track? (Deferred to Phase 2 decision.)
 - Should the concept map drive which exercises need content review? (Relevant to Phase 7.)
+- **Cross-chapter link base URL bug (nss-core fix needed):** 44 absolute `/chapter_id` links across 12 files render as plain `<a>` tags and navigate outside the Vite base path (`/client-side-curriculum/`), causing 404s. Fix: nss-core's `Chapter` component should post-process rendered HTML to prepend `baseUrl` to any `href` starting with `/`. See `platform/memory/cross_chapter_links_base_url.md` for full spec. Interim workaround: prepend `/client-side-curriculum/` to all 44 link href values in the markdown (fragile — not recommended).
 
 ---
 
