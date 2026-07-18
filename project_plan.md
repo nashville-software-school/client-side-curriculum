@@ -23,6 +23,7 @@ This document is the guiding reference for restructuring the NSS client-side cur
   3. **`curriculum_map.md`** — verify IDs are correct (usually no changes needed, but confirm)
   - Then update the memory file at `.claude/projects/.../memory/project_curriculum_restructure.md` with what was done and what comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
 - **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry.
+- **Transcript editing: one topic section per session.** When editing a transcript and the current topic section is complete (i.e., you reach the boundary where the next `### [Topic]` header gets inserted), stop work, update project_plan.md and memory with the partial progress, and tell the user you are ready for `/clear`. Begin the next topic section in the following session.
 - **Completed project reference.** When questions arise about a specific exercise — expected output, correct variable names, intended code structure — refer to `/home/gmkorte/workspace/client-side` for a completed working example of the full course project.
 - **Curl script boilerplate is the starting state.** Most chapters begin with a `curl` command that scaffolds the boilerplate for that exercise. That scaffolded code is the canonical starting point for the student. When evaluating whether code examples, variable names, or expected output in an exercise are correct, treat the curl script's output as the ground truth for the starting state, and the completed project at `/home/gmkorte/workspace/client-side` as the ground truth for the end state.
 
@@ -297,6 +298,7 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 ---
 
 ## Phase 2b: Course Landing Page
+
 
 *Motivation: long course repositories like this one have a meaningful README that serves as the student-facing introduction to the course — its goals, structure, and what students will build. Currently the platform's intro page is a generic animated screen with a "Start Learning!" button and no course-specific content. Surfacing the README as the actual landing page makes the first impression intentional and course-specific.*
 
@@ -676,10 +678,10 @@ Ex 09 has no video — no change needed.
 | ex 11b | `11-repair-cust-details/index.md` | ✓ COMPLETE | Overview: What Customer Details Needs / Understanding the Data / Building the Fetch Function / Setting Up State and useEffect / Building the JSX / Fixing the Array Issue / Recap |
 | ex 02 | `02-repair-first-component/index.md` | ✓ COMPLETE | Introduction and JSX Basics / JSX Rules: Parent Elements and Fragments / Adding a Button with onClick / Tracking State with useState / The Setter Function and React Dev Tools |
 | ex 05 | `05-repair-all-tickets/index.md` | ✓ COMPLETE | Setting Up Services and Fetching Tickets / Introducing useEffect to Prevent Infinite Re-renders / Building the Ticket JSX / Filtering Tickets with a Toggle / Managing filteredTickets and the Component Lifecycle |
-| ex 06a | `06-repair-ticket-assignee/index.md` | ○ pending | |
-| ex 06b | `06-repair-ticket-assignee/index.md` | ○ pending | |
-| ex 08 | `08-repair-customer-list/index.md` | ○ pending | |
-| ex 10 | `10-repair-routes-intro/index.md` | ○ pending | |
+| ex 06a | `06-repair-ticket-assignee/index.md` | ✓ COMPLETE | Creating the TicketList Component / Creating the Ticket Component / Passing Props to Child Components / React Dev Tools and the Key Prop Warning / Fetching Employees: Embed vs Expand / Setting Up State and Finding the Assigned Employee / Rendering the Assignee Name |
+| ex 06b | `06-repair-ticket-assignee/index.md` | ✓ COMPLETE | Overview / Building the getEmployeeById Service / Debugging the Empty Object Bug |
+| ex 08 | `08-repair-customer-list/index.md` | ✓ COMPLETE | Overview and Wireframe Review / Building the User Service / Creating the CustomerList Component / Testing the CustomerList in the Browser / Rendering Customers as JSX / Creating a Reusable User Component / Passing Props and Viewing the Component Tree |
+| ex 10 | `10-repair-routes-intro/index.md` | ✓ COMPLETE | Overview: Current Components and Introducing BrowserRouter / Defining Routes / Building the NavBar with the Link Component / Persisting the NavBar with a Parent Route / The Outlet Component / Adding the Customers Route |
 | ex 13 | `13-repair-employee-edit/index.md` | ○ pending | |
 | ex 14 | `14-repair-employee-vs-customer/index.md` | ○ pending | |
 | ex 15a | `15-repair-customer-tickets/index.md` | ○ pending | |
