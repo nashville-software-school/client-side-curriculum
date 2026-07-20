@@ -144,7 +144,8 @@ The platform package must be symlinked before changes here will reflect in the U
 
 ```sh
 # In the platform repo — build and register the local package
-cd /home/gmkorte/workspace/nss/curriculum/platform
+# (see the CLAUDE.md contributor table for this repo's local path)
+cd /path/to/nss-core/platform
 npm run build && npm link
 
 # In this repo — point to the local build

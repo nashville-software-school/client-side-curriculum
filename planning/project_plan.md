@@ -6,9 +6,8 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ---
 
 ## Source Reference
-- **Local repo:** `/home/gmkorte/workspace/nss/curriculum/client-side-curriculum`
+- **Local paths** (this repo, the `nss-core` platform repo, the completed-project reference): see the contributor table in [`CLAUDE.md`](../CLAUDE.md) — identify the current contributor via `git config user.name`/`user.email` rather than assuming a single hardcoded path.
 - **GitHub reference:** https://github.com/nashville-software-school/client-side-mastery
-- **nss-core reference:** `/home/gmkorte/workspace/nss/curriculum/platform`
 - Use the GitHub repo as a structural guide for content; it is not the source of truth for the new ID/chapter organization.
 
 ---
@@ -16,16 +15,16 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ## How We Work
 
 - Work **one chapter at a time** per session to keep context clean and changes focused.
-- At the start of every session, read `project_plan.md` and the relevant memory files before touching any code.
+- At the start of every session, read `project_plan.md`, [`CLAUDE.md`](../CLAUDE.md) (shared content conventions), and the relevant memory files before touching any code.
 - At the end of every session, update all three governing documents as needed before running `/clear`:
   1. **`project_plan.md`** — mark the session complete, advance "next" to the following session
   2. **`concept_map.md`** — review exercises just completed; add missing terms, update Reinforced In, mark chapter as Reviewed ✓, flag any inconsistencies with ⚠️
   3. **`curriculum_map.md`** — verify IDs are correct (usually no changes needed, but confirm)
   - Then update the memory file at `.claude/projects/.../memory/project_curriculum_restructure.md` with what was done and what comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
-- **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry.
+- **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry. See [`CLAUDE.md`](../CLAUDE.md) → "What's tracked here vs. private memory" for the general rule on what belongs in this repo versus private memory.
 - **Transcript editing: one topic section per session.** When editing a transcript and the current topic section is complete (i.e., you reach the boundary where the next `### [Topic]` header gets inserted), stop work, update project_plan.md and memory with the partial progress, and tell the user you are ready for `/clear`. Begin the next topic section in the following session.
-- **Completed project reference.** When questions arise about a specific exercise — expected output, correct variable names, intended code structure — refer to `/home/gmkorte/workspace/client-side` for a completed working example of the full course project.
-- **Curl script boilerplate is the starting state.** Most chapters begin with a `curl` command that scaffolds the boilerplate for that exercise. That scaffolded code is the canonical starting point for the student. When evaluating whether code examples, variable names, or expected output in an exercise are correct, treat the curl script's output as the ground truth for the starting state, and the completed project at `/home/gmkorte/workspace/client-side` as the ground truth for the end state.
+- **Completed project reference.** When questions arise about a specific exercise — expected output, correct variable names, intended code structure — refer to the completed-project path in the [`CLAUDE.md`](../CLAUDE.md) contributor table for a working example of the full course project.
+- **Curl script boilerplate is the starting state.** Most chapters begin with a `curl` command that scaffolds the boilerplate for that exercise. That scaffolded code is the canonical starting point for the student. When evaluating whether code examples, variable names, or expected output in an exercise are correct, treat the curl script's output as the ground truth for the starting state, and the completed project (see [`CLAUDE.md`](../CLAUDE.md)) as the ground truth for the end state.
 
 ---
 
@@ -682,14 +681,14 @@ Ex 09 has no video — no change needed.
 | ex 06b | `06-repair-ticket-assignee/index.md` | ✓ COMPLETE | Overview / Building the getEmployeeById Service / Debugging the Empty Object Bug |
 | ex 08 | `08-repair-customer-list/index.md` | ✓ COMPLETE | Overview and Wireframe Review / Building the User Service / Creating the CustomerList Component / Testing the CustomerList in the Browser / Rendering Customers as JSX / Creating a Reusable User Component / Passing Props and Viewing the Component Tree |
 | ex 10 | `10-repair-routes-intro/index.md` | ✓ COMPLETE | Overview: Current Components and Introducing BrowserRouter / Defining Routes / Building the NavBar with the Link Component / Persisting the NavBar with a Parent Route / The Outlet Component / Adding the Customers Route |
-| ex 13 | `13-repair-employee-edit/index.md` | ○ pending | |
-| ex 14 | `14-repair-employee-vs-customer/index.md` | ○ pending | |
-| ex 15a | `15-repair-customer-tickets/index.md` | ○ pending | |
-| ex 15b | `15-repair-customer-tickets/index.md` | ○ pending | |
-| ex 07 | `07-repair-search-tickets/index.md` | ○ pending | |
-| ex 01 | `01-react-basics/index.md` | ○ pending | |
+| ex 13 | `13-repair-employee-edit/index.md` | ✓ COMPLETE | Adding the Profile Link and Route / Building the Employee Form JSX / Fetching the Current User and Employee / Storing the Employee in State / Debugging the Undefined Current User Bug / Populating Inputs and Wiring Up onChange Handlers / Writing handleSave and Preventing Default Submission / Building and Saving the Updated Employee Object / Navigating After Save and Recap |
+| ex 14 | `14-repair-employee-vs-customer/index.md` | ✓ COMPLETE | Recap and Planning: Employee Views vs Customer Views / Creating the EmployeeViews Component / Setting Up the Ternary for Employee vs Customer Rendering / Testing Employee and Customer Login / Building the CustomerViews Routes / Testing the Customer Home Route and Choosing a NavBar Approach / Renaming to EmployeeNav and Creating CustomerNav / Rendering CustomerNav and Testing the Full Flow / Recap |
+| ex 15a | `15-repair-customer-tickets/index.md` | ✓ COMPLETE | Overview: Wireframe Differences for Customer Tickets / Adding the Tickets Link to the Nav Bar / Adding the Tickets Route and Reusing TicketList / Passing currentUser to CustomerViews / Filtering Tickets for the Current User / Testing with a Multi-Ticket Customer / Debugging the Refresh Bug / Fixing the Dependency Array and Recap |
+| ex 15b | `15-repair-customer-tickets/index.md` | ✓ COMPLETE | Overview: New Buttons for the Customer Ticket View / Wrapping the Conditional Buttons in a Fragment / Adding the Customer Ticket Buttons / Adding Toggle State for the Open Tickets Button / Filtering Tickets by Open Status with useEffect / Implementing the Delete Button / Adding a Delete Ticket Service Function / Rendering the Delete Button / An Alternate Way to Write the Conditional / Wiring Up the Delete Handler |
+| ex 07 | `07-repair-search-tickets/index.md` | ✓ COMPLETE | Adding the Search Input and Filter Bar / Capturing the Search Term in State / Filtering Tickets with useEffect / Testing the Search Filter / Extracting the TicketFilterBar Component / Passing State Setters as Props / Testing the Completed Filter Bar and Recap |
+| ex 01 | `01-react-basics/index.md` | ✓ COMPLETE | Introducing React Developer Tools / Exploring the Components Tab / Inspecting State with the Home Component / Wrap-Up |
 | ex 04 | `04-repair-wireframe/index.md` | ○ pending | |
-| ex 16 | `16-repair-create-ticket/index.md` | ○ pending | |
+| ex 16 | `16-repair-create-ticket/index.md` | ✓ COMPLETE | Setting Up Navigation to the Create Ticket Form / Adding Routes for Creating a Ticket / Building the Ticket Form JSX / Capturing the Description Input in State / Capturing the Emergency Checkbox and Setting Default State / Creating the createTicket Service Function and Adding Validation / Building the New Ticket Object with Prop-Drilled currentUser / Navigating After Save and Fixing the Page Refresh Bug |
 
 ---
 
