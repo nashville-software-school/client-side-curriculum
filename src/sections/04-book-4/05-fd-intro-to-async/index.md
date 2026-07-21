@@ -189,6 +189,4 @@ In this chapter, we've:
 
 ## 🔜 Next Steps
 
-In modern JavaScript, `async/await` is generally preferred for its readability and ease of use, but understanding both approaches will help you <analogy>read</analogy> and work with all kinds of JavaScript code. As we continue in this book we will use the `async/await` approach for the projects. However, you will encounter `.then()` again once you get to the <analogy>React</analogy> coursework as certain <analogy>React</analogy> functions don't allow the `async/await` approach. 
-
-[Table of Contents](../README.md)
+In modern JavaScript, `async/await` is generally preferred for its readability and ease of use, but understanding both approaches will help you <analogy>read</analogy> and work with all kinds of JavaScript code. As we continue in this book we will use the `async/await` approach for the projects. However, you will encounter `.then()` again once you get to the <analogy>React</analogy> coursework as certain <analogy>React</analogy> functions don't allow the `async/await` approach.

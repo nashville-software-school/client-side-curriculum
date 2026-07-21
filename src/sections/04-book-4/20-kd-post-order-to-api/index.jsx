@@ -5,6 +5,6 @@ export default {
     title: "Saving Orders to Permanent State",
     previousChapterId: "book_4_kneel_diamonds_change_events",
     nextChapterId: "book_4_kneel_diamonds_custom_event",
-    chapterGroup: "Kneel Diamonds",
+    chapterGroup: "💎 Kneel Diamonds",
     content,
 }

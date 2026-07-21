@@ -11,7 +11,7 @@ These videos were recorded before a change to the course. There will be a few di
 
 Keep these differences in mind as you follow along in this course.
 
-Watch the [First Component](https://youtu.be/-WMvlULvBeU) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
+Watch the <a href="https://youtu.be/-WMvlULvBeU" target="_blank" rel="noopener noreferrer">First Component</a> video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
  
 ## Component Structure and <analogy>JSX</analogy>
 You've been writing React-like components in vanilla JS, you just didn't know it! Take this code from _Tour Some Sugar On Me_ for example:
@@ -146,5 +146,3 @@ In essence, `useState` simplifies and streamlines the way we handle <analogy>sta
 > **<analogy>React</analogy> Hooks:** Functions provided by the <analogy>React</analogy> library (prefixed with "use") that allow you to "<analogy>hook</analogy>" into <analogy>state</analogy> and lifecycle features of <analogy>components</analogy>.
 
 > **<analogy>useState</analogy>:** A crucial <analogy>React</analogy> Hook that empowers you to introduce <analogy>state</analogy> to a <analogy>component</analogy>. It takes an initial value as its argument and returns an array. This array contains the state value (index 0) and a function (index 1) to modify that state.
-
-Up Next: [Setting up the API](./REPAIR_API.md)

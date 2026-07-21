@@ -6,7 +6,7 @@ In this final part of Honest Abe, you task is to list all politicians along with
 * PACs that have donated to the politician's campaign.
 * Corporate influencers. Influencing corporations share the same interests as the politician's legislation, and have contributed to PACs that have contributed to the politician.
 
-> **HINT:** We will give you **one** hint. You will need to use the [`Promise.all()`](https://attacomsian.com/blog/promise-all-javascript) method to [resolve multiple fetch](https://appdividend.com/2019/01/03/javascript-promise-all-example-promise-all-tutorial/) calls at the same time.
+> **HINT:** We will give you **one** hint. You will need to use the <a href="https://attacomsian.com/blog/promise-all-javascript" target="_blank" rel="noopener noreferrer">`Promise.all()`</a> method to <a href="https://appdividend.com/2019/01/03/javascript-promise-all-example-promise-all-tutorial/" target="_blank" rel="noopener noreferrer">resolve multiple fetch</a> calls at the same time.
 
 ```html
 <article class="politicians">

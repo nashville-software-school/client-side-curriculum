@@ -251,4 +251,6 @@ Then run the `serve` command in your <analogy>terminal</analogy> and open the UR
 
 On to the next chapter to write your first `fetch()` <analogy>function</analogy> to get remote data from the Web.
 
-Up Next: [First We "Fetch"](./FD_INTRO_TO_FETCH.md)
+## 🔜 Next Steps
+
+In the next chapter, you'll write your first `fetch()` <analogy>function</analogy> to get remote data from the Web.

@@ -79,7 +79,7 @@ The `.join()` <analogy>array</analogy> method, luckily, does exactly what its na
 
 More specifically, it join **all** of the individual items in the <analogy>array</analogy> into a single <analogy>string</analogy>... all squished together.
 
-![](./images/array-join-method-demo.gif)
+<img src="./images/array-join-method-demo.gif">
 
 If you join the strings in this <analogy>array</analogy>...
 

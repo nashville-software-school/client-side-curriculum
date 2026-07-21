@@ -5,7 +5,7 @@
 ### ⚠️ Note on the video: 
 This video instructs you to make the file `components/customers/CustomerDetails.js`. Make sure your file ends in `.jsx` instead of `.js`.
 
-First, watch the introduction to the [useParams hook](https://youtu.be/fPfQ4JjPQps?si=BvCeRUgf9YvKZpkD) video and implement the code yourself. Next, watch the [Customer Details](https://youtu.be/aiVEFIHDj4k?si=32JIaDbJwxbJ1P3I) video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
+First, watch the introduction to the <a href="https://youtu.be/fPfQ4JjPQps?si=BvCeRUgf9YvKZpkD" target="_blank" rel="noopener noreferrer">useParams hook</a> video and implement the code yourself. Next, watch the <a href="https://youtu.be/aiVEFIHDj4k?si=32JIaDbJwxbJ1P3I" target="_blank" rel="noopener noreferrer">Customer Details</a> video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>
@@ -373,5 +373,3 @@ Time to code to learn! Write the routing functionality for the Employees Details
 > **<analogy>Route Params</analogy>:**  Placeholders in the URL that begin with a colon `:`. 
 
 > **<analogy>useParams</analogy>:** A <analogy>hook</analogy> from the react-router-dom library that returns the <analogy>route</analogy> parameter as a key/value pair on an object. The key being the route parameter defined for the Route that rendered the component and the value being the value in the url at the position the route parameter was defined. 
-
-Up Next: [Introducing authentication](./REPAIR_CLAIM_VS_CLOSE.md)

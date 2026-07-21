@@ -11,7 +11,7 @@ Unfortunately, the overseas developer had an unfortunate noodle-related accident
 
 Here's what the output of the application should look like.
 
-![](./images/deshawn-final.png)
+<img src="./images/deshawn-final.png">
 
 ## Setup
 

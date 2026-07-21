@@ -9,7 +9,7 @@ This is accomplished by using the <analogy>innerHTML</analogy> property of any H
 You can watch a brief video that shows how the `.innerHTML` and `.textContent` properties of HTML elements work.
 
 
-[<img src="../../book-1-queen-bee/chapters/images/video-play-icon.gif" height="75rem" />](https://www.youtube.com/watch?v=1UsllDMhvN4)
+<a href="https://www.youtube.com/watch?v=1UsllDMhvN4" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
 
 ## Updating Your DOM
@@ -22,4 +22,4 @@ theExistingMainElement.innerHTML = theWholeEnchilada
 
 Refresh your browser and you will see the new, dynamically created HTML get injected into the DOM.
 
-![](./images/heroes-villains-html.png)
+<img src="./images/heroes-villains-html.png">

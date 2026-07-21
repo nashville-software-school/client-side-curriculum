@@ -119,4 +119,4 @@ Now that you have the function working correctly. Invoke the function several ti
 
 Watch the queen array get items added to it as you <analogy>step over</analogy> each line of code.
 
-![animation of debugger showing the queens array getting items added to it](./images/debugger-queen-array.gif)
+<img src="./images/debugger-queen-array.gif">

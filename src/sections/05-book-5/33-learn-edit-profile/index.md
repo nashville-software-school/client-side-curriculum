@@ -1,5 +1,5 @@
 # Editing My Profile
-In this chapter you will implement the following user stories for the [Edit Profile](./LEARN_WIREFRAME.md#-edit-profile) view:
+In this chapter you will implement the following user stories for the [Edit Profile](/book_5_learn_wireframe) view:
 
 ### Let's Finish This User Story for User Profile!
 **Given** the user is viewing ***their*** profile<br>

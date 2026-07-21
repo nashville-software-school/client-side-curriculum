@@ -34,6 +34,6 @@ const theExistingMainElement = document.querySelector("#container")
 
 Then refresh your browser and inspect that value of the `theWholeEnchilada` variable. You will see that it is a large HTML string made up of what the HTML generator function in the other modules produce.
 
-![](./images/the-whole-enchilada-value.gif)
+<img src="./images/the-whole-enchilada-value.gif">
 
 Now remove the `debugger` statement and move on to the next chapter to see how to place this new HTML string into the visible part of the browser.

@@ -1,4 +1,4 @@
-# Events and State Self-Assessment
+# Async, State, and Array Method Self-Assessment
 
 This project will help you assess your ability to apply the JavaScript skills that you practiced in this book.
 
@@ -15,16 +15,16 @@ You will be building an application for a local food truck that offers food that
 
 A customer should be able to choose a base dish, a vegetable, and a side dish and place their order. Once the order is placed, the total amount for the chosen foods will appear at the bottom.
 
-![](./images/book-4-assessment.gif)
+<img src="./images/book-4-assessment.gif">
 
 ## Setup
 
 > 🧨 Make sure you answer the vocabulary and understanding questions at the end of the README in the project before notifying your coaches that you are done.
 
-1. Go to the [Learning Platform](https://learning.nss.team) and click the button that you are ready for your self-assessment project.
+1. Go to the <a href="https://learning.nss.team" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the button that you are ready for your self-assessment project.
 2. You will receive a Slack message with the repository you will use.
 3. Clone the project, making sure you use the **SSH** connection <analogy>string</analogy>.
 4. Open the <analogy>directory</analogy> that gets created for you after cloning in VS Code.
 5. Follow the instructions in the main README.
 
-When you are done, go back to the [Learning Platform](https://learning.nss.team) and click the button that notifies the coaching team that it's ready for review.
+When you are done, go back to the <a href="https://learning.nss.team" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the button that notifies the coaching team that it's ready for review.

@@ -2,18 +2,18 @@
 
 ## Visual Studio Code
 
-Visit the [Visual Studio Code](https://code.visualstudio.com/) website to download and install the code editor. This is the code editor you will be using for the next 3 months.
+Visit the <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> website to download and install the code editor. This is the code editor you will be using for the next 3 months.
 
 ### Extensions
 
 Once Visual Studio Code is installed, there are several extensions that will be helpful for you as a beginner. Click on the links below to visit each extension page and click the **Install** button for each one.
 
-* [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
-* [Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [Auto close tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-* [Live share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-* [Multiple cursor case preserve](https://marketplace.visualstudio.com/items?itemName=Cardinal90.multi-cursor-case-preserve)
-* [Code spell checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+* <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl" target="_blank" rel="noopener noreferrer">WSL</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" rel="noopener noreferrer">Prettier Code Formatter</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" target="_blank" rel="noopener noreferrer">Auto close tag</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare" target="_blank" rel="noopener noreferrer">Live share</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=Cardinal90.multi-cursor-case-preserve" target="_blank" rel="noopener noreferrer">Multiple cursor case preserve</a>
+* <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" rel="noopener noreferrer">Code spell checker</a>
 
 ## Install the Windows Subsystem for Linux
 
@@ -57,7 +57,7 @@ In order to automate the installation of the tools you need _(which happens in t
 
 ## Windows Terminal
 
-Visit the [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) download page and open it in the Microsoft Store App. This will be your default terminal (using Ubuntu) which you will use to navigate your file system, and run development tools throughout the course.
+Visit the <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab" target="_blank" rel="noopener noreferrer">Windows Terminal</a> download page and open it in the Microsoft Store App. This will be your default terminal (using Ubuntu) which you will use to navigate your file system, and run development tools throughout the course.
 
 Once Windows Terminal is installed:
 
@@ -73,9 +73,6 @@ Once Windows Terminal is installed:
    > **IMPORTANT:** It is very important that you remember both the username and password that you create in the next step. If you need to write them down to remember them, that's a great strategy.
 
 1. Once Ubuntu is done installing, you'll be prompted to create a new user (and its password).
-
----
-⬅ Back to [Table of Contents](../README.md)
 
 <br/>
 <br/>
@@ -108,7 +105,7 @@ mentors: Expand for help
 </summary>
 If you run into problems during installation, someone on the coaching team will use the following info to help you. You can ignore this section.
 
-For reference, here's the [Microsoft Install WSL instructions](https://docs.microsoft.com/en-us/windows/wsl/install).
+For reference, here's the <a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank" rel="noopener noreferrer">Microsoft Install WSL instructions</a>.
 
 ### Enable Virtualization
 

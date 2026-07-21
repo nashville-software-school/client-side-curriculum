@@ -2,7 +2,7 @@
 
 The next step for you is to add a click event listener that displays the haulers being serviced by a dock.
 
-![](./images/docks-click.gif)
+<img src="./images/docks-click.gif">
 
 ## Handling Click Event
 

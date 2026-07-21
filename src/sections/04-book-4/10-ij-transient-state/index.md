@@ -215,5 +215,3 @@ In this chapter, we've:
 ## 🔜 Next Steps
 
 Now that we can capture user choices, our next step is to <analogy>create</analogy> a submission button and a <analogy>function</analogy> to save the <analogy>transient state</analogy> to our database (<analogy>permanent state</analogy>). 
-
-Up Next: [Saving Survey Submissions](./IJ_PERMANENT_STATE.md)

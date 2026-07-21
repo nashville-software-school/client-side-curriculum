@@ -221,7 +221,7 @@ You should now see:
 - The "Do you own a pair of blue jeans?" question with Yes/No options
 - A new question "What type of area do you live in?" with four <analogy>radio button</analogy> options: Urban, Suburban, Semi-Rural, and Rural
 
-![](./images/indiana-jeans-location-component.png)
+<img src="./images/indiana-jeans-location-component.png">
 
 ## 📓 Key Concepts to Remember
 
@@ -251,5 +251,3 @@ In this chapter, we've:
 ## 🔜 Next Steps
 
 Our radio buttons now appear correctly but they don't actually capture the user's choices yet. In the next chapter, we'll learn about "<analogy>transient state</analogy>" - a way to temporarily store user selections before saving them to the database. We'll add <analogy>event</analogy> listeners to our radio buttons to capture the user's choices and store them in this <analogy>transient state</analogy>.
-
-Up Next: [Capturing User Choices](./IJ_TRANSIENT_STATE.md)

@@ -5,6 +5,6 @@ export default {
     title: "Constant Tide",
     previousChapterId: "book_1_surf_shop_undefined",
     nextChapterId: "book_1_surf_shop_not_a_function",
-    chapterGroup: "Sequina's Surf Shop",
+    chapterGroup: "🏄 Sequina's Surf Shop",
     content,
 }

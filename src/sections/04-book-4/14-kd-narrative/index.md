@@ -74,4 +74,4 @@ The following animation shows how the layout of the application, and how the use
 
 Up to this point, you've only handled "click" events. In this application, you will handle "change" events as well.
 
-![](./images/kneel-diamonds-working.gif)
+<img src="./images/kneel-diamonds-working.gif">

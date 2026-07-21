@@ -84,7 +84,7 @@ Why is this the case?
 
 ### Additional resources
 
-[video guide: Reference Vs Value In JavaScript](https://www.youtube.com/watch?v=-hBJz2PPIVE)
+<a href="https://www.youtube.com/watch?v=-hBJz2PPIVE" target="_blank" rel="noopener noreferrer">video guide: Reference Vs Value In JavaScript</a>
 
-[article: Value and Reference types in JavaScript](https://www.geeksforgeeks.org/primitive-and-reference-value-in-javascript/)
+<a href="https://www.geeksforgeeks.org/primitive-and-reference-value-in-javascript/" target="_blank" rel="noopener noreferrer">article: Value and Reference types in JavaScript</a>
 

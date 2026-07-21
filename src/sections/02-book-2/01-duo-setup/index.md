@@ -72,5 +72,5 @@ Then copy the second set of command, paste them into your terminal, and run them
 
 Now that the code has successfully been backed up, go back to your browser, and refresh the Github page. You will see that your remote repository backup now has files uploaded.
 
-![](./images/first-repo-steps.gif)
+<img src="./images/first-repo-steps.gif">
 

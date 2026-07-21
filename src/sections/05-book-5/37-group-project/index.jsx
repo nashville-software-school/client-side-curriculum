@@ -6,6 +6,5 @@ export default {
     previousChapterId: "book_5_capstone_resources",
     nextChapterId: null,
     chapterGroup: "Group Project",
-    type: "group-project",
     content,
 }

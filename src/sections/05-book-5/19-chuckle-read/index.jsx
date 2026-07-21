@@ -5,6 +5,6 @@ export default {
     title: "View Chuckles",
     previousChapterId: "book_5_chuckle_create",
     nextChapterId: "book_5_chuckle_update",
-    chapterGroup: "Chuckle Checklist",
+    chapterGroup: "😄 Chuckle Checklist",
     content,
 }

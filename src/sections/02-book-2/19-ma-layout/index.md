@@ -37,5 +37,3 @@ Utilize the CSS skills that you've learned so far to make each fish element and 
 |                                                   |
 +---------------------------------------------------+
 ```
-
-Next chapter: [Fish Filter >](./MA_FILTERING_FISH.md)

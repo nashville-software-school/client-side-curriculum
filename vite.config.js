@@ -44,10 +44,9 @@ export default defineConfig(({ mode }) => {
     imageWatcherPlugin
   ];
 
-  // Seems like an infinite loop when npm run dev, commented out
   // Only add smart copy plugin if images exist
   if (hasImages) {
-    //plugins.push(smartStaticCopyPlugin);
+    plugins.push(smartStaticCopyPlugin);
   }
 
   return {

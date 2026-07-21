@@ -79,5 +79,3 @@ import { locationList } from './locationList.js'
 Because you haven't built them yet.
 
 Refresh your web browser and verify that the fish list is displayed in the aquarium showcase. You should see a simple list of fish cards with the fish details populated from the `aquariumData.js` module.
-
-Next chapter: [Locations and Tips >](./MA_LOCATION_TIPS.md)

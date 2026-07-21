@@ -2,7 +2,7 @@
 
 Perhaps you've used other social media platforms that allow users to share beautiful pictures with each other. An new opportunity that none of these platforms specialize in Gif animation images. A team of developers went to some angel investors and convinced them that you have a solid business plan and that people around the world have been craving an app for sharing only gifs.
 
-That team of developers began coding, and quickly deployed their [first Minimally Viable Product](http://giffygram.nss.team/) (<analogy>MVP</analogy>).
+That team of developers began coding, and quickly deployed their <a href="http://giffygram.nss.team/" target="_blank" rel="noopener noreferrer">first Minimally Viable Product</a> (<analogy>MVP</analogy>).
 
 ## Deconstruction
 

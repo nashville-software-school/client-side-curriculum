@@ -81,7 +81,7 @@ for (const sock of socks) {
 
 Remember, Martin always pays his invoices promptly, so regardless of his strange requests, you promptly get to work. You wonder how to go about displaying fish the way he wants.
 
-Luckily, you know about the [<analogy>remainder operator</analogy>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder) in JavaScript. Using this operator, the following code will only display even numbers.
+Luckily, you know about the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder" target="_blank" rel="noopener noreferrer"><analogy>remainder operator</analogy></a> in JavaScript. Using this operator, the following code will only display even numbers.
 
 ##### Example
 

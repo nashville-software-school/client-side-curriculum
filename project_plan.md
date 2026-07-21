@@ -8,6 +8,7 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ## Source Reference
 - **Local repo:** `/home/gmkorte/workspace/nss/curriculum/client-side-curriculum`
 - **GitHub reference:** https://github.com/nashville-software-school/client-side-mastery
+- **nss-core reference:** `/home/gmkorte/workspace/nss/curriculum/platform`
 - Use the GitHub repo as a structural guide for content; it is not the source of truth for the new ID/chapter organization.
 
 ---
@@ -21,6 +22,7 @@ This document is the guiding reference for restructuring the NSS client-side cur
   2. **`concept_map.md`** — review exercises just completed; add missing terms, update Reinforced In, mark chapter as Reviewed ✓, flag any inconsistencies with ⚠️
   3. **`curriculum_map.md`** — verify IDs are correct (usually no changes needed, but confirm)
   - Then update the memory file at `.claude/projects/.../memory/project_curriculum_restructure.md` with what was done and what comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
+- **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry.
 
 ---
 
@@ -181,11 +183,14 @@ Work **one chapter at a time** per session:
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
 | ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
 | — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
-| — | **Phase 3: Broken Links** — audit and fix all internal and external links across all exercises |
+| ✓ | **Phase 3: Broken Links** — All categories A–G complete |
 | — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
+| — | **Phase 8: Concept Map Refactor** — see detail below |
+| — | **Phase 9: Analogy Tag Refactor** — see detail below |
+| 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
 
 ---
 
@@ -322,27 +327,126 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 3: Broken Links
+## Phase 3: Broken Links ◑
 
-*Scope: all exercise markdown files across all 5 books and Setup. Both internal links (references to other exercises) and external links (GitHub repos, documentation sites, tool download pages) need to be audited.*
+### Audit Summary (2026-06-30)
+- **Internal broken links:** 166 across 181 exercise files
+- **External links:** 124 (107 unique) across 44 domains — spot-check deferred to Category G
+- **Non-HTTP image references (`<img src>`):** 51
 
-### Categories
-
-- **Internal links** — references like `[See the ERD chapter](./DD_ERD.md)` that use old file paths or chapter names that no longer exist after Phase 1 restructuring
-- **External links** — links to documentation, GitHub repos, download pages, and other resources that may have moved, been deprecated, or gone offline
-- **Image references** — `<img src="...">` and markdown image syntax pointing to files that were moved or renamed
-
-### Work to Do
-
-- Build a script or use tooling to extract all links from all markdown files
-- Categorize: internal vs. external, broken vs. redirected vs. valid
-- Fix internal links to use current file paths and exercise IDs
-- For external links: update to current URLs, replace deprecated resources, or note where no replacement exists
-- Flag any links that require a content decision (e.g., a linked resource that no longer reflects current best practices)
+Work is divided into categories, each handled in its own session.
 
 ---
 
-## Phase 4: General Errors
+### Category A: Navigation Cruft ✓ COMPLETE (2026-06-30)
+
+Dead-end navigation links left over from the legacy file structure. The platform has built-in prev/next navigation so these were redundant AND broken.
+
+**Types removed:**
+- 41× `Up Next: [Chapter Title](./CHAPTER_FILE.md)` — bottom of exercises in Books 4 & 5
+- 7× `Back to [Table of Contents](../README.md)` — bottom of Setup exercises
+- 4× `Next chapter: [Title](./MA_FILE.md)` — Martin's Aquarium chain (Book 2)
+- 2× `[Table of Contents](../README.md)` — Book 4 exercises 05 and 13
+
+**Result:** 54 links removed across 52 files. Entire link lines deleted, including any preceding `---` separator.
+
+---
+
+### Category B: Book 5 Cross-Reference Links ✓ COMPLETE (2026-06-30)
+
+Inline callouts pointing students back to earlier exercises. Clicking them 404'd because the SPA routes by chapter ID, not file path.
+
+**Types fixed:**
+- 9× wireframe links → SPA chapter IDs
+- 15× "Skills used" prereq list links → chapter IDs (anchor fragments dropped — SPA doesn't support in-page scroll)
+- 6× "For more information" blockquote callout links → chapter IDs
+- 2× Book 4 inline links to `FD_INTRO_TO_API.md` → `/book_4_fox_y_dog_intro_to_api`
+
+**Result:** 32 links fixed across 12 files. One link intentionally left broken: `[explorer chapter](./EXPLORE_CSS.md)` in `24-learn-all-posts` — placeholder for a CSS explorer chapter not yet ported.
+
+---
+
+### Category C: Images via Markdown `![]()` Syntax ✓ COMPLETE (2026-06-30)
+
+Two problems: (1) `![alt](url)` isn't path-rewritten (only `<img src>` is); (2) image files were never migrated from the source repo.
+
+**Approach:**
+- Downloaded each referenced image from the GitHub source repo (`client-side-mastery`) into the exercise's local `images/` directory
+- Converted all `![]()` syntax to `<img src="./images/...">` via sed
+- Only images currently referenced were downloaded; images for unported chapters deferred until those pages are ported
+
+**Source book → GitHub directory mapping:**
+- Book 1 → `book-1-queen-bee/chapters/images/`
+- Book 2 → `book-2-martins-aquarium/chapters/images/`
+- Book 3 → `book-3-deshawns-dog-walking/chapters/images/`
+- Book 4 → `book-4-kneel-diamonds/chapters/images/`
+- Book 5 → `book-5-honey-rae-repairs/chapters/images/`
+
+**Result:** 34 exercise `images/` directories created; 47 images downloaded; 47 syntax conversions. Also fixed 3 files that used `./chapters/../images/` path (normalized to `./images/`).
+
+---
+
+### Category D: Group Project Sub-Chapter Files ✓ COMPLETE (2026-06-30)
+
+Three group projects linked to sub-chapter `.md` files that were never migrated. Ported as individual exercises sourced from `client-side-mastery` (`master` branch).
+
+**Modern Farm** — 9 chapters ported as `02-book-2/25-mf-management` through `33-mf-process-queue` (chapterGroup: "Group Project")
+**Cider Falls Park** — 5 chapters ported as `03-book-3/26-cf-intro` through `30-cf-services` (chapterGroup: "Group Project")
+**Truncheons & Flagons** — 8 chapters ported as `04-book-4/56-tf-structure-layout` through `63-tf-round-scores` (chapterGroup: "Advanced Projects")
+
+Each exercise has `index.md` (content + images), `index.jsx` (chapter ID + nav chain), and an `images/` dir. Parent `index.md` tables updated to SPA `/chapter_id` links. Navigation chains wired — T&F intro now points into sub-chapters; `54-holiday-road` previousChapterId updated to `book_4_tf_round_scores`. Source images downloaded; `bludgeon.jpg` not present in source repo and was dropped.
+
+**Status:** Complete.
+
+---
+
+### Category E: Broken `<img src>` References ✓ COMPLETE (2026-06-30)
+
+Uses correct HTML syntax but paths are wrong. Two sub-types:
+
+**E1 — `video-play-icon.gif` (18 refs, 17 files, Books 1–3):** All used the old path `../../book-1-queen-bee/chapters/images/video-play-icon.gif`, which also didn't match the `./`-prefixed regex so the path rewriter ignored it entirely. **Fix:** Downloaded one canonical copy to `src/sections/shared/images/video-play-icon.gif` (the `shared/` dir has no `index.js` so it's invisible to the nav glob). Updated all 18 refs to `./images/video-play-icon.gif` to match the path rewriter regex.
+
+**E2 — `./images/...` missing locally (31 refs, 26 exercises):** Image files that used the correct `./images/` path but were never downloaded during migration. Affected exercises span Setup, Books 1, 3, 4, and 5. All source images confirmed in `client-side-mastery` (`master` branch). Note: the github-token-*.gif files are in `book-1-queen-bee/chapters/images/`, not a setup/ directory. **Fix:** Downloaded all 31 images into each affected exercise's `images/` dir. No markdown changes needed — syntax was already correct.
+
+**Final audit:** 0 broken `./images/` refs; 0 legacy-path img src attributes remaining across all 181 exercise files.
+
+**Status:** ✓ Complete.
+
+---
+
+### Category F: Misc One-Offs ✓ COMPLETE (2026-06-30)
+
+| Link | File | Fix |
+|------|------|-----|
+| `./TROUBLESHOOT_VSCODE.md` | `00-setup/02-getting-started-mac/index.md` | Inlined full content from source (`book-1-queen-bee/chapters/TROUBLESHOOT_VSCODE.md`) directly in the mentor `<details>` block |
+| `./data/honestabe.json` | `04-book-4/46-pioneer-abe-politicians/index.md` | Inlined full 634-line JSON database in a `<details>` block (Vite doesn't serve arbitrary files from `src/`) |
+| `../../../supplement-api/chapters/API_CLIENTS.md` | `04-book-4/54-holiday-road/index.md` | Supplement track not in platform; removed link, kept "Thunder Client or Postman" as plain text |
+| `./code/productPrice.js` | `03-book-3/21-ba-product-click/index.md` | Downloaded from source, then inlined as `<details>` code block |
+| `./code/employeeSales.js` | `03-book-3/22-ba-employee-click/index.md` | Downloaded from source, then inlined as `<details>` code block |
+
+**Status:** ✓ Complete. 5 files edited; 3 source files downloaded (honestabe.json, productPrice.js, employeeSales.js) but kept as local copies only — content served inline.
+
+---
+
+### Category G: External Links ✓ COMPLETE (2026-06-30)
+
+**Spot-check results:**
+- `watch.screencastify.com` (15 links) — 200 ✓
+- `app.screencastify.com/v3/watch/...` (2 links) — 302 → 200 ✓ (redirect works)
+- `learning.nss.team` (2 links) — 200 ✓
+- `giffygram.nss.team` (1 link) — 200 ✓
+- `truncheons.nss.team` (1 link) — DEAD (502). Removed "Previous Cohort Implementation" section from `04-book-4/56-tf-structure-layout/index.md`.
+- YouTube, MDN, VSCode Marketplace, GitHub — all presumed stable.
+
+**Also fixed:** `lcoalhost:3000` typo → `localhost:3000` in `02-book-2/13-mm-main/index.md`.
+
+**New tab conversion:** All 122 external `[text](url)` markdown links converted to `<a href="url" target="_blank" rel="noopener noreferrer">text</a>` across 67 files. URLs inside fenced code blocks left untouched.
+
+**Status:** ✓ Complete.
+
+---
+
+## Phase 4: General Errors ◑ ACTIVE
 
 *Scope: all exercise markdown content across all 5 books and Setup. This is an editorial pass — finding and fixing errors that would confuse or block students.*
 
@@ -558,3 +662,48 @@ Introduce testing as a practice starting in Book 1 by connecting it to what stud
 3. Wrap the vocabulary term's first appearance with `<Analogy term="..." />`
 4. Verify the component renders correctly in the platform for each tagged term
 5. Flag any terms where the natural sentence position makes tagging awkward — may need minor prose edits
+
+---
+
+## Phase 10: Source Content Integration 🛑 Team Decision Required
+
+*Two directories in the source repo (`client-side-mastery`) have not been fully incorporated into the platform. This phase cannot begin until the team decides whether and how to include them. All detail below is for scoping the conversation — no work has started.*
+
+---
+
+### Part A: Unincorporated Projects (`projects/`)
+
+Seven project directories exist in the source repo with no corresponding platform exercises. See `missing_source_content.md` for the full catalog.
+
+| Project | Tier | Chapters | Notes |
+|---|---|---|---|
+| Daily Journal | 2 | 15 | Standalone multi-session project |
+| Dothard & Simbleton | 2 | 4 | Short project |
+| State Fair | 2 | 7 | Intermediate project |
+| Glassdale Cold Case | 3 | 17 | Longer project; cross-cutting concerns |
+| Algorithms | 5 | 14 | Conceptual; no specific framework |
+| Kennels (React) | 5 | 13 | React; overlaps with Book 5 content |
+| Thorns & Roses | 5 | 7 | React; capstone-adjacent |
+
+**Total:** ~77 chapters across 7 projects.
+
+**Questions for the team:**
+
+1. Are any of these projects still actively used in the cohort curriculum, or are they legacy/retired?
+2. If included, do they become standalone books, chapters within existing books, or a separate "extended practice" track?
+3. Tier 2 projects (Daily Journal, Dothard & Simbleton, State Fair) — do they slot into Book 2 as optional extensions, or form their own section?
+4. Tier 5 projects (Algorithms, Kennels, Thorns & Roses) — do they extend Book 5, or live outside the main 5-book structure?
+5. Should Glassdale (17 chapters, tier 3) replace or supplement Cider Falls Park as the Book 3 group project?
+
+---
+
+### Part B: Supplement Foundations Track (`supplement-foundations/`)
+
+A fully separate foundational JavaScript track covering arrays, conditions, objects, and iteration. Three parallel practice threads run through it: Digital Notes, Library Tracker, and Meal Planner. 60+ files total. No presence in the platform.
+
+**Questions for the team:**
+
+1. Is this track still in use, or has its content been absorbed into Books 1–2?
+2. If included, does it become a prerequisite track (before Book 1), a parallel track students can opt into, or woven chapter-by-chapter into Books 1–2?
+3. The three practice threads (Digital Notes, Library Tracker, Meal Planner) — do they replace the current Book 1 chapter projects (Queen Bee, Surf Shop, Björn), supplement them, or form their own Explorer-style challenges?
+4. Would adding this track require nss-core changes to support multiple parallel tracks?

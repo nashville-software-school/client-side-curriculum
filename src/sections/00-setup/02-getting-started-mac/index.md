@@ -13,7 +13,7 @@ xcode-select --install
 In order to automate the installation of the tools you need, you need to create a Github Personal Access Token.
 
 1. Open a new tab in your browser.
-2. Go to this site [https://github.com/settings/profile](https://github.com/settings/profile)
+2. Go to this site <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">https://github.com/settings/profile</a>
 3. In the menu options on the left, scroll down to and click the item labeled **Developer Settings**.
 4. Click **Personal access tokens**
 5. Click **Tokens (classic)**
@@ -89,16 +89,13 @@ Run the following command to verify all developer installations are complete. If
 
 ## Rectangle
 
-[Download and install Rectangle](https://www.rectangleapp.com/). This application will allow you to use certain combinations of keys on your keyboard to move and resize applications while you are developing.
+<a href="https://www.rectangleapp.com/" target="_blank" rel="noopener noreferrer">Download and install Rectangle</a>. This application will allow you to use certain combinations of keys on your keyboard to move and resize applications while you are developing.
 
-Invest 9 minutes of your time to watch the [Using Rectangle to Manage macOS Windows](https://www.youtube.com/watch?v=tFeDyqZG4z4) video now to learn how to use Rectangle. If you start using it **today**, then you will save yourself hours upon hours of headache and lost productivity as you learn to become a professional software developer.
+Invest 9 minutes of your time to watch the <a href="https://www.youtube.com/watch?v=tFeDyqZG4z4" target="_blank" rel="noopener noreferrer">Using Rectangle to Manage macOS Windows</a> video now to learn how to use Rectangle. If you start using it **today**, then you will save yourself hours upon hours of headache and lost productivity as you learn to become a professional software developer.
 
 ## Launch Visual Studio Code From Command Line
 
-[Follow these steps](https://code.visualstudio.com/docs/setup/mac) to set up Visual Studio Code to be launched from the command line.
-
----
-⬅ Back to [Table of Contents](../README.md)
+<a href="https://code.visualstudio.com/docs/setup/mac" target="_blank" rel="noopener noreferrer">Follow these steps</a> to set up Visual Studio Code to be launched from the command line.
 
 <br/>
 <br/>
@@ -129,7 +126,55 @@ Invest 9 minutes of your time to watch the [Using Rectangle to Manage macOS Wind
 <summary>Expand if you are an mentor troubleshooting an issue</summary>
 <h2>Visual Studio Code</h2>
 
-Follow the [Troubleshooting Visual Studio Code](./TROUBLESHOOT_VSCODE.md) steps to resolve student issues
+### Troubleshooting Visual Studio Code
+
+If the `code` command doesn't work, try updating the PATH:
+
+1. ##### _Run the following command in the terminal to open the `.zshrc` file:_
+
+```sh
+open ~/.zshrc
+```
+
+2. ##### _Copy the following code and paste it at the end of the file_
+
+```sh
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+```
+
+3. ##### _Save your changes_ (<kwd>⌘S</kwd>), _but keep the file open._
+
+4. ##### _In the terminal, open a new window (<kwd>⌘N</kwd>) and run the `code` command._
+
+```sh
+code
+```
+
+If the `code` command is still not found, try creating a bash function:
+
+1. ##### _Remove the exported PATH from the bottom of the `.zshrc` file, and save._ (<kwd>⌘S</kwd>)
+
+2. ##### _Copy the following code and paste it at the end of the file._
+
+```sh
+code () {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
+        open -a "Visual Studio Code" --args "$F"
+    fi
+}
+```
+
+3. ##### _Save your changes_ (<kwd>⌘S</kwd>).
+
+4. ##### _In the terminal, open a new window (<kwd>⌘N</kwd>) and run the `code` command._
+
+```sh
+code
+```
 
 <h2>Homebrew Troubleshooting</h2>
 
@@ -157,6 +202,6 @@ export PATH=/opt/homebrew/bin:$PATH
 
 <h2>Handling Permission Issues After Setup</h2>
 
-Sometimes, a student has permission issues after installing and configuring Git. To ensure that this doesn't happen to you, watch the [Owning Your Git Config Directory](https://youtu.be/exva3J_jojc) video and follow the steps.
+Sometimes, a student has permission issues after installing and configuring Git. To ensure that this doesn't happen to you, watch the <a href="https://youtu.be/exva3J_jojc" target="_blank" rel="noopener noreferrer">Owning Your Git Config Directory</a> video and follow the steps.
 
 </details>

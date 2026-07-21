@@ -34,5 +34,3 @@ Below are the resources for this application. _(You will need to connect the rel
 |**`users`** | Where basic user information for all users is stored. A user can create many posts. A user can like many posts. _(name, email, cohort)_ |
 |**`posts`** | A post created by a user to share what they've learned. A post can belong to a single topic. A post can be liked by many users. _(title, body, date)_ |
 |**`topics`** | A topic of learning. _(e.g. Functions, Asynchronous Programming, etc...)_ Many posts can be written about a single topic. _(name)_  |
-
-Up Next: [Building the wireframe](./LEARN_WIREFRAME.md)

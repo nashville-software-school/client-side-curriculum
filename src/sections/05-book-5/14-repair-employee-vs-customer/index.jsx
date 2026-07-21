@@ -5,6 +5,6 @@ export default {
     title: "Employee vs Customer",
     previousChapterId: "book_5_honey_rae_employee_edit",
     nextChapterId: "book_5_honey_rae_customer_tickets",
-    chapterGroup: "Honey Rae's Repair Shop",
+    chapterGroup: "🔧 Honey Rae's Repair Shop",
     content,
 }

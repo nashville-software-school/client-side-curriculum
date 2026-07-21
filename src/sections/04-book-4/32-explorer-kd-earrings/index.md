@@ -18,4 +18,4 @@ Add a <analogy>radio button</analogy> group above the order button that allows t
 
 ## Animation of Implementation
 
-![](./images/kneel-diamonds-earrings-necklaces.gif)
+<img src="./images/kneel-diamonds-earrings-necklaces.gif">

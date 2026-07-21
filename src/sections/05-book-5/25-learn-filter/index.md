@@ -1,5 +1,5 @@
 # Filtering The Posts
-In this chapter you will implement the following user stories for the ***[All Posts](./LEARN_WIREFRAME.md#-homeall-posts)*** view:
+In this chapter you will implement the following user stories for the ***[All Posts](/book_5_learn_wireframe)*** view:
 
 **Given** the user wishes to filter the posts by topic<br>
 **When** the user clicks on the topic dropdown<br>
@@ -11,5 +11,3 @@ In this chapter you will implement the following user stories for the ***[All Po
 **Then** only the posts with a title that contains the search term will display
 
 ## It's all you! You've got this 😎
-
-Up Next: [Learning Routes with Honey Rae's](./REPAIR_ROUTES_INTRO.md)

@@ -10,4 +10,4 @@ In this project, your task to build a workflow for making, and firing pottery, a
 4. Open the directory that gets created for you after cloning in VS Code.
 5. Follow the instructions in the main README.
 
-When you are done, go back to the [Learning Platform](https://learning.nss.team) and click the button that notifies the coaching team that it's ready for review.
+When you are done, go back to the <a href="https://learning.nss.team" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the button that notifies the coaching team that it's ready for review.

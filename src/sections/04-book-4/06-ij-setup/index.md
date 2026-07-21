@@ -264,5 +264,3 @@ input[type="radio"]:first-of-type {
 </details>
 
 ---
-
-Up Next: [Your own <analogy>API</analogy> with <analogy>JSON-Server</analogy>](./IJ_JSON_SERVER.md)
