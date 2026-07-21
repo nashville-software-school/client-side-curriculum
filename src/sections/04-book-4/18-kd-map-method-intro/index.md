@@ -71,6 +71,13 @@ That <analogy>function</analogy> is the first, and only, <analogy>argument</anal
 
 So an _object_ comes into your <analogy>function</analogy>, and a _string_ gets returned. That <analogy>string</analogy> goes into a new _array_.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Polymorphism</summary>
+
+Back in Martin's Aquarium, you wrote three separate functions (`mostHolyFish`, `soldierFish`, `regularFish`) because each one needed its own loop with its own condition. `.map()` is the same core idea, "do something to every item and collect the results", but now the "what to do" part is just a function you hand to a single, reusable method instead of writing the loop three separate times. What would `mostHolyFish` look like if you rewrote it using `.map()` instead of a `for..of` loop?
+
+</details>
+
 ## The join() Array Method
 
 The `.join()` <analogy>array</analogy> method, luckily, does exactly what its name infers - it _joins_ things together.

@@ -190,7 +190,7 @@ Work **one chapter at a time** per session:
 | ✓ | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | ✓ | **Phase 4.5: Polish Pass** — spacing/formatting, localhost link audit, video audit, and transcript readability (18/18 exercises) all complete |
 | ✓ | **Phase 4.6: Duplicate Title Cleanup** — nss-core renders `index.jsx`'s `title` as an `<h1>` above the markdown body; 194/202 exercises also had a redundant leading heading in `index.md`. 90 stripped, 112 kept (see detail below) |
-| — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
+| ◑ | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4. Thread 3 (CS Theory Foreshadowing) complete; Threads 1, 2, 4, 5 not started |
 | — | **Phase 5.1: Exercise Standardization** — once Phase 5's threads are woven in, standardize the shape/flow of every exercise so the curriculum reads as one coherent course |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
@@ -771,35 +771,60 @@ Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patt
 - Where exactly in each book does each pre-React hook concept map to existing exercises?
 - Does this require new exercises, or additions to existing ones?
 
-### Thread 3: CS Theory Foreshadowing (OOP / SOLID / ACID)
+### Thread 3: CS Theory Foreshadowing (OOP / SOLID / ACID) ✓ COMPLETE (2026-07-21)
 
 Introduce selected OOP pillars, SOLID principles, and ACID properties at the exercises where the pattern already exists naturally — so students arrive at Python/Django and C#/.NET with the vocabulary already partially formed. Concepts with no genuine client-side analog are left entirely to the server-side courses.
 
-**Goals:**
-- Name the concept at the point where students are already doing it
-- Give server-side instructors a shared vocabulary to build on
-- Keep additions lightweight — a sentence or callout, not a new exercise
+**Format decided:** Not a named component — this thread reuses the existing `<details>/<summary>` disclosure pattern already used for Hints throughout the curriculum (no `nss-core`/platform changes, no new CSS). Two tiers:
+- **Tier 1 — Introduction**: `<summary>🏛️ CS Theory: [Concept]</summary>` — one full, concrete explanation per concept, tied to the code just shown, at its first natural occurrence.
+- **Tier 2 — Check-in**: `<summary>🏛️ CS Theory Check-in: [Concept]</summary>` — a short reflective question only, no answer given, placed wherever the same underlying pattern recurs later in the course, so the concept stays active in students' minds instead of fading after one exposure.
 
-**Mapping — what gets introduced client-side:**
+**Design decision — this isn't a one-touch mapping.** The original plan (single callout per concept) was expanded mid-session: the thread now builds across all of Books 1–5, with periodic check-ins, rather than mentioning each concept once and moving on. The client-side course is only the first three months of a longer program (an equivalent server-side course continues the same conversation), so no capstone/synthesis exercise was built — steady exposure through Book 5 was judged sufficient.
+
+**Sequencing note:** Polymorphism was originally slated for introduction at Book 4 (Kneel Diamonds, `.map()`), but that came *after* naturally-occurring "same loop shape, different behavior" patterns already existed in Book 2 (Martin's Aquarium's three fish-filtering functions) and Book 3 (Shipping Ship Ships). Introducing it that late would have wasted those earlier opportunities, so its introduction was moved to Book 2, and the original Kneel Diamonds callout was reworked into a check-in / "level-up" moment (same idea, now expressed via a real array method instead of manual loops).
+
+**Introductions (Tier 1):**
 
 | Concept | Type | Exercise |
 |---------|------|----------|
 | Encapsulation | OOP Pillar | Book 1 → Surf Shop → Just the Data / Just a Function |
-| Abstraction | OOP Pillar | Book 4 → Fox y Dog → First We "Fetch" |
-| Polymorphism | OOP Pillar | Book 4 → Kneel Diamonds → Building Options with Map |
 | Single Responsibility | SOLID | Book 1 → Surf Shop → Just the Data |
 | Interface Segregation | SOLID | Book 1 → Surf Shop → Just a Function |
 | Open/Closed | SOLID | Book 2 → Movie Majesty → The Main Algorithm |
+| Polymorphism | OOP Pillar | Book 2 → Martin's Aquarium → Filtering Fish *(moved earlier — see sequencing note)* |
+| Abstraction | OOP Pillar | Book 4 → Fox y Dog → First We "Fetch" |
 | Dependency Inversion | SOLID | Book 4 → Indiana Jeans → Your own API with JSON-Server |
 | Durability | ACID | Book 4 → Indiana Jeans → Saving Survey Submissions |
+
+**Check-ins (Tier 2), in course order:**
+
+| Concept(s) | Exercise |
+|---|---|
+| Encapsulation, SRP, ISP | Book 1 → Surf Shop → Diagrams (dependency graph reflection) |
+| Encapsulation, ISP | Book 2 → Martin's Aquarium → Creating Fish Data |
+| Encapsulation, ISP | Book 2 → Modern Farm → Seed Producing Modules |
+| Open/Closed | Book 2 → Modern Farm → Collecting the Harvest |
+| Polymorphism | Book 2 → Modern Farm → Selling the Harvest Online |
+| Encapsulation, ISP | Book 3 → Shipping Ship Ships → Shipping Ship List (3rd repetition callback) |
+| Polymorphism | Book 3 → Shipping Ship Ships → Shipping Ship Hauler |
+| Encapsulation, Open/Closed | Book 3 → Cider Falls Park → Data Design (open-ended, design-only) |
+| Abstraction | Book 4 → Fox y Dog → Awaiting Data (3rd fetch syntax) |
+| Polymorphism (level-up) | Book 4 → Kneel Diamonds → Building Options with Map *(reworked from original Tier-1 intro)* |
+| Dependency Inversion, Durability | Book 4 → Indiana Jeans → Displaying Submissions with .map() |
+| Dependency Inversion | Book 5 → Honey Rae's → Repair API (JSON-Server setup) |
+| Encapsulation, SRP | Book 5 → Honey Rae's → List All Tickets (services module) |
+| Single Responsibility | Book 5 → Honey Rae's → Employee List (existing Explorer prompt) |
+| Open/Closed | Book 5 → Honey Rae's → Intro to Routes |
+| Durability | Book 5 → Honey Rae's → Create Ticket (POST-then-navigate) |
+| Interface Segregation, Open/Closed | Book 5 → Learning Moments → Routing and Authentication |
 
 **Deferred to server-side courses (Python/Django, C#/.NET):**
 - Inheritance, Liskov Substitution (OOP)
 - Atomicity, Consistency, Isolation (ACID)
 
-**Open questions:**
-- Should the callout be a named sidebar component (`<CSTheory>` tag) or inline prose?
-- Do these get their own concept map entries in Phase 7, or a separate theory section?
+**Open questions resolved:**
+- Callout format: `<details>/<summary>` disclosure blocks, not a named JSX component (see Format decided, above).
+- Concept map entries: still open — deferred to Phase 7/9 as originally planned.
 
 ### Thread 4: Testing Mindset
 

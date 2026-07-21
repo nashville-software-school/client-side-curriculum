@@ -140,6 +140,13 @@ The `.join("")` method is necessary because `.map()` returns an <analogy>array</
 ## Time to Test!
 You should immediately see the results when you refresh the page, however, get some more practice observing the <analogy>network tab</analogy>. Remember to check the **<analogy>Request</analogy> URL**, **<analogy>Request</analogy> Method**, **<analogy>Status Code</analogy>**, and **Preview/<analogy>Response</analogy>**. 
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Dependency Inversion, Durability</summary>
+
+This fetch call hits the exact same `/submissions` endpoint you POSTed to in the last chapter, and the submission you saved earlier shows up here, still there, even though you refreshed the page and started a whole new component. Which of those two facts is durability, and which one is dependency inversion?
+
+</details>
+
 <img src="./images/indiana-jeans-submissions.png">
 
 ## Exploring Related Data

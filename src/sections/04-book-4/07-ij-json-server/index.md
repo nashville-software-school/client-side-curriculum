@@ -13,6 +13,13 @@ This diagram shows:
 
 For our <analogy>client</analogy>-side applications, we will be using a <analogy>JSON</analogy> file to simulate a structured database, similar to what you'd <analogy>find</analogy> in a real-world application. While it won't have the full capabilities of a relational database like PostgreSQL or MySQL (we'll set up one of these in the <analogy>server</analogy>-side portion of this course), it will allow us to work with data in a way that mimics how a backend stores and retrieves information.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Dependency Inversion</summary>
+
+Think about ordering at a drive-thru. You don't care whether your burger was cooked on a gas grill or an electric one, you just order off the menu and get your food. Your client-side code works the same way: it "orders" from an endpoint like `/submissions`, and it doesn't care whether the data behind that endpoint lives in a JSON file or a real database. Later in this course, the "kitchen" changes (a real database instead of a JSON file), but your order, the fetch call, stays exactly the same. This idea has a name: Dependency Inversion, one of the SOLID principles you'll hear more about later in your career.
+
+</details>
+
 > <analogy>JSON</analogy> (JavaScript <analogy>Object</analogy> Notation) is a lightweight data format that's easy for humans to <analogy>read</analogy> and write, and easy for machines to parse and generate.
 
 Our <analogy>ERD</analogy> acts as a blueprint for this database. It has defined each table (or in the case for our <analogy>JSON</analogy> file, each <analogy>array</analogy>) and each row in the tables (properties for each <analogy>object</analogy> in the tables)

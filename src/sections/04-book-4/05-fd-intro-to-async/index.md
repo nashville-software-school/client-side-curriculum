@@ -134,6 +134,13 @@ Key differences:
 2. Instead of chaining `.then()` calls, we use `await` and <analogy>assign</analogy> the result directly to variables
 3. The code reads more like <analogy>synchronous</analogy> code, which is more familiar and easier to understand
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Abstraction</summary>
+
+You've now written this same fetch call three different ways: a plain `fetch()` call, a `.then()` chain, and now `async/await`. The actual network request, opening a connection, waiting on the server, hasn't changed at all underneath any of these. What has changed each time, and what has stayed hidden the whole time regardless of which syntax you used?
+
+</details>
+
 ## Common Mistakes and Rules to Remember
 
 When working with `async/await`, keep these important rules in mind:

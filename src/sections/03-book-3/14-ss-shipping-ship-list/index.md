@@ -20,6 +20,13 @@ export const getShippingShips = () => {
 }
 ```
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Interface Segregation</summary>
+
+This is the third time you've built this same shape: a database module holding the array, and an accessor function that hands out a copy of it. Why do you think an accessor function is used here instead of just exporting the `docks`, `haulers`, and `shippingShips` arrays directly?
+
+</details>
+
 ## Build an HTML List of Shipping Ships
 
 Now open your module that is responsible for building the HTML for each shipping ship and implement the code.

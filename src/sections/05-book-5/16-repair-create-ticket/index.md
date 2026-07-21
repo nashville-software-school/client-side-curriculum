@@ -102,3 +102,10 @@ Watch the **Create Ticket** video below and implement the code yourself.
 
 </details>
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Durability</summary>
+
+The new ticket got navigated away from the form and shows up back on the tickets list, and it'll still be there if you refresh the whole browser or come back tomorrow. Where exactly, in this flow, did the ticket stop being temporary state in a React component and become durable?
+
+</details>
+

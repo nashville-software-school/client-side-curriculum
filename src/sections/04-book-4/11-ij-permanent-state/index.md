@@ -75,6 +75,13 @@ This gives us a simple way to verify that our button is working before we add mo
 
 Now we need to add functionality to our <analogy>transient state</analogy> <analogy>module</analogy> to convert our temporary data into permanent data in the database. 
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Durability</summary>
+
+Right now, before you click submit, your survey answers only exist in your browser's memory. Refresh the page and they're gone, that's transient state. But once your POST request succeeds and the server writes it into `database.json`, that data survives a refresh, a browser restart, even your whole computer restarting. It's now durable, safely written down somewhere that outlives the moment you created it. This idea has a name: Durability, the "D" in ACID, a set of guarantees databases use to make sure your data doesn't just vanish.
+
+</details>
+
 ### Building the POST Request
 
 So far in this course, you've used `fetch()` to make <analogy>GET</analogy> requests to retrieve data from an <analogy>API</analogy>. Now we need to use `fetch()` to make a <analogy>POST</analogy> <analogy>request</analogy> to <analogy>create</analogy> data.

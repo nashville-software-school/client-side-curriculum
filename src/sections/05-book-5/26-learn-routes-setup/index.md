@@ -141,6 +141,13 @@ Now it's time to set up our routes for authentication. In `App.jsx`, remove the 
   ```
 </details>
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Interface Segregation, Open/Closed Principle</summary>
+
+`App.jsx` imports only `Route` and `Routes` by name, not the whole `react-router-dom` library. And the catch-all route just wraps `ApplicationViews` in `Authorized` without needing to know what's inside either one. Which of these two things is Interface Segregation, and which is Open/Closed?
+
+</details>
+
 ### Time to Test!
 Navigate to `localhost:5173/login` and confirm that the `Login` component renders. Try logging in! You should be navigated to `localhost:5173` and the `AllPosts` component should render. Open the devtools and check out the Application tab. Check to see that the key `learning_user` is added and the value is an object with an `id` property.
 

@@ -63,6 +63,13 @@ Next, we call the `renderMoviesToDOM` function, passing the `movieHTML` as an ar
 
 By separating concerns into different modules (`movies-data.js`, `movie-converter.js`, `movie-render.js`), we achieve a modular and maintainable codebase. Each module has a specific responsibility, making the code easier to understand and modify.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Open/Closed Principle</summary>
+
+`main.js` doesn't contain the actual logic for building movie HTML, it just calls functions that live somewhere else. So if you want to change how movies get turned into HTML, say, adding sorting like the Conclusion below suggests, you edit `movie-converter.js`. You never have to touch `main.js`. The main module stays exactly the same (closed) while the rest of the app is still free to grow and change (open). That's the Open/Closed Principle (the "O" in SOLID).
+
+</details>
+
 ## Conclusion
 
 The JavaScript side of Movie Majesty is complete. You have learned how to:

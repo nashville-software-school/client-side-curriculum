@@ -31,3 +31,10 @@ If the answer to only one of those questions is yes, then you have a one-to-many
 
 If the answer to both of those questions is yes, then you have a many-to-many relationship. This requires a joining table between the resources which will contain a foreign key to each main resource. Then draw both relationships.
 </details>
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Open/Closed Principle</summary>
+
+Before you write any code, think back to how Shipping Ship Ships organized its modules: one database module per set of related data, an accessor function for each, and a `main.js` that only ever composes the pieces together. As you plan this project's modules, where do you expect that same boundary to fall? Which module should nobody else be allowed to reach into directly?
+
+</details>

@@ -33,3 +33,10 @@ import { createAsparagus } from "./seeds/asparagus.js"
 const asparagusSeed = createAsparagus()
 console.log(asparagusSeed)
 ```
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Interface Segregation</summary>
+
+You now have six separate seed modules, and `main.js` only imports the one function it's testing at a time, by name. Why not put all six `createX` functions in one big `seeds.js` file instead? What would `main.js` have to import differently if you did?
+
+</details>

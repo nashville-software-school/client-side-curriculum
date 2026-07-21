@@ -150,6 +150,15 @@ export const regularFish = () => {
 
 </details>
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Polymorphism</summary>
+
+You just wrote three functions that all do the same basic thing: loop through the fish, decide whether each one qualifies, and build up an HTML string. But each one decides differently. `mostHolyFish` cares about multiples of 3, `soldierFish` cares about multiples of 5, `regularFish` cares about neither. Same shape, three different behaviors depending on what each function is looking for.
+
+That's the seed of an idea called polymorphism: one general operation that produces different results depending on what you tell it to do. Right now you're writing that "what to do differently" part three separate times, once per function. Later in the course you'll meet a single method, `.map()`, that lets you plug in just the different part without copying the loop itself three times over.
+
+</details>
+
 ## Step 3: Update the DOM in Correct Order
 
 Open the `main.js` module and make sure you import all three functions from the module. Then invoke each one and store the generated strings into variables.

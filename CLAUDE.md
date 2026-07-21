@@ -58,7 +58,7 @@ tell at a glance who's still actively working versus who needs new work assigned
 
 | Contributor | Working on | Status | Branch | Since |
 |---|---|---|---|---|
-| Greg Korte | — | Needs new work | `main` | 2026-07-21 |
+| Greg Korte | — | Needs new work | `phase5_thread3` | 2026-07-21 |
 
 Status values:
 - **In progress** — actively working; continue where they left off
