@@ -4,7 +4,7 @@ In the previous chapter, we created our first <analogy>component</analogy> with 
 
 This is a <analogy>key</analogy> concept in modern web development: instead of hardcoding options in our HTML, we'll fetch the available choices from our database and generate the HTML programmatically. This approach makes our application more flexible and easier to maintain.
 
-> ⚠️ **REMEMBER:** Simply copying and pasting the provided code snippets is not recommended as it does not produce understanding or retention. We encourage you to type out the code, or at the very least <analogy>read</analogy> the code line by line. This way you think about what the code snippet actually does as you add it to your project. If at any point the code doesn't make sense to you, revisit the Fox y Cat chapters to brush up on promises and async/<analogy>await</analogy>.
+> ⚠️ **REMEMBER:** Simply copying and pasting the provided code snippets is not recommended as it does not produce understanding or retention. We encourage you to type out the code, or at the very least <analogy>read</analogy> the code line by line. This way you think about what the code snippet actually does as you add it to your project. If at any point the code doesn't make sense to you, revisit the Fox y Dog chapters to brush up on promises and async/<analogy>await</analogy>.
 
 ## Creating the LocationChoices Component
 
@@ -80,8 +80,8 @@ See if you can do this on your own. Expand the hints below if you need some help
 1. <analogy>Import</analogy> the new `LocationChoices` <analogy>component</analogy>
 2. <analogy>Invoke</analogy> `LocationChoices` in the <analogy>render</analogy> <analogy>function</analogy> using the `await` keyword since this <analogy>function</analogy> is defined as `async` and therefore returns a <analogy>promise</analogy>.
 3. Store the returned html in a <analogy>variable</analogy>
-5. Make the `render` <analogy>function</analogy> `async` since it invokes an <analogy>async function</analogy>
-6. Add the `locationsHTML` to the container
+4. Make the `render` <analogy>function</analogy> `async` since it invokes an <analogy>async function</analogy>
+5. Add the `locationsHTML` to the container
 </details>
 
 <details>

@@ -49,7 +49,7 @@ Run the following command in your Terminal. You will be prompted for your comput
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/refs/heads/main/client/install-homebrew.sh)"
 ```
 
-Once the process is complete, run the `brew` command in your terminal. If you see the output `command not found: brew` then contact an mentor.
+Once the process is complete, run the `brew` command in your terminal. If you see the output `command not found: brew` then contact a mentor.
 
 ## Install Modern Shell
 
@@ -65,7 +65,7 @@ Once complete, run the following command in your Terminal.
 echo $SHELL
 ```
 
-You should see either `/usr/local/bin/zsh` or `/bin/zsh` as the output of that command. If you don't, contact an mentor.
+You should see either `/usr/local/bin/zsh` or `/bin/zsh` as the output of that command. If you don't, contact a mentor.
 
 ## Install Node
 
@@ -77,11 +77,11 @@ Run the following command in your Terminal.
 
 Once the process is complete, quit your Terminal application completely, and then open it again immediately.
 
-Run the `node -v` command in your Terminal. If you see the output `command not found: node` then contact an mentor.
+Run the `node -v` command in your Terminal. If you see the output `command not found: node` then contact a mentor.
 
 ## Verify Developer Installations
 
-Run the following command to verify all developer installations are complete. If you see any error message that something isn't installed, contact an mentor.
+Run the following command to verify all developer installations are complete. If you see any error message that something isn't installed, contact a mentor.
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/main/client/verify-installs.sh)"
@@ -123,7 +123,7 @@ Invest 9 minutes of your time to watch the <a href="https://www.youtube.com/watc
 ## Troubleshooting for mentors
 
 <details>
-<summary>Expand if you are an mentor troubleshooting an issue</summary>
+<summary>Expand if you are a mentor troubleshooting an issue</summary>
 <h2>Visual Studio Code</h2>
 
 ### Troubleshooting Visual Studio Code
@@ -177,16 +177,6 @@ code
 ```
 
 <h2>Homebrew Troubleshooting</h2>
-
-After installing Homebrew, you may get the following warning:
-
-`/opt/homebrew/bin is not in your PATH`
-
-This may be fixed with this command:
-
-```
-export PATH=/opt/homebrew/bin:$PATH
-```
 
 After installing Homebrew, you may get the following warning:
 

@@ -19,7 +19,7 @@ touch scripts/main.js
 
 ### HTML
 
-Copy pasta the following code into your HTML file. As you can see, there is just a header, and a main <analogy>element</analogy> that contains two image elements with no URL for a source yet. You will be updating those dynamically after you fetch some URLs from
+Copy and paste the following code into your HTML file. As you can see, there is just a header, and a main <analogy>element</analogy> that contains two image elements with no URL for a source yet. You will be updating those dynamically after you fetch some URLs from the APIs.
 
 ```html
 <!doctype html>
@@ -46,7 +46,7 @@ Copy pasta the following code into your HTML file. As you can see, there is just
 
 ### CSS
 
-Copy pasta the following code into your CSS file for a little bit of added fun.
+Copy and paste the following code into your CSS file for a little bit of added fun.
 
 <details>
     <summary>Expand to get the code</summary>

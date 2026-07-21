@@ -45,7 +45,7 @@ export const saveSurveySubmission = async () => {
 
 Let's break down what we've added:
 
-1. After the <analogy>POST</analogy> <analogy>request</analogy> completes, we <analogy>create</analogy> a new `CustomEvent` and defined the type "newSubmissionCreated"
+1. After the <analogy>POST</analogy> <analogy>request</analogy> completes, we <analogy>create</analogy> a new `CustomEvent` and define the type "newSubmissionCreated"
 2. We then dispatch this <analogy>event</analogy> on the document <analogy>object</analogy>, making it available to any listeners in our application
 
 The `CustomEvent` constructor takes a <analogy>string</analogy> <analogy>argument</analogy> which is the name of the <analogy>event</analogy>. This name can be anything we choose, but it should be descriptive of what happened.

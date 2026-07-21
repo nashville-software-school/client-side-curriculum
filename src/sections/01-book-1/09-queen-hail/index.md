@@ -45,7 +45,7 @@ This is a task that you can execute later. It doesn't execute when you define it
 
 Now that you have a function defined, you can invoke it and pass a <analogy>string</analogy> to it as an argument. In this invocation, the argument is the string of "Athena Perez".
 
-Copy pasta the follow code into the `main.js` file below the function definition.
+Copy and paste the following code into the `main.js` file below the function definition.
 
 ```js
 const athena = hailTheQueen("Athena Perez") // Argument value is "Athena Perez"
@@ -61,12 +61,12 @@ node main.js
 And you should see the following string in the output.
 
 ```sh
-"Hail Her Majesty, Athena Perez."
+Hail Her Majesty, Athena Perez.
 ```
 
 ## Another Queen
 
-Copy pasta the follow code into the `main.js` file below the function definition. In this invocation, the argument is the string of "Charisse Ford".
+Copy and paste the following code into the `main.js` file below the function definition. In this invocation, the argument is the string of "Charisse Ford".
 
 ```js
 const charisse = hailTheQueen("Charisse Ford") // Argument value is "Charisse Ford"
@@ -79,9 +79,9 @@ console.log(jenna)
 Run the code again in this terminal and you will see the output of the function being invoked three times.
 
 ```sh
-"Hail Her Majesty, Athena Perez."
-"Hail Her Majesty, Charisse Ford."
-"Hail Her Majesty, Jenna Solis."
+Hail Her Majesty, Athena Perez.
+Hail Her Majesty, Charisse Ford.
+Hail Her Majesty, Jenna Solis.
 ```
 
 

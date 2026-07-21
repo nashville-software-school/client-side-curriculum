@@ -1,6 +1,6 @@
 ## Political Corporate Proxies
 
-In this exercise, you are going list all donations that companies have made to political action committees.
+In this exercise, you are going to list all donations that companies have made to political action committees.
 
 ### HTML Representations
 

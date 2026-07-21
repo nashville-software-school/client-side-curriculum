@@ -46,7 +46,14 @@
 *Book 4 → Fox y Dog — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
-*Books 4–5 (remaining) — Pending*
+*Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Self-Assessment — Reviewed ✓*
+*Book 4 → Explorer Chapters — Reviewed ✓*
+*Book 4 → Pioneer Projects — Reviewed ✓*
+*Book 4 → Advanced Projects — Reviewed ✓*
+*Book 4 → T&F Sub-chapters — Reviewed ✓*
+*Book 4 → Group Project: Exomine — Reviewed ✓*
+*Book 5 (remaining) — Pending*
 
 ### Variables & Data Types
 
@@ -68,6 +75,7 @@
 | Data Types | `pass by value` | When a primitive is copied when assigned to a new variable or passed to a function | Book 2 → Explorer: Duo → Copy me if you can | — |
 | Data Types | `pass by reference` | When an object/array shares its memory location rather than being copied | Book 2 → Explorer: Duo → Copy me if you can | — |
 | Type Conversion | `parseInt()` | Converts a string to an integer number | Book 4 → Indiana Jeans → Capturing User Choices | Books 4–5 |
+| Data Structures | `Map` | A built-in JavaScript data structure that stores ordered key-value pairs; unlike an object, it uses `.set()` to write and `.get()` to read | Book 4 → Explorer: Indiana Jeans → Maps | — |
 
 ### Functions
 
@@ -186,7 +194,12 @@
 *Book 2 → Dynamite Duo — Pending*
 *Book 2 → Movie Majesty — Reviewed ✓*
 *Book 2 → Martin's Aquarium — Reviewed ✓*
-*Books 2–5 (remaining) — Pending*
+*Book 4 → Indiana Jeans — Reviewed ✓*
+*Book 4 → Kneel Diamonds — Reviewed ✓*
+*Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Advanced Projects — Reviewed ✓*
+*Book 4 → T&F Sub-chapters — Reviewed ✓*
+*Books 3, 5 (remaining) — Pending*
 
 ### HTML
 
@@ -200,6 +213,8 @@
 | HTML Structure | `template literal` | A JavaScript string using backticks that can embed expressions: `` `${value}` `` | Book 2 → Dynamite Duo → Composing All HTML | Books 2–4 |
 | Form Elements | `radio button` | An `<input type="radio">` element that lets a user select one option from a group | Book 4 → Indiana Jeans → Creating a Radio Button Component | Book 4 |
 | Form Elements | `dropdown` / `select` | A `<select>` element that shows a list of options for the user to choose from | Book 4 → Cars 'R Us → Dropdown Controls | Book 4 |
+| Form Elements | `textarea` | A multi-line text input element that allows users to type longer content | Book 4 → Advanced: Pen Pal Society | — |
+| Form Elements | `checkbox` | An `<input type="checkbox">` element that lets a user select one or more options independently | Book 4 → Advanced: Pen Pal Society | — |
 
 ### CSS
 
@@ -222,7 +237,10 @@
 *Book 3 → Brewed Awakenings — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
-*Books 2–4 (remaining) — Pending*
+*Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Advanced Projects — Reviewed ✓*
+*Book 4 → T&F Sub-chapters — Reviewed ✓*
+*Books 2, 5 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -245,6 +263,7 @@
 | Browser Dialog | `alert()` | A browser function that shows a popup message box | Book 3 → DeShawn → Using State for an Interactive Experience | Book 3 → Brewed Awakenings |
 | Events | `change event` | An event that fires when a form input's value changes | Book 4 → Indiana Jeans → Capturing User Choices | Book 4 |
 | Events | `custom event` | A programmer-defined event that can be dispatched and listened for | Book 4 → Indiana Jeans → Reacting to State Changes | Book 4 |
+| Events | `submit event` | An event that fires when a form is submitted (via button click or Enter key); typically handled to prevent page reload and process the form data | Book 4 → T&F → Adding Teams | Book 5 |
 
 ---
 
@@ -256,9 +275,13 @@
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
 *Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Self-Assessment — Reviewed ✓*
+*Book 4 → Explorer Chapters — Reviewed ✓*
 *Book 4 → Pioneer Projects — Reviewed ✓*
 *Book 4 → Advanced Projects — Reviewed ✓*
-*Books 3–5 (remaining) — Pending*
+*Book 4 → T&F Sub-chapters — Reviewed ✓*
+*Book 4 → Group Project: Exomine — Reviewed ✓*
+*Books 3, 5 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -288,8 +311,12 @@
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
 *Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Self-Assessment — Reviewed ✓*
+*Book 4 → Explorer Chapters — Reviewed ✓*
 *Book 4 → Pioneer Projects — Reviewed ✓*
 *Book 4 → Advanced Projects — Reviewed ✓*
+*Book 4 → T&F Sub-chapters — Reviewed ✓*
+*Book 4 → Group Project: Exomine — Reviewed ✓*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|
@@ -333,7 +360,14 @@
 *Book 3 → Brewed Awakenings — Reviewed ✓*
 *Book 4 → Indiana Jeans — Reviewed ✓*
 *Book 4 → Kneel Diamonds — Reviewed ✓*
-*Books 3–4 (remaining) — Pending*
+*Book 4 → Cars 'R Us — Reviewed ✓*
+*Book 4 → Self-Assessment — Reviewed ✓*
+*Book 4 → Explorer Chapters — Reviewed ✓*
+*Book 4 → Pioneer Projects — Reviewed ✓*
+*Book 4 → Advanced Projects — Reviewed ✓*
+*Book 4 → T&F Sub-chapters — Reviewed ✓*
+*Book 4 → Group Project: Exomine — Reviewed ✓*
+*Books 3, 5 (remaining) — Pending*
 
 | Concept | Vocabulary Term | Definition | First Introduced | Reinforced In |
 |---------|----------------|------------|------------------|---------------|

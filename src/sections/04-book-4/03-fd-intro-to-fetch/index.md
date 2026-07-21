@@ -103,11 +103,11 @@ Now it's your turn to practice! Make a fetch call to the random dog <analogy>api
 ## 📝 What We've Learned
 
 In this chapter, we've:
-- Learned what the javascript fetch <analogy>function</analogy> is and how to make basic requests
+- Learned what the JavaScript fetch <analogy>function</analogy> is and how to make basic requests
 - Used JavaScript to send fetch requests to external APIs
 - Used the <analogy>Network tab</analogy> to monitor and inspect <analogy>HTTP</analogy> requests and responses
 - Examined the structure of <analogy>HTTP</analogy> responses including headers and <analogy>response</analogy> data
-- Identified different two <analogy>HTTP</analogy> status codes and what they mean
+- Identified two different <analogy>HTTP</analogy> status codes and what they mean
 
 ## 🔜 Next Steps
 

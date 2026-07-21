@@ -70,7 +70,7 @@ erDiagram
     }
 ```
 
-To enable getting the `id` property of the hauler that is clicked on, you will set a data attribute _(see <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank" rel="noopener noreferrer">MDN: Using data attributes</a> to learn more)_ on each list item the store the id.
+To enable getting the `id` property of the hauler that is clicked on, you will set a data attribute _(see <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank" rel="noopener noreferrer">MDN: Using data attributes</a> to learn more)_ on each list item to store the id.
 
 ```js
 shipsHTML += `<li data-id="${ship.id}">${ship.name}</li>`

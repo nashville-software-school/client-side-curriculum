@@ -8,7 +8,7 @@ For the most expensive, only show rivers where the number of dollar signs in the
 
 ### Example Output
 
-Yours should looks like this when complete. Please note that the data below is not necessarily correct, this is just an example.
+Yours should look like this when complete. Please note that the data below is not necessarily correct, this is just an example.
 
 ```sh
 The least expensive river tours are

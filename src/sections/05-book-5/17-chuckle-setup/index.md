@@ -2,11 +2,11 @@
 >You’re the funniest person you know, and your specialty is one-liners. You like to keep your adoring audience on their toes, but you have a hard time keeping track of which one-liners your friends have had the pleasure of hearing and which ones are still waiting to force the air out of their nose. That’s why you decided to create an app that will track them for you! You want the ability to record a new one-liner as soon as you think of it and track which ones have been told and which one's haven't.
 
 ## The Project
-This a fairly simple application designed to help you practice some of the basics of React that you learned while building Honey Rae's.
+This is a fairly simple application designed to help you practice some of the basics of React that you learned while building Honey Rae's.
 
 It has a simple database and full <analogy>CRUD</analogy> functionality. Here's what you'll be building throughout these chapters:
 
-<img src="./images/chuckle-wireframe.png" width="10000" />
+<img src="./images/chuckle-wireframe.png" width="1000px" />
 
 This application involves **C**reating, **R**eading, **U**pdating, and **D**eleting a One Liner from the database.
 
@@ -76,3 +76,4 @@ Here's some one liners to get you started. Copy the JSON data below and paste it
   ]
 }
 ```
+</details>

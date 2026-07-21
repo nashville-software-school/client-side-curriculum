@@ -1,6 +1,6 @@
 ## PAC Influence
 
-In this exercise, you are going list all donations that political action committees have made to political campaigns.
+In this exercise, you are going to list all donations that political action committees have made to political campaigns.
 
 ### HTML Representations
 

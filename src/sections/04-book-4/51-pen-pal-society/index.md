@@ -15,40 +15,62 @@ This project is for those who wish to learn the basics of working with forms, an
 
 ### User can choose an author
 
-**Given** a pen pal wants to send a letter<br/>
-**When** the Pen Pal app loads<br/>
+<div class="user-story">
+
+**Given** a pen pal wants to send a letter<br>
+**When** the Pen Pal app loads<br>
 **Then** there should be a <analogy>select</analogy> <analogy>element</analogy> that displays all pen pals to choose for the author
 
-### User can choose an recipient
+</div>
 
-**Given** a pen pal wants to send a letter<br/>
-**When** the Pen Pal app loads<br/>
+### User can choose a recipient
+
+<div class="user-story">
+
+**Given** a pen pal wants to send a letter<br>
+**When** the Pen Pal app loads<br>
 **Then** there should be a <analogy>select</analogy> <analogy>element</analogy> that displays all pen pals to choose for the recipient
+
+</div>
 
 ### User can choose a letter topic
 
-**Given** a pen pal wants to send a letter<br/>
-**When** the Pen Pal app loads<br/>
+<div class="user-story">
+
+**Given** a pen pal wants to send a letter<br>
+**When** the Pen Pal app loads<br>
 **Then** there should be a group of radio buttons for the user to choose a topic
+
+</div>
 
 ### User can enter the letter body
 
-**Given** a pen pal wants to send a letter<br/>
-**When** the Pen Pal app loads<br/>
-**Then** there should be textarea <analogy>element</analogy> in which the user can type in the letter body
+<div class="user-story">
+
+**Given** a pen pal wants to send a letter<br>
+**When** the Pen Pal app loads<br>
+**Then** there should be a textarea <analogy>element</analogy> in which the user can type in the letter body
+
+</div>
 
 ### User can save letter
 
-**Given** a pen pal wants to send a letter<br/>
-**When** the Pen Pal app loads<br/>
-**Then** there should be button labeled Send at the bottom of the form<br/>
+<div class="user-story">
+
+**Given** a pen pal wants to send a letter<br>
+**When** the Pen Pal app loads<br>
+**Then** there should be button labeled Send at the bottom of the form
+
+</div>
 
 ---
 
-**Given** a pen pal is done writing a letter<br/>
-**When** the pal clicks the Send button<br/>
-**Then** the letter should be saved in the <analogy>API</analogy> database<br/>
-**And** the new letter should immediately be rendered in the list of letters below the form<br/>
+<div class="user-story">
+
+**Given** a pen pal is done writing a letter<br>
+**When** the pal clicks the Send button<br>
+**Then** the letter should be saved in the <analogy>API</analogy> database<br>
+**And** the new letter should immediately be rendered in the list of letters below the form<br>
 **And** the rendered letter should display the following information
 
 * author
@@ -56,6 +78,8 @@ This project is for those who wish to learn the basics of working with forms, an
 * date sent
 * email address of author/recipient
 * topic of letter
+
+</div>
 
 ## Optional Advanced Challenge
 
@@ -65,16 +89,22 @@ Think you have a strong understanding of <analogy>asynchronous</analogy> operati
 
 ### User can choose multiple letter topics
 
-**Given** a pen pal wants to send a letter<br/>
-**When** the Pen Pal app loads<br/>
+<div class="user-story">
+
+**Given** a pen pal wants to send a letter<br>
+**When** the Pen Pal app loads<br>
 **Then** there should be a group of checkboxes for the user to choose one, or more, topics
+
+</div>
 
 ### User can save letter with multiple topics
 
-**Given** a pen pal is done writing a letter<br/>
-**When** the pal clicks the Send button<br/>
-**Then** the letter should be saved in the <analogy>API</analogy> database<br/>
-**And** the new letter should immediately be rendered in the list of letters below the form<br/>
+<div class="user-story">
+
+**Given** a pen pal is done writing a letter<br>
+**When** the pal clicks the Send button<br>
+**Then** the letter should be saved in the <analogy>API</analogy> database<br>
+**And** the new letter should immediately be rendered in the list of letters below the form<br>
 **And** the rendered letter should display the following information
 
 * author
@@ -82,3 +112,5 @@ Think you have a strong understanding of <analogy>asynchronous</analogy> operati
 * date sent
 * email address of author/recipient
 * all topics chosen
+
+</div>

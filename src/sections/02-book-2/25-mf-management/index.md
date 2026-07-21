@@ -25,7 +25,7 @@ Once the process completes, then run the following command to start the automate
 npm run test
 ```
 
-You should see the following output. Again, if you don't visit an mentor.
+You should see the following output. Again, if you don't visit a mentor.
 
 <img src="./images/modern-farm-automated-tests.gif">
 
@@ -41,7 +41,7 @@ As you start to create the files, and then write the correct JavaScript code for
 
 ## Creation of the Harvest Plan
 
-There is an existing `plan.js` module in this application that is reponsible for defining 3 rows of crops to be planted. In each row, there are 6 plots of land. Each plot is randomly assigned one of the following types of food to grow.
+There is an existing `plan.js` module in this application that is responsible for defining 3 rows of crops to be planted. In each row, there are 6 plots of land. Each plot is randomly assigned one of the following types of food to grow.
 
 1. Corn
 1. Asparagus

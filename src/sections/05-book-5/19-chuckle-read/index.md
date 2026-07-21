@@ -7,7 +7,7 @@ In this chapter you will get all the jokes and separate them into two lists, as 
 
 We're going to add three new state variables. One to store all of our jokes - `allJokes`, one to store the untold jokes - `untoldJokes`, and one to store the told jokes - `toldJokes`.
 
-First, let's get all of our jokes from the database and store them in state. _Remember not to trigger an infinite loop!_ Check your react dev tools to see if you've successfully stored the jokes in `allJokes` and watch your network tab to make sure your not making endless fetch calls. 
+First, let's get all of our jokes from the database and store them in state. _Remember not to trigger an infinite loop!_ Check your react dev tools to see if you've successfully stored the jokes in `allJokes` and watch your network tab to make sure you're not making endless fetch calls. 
 
 <details>
   <summary>Troubleshooting</summary>
@@ -30,7 +30,7 @@ Once `allJokes` contains our array of jokes, filter `allJokes` and set `untoldJo
 
 ## Displaying the Jokes
 
-Now it's time to get those on the page! But don't stop there, add a count for each list to show how many joke are either told or untold.
+Now it's time to get those on the page! But don't stop there, add a count for each list to show how many jokes are either told or untold.
 
 ### Adding a New Joke
 
@@ -46,5 +46,5 @@ Try adding a new joke now. Hmmmmm. Not getting your new joke in the list? You've
       setAllJokes(jokeArr)
   })
   ```
-  quite a few times. Try wrapping it in it's own function so you can just call it whenever you need to fetch and set all jokes instead of writing this functionality over and over again. 
+  quite a few times. Try wrapping it in its own function so you can just call it whenever you need to fetch and set all jokes instead of writing this functionality over and over again. 
 </details>

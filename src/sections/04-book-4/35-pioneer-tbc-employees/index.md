@@ -41,5 +41,5 @@ Here's some <analogy>JSON</analogy> to get you started. Add at least 4 more comp
 ## HTML Representations
 
 1. Using the strategies that you learned in previous projects in this book, generate the initial modules that you will need to generate HTML representations of employees _(e.g. main.js, employees.js)_.
-1. Use the employee and computer data in the employee list <analogy>component</analogy> to display the employee's name, and age. Also display the model and manufacture year for the computer she is using. Remember to use the `_expand` query <analogy>string</analogy> <analogy>parameter</analogy> when fetching employees.
+1. Use the employee and computer data in the employee list <analogy>component</analogy> to display the employee's name. Also display the model and manufacture year for the computer she is using. Remember to use the `_expand` query <analogy>string</analogy> <analogy>parameter</analogy> when fetching employees.
 

@@ -1,6 +1,6 @@
 ## A Growing Business
 
-In this exercise, you are going to refactor you application to include office locations. Your business is thriving and now you have offices in Nashville, Atlanta, and Memphis. Each employee will be assigned to one office location.
+In this exercise, you are going to refactor your application to include office locations. Your business is thriving and now you have offices in Nashville, Atlanta, and Memphis. Each employee will be assigned to one office location.
 
 ### The Workforce ERD
 

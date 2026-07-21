@@ -2,13 +2,13 @@
 
 Time to assess how well you have learned to use the debugging tools in Chrome Dev Tools, and writing click event listeners.
 
-This application is to show kids with illnesses and the memories the would like to make. Celebrities sign up to help kids make memories.
+This application is to show kids with illnesses and the memories they would like to make. Celebrities sign up to help kids make memories.
 
 ## Event Listeners to Create
 
 1. When the kid name is clicked, it should display their wish.
 1. When the celebrity name is clicked, it should display their sport.
-1. The pairings list should should contain the pairing in the following format.
+1. The pairings list should contain the pairing in the following format.
     ```html
     {child name} will be making memories with {celebrity name}, a {celebrity sport} star, by {child wish}
     ```

@@ -5,7 +5,7 @@ In this chapter you will implement the Employee list the same way we did the Cus
 <img src="./images/repair-employee-list.png" width="700" />
 
 ## ⚠️ BEFORE YOU START ⚠️
-The goal of this exercises is _not_ to get the employees rendered on the page. The goal is to deepen your understanding by putting to practice what you've learned so far. The _outcome_ will be the employees rendered on the page. That being said...
+The goal of this exercise is _not_ to get the employees rendered on the page. The goal is to deepen your understanding by putting to practice what you've learned so far. The _outcome_ will be the employees rendered on the page. That being said...
 
 ### DO NOT copy and paste code from the previous chapter.
 

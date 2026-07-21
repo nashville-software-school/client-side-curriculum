@@ -11,7 +11,7 @@ If the answer to only one of the questions is **yes**, then you have a one-to-ma
 
 #### Visual Example of Join Table
 
-* A professor can be assigned to many subject.
+* A professor can be assigned to many subjects.
 * A subject can be taught by many professors.
 
 ```mermaid

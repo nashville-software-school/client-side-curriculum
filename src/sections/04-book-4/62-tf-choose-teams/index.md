@@ -4,6 +4,6 @@ When the user clicks the button to start a new game, display three dropdowns. Ea
 
 You can use an object or an array to store the teams that are chosen by the user.
 
-As soon as all three teams are chosen, immediate display a form where the user can enter in each team's score for round 1.
+As soon as all three teams are chosen, immediately display a form where the user can enter in each team's score for round 1.
 
 <img src="./images/tf-choosing-teams.gif">

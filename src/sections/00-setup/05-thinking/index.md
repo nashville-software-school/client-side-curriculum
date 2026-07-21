@@ -4,9 +4,9 @@ The most common misconception amongst muggles is that being a successful softwar
 
 It isn't.
 
-Successful software developers are highly proficient at a the follow skills.
+Successful software developers are highly proficient at the following skills.
 
-1. **Analytical thinking**. This the ability to tackle complicated issues by evaluating information you’ve gathered and organized. Analytical thinkers can detect patterns between systems that can lead to creative solutions.
+1. **Analytical thinking**. This is the ability to tackle complicated issues by evaluating information you’ve gathered and organized. Analytical thinkers can detect patterns between systems that can lead to creative solutions.
 1. **Algorithmic thinking**. This involves breaking down a large, abstract problem into smaller, achievable tasks, and then ordering those tasks into a logical algorithm to solve problems.
 1. **Efficient learning**. Efficient learners are able to objectively and critically identify gaps in their skills and devise a coherent strategy for gaining those skills.
 1. **Communication**. To be truly valuable, you have to master complex communication - both to your technical and non-technical teammates. Developers who cannot communicate effectively bring little value to modern teams.
@@ -39,7 +39,7 @@ You are going to write some additional code that will switch the value of each v
 
 * You can't define any other variables as part of the algorithm.
 * Changing these two lines of code to replace `5` with `11`, and `11` with `5` is not an algorithm.
-* You don't need any functions implement this algorithm, just a few lines of code.
+* You don't need any functions to implement this algorithm, just a few lines of code.
 
 
 ## Helpful Hints

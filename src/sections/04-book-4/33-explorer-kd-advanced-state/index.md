@@ -1,12 +1,12 @@
 # User Choices as State
 
-You seen the following phrase several times in the chapters of this book.
+You've seen the following phrase several times in the chapters of this book.
 
 > When the <analogy>state</analogy> of your data changes, your HTML must be regenerated to display that new <analogy>state</analogy> to the person using the application.
 
 However, there's one case in your existing application where you are **not** following that design pattern.
 
-When the user chooses a size, styles, or metal, you are updating the <analogy>value</analogy> of one of the keys in the <analogy>transient state</analogy>. Right now, the HTML is not regenerated when that happens.
+When the user chooses a size, style, or metal, you are updating the <analogy>value</analogy> of one of the keys in the <analogy>transient state</analogy>. Right now, the HTML is not regenerated when that happens.
 
 Your challenge is to regenerate the HTML every time one of the <analogy>transient state</analogy> properties changes.
 

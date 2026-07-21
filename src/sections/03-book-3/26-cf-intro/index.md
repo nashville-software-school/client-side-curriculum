@@ -16,11 +16,11 @@ There are six major destinations in the park. This application will display info
 1. In the northern section, there is the **Lost Wolf Hiking Trail** that supports hiking, picnicking, and rock climbing.
 1. In the northwest section, the main attraction is the **Lodge**, but there is also a hotel, and a restaurant. This area supports lodging, parking, information, and picnicking.
 1. In the southwest section, there is the **Gander River**, which is a natural preserve, so it only supports fishing and hiking.
-1. In the southern section, the main attraction is the  **Campgrounds**. Ther eis also the office park, and children play areas. This area supports information, lodging, and parking.
-1. In the southeast section, there is the **Pine Bluffs Trails**, a vast network of trails for all levels of hikers. On the beginner trail, there are food vendors. This area support hiking, picnicking, and zip lines.
+1. In the southern section, the main attraction is the  **Campgrounds**. There is also the office park, and children play areas. This area supports information, lodging, and parking.
+1. In the southeast section, there is the **Pine Bluffs Trails**, a vast network of trails for all levels of hikers. On the beginner trail, there are food vendors. This area supports hiking, picnicking, and zip lines.
 
 * Each section should have a title _(e.g. Lost Wolf Hiking Trail)_.
-* Each section should display the services is supports _(e.g. hiking)_.
+* Each section should display the services it supports _(e.g. hiking)_.
 
 ## General Layout
 

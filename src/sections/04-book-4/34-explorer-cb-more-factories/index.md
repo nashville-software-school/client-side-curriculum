@@ -14,4 +14,4 @@ If a car is chosen, the prices are standard.
 
 If an SUV is chosen, the prices are 1.5x the standard.
 
-If a car is chosen, the prices are 2.25x the standard.
+If a truck is chosen, the prices are 2.25x the standard.

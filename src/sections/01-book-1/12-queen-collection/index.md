@@ -46,7 +46,7 @@ Here is some starter code. Paste this into your `main.js` module and immediately
 Read the <analogy>stack trace</analogy> and determine exactly which line of code in your module has the error.
 
 ```js
-const queens = []
+const queens = []  // Already written at the top of main.js in the Setup step above
 
 const createQueen = () => {
     const queenObject = {

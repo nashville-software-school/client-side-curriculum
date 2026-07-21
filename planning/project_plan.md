@@ -6,9 +6,8 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ---
 
 ## Source Reference
-- **Local repo:** `/home/gmkorte/workspace/nss/curriculum/client-side-curriculum`
+- **Local paths** (this repo, the `nss-core` platform repo, the completed-project reference): see the contributor table in [`CLAUDE.md`](../CLAUDE.md) — identify the current contributor via `git config user.name`/`user.email` rather than assuming a single hardcoded path.
 - **GitHub reference:** https://github.com/nashville-software-school/client-side-mastery
-- **nss-core reference:** `/home/gmkorte/workspace/nss/curriculum/platform`
 - Use the GitHub repo as a structural guide for content; it is not the source of truth for the new ID/chapter organization.
 
 ---
@@ -16,13 +15,16 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ## How We Work
 
 - Work **one chapter at a time** per session to keep context clean and changes focused.
-- At the start of every session, read `project_plan.md` and the relevant memory files before touching any code.
+- At the start of every session, follow [`CLAUDE.md`](../CLAUDE.md)'s session-start protocol (contributor identity, the Current Work claim board, and shared content conventions), then read `project_plan.md` and the relevant memory files before touching any code.
 - At the end of every session, update all three governing documents as needed before running `/clear`:
   1. **`project_plan.md`** — mark the session complete, advance "next" to the following session
   2. **`concept_map.md`** — review exercises just completed; add missing terms, update Reinforced In, mark chapter as Reviewed ✓, flag any inconsistencies with ⚠️
   3. **`curriculum_map.md`** — verify IDs are correct (usually no changes needed, but confirm)
   - Then update the memory file at `.claude/projects/.../memory/project_curriculum_restructure.md` with what was done and what comes next. Memory is the handoff between sessions — the conversation context will not survive a `/clear`.
-- **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry.
+- **Prune stale history actively.** When session-level detail in the memory file (`project_curriculum_restructure.md`) is no longer actionable — because the work is complete and the decisions are captured in `project_plan.md` — delete it. The memory file should always reflect current state, not an append-only log. A good trigger: if a whole phase is complete and its decisions are stable, collapse its session history to a one-line status entry. See [`CLAUDE.md`](../CLAUDE.md) → "What's tracked here vs. private memory" for the general rule on what belongs in this repo versus private memory.
+- **Transcript editing: one topic section per session.** When editing a transcript and the current topic section is complete (i.e., you reach the boundary where the next `### [Topic]` header gets inserted), stop work, update project_plan.md and memory with the partial progress, and tell the user you are ready for `/clear`. Begin the next topic section in the following session.
+- **Completed project reference.** When questions arise about a specific exercise — expected output, correct variable names, intended code structure — refer to the completed-project path in the [`CLAUDE.md`](../CLAUDE.md) contributor table for a working example of the full course project.
+- **Curl script boilerplate is the starting state.** Most chapters begin with a `curl` command that scaffolds the boilerplate for that exercise. That scaffolded code is the canonical starting point for the student. When evaluating whether code examples, variable names, or expected output in an exercise are correct, treat the curl script's output as the ground truth for the starting state, and the completed project (see [`CLAUDE.md`](../CLAUDE.md)) as the ground truth for the end state.
 
 ---
 
@@ -181,11 +183,14 @@ Work **one chapter at a time** per session:
 | 18 ✓ | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 ✓ | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
-| ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
-| — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
+| ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`. **Blocked on an nss-core decision:** cross-course regression testing, then publishing the new `nss-core` version, before the local `npm link` can be removed. |
+| ✓ | **Phase 2b: Course Landing Page** — resolved with a curriculum-side-only fix (`src/sections/introduction/`); the `nss-core` change originally scoped below was not needed |
 | ✓ | **Phase 3: Broken Links** — All categories A–G complete |
-| — | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
+| ✓ | **Phase 3.5: Housekeeping** — removed stray `type: "group-project"` values; added `chapterGroup` emojis across 116 files |
+| ✓ | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
+| ✓ | **Phase 4.5: Polish Pass** — spacing/formatting, localhost link audit, video audit, and transcript readability (18/18 exercises) all complete |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
+| — | **Phase 5.1: Exercise Standardization** — once Phase 5's threads are woven in, standardize the shape/flow of every exercise so the curriculum reads as one coherent course |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
 | — | **Phase 8: Concept Map Refactor** — see detail below |
@@ -216,6 +221,7 @@ Work **one chapter at a time** per session:
 - **Explorer/Pioneer `previousChapterId` navigation:** Should the first exercise of an Explorer or Pioneer chapter point back to the last exercise of the chapter it expands, or continue chaining linearly through the Self-Assessment?
 - Should Explorer and Pioneer chapters appear in the primary nav alongside core chapters, or in a separate "challenge" track? (Deferred to Phase 2 decision.)
 - Should the concept map drive which exercises need content review? (Relevant to Phase 7.)
+- **Cross-chapter link base URL bug (nss-core fix needed):** 44 absolute `/chapter_id` links across 12 files render as plain `<a>` tags and navigate outside the Vite base path (`/client-side-curriculum/`), causing 404s. Fix: nss-core's `Chapter` component should post-process rendered HTML to prepend `baseUrl` to any `href` starting with `/`. See `platform/memory/cross_chapter_links_base_url.md` for full spec. Interim workaround: prepend `/client-side-curriculum/` to all 44 link href values in the markdown (fragile — not recommended).
 
 ---
 
@@ -293,7 +299,9 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 2b: Course Landing Page
+## Phase 2b: Course Landing Page ✓ COMPLETE
+
+**Resolution:** Implemented as a curriculum-side-only fix — no `nss-core` changes needed. `src/sections/introduction/` was added as its own section with an `id: "introduction"` chapter at `order: 1`, rendering the course intro content directly as a normal chapter rather than requiring platform changes to `Course.jsx`/`IntroPage.jsx`. Image at `public/assets/learning-objectives.png`; global image CSS added to `src/index.css`. The planning detail below reflects the original approach that was considered and superseded by this simpler fix — kept for context.
 
 *Motivation: long course repositories like this one have a meaningful README that serves as the student-facing introduction to the course — its goals, structure, and what students will build. Currently the platform's intro page is a generic animated screen with a "Start Learning!" button and no course-specific content. Surfacing the README as the actual landing page makes the first impression intentional and course-specific.*
 
@@ -327,7 +335,7 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 3: Broken Links ◑
+## Phase 3: Broken Links ✓ COMPLETE
 
 ### Audit Summary (2026-06-30)
 - **Internal broken links:** 166 across 181 exercise files
@@ -446,7 +454,17 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 
 ---
 
-## Phase 4: General Errors ◑ ACTIVE
+## Phase 3.5: Housekeeping ✓ COMPLETE (2026-07-13)
+
+*Two cleanup items identified and resolved during the external link review pass.*
+
+- Removed `type: "group-project"` from all group project `index.jsx` files (Books 1, 3, 4, 5 — Book 2 was already clean).
+- Added emojis to all 14 `chapterGroup` values across 116 files (Queen Bee already had 👑; all others assigned matching emojis).
+- Also documented (in the `platform` repo, not here): an `nss-core` JavaScript code block rendering bug where HTML tags inside JS template literals render as real DOM elements instead of literal text — see `platform/memory/js_codeblock_html_rendering.md`. Fix requires changes to `nss-core`'s `marked` renderer; tracked as an open `nss-core`-side item.
+
+---
+
+## Phase 4: General Errors ✓ COMPLETE
 
 *Scope: all exercise markdown content across all 5 books and Setup. This is an editorial pass — finding and fixing errors that would confuse or block students.*
 
@@ -464,6 +482,227 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 - Log errors by type and exercise ID
 - Fix errors that have a clear correct answer
 - Flag errors that require a curriculum design decision (e.g., whether to update an approach or remove the exercise)
+
+### Session Log
+
+| Chapter | Status | Notes |
+|---------|--------|-------|
+| Setup: Getting Started (all platforms) | ✓ | mac: "an mentor" ×5 fixed, duplicate Homebrew block removed; win: "Copy pasta" fixed; win-csharp: "you an work" fixed, "Windows Terminal Preview" → "Windows Terminal" |
+| Setup: Core Professional Skills | ✓ | "at a the follow skills", "This the ability", "functions implement" — 3 grammar fixes |
+| Setup: Debugging Shortcuts | ✓ | No errors found |
+| Setup: ADHD Strategies | ✓ | "an mentor", "Visit" typo, "earthy" → "earthly", "of if" → "or if" — 4 fixes |
+| Book 1: Queen Bee | ✓ | 09: "Copy pasta"×2, "the follow"×2, quoted console.log output removed; 11: "Copy pasta"×2, "queen's name" missing "the", Unfortunately typo; 12: comment added to starter code re: queens array; 14: tribute typo, "that values" → "the values", Hint 2 description wrong |
+| Book 1: Sequina's Surf Shop | ✓ | 16: "understand" → "understanding"; 17: "job is understand" ×1; 18–20: step numbering fixed (1→3 became 1→2); 18–19: "job is understand" ×2; 19: "accounting form" → "firm", REPL notation removed from JS code block; 21: `properties.js` → `averagePrice.js` (stale name); 22: "odularize" typo, "import the data" → "import the functions"; 23: algorithmic typo, "Properties" → "AveragePrice" in actors list |
+| Book 1: Björn's Wilderness Adventures | ✓ | 24: "so easily" → "so easy"; 25: "Bjorn" → "Björn", "should looks like" fixed across 25–28; 26: duplicate "the the"; 28: "produces does the same" → "does the same"; 36 explorer: `bjorn.js` → `adventure.js` ×2 (file never created) |
+| Book 1: Self-Assessment | ✓ | No errors found |
+| Book 1: Explorer chapters | ✓ | No additional errors (35, 37–38) |
+| Book 1: Group Project | ✓ | No errors found |
+| Book 2: Dynamite Duo | ✓ | 01: "don't any content" (missing "have"), "SSH options/command" ×2; 02: "Copy pasta", "an mentor"; 04: missing `getHeroes` getter + `heroes.js` update (broke after removing `export const database`) — fixed with Socratic prompt + hints; 07: "The goals is"; 08: "non-intuitive" |
+| Book 2: Movie Majesty | ✓ | 11: Step 3 code missing `export` (refactored to Socratic challenge in Step 4 + hint), "never explain" → "never explained"; 13: Conclusion incorrectly included CSS bullets before CSS chapters — trimmed to JS-only; 15: Step 3 implied link might be missing (it was set up in ex. 09) — updated to "verify", fixed `./styles/` → `styles/` consistency; conclusion "upcoming chapters" → correct handoff to Martin's Aquarium |
+| Book 2: Martin's Aquarium | ✓ | 16: removed stray empty bash block, fixed description ("CSS at end of body" → in `<head>`); 17: duplicate Step 4 labels (second → Step 5), "Create a new file" → "Open the file" (already created in ex. 16); 20: narrative typos (Martin's/hurriedly/you eyes/could understanding/hard to understanding ×5), "three functions module" phrasing, "Martin's has specified"; added process-based hint below starter code skeleton |
+| Book 2: Self-Assessment | ✓ | 21: "your task to build" → "your task is to build" |
+| Book 2: Explorer chapters | ✓ | 22: stray `"` end of para 1, double "and" ×2, missing comma in `console.log` (SyntaxError), "to a see" ×2; 23: "Create a files" → "Create the following files" |
+| Book 2: Group Project | ✓ | 24: "working products" → "working product"; 25: "visit an mentor", "responsible" spelling; 28: `fields.js` → `field.js` (wrong filename), "to be plants" → "to be planted"; 32: "return the the last crop", "occasionally" spelling; 33: section header said "Stack Data Structures" for Queue chapter |
+| Book 3: DeShawn's Dog Walking | ✓ | 03: "encourage" → "encouraged", "developer store" → "developers store"; 05: "metadate" → "metadata" |
+| Book 3: Shipping Ship Ships | ✓ | 13: "Only the primary" → "Only the primary key"; 14: "hauling ship objects" → "shipping ship objects", same primary key fix; 15: "item the store" → "item to store"; 16: title was "Hauler Cargo" (copy of ex.15) → "Shipping Ship's Hauler" |
+| Book 3: Brewed Awakenings | ✓ | 19: "Viual" → "Visual"; 21: "an mentor" → "a mentor"; 22: "an mentor" → "a mentor", `const fulfilledOrders` → `let fulfilledOrders`; 23: "many subject" → "many subjects" |
+| Book 3: Self-Assessment | ✓ | 24: "the would like" → "they would like", "should should contain" → "should contain" |
+| Book 3: Group Project | ✓ | 25: "challenging that" → "challenging than"; 26: "Ther eis" → "There is", "services is supports" → "services it supports", "area support" → "area supports"; 27: "you hav" → "you have", "be visting" → "be visiting", "the you have" → "then you have", "answer both one" → "answer to both of"; 28: "spcific" → "specific"; 30: "displayed show" → "displayed showing" |
+| Book 4: Fox y Dog | ✓ | 01: duplicate "6." in key concepts fixed → "7.", "Api" → "API"; 02: "Copy pasta"×2, truncated sentence ("URLs from" → "URLs from the APIs."); 03: "javascript" → "JavaScript", "different two" → "two different"; 04: "That promises still fulfilled" → "That promise was still fulfilled"; 05: "who's" → "whose", spurious `<analogy>Key</analogy>` tag removed, list skips 3→fixed twice, missing `=` in ❌ code example |
+| Book 4: Indiana Jeans | ✓ | 06: "her's" → "hers", "pair a" → "pair of", "boiler plate" → "boilerplate"; 07: missing verb "Open" added, version `0.17.3` → `0.17.4` (install command installs 0.17.4); 09: "Fox y Cat" → "Fox y Dog", algorithm hint list 1,2,3,5,6 → 1,2,3,4,5; 10: code bug — handler checked `"ownJeans"` but radio buttons use `name="ownsJeans"` (fixed both code and description), removed false bullet "Each function logs to console"; 12: "the the" → "the", Key Concepts list 1,2,4 → 1,2,3; 13: "defined the type" → "define the type" |
+| Book 4: Kneel Diamonds | ✓ | 14: "Intead" → "Instead", "vitage" → "vintage"; 16: `database.js` → `database.json`; 17: "Indian Jeans" → "Indiana Jeans", "correct use" → "correctly use", `render` missing `async`; 18: "to to" → "want to", `const optionsHTML +=` → `optionsHTML +=` (syntax error), "`size` parameter" → "`metal` parameter"; 19: "defualt" → "default"; 21: "Diplaying" → "Displaying", missing `await` on `fetchResponse.json()` |
+| Book 4: Cars 'R Us | ✓ | 23: "animataion" → "animation" (alt text), "the follow options" ×3 → "following", "reat" → "rear", "an mentor" → "a mentor"; 24: "displayed...an an" → "displays...as an"; 25: extra "them" removed; 27: `?)__` → `?)_` (stray underscore broke italic close); 28: "paramter" → "parameter", "toLocalString()" → "toLocaleString()" in prose |
+| Book 4: Self-Assessment | ✓ | 29: list numbering skipped 3 (1,2,4,5,6,7 → 1,2,3,4,5,6) |
+| Book 4: Explorer chapters | ✓ | 31: "representaiton" → "representation", `iPhone2.get(price)` → `get("price")` (unquoted key); 32: "earrings 4x" → "necklace 4x" (copy-paste error); 33: "You seen" → "You've seen", "styles, or metal" → "style, or metal"; 34: second "If a car" → "If a truck" (copy-paste error) |
+| Book 4: Pioneer projects | ✓ | 35: "name, and age" → "name" (no age field in data model); 36: "an 4" → "4", "code the generates" → "that generates"; 37: "refactor you" → "your"; 38: `EmployeeList` missing `async`, duplicate `const response` → `ecResponse`; 39: "relationships" → "relationship", "approrpriately" → "appropriately", "for build" → "for building"; 40: "**Flowers**resource" → "**Flowers** resource"; 42: "Distibutors" × 2 → "Distributors", missing period; 45: URL missing closing `)` in Wikipedia href; 46: "going list" → "going to list", "Workforce ERD" → "Honest Abe ERD"; 47: "Infuential" → "Influential", "going list" → "going to list"; 48–49: "going list" → "going to list"; 50: "you task" → "your task" |
+| Book 4: Advanced projects | ✓ | 51: "an recipient" → "a recipient", missing "a" before textarea; 52: "An new" → "A new", "an mentor" → "a mentor"; 54: "will a national park" → "will be a national park", "fetures" → "features", "to the the latitude" → "to get the latitude" |
+| Book 4: Group Project | ✓ | 55: no errors |
+| Book 4: T&F sub-chapters | ✓ | 56: "are be arranged" → "are to be arranged", "distract a Knight" → "distracts", "Bludgeons" → "Truncheons", "cumulative of" → "cumulative total of"; 58: "one some game score" → "some game scores"; 59: "Create a array" × 3 → "an array"; 62: "immediate display" → "immediately display"; 63: "saves a round scores" → "a round of scores", "the score" → "the scores" |
+| Book 5: Honey Rae's Repair Shop | ✓ | **Pre-pass (2026-07-14):** Extracted transcripts from all 18 YouTube videos via yt-dlp + VTT parser; embedded as collapsible `<details>` blocks with `[MM:SS]` topic markers in ex 01–16 (ex 03 skipped — Screencastify; ex 09 has no video). **Editorial fixes:** 01: "call in an mentor"; 02: missing backtick in template literal, extra `)` in onClick; 03: "Expand to the your"; 04: wrong alt text; 05: double `return (`, missing `}` in App fn, "it's value", "and and"; 06: JSX missing fragment wrapper, missing `}` in Ticket fn, broken emoji; 07: stray `u` in note, "this function this function"; 08: `</>` closing div, `<h1></h2>` ×2, `<>` instead of `</>` ×2; 09: "this exercises"; 10: missing space before backtick, "set up up", `path="/">`, "you child route", wrong alt text; 11: "fo routes", `</Route>` → `</Routes>`, `path="/">` ×4, missing fragment wrapper ×4, "/projcets", stray backtick, "the the user", value `3`→`2`, wrong alt text, "to the the new route"; 12: "we has to pass"; 14: missing space before backtick |
+| Book 5: Chuckle Checklist | ✓ | 17: "This a" → "is a", `width="10000"` → `"1000px"`, missing `</details>` added; 18: `steve.png` copied to images dir (was missing), code fence `javascript` → `jsx`; 19: "your not" → "you're not", "joke are" → "jokes are", "in it's own" → "in its own"; 20: "same expect for" → "except", "If told it" → "If told is", "to it's opposite" → "its opposite"; 21: wrong alt text on delete gif (said "told and untold" → "being deleted") |
+| Book 5: Learning Moments | ✓ | 22: "an mentor"; 23: "an mentor", broken link `REPAIR_WIREFRAME.md` → `/book_5_honey_rae_wireframe`; 26: `</Route>` → `</Routes>` (code bug), `App.js` → `App.jsx` ×2, "Copy and past" → "paste", "not bee defined" → "been defined"; 27: "by it's" → "its"; 31: "remove to post" → "remove the post" |
+| Book 5: Explorer / Capstone / Group Project | ✓ | 34: "applications" spelling ×1; 35: "applications" spelling ×1; 36: "by click the" → "by clicking the", "you and you coach" → "your coach" |
+
+### Embedded Video + Timestamp-Linked Transcripts ◑ IN PROGRESS
+
+During the Book 5 transcript pass, transcripts were embedded as collapsible `<details>` blocks with `[MM:SS]` markers grouped by topic. **Proof-of-concept implemented on ex 01 (react-basics) — 2026-07-14.**
+
+#### What Was Learned (renderer research)
+
+- `marked` (used by nss-core) runs with no sanitizer and `gfm: true` — raw HTML blocks pass through unchanged
+- Content injected via `dangerouslySetInnerHTML` — **iframes render without restriction**
+- No CSP configured on the platform or curriculum Vite configs
+- `<script>` tags injected via innerHTML are **not executed** (browser security fundamental)
+- Inline `onclick="..."` attributes **do** execute when injected via innerHTML — but messy to write per-timestamp
+
+#### Chosen Approach: Named Iframe + `?start=` Target Links
+
+No JavaScript required. Pure HTML.
+
+1. Replace `<a href="https://youtu.be/..."><img .../></a>` with a named `<iframe>`:
+   ```html
+   <iframe name="yt-ex01" src="https://www.youtube.com/embed/VIDEO_ID"
+     width="700" height="394" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+     allowfullscreen></iframe>
+   ```
+
+2. Convert each `[M:SS]` timestamp in the transcript to a link targeting the iframe:
+   ```html
+   <a href="https://www.youtube.com/embed/VIDEO_ID?start=N&autoplay=1" target="yt-ex01">[M:SS]</a>
+   ```
+   Clicking the link reloads the iframe at that second position with autoplay. `N` is the timestamp converted to total seconds.
+
+3. Each exercise gets a unique `name` on its iframe (e.g., `yt-ex01`, `yt-ex02`, ...).
+
+#### Status ✓ COMPLETE (2026-07-14)
+
+- [x] ex 01 (react-basics) — proof-of-concept complete
+- [x] ex 02–16 (minus ex 03 Screencastify, ex 09 no video) — rolled out via `embed_videos.py` script
+
+All 13 remaining exercises processed. Each YouTube text link replaced with an embedded `<iframe>`, and all `[M:SS]` transcript timestamps converted to `<a href="...?start=N&autoplay=1" target="yt-exNN">` links. Multi-video exercises (11, 12, 15) received two iframes each; ex 06 also has a second optional-video iframe (`yt-ex06b`).
+
+Ex 03 (Screencastify) stays as clickable thumbnail — no YouTube URL to embed.
+Ex 09 has no video — no change needed.
+
+---
+
+## Phase 4.5: Polish Pass ✓ COMPLETE
+
+*Four improvement areas identified after completing the video embedding work. Independent sessions — no blocking dependencies between them. Recommended order: 1 → 2 → 3 → 4.*
+
+---
+
+### Session 4.5.1: Spacing & Visual Formatting ✓ COMPLETE (2026-07-14)
+
+**A — Global vertical spacing:** Added a full vertical rhythm CSS block to `src/index.css` scoped to `div[class$="contentContainer"]`. Rules cover h1–h4 (`margin-top: 2rem`; first-child reset to 0), ul/ol (`padding-left: 1.75rem; margin-bottom: 1rem`), li spacing, blockquote (left border + tint), details (border + radius + padding; `details[open] summary` gets `margin-bottom: 0.75rem`), iframe (`display:block; margin: 1.5rem 0; border-radius: 6px`), and hr (`margin: 2rem 0`).
+
+**B — Iframe/transcript spacing:** Covered by the global fix (iframe `margin: 1.5rem 0` + details `margin: 1.5rem 0` provide breathing room between consecutive iframes and transcripts on ex 11, 12, 15).
+
+**C — User story containment:** Added `.user-story` CSS class (left border using `--primary-light`, `--bg-dark` background, `padding: 0.75rem 1rem`, `margin: 1rem 0`). Wrapped all Given/When/Then story blocks in `<div class="user-story">...</div>` across 11 files:
+- `04-book-4/51-pen-pal-society` — 8 stories; normalized `<br/>` → `<br>`
+- `05-book-5/23-learn-wireframe` — 23 stories across 8 view sections
+- `05-book-5/24–25, 27–33` (9 exercises) — 1–4 stories each
+- `05-book-5/26-learn-routes-setup` — 1 story left as blockquote (it's contextual reference inline in instructions, not an assigned story)
+- `05-book-5/36-capstone-resources` — table format; no change (template for students)
+
+---
+
+### Session 4.5.2: Localhost Link Audit ✓ COMPLETE (2026-07-14)
+
+**Full grep results (excluding `localhost:8088` JSON server):**
+
+| File | Line | Found | Disposition |
+|------|------|-------|-------------|
+| `05-book-5/26-learn-routes-setup/index.md` | 145, 149 | `localhost:3000/login`, `localhost:3000` ×4 | **Fixed** → `localhost:5173` — Learning Moments is a React/Vite app |
+| `02-book-2/02-duo-dev-tools-intro/index.md` | 48 | `localhost:3000` | ✓ Correct — Books 1–4 use `npx serve` (port 3000), not Vite; no `package.json` exists |
+| `02-book-2/13-mm-main/index.md` | 43 | `localhost:3000` | ✓ Correct — same reason |
+| `04-book-4/08-ij-jeans-component/index.md` | 92 | `localhost:3000` | ✓ Correct — same reason |
+| `05-book-5/01-react-basics/index.md` | 77, 81 | `localhost:5173/` | ✓ Correct — student's own Honey Rae's Vite app |
+| `05-book-5/05-repair-all-tickets/index.md` | (transcript) | "localhost 8088" in speech text | ✓ Correct — JSON server reference in transcript prose |
+
+**User-reported `localhost:5173/<path>` platform link issue:** Not present in any markdown files. No instances of `localhost:5173/` other than the correctly-scoped `01-react-basics` student app reference.
+
+---
+
+### Session 4.5.3: Full Video Audit (Books 1–4 + Setup) ✓ COMPLETE (2026-07-14)
+
+**Complete video inventory with durations (yt-dlp):**
+
+| File | Video | Duration | Decision |
+|------|-------|----------|----------|
+| `00-setup/02-getting-started-mac` | Rectangle (`tFeDyqZG4z4`) | 9:11 | Leave — external tutorial |
+| `00-setup/02-getting-started-mac` | Git Config Dir (`exva3J_jojc`) | 1:57 | Leave — short utility, mentor section |
+| `00-setup/04-getting-started-windows-csharp` | Git global config (`66EB9oxGMzQ`) | 1:24 | Leave — short utility |
+| `00-setup/04-getting-started-windows-csharp` | Creating SSH key (`znRMcNG9_qQ`) | 1:58 | Leave — short utility |
+| `00-setup/04-getting-started-windows-csharp` | SSH key → GitHub (`8hlmIObpMd4`) | 2:05 | Leave — short utility |
+| `00-setup/05-thinking` | Andy Harris (`azcrPFhaY9k`) | 1:00:07 | Leave — external |
+| `00-setup/05-thinking` | Joel Rivera (`XpulVva97eU`) | 9:21 | Leave — external |
+| `00-setup/05-thinking` | Forrest Knight (`NNazO2tMHno`) | 11:10 | Leave — external |
+| `01-book-1/34-explorer-queen-array-find` | `.find()` (`N1QcR8F3xFY`) | 2:55 | Leave — too short for transcript |
+| `01-book-1/38-explorer-bjorn-array-find` | `.filter()` (`3LOEGS4qcRM`) | 5:44 | Leave — optional explorer, supplementary |
+| `02-book-2/07-duo-dom-update` | innerHTML/textContent (`1UsllDMhvN4`) | 4:38 | Leave — < 5 min, supplementary |
+| `02-book-2/22-explorer-duo-variables` | Ref vs Value (`-hBJz2PPIVE`) | 15:11 | Leave — external (not NSS-authored) |
+| `03-book-3/02-dd-erd` | ERD Tutorial pt 1 (`QpdhBUYk7Kk`) | 6:57 | Leave — external (Lucidchart) |
+| `03-book-3/02-dd-erd` | ERD Tutorial pt 2 (`-CuY5ADwn24`) | 13:50 | Leave — external (Lucidchart) |
+| `03-book-3/02-dd-erd` | NSS ERD walkthrough (Vimeo `520416989`) | — | Leave — Vimeo, can't embed as YouTube iframe |
+| `04-book-4/16-kd-erd` | KD ERD hint (Vimeo `523171683`) | — | Leave — Vimeo, last-resort hint only |
+
+**Result: No video changes made.** All 16 videos fall into the "leave as-is" category — external content, sub-5-minute utilities, or Vimeo videos that can't use YouTube `<iframe>`. The 3 NSS-authored thumbnail videos (`.find()`, `.filter()`, `innerHTML`) are too short or too supplementary to warrant transcript work.
+
+**Decision framework used:**
+- **Embed + transcript:** Only for NSS-authored primary instruction. A bare iframe (no transcript) adds no value over a thumbnail.
+- **Leave as text/thumbnail link:** External tutorials, short utilities (< 5 min), supplementary/optional content, Vimeo.
+
+---
+
+### Sessions 4.5.4–4.5.X: Transcript Readability ✓ COMPLETE (2026-07-20)
+
+**Problem:** All 14 Book 5 video transcripts are raw speech-to-text output — no punctuation, no capitalization, no paragraph breaks beyond the `[M:SS]` markers, and no section headers. Wall-of-text format is difficult to read and impossible to skim.
+
+**Two improvements:**
+1. **Punctuation & capitalization** — Add periods, commas, sentence capitalization (preserve the exact words)
+2. **Topic section headers** — Insert `### [Topic]` headings at natural topic transitions to allow quick navigation
+
+**Scope:**
+
+| Exercise | Video(s) | Est. length |
+|----------|----------|-------------|
+| ex 01 | React Dev Tools | ~4 min |
+| ex 02 | First Component | ~12 min |
+| ex 04 | Wireframe Walkthrough | ~4 min |
+| ex 05 | All Tickets | ~12 min |
+| ex 06a | Ticket Assignee | ~14 min |
+| ex 06b | Alternative Solution | ~9 min |
+| ex 07 | Search Tickets | ~6 min |
+| ex 08 | Customer List | ~8 min |
+| ex 10 | Intro to Routes | ~11 min |
+| ex 11a | useParams Hook | ~17 min |
+| ex 11b | Customer Details | ~10 min |
+| ex 12a | Authentication Setup | ~17 min |
+| ex 12b | Claim vs Close | ~13 min |
+| ex 13 | Employee Form | ~8 min |
+| ex 14 | Employee vs Customer | ~9 min |
+| ex 15a | Customer Tickets | ~7 min |
+| ex 15b | Customer Ticket Buttons | ~7 min |
+| ex 16 | Create Ticket | ~5 min |
+
+**Approach: AI-assisted per transcript, human-reviewed**
+1. For each transcript block, pass the raw text to Claude: "Add punctuation and sentence capitalization. Preserve the exact words. Identify 3–5 natural topic transitions and insert `### [Topic]` headers."
+2. Human reviews and accepts/edits the output
+3. Paste final text back into the `<details>` block — timestamp links are unaffected (they're HTML not plain text)
+4. Verify timestamps still link correctly after the edit
+
+**Decision (2026-07-14):** Exact words only — punctuation and capitalization only; no words added, removed, or changed. Filler words and repetition stay in.
+
+**Approach:** Single-paragraph Edit replacements are reliable for these files; multi-paragraph matches spanning blank lines are unreliable due to subtle encoding/whitespace variations. Match one paragraph at a time.
+
+**Suggested session order:** Longest transcripts first (ex 12a, ex 11a, ex 12b, ex 11b). Short ones (ex 01, ex 04, ex 16) can be batched in one session.
+
+**Note:** This is independent of 4.5.1 and 4.5.2 and can run in parallel.
+
+**Session log:**
+
+| Exercise | File | Status | Topic headers |
+|----------|------|--------|---------------|
+| ex 12a | `12-repair-claim-vs-close/index.md` | ✓ COMPLETE | Setting Up the Auth Script / Reviewing the Login and Register Components / Adding Routes for Login and Register / Protecting Routes with the Authorized Component / Testing Auth Flow and Adding Logout / Storing the Current User in State |
+| ex 12b | `12-repair-claim-vs-close/index.md` | ✓ COMPLETE | Overview: Claim and Close Logic / Adding the Button Container / Passing currentUser Down via Prop Drilling / Writing the Claim Button / Writing the Close Button / Implementing handleClaim and assignedTicket / Testing Claim and Introducing getAndSetTickets / Implementing handleClose / Recap: Claim, Close, and Prop Drilling |
+| ex 11a | `11-repair-cust-details/index.md` | ✓ COMPLETE | Building the Welcome Component / Using the Index Route / Wrapping Customers with Links / Setting Up Route Parameters / The useParams Hook / How Route Parameters and useParams Work Together |
+| ex 11b | `11-repair-cust-details/index.md` | ✓ COMPLETE | Overview: What Customer Details Needs / Understanding the Data / Building the Fetch Function / Setting Up State and useEffect / Building the JSX / Fixing the Array Issue / Recap |
+| ex 02 | `02-repair-first-component/index.md` | ✓ COMPLETE | Introduction and JSX Basics / JSX Rules: Parent Elements and Fragments / Adding a Button with onClick / Tracking State with useState / The Setter Function and React Dev Tools |
+| ex 05 | `05-repair-all-tickets/index.md` | ✓ COMPLETE | Setting Up Services and Fetching Tickets / Introducing useEffect to Prevent Infinite Re-renders / Building the Ticket JSX / Filtering Tickets with a Toggle / Managing filteredTickets and the Component Lifecycle |
+| ex 06a | `06-repair-ticket-assignee/index.md` | ✓ COMPLETE | Creating the TicketList Component / Creating the Ticket Component / Passing Props to Child Components / React Dev Tools and the Key Prop Warning / Fetching Employees: Embed vs Expand / Setting Up State and Finding the Assigned Employee / Rendering the Assignee Name |
+| ex 06b | `06-repair-ticket-assignee/index.md` | ✓ COMPLETE | Overview / Building the getEmployeeById Service / Debugging the Empty Object Bug |
+| ex 08 | `08-repair-customer-list/index.md` | ✓ COMPLETE | Overview and Wireframe Review / Building the User Service / Creating the CustomerList Component / Testing the CustomerList in the Browser / Rendering Customers as JSX / Creating a Reusable User Component / Passing Props and Viewing the Component Tree |
+| ex 10 | `10-repair-routes-intro/index.md` | ✓ COMPLETE | Overview: Current Components and Introducing BrowserRouter / Defining Routes / Building the NavBar with the Link Component / Persisting the NavBar with a Parent Route / The Outlet Component / Adding the Customers Route |
+| ex 13 | `13-repair-employee-edit/index.md` | ✓ COMPLETE | Adding the Profile Link and Route / Building the Employee Form JSX / Fetching the Current User and Employee / Storing the Employee in State / Debugging the Undefined Current User Bug / Populating Inputs and Wiring Up onChange Handlers / Writing handleSave and Preventing Default Submission / Building and Saving the Updated Employee Object / Navigating After Save and Recap |
+| ex 14 | `14-repair-employee-vs-customer/index.md` | ✓ COMPLETE | Recap and Planning: Employee Views vs Customer Views / Creating the EmployeeViews Component / Setting Up the Ternary for Employee vs Customer Rendering / Testing Employee and Customer Login / Building the CustomerViews Routes / Testing the Customer Home Route and Choosing a NavBar Approach / Renaming to EmployeeNav and Creating CustomerNav / Rendering CustomerNav and Testing the Full Flow / Recap |
+| ex 15a | `15-repair-customer-tickets/index.md` | ✓ COMPLETE | Overview: Wireframe Differences for Customer Tickets / Adding the Tickets Link to the Nav Bar / Adding the Tickets Route and Reusing TicketList / Passing currentUser to CustomerViews / Filtering Tickets for the Current User / Testing with a Multi-Ticket Customer / Debugging the Refresh Bug / Fixing the Dependency Array and Recap |
+| ex 15b | `15-repair-customer-tickets/index.md` | ✓ COMPLETE | Overview: New Buttons for the Customer Ticket View / Wrapping the Conditional Buttons in a Fragment / Adding the Customer Ticket Buttons / Adding Toggle State for the Open Tickets Button / Filtering Tickets by Open Status with useEffect / Implementing the Delete Button / Adding a Delete Ticket Service Function / Rendering the Delete Button / An Alternate Way to Write the Conditional / Wiring Up the Delete Handler |
+| ex 07 | `07-repair-search-tickets/index.md` | ✓ COMPLETE | Adding the Search Input and Filter Bar / Capturing the Search Term in State / Filtering Tickets with useEffect / Testing the Search Filter / Extracting the TicketFilterBar Component / Passing State Setters as Props / Testing the Completed Filter Bar and Recap |
+| ex 01 | `01-react-basics/index.md` | ✓ COMPLETE | Introducing React Developer Tools / Exploring the Components Tab / Inspecting State with the Home Component / Wrap-Up |
+| ex 04 | `04-repair-wireframe/index.md` | ✓ COMPLETE | Overview: Employee Views vs Customer Views / Employee Views: Tickets, Employees, and Profile / Customer Views: Tickets and Creating a Ticket / Customer Views: Editing Tickets and Profile / Wrap-Up |
+| ex 16 | `16-repair-create-ticket/index.md` | ✓ COMPLETE | Setting Up Navigation to the Create Ticket Form / Adding Routes for Creating a Ticket / Building the Ticket Form JSX / Capturing the Description Input in State / Capturing the Emergency Checkbox and Setting Default State / Creating the createTicket Service Function and Adding Validation / Building the New Ticket Object with Prop-Drilled currentUser / Navigating After Save and Fixing the Page Refresh Bug |
 
 ---
 
@@ -582,9 +821,33 @@ Introduce testing as a practice starting in Book 1 by connecting it to what stud
 
 ---
 
+## Phase 5.1: Exercise Standardization
+
+*Runs after Phase 5's threads are woven in — new content (LLM callouts, CS theory notes, testing callouts, hook foreshadowing) is exactly the kind of addition that's easiest to place consistently against a settled template, rather than retrofitted into whatever shape each exercise already happens to have.*
+
+**Motivation:** Exercises were authored over time, by different people, without a shared structural template. The "shape" of an exercise — where the video goes, how instructions are sequenced, where callouts and wrap-ups land — varies book to book and sometimes chapter to chapter. That inconsistency makes the curriculum feel stitched-together rather than authored as one coherent course, and makes it harder to guess where a new content type belongs without checking each book's own convention first.
+
+**Goals:**
+- Every exercise follows the same overall shape/section order, regardless of book or original author
+- The four Phase 5 threads (LLM integration, hooks foreshadowing, CS theory, testing mindset) each get one canonical position in that shape, not an ad hoc placement per chapter
+- Exercise-to-exercise transitions feel like a continuous flow rather than isolated units — moving from one exercise to the next shouldn't require re-orienting to a different structure
+
+**Work to do:**
+1. Audit the current exercise shape across all 5 books — catalog what sections exist (video, wireframe callout, step instructions, hints, wrap-up, etc.) and where they fall, book by book
+2. Define one canonical exercise template — the order and required/optional sections every exercise should have
+3. Decide where each Phase 5 thread callout lives in that template (e.g., a testing-mindset note always follows the step that introduces the behavior being verified; an LLM callout always lives in the wrap-up)
+4. Apply the template across all ~175 exercises — a structural pass, not a content rewrite; existing prose stays, sections get reordered/retitled/added to match
+
+**Open questions:**
+- Is the canonical shape identical across all 5 books, or does it flex for book-specific needs (e.g., Book 5's Honey Rae's transcripts vs. Books 1–4's static instructions)?
+- Does this require a shared markdown template/snippet contributors copy for new exercises, or just a documented convention in `CLAUDE.md`?
+- Should this run before or after Phase 7 (Concept Map Refactor) — a stable exercise shape might make it easier to audit where vocabulary terms are introduced?
+
+---
+
 ## Phase 6: Curriculum Scripts
 
-*Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown — students run them to scaffold project files, seed databases, and configure their environments. This phase follows Phase 5 so that scripts can be updated to match whatever the new material requires, avoiding a second pass.*
+*Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown — students run them to scaffold project files, seed databases, and configure their environments. This phase follows Phase 5 and Phase 5.1 so that scripts can be updated to match whatever the new material and standardized exercise shape require, avoiding a second pass.*
 
 *Problems: scripts are outdated, broken on some setups, and inconsistent across Mac/Windows/Linux.*
 

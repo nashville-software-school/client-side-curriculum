@@ -26,9 +26,9 @@ graph TD;
 
 ## Sequence Diagram for Detailed Algorithm Visualizations
 
-One of your four Core Skills is <a href="https://www.wikihow.com/Think-Algorithmically" target="_blank" rel="noopener noreferrer">algoritmic thinking</a>. A person who cannot think algorithmically cannot be a high value software developer.
+One of your four Core Skills is <a href="https://www.wikihow.com/Think-Algorithmically" target="_blank" rel="noopener noreferrer">algorithmic thinking</a>. A person who cannot think algorithmically cannot be a high value software developer.
 
-A detailed way to visualize an <analogy>algorithm</analogy> for a problem is with a **<analogy>Sequence Diagram</analogy>**. This type of diagram shows all of the actors _(i.e. Properties, Data, and Functions)_ but also shows the interactions between them, and the precise order in which those operations happen. It also visualizes when data is iterated and what happens during iteration.
+A detailed way to visualize an <analogy>algorithm</analogy> for a problem is with a **<analogy>Sequence Diagram</analogy>**. This type of diagram shows all of the actors _(i.e. AveragePrice, Data, and Functions)_ but also shows the interactions between them, and the precise order in which those operations happen. It also visualizes when data is iterated and what happens during iteration.
 
 It is a visualization of your algorithmic thinking.
 

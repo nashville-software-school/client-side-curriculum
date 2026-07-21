@@ -12,10 +12,10 @@ Since they don't know how to fix it, they sent the script to you - the debugging
    ```sh
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/main/client/const.sh)"
    ```
-3. Open the `const.js` file in VS Code.
-4. Run the code with your debugger.
+2. Open the `const.js` file in VS Code.
+3. Run the code with your debugger.
 
-You will immediately see a stack trace in the **Debug Console** at the bottom. Your job is understand the error message, read the stack trace to determine exactly where the error is, and then fix the error.
+You will immediately see a stack trace in the **Debug Console** at the bottom. Your job is to understand the error message, read the stack trace to determine exactly where the error is, and then fix the error.
 
 Run the debugger every time you change the code to see if you have fixed the error.
 

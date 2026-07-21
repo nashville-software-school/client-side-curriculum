@@ -47,7 +47,7 @@ const myFunction = async () => {
 
 Now let's use `async/await` to fetch and display random dog images from the Dog <analogy>API</analogy>. This will help you see the difference between the `.then()` approach we used with the Fox <analogy>API</analogy> and the `async/await` approach:
 
-Let's define a new <analogy>function</analogy> who's responsibility will be to fetch and display a dog image. We'll begin by having our <analogy>function</analogy> fetch a random dog image from the random dog <analogy>api</analogy>.
+Let's define a new <analogy>function</analogy> whose responsibility will be to fetch and display a dog image. We'll begin by having our <analogy>function</analogy> fetch a random dog image from the random dog <analogy>api</analogy>.
 
 ```javascript
 const displayDogImage = () => {
@@ -129,10 +129,10 @@ const displayDogImage = async () => {
 dogButton.addEventListener("click", displayDogImage)
 ```
 
-<analogy>Key</analogy> differences:
+Key differences:
 1. With `async/await`, we mark the <analogy>function</analogy> as `async`
 2. Instead of chaining `.then()` calls, we use `await` and <analogy>assign</analogy> the result directly to variables
-4. The code reads more like <analogy>synchronous</analogy> code, which is more familiar and easier to understand
+3. The code reads more like <analogy>synchronous</analogy> code, which is more familiar and easier to understand
 
 ## Common Mistakes and Rules to Remember
 
@@ -143,7 +143,7 @@ When working with `async/await`, keep these important rules in mind:
 This won't work:
 ```javascript
 // ❌ Incorrect - await outside of async function
-const displayDogImage () => {
+const displayDogImage = () => {
     const response = await fetch('https://random.dog/woof.json');
     // ...
 }
@@ -174,8 +174,8 @@ const displayDogImage = async () => {
 
 1. **async**: A keyword that makes a <analogy>function</analogy> <analogy>return</analogy> a <analogy>Promise</analogy> and allows the use of <analogy>await</analogy> inside it
 2. **<analogy>await</analogy>**: A keyword that pauses execution until a <analogy>Promise</analogy> resolves and returns its <analogy>value</analogy>
-4. **<analogy>Function</analogy> requirement**: Any <analogy>function</analogy> that uses `await` must be declared with the `async` keyword
-5. **Promises underneath**: `async/await` is just a different way to write <analogy>Promise</analogy>-based code - Promises are still working behind the scenes
+3. **<analogy>Function</analogy> requirement**: Any <analogy>function</analogy> that uses `await` must be declared with the `async` keyword
+4. **Promises underneath**: `async/await` is just a different way to write <analogy>Promise</analogy>-based code - Promises are still working behind the scenes
 
 ## 📝 What We've Learned
 

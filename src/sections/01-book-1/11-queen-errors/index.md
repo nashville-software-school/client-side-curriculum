@@ -6,7 +6,7 @@ Your future teammates will only benefit if you understand why the error is happe
 
 ## Logical Errors
 
-Copy pasta the following code into your `main.js` module and run the debugger again. Make sure you don't have any breakpoints set.
+Copy and paste the following code into your `main.js` module and run the debugger again. Make sure you don't have any breakpoints set.
 
 ```js
 const ramona = hailTheQueen()
@@ -19,7 +19,7 @@ You will notice the following output in the Debug Console.
 Hail Her Majesty, undefined.
 ```
 
-Do you understand why you see the value of `undefined` at the end of the sentence instead of queen's name? It is easy to fix the error, but anyone can do that. Can you explain it, though?
+Do you understand why you see the value of `undefined` at the end of the sentence instead of the queen's name? It is easy to fix the error, but anyone can do that. Can you explain it, though?
 
 Here is the correct vocabulary.
 
@@ -33,11 +33,11 @@ Go ahead and fix the logical error by providing a valid argument.
 
 ## Syntactical Errors
 
-When you make a mistake with the syntax rules of the language itself, JavaScript can, and will tell you exactly where you messed up, and how. Unfortuntely, as a beginner, sometimes the <analogy>error message</analogy> can be as confusing as the error itself.
+When you make a mistake with the syntax rules of the language itself, JavaScript can, and will tell you exactly where you messed up, and how. Unfortunately, as a beginner, sometimes the <analogy>error message</analogy> can be as confusing as the error itself.
 
 Time to make a common, beginner syntactical error.
 
-Copy pasta the following code at the bottom of the `main.js` module, and then run the debugger.
+Copy and paste the following code at the bottom of the `main.js` module, and then run the debugger.
 
 ```js
 const monica = hailTheQuen("Monica Dinglehopper")

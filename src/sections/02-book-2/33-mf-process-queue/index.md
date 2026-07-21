@@ -14,7 +14,7 @@ The difference between stacks and queues is in removing. In a stack we remove th
 
 <img src="./images/queue.png" alt="Visualization of a queue data structure" />
 
-## Key Operations on Stack Data Structures
+## Key Operations on Queue Data Structures
 
 - **enqueue()**: Inserts an element at the end of the queue _i.e. at the rear end_.
 - **dequeue()**: This operation removes and returns an element that is at the front end of the queue.

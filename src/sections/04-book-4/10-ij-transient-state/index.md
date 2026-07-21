@@ -66,8 +66,6 @@ Let's break down this code:
    - `setOwnsBlueJeans()`: Updates the jeans ownership status
    - `setSocioLocationId()`: Updates the selected location ID
 
-3. Each <analogy>function</analogy> logs the updated <analogy>state</analogy> to the <analogy>console</analogy> so we can verify it's working
-
 Notice that we don't <analogy>export</analogy> the `transientState` <analogy>object</analogy> directly. This is intentional - we're using the <analogy>module</analogy> pattern to keep the <analogy>state</analogy> <analogy>object</analogy> private and only expose functions to modify it in controlled ways.
 
 ## Updating the JeanChoices Component
@@ -84,7 +82,7 @@ Open your `JeanChoices.js` file and modify it to match the following:
 import { setOwnsBlueJeans } from "./transientState.js"
 
 const handleOwnershipChange = (changeEvent) => {
-    if (changeEvent.target.name === "ownJeans") {
+    if (changeEvent.target.name === "ownsJeans") {
         const convertedToBoolean = JSON.parse(changeEvent.target.value)
         setOwnsBlueJeans(convertedToBoolean)
     }
@@ -110,7 +108,7 @@ Let's analyze what we've added:
 1. We <analogy>import</analogy> the `setOwnsBlueJeans` <analogy>function</analogy> from our <analogy>transient state</analogy> <analogy>module</analogy>
    
 2. We <analogy>create</analogy> a new <analogy>function</analogy> `handleOwnershipChange` that:
-   - Checks if the changed <analogy>element</analogy> is a <analogy>radio button</analogy> with name "ownJeans"
+   - Checks if the changed <analogy>element</analogy> is a <analogy>radio button</analogy> with name "ownsJeans"
    - Converts the <analogy>string</analogy> <analogy>value</analogy> ("true" or "false") to an actual <analogy>boolean</analogy> using `JSON.parse()`
    - Calls our <analogy>setter function</analogy> with the <analogy>boolean</analogy> <analogy>value</analogy>
    

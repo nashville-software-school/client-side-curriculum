@@ -16,7 +16,7 @@ Create your database file.
 touch database.json
 ```
 
-Create the base collections. You fill in the array with some sample teams, a few players for each team, and one some game score for teams of your choosing.
+Create the base collections. You fill in the array with some sample teams, a few players for each team, and some game scores for teams of your choosing.
 
 ```json
 {

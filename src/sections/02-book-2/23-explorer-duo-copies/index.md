@@ -16,7 +16,7 @@ In a childcare , we need to maintain a **secure list of children** and control h
 | **Shallow Copy** | `Array.prototype.slice()`, `Array.from()`, `[...array]`, `Object.assign()` | Only copies top-level values. Nested objects remain linked. |
 | **Deep Copy** | `JSON.parse(JSON.stringify(obj))`, `structuredClone(obj)` | Creates a true independent copy. `structuredClone` is the preferred method. |
 
-Create a files in the same directory, childcare.mjs noCopy.mjs shallowCopy.mjs deepCopy.mjs and run it in Node as `node noCopy.mjs` etc..
+Create the following files in the same directory: childcare.mjs, noCopy.mjs, shallowCopy.mjs, deepCopy.mjs and run it in Node as `node noCopy.mjs` etc..
 
 ### **`childcare.mjs`** (Module)
 ```javascript

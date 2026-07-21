@@ -4,7 +4,7 @@ Using code from the last project as an example, attempt adding a click <analogy>
 
 <img src="./images/employee-sales.gif">
 
-If you find yourself creeping up on 30 minutes of trying to get the code to work, it's time to go to a peer, or an mentor for assistance.
+If you find yourself creeping up on 30 minutes of trying to get the code to work, it's time to go to a peer, or a mentor for assistance.
 
 You can peek at some of the solution if you need to:
 
@@ -13,7 +13,7 @@ You can peek at some of the solution if you need to:
 
 ```js
 const employeeOrders = (id) => {
-    const fulfilledOrders = 0
+    let fulfilledOrders = 0
 
     for (const order of orders) {
         if (order.employeeId === id) {

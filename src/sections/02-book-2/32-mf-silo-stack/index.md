@@ -36,7 +36,7 @@ Your team needs to create a new module named **storageBarn.js**. In that module,
 | Key | Value |
 | --- | ----- |
 |push    | A function that accepts a crop as a parameter and adds it to the storage barn |
-|pop     | A function that accepts no parameters and returns the the last crop added to the barn |
+|pop     | A function that accepts no parameters and returns the last crop added to the barn |
 |peek    | A function that returns the name of the last crop added to the barn |
 |isEmpty | A function that return a boolean. True if there are no items in the barn. False if there are items in the barn. |
 
@@ -82,4 +82,4 @@ console.log( lassie.play("big scary cat") )
 
 Once you have this built, you must update your main algorithm to store all crops in the storage barn immediately after each one is harvested.
 
-Then write some code in `main.js` that uses `console.log()` to display the contents of the barn. Then start removing crops from the barn, and occassionally `peek()` at the next crop to be removed.
+Then write some code in `main.js` that uses `console.log()` to display the contents of the barn. Then start removing crops from the barn, and occasionally `peek()` at the next crop to be removed.

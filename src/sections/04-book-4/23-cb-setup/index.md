@@ -2,7 +2,7 @@
 
 For this application, you are going to allow customers to design their own car detailing package and place an order for a new car with those options. In the Guided Tour, you generated radio buttons to allow customers to choose their option for each kind of resources, but in this project, you will be using `<select>` elements to <analogy>create</analogy> the <analogy>dropdown</analogy> controls.
 
-<img src="./images/car-builder-overview.gif" alt="animataion of car builder user interface" width="800px">
+<img src="./images/car-builder-overview.gif" alt="animation of car builder user interface" width="800px">
 
 ## Setup
 
@@ -26,7 +26,7 @@ Customer should be able to choose one of the following paint colors. You set the
 
 ### Interior
 
-Customer can choose from the follow options for interior seat types. You set the price for each one.
+Customer can choose from the following options for interior seat types. You set the price for each one.
 
 1. Beige Fabric
 1. Charcoal Fabric
@@ -35,16 +35,16 @@ Customer can choose from the follow options for interior seat types. You set the
 
 ### Technology
 
-Customer can choose from the follow options for the tech capabilities of the car dashboard. You set the price for each one.
+Customer can choose from the following options for the tech capabilities of the car dashboard. You set the price for each one.
 
 1. Basic Package _(basic sound system)_
 1. Navigation Package _(includes integrated navigation controls)_
-1. Visibility Package _(includes side and reat cameras)_
+1. Visibility Package _(includes side and rear cameras)_
 1. Ultra Package _(includes navigation and visibility packages)_
 
 ### Wheels
 
-Customer can choose from the follow options for wheels. You set the price for each one.
+Customer can choose from the following options for wheels. You set the price for each one.
 
 1. 17-inch Pair Radial
 1. 17-inch Pair Radial Black
@@ -55,7 +55,7 @@ Customer can choose from the follow options for wheels. You set the price for ea
 
 Before you <analogy>create</analogy> any actual <analogy>state</analogy> data structures in your code, <analogy>create</analogy> an <analogy>ERD</analogy> for this application. Consider not only the resources above, but also how the customer's order will be stored and the properties on those objects.
 
-Once you have an <analogy>ERD</analogy> created, but are unsure if you got it right, feel free to run it by your peers or an mentor.
+Once you have an <analogy>ERD</analogy> created, but are unsure if you got it right, feel free to run it by your peers or a mentor.
 
 ## API
 

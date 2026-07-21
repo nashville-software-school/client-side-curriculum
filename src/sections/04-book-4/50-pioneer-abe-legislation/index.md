@@ -1,6 +1,6 @@
 # Final Challenge: Tracking the Money
 
-In this final part of Honest Abe, you task is to list all politicians along with the following information for each one.
+In this final part of Honest Abe, your task is to list all politicians along with the following information for each one.
 
 * Bills the politician has sponsored.
 * PACs that have donated to the politician's campaign.

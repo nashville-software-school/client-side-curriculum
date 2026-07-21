@@ -42,7 +42,7 @@ You spend the next several hours scouring all of the possible options, decide to
 ]
 ```
 
-Gems are a bit tricky, you discovered, as you <analogy>read</analogy> the information in the binder. Intead of price following a straightforward formula per caret, it increased as the caret got larger. A one carat stone costs more than double the cost of a half carat stone. Again, two carat stones will cost significantly more.
+Gems are a bit tricky, you discovered, as you <analogy>read</analogy> the information in the binder. Instead of price following a straightforward formula per caret, it increased as the caret got larger. A one carat stone costs more than double the cost of a half carat stone. Again, two carat stones will cost significantly more.
 
 #### Gem Size JSON Data
 
@@ -56,7 +56,7 @@ Gems are a bit tricky, you discovered, as you <analogy>read</analogy> the inform
 ]
 ```
 
-Luckily, you <analogy>find</analogy> that Natasha prices styles with a consistent pattern. Classic band style costs the least, modern styles cost a bit more, and vitage style cost the most because they require the most detailing.
+Luckily, you <analogy>find</analogy> that Natasha prices styles with a consistent pattern. Classic band style costs the least, modern styles cost a bit more, and vintage styles cost the most because they require the most detailing.
 
 #### Styles JSON Data
 

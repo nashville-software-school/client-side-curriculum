@@ -117,13 +117,13 @@ Let's see what that looks like.
 4. **<analogy>Endpoint</analogy>:** A specific URL where an <analogy>API</analogy> can be accessed. Think of it as a specific counter or window where you place your order in a restaurant.
 5. **<analogy>Request</analogy>:** The message a <analogy>client</analogy> sends to a <analogy>server</analogy> asking for something. This is like placing your order in a restaurant.
 6. **<analogy>Response</analogy>:** The data that the <analogy>server</analogy> sends back to the <analogy>client</analogy> after receiving a <analogy>request</analogy>. This is like the food you receive after ordering.
-6. **<analogy>Status Code</analogy>:** A <analogy>number</analogy> that indicates whether a <analogy>request</analogy> was successful or not. Think of it as the waiter telling you "Your food is ready" (200 OK) or "Sorry, we're out of that dish" (404 Not Found).
+7. **<analogy>Status Code</analogy>:** A <analogy>number</analogy> that indicates whether a <analogy>request</analogy> was successful or not. Think of it as the waiter telling you "Your food is ready" (200 OK) or "Sorry, we're out of that dish" (404 Not Found).
 
 ## 🎓 Practice Exercise: Testing the Random Dog API
 
 Now it's your turn to test the Random Dog <analogy>API</analogy>:
 
-Using Yaak, make a **<analogy>GET</analogy>** <analogy>request</analogy> to the Random Dog <analogy>Api</analogy>.
+Using Yaak, make a **<analogy>GET</analogy>** <analogy>request</analogy> to the Random Dog <analogy>API</analogy>.
 
 ### Questions to Answer:
 

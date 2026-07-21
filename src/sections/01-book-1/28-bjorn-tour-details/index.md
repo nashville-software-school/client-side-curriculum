@@ -12,7 +12,7 @@ Write a function that produces output that looks like the example below.
 
 ### Example Output
 
-Yours should looks like this when complete. Please note that the data below is not necessarily correct, this is just an example.
+Yours should look like this when complete. Please note that the data below is not necessarily correct, this is just an example.
 
 
 ```txt
@@ -55,7 +55,7 @@ The highlighted plant for the trip is Mariposa Lily.
 
 Double check the output! There may be some mistakes in the data.
 
-Once you get trails working, write a function that produces does the same for River Tours.
+Once you get trails working, write a function that does the same for River Tours.
 
 ```txt
 RIVER DETAILS:

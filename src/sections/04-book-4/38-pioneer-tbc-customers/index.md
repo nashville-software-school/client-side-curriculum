@@ -54,7 +54,7 @@ To get all the related data for a single employee, you won't be using the `find(
 Here's some example code _(not complete)_ of how your <analogy>algorithm</analogy> might be designed.
 
 ```js
-const EmployeeList = () => {
+const EmployeeList = async () => {
     // Get all employees
     const response = await fetch("")
     const employees = await response.json()
@@ -64,8 +64,8 @@ const EmployeeList = () => {
 
         https://github.com/typicode/json-server/tree/v0.17.4#relationships
     */
-    const response = await fetch("")
-    const customerRelationships = await response.json()
+    const ecResponse = await fetch("")
+    const customerRelationships = await ecResponse.json()
 
     const employeesHTML = `
     ${
