@@ -1,5 +1,3 @@
-# Composing Dynamic HTML
-
 Stay in your `main.js` module and now you're going to build the new HTML that you want to be in the `<main>` HTML element.
 
 ## Dynamic HTML

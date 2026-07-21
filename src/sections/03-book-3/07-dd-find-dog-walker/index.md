@@ -1,4 +1,4 @@
-# Navigating ERD Relationships
+## Navigating ERD Relationships
 
 In this chapter, you will continue to use data attributes to embed more state into the DOM than is visible to the users. When a pet is clicked, the goal is to show the person walking the dog.
 

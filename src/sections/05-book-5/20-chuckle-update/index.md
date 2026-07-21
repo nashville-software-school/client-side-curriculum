@@ -1,4 +1,4 @@
-# Marking a Joke as Told/Untold
+## Marking a Joke as Told/Untold
 In this chapter you will add a button to the jokes to either mark it as told or untold.
 
 <img src="./images/chuckle-update.gif" width="1000px" alt="Animation showing a joke being marked as told and untold." />

@@ -1,5 +1,3 @@
-# Björn's Wilderness Adventures
-
 
 <img src="./images/adventures.png" width="300px" align="left" />
 

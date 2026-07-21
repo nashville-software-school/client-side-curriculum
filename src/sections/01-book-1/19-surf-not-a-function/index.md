@@ -1,4 +1,4 @@
-# Sequina's Accounting
+## Sequina's Accounting
 
 Sequina recently hired an accounting firm to handle all of her taxes and quarterly sales reports. The accounting firm has special software that required all of the data to be upper case. No lower case letters are allowed.
 

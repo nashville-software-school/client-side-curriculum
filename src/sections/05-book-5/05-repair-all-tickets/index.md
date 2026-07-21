@@ -1,4 +1,3 @@
-# List all the tickets
 In this chapter you will begin modularizing your code by creating a `services` directory for interacting with the API and you will learn how to use the `useEffect` <analogy>hook</analogy>.
 
 ## 📺 Watch The Video

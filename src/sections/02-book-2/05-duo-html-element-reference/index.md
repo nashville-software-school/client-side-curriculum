@@ -1,4 +1,4 @@
-# Targeting DOM With JavaScript
+## Targeting DOM With JavaScript
 
 When you hear a developer use the acronym <analogy>DOM</analogy>, they are talking about the HTML. Even though DOM is something much more complex and subtle, for now, just consider it the HTML that is being rendered to be visible to your users.
 

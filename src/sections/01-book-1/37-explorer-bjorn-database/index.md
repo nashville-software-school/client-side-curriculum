@@ -1,4 +1,4 @@
-# Database Challenge
+## Database Challenge
 
 The data in the **Björn Wilderness Adventures** project is currently in their own discrete, separate arrays.
 

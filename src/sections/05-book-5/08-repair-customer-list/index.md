@@ -1,4 +1,4 @@
-# Listing The Customers
+## Listing The Customers
 In this chapter you will create a new component for listing the customers.
 
 ## 📺 Watch The Video

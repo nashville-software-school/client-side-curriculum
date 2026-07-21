@@ -1,4 +1,4 @@
-# Displaying Number of Products Sold
+## Displaying Number of Products Sold
 
 Using code from the last project as an example, attempt adding a click <analogy>event listener</analogy> that presents an alert box showing how many products an employee has sold when their name is clicked.
 

@@ -1,4 +1,4 @@
-# Creating Fish Data and Rendering the Fish List
+## Creating Fish Data and Rendering the Fish List
 
 In this chapter, we will create the fish data and <analogy>render</analogy> the fish list in the aquarium showcase. We'll define the fish data in a separate <analogy>module</analogy> and create a function to generate the HTML for the fish list.
 

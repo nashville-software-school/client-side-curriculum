@@ -1,4 +1,4 @@
-# Brewed Awakenings is Expanding!
+## Brewed Awakenings is Expanding!
 
 Your challenge in this chapter is to build a correct ERD that supports the following facets of the Brewed Awakenings business as it expands to multiple locations. You will need to think about how these new requirements affect the current relationships between your tables.
 

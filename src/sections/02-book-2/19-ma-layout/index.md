@@ -1,5 +1,3 @@
-# Styling and Layout
-
 Utilize the CSS skills that you've learned so far to make each fish element and location element have a modern card look. Then use your Flexbox skills to implement the layout specified below in the low-fidelity wireframe.
 
 ```txt

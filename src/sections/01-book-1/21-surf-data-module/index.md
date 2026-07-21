@@ -1,4 +1,4 @@
-# Modular Intro
+## Modular Intro
 
 In this chapter, you are going to start to split up all of the code that exists in your current <analogy>module</analogy> into multiple modules. This has two side-effects for a beginner.
 

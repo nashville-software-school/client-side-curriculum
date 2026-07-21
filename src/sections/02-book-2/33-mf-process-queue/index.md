@@ -1,5 +1,3 @@
-# Data Structure: The Queue
-
 Now it is time to implement the food processing facility to produce consumer goods for the owners of the farm. The farmers will remove items from the storage barn and put them on a conveyor belt that transports items to a processing facility to producer higher-end goods.
 
 ## Queue Intro

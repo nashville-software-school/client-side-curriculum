@@ -1,4 +1,4 @@
-# Displaying Order
+## Displaying Order
 
 If you haven't yet, <analogy>create</analogy> a new <analogy>module</analogy> that generates a list of placed orders. Here's a small bit of starter code for you if you want it.
 

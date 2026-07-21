@@ -1,5 +1,3 @@
-# Getting Started with React
-
 React is a library that was open sourced by the development team at Facebook with the sole purpose of managing how data is displayed to the user. It doesn't care about the database, it doesn't care how data is retrieved, and it doesn't care about how complex the rest of the application is.
 
 You've already learned the vast majority of what React does for you when building the UI for your application.

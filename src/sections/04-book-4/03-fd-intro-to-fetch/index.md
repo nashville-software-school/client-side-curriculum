@@ -1,4 +1,4 @@
-# Using Fetch and Monitoring Network Requests
+## Using Fetch and Monitoring Network Requests
 
 ## Introduction to Fetch
 

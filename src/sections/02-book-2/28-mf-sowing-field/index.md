@@ -1,5 +1,3 @@
-# Sowing the Field With Your Tractor
-
 ## Sowing Instructions
 
 1. Create a `scripts/tractor.js` module.

@@ -1,4 +1,4 @@
-# A Module For Each Display
+## A Module For Each Display
 
 In your project, you still very likely have all of the display code in the `adventure.js` module.
 

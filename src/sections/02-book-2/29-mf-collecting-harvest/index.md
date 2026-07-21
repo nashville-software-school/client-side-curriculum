@@ -1,5 +1,3 @@
-# Collecting the Harvest
-
 ## Harvesting Instructions
 
 1. Create a `scripts/harvester.js` module.

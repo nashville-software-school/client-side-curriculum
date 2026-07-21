@@ -1,5 +1,3 @@
-# Fixing Brewed Awakenings Receipts
-
 Brewed Awakenings is a local coffee shop that wants a web site that shows which products they are selling, and which employee is selling them. Here's all of the information they want on their web site.
 
 1. A list of employees.

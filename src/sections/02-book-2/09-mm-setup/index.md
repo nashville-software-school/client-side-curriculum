@@ -1,4 +1,4 @@
-# Setting Up the Project
+## Setting Up the Project
 
 In this chapter, we will set up the foundation for our movie collection project. We'll create the necessary files and directories, and implement a basic HTML structure to serve as the starting point for our movie showcase.
 

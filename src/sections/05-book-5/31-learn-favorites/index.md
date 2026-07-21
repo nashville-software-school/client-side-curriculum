@@ -1,4 +1,3 @@
-# My Favorite Posts
 In this chapter you will add a link to Favorites in the Nav Bar and implement the following user stories for the [Favorites](/book_5_learn_wireframe) view:
 
 <div class="user-story">

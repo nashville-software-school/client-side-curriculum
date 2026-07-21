@@ -1,4 +1,4 @@
-# Listing the Jokes
+## Listing the Jokes
 In this chapter you will get all the jokes and separate them into two lists, as well as display the count for both lists.
 
 <img src="./images/chuckle-read.gif" width="1000px" alt="Animation showing a new joke being created and displayed." />

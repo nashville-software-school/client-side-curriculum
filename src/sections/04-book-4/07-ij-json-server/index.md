@@ -1,5 +1,3 @@
-# Your own API with JSON-Server
-
 In the previous chapter, we learned about Dr. Henrietta Jones and her research project on blue jeans. Now, we need to <analogy>create</analogy> a database to store the survey data.
 
 Let's look at the <analogy>ERD</analogy> for our Indiana Jeans survey:

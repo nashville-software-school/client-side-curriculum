@@ -1,4 +1,4 @@
-# Final Challenge: Tracking the Money
+## Final Challenge: Tracking the Money
 
 In this final part of Honest Abe, your task is to list all politicians along with the following information for each one.
 

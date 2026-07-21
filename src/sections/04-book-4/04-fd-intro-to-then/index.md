@@ -1,4 +1,4 @@
-# Understanding Promises and .then()
+## Understanding Promises and .then()
 
 ## Introduction to Promises
 

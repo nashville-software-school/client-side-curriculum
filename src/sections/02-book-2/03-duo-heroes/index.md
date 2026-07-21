@@ -1,4 +1,4 @@
-# Modules in the Browser
+## Modules in the Browser
 
 Up to this point, when you needed to <analogy>export</analogy> information from a JavaScript <analogy>module</analogy>, or <analogy>import</analogy> it into another module, you have used the following syntax.
 

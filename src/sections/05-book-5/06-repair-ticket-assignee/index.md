@@ -1,4 +1,3 @@
-# Ticket Assignee
 In this chapter you will learn how to render a React component, pass props, use optional chaining, and write ternary statements.
 
 ## 📺 Watch The Video

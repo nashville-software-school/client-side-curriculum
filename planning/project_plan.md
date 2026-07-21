@@ -189,6 +189,7 @@ Work **one chapter at a time** per session:
 | ✓ | **Phase 3.5: Housekeeping** — removed stray `type: "group-project"` values; added `chapterGroup` emojis across 116 files |
 | ✓ | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | ✓ | **Phase 4.5: Polish Pass** — spacing/formatting, localhost link audit, video audit, and transcript readability (18/18 exercises) all complete |
+| ✓ | **Phase 4.6: Duplicate Title Cleanup** — nss-core renders `index.jsx`'s `title` as an `<h1>` above the markdown body; 194/202 exercises also had a redundant leading heading in `index.md`. 90 stripped, 112 kept (see detail below) |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 5.1: Exercise Standardization** — once Phase 5's threads are woven in, standardize the shape/flow of every exercise so the curriculum reads as one coherent course |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
@@ -703,6 +704,24 @@ Ex 09 has no video — no change needed.
 | ex 01 | `01-react-basics/index.md` | ✓ COMPLETE | Introducing React Developer Tools / Exploring the Components Tab / Inspecting State with the Home Component / Wrap-Up |
 | ex 04 | `04-repair-wireframe/index.md` | ✓ COMPLETE | Overview: Employee Views vs Customer Views / Employee Views: Tickets, Employees, and Profile / Customer Views: Tickets and Creating a Ticket / Customer Views: Editing Tickets and Profile / Wrap-Up |
 | ex 16 | `16-repair-create-ticket/index.md` | ✓ COMPLETE | Setting Up Navigation to the Create Ticket Form / Adding Routes for Creating a Ticket / Building the Ticket Form JSX / Capturing the Description Input in State / Capturing the Emergency Checkbox and Setting Default State / Creating the createTicket Service Function and Adding Validation / Building the New Ticket Object with Prop-Drilled currentUser / Navigating After Save and Fixing the Page Refresh Bug |
+
+---
+
+## Phase 4.6: Duplicate Title Cleanup ✓ COMPLETE (2026-07-21)
+
+**Problem:** nss-core's `ChapterContent.jsx` renders `index.jsx`'s `title` field as an `<h1>` directly above the rendered markdown body. Since 194 of 202 exercises also start their `index.md` with their own `#`/`##` heading, most exercise pages showed two headings back-to-back. Not a new nss-core regression — the `<h1>{title}</h1>` line has been there since the platform's first commits; it only became visible once the curriculum started consuming the published `nss-core` package against content that duplicates it.
+
+**Decision:** Content-side fix only (no `nss-core` change, no new package release needed). For each of the 202 exercises, compared the `index.jsx` `title` against the `index.md` leading heading:
+- **Strip the heading** when it's a near-restatement of the title (paraphrase, tense/punctuation difference, or a literal acronym expansion like ERD = Entity Relationship Diagram).
+- **Keep the heading** when it says something meaningfully different from the title — a narrative/thematic heading (e.g. "Sequina's Sales" vs jsx title "Constant Tide"), a running pun-header reused across a chapter's exercises (the "Are You Feeling Bouquet? - X" headers in the Bouquet pioneer chapter), a per-exercise **stage heading in a multi-exercise pioneer/group-project chapter** (e.g. `37-pioneer-tbc-locations`'s "A Growing Business" and `38-pioneer-tbc-customers`'s "Handling Large Customers" — these play the same structural role as `36-pioneer-tbc-departments`'s h1 opener and `39-pioneer-tbc-customer-report`'s kept "Who Wrote this Code?", even when the wording happens to be close to the jsx title), or a bare project/chapter name sitting above an exercise-specific action title (e.g. md "Honest Abe" vs jsx "Honest Abe ERD").
+
+A plain string-similarity ratio was used only as a first-pass hint — it was unreliable on its own (some low-ratio pairs are the same idea reworded; some high-ratio pairs are a project name vs. a specific topic, a real scope difference) so every pair was read and judged individually. Two files (37 and 38 above) were initially stripped on a too-literal reading of the ratio and had to be corrected after their h2 heading turned out to be load-bearing — leaving `### The Workforce ERD` orphaned as the file's first heading with no parent level above it, inconsistent with how every sibling exercise in that pioneer chapter opens.
+
+**Result:** 90 headings stripped (heading line + its trailing blank line removed, no other content touched), 112 kept as a distinct heading. 1 file (`02-book-2/24-group-project-modern-farm/index.md`) has no leading heading at all — left untouched.
+
+**Heading level on the 112 kept:** a page with the jsx `title` rendered as `<h1>` and a *kept* markdown heading that's also `#` (h1) still has two `<h1>` elements on the page — same bug, just with legitimately different text instead of duplicate text. Of the 112 kept headings, 103 were `#` and were demoted to `##` (text unchanged, only the heading level dropped) so each page has exactly one `<h1>` (the jsx title) with the markdown's own heading as a proper `<h2>` subheading beneath it. 8 were already `##` (untouched); 1 file has no heading at all (untouched).
+
+**Session status:** ✓ Complete. 90 headings stripped, 103 headings demoted from `#` to `##`, all verified via diff (each change touches only the heading line(s), no other content).
 
 ---
 

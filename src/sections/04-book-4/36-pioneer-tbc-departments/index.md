@@ -1,4 +1,4 @@
-# Increased Workforce
+## Increased Workforce
 
 As your consulting business continues to grow, you <analogy>find</analogy> that you need to hire an accountant, a few more sales people, and one quality assurance person. That means that you need to define departments for your company.
 

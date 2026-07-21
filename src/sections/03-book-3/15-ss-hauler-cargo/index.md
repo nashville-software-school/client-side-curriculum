@@ -1,4 +1,4 @@
-# Hauler Cargo
+## Hauler Cargo
 
 The next step for you is to add a click event listener that displays the number of ships that each hauler is carrying.
 

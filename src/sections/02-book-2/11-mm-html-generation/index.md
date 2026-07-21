@@ -1,4 +1,4 @@
-# Converting Movie Data to HTML
+## Converting Movie Data to HTML
 
 In this chapter, we will create a JavaScript module that converts the movie data into HTML markup. This module will generate the necessary HTML structure for each movie card based on the movie data imported from the `movies-data.js` file.
 

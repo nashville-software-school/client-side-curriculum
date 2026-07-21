@@ -1,5 +1,3 @@
-# Capturing User Choices
-
 ## Introduction to State Management
 
 In the previous chapters, we created components with radio buttons for our survey, but they don't actually capture the user's choices yet. When a user clicks a <analogy>radio button</analogy>, we need to store that selection somewhere before eventually saving it to our database.

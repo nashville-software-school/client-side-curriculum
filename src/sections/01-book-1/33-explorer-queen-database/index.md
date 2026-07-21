@@ -1,4 +1,4 @@
-# Database Challenge
+## Database Challenge
 
 The data in the **Her Majesty** project is currently two separate arrays.
 

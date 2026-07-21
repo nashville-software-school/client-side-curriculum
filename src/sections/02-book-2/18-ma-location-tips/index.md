@@ -1,5 +1,3 @@
-# Rendering Care Tips and Location List
-
 In this chapter, we will create the care tips and location list in the aquarium showcase. Similar to how we created the fish list, you will need to create separate keys in your database, and then create corresponding components to render them in the showcase.
 
 ## Step 1: Create the Tip Data

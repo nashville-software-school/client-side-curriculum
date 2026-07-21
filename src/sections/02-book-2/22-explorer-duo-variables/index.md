@@ -1,4 +1,4 @@
-# Variable types in JavaScript
+## Variable types in JavaScript
 
 In JavaScript, <analogy>variables</analogy> act like containers that store data. This data can be described as being in two main categories: **value types**  _(which store the actual data directly)_ and **<analogy>reference types</analogy>** _(which store a reference to where the data actually exists in your computer's memory)_.
 

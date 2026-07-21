@@ -1,4 +1,4 @@
-# Events and Debugging Assessment
+## Events and Debugging Assessment
 
 Time to assess how well you have learned to use the debugging tools in Chrome Dev Tools, and writing click event listeners.
 
