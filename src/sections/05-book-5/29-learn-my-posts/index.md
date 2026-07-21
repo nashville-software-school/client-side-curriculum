@@ -1,4 +1,3 @@
-# Viewing My Posts
 In this chapter you will add a link to My Posts in the Nav Bar and implement the following user stories for the [My Posts](/book_5_learn_wireframe) view:
 
 <div class="user-story">

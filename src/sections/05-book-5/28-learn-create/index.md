@@ -1,4 +1,3 @@
-# Creating a New Post
 In this chapter you will add a link to New Post in the Nav Bar and implement the following user stories for the [New Post](/book_5_learn_wireframe) view:
 
 <div class="user-story">

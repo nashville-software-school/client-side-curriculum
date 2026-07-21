@@ -1,4 +1,4 @@
-# Learning Efficiency Focus
+## Learning Efficiency Focus
 
 Time to grow your Learning Efficiency. Search the Web to find the answer to the following questions. Successfully implementing the knowledge that you find is a nice bonus, but is not the ultimate goal.
 

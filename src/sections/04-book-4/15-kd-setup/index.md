@@ -1,5 +1,3 @@
-# Kneel Diamonds Project Setup
-
 ## Project Directories
 
 <analogy>Create</analogy> the following <analogy>directory</analogy> for your project.

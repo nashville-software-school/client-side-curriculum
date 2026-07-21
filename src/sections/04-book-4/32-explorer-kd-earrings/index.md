@@ -1,5 +1,3 @@
-# Custom Earring and Necklace Orders
-
 | | |
 |:---:|:---|
 | <h1>&#x1F4A1;</h1> |  _There are multiple ways to implement this feature. You will be stretching your **Creative Thinking** Core Skill because there is no "right way" to do this._ |

@@ -1,4 +1,4 @@
-# Expanding to Rivers
+## Expanding to Rivers
 
 Björn has decided to expand his business to river tours. You may have noticed that the code you were given already has data about river tours. Each river has several properties.
 

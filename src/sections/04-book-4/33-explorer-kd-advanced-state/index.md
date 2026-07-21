@@ -1,5 +1,3 @@
-# User Choices as State
-
 You've seen the following phrase several times in the chapters of this book.
 
 > When the <analogy>state</analogy> of your data changes, your HTML must be regenerated to display that new <analogy>state</analogy> to the person using the application.

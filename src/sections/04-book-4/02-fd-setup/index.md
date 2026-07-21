@@ -1,5 +1,3 @@
-# Fox y Dog Project Setup
-
 In your workspace <analogy>directory</analogy>, <analogy>create</analogy> a new project <analogy>directory</analogy>.
 
 ```sh

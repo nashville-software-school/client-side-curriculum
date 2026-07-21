@@ -1,4 +1,4 @@
-# Display Your Options
+## Display Your Options
 
 To display a group of options, the two most common controls used by designers and developers are:
 

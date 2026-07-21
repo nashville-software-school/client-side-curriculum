@@ -1,5 +1,3 @@
-# Recording Round Scores
-
 There are three rounds of scores to record. In the round score form component, let the user enter in the score of each team for every round.
 
 The total number of points entered cannot exceed 3.

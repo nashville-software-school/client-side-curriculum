@@ -1,4 +1,4 @@
-# Sequina's Sales
+## Sequina's Sales
 
 Sequina has asked the development team to change the current logic of the inventory program. She would like to see what kind of product it is, but **only** if it is not on sale. If it is on sale, that should be the only message about the product.
 

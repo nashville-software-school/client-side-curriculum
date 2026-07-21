@@ -1,4 +1,4 @@
-# Routing and Authentication
+## Routing and Authentication
 Let's get routing and authentication set up for this application. As you go through the instructions in this chapter, feel free to look to the Honey Rae Repairs code for reference.
 
 ## Setup

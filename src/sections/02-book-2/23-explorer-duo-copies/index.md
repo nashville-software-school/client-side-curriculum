@@ -1,4 +1,4 @@
-# Shallow vs Deep copies
+## Shallow vs Deep copies
 
 *Note* The issue we are discussing in this chapter (deep vs shallow copy) does not affect **primitive values** because they are stored directly in a variable and copied **by value**, meaning modifications to one variable do not impact another.
 

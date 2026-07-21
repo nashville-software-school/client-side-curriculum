@@ -1,4 +1,4 @@
-# Styling the Movie Cards with CSS
+## Styling the Movie Cards with CSS
 
 In this chapter, we will focus on styling the movie cards using CSS to create an attractive and visually appealing layout. We will define styles for the movie cards, including the movie poster, title, and description, to enhance the overall presentation of our movie showcase.
 

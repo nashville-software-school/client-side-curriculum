@@ -1,5 +1,3 @@
-# Building the Location Choices Component
-
 In the previous chapter, we created our first <analogy>component</analogy> with static radio buttons for the jeans ownership question. Now, we'll take our application to the next level by creating a <analogy>component</analogy> that dynamically builds radio buttons based on data from our <analogy>API</analogy>.
 
 This is a <analogy>key</analogy> concept in modern web development: instead of hardcoding options in our HTML, we'll fetch the available choices from our database and generate the HTML programmatically. This approach makes our application more flexible and easier to maintain.

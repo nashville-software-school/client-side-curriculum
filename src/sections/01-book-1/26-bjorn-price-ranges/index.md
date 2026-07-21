@@ -1,4 +1,4 @@
-# Helping Customers Find The Right Trails Package
+## Helping Customers Find The Right Trails Package
 
 Björn and his team have discovered from customer feedback that people would like to see a breakdown of the least expensive trail tours and most expensive. He would like you to update the program to produce output simliar to what is shown below.
 

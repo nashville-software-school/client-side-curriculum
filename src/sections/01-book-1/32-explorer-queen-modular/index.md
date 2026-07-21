@@ -1,4 +1,4 @@
-# Modular Queen Code
+## Modular Queen Code
 
 Now that you have practiced the skill of modularizing code with the Core Projects of this book, go back to your **Her Majesty** project and modularize the code so that it is not all in the `main.js` <analogy>module</analogy>.
 

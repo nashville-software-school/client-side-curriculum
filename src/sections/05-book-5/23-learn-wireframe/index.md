@@ -1,4 +1,4 @@
-# The Plan
+## The Plan
 This application will have several views, and just like in Honey Rae Repairs, you will begin to build these views piece by piece. Before you get started, however, having an end product in mind will help with your decision making process as you build. _What components will you build? What will your routes be? What components can you reuse?_ Some guidance will be given for these decisions and others will be left up to you.
 
 Below is a list of user stories describing every feature you will implement in this project. Carefully read the user stories for each view of this application, then, build a wireframe representing each view and its features. Of course, feel free to review your wireframe with a mentor when you are finished.

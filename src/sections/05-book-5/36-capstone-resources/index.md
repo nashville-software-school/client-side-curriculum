@@ -1,5 +1,3 @@
-# Capstones
-
 ## Getting Started
 
 1. Visit the <a href="https://learning.nss.team/" target="_blank" rel="noopener noreferrer">Learning Platform</a> and click the **Proposal Template** button. Make a copy of the Google Doc that you see to use for your proposal.

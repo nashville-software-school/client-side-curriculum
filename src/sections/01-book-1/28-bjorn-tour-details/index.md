@@ -1,5 +1,3 @@
-# Trail Details
-
 Customers have provided more feedback, and Björn wants to respond ASAP. They have said that they would like to see more details about the trail tours.
 
 1. Where does it start?

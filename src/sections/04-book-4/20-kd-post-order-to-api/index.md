@@ -1,5 +1,3 @@
-# Saving Orders to Permanent State
-
 Now it's time to handle making a permanent change to <analogy>state</analogy>.
 
 ## Implement "Place Order" Button

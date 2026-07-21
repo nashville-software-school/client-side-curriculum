@@ -1,5 +1,3 @@
-# Showing Custom Jewelry Options
-
 Time to <analogy>create</analogy> all of the <analogy>component</analogy> functions for each of the option groups. Just like the **UrbanDweller** <analogy>function</analogy> in the Indiana Jeans project, you will need to fetch the data from your local <analogy>API</analogy> for each of these components since all of the options are in the `database.json` file.
 
 ## Learning Objectives

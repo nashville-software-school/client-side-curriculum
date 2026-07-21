@@ -1,5 +1,3 @@
-# Algorithmic Thinking Reminder
-
 This project is more complex than either DeShawn's Dog Walking or Brewed Awakenings, and you are not provided with any initial, boilerplate code.
 
 It is crucial, therefore, that you work on designing the algorithm before you write **any** code.

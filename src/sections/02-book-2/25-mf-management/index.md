@@ -1,5 +1,3 @@
-# Modern Farm Management 
-
 
 ## Setup
 

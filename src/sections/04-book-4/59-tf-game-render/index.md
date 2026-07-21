@@ -1,5 +1,3 @@
-# Displaying Game Data
-
 ## Creating the Application
 
 Go to your terminal and enter in the following commands.

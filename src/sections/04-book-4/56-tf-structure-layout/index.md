@@ -1,5 +1,3 @@
-# Truncheons &amp; Flagons
-
 > **mentor Note:** This application is complex, but once complete, provides people with a strong foundation in how modern component-based applications work. It is **strongly encouraged** that you work on this application with your teammates and not alone.
 
 ## The Making of the Most Popular Tavern Game of the Middle Ages

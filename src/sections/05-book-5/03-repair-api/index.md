@@ -1,5 +1,3 @@
-# Honey Rae's API
-
 This chapter provides information, and the data needed, for the API that will be the permanent state for Honey Rae's Tech Repair application. As we build this application, bit by bit, we will slowly introduce more of the data into our app, starting with the service tickets. 
 
 ## <analogy>ERD</analogy>

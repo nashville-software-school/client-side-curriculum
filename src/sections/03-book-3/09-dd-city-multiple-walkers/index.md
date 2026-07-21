@@ -1,4 +1,4 @@
-# Multiple Walkers in a City
+## Multiple Walkers in a City
 
 Add this object to your array of walkers in your database.
 

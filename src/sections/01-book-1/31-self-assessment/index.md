@@ -1,4 +1,4 @@
-# Welcome to Bug Wrangler Ranch
+## Welcome to Bug Wrangler Ranch
 
 <img src="./images/bug-wrangler.png" width="300px" alt="Cowboy coder" align="right" />
 

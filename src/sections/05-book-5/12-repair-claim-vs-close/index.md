@@ -1,4 +1,4 @@
-# Authorizing Users
+## Authorizing Users
 In this chapter you will set up your Honey Rae's application for user authentication. The authentication functionality is provided for you as it is not a learning objective of this course.
 
 In the root of your project in the terminal, run the script below.

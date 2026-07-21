@@ -1,4 +1,4 @@
-# Array Method Introduction
+## Array Method Introduction
 
 Up to this point, you've been iterating arrays with `for..of` loops, which are very efficient. In this Explorer chapter, you will explore how to do the same with array methods.
 

@@ -1,4 +1,4 @@
-# Displaying Total Cost
+## Displaying Total Cost
 
 Time to <analogy>update</analogy> the list of car orders to show the total cost of all customizations that the user has chosen. Use the **<analogy>_expand</analogy>** query parameter in your fetch URL to embed all of the related objects for a car.
 

@@ -1,4 +1,4 @@
-# Editing The Employee Profile
+## Editing The Employee Profile
 In this chapter you will implement the form for the logged in employee to edit their profile.
 
 ## 📺 Watch the video

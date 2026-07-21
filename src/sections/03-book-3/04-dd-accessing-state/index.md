@@ -1,4 +1,4 @@
-# Reading Hidden State
+## Reading Hidden State
 
 Now that you have some hidden, developer-only, state in your HTML, you can extract that state when the user _does something_. In this project, the _something_ you will be reacting to is the user clicking on a list item.
 

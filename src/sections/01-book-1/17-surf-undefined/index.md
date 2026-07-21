@@ -1,4 +1,4 @@
-# Debugging Exercise Setup
+## Debugging Exercise Setup
 
 Now that you have a paying job working for the Surf Shop, you are going to build out an application for producing different kinds of custom jewelry orders.
 

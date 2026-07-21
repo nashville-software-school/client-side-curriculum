@@ -1,4 +1,4 @@
-# Are You Feeling Bouquet? - Distributors
+## Are You Feeling Bouquet? - Distributors
 
 Each flower shop buys their flowers from a single distributor. Flower distributors serve large regions of the country, and then local retailers purchase from them to keep their stock full.
 

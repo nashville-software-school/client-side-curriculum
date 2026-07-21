@@ -1,5 +1,3 @@
-# Truncheons &amp; Flagons
-
 This project is for 1+ students to work on to practice making <analogy>component</analogy> and <analogy>state</analogy> based web applications.
 
 ## Chapters

@@ -1,5 +1,3 @@
-# Displaying Submissions with .map()
-
 In the previous chapter, we implemented the ability to save survey submissions to our database. Now, we need to display those submissions on the page. This will require us to:
 
 1. Fetch the existing submissions from the database

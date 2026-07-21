@@ -1,5 +1,3 @@
-# Entity Relationship Diagram for Brewed Awakenings
-
 Look in the `database.js` module and identify the resources, the fields/attributes on each resource, and the relationship between the three resources used by the application.
 
 1. Products

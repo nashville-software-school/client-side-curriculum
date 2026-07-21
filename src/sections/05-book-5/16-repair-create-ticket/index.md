@@ -1,4 +1,3 @@
-# Create a New Ticket
 In this chapter you will create a form for the customer to create a new ticket.
 
 ## 📺 Watch The Video

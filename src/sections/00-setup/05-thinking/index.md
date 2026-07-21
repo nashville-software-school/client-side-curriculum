@@ -1,4 +1,4 @@
-# Thinking Like a Software Developer
+## Thinking Like a Software Developer
 
 The most common misconception amongst muggles is that being a successful software developer is about mastering code syntax and software patterns.
 

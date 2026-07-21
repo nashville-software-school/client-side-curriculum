@@ -1,5 +1,3 @@
-# Holiday Road from Nashville
-
 You and your teammates have been contracted by the National Parks Service to build an application that will allow people to build itineraries for their trips to the beautiful national parks that they maintain. The starting point of each trip will be Nashville, TN, but the destination will be a national park selected by the user.
 
 ## Learning Objectives

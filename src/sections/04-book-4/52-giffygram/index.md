@@ -1,4 +1,4 @@
-# Giffygram: Social Animation Platform
+## Giffygram: Social Animation Platform
 
 Perhaps you've used other social media platforms that allow users to share beautiful pictures with each other. A new opportunity that none of these platforms specialize in Gif animation images. A team of developers went to some angel investors and convinced them that you have a solid business plan and that people around the world have been craving an app for sharing only gifs.
 

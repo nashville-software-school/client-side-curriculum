@@ -1,4 +1,4 @@
-# Viewing a Post
+## Viewing a Post
 In this chapter you will implement the following user stories for the [Post Details](/book_5_learn_wireframe) view:
 
 <div class="user-story">

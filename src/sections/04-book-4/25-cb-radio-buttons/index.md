@@ -1,4 +1,4 @@
-# Getting Started
+## Getting Started
 
 1. In your main <analogy>module</analogy>, define your <analogy>render</analogy> <analogy>function</analogy> and design the overall HTML structure you want.
 1. <analogy>Create</analogy> four modules in your `scripts` <analogy>directory</analogy>, each being responsible for displaying the four different option groups, just like you did in Kneel Diamonds.
