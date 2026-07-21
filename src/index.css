@@ -217,8 +217,10 @@ div[class$="contentContainer"] {
 }
 
 div[class$="contentContainer"] img {
-  max-width: 100%;
+  display: block;
+  max-width: 80%;
   height: auto;
+  margin: 1.5rem auto;
 }
 
 /* ── Exercise content: vertical rhythm ──────────────────────── */
