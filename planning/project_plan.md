@@ -197,6 +197,7 @@ Work **one chapter at a time** per session:
 | — | **Phase 8: Concept Map Refactor** — see detail below |
 | — | **Phase 9: Analogy Tag Refactor** — see detail below |
 | 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
+| 🛑 | **Phase 11: Video Consolidation** — blocked on external prep; Screencastify → YouTube migration (16 exercises) and, once a unified YouTube account is ready, moving existing YouTube videos over to it |
 
 ---
 
@@ -1014,3 +1015,52 @@ A fully separate foundational JavaScript track covering arrays, conditions, obje
 2. If included, does it become a prerequisite track (before Book 1), a parallel track students can opt into, or woven chapter-by-chapter into Books 1–2?
 3. The three practice threads (Digital Notes, Library Tracker, Meal Planner) — do they replace the current Book 1 chapter projects (Queen Bee, Surf Shop, Björn), supplement them, or form their own Explorer-style challenges?
 4. Would adding this track require nss-core changes to support multiple parallel tracks?
+
+---
+
+## Phase 11: Video Consolidation 🛑 Blocked — External Prep Pending
+
+*Two related pieces of video infrastructure work, sequenced: (1) migrate Screencastify-hosted videos to YouTube now that account access is in hand, then (2) once a unified YouTube account ("one account to rule them all") is ready, move existing YouTube videos over to it. Neither part can start until its external prerequisite (upload, or account/email setup) is ready — this phase exists to hold the scope so it isn't lost, not to begin work now.*
+
+### Part A: Screencastify → YouTube Migration
+
+16 exercise files currently link to Screencastify-hosted videos via a thumbnail-image link (`<a href="https://watch.screencastify.com/v/..."><img src="./images/video-play-icon.gif" .../></a>`) rather than an embedded iframe — a legacy pattern from before the Book 5 YouTube iframe-embed work (see Phase 4 → "Embedded Video + Timestamp-Linked Transcripts" above for the markup pattern to reuse). One of these — `05-book-5/03-repair-api` — is the Book 5 exercise that was explicitly skipped during the original transcript/iframe pass for exactly this reason ("ex 03 skipped — Screencastify").
+
+**Affected files:**
+| File |
+|---|
+| `00-setup/06-keyboard-debug` |
+| `01-book-1/10-queen-debugger` |
+| `01-book-1/11-queen-errors` |
+| `01-book-1/13-queen-iteration` |
+| `01-book-1/14-queen-tribute` |
+| `01-book-1/15-queen-tribute-by-queen` |
+| `01-book-1/23-surf-diagram` |
+| `02-book-2/08-duo-review` |
+| `03-book-3/03-dd-add-state-to-dom` |
+| `03-book-3/04-dd-accessing-state` |
+| `03-book-3/05-dd-metadata-as-state` |
+| `03-book-3/06-dd-foreign-key-state` |
+| `03-book-3/07-dd-find-dog-walker` |
+| `03-book-3/08-dd-find-city-walker` |
+| `03-book-3/15-ss-hauler-cargo` |
+| `05-book-5/03-repair-api` |
+
+**Work to do once videos are uploaded:**
+1. Get the new YouTube video ID for each of the 16 Screencastify videos above
+2. Replace the thumbnail-link markup with a named `<iframe>` (same pattern as Book 5)
+3. Decide whether these get transcript treatment too — Phase 4.5.3's standard ("embed + transcript only for NSS-authored primary instruction") would say yes, since these are NSS-authored
+4. Re-run a link check for any other place in the curriculum that references these videos
+
+### Part B: YouTube Account Consolidation
+
+Once the unified YouTube account/email is ready, some subset of the videos already embedded via YouTube iframe (cataloged in Phase 4.5.3's audit — 16 files, mostly Book 5) will move to the new account. Moving a video to a new channel changes its video ID, which breaks:
+- The `src="https://www.youtube.com/embed/VIDEO_ID"` on the iframe
+- Every `?start=N&autoplay=1` timestamp link that targets that iframe (the `target="yt-exNN"` name stays the same; only `VIDEO_ID` in the href changes)
+
+**Open questions (need answers before this can start):**
+- Which of the 16 YouTube-embedded files/videos are moving — all of them, or a specific subset?
+- Do old video IDs stay live (as unlisted, or redirected), or go fully dead once moved?
+- Is there an old-ID → new-ID mapping provided during the move, or does each need to be found manually afterward?
+
+**Status:** 🛑 Not started — blocked on the unified account being created and the video move happening outside this repo.
