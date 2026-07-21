@@ -48,6 +48,68 @@ If `git config user.email` doesn't match anyone in this table, treat the session
 as a new contributor — add them here once you learn their name and local path
 rather than guessing.
 
+### Current work
+
+Contributors take ownership of a phase, or a specific thread/section within a phase
+(see `project_plan.md`), for the duration of a session or longer. This table is the
+live claim board — check it before starting anything so two people don't pick up
+the same work without knowing it. The **Status** column should make it possible to
+tell at a glance who's still actively working versus who needs new work assigned.
+
+| Contributor | Working on | Status | Branch | Since |
+|---|---|---|---|---|
+| Greg Korte | Repo governance setup — `CLAUDE.md` contributor onboarding, current-work tracking, memory rules | In progress | `general_edits` | 2026-07-20 |
+
+Status values:
+- **In progress** — actively working; continue where they left off
+- **Needs new work** — finished their claim, hasn't picked up anything else yet
+- **Blocked** — waiting on something (a decision, a dependency, another contributor) before continuing
+
+**Session-start protocol:**
+1. Identify the current contributor via `git config` (see above). If they're not in
+   the contributor table, ask for their name and local paths and add a row — this
+   is their profile going forward.
+2. Print the Current Work table so everyone can see what's currently claimed and
+   its status.
+3. If the contributor already has a row marked **In progress**, ask whether they
+   want to continue that work.
+4. If they have a row marked **Needs new work** or **Blocked**, or don't have a row
+   at all (new contributor, or first session), ask which phase they want to work on
+   next (see the phase table in `project_plan.md`) — and if that phase has
+   sub-threads or sections (e.g. Phase 5's five threads, Phase 4.5's sub-sessions),
+   ask which one specifically.
+5. Update their row — status, "Working on" if it changed, and `Branch` via
+   `git branch --show-current`. If they're stepping away without new work picked,
+   set status to **Needs new work** rather than leaving a stale **In progress**
+   claim. Set `Since` to today's date whenever the `Working on` value changes; leave
+   it as-is if they're just continuing the same claim.
+
+This table tracks active, in-flight claims only — it's not a history log. An empty
+table means nothing is currently claimed, not "nobody's ever worked here." Completed
+work status belongs in `project_plan.md`, per the "What's tracked here vs. private
+memory" rule below.
+
+**Same-day fast path.** The transcript editing workflow (see Content Conventions
+below) deliberately ends a session and expects a `/clear` after each topic section —
+replaying the full session-start protocol on every single re-entry within the same
+working day would be redundant and wastes tokens printing a table that hasn't
+changed. Whether today's protocol has already run for this contributor is itself
+private, moment-specific state per the "What's tracked here vs. private memory"
+rule below — it does not belong in this shared file.
+
+1. Before running the full protocol, check private memory for a note recording that
+   the session-start protocol already ran today for this contributor, and what claim
+   was active when it did.
+2. If today's date matches and the claim is unchanged, skip the full print-and-ask —
+   just a one-line confirmation ("Continuing [claim], picked up earlier today") is
+   enough.
+3. If there's no matching note (first session of the day, no note yet, or the claim
+   has changed since — e.g. marked complete last session), run the full protocol as
+   written above, then write or update that private memory note.
+4. Finishing a claim mid-day updates both places: the private note (so the fast path
+   stays accurate for the rest of the day) and the contributor's row in the shared
+   Current Work table (so everyone else sees it too).
+
 ## Planning documents
 
 Long-lived planning and reference docs live in [planning/](planning/):

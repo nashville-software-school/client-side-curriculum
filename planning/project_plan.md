@@ -15,7 +15,7 @@ This document is the guiding reference for restructuring the NSS client-side cur
 ## How We Work
 
 - Work **one chapter at a time** per session to keep context clean and changes focused.
-- At the start of every session, read `project_plan.md`, [`CLAUDE.md`](../CLAUDE.md) (shared content conventions), and the relevant memory files before touching any code.
+- At the start of every session, follow [`CLAUDE.md`](../CLAUDE.md)'s session-start protocol (contributor identity, the Current Work claim board, and shared content conventions), then read `project_plan.md` and the relevant memory files before touching any code.
 - At the end of every session, update all three governing documents as needed before running `/clear`:
   1. **`project_plan.md`** — mark the session complete, advance "next" to the following session
   2. **`concept_map.md`** — review exercises just completed; add missing terms, update Reinforced In, mark chapter as Reviewed ✓, flag any inconsistencies with ⚠️
