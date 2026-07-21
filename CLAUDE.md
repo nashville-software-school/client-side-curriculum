@@ -83,6 +83,11 @@ Status values:
    set status to **Needs new work** rather than leaving a stale **In progress**
    claim. Set `Since` to today's date whenever the `Working on` value changes; leave
    it as-is if they're just continuing the same claim.
+6. If the phase they just picked up is still marked `—` (not started) in
+   `project_plan.md`'s summary table, flip it to `◑` (in progress) there too — a
+   phase shouldn't read "not started" once someone has actively claimed it. Marking
+   a phase `✓` complete still happens at end-of-session per "How We Work" in
+   `project_plan.md`, not here.
 
 This table tracks active, in-flight claims only — it's not a history log. An empty
 table means nothing is currently claimed, not "nobody's ever worked here." Completed
