@@ -183,11 +183,14 @@ Work **one chapter at a time** per session:
 | 18 ✓ | Restructure Book 5 → Honey Rae's Repair Shop (exercises 01–16) |
 | 19 ✓ | Restructure Book 5 → Chuckle Checklist (exercises 17–21) |
 | 20 ✓ | Restructure Book 5 → Learning Moments (exercises 22–33), explorers, capstone, group project |
-| ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`; cross-course regression testing in progress |
-| — | **Phase 2b: Course Landing Page** — platform feature: render `README.md` as the course intro page; requires `nss-core` changes and team discussion |
+| ◑ | **Phase 2: Navigation UX** — Path B chosen; `nss-core` updated externally; all 173 chapter files updated with `chapterGroup`/`type`. **Blocked on an nss-core decision:** cross-course regression testing, then publishing the new `nss-core` version, before the local `npm link` can be removed. |
+| ✓ | **Phase 2b: Course Landing Page** — resolved with a curriculum-side-only fix (`src/sections/introduction/`); the `nss-core` change originally scoped below was not needed |
 | ✓ | **Phase 3: Broken Links** — All categories A–G complete |
+| ✓ | **Phase 3.5: Housekeeping** — removed stray `type: "group-project"` values; added `chapterGroup` emojis across 116 files |
 | ✓ | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
+| ✓ | **Phase 4.5: Polish Pass** — spacing/formatting, localhost link audit, video audit, and transcript readability (18/18 exercises) all complete |
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
+| — | **Phase 5.1: Exercise Standardization** — once Phase 5's threads are woven in, standardize the shape/flow of every exercise so the curriculum reads as one coherent course |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
 | — | **Phase 8: Concept Map Refactor** — see detail below |
@@ -296,8 +299,9 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 2b: Course Landing Page
+## Phase 2b: Course Landing Page ✓ COMPLETE
 
+**Resolution:** Implemented as a curriculum-side-only fix — no `nss-core` changes needed. `src/sections/introduction/` was added as its own section with an `id: "introduction"` chapter at `order: 1`, rendering the course intro content directly as a normal chapter rather than requiring platform changes to `Course.jsx`/`IntroPage.jsx`. Image at `public/assets/learning-objectives.png`; global image CSS added to `src/index.css`. The planning detail below reflects the original approach that was considered and superseded by this simpler fix — kept for context.
 
 *Motivation: long course repositories like this one have a meaningful README that serves as the student-facing introduction to the course — its goals, structure, and what students will build. Currently the platform's intro page is a generic animated screen with a "Start Learning!" button and no course-specific content. Surfacing the README as the actual landing page makes the first impression intentional and course-specific.*
 
@@ -331,7 +335,7 @@ Modify `@nss-workshops/nss-core` to support `chapterGroup` and `type` fields nat
 
 ---
 
-## Phase 3: Broken Links ◑
+## Phase 3: Broken Links ✓ COMPLETE
 
 ### Audit Summary (2026-06-30)
 - **Internal broken links:** 166 across 181 exercise files
@@ -450,6 +454,16 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 
 ---
 
+## Phase 3.5: Housekeeping ✓ COMPLETE (2026-07-13)
+
+*Two cleanup items identified and resolved during the external link review pass.*
+
+- Removed `type: "group-project"` from all group project `index.jsx` files (Books 1, 3, 4, 5 — Book 2 was already clean).
+- Added emojis to all 14 `chapterGroup` values across 116 files (Queen Bee already had 👑; all others assigned matching emojis).
+- Also documented (in the `platform` repo, not here): an `nss-core` JavaScript code block rendering bug where HTML tags inside JS template literals render as real DOM elements instead of literal text — see `platform/memory/js_codeblock_html_rendering.md`. Fix requires changes to `nss-core`'s `marked` renderer; tracked as an open `nss-core`-side item.
+
+---
+
 ## Phase 4: General Errors ✓ COMPLETE
 
 *Scope: all exercise markdown content across all 5 books and Setup. This is an editorial pass — finding and fixing errors that would confuse or block students.*
@@ -553,7 +567,7 @@ Ex 09 has no video — no change needed.
 
 ---
 
-## Phase 4.5: Polish Pass
+## Phase 4.5: Polish Pass ✓ COMPLETE
 
 *Four improvement areas identified after completing the video embedding work. Independent sessions — no blocking dependencies between them. Recommended order: 1 → 2 → 3 → 4.*
 
@@ -622,7 +636,7 @@ Ex 09 has no video — no change needed.
 
 ---
 
-### Sessions 4.5.4–4.5.X: Transcript Readability
+### Sessions 4.5.4–4.5.X: Transcript Readability ✓ COMPLETE (2026-07-20)
 
 **Problem:** All 14 Book 5 video transcripts are raw speech-to-text output — no punctuation, no capitalization, no paragraph breaks beyond the `[M:SS]` markers, and no section headers. Wall-of-text format is difficult to read and impossible to skim.
 
@@ -687,7 +701,7 @@ Ex 09 has no video — no change needed.
 | ex 15b | `15-repair-customer-tickets/index.md` | ✓ COMPLETE | Overview: New Buttons for the Customer Ticket View / Wrapping the Conditional Buttons in a Fragment / Adding the Customer Ticket Buttons / Adding Toggle State for the Open Tickets Button / Filtering Tickets by Open Status with useEffect / Implementing the Delete Button / Adding a Delete Ticket Service Function / Rendering the Delete Button / An Alternate Way to Write the Conditional / Wiring Up the Delete Handler |
 | ex 07 | `07-repair-search-tickets/index.md` | ✓ COMPLETE | Adding the Search Input and Filter Bar / Capturing the Search Term in State / Filtering Tickets with useEffect / Testing the Search Filter / Extracting the TicketFilterBar Component / Passing State Setters as Props / Testing the Completed Filter Bar and Recap |
 | ex 01 | `01-react-basics/index.md` | ✓ COMPLETE | Introducing React Developer Tools / Exploring the Components Tab / Inspecting State with the Home Component / Wrap-Up |
-| ex 04 | `04-repair-wireframe/index.md` | ○ pending | |
+| ex 04 | `04-repair-wireframe/index.md` | ✓ COMPLETE | Overview: Employee Views vs Customer Views / Employee Views: Tickets, Employees, and Profile / Customer Views: Tickets and Creating a Ticket / Customer Views: Editing Tickets and Profile / Wrap-Up |
 | ex 16 | `16-repair-create-ticket/index.md` | ✓ COMPLETE | Setting Up Navigation to the Create Ticket Form / Adding Routes for Creating a Ticket / Building the Ticket Form JSX / Capturing the Description Input in State / Capturing the Emergency Checkbox and Setting Default State / Creating the createTicket Service Function and Adding Validation / Building the New Ticket Object with Prop-Drilled currentUser / Navigating After Save and Fixing the Page Refresh Bug |
 
 ---
@@ -807,9 +821,33 @@ Introduce testing as a practice starting in Book 1 by connecting it to what stud
 
 ---
 
+## Phase 5.1: Exercise Standardization
+
+*Runs after Phase 5's threads are woven in — new content (LLM callouts, CS theory notes, testing callouts, hook foreshadowing) is exactly the kind of addition that's easiest to place consistently against a settled template, rather than retrofitted into whatever shape each exercise already happens to have.*
+
+**Motivation:** Exercises were authored over time, by different people, without a shared structural template. The "shape" of an exercise — where the video goes, how instructions are sequenced, where callouts and wrap-ups land — varies book to book and sometimes chapter to chapter. That inconsistency makes the curriculum feel stitched-together rather than authored as one coherent course, and makes it harder to guess where a new content type belongs without checking each book's own convention first.
+
+**Goals:**
+- Every exercise follows the same overall shape/section order, regardless of book or original author
+- The four Phase 5 threads (LLM integration, hooks foreshadowing, CS theory, testing mindset) each get one canonical position in that shape, not an ad hoc placement per chapter
+- Exercise-to-exercise transitions feel like a continuous flow rather than isolated units — moving from one exercise to the next shouldn't require re-orienting to a different structure
+
+**Work to do:**
+1. Audit the current exercise shape across all 5 books — catalog what sections exist (video, wireframe callout, step instructions, hints, wrap-up, etc.) and where they fall, book by book
+2. Define one canonical exercise template — the order and required/optional sections every exercise should have
+3. Decide where each Phase 5 thread callout lives in that template (e.g., a testing-mindset note always follows the step that introduces the behavior being verified; an LLM callout always lives in the wrap-up)
+4. Apply the template across all ~175 exercises — a structural pass, not a content rewrite; existing prose stays, sections get reordered/retitled/added to match
+
+**Open questions:**
+- Is the canonical shape identical across all 5 books, or does it flex for book-specific needs (e.g., Book 5's Honey Rae's transcripts vs. Books 1–4's static instructions)?
+- Does this require a shared markdown template/snippet contributors copy for new exercises, or just a documented convention in `CLAUDE.md`?
+- Should this run before or after Phase 7 (Concept Map Refactor) — a stable exercise shape might make it easier to audit where vocabulary terms are introduced?
+
+---
+
 ## Phase 6: Curriculum Scripts
 
-*Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown — students run them to scaffold project files, seed databases, and configure their environments. This phase follows Phase 5 so that scripts can be updated to match whatever the new material requires, avoiding a second pass.*
+*Scope: the `course-bash-scripts` repository at https://github.com/nashville-software-school/course-bash-scripts. Scripts in this repo are referenced directly in exercise markdown — students run them to scaffold project files, seed databases, and configure their environments. This phase follows Phase 5 and Phase 5.1 so that scripts can be updated to match whatever the new material and standardized exercise shape require, avoiding a second pass.*
 
 *Problems: scripts are outdated, broken on some setups, and inconsistent across Mac/Windows/Linux.*
 
