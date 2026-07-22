@@ -144,7 +144,7 @@ Now it's time to set up our routes for authentication. In `App.jsx`, remove the 
 <details class="cs-theory">
     <summary>🏛️ CS Theory Check-in: Interface Segregation, Open/Closed Principle</summary>
 
-`App.jsx` imports only `Route` and `Routes` by name, not the whole `react-router-dom` library. And the catch-all route just wraps `ApplicationViews` in `Authorized` without needing to know what's inside either one. Which of these two things is Interface Segregation, and which is Open/Closed?
+You've seen both of these ideas recur all through this course, from Surf Shop's `functions.js` import to Honey Rae's routes. `App.jsx` imports only `Route` and `Routes` by name, not the whole `react-router-dom` library. And the catch-all route just wraps `ApplicationViews` in `Authorized` without needing to know what's inside either one. Which of these two things is Interface Segregation, and which is Open/Closed?
 
 </details>
 

@@ -61,6 +61,13 @@ For a review, you can watch a video that steps through the code and examines the
 
 <a href="https://watch.screencastify.com/v/MUKQNQMgqHOH3OFYnQOB" target="_blank" rel="noopener noreferrer"><img src="./images/video-play-icon.gif" height="75rem" /></a>
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Single Responsibility</summary>
+
+This is the second time you've written a function that does two jobs at once. Just like `createQueen` before it, `payTribute` both builds an object and adds it to an array. Is that still fine at this size? What would have to change about your code before splitting those two jobs apart would actually be worth doing?
+
+</details>
+
 ## Hints
 
 <details>

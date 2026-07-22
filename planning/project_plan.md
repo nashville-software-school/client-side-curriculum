@@ -199,7 +199,7 @@ Work **one chapter at a time** per session:
 | — | **Phase 9: Analogy Tag Refactor** — see detail below |
 | 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
 | 🛑 | **Phase 11: Video Consolidation** — blocked on external prep; Screencastify → YouTube migration (16 exercises) and, once a unified YouTube account is ready, moving existing YouTube videos over to it |
-| — | **Phase 12: Transcript Side-by-Side Layout** — move the Book 5 video-transcript `<details>` block beside its `<iframe>` instead of below it, height-capped to the video for independent scrolling; collapsible behavior preserved |
+| ◑ | **Phase 12: Transcript Side-by-Side Layout** — move the Book 5 video-transcript `<details>` block beside its `<iframe>` instead of below it, height-capped to the video for independent scrolling; collapsible behavior preserved |
 | 🛑 | **Phase 13: Explorer Cross-Linking** — link Explorer exercises back to the chapter they extend; blocked on the same nss-core cross-chapter link base-URL bug already tracked in Open Questions |
 
 ---
@@ -818,12 +818,14 @@ Introduce selected OOP pillars, SOLID principles, and ACID properties at the exe
 
 **Sequencing note:** Polymorphism was originally slated for introduction at Book 4 (Kneel Diamonds, `.map()`), but that came *after* naturally-occurring "same loop shape, different behavior" patterns already existed in Book 2 (Martin's Aquarium's three fish-filtering functions) and Book 3 (Shipping Ship Ships). Introducing it that late would have wasted those earlier opportunities, so its introduction was moved to Book 2, and the original Kneel Diamonds callout was reworked into a check-in / "level-up" moment (same idea, now expressed via a real array method instead of manual loops).
 
+**Sequencing note (density pass, 2026-07-21):** Single Responsibility was originally introduced at Surf Shop → Just the Data, but Queen Bee (the chapter immediately before Surf Shop) had zero CS theory touchpoints and its `createQueen`/`payTribute` functions already exhibit a natural "this function does two jobs" pattern — the same shape SRP addresses. Its Tier 1 introduction was moved to Queen Bee → Collection of Queens, with a same-chapter Tier 2 check-in at Paying Tribute, and the original Surf Shop → Just the Data callout was reworked into a Tier 2 check-in using explicit recurrence wording ("this is the third time..."), the first applied instance of the wording-adjustment item from the Density Pass work-to-do list below.
+
 **Introductions (Tier 1):**
 
 | Concept | Type | Exercise |
 |---------|------|----------|
 | Encapsulation | OOP Pillar | Book 1 → Surf Shop → Just the Data / Just a Function |
-| Single Responsibility | SOLID | Book 1 → Surf Shop → Just the Data |
+| Single Responsibility | SOLID | Book 1 → Queen Bee → Collection of Queens *(moved earlier during density pass — see note below)* |
 | Interface Segregation | SOLID | Book 1 → Surf Shop → Just a Function |
 | Open/Closed | SOLID | Book 2 → Movie Majesty → The Main Algorithm |
 | Polymorphism | OOP Pillar | Book 2 → Martin's Aquarium → Filtering Fish *(moved earlier — see sequencing note)* |
@@ -835,22 +837,36 @@ Introduce selected OOP pillars, SOLID principles, and ACID properties at the exe
 
 | Concept(s) | Exercise |
 |---|---|
+| Single Responsibility | Book 1 → Queen Bee → Paying Tribute (2nd occurrence, same-chapter recurrence) |
+| Single Responsibility | Book 1 → Surf Shop → Just the Data (3rd occurrence, reworked from original Tier-1 intro) |
 | Encapsulation, SRP, ISP | Book 1 → Surf Shop → Diagrams (dependency graph reflection) |
+| Encapsulation, SRP | Book 1 → Björn's Wilderness Adventures → Presentation to Björn (modularization strategy choice) |
+| Encapsulation, SRP, ISP | Book 1 → Björn's Wilderness Adventures → Visualizations for Björn (dependency graph reflection, echoes Surf Shop Diagrams) |
+| Encapsulation | Book 2 → Dynamite Duo → Defining Villains (private data + getter function pattern) |
+| Single Responsibility | Book 2 → Dynamite Duo → Composing All HTML (HeroList/VillainList, single-purpose generators) |
 | Encapsulation, ISP | Book 2 → Martin's Aquarium → Creating Fish Data |
 | Encapsulation, ISP | Book 2 → Modern Farm → Seed Producing Modules |
 | Open/Closed | Book 2 → Modern Farm → Collecting the Harvest |
 | Polymorphism | Book 2 → Modern Farm → Selling the Harvest Online |
+| Encapsulation, SRP, ISP | Book 3 → DeShawn's Dog Walking → Fixing DeShawn's Application (dependency/sequence graph reflection, 3rd echo of Surf Shop Diagrams) |
+| Polymorphism | Book 3 → DeShawn's Dog Walking → Finding the Walker for a City (same "search array by foreign key" shape as the previous exercise) |
 | Encapsulation, ISP | Book 3 → Shipping Ship Ships → Shipping Ship List (3rd repetition callback) |
 | Polymorphism | Book 3 → Shipping Ship Ships → Shipping Ship Hauler |
+| Polymorphism | Book 3 → Brewed Awakenings → Employee Click (3rd instance of "search array by matching id" shape, echoes DeShawn's) |
+| Single Responsibility | Book 3 → Brewed Awakenings → Employee Click (`employeeOrders` pulled out of the click handler) |
 | Encapsulation, Open/Closed | Book 3 → Cider Falls Park → Data Design (open-ended, design-only) |
 | Abstraction | Book 4 → Fox y Dog → Awaiting Data (3rd fetch syntax) |
 | Polymorphism (level-up) | Book 4 → Kneel Diamonds → Building Options with Map *(reworked from original Tier-1 intro)* |
 | Dependency Inversion, Durability | Book 4 → Indiana Jeans → Displaying Submissions with .map() |
+| Single Responsibility, Interface Segregation | Book 4 → Cars 'R Us → Modules and Components Setup (four single-purpose option modules, explicitly parallels Kneel Diamonds) |
+| Polymorphism | Book 4 → Cars 'R Us → Choosing Car Options (same generator shape repeated for Wheels/Paints/Interiors, echoes the Kneel Diamonds level-up) |
 | Dependency Inversion | Book 5 → Honey Rae's → Repair API (JSON-Server setup) |
 | Encapsulation, SRP | Book 5 → Honey Rae's → List All Tickets (services module) |
 | Single Responsibility | Book 5 → Honey Rae's → Employee List (existing Explorer prompt) |
 | Open/Closed | Book 5 → Honey Rae's → Intro to Routes |
 | Durability | Book 5 → Honey Rae's → Create Ticket (POST-then-navigate) |
+| Encapsulation, Single Responsibility | Book 5 → Chuckle Checklist → Creating a New One Liner (self-built services module, echoes Honey Rae's) |
+| Single Responsibility | Book 5 → Chuckle Checklist → Listing the Jokes (hint-driven extraction of repeated fetch-and-set logic) |
 | Interface Segregation, Open/Closed | Book 5 → Learning Moments → Routing and Authentication |
 
 **Deferred to server-side courses (Python/Django, C#/.NET):**
@@ -866,11 +882,11 @@ Introduce selected OOP pillars, SOLID principles, and ACID properties at the exe
 *After reviewing Books 1–3 against the Introductions/Check-ins tables above, several core chapters have zero CS theory touchpoints at all — the original one-touch-per-concept mapping left real gaps rather than even coverage. Goal: every chapter gets at least 1–2 check-ins (Tier 1 intro or Tier 2 check-in), not just the chapters where a concept happened to be introduced.*
 
 **Chapters currently with zero touchpoints:**
-- Book 1 → Queen Bee
-- Book 1 → Björn's Wilderness Adventures
-- Book 2 → Dynamite Duo
-- Book 3 → DeShawn's Dog Walking
-- Book 3 → Brewed Awakenings
+- ~~Book 1 → Queen Bee~~ — resolved 2026-07-21, see below
+- ~~Book 1 → Björn's Wilderness Adventures~~ — resolved 2026-07-21, see below
+- ~~Book 2 → Dynamite Duo~~ — resolved 2026-07-21, see below
+- ~~Book 3 → DeShawn's Dog Walking~~ — resolved 2026-07-21, see below
+- ~~Book 3 → Brewed Awakenings~~ — resolved 2026-07-21, see below
 
 **Work to do:**
 1. For each zero-touchpoint chapter above, find at least one exercise where an already-introduced concept (Encapsulation, SRP, ISP, Open/Closed, Polymorphism from Books 1–2; more from Book 3+) recurs naturally, and add a Tier 2 check-in there
@@ -878,7 +894,60 @@ Introduce selected OOP pillars, SOLID principles, and ACID properties at the exe
 3. **Wording adjustment:** as check-ins get denser, some should reference recurrence explicitly (e.g. "This is the third time you've seen this pattern — where else has it shown up?") rather than reading as a fresh prompt each time. Needs a running count per concept per student-facing check-in, not just per-file tracking
 4. Update the Introductions/Check-ins tables above once new check-ins are placed, and update `concept_map.md`'s Reinforced In column accordingly
 
-**Status:** Not started — scoping only. Next session should pick one zero-touchpoint chapter and work it end to end before moving to the next, consistent with "one chapter per session."
+**Book 1 → Queen Bee (resolved 2026-07-21):** Queen Bee is the very first chapter in the course, appearing *before* any concept's original Tier 1 intro (Surf Shop) — so a Tier 2 check-in wasn't literally possible there (nothing had been introduced yet to check in on). Rather than force a check-in or leave the gap, Single Responsibility's Tier 1 introduction was moved earlier into Queen Bee → Collection of Queens (`createQueen` naturally builds an object and pushes it to an array in one function — the same "two jobs, one unit" shape SRP addresses), with a same-chapter Tier 2 check-in at Paying Tribute. The original Surf Shop → Just the Data SRP callout was reworked into a Tier 2 recurrence check-in ("this is the third time..."), which also gave item 3 above (wording adjustment) its first real instance. See the density-pass sequencing note above the Introductions table for full detail. This resolution pattern — check whether a concept's intro can move earlier to a zero-touchpoint chapter, rather than always forcing a check-in — should be considered for the remaining four chapters too, not just the check-in-only approach.
+
+**Book 1 → Björn's Wilderness Adventures (resolved 2026-07-21):** Unlike Queen Bee, this chapter comes after Surf Shop, so Encapsulation/SRP/ISP were already available to check in on — the gap here was a plain oversight, not a sequencing problem. Two natural fits: Presentation to Björn (the "Cleanup" exercise) asks students to choose a modularization strategy (by content type vs. by function), a direct echo of Surf Shop's data.js/functions.js split, so it got an Encapsulation + SRP check-in framed around that choice. Visualizations for Björn (the "Diagram" exercise) is a near-exact structural repeat of Surf Shop's Diagrams exercise, so its check-in explicitly calls back to "you built a graph like this once before" and reuses the same Encapsulation/SRP/ISP trio.
+
+**Book 2 → Dynamite Duo (resolved 2026-07-21):** This chapter comes before Movie Majesty and Martin's Aquarium, so only Encapsulation/SRP/ISP were available to check in on (no Open/Closed or Polymorphism yet). Defining Villains already contains an explicit private-data-plus-getter pattern (`database` is no longer exported, only `getVillains`/`getHeroes` are) — a richer, more textbook encapsulation example than anything seen so far, so it got an Encapsulation check-in. Composing All HTML has `HeroList` and `VillainList` as two single-purpose generator functions combined by `main.js` into one string, a clean SRP check-in.
+
+**Book 3 → DeShawn's Dog Walking (resolved 2026-07-21):** Book 3's opening chapter, but it comes after Movie Majesty and Martin's Aquarium (Book 2), so Open/Closed and Polymorphism were already available alongside Encapsulation/SRP/ISP. Fixing DeShawn's Application already has both a dependency graph and a sequence diagram covering four structurally identical generator modules (`Walkers`, `CityList`, `RegisteredPets`, `Assignments`, each: ask `Database` for data, convert to HTML, return it) — a natural third echo of the Surf Shop → Björn's "Diagrams" check-in pattern, so it got the Encapsulation/SRP/ISP trio with explicit "third project" recurrence wording. Finding the Walker for a City repeats the exact "read a foreign key from DOM state, search an array for the matching id" shape from the immediately preceding exercise (Finding the Walker for a Pet), so it got a Polymorphism check-in.
+
+**Book 3 → Brewed Awakenings (resolved 2026-07-21):** Comes after Shipping Ship Ships, so all five concepts introduced so far (Encapsulation, SRP, ISP, Open/Closed, Polymorphism) were available. Product Click and Employee Click repeat the same "read data off the clicked element, search an array for the matching id" shape a third time (after the two DeShawn's instances), so Employee Click got a Polymorphism check-in referencing the recurrence. Employee Click's hint also pulls order-counting out into its own `employeeOrders` function rather than inlining it in the click handler, a clean, ungrudging SRP example, so it got a second check-in there too. This chapter doesn't have a dependency-graph/sequence-diagram exercise the way Surf Shop/Björn's/DeShawn's did, so the recurring "Diagrams" check-in pattern wasn't extended here — two check-ins on the click-handler pair was judged sufficient rather than forcing a third.
+
+**Status:** All 5 chapters from the Books 1–3 density-pass audit are resolved (Queen Bee, Björn's Wilderness Adventures, Dynamite Duo, DeShawn's Dog Walking, Brewed Awakenings). Work item 1 is complete. Remaining work-to-do items: (3) the recurrence-wording adjustment has now been applied several times live (Surf Shop → Just the Data, DeShawn's Diagrams, Brewed Awakenings Employee Click) but hasn't been retrofitted onto older check-ins that predate this pass; (4) the Introductions/Check-ins tables above are current as of this session, but `concept_map.md` still has no rows for any Thread 3 concepts (deferred to Phase 7/9, unchanged by this pass).
+
+#### Books 4–5 Re-audit (item 2, started 2026-07-21)
+
+Cross-referencing the Introductions/Check-ins tables above against every **core** chapter in Books 4–5 (Explorer/Pioneer/Advanced Project/Group Project/Capstone Resources chapters are out of scope, same as the Books 1–3 audit):
+
+| Book 4 core chapter | Touchpoints found |
+|---|---|
+| Fox y Dog | 2 (Abstraction intro + check-in) |
+| Indiana Jeans | 2 (Dependency Inversion intro, Durability intro) |
+| Kneel Diamonds | 1 (Polymorphism level-up check-in) |
+| **Cars 'R Us** | **0 — zero-touchpoint chapter** |
+
+| Book 5 core chapter | Touchpoints found |
+|---|---|
+| Honey Rae's Repair Shop | 5 |
+| **Chuckle Checklist** | **0 — zero-touchpoint chapter** |
+| Learning Moments | 1 |
+
+**Chapters currently with zero touchpoints (Books 4–5):**
+- ~~Book 4 → Cars 'R Us~~ — resolved 2026-07-21, see below
+- ~~Book 5 → Chuckle Checklist~~ — resolved 2026-07-21, see below
+
+**Book 4 → Cars 'R Us (resolved 2026-07-21):** Modules and Components Setup already tells students to build "four modules... just like you did in Kneel Diamonds" (where Polymorphism's level-up check-in lives), so it got an SRP/ISP check-in on the four single-purpose option modules. Choosing Car Options shows the concrete `Technologies` generator function students then repeat three more times for Wheels/Paints/Interiors, so it got a Polymorphism check-in explicitly calling back to the Kneel Diamonds level-up moment.
+
+**Book 5 → Chuckle Checklist (resolved 2026-07-21):** This is the first React project after Honey Rae's where students build a services module themselves rather than following along, so Creating a New One Liner got an Encapsulation/SRP check-in on the self-built `jokeService`, explicitly calling back to Honey Rae's. Listing the Jokes has a hint that explicitly tells students to extract repeated fetch-and-set logic into its own function, a concrete, hint-driven SRP moment, so it got a check-in there too.
+
+**Status:** The Books 4–5 re-audit (work item 2) is complete — both zero-touchpoint chapters found (Cars 'R Us, Chuckle Checklist) are now resolved. Combined with the earlier Books 1–3 audit, all 7 originally-flagged zero-touchpoint core chapters across Books 1–5 are resolved.
+
+#### Recurrence-Wording Retrofit (item 3, completed 2026-07-22)
+
+Audited every pre-density-pass Tier 2 check-in in course order for explicit backward references (naming the specific earlier exercise or pattern being echoed, not just a fresh-sounding prompt). Most already did this well (Martin's Aquarium, Shipping Ship Ships, Kneel Diamonds, Indiana Jeans, Honey Rae's List All Tickets). Seven had none and were retrofitted:
+
+| Exercise | Concept(s) | What was added |
+|---|---|---|
+| Björn's → Presentation to Björn | Encapsulation, SRP | Callback to Surf Shop's `data.js`/`functions.js` split |
+| Modern Farm → Seed Producing Modules | Encapsulation, ISP | "Third time" callback to Surf Shop and Martin's Aquarium |
+| Modern Farm → Collecting the Harvest | Open/Closed | Callback to Movie Majesty's Main Algorithm |
+| Honey Rae's → Employee List | SRP | Callback spanning Queen Bee's `createQueen` through this project's services modules |
+| Honey Rae's → Intro to Routes | Open/Closed | Callback to Movie Majesty and Modern Farm |
+| Honey Rae's → Create Ticket | Durability | Callback to Indiana Jeans' survey submissions |
+| Learning Moments → Routing and Authentication | ISP, Open/Closed | Callback spanning Surf Shop's `functions.js` through Honey Rae's routes |
+
+**Status:** Thread 3 density-pass work items 1–3 are all complete. Remaining item: (4) `concept_map.md` still has no Thread 3 rows — deferred to Phase 7/9, unchanged by this pass.
 
 ### Thread 4: Testing Mindset
 

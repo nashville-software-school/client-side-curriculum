@@ -34,4 +34,11 @@ Then refresh your browser and inspect that value of the `theWholeEnchilada` vari
 
 <img src="./images/the-whole-enchilada-value.gif">
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Single Responsibility</summary>
+
+`HeroList` only knows how to build hero HTML, and `VillainList` only knows how to build villain HTML. Neither one knows about the other, and neither one knows how its output will eventually get used. `main.js` is the only place that combines them into `theWholeEnchilada`. What would you have to change if you only wanted to display heroes on one page and villains on another?
+
+</details>
+
 Now remove the `debugger` statement and move on to the next chapter to see how to place this new HTML string into the visible part of the browser.

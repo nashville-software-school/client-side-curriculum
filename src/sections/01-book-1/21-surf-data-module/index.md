@@ -73,8 +73,8 @@ By moving `inventory` into its own `data.js` module, you've created a boundary a
 </details>
 
 <details class="cs-theory">
-    <summary>🏛️ CS Theory: Single Responsibility</summary>
+    <summary>🏛️ CS Theory Check-in: Single Responsibility</summary>
 
-Once you're done, `data.js` has exactly one job: hold the inventory. It doesn't calculate averages and it doesn't run any application logic, it just stores data and exports it. That's the Single Responsibility Principle (the "S" in SOLID): a module should have one reason to change. If the inventory data changes shape, you edit `data.js`. If the math changes, you edit a different module entirely.
+This is the third time this idea has come up, first with `createQueen`, then `payTribute`, both mixing two jobs into one function. Now look at `data.js`: it has exactly one job, hold the inventory. It doesn't calculate averages and it doesn't run any application logic, it just stores data and exports it. What did splitting `averagePrice.js` into `data.js` actually buy you, compared to just leaving everything mixed together the way `createQueen` did?
 
 </details>

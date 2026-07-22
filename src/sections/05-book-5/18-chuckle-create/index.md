@@ -42,6 +42,13 @@ Start by adding a `jokeService` module to your services directory. Add a functio
 
 Now add a button for posting the new joke. When the user clicks on the button, a new joke with the text the user inputted should be added to the database. All new jokes added to the database should have the `told` property set to `false`. 
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Single Responsibility</summary>
+
+This is the same services-module pattern you saw in Honey Rae's, but this time you're the one creating it from scratch instead of following along. `jokeService` is the only place in your app that knows how to talk to the API, your components just call its functions and don't need to know what a fetch call even looks like. Why keep that knowledge in one place instead of writing fetch calls directly inside your components?
+
+</details>
+
 ## Clear the input field 
 
 Yay! We can add new jokes! But our user experience is lacking a little. We want our input field to clear once the joke has been posted. How can we do this? Currently, our input field modifies our state every time it changes, so our state is _tied to our input field_. Is there a way to _tie our input field to our state_? Try adding a `value` attribute on the `input` element. We can manually set the value of an input field this way.

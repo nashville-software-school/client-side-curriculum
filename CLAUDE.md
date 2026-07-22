@@ -58,7 +58,7 @@ tell at a glance who's still actively working versus who needs new work assigned
 
 | Contributor | Working on | Status | Branch | Since |
 |---|---|---|---|---|
-| Greg Korte | Phase 3.6 done; Phases 5 Thread 3 density pass / 12 / 13 scoped, not started | Needs new work | `phase5_thread3` | 2026-07-21 |
+| Greg Korte | Phase 5 Thread 3 density pass complete — items 1–3 all done (zero-touchpoint chapters resolved, recurrence-wording retrofit finished); item 4 (concept_map.md Thread 3 rows) deferred to Phase 7/9 | Needs new work | `phase5_thread3` | 2026-07-22 |
 
 Status values:
 - **In progress** — actively working; continue where they left off

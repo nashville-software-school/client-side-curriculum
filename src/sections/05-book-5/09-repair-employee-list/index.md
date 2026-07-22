@@ -54,6 +54,6 @@ Now that you understand how to pass props and render components, see if you can 
 <details class="cs-theory">
     <summary>🏛️ CS Theory Check-in: Single Responsibility</summary>
 
-This Explorer exercise is really asking a Single Responsibility question: right now `App.jsx` has a lot of reasons to change, layout, ticket logic, employee logic, all in one file. If you split it up, what would each new component's one job be?
+You've been running into this idea since Queen Bee's `createQueen`, all the way through the services modules earlier in this project. This Explorer exercise is really asking the same Single Responsibility question, just at the level of a React component instead of a function or a module: right now `App.jsx` has a lot of reasons to change, layout, ticket logic, employee logic, all in one file. If you split it up, what would each new component's one job be?
 
 </details>
