@@ -187,10 +187,11 @@ Work **one chapter at a time** per session:
 | ✓ | **Phase 2b: Course Landing Page** — resolved with a curriculum-side-only fix (`src/sections/introduction/`); the `nss-core` change originally scoped below was not needed |
 | ✓ | **Phase 3: Broken Links** — All categories A–G complete |
 | ✓ | **Phase 3.5: Housekeeping** — removed stray `type: "group-project"` values; added `chapterGroup` emojis across 116 files |
+| ✓ | **Phase 3.6: Explorer Chapter Icons** — Björn's chapterGroup icon changed 🏕️ → 🌲; 14 Explorer exercise titles prefixed with their originating chapter's icon (see detail below) |
 | ✓ | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | ✓ | **Phase 4.5: Polish Pass** — spacing/formatting, localhost link audit, video audit, and transcript readability (18/18 exercises) all complete |
 | ✓ | **Phase 4.6: Duplicate Title Cleanup** — nss-core renders `index.jsx`'s `title` as an `<h1>` above the markdown body; 194/202 exercises also had a redundant leading heading in `index.md`. 90 stripped, 112 kept (see detail below) |
-| ◑ | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4. Thread 3 (CS Theory Foreshadowing) complete; Threads 1, 2, 4, 5 not started |
+| ◑ | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4. Thread 3 (CS Theory Foreshadowing) reopened for a density pass (see detail below); Threads 1, 2, 4, 5 not started |
 | — | **Phase 5.1: Exercise Standardization** — once Phase 5's threads are woven in, standardize the shape/flow of every exercise so the curriculum reads as one coherent course |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
@@ -198,6 +199,8 @@ Work **one chapter at a time** per session:
 | — | **Phase 9: Analogy Tag Refactor** — see detail below |
 | 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
 | 🛑 | **Phase 11: Video Consolidation** — blocked on external prep; Screencastify → YouTube migration (16 exercises) and, once a unified YouTube account is ready, moving existing YouTube videos over to it |
+| — | **Phase 12: Transcript Side-by-Side Layout** — move the Book 5 video-transcript `<details>` block beside its `<iframe>` instead of below it, height-capped to the video for independent scrolling; collapsible behavior preserved |
+| 🛑 | **Phase 13: Explorer Cross-Linking** — link Explorer exercises back to the chapter they extend; blocked on the same nss-core cross-chapter link base-URL bug already tracked in Open Questions |
 
 ---
 
@@ -463,6 +466,37 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 - Removed `type: "group-project"` from all group project `index.jsx` files (Books 1, 3, 4, 5 — Book 2 was already clean).
 - Added emojis to all 14 `chapterGroup` values across 116 files (Queen Bee already had 👑; all others assigned matching emojis).
 - Also documented (in the `platform` repo, not here): an `nss-core` JavaScript code block rendering bug where HTML tags inside JS template literals render as real DOM elements instead of literal text — see `platform/memory/js_codeblock_html_rendering.md`. Fix requires changes to `nss-core`'s `marked` renderer; tracked as an open `nss-core`-side item.
+
+---
+
+## Phase 3.6: Explorer Chapter Icons ✓ COMPLETE (2026-07-21)
+
+*All Explorer exercises across every book shared one flat `chapterGroup: "Explorer Chapters"` value with no per-project distinction, and no icon anywhere tying an Explorer exercise back to the chapter it extends. Decision: keep the nav structure exactly as-is (one flat "Explorer Chapters" group, no `nss-core` change) and instead prefix each Explorer exercise's `title` with the icon of the chapter it maps to, using the `id` field's `book_N_explorer_{chapter}_*` naming to determine the mapping.*
+
+**Also fixed:** Björn's Wilderness Adventures' `chapterGroup` icon was 🏕️ (tent) — hard to distinguish from other icons at a glance. Changed to 🌲 across all 7 core chapter files (exercises 24–30).
+
+**Explorer title icon mapping (14 of 16 files — see table):**
+
+| Exercise | Chapter it extends | Icon added |
+|---|---|---|
+| `32-explorer-queen-modular` "Modular Majesty" | Queen Bee | 👑 |
+| `33-explorer-queen-database` "Combined Data" | Queen Bee | 👑 |
+| `34-explorer-queen-array-find` "Finding Tribute" | Queen Bee | 👑 |
+| `35-explorer-surf-modular` "Separate Reports" | Sequina's Surf Shop | 🏄 |
+| `36-explorer-bjorn-module-madness` "Modular Madness" | Björn's Wilderness Adventures | 🌲 |
+| `37-explorer-bjorn-database` "Tours Consolidated" | Björn's Wilderness Adventures | 🌲 |
+| `38-explorer-bjorn-array-find` "Filtering Tours" | Björn's Wilderness Adventures | 🌲 |
+| `22-explorer-duo-variables` "Are you primitive?" | Dynamite Duo | 💥 |
+| `23-explorer-duo-copies` "Copy me if you can" | Dynamite Duo | 💥 |
+| `30-explorer-ij-more-inputs` "Adding Form Inputs" | Indiana Jeans | 👖 |
+| `31-explorer-ij-state-map` "Replace Object With Map" | Indiana Jeans | 👖 |
+| `32-explorer-kd-earrings` "Ordering Earrings & Necklaces" | Kneel Diamonds | 💎 |
+| `33-explorer-kd-advanced-state` "User Option Choices as State" | Kneel Diamonds | 💎 |
+| `34-explorer-cb-more-factories` "Expanded Auto Offerings" | Cars 'R Us | 🚗 |
+
+**Left unprefixed (2 files):** `05-book-5/34-explorer-cloud-api` and `35-explorer-cloud-static` (Digital Ocean deployment) — these form their own "Explorer: Deployment" chapter per the target structure, not an extension of Honey Rae's/Chuckle Checklist/Learning Moments, so no existing chapter icon applies.
+
+**Note:** Book 3 has no Explorer chapters at all (confirmed — not an oversight).
 
 ---
 
@@ -772,7 +806,7 @@ Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patt
 - Where exactly in each book does each pre-React hook concept map to existing exercises?
 - Does this require new exercises, or additions to existing ones?
 
-### Thread 3: CS Theory Foreshadowing (OOP / SOLID / ACID) ✓ COMPLETE (2026-07-21)
+### Thread 3: CS Theory Foreshadowing (OOP / SOLID / ACID) ◑ Reopened for Density Pass (2026-07-21)
 
 Introduce selected OOP pillars, SOLID principles, and ACID properties at the exercises where the pattern already exists naturally — so students arrive at Python/Django and C#/.NET with the vocabulary already partially formed. Concepts with no genuine client-side analog are left entirely to the server-side courses.
 
@@ -826,6 +860,25 @@ Introduce selected OOP pillars, SOLID principles, and ACID properties at the exe
 **Open questions resolved:**
 - Callout format: `<details>/<summary>` disclosure blocks, not a named JSX component (see Format decided, above).
 - Concept map entries: still open — deferred to Phase 7/9 as originally planned.
+
+#### Density Pass (reopened 2026-07-21)
+
+*After reviewing Books 1–3 against the Introductions/Check-ins tables above, several core chapters have zero CS theory touchpoints at all — the original one-touch-per-concept mapping left real gaps rather than even coverage. Goal: every chapter gets at least 1–2 check-ins (Tier 1 intro or Tier 2 check-in), not just the chapters where a concept happened to be introduced.*
+
+**Chapters currently with zero touchpoints:**
+- Book 1 → Queen Bee
+- Book 1 → Björn's Wilderness Adventures
+- Book 2 → Dynamite Duo
+- Book 3 → DeShawn's Dog Walking
+- Book 3 → Brewed Awakenings
+
+**Work to do:**
+1. For each zero-touchpoint chapter above, find at least one exercise where an already-introduced concept (Encapsulation, SRP, ISP, Open/Closed, Polymorphism from Books 1–2; more from Book 3+) recurs naturally, and add a Tier 2 check-in there
+2. Re-audit Books 4–5 with the same zero-touchpoint lens once Books 1–3 are done — the original table may have the same gaps there
+3. **Wording adjustment:** as check-ins get denser, some should reference recurrence explicitly (e.g. "This is the third time you've seen this pattern — where else has it shown up?") rather than reading as a fresh prompt each time. Needs a running count per concept per student-facing check-in, not just per-file tracking
+4. Update the Introductions/Check-ins tables above once new check-ins are placed, and update `concept_map.md`'s Reinforced In column accordingly
+
+**Status:** Not started — scoping only. Next session should pick one zero-touchpoint chapter and work it end to end before moving to the next, consistent with "one chapter per session."
 
 ### Thread 4: Testing Mindset
 
@@ -1064,3 +1117,46 @@ Once the unified YouTube account/email is ready, some subset of the videos alrea
 - Is there an old-ID → new-ID mapping provided during the move, or does each need to be found manually afterward?
 
 **Status:** 🛑 Not started — blocked on the unified account being created and the video move happening outside this repo.
+
+---
+
+## Phase 12: Transcript Side-by-Side Layout
+
+*Currently, each Book 5 video exercise stacks its `<iframe>` and its `<details>` transcript block vertically — watch the video, then scroll down to read the transcript below it. Goal: put the transcript beside the video instead, height-capped to the video so it scrolls independently, letting a student watch and read at the same time without losing the video off-screen. The `<details>` collapse/expand behavior must be preserved.*
+
+**Current markup (per video), e.g. `05-book-5/01-react-basics/index.md`:**
+```html
+<iframe name="yt-ex01" src="..." width="700" height="394" ...></iframe>
+
+<details>
+<summary>📄 Video Transcript — ...</summary>
+...
+</details>
+```
+The two elements are siblings directly under the exercise's content container — no wrapping element around a video+transcript pair today.
+
+**Planned approach:**
+1. Wrap each iframe+details pair in a container `<div class="video-transcript-row">...</div>` in the markdown
+2. Add CSS in `src/index.css`: `.video-transcript-row { display: flex; gap: ...; align-items: flex-start; }`, iframe sized as today, `.video-transcript-row details { flex: 1 1 auto; max-height: <iframe height>; overflow-y: auto; }`
+3. Verify the `<summary>` click still opens/closes correctly inside the flex layout, and that the scrollable region only applies to the transcript body, not the summary line
+4. Decide the small-screen behavior (stack vertically below a breakpoint, since side-by-side won't fit on narrow viewports)
+
+**Scope:** All Book 5 exercises with an embedded video/transcript pair (18 exercises from the original embed pass; ex 11, 12, 15 have two video+transcript pairs each — each pair becomes its own row).
+
+**Status:** Not started — scoping only, fully actionable whenever picked up (no external blockers).
+
+---
+
+## Phase 13: Explorer Cross-Linking 🛑 Blocked on nss-core
+
+*Goal: link an Explorer exercise back to the specific chapter exercise it extends (e.g. a "👑 Modular Majesty" Explorer callout linking to the Queen Bee exercise where modules were introduced), and vice versa — a mention in the core chapter pointing forward to the relevant Explorer challenge. This keeps the Explorer section itself intact as a standalone way to browse the curriculum (per Phase 3.6 above and the existing CLAUDE.md convention that Explorer chapters are first-class), while also surfacing the connection contextually at the point in the core chapter where it's relevant.*
+
+**Blocked on:** the same cross-chapter link base-URL bug already tracked in "Open Questions / Future Decisions" above — internal `/chapter_id` links render as plain `<a>` tags that navigate outside the Vite base path (`/client-side-curriculum/`), 404ing. That fix lives in `nss-core`'s `Chapter` component (post-process rendered HTML to prepend `baseUrl` to any `href` starting with `/`) and has not shipped yet.
+
+**Work to do once the nss-core fix ships:**
+1. Confirm the fix is live and cross-chapter links work without the fragile "prepend `/client-side-curriculum/` to every href" workaround
+2. For each Explorer exercise, identify the specific exercise in its originating chapter most relevant to the explorer's extension topic (not just the chapter's intro exercise)
+3. Add the link both directions: from the Explorer exercise back to that specific chapter exercise, and from that chapter exercise forward to the Explorer exercise (e.g. as a "Want to go deeper? → [Explorer: ...]" callout)
+4. Apply across all 16 Explorer exercises (14 chapter-mapped + 2 Deployment ones, which would link to whatever Book 5 deployment-related exercise is most relevant instead of a narrative chapter)
+
+**Status:** 🛑 Not started — blocked on nss-core.

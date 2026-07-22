@@ -70,25 +70,25 @@
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|
-| 1 | `01-book-1/32-explorer-queen-modular` | `queen_bee_explorer_queen_modular` | Modular Majesty | `book_1_explorer_queen_bee_modular` |
-| 2 | `01-book-1/33-explorer-queen-database` | `queen_bee_explorer_queen_database` | Combined Data | `book_1_explorer_queen_bee_database` |
-| 3 | `01-book-1/34-explorer-queen-array-find` | `queen_bee_explorer_queen_array_find` | Finding Tribute | `book_1_explorer_queen_bee_array_find` |
+| 1 | `01-book-1/32-explorer-queen-modular` | `queen_bee_explorer_queen_modular` | 👑 Modular Majesty | `book_1_explorer_queen_bee_modular` |
+| 2 | `01-book-1/33-explorer-queen-database` | `queen_bee_explorer_queen_database` | 👑 Combined Data | `book_1_explorer_queen_bee_database` |
+| 3 | `01-book-1/34-explorer-queen-array-find` | `queen_bee_explorer_queen_array_find` | 👑 Finding Tribute | `book_1_explorer_queen_bee_array_find` |
 
 ### Explorer: Sequina's Surf Shop
 *High-flier challenges extending the Surf Shop chapter*
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|
-| 1 | `01-book-1/35-explorer-surf-modular` | `queen_bee_explorer_surf_modular` | Separate Reports | `book_1_explorer_surf_shop_modular` |
+| 1 | `01-book-1/35-explorer-surf-modular` | `queen_bee_explorer_surf_modular` | 🏄 Separate Reports | `book_1_explorer_surf_shop_modular` |
 
 ### Explorer: Björn's Wilderness Adventures
 *High-flier challenges extending the Björn chapter*
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|
-| 1 | `01-book-1/36-explorer-bjorn-module-madness` | `queen_bee_explorer_bjorn_module_madness` | Modular Madness | `book_1_explorer_bjorn_module_madness` |
-| 2 | `01-book-1/37-explorer-bjorn-database` | `queen_bee_explorer_bjorn_database` | Tours Consolidated | `book_1_explorer_bjorn_database` |
-| 3 | `01-book-1/38-explorer-bjorn-array-find` | `queen_bee_explorer_bjorn_array_find` | Filtering Tours | `book_1_explorer_bjorn_array_find` |
+| 1 | `01-book-1/36-explorer-bjorn-module-madness` | `queen_bee_explorer_bjorn_module_madness` | 🌲 Modular Madness | `book_1_explorer_bjorn_module_madness` |
+| 2 | `01-book-1/37-explorer-bjorn-database` | `queen_bee_explorer_bjorn_database` | 🌲 Tours Consolidated | `book_1_explorer_bjorn_database` |
+| 3 | `01-book-1/38-explorer-bjorn-array-find` | `queen_bee_explorer_bjorn_array_find` | 🌲 Filtering Tours | `book_1_explorer_bjorn_array_find` |
 
 ### Group Project: Fish Fusion
 
@@ -146,8 +146,8 @@
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|
-| 1 | `02-book-2/22-explorer-duo-variables` | `martins_aquarium_explorer_duo_variables` | Are you primitive? | `book_2_explorer_duo_variables` |
-| 2 | `02-book-2/23-explorer-duo-copies` | `martins_aquarium_explorer_duo_copies` | Copy me if you can | `book_2_explorer_duo_copies` |
+| 1 | `02-book-2/22-explorer-duo-variables` | `martins_aquarium_explorer_duo_variables` | 💥 Are you primitive? | `book_2_explorer_duo_variables` |
+| 2 | `02-book-2/23-explorer-duo-copies` | `martins_aquarium_explorer_duo_copies` | 💥 Copy me if you can | `book_2_explorer_duo_copies` |
 
 ### Group Project: Modern Farm
 
@@ -272,23 +272,23 @@
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|
-| 1 | `04-book-4/30-explorer-ij-more-inputs` | `kneel_diamonds_explorer_ij_more_inputs` | Expanding Dr. Jones' Research | `book_4_explorer_indiana_jeans_more_inputs` |
-| 2 | `04-book-4/31-explorer-ij-state-map` | `kneel_diamonds_explorer_ij_state_map` | Replace Object With Map | `book_4_explorer_indiana_jeans_state_map` |
+| 1 | `04-book-4/30-explorer-ij-more-inputs` | `kneel_diamonds_explorer_ij_more_inputs` | 👖 Adding Form Inputs | `book_4_explorer_indiana_jeans_more_inputs` |
+| 2 | `04-book-4/31-explorer-ij-state-map` | `kneel_diamonds_explorer_ij_state_map` | 👖 Replace Object With Map | `book_4_explorer_indiana_jeans_state_map` |
 
 ### Explorer: Kneel Diamonds
 *High-flier challenges extending the Kneel Diamonds chapter*
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|
-| 1 | `04-book-4/32-explorer-kd-earrings` | `kneel_diamonds_explorer_kd_earrings` | Custom Earring and Necklace Orders | `book_4_explorer_kneel_diamonds_earrings` |
-| 2 | `04-book-4/33-explorer-kd-advanced-state` | `kneel_diamonds_explorer_kd_advanced_state` | User Choices as State | `book_4_explorer_kneel_diamonds_advanced_state` |
+| 1 | `04-book-4/32-explorer-kd-earrings` | `kneel_diamonds_explorer_kd_earrings` | 💎 Ordering Earrings & Necklaces | `book_4_explorer_kneel_diamonds_earrings` |
+| 2 | `04-book-4/33-explorer-kd-advanced-state` | `kneel_diamonds_explorer_kd_advanced_state` | 💎 User Option Choices as State | `book_4_explorer_kneel_diamonds_advanced_state` |
 
 ### Explorer: Cars 'R Us
 *High-flier challenge extending the Cars 'R Us chapter*
 
 | # | File Directory | Current ID | Exercise Title | Target ID |
 |---|---------------|------------|----------------|-----------|
-| 1 | `04-book-4/34-explorer-cb-more-factories` | `kneel_diamonds_explorer_cb_more_factories` | Choosing Vehicle Models | `book_4_explorer_cars_r_us_more_factories` |
+| 1 | `04-book-4/34-explorer-cb-more-factories` | `kneel_diamonds_explorer_cb_more_factories` | 🚗 Expanded Auto Offerings | `book_4_explorer_cars_r_us_more_factories` |
 
 ### Pioneer: The Big Company
 

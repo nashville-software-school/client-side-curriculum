@@ -58,7 +58,7 @@ tell at a glance who's still actively working versus who needs new work assigned
 
 | Contributor | Working on | Status | Branch | Since |
 |---|---|---|---|---|
-| Greg Korte | Phase 11: Video Consolidation (scoping only) | Blocked | `phase5_thread3` | 2026-07-21 |
+| Greg Korte | Phase 3.6 done; Phases 5 Thread 3 density pass / 12 / 13 scoped, not started | Needs new work | `phase5_thread3` | 2026-07-21 |
 
 Status values:
 - **In progress** — actively working; continue where they left off
