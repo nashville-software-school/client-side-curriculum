@@ -1,5 +1,3 @@
-# Customer Details View
-
 ## 📺 Watch The Videos
 
 ### ⚠️ Note on the video: 

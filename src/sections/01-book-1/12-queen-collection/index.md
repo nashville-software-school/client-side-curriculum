@@ -1,4 +1,4 @@
-# Collection of Queens
+## Collection of Queens
 
 In this chapter, you are going to define a new function that will perform the task of adding <analogy>objects</analogy> that represent each queen to an <analogy>array</analogy>. Thus, you will practice the syntax for arrays and objects that you were introduced to in the Foundations Course.
 

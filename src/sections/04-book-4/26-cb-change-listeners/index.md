@@ -1,4 +1,4 @@
-# Storing User Choices as Transient State
+## Storing User Choices as Transient State
 
 1. In each of your <analogy>component</analogy> modules, generate a `<select>` <analogy>element</analogy> that has child `<option>` elements as HTML representation of each <analogy>object</analogy> in the corresponding <analogy>array</analogy> in the database <analogy>module</analogy>.
 1. Add an <analogy>event listener</analogy> that reacts to the customer choosing one of the options.

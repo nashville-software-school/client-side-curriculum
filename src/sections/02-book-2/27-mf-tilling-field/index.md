@@ -1,5 +1,3 @@
-# Tilling the Field
-
 ## Tilling Instructions
 
 1. Create a `scripts/field.js` module.

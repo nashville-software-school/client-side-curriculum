@@ -1,5 +1,3 @@
-# Saving Survey Submissions
-
 ## Introduction to Permanent State
 
 In the previous chapter, we created our <analogy>transient state</analogy> <analogy>module</analogy> and updated our components to capture user choices. Now, we're ready to take the final step: saving the user's selections to our database, transforming <analogy>transient state</analogy> into <analogy>permanent state</analogy>.

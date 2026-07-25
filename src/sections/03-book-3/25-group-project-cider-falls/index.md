@@ -1,5 +1,3 @@
-# Cider Falls
-
 This is a deep learning group project that you can work on with 2 or 3 of your teammates. It is more complex and challenging than the core projects in this book.
 
 ## Chapters

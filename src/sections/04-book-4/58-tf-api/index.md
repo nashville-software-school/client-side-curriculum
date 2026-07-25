@@ -1,5 +1,3 @@
-# Building Your Game API
-
 In this chapter, you will be creating your own, local API which you will use to persist data for your Truncheons &amp; Flagons game application. 
 
 ### Creating Your Database File

@@ -1,4 +1,4 @@
-# More Modularity
+## More Modularity
 
 Right now, if you run your `averagePrice.js` module, there are three different chunks of output that serve different needs. This is bad.
 

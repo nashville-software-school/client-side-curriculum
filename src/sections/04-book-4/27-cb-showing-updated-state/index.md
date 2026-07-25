@@ -1,4 +1,4 @@
-# Placing a Car Order
+## Placing a Car Order
 
 When the user clicks the button to place an order, take their currently chosen options _(which are currently stored as <analogy>transient state</analogy>)_ and construct a new order <analogy>object</analogy> to be sent to the <analogy>API</analogy> to make it permanent.
 

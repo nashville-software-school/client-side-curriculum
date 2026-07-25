@@ -1,5 +1,3 @@
-# Producing and Selling Processed Foods
-
 The owners of the farm have realized that they can make more profit if they take their harvested plants and process them into higher-end consumer goods. They borrowed 2 million dollars from the bank to build two new buildings on the farm.
 
 1. **Storage Barn** with one access door.

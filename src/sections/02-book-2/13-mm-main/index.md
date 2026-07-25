@@ -1,4 +1,4 @@
-# Bringing It All Together in the Main Module
+## Bringing It All Together in the Main Module
 
 In this chapter, we will create the main JavaScript module that orchestrates the movie card generation and rendering process. This module will import the necessary modules, generate the movie cards HTML, and render them to the DOM.
 

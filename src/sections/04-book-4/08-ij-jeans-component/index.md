@@ -1,5 +1,3 @@
-# Creating a Radio Button Component
-
 > ⚠️ **IMPORTANT NOTE BEFORE YOU BEGIN:** In the chapters of this column, much of the code will be provided for you. It's very easy to copy and paste the code snippets, however this is not recommended as it does not produce understanding or retention. We encourage you to type out the code, or at the very least <analogy>read</analogy> the code line by line. This way you think about what the code snippet actually does as you add it to your project.
 
 ## Building Projects Using Components

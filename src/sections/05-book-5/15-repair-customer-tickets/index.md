@@ -1,4 +1,3 @@
-# Displaying the Customer's Tickets
 In this chapter, you'll implement the Tickets view for a customer. A customer should _only_ see the tickets they've created, each ticket should have a button to delete, and the customer should see different buttons for filtering than an employee. 
 
 ## 📺 Watch the videos

@@ -1,4 +1,3 @@
-# Viewing a User's Profile
 In this chapter you will add a link to Profile in the Nav Bar and implement the following user stories for the [User Profile](/book_5_learn_wireframe) view:
 
 <div class="user-story">

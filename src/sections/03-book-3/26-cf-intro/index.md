@@ -1,5 +1,3 @@
-# Cider Falls Park Web Site
-
 You have been contracted to build an interactive web site for a public park in your county - Cider Falls. Here are the features that the administrator of the park wants to have.
 
 ## Setup

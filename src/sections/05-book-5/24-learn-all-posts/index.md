@@ -1,4 +1,4 @@
-# Displaying All The Posts
+## Displaying All The Posts
 In this chapter you will implement the following user story for the ***[All Posts](/book_5_learn_wireframe)*** view:
 
 <div class="user-story">

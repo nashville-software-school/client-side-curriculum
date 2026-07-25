@@ -1,4 +1,4 @@
-# Power to the Developer
+## Power to the Developer
 
 The <analogy>developer tools</analogy> of the browser is where you, as a developer, look at the evidence of what is happening in main browser window where the HTML is rendered. It is where you will spend most of your time when diagnosing problems, working with CSS, and debugging your code.
 

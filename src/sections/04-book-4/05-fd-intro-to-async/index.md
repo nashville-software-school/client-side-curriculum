@@ -1,4 +1,4 @@
-# Understanding async/await with Promises
+## Understanding async/await with Promises
 
 ## Introduction to async/await
 

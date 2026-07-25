@@ -1,5 +1,3 @@
-# Finding Walker for City
-
 In this chapter, you continue your journey of embedding hidden state into the DOM - that your users can't see - to add some more interactivity to your project. When a city is clicked on, the walkers working in that city should be displayed.
 
 <img src="./images/city-walker.gif">

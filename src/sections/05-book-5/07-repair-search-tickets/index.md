@@ -1,4 +1,3 @@
-# Search Tickets
 In this chapter you will practice what you learned in the previous chapters by implementing a search bar for the tickets.
 
 ## 📺 Watch The Video

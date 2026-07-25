@@ -1,5 +1,3 @@
-# Metadata as State
-
 <analogy>Metadata</analogy> is data about data. In the context of this project, metadata will be used to describe what _kind of data_ is being displayed.
 
 * Each city list item will have a metadata attribute called `data-type` with a value of "city".

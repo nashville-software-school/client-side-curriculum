@@ -1,5 +1,3 @@
-# Viewing Product Prices on Click
-
 Using code from the last project as an example, attempt adding a <analogy>click event</analogy> listener that presents an alert box showing the price of a product when it is clicked by the user.
 
 <img src="./images/product-prices.gif">

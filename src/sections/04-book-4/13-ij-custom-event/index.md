@@ -1,5 +1,3 @@
-# Reacting To State Changes
-
 ## The Re-render Problem
 
 In our application so far, we can collect user input, save it to the database, and display existing submissions. However, there's a problem: when a user submits a new survey, the list of submissions doesn't <analogy>update</analogy> automatically. The user would need to refresh the page to see their new submission.

@@ -1,5 +1,3 @@
-# Installations
-
 ## Install XCode
 
 This process will take some time, and it is needed for future steps, so you get it out of the way first. If you have an older or slower computer, it may appear as if nothing is happening, but it is. Just wait until the process is complete.

@@ -1,5 +1,3 @@
-# Installations
-
 ## Visual Studio Code
 
 Visit the <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> website to download and install the code editor. This is the code editor you will be using for the next 3 months.

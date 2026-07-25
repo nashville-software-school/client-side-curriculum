@@ -1,4 +1,4 @@
-# Chuckle Checklist
+## Chuckle Checklist
 >You’re the funniest person you know, and your specialty is one-liners. You like to keep your adoring audience on their toes, but you have a hard time keeping track of which one-liners your friends have had the pleasure of hearing and which ones are still waiting to force the air out of their nose. That’s why you decided to create an app that will track them for you! You want the ability to record a new one-liner as soon as you think of it and track which ones have been told and which one's haven't.
 
 ## The Project

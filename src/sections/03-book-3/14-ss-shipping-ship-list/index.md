@@ -1,5 +1,3 @@
-# List of Shipping Ships
-
 Now build out the module to create the HTML for a list of available shipping ships.
 
 <img src="./images/shipping-ships.png">

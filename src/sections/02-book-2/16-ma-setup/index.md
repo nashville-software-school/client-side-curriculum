@@ -1,4 +1,4 @@
-# Setting Up the Project
+## Setting Up the Project
 
 In this chapter, we will set up the project structure and create the necessary files for Martin's Aquarium.
 

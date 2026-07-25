@@ -1,4 +1,4 @@
-# Helping Customers Find The Right Rivers Package
+## Helping Customers Find The Right Rivers Package
 
 Now Björn would like you to update the program to produce output about river prices like you did for trails.
 

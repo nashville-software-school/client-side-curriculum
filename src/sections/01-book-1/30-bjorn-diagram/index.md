@@ -1,4 +1,4 @@
-# Visualizing the Project
+## Visualizing the Project
 
 ## Dependency Graph
 

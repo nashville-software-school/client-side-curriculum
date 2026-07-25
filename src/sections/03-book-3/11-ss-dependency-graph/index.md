@@ -1,5 +1,3 @@
-# Designing Dependencies
-
 Before you start building this project, you should draw a <analogy>dependency graph</analogy> to have a plan of attack before you begin coding. This project is nearly identical to DeShawn's Dog Walking, in that there are several collections of data, each of which need to be converted to HTML for display in the browser.
 
 ## Dependency Graph

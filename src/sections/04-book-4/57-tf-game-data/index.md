@@ -1,5 +1,3 @@
-# Truncheons &amp; Flagons Game Data
-
 In this chapter you are going to describe the types and structure of data you need to work with to make the game work. Here's the list of resources that your application needs to use.
 
 1. Teams

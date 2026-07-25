@@ -1,5 +1,3 @@
-# Kneel Diamonds Entity Relationship Diagram
-
 Look in the `database.json` file and examine the data that will be used for this application. There are three main resources that the user will interact with and need to be represented in the <analogy>ERD</analogy>.
 
 1. Metals

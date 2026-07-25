@@ -1,5 +1,3 @@
-# Seed Producing Modules
-
 ## Seed Instructions
 
 1. Create a module for each type of possible plant in the `seeds` directory. For example, one of the types of food you grow is corn. Create a `scripts/seeds/corn.js` module. Make sure that each file uses all lowercase letters for the file name.

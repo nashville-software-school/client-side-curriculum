@@ -1,4 +1,4 @@
-# Watching JavaScript Work
+## Watching JavaScript Work
 
 In this chapter, you are going to see how to run a tool called the <analogy>debugger</analogy> which allows you to watch, step by step, how JavaScript executes your code.
 

@@ -1,4 +1,4 @@
-# Listing Employees
+## Listing Employees
 
 In this first chapter, your task is to <analogy>create</analogy> a list of employees.
 

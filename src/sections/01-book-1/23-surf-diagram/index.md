@@ -1,4 +1,4 @@
-# Visual Layout for a Project
+## Visual Layout for a Project
 
 As a beginner, your working memory is incapable of storing much information about these projects that you are working on. Very senior developers, whose brains have highly mature and sophisticated neural connections built up after years of training can visualize complex patterns quickly.
 

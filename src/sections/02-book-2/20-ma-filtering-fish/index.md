@@ -1,4 +1,4 @@
-# Big Fish, Little Fish
+## Big Fish, Little Fish
 
 ## Filtering Source Data into Smaller Arrays
 

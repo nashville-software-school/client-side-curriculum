@@ -1,4 +1,4 @@
-# Storing User Choices
+## Storing User Choices
 
 ## Learning Objectives
 

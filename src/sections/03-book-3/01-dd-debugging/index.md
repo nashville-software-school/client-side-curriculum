@@ -1,5 +1,3 @@
-# Fixing DeShawn's Application
-
 DeShawn hired some consulting agency from overseas to build a simple application that displayed the following information.
 
 1. A list of cities where his service is provided.

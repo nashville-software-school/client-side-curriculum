@@ -1,5 +1,3 @@
-# The Map Array Method
-
 > **Pro tip**: It is strongly recommended that you practice your learning efficiency when learning about <analogy>array</analogy> methods. They are a significant cognitive challenge for beginners who are transitioning from using `for..of` loops for everything. YouTube videos, W3Schools, GeekForGeeks, and ChatGPT should all be used as resources as you learn these methods.
 
 Open the **`Metals`** <analogy>module</analogy> in VS Code. You will see that the list items for metals uses the `for..of` loop that you have seen in previous projects for building all of the HTML representations of data.

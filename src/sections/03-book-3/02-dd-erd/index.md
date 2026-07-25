@@ -1,5 +1,3 @@
-# Entity Relationship Diagrams
-
 In this chapter, you are going to use, discuss, and learn how to create your first Entity Relationship Diagram (<analogy>ERD</analogy>). An ERD is a vital tool for software developers so that the data and the relationships between them can be visualized.
 
 ## Learning Objectives

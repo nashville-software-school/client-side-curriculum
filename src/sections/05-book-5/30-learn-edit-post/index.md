@@ -1,4 +1,3 @@
-# Editing My Post
 In this chapter you will implement the following user stories for the [Edit Post](/book_5_learn_wireframe) view:
 
 ### Let's Finish This User Story for Post Details!

@@ -1,5 +1,3 @@
-# Presentation to Björn
-
 Now that you have made all of the changes that Björn wanted for his software program, you need to present it to him. To put your best foot forward, make sure that - if you haven't done so already - that your code is modularized.
 
 You can follow one of two strategies.

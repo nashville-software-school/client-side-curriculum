@@ -1,4 +1,4 @@
-# Explorer Chapter: Expanding Dr. Jones' Research
+## Explorer Chapter: Expanding Dr. Jones' Research
 
 ## An Urgent Message
 
