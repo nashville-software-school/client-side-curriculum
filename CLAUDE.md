@@ -38,6 +38,7 @@ Known contributors and the local paths their work references:
 | Name | Email | This repo | `nss-core` (platform) repo | Completed project reference |
 |---|---|---|---|---|
 | Greg Korte | gregmkorte@gmail.com | `/home/gmkorte/workspace/nss/curriculum/client-side-curriculum` | `/home/gmkorte/workspace/nss/curriculum/platform` | `/home/gmkorte/workspace/client-side` |
+| Rebecca Parker | raparker88@gmail.com | `/Users/rebeccaparker/workspace/curriculum/client-side-curriculum` | unknown — not yet cloned | unknown — not yet cloned |
 
 If the current contributor (by `git config user.email`) isn't in this table, or a path
 for them is unknown, **ask rather than assume or guess a path from convention** —
@@ -59,6 +60,7 @@ tell at a glance who's still actively working versus who needs new work assigned
 | Contributor | Working on | Status | Branch | Since |
 |---|---|---|---|---|
 | Greg Korte | Repo governance setup — `CLAUDE.md` contributor onboarding, current-work tracking, memory rules | In progress | `general_edits` | 2026-07-20 |
+| Rebecca Parker | Phase 7: Testing Infrastructure | In progress | `test` | 2026-07-20 |
 
 Status values:
 - **In progress** — actively working; continue where they left off

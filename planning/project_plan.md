@@ -192,8 +192,8 @@ Work **one chapter at a time** per session:
 | — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
 | — | **Phase 5.1: Exercise Standardization** — once Phase 5's threads are woven in, standardize the shape/flow of every exercise so the curriculum reads as one coherent course |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
-| — | **Phase 7: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5 |
-| — | **Phase 8: Concept Map Refactor** — see detail below |
+| ◑ | **Phase 7: Testing Infrastructure** — GH Actions CI/CD and test suite authoring; depends on Phase 6 |
+| — | **Phase 8: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5; see detail below |
 | — | **Phase 9: Analogy Tag Refactor** — see detail below |
 | 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
 
@@ -895,6 +895,42 @@ Introduce testing as a practice starting in Book 1 by connecting it to what stud
 - Are tests scoped per exercise, per chapter, or per book?
 - Do students see test output in the terminal, in GitHub Actions UI, or surfaced back into the platform?
 - How does test scoring connect to the gamification/skill-tree long-term vision?
+
+### Working Breakdown (Rebecca, started 2026-07-20)
+
+*Breaking Phase 7 into smaller chunks and tracking progress here as it happens, ahead of the "Session Log" table format used elsewhere in this doc.*
+
+**Step 1 — Identify group projects/self-assessments that already have test suites; add GitHub Actions to run them.**
+
+No overhead for students — these Actions are invisible unless a student clicks the Actions tab in their repo, same as tests today being invisible unless a student runs `npm run test`. Instructors can point students there directly, or an Explorer chapter covering GitHub Actions at a high level could be added later.
+
+Group Projects:
+
+| Book | Project | Tests | Actions |
+|---|---|---|---|
+| 1 | Fish Fusion | true | true |
+| 2 | Modern Farm | true | true |
+| 3 | Cider Falls Park | false | false |
+| 4 | Exomine | false | false |
+| 5 | Shepherd's Pie | false | false |
+
+Notes: Cider Falls Park has no starter code to add tests to — students build it entirely from scratch. 
+Action: Exomine and Shepherd's Pie could have tests and Actions added.
+
+Assessments: 
+
+| Book | Project | Tests | Actions |
+|---|---|---|---|
+| 1 | Bug Ranch | false | false |
+| 2 | Hairy Potter | true | true |
+| 3 | Kids Dreams | false | false |
+| 4 | House O Hummus | true | true |
+
+Note: Kids Dreams looks like it used to have cypress tests that were removed
+
+**Step 2 — Comb through projects (including bash-script-scaffolded ones) to see where tests can be added.** For any project where tests get added, add GitHub Actions to run them on push to `main` and `develop`.
+
+**Step 3 — Once Steps 1–2 are complete, explore using agents to test student projects against learning goals**, feeding into the gamification/badge vision. Could run in the background via GitHub Actions.
 
 ---
 
