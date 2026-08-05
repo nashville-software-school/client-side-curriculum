@@ -13,6 +13,8 @@ This video instructs you to make the files `components/nav/NavBar.js` and `compo
 
 Watch the **Intro to Routes** video below and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex10" src="https://www.youtube.com/embed/IIb47gZBFbY" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -65,6 +67,8 @@ Watch the **Intro to Routes** video below and implement the code yourself. Then 
 <a href="https://www.youtube.com/embed/IIb47gZBFbY?start=747&autoplay=1" target="yt-ex10">[12:27]</a> Okay, let's see if it works. So here we are at home. We click on tickets. Here's our ticket list component. Still works. We click on customers. It takes us to forward slash customers, and here's our customer list component. And that's the basics of routing.
 
 </details>
+
+</div>
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>

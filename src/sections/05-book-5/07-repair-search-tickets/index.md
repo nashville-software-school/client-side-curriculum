@@ -7,6 +7,8 @@ This video instructs you to make the file `components/TicketFilterBar.js`. Make 
 
 Watch the **Search Tickets** video below and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex07" src="https://www.youtube.com/embed/WPG09-cUJYg" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -63,6 +65,8 @@ Watch the **Search Tickets** video below and implement the code yourself. Then r
 <a href="https://www.youtube.com/embed/WPG09-cUJYg?start=797&autoplay=1" target="yt-ex07">[13:17]</a> And we'll say correct, yep, all good. Now let's just take a look at our filter bar here, so we can see the props. So remember that in our React Dev Tools we can look at the props and the state for our component. So here we can see that we don't have any state declared here in our ticket filter bar, but we do have two props. So there's the key set search term, and then the value is this function, and then the key set show emergency only, and the value is another function. So awesome job with this, and I'll see you in the next video.
 
 </details>
+
+</div>
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>

@@ -199,7 +199,7 @@ Work **one chapter at a time** per session:
 | — | **Phase 9: Analogy Tag Refactor** — see detail below |
 | 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
 | 🛑 | **Phase 11: Video Consolidation** — blocked on external prep; Screencastify → YouTube migration (16 exercises) and, once a unified YouTube account is ready, moving existing YouTube videos over to it |
-| ◑ | **Phase 12: Transcript Side-by-Side Layout** — move the Book 5 video-transcript `<details>` block beside its `<iframe>` instead of below it, height-capped to the video for independent scrolling; collapsible behavior preserved |
+| ✓ | **Phase 12: Transcript Side-by-Side Layout** — all 18 video+transcript pairs across 14 Book 5 files wrapped in `.video-transcript-row`; CSS-verified via static harness (live in-app check still pending, blocked on GitHub OAuth in headless session — see detail below) |
 | 🛑 | **Phase 13: Explorer Cross-Linking** — link Explorer exercises back to the chapter they extend; blocked on the same nss-core cross-chapter link base-URL bug already tracked in Open Questions |
 
 ---
@@ -1210,9 +1210,15 @@ The two elements are siblings directly under the exercise's content container �
 3. Verify the `<summary>` click still opens/closes correctly inside the flex layout, and that the scrollable region only applies to the transcript body, not the summary line
 4. Decide the small-screen behavior (stack vertically below a breakpoint, since side-by-side won't fit on narrow viewports)
 
-**Scope:** All Book 5 exercises with an embedded video/transcript pair (18 exercises from the original embed pass; ex 11, 12, 15 have two video+transcript pairs each — each pair becomes its own row).
+**Scope:** All Book 5 exercises with an embedded video/transcript pair — 14 exercise files, 18 video+transcript pairs total (ex 06, 11, 12, 15 each have two pairs; each pair is its own row).
 
-**Status:** Not started — scoping only, fully actionable whenever picked up (no external blockers).
+**Status:** ✓ Complete. All 4 planned-approach steps done:
+1. All 18 pairs across the 14 files wrapped in `<div class="video-transcript-row">` (mechanical regex-based edit — diff is additions-only, no transcript text touched).
+2. `.video-transcript-row` CSS added to `src/index.css`: flex row, iframe unchanged, `details` flexes to fill remaining width and caps at `max-height: 394px` (the iframe's height) with `overflow-y: auto`.
+3. Verified with a standalone static HTML harness (real `index.css` rules + real transcript markup from ex 06, rendered via a scratch Playwright/Chromium script) rather than the live app — see note below. Confirmed: closed `<summary>` sits beside the video and fills the row; clicking it opens the transcript to a height-capped, independently scrollable panel; no page/console errors.
+4. Small-screen behavior: `@media (max-width: 1080px)` switches the row to `flex-direction: column` and removes the height cap, reverting to the original stacked/full-height behavior below that breakpoint.
+
+**Verification caveat:** Could not screenshot the actual running app — every chapter route is behind `ProtectedRoute` (GitHub OAuth, see `platform/src/context/AuthContext.jsx` and `platform/src/components/ProtectedRoute.jsx`), which a headless session can't authenticate through. The static harness used the same `div[class$="contentContainer"]` selectors and CSS rules from `src/index.css` against real transcript HTML, so the CSS itself is verified — but a live in-app visual check (nav sidebar width, actual `contentContainer` sizing) hasn't been done. Greg to spot-check in his authenticated browser session.
 
 ---
 

@@ -3,6 +3,8 @@ In this chapter, you'll implement the Tickets view for a customer. A customer sh
 ## 📺 Watch the videos
 Watch the **Customer Tickets** video and implement the code to display only the customer's tickets yourself. Take a break and then watch the **Customer Ticket Buttons** video and implement the code for the new buttons yourself.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex15a" src="https://www.youtube.com/embed/BQ_Q1R6uo9c" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -69,6 +71,10 @@ Watch the **Customer Tickets** video and implement the code to display only the 
 <a href="https://www.youtube.com/embed/BQ_Q1R6uo9c?start=970&autoplay=1" target="yt-ex15a">[16:10]</a> trying to understand the life cycle of these components, right? It's all, it's all very interesting, it's like the one big, fun, nerdy logic puzzle, and I love it. Okay, well, um, let's take a look at our wireframe one more time, and what we want to see here are buttons for create ticket, open tickets, and all of my tickets. So that's what we're going to do in the next video. I'm going to break this up, so it's not one long video. Take a break, drink some water, and I'll catch you in the next video.
 
 </details>
+
+</div>
+
+<div class="video-transcript-row">
 
 <iframe name="yt-ex15b" src="https://www.youtube.com/embed/z77fsw-ZKLc" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -148,3 +154,5 @@ Watch the **Customer Tickets** video and implement the code to display only the 
 <a href="https://www.youtube.com/embed/z77fsw-ZKLc?start=1170&autoplay=1" target="yt-ex15b">[19:30]</a> gone, there you go, awesome job, we are very close to the end of all this functionality here, bravo, take a break.
 
 </details>
+
+</div>

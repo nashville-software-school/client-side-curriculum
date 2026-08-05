@@ -8,6 +8,8 @@ This video instructs you to make the file `components/forms/EmployeeEdit.js`. Ma
 
 Watch the **Employee Form** video below and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex13" src="https://www.youtube.com/embed/fg6g5rs5hh4" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -112,6 +114,8 @@ Watch the **Employee Form** video below and implement the code yourself. Then re
 <a href="https://www.youtube.com/embed/fg6g5rs5hh4?start=1810&autoplay=1" target="yt-ex13">[30:10]</a> views, and make it so that only a customer can see customer views, and only an employee can see employee views. So congratulations, you did an amazing job, keep it up.
 
 </details>
+
+</div>
 
 
 ### 🔸🔻🔹 CSS for this chapter

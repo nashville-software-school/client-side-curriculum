@@ -3,6 +3,8 @@
 ## 📺 Watch The Video
 Take a few minutes to watch the **video walkthrough** of the <a href="https://miro.com/app/board/uXjVMucRFUc=/?share_link_id=556612065166" target="_blank" rel="noopener noreferrer">Honey Rae Repairs wireframe</a> below.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex04" src="https://www.youtube.com/embed/0eCYAQJNAUk" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -31,6 +33,8 @@ Take a few minutes to watch the **video walkthrough** of the <a href="https://mi
 <a href="https://www.youtube.com/embed/0eCYAQJNAUk?start=237&autoplay=1" target="yt-ex04">[3:57]</a> So have some fun taking a look at this and seeing how the application works. We're going to come back to this wireframe as well, just to, every time that we work on a new feature we're going to reference the wireframe. But you do have access to this, and for now we're not going to worry about any nav bar, because we're not going to introduce routing into our application yet. We're also not going to have any authentication, so we're not going to worry about employee versus customer. We are going to start building out this right here, we're going to start building out the employee view of tickets, and eventually we'll introduce routing and we'll start to have more and more views in our application.
 
 </details>
+
+</div>
 
 ## Building Your Capstone Wireframe
 Once you're ready to put together your capstone proposal, you will be required to provide a <analogy>wireframe</analogy> representing all the views of your application. At that time, you can revisit this chapter and use the <a href="https://miro.com/app/board/uXjVMucRFUc=/?share_link_id=556612065166" target="_blank" rel="noopener noreferrer">Honey Rae Repairs <analogy>wireframe</analogy></a> as an example of what to build. 

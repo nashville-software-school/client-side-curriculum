@@ -5,6 +5,8 @@ This video instructs you to make the file `components/customers/CustomerDetails.
 
 First, watch the introduction to the **useParams hook** video and implement the code yourself. Next, watch the **Customer Details** video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex11a" src="https://www.youtube.com/embed/fPfQ4JjPQps" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -69,6 +71,10 @@ First, watch the introduction to the **useParams hook** video and implement the 
 <a href="https://www.youtube.com/embed/fPfQ4JjPQps?start=1038&autoplay=1" target="yt-ex11a">[17:18]</a> Oops, there we go, helps if I can type. All right, so now we have access to that customer ID from the URL, and now we're just rendering this div with customer ID. Awesome, and that's how use params works. All right, the next video in this chapter is going to be displaying the customer details.
 
 </details>
+
+</div>
+
+<div class="video-transcript-row">
 
 <iframe name="yt-ex11b" src="https://www.youtube.com/embed/aiVEFIHDj4k" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -138,6 +144,8 @@ First, watch the introduction to the **useParams hook** video and implement the 
 <a href="https://www.youtube.com/embed/aiVEFIHDj4k?start=1080&autoplay=1" target="yt-ex11b">[18:00]</a> um, the employees, so good luck. Look back at this video, read the notes, you've got this.
 
 </details>
+
+</div>
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>

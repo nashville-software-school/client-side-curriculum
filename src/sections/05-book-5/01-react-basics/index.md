@@ -40,6 +40,8 @@ These tools will help you debug and inspect your React applications.
 
 Watch the Intro to React Dev Tools video below to review their usage. Again, just like with VanillaJS, your use of the React dev tools is the only other way than using the debugger to gather evidence.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex01" src="https://www.youtube.com/embed/rb1GWqCJid4" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -66,6 +68,8 @@ Watch the Intro to React Dev Tools video below to review their usage. Again, jus
 <a href="https://www.youtube.com/embed/rb1GWqCJid4?start=237&autoplay=1" target="yt-ex01">[3:57]</a> react dev tools. I did want to let you know about this tool which can be really helpful when you're developing, testing, or debugging your React applications. Now the best way to become familiar with this is to just dive in and play around with it, and maybe we'll be jumping in from time to time too, especially when we learn about props, so we can see this value right here.
 
 </details>
+
+</div>
 
 
 ## Starting Your React Application

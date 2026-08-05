@@ -7,6 +7,8 @@ This video instructs you to make the files `components/Ticket.js` and `component
 
 Watch the **Ticket Assignee** video below and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex06" src="https://www.youtube.com/embed/8s4TQdJ3EBk" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -111,6 +113,8 @@ Watch the **Ticket Assignee** video below and implement the code yourself. Then 
 <a href="https://www.youtube.com/embed/8s4TQdJ3EBk?start=1916&autoplay=1" target="yt-ex06">[31:56]</a> point, great. If you don't, don't do it. Okay, so let's take a look at our browser. So if we refresh here, we can see we have an assignee, we have an assignee here, assignee is none, assignee, and we're doing great, awesome. So awesome job, hope you're having fun, and always be coding.
 
 </details>
+
+</div>
 
 ## Rendering the TicketList component
 Breaking our code into components to later be rendered as part of one large whole is nothing new to us. Take this code from DeShawn's Dog Walking: 
@@ -223,6 +227,8 @@ But why would we do that when <analogy>destructuring</analogy> is _so much_ cool
 ## 🧭 📺 Explorer Video _(optional)_
 If you're feeling comfortable with what we've learned so far and would like to see an alternative solution to what we did in this chapter, watch the **Alternative Solution** video below! 
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex06b" src="https://www.youtube.com/embed/Sq4CzHMLXTk" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -259,6 +265,8 @@ If you're feeling comfortable with what we've learned so far and would like to s
 <a href="https://www.youtube.com/embed/Sq4CzHMLXTk?start=515&autoplay=1" target="yt-ex06b">[8:35]</a> am going to eventually want the employees here in this ticket component for future logic, and two, I wanted to be able to come up with some more examples of why we needed to use use effect. But I did want to make this video to show you that you can fetch an item by its ID from JSON server, so this could be useful for you in your Capstone.
 
 </details>
+
+</div>
 >_This is optional and the solution in this video will not be used in the rest of this walkthrough of Honey Rae Repairs._
 
 ## 📓 Vocabulary

@@ -7,6 +7,8 @@ This video instructs you to make the files `views/CustomerViews.js` and `views/E
 
 Watch the **Employee vs Customer** video below and implement the code yourself. 
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex14" src="https://www.youtube.com/embed/1tPVJxW9Uus" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -79,3 +81,5 @@ Watch the **Employee vs Customer** video below and implement the code yourself.
 <a href="https://www.youtube.com/embed/1tPVJxW9Uus?start=1074&autoplay=1" target="yt-ex14">[17:54]</a> going to render the customer views, and for the customer views we see the customer nav. And the only thing that we have set up right now is for just the home, the home route, to see the welcome components. That's the default, the default route for this parent Home Route. We haven't defined anything for slash tickets or slash profile or anything like that. So the, the customer tries to navigate to any of those routes, they won't render, because we haven't defined them. And there you have it. So we've got routes for two different types of users. Continue on to the next chapters, and we'll set up the rest of the components.
 
 </details>
+
+</div>

@@ -7,6 +7,8 @@ This video instructs you to make the file `components/forms/TicketForm.js`. Make
 
 Watch the **Create Ticket** video below and implement the code yourself. 
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex16" src="https://www.youtube.com/embed/eczMnbF97YQ" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -101,6 +103,8 @@ Watch the **Create Ticket** video below and implement the code yourself.
 <a href="https://www.youtube.com/embed/eczMnbF97YQ?start=1634&autoplay=1" target="yt-ex16">[27:14]</a> okay, and we'll submit this ticket, and look, it took us back to the tickets view, we see that my phone is a potato and my computer is sick, awesome job, we successfully implemented the create ticket functionality, awesome job, see in the next video.
 
 </details>
+
+</div>
 
 <details class="cs-theory">
     <summary>🏛️ CS Theory Check-in: Durability</summary>

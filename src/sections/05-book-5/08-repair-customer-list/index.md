@@ -8,6 +8,8 @@ This video instructs you to make the file `components/customers/CustomerList.js`
 
 Watch the **Customer List** video below and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex08" src="https://www.youtube.com/embed/JijX33KjDP4" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -64,6 +66,8 @@ Watch the **Customer List** video below and implement the code yourself. Then re
 <a href="https://www.youtube.com/embed/JijX33KjDP4?start=801&autoplay=1" target="yt-ex08">[13:21]</a> And so that is how we understand this component tree here in the dev tools. So great job with this. Move on to the next chapter and we will get the employee list implemented.
 
 </details>
+
+</div>
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>

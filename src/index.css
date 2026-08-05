@@ -294,6 +294,38 @@ div[class$="contentContainer"] details.cs-theory > summary {
   color: var(--secondary-dark);
 }
 
+/* ── Video + transcript row (Book 5) ──────────────────────────── */
+div[class$="contentContainer"] .video-transcript-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+div[class$="contentContainer"] .video-transcript-row iframe {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+div[class$="contentContainer"] .video-transcript-row details {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  max-height: 394px;
+  overflow-y: auto;
+}
+
+@media (max-width: 1080px) {
+  div[class$="contentContainer"] .video-transcript-row {
+    flex-direction: column;
+  }
+
+  div[class$="contentContainer"] .video-transcript-row details {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
 /* ── User story containers ──────────────────────────────────── */
 .user-story {
   border-left: 4px solid var(--primary-light);

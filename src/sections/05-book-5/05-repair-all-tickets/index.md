@@ -3,6 +3,8 @@ In this chapter you will begin modularizing your code by creating a `services` d
 ## 📺 Watch The Video
 Watch the **All Tickets** video below and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex05" src="https://www.youtube.com/embed/hoaH8RQjQBo" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -87,6 +89,8 @@ Watch the **All Tickets** video below and implement the code yourself. Then read
 <a href="https://www.youtube.com/embed/hoaH8RQjQBo?start=1554&autoplay=1" target="yt-ex05">[25:54]</a> We have a missing dependency, that's all tickets. And it knows that because, well, here's some state that we're depending on with this function, right? We're depending on all tickets here, we're also depending on emergency only. So we need to add that here. So all tickets. All right, now let's take a look at our browser. Well, there we go! So now we're getting it on our initial render. Now we can click on emergency, we click on show all, everything's working, right? And I know that's a lot to understand, but the more you practice, the more sense it will make. So great job and keep on coding.
 
 </details>
+
+</div>
 
 ### 🔸🔻🔹 CSS for this chapter
 <details>

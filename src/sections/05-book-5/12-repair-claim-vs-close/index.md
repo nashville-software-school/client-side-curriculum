@@ -13,6 +13,8 @@ This video instructs you to make the file `components/welcome/Welcome.js`. Make 
 
 Watch the **authentication setup** video and implement the code yourself. Once you have successfully set up authentication for your Honey Rae's project, watch the **Claim vs Close** video and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex12a" src="https://www.youtube.com/embed/nDGJUeN1biY" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -77,6 +79,10 @@ Watch the **authentication setup** video and implement the code yourself. Once y
 <a href="https://www.youtube.com/embed/nDGJUeN1biY?start=1045&autoplay=1" target="yt-ex12a">[17:25]</a> Everything else we do from here, though, dealing with the current user and understanding how to pass props, understanding how to check for what the current user is and dealing with user data, is part of our learning objective. But everything that we did here in this video in terms of dealing with local storage and storing the user here is not. So feel free to come back to this chapter in the future to set this up for your own projects.
 
 </details>
+
+</div>
+
+<div class="video-transcript-row">
 
 <iframe name="yt-ex12b" src="https://www.youtube.com/embed/4OVltZMwbzc" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -182,6 +188,8 @@ Watch the **authentication setup** video and implement the code yourself. Once y
 <a href="https://www.youtube.com/embed/4OVltZMwbzc?start=1831&autoplay=1" target="yt-ex12b">[30:31]</a> Okay, now our current user is being defined here in application views, and we needed to get access to this current user state all the way down from application views to ticket list, then from ticket list down to the ticket. So we passed the current user, we did some prop drilling here, so we passed current user down from application views all the way to ticket so that we could check these conditions and render these buttons if the conditions were met. There you have it, awesome job, and I'll see you in the next video.
 
 </details>
+
+</div>
 
 <details>
   <summary>Logout NavBar item</summary>

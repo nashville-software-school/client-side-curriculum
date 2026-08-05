@@ -13,6 +13,8 @@ Keep these differences in mind as you follow along in this course.
 
 Watch the **First Component** video below and implement the code yourself. Then read the rest of the chapter summarizing what you've learned.
 
+<div class="video-transcript-row">
+
 <iframe name="yt-ex02" src="https://www.youtube.com/embed/-WMvlULvBeU" width="700" height="394" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <details>
@@ -61,6 +63,8 @@ Watch the **First Component** video below and implement the code yourself. Then 
 <a href="https://www.youtube.com/embed/-WMvlULvBeU?start=698&autoplay=1" target="yt-ex02">[11:38]</a> Watch the value increment here, one, two, three. It's a little laggy but it's updating. Awesome, so there you have it, that is your first component. We learned how to render some JSX and we also learned the importance of the use State hook and how we can use it.
 
 </details>
+
+</div>
  
 ## Component Structure and <analogy>JSX</analogy>
 You've been writing React-like components in vanilla JS, you just didn't know it! Take this code from _Tour Some Sugar On Me_ for example:
