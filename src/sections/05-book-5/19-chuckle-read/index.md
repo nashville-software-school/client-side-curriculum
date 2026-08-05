@@ -48,3 +48,10 @@ Try adding a new joke now. Hmmmmm. Not getting your new joke in the list? You've
   ```
   quite a few times. Try wrapping it in its own function so you can just call it whenever you need to fetch and set all jokes instead of writing this functionality over and over again. 
 </details>
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Single Responsibility</summary>
+
+Notice the hint above: wrap the fetch-and-set-state logic in its own function instead of retyping it every time you need to refresh the joke list. That function ends up with exactly one job, get the current jokes and put them in state, and every other piece of code that needs fresh data just calls it. This is the same idea behind giving a module or a function a single responsibility, just applied to a repeated chunk of logic instead of a whole file.
+
+</details>

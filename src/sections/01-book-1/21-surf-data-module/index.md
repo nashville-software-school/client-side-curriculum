@@ -62,3 +62,19 @@ In this case, since you did not import the data, the following error message wil
 ```sh
 Uncaught ReferenceError ReferenceError: inventory is not defined
 ```
+
+## 🏛️ CS Theory Connection
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Encapsulation</summary>
+
+By moving `inventory` into its own `data.js` module, you've created a boundary around that data. Other modules don't need to know how the data is structured internally, or even that it lives in a separate file. They just need to know one thing: `require("./data.js")` gives them access to it. That's the core idea behind encapsulation, bundling data behind a clear access point instead of leaving it loose for any code to reach into however it wants.
+
+</details>
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Single Responsibility</summary>
+
+This is the third time this idea has come up, first with `createQueen`, then `payTribute`, both mixing two jobs into one function. Now look at `data.js`: it has exactly one job, hold the inventory. It doesn't calculate averages and it doesn't run any application logic, it just stores data and exports it. What did splitting `averagePrice.js` into `data.js` actually buy you, compared to just leaving everything mixed together the way `createQueen` did?
+
+</details>

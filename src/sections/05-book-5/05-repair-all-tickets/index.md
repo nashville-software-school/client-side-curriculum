@@ -146,6 +146,13 @@ Watch the **All Tickets** video below and implement the code yourself. Then read
 ## The services module
 There are many ways to structure your code, and React leaves the choice of file organization to you. However, it's important to keep your code organized and maintainable. For this project, we'll adopt a practice of centralizing our `fetch` call functions within a services module. These functions will be divided into separate files for each resource. As we continue to build this application, you'll see why this choice was necessary to maintain a clean, organized codebase.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Single Responsibility</summary>
+
+This is the same idea as Surf Shop's `data.js`, just applied to fetch calls instead of an array. `ticketService.js` has one job, talking to the tickets endpoint, and your components don't need to know how that talking happens, only that they can import a function and call it. What would go wrong if every component just called `fetch()` directly instead?
+
+</details>
+
 ## useState Initial Value
 In the video we saw what happens when we _don't_ set an initial value for our state variable. 
 

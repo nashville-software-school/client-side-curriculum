@@ -30,6 +30,13 @@ export const getVillains = () => {
 
 Notice that `database` itself is no longer exported directly — only `getVillains` is. This keeps the raw data private to the module.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation</summary>
+
+You've bundled data behind a module boundary before, back in Sequina's Surf Shop's `data.js`. This is the same idea taken a step further: `database` itself is no longer exported at all, only a function that hands out a copy of it. Nothing outside this module can reach in and mutate the original data directly, it has to go through `getVillains`. Why might that matter more as a codebase grows and more modules start depending on the same data?
+
+</details>
+
 ## Updating the Heroes Module
 
 Now that `database` is no longer exported, your `heroes.js` module won't work — it still imports `{ database }` directly, which no longer exists.

@@ -251,6 +251,13 @@ json-server -p 8088 database.json
 
 Feel free to make more of each resource if you want to see more data in your API.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Dependency Inversion</summary>
+
+Just like Indiana Jeans, this whole app will talk to `json-server` and a `database.json` file for now. Once you start building the React components in the next chapters, they'll only know about endpoint URLs, not about the fact that a JSON file is sitting behind them. What would have to change in your React code if this data eventually moved to a real database?
+
+</details>
+
 | <h1>&#x2757;</h1> | _The <a href="https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-faker" target="_blank" rel="noopener noreferrer">vscode-faker</a> extension for Visual Studio Code or <a href="https://chat.openai.com/auth/login" target="_blank" rel="noopener noreferrer">ChatGPT</a> are fast, easy ways to generate starter data._ |
 | --- | --- |
 ## Backup to Github

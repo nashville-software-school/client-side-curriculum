@@ -217,8 +217,10 @@ div[class$="contentContainer"] {
 }
 
 div[class$="contentContainer"] img {
-  max-width: 100%;
+  display: block;
+  max-width: 80%;
   height: auto;
+  margin: 1.5rem auto;
 }
 
 /* ── Exercise content: vertical rhythm ──────────────────────── */
@@ -281,6 +283,15 @@ div[class$="contentContainer"] hr {
   margin: 2rem 0;
   border: none;
   border-top: 1px solid var(--border-light);
+}
+
+/* ── CS Theory callouts ──────────────────────────────────────── */
+div[class$="contentContainer"] details.cs-theory {
+  border-color: var(--secondary);
+}
+
+div[class$="contentContainer"] details.cs-theory > summary {
+  color: var(--secondary-dark);
 }
 
 /* ── User story containers ──────────────────────────────────── */

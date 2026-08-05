@@ -90,6 +90,13 @@ sequenceDiagram
     Note right of main: Update the innerHTML of the <main> element in the DOM.
 ```
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Single Responsibility, Interface Segregation</summary>
+
+This is the third project where building one of these graphs has mattered, after Sequina's Surf Shop and Björn's Wilderness Adventures. Look at the sequence diagram above: `Walkers`, `CityList`, `RegisteredPets`, and `Assignments` all follow the exact same pattern, ask `Database` for data, convert it to HTML, hand it back to `main`. Each module still only knows how to do its own conversion. What would break if `CityList` reached into `Walkers` to get its data instead of asking `Database` directly?
+
+</details>
+
 ## Bugs to Fix
 
 Time to fix the bugs that exist in this project.

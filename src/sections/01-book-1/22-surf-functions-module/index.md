@@ -79,3 +79,19 @@ const {
 ```
 
 Now run your logic with the debugger again and verify that everything works as intended.
+
+## 🏛️ CS Theory Connection
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Encapsulation</summary>
+
+Just like `data.js` bundled up your data behind a clear export, `functions.js` bundles up all of your behavior behind one. `averagePrice.js` doesn't need to know how `isBargain` or `calculateAveragePrice` are written internally, only that importing `functions.js` gives it access to them. Grouping related code behind a clear boundary like this is what encapsulation is about, hiding the internal details and exposing only what other code needs.
+
+</details>
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Interface Segregation</summary>
+
+Notice that `averagePrice.js` imports only the specific functions it needs, by name, using destructuring. It's not forced to depend on a giant, catch-all interface. If `functions.js` later grew to include ten more functions that `averagePrice.js` never uses, this module's import statement wouldn't need to change at all. That's the Interface Segregation Principle (the "I" in SOLID): consumers should only depend on the small, focused parts of an interface they actually use, not the whole thing.
+
+</details>

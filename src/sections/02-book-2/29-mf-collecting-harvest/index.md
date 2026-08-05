@@ -35,3 +35,10 @@
 In the `main.js` module, get the array of plants from the field module, and then harvest them by invoking the appropriate function that you defined above. Make sure you specify the array of plants as an argument to the harvesting function.
 
 Then use `console.log()` to see your new array of harvested food to sell.
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Open/Closed Principle</summary>
+
+This is the same idea you first saw in Movie Majesty's Main Algorithm: `main.js` doesn't know how planting works or how harvesting works, it just calls `field.js` and `harvester.js` and passes the result along. If you needed to change how corn's harvest math works, which file would you open? Would `main.js` need to change at all?
+
+</details>

@@ -19,6 +19,13 @@ Think of fetch as your web browser's way of "reaching out" across the internet t
 
 <img src="./images/chrome-foxy-diagram.png">
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Abstraction</summary>
+
+Everything happening behind the scenes of `fetch()`, opening a connection, formatting the request according to the HTTP protocol, waiting for the server, parsing the raw response, is hidden from you. You only see one simple function call. That's abstraction: exposing a simple interface while hiding the complexity underneath it. Later in this chapter, when you open the Network tab, you're peeling back that abstraction to see the actual HTTP request and response that `fetch()` was handling for you the whole time.
+
+</details>
+
 ## Writing Your First Fetch Call
 
 Let's start by writing a simple fetch call to the Random Fox <analogy>API</analogy> we explored earlier. In our application, when the user clicks the **<analogy>Get</analogy> Fox** button, we want to get a random fox image using the randomfox <analogy>api</analogy>. Take a look at `main.js`. There are two click events there, one for the fox button and one for the dog button. Add the following line of code to your `main.js` file to run when the fox button is clicked. 

@@ -24,6 +24,13 @@ In the `main.js` module, invoke the Catalog function and make sure you pass the 
 
 Please do not try to make it identical. Just make sure you are displaying them in a grid layout.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Polymorphism</summary>
+
+Back in Martin's Aquarium, you wrote three separate functions because each one needed to filter fish differently. Here, `Catalog` only needs one function, because every item in the harvest array gets treated the exact same way. What is it about the fish-filtering problem that needed three functions, that this catalog problem doesn't?
+
+</details>
+
 ## Verifying that Your Code is Correct
 
 Now that you have completed all of the tasks of running a modern farm, go back to the terminal and make sure that all of the automated tests are passing. You output should look like this:

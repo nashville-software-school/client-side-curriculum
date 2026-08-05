@@ -47,3 +47,10 @@ export const Technologies = () => {
     return html
 }
 ```
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Polymorphism</summary>
+
+You're about to write this same shape three more times, for Wheels, Paints, and Interiors, each pulling from a different array but following the identical build-a-select-and-return-it pattern. This is the same idea you leveled up in Kneel Diamonds when you moved from manual loops to `.map()`. Whichever style you pick here, notice that the shape of the function doesn't change from one option group to the next, only the data does.
+
+</details>

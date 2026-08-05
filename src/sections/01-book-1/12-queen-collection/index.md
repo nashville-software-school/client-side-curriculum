@@ -120,3 +120,12 @@ Now that you have the function working correctly. Invoke the function several ti
 Watch the queen array get items added to it as you <analogy>step over</analogy> each line of code.
 
 <img src="./images/debugger-queen-array.gif">
+
+## 🏛️ CS Theory Connection
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory: Single Responsibility</summary>
+
+Look back at `createQueen`. It actually does two separate jobs: it builds the queen object, and it adds that object to the `queens` array. For a function this short, that's not a problem yet. But as programs grow, code that mixes multiple jobs into one function gets harder to read, test, and change without breaking something else. This is the Single Responsibility Principle (the "S" in SOLID): a unit of code, whether a function or a whole module, should have one job and one reason to change. You'll see this idea come up again soon.
+
+</details>

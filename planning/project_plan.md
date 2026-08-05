@@ -187,16 +187,20 @@ Work **one chapter at a time** per session:
 | ✓ | **Phase 2b: Course Landing Page** — resolved with a curriculum-side-only fix (`src/sections/introduction/`); the `nss-core` change originally scoped below was not needed |
 | ✓ | **Phase 3: Broken Links** — All categories A–G complete |
 | ✓ | **Phase 3.5: Housekeeping** — removed stray `type: "group-project"` values; added `chapterGroup` emojis across 116 files |
+| ✓ | **Phase 3.6: Explorer Chapter Icons** — Björn's chapterGroup icon changed 🏕️ → 🌲; 14 Explorer exercise titles prefixed with their originating chapter's icon (see detail below) |
 | ✓ | **Phase 4: General Errors** — typos, broken code examples, outdated syntax |
 | ✓ | **Phase 4.5: Polish Pass** — spacing/formatting, localhost link audit, video audit, and transcript readability (18/18 exercises) all complete |
 | ✓ | **Phase 4.6: Duplicate Title Cleanup** — nss-core renders `index.jsx`'s `title` as an `<h1>` above the markdown body; 194/202 exercises also had a redundant leading heading in `index.md`. 90 stripped, 112 kept (see detail below) |
-| — | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4 |
+| ◑ | **Phase 5: New Material Threads** — LLM integration across all books; longhand React hooks scaffolding in Books 1–4. Thread 3 (CS Theory Foreshadowing) reopened for a density pass (see detail below); Threads 1, 2, 4, 5 not started |
 | — | **Phase 5.1: Exercise Standardization** — once Phase 5's threads are woven in, standardize the shape/flow of every exercise so the curriculum reads as one coherent course |
 | — | **Phase 6: Curriculum Scripts** — audit and repair `course-bash-scripts` repo once new material is finalized |
 | ◑ | **Phase 7: Testing Infrastructure** — GH Actions CI/CD and test suite authoring; depends on Phase 6 |
 | — | **Phase 8: Concept Map Refactor** — final pass; reflects all content including new material from Phase 5; see detail below |
 | — | **Phase 9: Analogy Tag Refactor** — see detail below |
 | 🛑 | **Phase 10: Source Content Integration** — team decision required; missing `projects/` chapters and `supplement-foundations/` track not yet in platform |
+| 🛑 | **Phase 11: Video Consolidation** — blocked on external prep; Screencastify → YouTube migration (16 exercises) and, once a unified YouTube account is ready, moving existing YouTube videos over to it |
+| ◑ | **Phase 12: Transcript Side-by-Side Layout** — move the Book 5 video-transcript `<details>` block beside its `<iframe>` instead of below it, height-capped to the video for independent scrolling; collapsible behavior preserved |
+| 🛑 | **Phase 13: Explorer Cross-Linking** — link Explorer exercises back to the chapter they extend; blocked on the same nss-core cross-chapter link base-URL bug already tracked in Open Questions |
 
 ---
 
@@ -462,6 +466,37 @@ Uses correct HTML syntax but paths are wrong. Two sub-types:
 - Removed `type: "group-project"` from all group project `index.jsx` files (Books 1, 3, 4, 5 — Book 2 was already clean).
 - Added emojis to all 14 `chapterGroup` values across 116 files (Queen Bee already had 👑; all others assigned matching emojis).
 - Also documented (in the `platform` repo, not here): an `nss-core` JavaScript code block rendering bug where HTML tags inside JS template literals render as real DOM elements instead of literal text — see `platform/memory/js_codeblock_html_rendering.md`. Fix requires changes to `nss-core`'s `marked` renderer; tracked as an open `nss-core`-side item.
+
+---
+
+## Phase 3.6: Explorer Chapter Icons ✓ COMPLETE (2026-07-21)
+
+*All Explorer exercises across every book shared one flat `chapterGroup: "Explorer Chapters"` value with no per-project distinction, and no icon anywhere tying an Explorer exercise back to the chapter it extends. Decision: keep the nav structure exactly as-is (one flat "Explorer Chapters" group, no `nss-core` change) and instead prefix each Explorer exercise's `title` with the icon of the chapter it maps to, using the `id` field's `book_N_explorer_{chapter}_*` naming to determine the mapping.*
+
+**Also fixed:** Björn's Wilderness Adventures' `chapterGroup` icon was 🏕️ (tent) — hard to distinguish from other icons at a glance. Changed to 🌲 across all 7 core chapter files (exercises 24–30).
+
+**Explorer title icon mapping (14 of 16 files — see table):**
+
+| Exercise | Chapter it extends | Icon added |
+|---|---|---|
+| `32-explorer-queen-modular` "Modular Majesty" | Queen Bee | 👑 |
+| `33-explorer-queen-database` "Combined Data" | Queen Bee | 👑 |
+| `34-explorer-queen-array-find` "Finding Tribute" | Queen Bee | 👑 |
+| `35-explorer-surf-modular` "Separate Reports" | Sequina's Surf Shop | 🏄 |
+| `36-explorer-bjorn-module-madness` "Modular Madness" | Björn's Wilderness Adventures | 🌲 |
+| `37-explorer-bjorn-database` "Tours Consolidated" | Björn's Wilderness Adventures | 🌲 |
+| `38-explorer-bjorn-array-find` "Filtering Tours" | Björn's Wilderness Adventures | 🌲 |
+| `22-explorer-duo-variables` "Are you primitive?" | Dynamite Duo | 💥 |
+| `23-explorer-duo-copies` "Copy me if you can" | Dynamite Duo | 💥 |
+| `30-explorer-ij-more-inputs` "Adding Form Inputs" | Indiana Jeans | 👖 |
+| `31-explorer-ij-state-map` "Replace Object With Map" | Indiana Jeans | 👖 |
+| `32-explorer-kd-earrings` "Ordering Earrings & Necklaces" | Kneel Diamonds | 💎 |
+| `33-explorer-kd-advanced-state` "User Option Choices as State" | Kneel Diamonds | 💎 |
+| `34-explorer-cb-more-factories` "Expanded Auto Offerings" | Cars 'R Us | 🚗 |
+
+**Left unprefixed (2 files):** `05-book-5/34-explorer-cloud-api` and `35-explorer-cloud-static` (Digital Ocean deployment) — these form their own "Explorer: Deployment" chapter per the target structure, not an extension of Honey Rae's/Chuckle Checklist/Learning Moments, so no existing chapter icon applies.
+
+**Note:** Book 3 has no Explorer chapters at all (confirmed — not an oversight).
 
 ---
 
@@ -771,35 +806,148 @@ Introduce the *concepts* behind React hooks in Books 1–4 using vanilla JS patt
 - Where exactly in each book does each pre-React hook concept map to existing exercises?
 - Does this require new exercises, or additions to existing ones?
 
-### Thread 3: CS Theory Foreshadowing (OOP / SOLID / ACID)
+### Thread 3: CS Theory Foreshadowing (OOP / SOLID / ACID) ◑ Reopened for Density Pass (2026-07-21)
 
 Introduce selected OOP pillars, SOLID principles, and ACID properties at the exercises where the pattern already exists naturally — so students arrive at Python/Django and C#/.NET with the vocabulary already partially formed. Concepts with no genuine client-side analog are left entirely to the server-side courses.
 
-**Goals:**
-- Name the concept at the point where students are already doing it
-- Give server-side instructors a shared vocabulary to build on
-- Keep additions lightweight — a sentence or callout, not a new exercise
+**Format decided:** Not a named component — this thread reuses the existing `<details>/<summary>` disclosure pattern already used for Hints throughout the curriculum (no `nss-core`/platform changes, no new CSS). Two tiers:
+- **Tier 1 — Introduction**: `<summary>🏛️ CS Theory: [Concept]</summary>` — one full, concrete explanation per concept, tied to the code just shown, at its first natural occurrence.
+- **Tier 2 — Check-in**: `<summary>🏛️ CS Theory Check-in: [Concept]</summary>` — a short reflective question only, no answer given, placed wherever the same underlying pattern recurs later in the course, so the concept stays active in students' minds instead of fading after one exposure.
 
-**Mapping — what gets introduced client-side:**
+**Design decision — this isn't a one-touch mapping.** The original plan (single callout per concept) was expanded mid-session: the thread now builds across all of Books 1–5, with periodic check-ins, rather than mentioning each concept once and moving on. The client-side course is only the first three months of a longer program (an equivalent server-side course continues the same conversation), so no capstone/synthesis exercise was built — steady exposure through Book 5 was judged sufficient.
+
+**Sequencing note:** Polymorphism was originally slated for introduction at Book 4 (Kneel Diamonds, `.map()`), but that came *after* naturally-occurring "same loop shape, different behavior" patterns already existed in Book 2 (Martin's Aquarium's three fish-filtering functions) and Book 3 (Shipping Ship Ships). Introducing it that late would have wasted those earlier opportunities, so its introduction was moved to Book 2, and the original Kneel Diamonds callout was reworked into a check-in / "level-up" moment (same idea, now expressed via a real array method instead of manual loops).
+
+**Sequencing note (density pass, 2026-07-21):** Single Responsibility was originally introduced at Surf Shop → Just the Data, but Queen Bee (the chapter immediately before Surf Shop) had zero CS theory touchpoints and its `createQueen`/`payTribute` functions already exhibit a natural "this function does two jobs" pattern — the same shape SRP addresses. Its Tier 1 introduction was moved to Queen Bee → Collection of Queens, with a same-chapter Tier 2 check-in at Paying Tribute, and the original Surf Shop → Just the Data callout was reworked into a Tier 2 check-in using explicit recurrence wording ("this is the third time..."), the first applied instance of the wording-adjustment item from the Density Pass work-to-do list below.
+
+**Introductions (Tier 1):**
 
 | Concept | Type | Exercise |
 |---------|------|----------|
 | Encapsulation | OOP Pillar | Book 1 → Surf Shop → Just the Data / Just a Function |
-| Abstraction | OOP Pillar | Book 4 → Fox y Dog → First We "Fetch" |
-| Polymorphism | OOP Pillar | Book 4 → Kneel Diamonds → Building Options with Map |
-| Single Responsibility | SOLID | Book 1 → Surf Shop → Just the Data |
+| Single Responsibility | SOLID | Book 1 → Queen Bee → Collection of Queens *(moved earlier during density pass — see note below)* |
 | Interface Segregation | SOLID | Book 1 → Surf Shop → Just a Function |
 | Open/Closed | SOLID | Book 2 → Movie Majesty → The Main Algorithm |
+| Polymorphism | OOP Pillar | Book 2 → Martin's Aquarium → Filtering Fish *(moved earlier — see sequencing note)* |
+| Abstraction | OOP Pillar | Book 4 → Fox y Dog → First We "Fetch" |
 | Dependency Inversion | SOLID | Book 4 → Indiana Jeans → Your own API with JSON-Server |
 | Durability | ACID | Book 4 → Indiana Jeans → Saving Survey Submissions |
+
+**Check-ins (Tier 2), in course order:**
+
+| Concept(s) | Exercise |
+|---|---|
+| Single Responsibility | Book 1 → Queen Bee → Paying Tribute (2nd occurrence, same-chapter recurrence) |
+| Single Responsibility | Book 1 → Surf Shop → Just the Data (3rd occurrence, reworked from original Tier-1 intro) |
+| Encapsulation, SRP, ISP | Book 1 → Surf Shop → Diagrams (dependency graph reflection) |
+| Encapsulation, SRP | Book 1 → Björn's Wilderness Adventures → Presentation to Björn (modularization strategy choice) |
+| Encapsulation, SRP, ISP | Book 1 → Björn's Wilderness Adventures → Visualizations for Björn (dependency graph reflection, echoes Surf Shop Diagrams) |
+| Encapsulation | Book 2 → Dynamite Duo → Defining Villains (private data + getter function pattern) |
+| Single Responsibility | Book 2 → Dynamite Duo → Composing All HTML (HeroList/VillainList, single-purpose generators) |
+| Encapsulation, ISP | Book 2 → Martin's Aquarium → Creating Fish Data |
+| Encapsulation, ISP | Book 2 → Modern Farm → Seed Producing Modules |
+| Open/Closed | Book 2 → Modern Farm → Collecting the Harvest |
+| Polymorphism | Book 2 → Modern Farm → Selling the Harvest Online |
+| Encapsulation, SRP, ISP | Book 3 → DeShawn's Dog Walking → Fixing DeShawn's Application (dependency/sequence graph reflection, 3rd echo of Surf Shop Diagrams) |
+| Polymorphism | Book 3 → DeShawn's Dog Walking → Finding the Walker for a City (same "search array by foreign key" shape as the previous exercise) |
+| Encapsulation, ISP | Book 3 → Shipping Ship Ships → Shipping Ship List (3rd repetition callback) |
+| Polymorphism | Book 3 → Shipping Ship Ships → Shipping Ship Hauler |
+| Polymorphism | Book 3 → Brewed Awakenings → Employee Click (3rd instance of "search array by matching id" shape, echoes DeShawn's) |
+| Single Responsibility | Book 3 → Brewed Awakenings → Employee Click (`employeeOrders` pulled out of the click handler) |
+| Encapsulation, Open/Closed | Book 3 → Cider Falls Park → Data Design (open-ended, design-only) |
+| Abstraction | Book 4 → Fox y Dog → Awaiting Data (3rd fetch syntax) |
+| Polymorphism (level-up) | Book 4 → Kneel Diamonds → Building Options with Map *(reworked from original Tier-1 intro)* |
+| Dependency Inversion, Durability | Book 4 → Indiana Jeans → Displaying Submissions with .map() |
+| Single Responsibility, Interface Segregation | Book 4 → Cars 'R Us → Modules and Components Setup (four single-purpose option modules, explicitly parallels Kneel Diamonds) |
+| Polymorphism | Book 4 → Cars 'R Us → Choosing Car Options (same generator shape repeated for Wheels/Paints/Interiors, echoes the Kneel Diamonds level-up) |
+| Dependency Inversion | Book 5 → Honey Rae's → Repair API (JSON-Server setup) |
+| Encapsulation, SRP | Book 5 → Honey Rae's → List All Tickets (services module) |
+| Single Responsibility | Book 5 → Honey Rae's → Employee List (existing Explorer prompt) |
+| Open/Closed | Book 5 → Honey Rae's → Intro to Routes |
+| Durability | Book 5 → Honey Rae's → Create Ticket (POST-then-navigate) |
+| Encapsulation, Single Responsibility | Book 5 → Chuckle Checklist → Creating a New One Liner (self-built services module, echoes Honey Rae's) |
+| Single Responsibility | Book 5 → Chuckle Checklist → Listing the Jokes (hint-driven extraction of repeated fetch-and-set logic) |
+| Interface Segregation, Open/Closed | Book 5 → Learning Moments → Routing and Authentication |
 
 **Deferred to server-side courses (Python/Django, C#/.NET):**
 - Inheritance, Liskov Substitution (OOP)
 - Atomicity, Consistency, Isolation (ACID)
 
-**Open questions:**
-- Should the callout be a named sidebar component (`<CSTheory>` tag) or inline prose?
-- Do these get their own concept map entries in Phase 7, or a separate theory section?
+**Open questions resolved:**
+- Callout format: `<details>/<summary>` disclosure blocks, not a named JSX component (see Format decided, above).
+- Concept map entries: still open — deferred to Phase 7/9 as originally planned.
+
+#### Density Pass (reopened 2026-07-21)
+
+*After reviewing Books 1–3 against the Introductions/Check-ins tables above, several core chapters have zero CS theory touchpoints at all — the original one-touch-per-concept mapping left real gaps rather than even coverage. Goal: every chapter gets at least 1–2 check-ins (Tier 1 intro or Tier 2 check-in), not just the chapters where a concept happened to be introduced.*
+
+**Chapters currently with zero touchpoints:**
+- ~~Book 1 → Queen Bee~~ — resolved 2026-07-21, see below
+- ~~Book 1 → Björn's Wilderness Adventures~~ — resolved 2026-07-21, see below
+- ~~Book 2 → Dynamite Duo~~ — resolved 2026-07-21, see below
+- ~~Book 3 → DeShawn's Dog Walking~~ — resolved 2026-07-21, see below
+- ~~Book 3 → Brewed Awakenings~~ — resolved 2026-07-21, see below
+
+**Work to do:**
+1. For each zero-touchpoint chapter above, find at least one exercise where an already-introduced concept (Encapsulation, SRP, ISP, Open/Closed, Polymorphism from Books 1–2; more from Book 3+) recurs naturally, and add a Tier 2 check-in there
+2. Re-audit Books 4–5 with the same zero-touchpoint lens once Books 1–3 are done — the original table may have the same gaps there
+3. **Wording adjustment:** as check-ins get denser, some should reference recurrence explicitly (e.g. "This is the third time you've seen this pattern — where else has it shown up?") rather than reading as a fresh prompt each time. Needs a running count per concept per student-facing check-in, not just per-file tracking
+4. Update the Introductions/Check-ins tables above once new check-ins are placed, and update `concept_map.md`'s Reinforced In column accordingly
+
+**Book 1 → Queen Bee (resolved 2026-07-21):** Queen Bee is the very first chapter in the course, appearing *before* any concept's original Tier 1 intro (Surf Shop) — so a Tier 2 check-in wasn't literally possible there (nothing had been introduced yet to check in on). Rather than force a check-in or leave the gap, Single Responsibility's Tier 1 introduction was moved earlier into Queen Bee → Collection of Queens (`createQueen` naturally builds an object and pushes it to an array in one function — the same "two jobs, one unit" shape SRP addresses), with a same-chapter Tier 2 check-in at Paying Tribute. The original Surf Shop → Just the Data SRP callout was reworked into a Tier 2 recurrence check-in ("this is the third time..."), which also gave item 3 above (wording adjustment) its first real instance. See the density-pass sequencing note above the Introductions table for full detail. This resolution pattern — check whether a concept's intro can move earlier to a zero-touchpoint chapter, rather than always forcing a check-in — should be considered for the remaining four chapters too, not just the check-in-only approach.
+
+**Book 1 → Björn's Wilderness Adventures (resolved 2026-07-21):** Unlike Queen Bee, this chapter comes after Surf Shop, so Encapsulation/SRP/ISP were already available to check in on — the gap here was a plain oversight, not a sequencing problem. Two natural fits: Presentation to Björn (the "Cleanup" exercise) asks students to choose a modularization strategy (by content type vs. by function), a direct echo of Surf Shop's data.js/functions.js split, so it got an Encapsulation + SRP check-in framed around that choice. Visualizations for Björn (the "Diagram" exercise) is a near-exact structural repeat of Surf Shop's Diagrams exercise, so its check-in explicitly calls back to "you built a graph like this once before" and reuses the same Encapsulation/SRP/ISP trio.
+
+**Book 2 → Dynamite Duo (resolved 2026-07-21):** This chapter comes before Movie Majesty and Martin's Aquarium, so only Encapsulation/SRP/ISP were available to check in on (no Open/Closed or Polymorphism yet). Defining Villains already contains an explicit private-data-plus-getter pattern (`database` is no longer exported, only `getVillains`/`getHeroes` are) — a richer, more textbook encapsulation example than anything seen so far, so it got an Encapsulation check-in. Composing All HTML has `HeroList` and `VillainList` as two single-purpose generator functions combined by `main.js` into one string, a clean SRP check-in.
+
+**Book 3 → DeShawn's Dog Walking (resolved 2026-07-21):** Book 3's opening chapter, but it comes after Movie Majesty and Martin's Aquarium (Book 2), so Open/Closed and Polymorphism were already available alongside Encapsulation/SRP/ISP. Fixing DeShawn's Application already has both a dependency graph and a sequence diagram covering four structurally identical generator modules (`Walkers`, `CityList`, `RegisteredPets`, `Assignments`, each: ask `Database` for data, convert to HTML, return it) — a natural third echo of the Surf Shop → Björn's "Diagrams" check-in pattern, so it got the Encapsulation/SRP/ISP trio with explicit "third project" recurrence wording. Finding the Walker for a City repeats the exact "read a foreign key from DOM state, search an array for the matching id" shape from the immediately preceding exercise (Finding the Walker for a Pet), so it got a Polymorphism check-in.
+
+**Book 3 → Brewed Awakenings (resolved 2026-07-21):** Comes after Shipping Ship Ships, so all five concepts introduced so far (Encapsulation, SRP, ISP, Open/Closed, Polymorphism) were available. Product Click and Employee Click repeat the same "read data off the clicked element, search an array for the matching id" shape a third time (after the two DeShawn's instances), so Employee Click got a Polymorphism check-in referencing the recurrence. Employee Click's hint also pulls order-counting out into its own `employeeOrders` function rather than inlining it in the click handler, a clean, ungrudging SRP example, so it got a second check-in there too. This chapter doesn't have a dependency-graph/sequence-diagram exercise the way Surf Shop/Björn's/DeShawn's did, so the recurring "Diagrams" check-in pattern wasn't extended here — two check-ins on the click-handler pair was judged sufficient rather than forcing a third.
+
+**Status:** All 5 chapters from the Books 1–3 density-pass audit are resolved (Queen Bee, Björn's Wilderness Adventures, Dynamite Duo, DeShawn's Dog Walking, Brewed Awakenings). Work item 1 is complete. Remaining work-to-do items: (3) the recurrence-wording adjustment has now been applied several times live (Surf Shop → Just the Data, DeShawn's Diagrams, Brewed Awakenings Employee Click) but hasn't been retrofitted onto older check-ins that predate this pass; (4) the Introductions/Check-ins tables above are current as of this session, but `concept_map.md` still has no rows for any Thread 3 concepts (deferred to Phase 7/9, unchanged by this pass).
+
+#### Books 4–5 Re-audit (item 2, started 2026-07-21)
+
+Cross-referencing the Introductions/Check-ins tables above against every **core** chapter in Books 4–5 (Explorer/Pioneer/Advanced Project/Group Project/Capstone Resources chapters are out of scope, same as the Books 1–3 audit):
+
+| Book 4 core chapter | Touchpoints found |
+|---|---|
+| Fox y Dog | 2 (Abstraction intro + check-in) |
+| Indiana Jeans | 2 (Dependency Inversion intro, Durability intro) |
+| Kneel Diamonds | 1 (Polymorphism level-up check-in) |
+| **Cars 'R Us** | **0 — zero-touchpoint chapter** |
+
+| Book 5 core chapter | Touchpoints found |
+|---|---|
+| Honey Rae's Repair Shop | 5 |
+| **Chuckle Checklist** | **0 — zero-touchpoint chapter** |
+| Learning Moments | 1 |
+
+**Chapters currently with zero touchpoints (Books 4–5):**
+- ~~Book 4 → Cars 'R Us~~ — resolved 2026-07-21, see below
+- ~~Book 5 → Chuckle Checklist~~ — resolved 2026-07-21, see below
+
+**Book 4 → Cars 'R Us (resolved 2026-07-21):** Modules and Components Setup already tells students to build "four modules... just like you did in Kneel Diamonds" (where Polymorphism's level-up check-in lives), so it got an SRP/ISP check-in on the four single-purpose option modules. Choosing Car Options shows the concrete `Technologies` generator function students then repeat three more times for Wheels/Paints/Interiors, so it got a Polymorphism check-in explicitly calling back to the Kneel Diamonds level-up moment.
+
+**Book 5 → Chuckle Checklist (resolved 2026-07-21):** This is the first React project after Honey Rae's where students build a services module themselves rather than following along, so Creating a New One Liner got an Encapsulation/SRP check-in on the self-built `jokeService`, explicitly calling back to Honey Rae's. Listing the Jokes has a hint that explicitly tells students to extract repeated fetch-and-set logic into its own function, a concrete, hint-driven SRP moment, so it got a check-in there too.
+
+**Status:** The Books 4–5 re-audit (work item 2) is complete — both zero-touchpoint chapters found (Cars 'R Us, Chuckle Checklist) are now resolved. Combined with the earlier Books 1–3 audit, all 7 originally-flagged zero-touchpoint core chapters across Books 1–5 are resolved.
+
+#### Recurrence-Wording Retrofit (item 3, completed 2026-07-22)
+
+Audited every pre-density-pass Tier 2 check-in in course order for explicit backward references (naming the specific earlier exercise or pattern being echoed, not just a fresh-sounding prompt). Most already did this well (Martin's Aquarium, Shipping Ship Ships, Kneel Diamonds, Indiana Jeans, Honey Rae's List All Tickets). Seven had none and were retrofitted:
+
+| Exercise | Concept(s) | What was added |
+|---|---|---|
+| Björn's → Presentation to Björn | Encapsulation, SRP | Callback to Surf Shop's `data.js`/`functions.js` split |
+| Modern Farm → Seed Producing Modules | Encapsulation, ISP | "Third time" callback to Surf Shop and Martin's Aquarium |
+| Modern Farm → Collecting the Harvest | Open/Closed | Callback to Movie Majesty's Main Algorithm |
+| Honey Rae's → Employee List | SRP | Callback spanning Queen Bee's `createQueen` through this project's services modules |
+| Honey Rae's → Intro to Routes | Open/Closed | Callback to Movie Majesty and Modern Farm |
+| Honey Rae's → Create Ticket | Durability | Callback to Indiana Jeans' survey submissions |
+| Learning Moments → Routing and Authentication | ISP, Open/Closed | Callback spanning Surf Shop's `functions.js` through Honey Rae's routes |
+
+**Status:** Thread 3 density-pass work items 1–3 are all complete. Remaining item: (4) `concept_map.md` still has no Thread 3 rows — deferred to Phase 7/9, unchanged by this pass.
 
 ### Thread 4: Testing Mindset
 
@@ -1025,3 +1173,95 @@ A fully separate foundational JavaScript track covering arrays, conditions, obje
 2. If included, does it become a prerequisite track (before Book 1), a parallel track students can opt into, or woven chapter-by-chapter into Books 1–2?
 3. The three practice threads (Digital Notes, Library Tracker, Meal Planner) — do they replace the current Book 1 chapter projects (Queen Bee, Surf Shop, Björn), supplement them, or form their own Explorer-style challenges?
 4. Would adding this track require nss-core changes to support multiple parallel tracks?
+
+---
+
+## Phase 11: Video Consolidation 🛑 Blocked — External Prep Pending
+
+*Two related pieces of video infrastructure work, sequenced: (1) migrate Screencastify-hosted videos to YouTube now that account access is in hand, then (2) once a unified YouTube account ("one account to rule them all") is ready, move existing YouTube videos over to it. Neither part can start until its external prerequisite (upload, or account/email setup) is ready — this phase exists to hold the scope so it isn't lost, not to begin work now.*
+
+### Part A: Screencastify → YouTube Migration
+
+16 exercise files currently link to Screencastify-hosted videos via a thumbnail-image link (`<a href="https://watch.screencastify.com/v/..."><img src="./images/video-play-icon.gif" .../></a>`) rather than an embedded iframe — a legacy pattern from before the Book 5 YouTube iframe-embed work (see Phase 4 → "Embedded Video + Timestamp-Linked Transcripts" above for the markup pattern to reuse). One of these — `05-book-5/03-repair-api` — is the Book 5 exercise that was explicitly skipped during the original transcript/iframe pass for exactly this reason ("ex 03 skipped — Screencastify").
+
+**Affected files:**
+| File |
+|---|
+| `00-setup/06-keyboard-debug` |
+| `01-book-1/10-queen-debugger` |
+| `01-book-1/11-queen-errors` |
+| `01-book-1/13-queen-iteration` |
+| `01-book-1/14-queen-tribute` |
+| `01-book-1/15-queen-tribute-by-queen` |
+| `01-book-1/23-surf-diagram` |
+| `02-book-2/08-duo-review` |
+| `03-book-3/03-dd-add-state-to-dom` |
+| `03-book-3/04-dd-accessing-state` |
+| `03-book-3/05-dd-metadata-as-state` |
+| `03-book-3/06-dd-foreign-key-state` |
+| `03-book-3/07-dd-find-dog-walker` |
+| `03-book-3/08-dd-find-city-walker` |
+| `03-book-3/15-ss-hauler-cargo` |
+| `05-book-5/03-repair-api` |
+
+**Work to do once videos are uploaded:**
+1. Get the new YouTube video ID for each of the 16 Screencastify videos above
+2. Replace the thumbnail-link markup with a named `<iframe>` (same pattern as Book 5)
+3. Decide whether these get transcript treatment too — Phase 4.5.3's standard ("embed + transcript only for NSS-authored primary instruction") would say yes, since these are NSS-authored
+4. Re-run a link check for any other place in the curriculum that references these videos
+
+### Part B: YouTube Account Consolidation
+
+Once the unified YouTube account/email is ready, some subset of the videos already embedded via YouTube iframe (cataloged in Phase 4.5.3's audit — 16 files, mostly Book 5) will move to the new account. Moving a video to a new channel changes its video ID, which breaks:
+- The `src="https://www.youtube.com/embed/VIDEO_ID"` on the iframe
+- Every `?start=N&autoplay=1` timestamp link that targets that iframe (the `target="yt-exNN"` name stays the same; only `VIDEO_ID` in the href changes)
+
+**Open questions (need answers before this can start):**
+- Which of the 16 YouTube-embedded files/videos are moving — all of them, or a specific subset?
+- Do old video IDs stay live (as unlisted, or redirected), or go fully dead once moved?
+- Is there an old-ID → new-ID mapping provided during the move, or does each need to be found manually afterward?
+
+**Status:** 🛑 Not started — blocked on the unified account being created and the video move happening outside this repo.
+
+---
+
+## Phase 12: Transcript Side-by-Side Layout
+
+*Currently, each Book 5 video exercise stacks its `<iframe>` and its `<details>` transcript block vertically — watch the video, then scroll down to read the transcript below it. Goal: put the transcript beside the video instead, height-capped to the video so it scrolls independently, letting a student watch and read at the same time without losing the video off-screen. The `<details>` collapse/expand behavior must be preserved.*
+
+**Current markup (per video), e.g. `05-book-5/01-react-basics/index.md`:**
+```html
+<iframe name="yt-ex01" src="..." width="700" height="394" ...></iframe>
+
+<details>
+<summary>📄 Video Transcript — ...</summary>
+...
+</details>
+```
+The two elements are siblings directly under the exercise's content container — no wrapping element around a video+transcript pair today.
+
+**Planned approach:**
+1. Wrap each iframe+details pair in a container `<div class="video-transcript-row">...</div>` in the markdown
+2. Add CSS in `src/index.css`: `.video-transcript-row { display: flex; gap: ...; align-items: flex-start; }`, iframe sized as today, `.video-transcript-row details { flex: 1 1 auto; max-height: <iframe height>; overflow-y: auto; }`
+3. Verify the `<summary>` click still opens/closes correctly inside the flex layout, and that the scrollable region only applies to the transcript body, not the summary line
+4. Decide the small-screen behavior (stack vertically below a breakpoint, since side-by-side won't fit on narrow viewports)
+
+**Scope:** All Book 5 exercises with an embedded video/transcript pair (18 exercises from the original embed pass; ex 11, 12, 15 have two video+transcript pairs each — each pair becomes its own row).
+
+**Status:** Not started — scoping only, fully actionable whenever picked up (no external blockers).
+
+---
+
+## Phase 13: Explorer Cross-Linking 🛑 Blocked on nss-core
+
+*Goal: link an Explorer exercise back to the specific chapter exercise it extends (e.g. a "👑 Modular Majesty" Explorer callout linking to the Queen Bee exercise where modules were introduced), and vice versa — a mention in the core chapter pointing forward to the relevant Explorer challenge. This keeps the Explorer section itself intact as a standalone way to browse the curriculum (per Phase 3.6 above and the existing CLAUDE.md convention that Explorer chapters are first-class), while also surfacing the connection contextually at the point in the core chapter where it's relevant.*
+
+**Blocked on:** the same cross-chapter link base-URL bug already tracked in "Open Questions / Future Decisions" above — internal `/chapter_id` links render as plain `<a>` tags that navigate outside the Vite base path (`/client-side-curriculum/`), 404ing. That fix lives in `nss-core`'s `Chapter` component (post-process rendered HTML to prepend `baseUrl` to any `href` starting with `/`) and has not shipped yet.
+
+**Work to do once the nss-core fix ships:**
+1. Confirm the fix is live and cross-chapter links work without the fragile "prepend `/client-side-curriculum/` to every href" workaround
+2. For each Explorer exercise, identify the specific exercise in its originating chapter most relevant to the explorer's extension topic (not just the chapter's intro exercise)
+3. Add the link both directions: from the Explorer exercise back to that specific chapter exercise, and from that chapter exercise forward to the Explorer exercise (e.g. as a "Want to go deeper? → [Explorer: ...]" callout)
+4. Apply across all 16 Explorer exercises (14 chapter-mapped + 2 Deployment ones, which would link to whatever Book 5 deployment-related exercise is most relevant instead of a narrative chapter)
+
+**Status:** 🛑 Not started — blocked on nss-core.

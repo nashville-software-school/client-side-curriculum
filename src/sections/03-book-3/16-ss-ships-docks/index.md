@@ -39,3 +39,10 @@ What information does this algorithm need to do its job?
 * The array of haulers so that it can be iterated.
 
 Use data attributes on the shipping ship list items to make this data available to your JavaScript algorithm when a list item is clicked.
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Polymorphism</summary>
+
+This algorithm iterates an array and compares a foreign key, just like the previous exercise did to count matching ships. But this one stops as soon as it finds a match and keeps a single object, instead of counting how many matches there are. Same basic shape, iterate and compare, different job. Where else in this course have you seen that same "iterate and compare" shape used for a different purpose each time?
+
+</details>

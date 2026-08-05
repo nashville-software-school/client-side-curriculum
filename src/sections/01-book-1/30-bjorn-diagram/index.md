@@ -19,3 +19,10 @@ sequenceDiagram
     Data-->>Bjorn: Sure! Here you go.
     note over Bjorn: Iterate some data to do a thing
 ```
+
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Single Responsibility, Interface Segregation</summary>
+
+You built a graph like this once before, back in Sequina's Surf Shop. This time its shape depends on a decision you made yourself in the last chapter, whether to modularize by content type or by function. Look at your dependency graph. Does it show each module doing one clear job? Are there any arrows you didn't expect, places where a module reaches into another more than it needs to?
+
+</details>

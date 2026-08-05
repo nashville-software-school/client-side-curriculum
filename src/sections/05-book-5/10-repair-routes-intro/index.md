@@ -185,6 +185,13 @@ A `<Link>` is an element that lets the user navigate to another page by clicking
 
 When the user clicks on that link, the url will change to _/about_. And then what will happen? Well, if you're looking at those routes we defined above, the `<AboutUs />` component will render! 
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Open/Closed Principle</summary>
+
+This is the same Open/Closed idea from Movie Majesty and Modern Farm, just showing up in a new shape. You're about to add a brand new route for Employees below. Will you need to touch the existing route for Tickets, or the Customers route, to do it? What does that tell you about how open this routing setup is to adding new views, versus how closed it is to accidentally breaking old ones?
+
+</details>
+
 # 💪 Exercise Time!
 Now that you're an expert, write the routing functionality for the Employees List. When the user clicks on _Employees_ in the navbar, the user should be directed to _/employees_ and the employee list should render.  
 

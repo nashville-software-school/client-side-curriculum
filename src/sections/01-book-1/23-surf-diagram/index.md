@@ -24,6 +24,13 @@ graph TD;
     AveragePrice-->Functions;
 ```
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Single Responsibility, Interface Segregation</summary>
+
+Look at this graph. `Data` and `Functions` don't point to anything, and they don't point to each other. Why do you think that is? What would it mean about a module's responsibility if an arrow pointed the other way, from `Data` into `AveragePrice`?
+
+</details>
+
 ## Sequence Diagram for Detailed Algorithm Visualizations
 
 One of your four Core Skills is <a href="https://www.wikihow.com/Think-Algorithmically" target="_blank" rel="noopener noreferrer">algorithmic thinking</a>. A person who cannot think algorithmically cannot be a high value software developer.

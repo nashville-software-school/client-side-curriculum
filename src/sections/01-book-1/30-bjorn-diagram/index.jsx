@@ -5,6 +5,6 @@ export default {
     title: "Visualizations for Björn",
     previousChapterId: "book_1_bjorn_cleanup",
     nextChapterId: "book_1_self_assessment",
-    chapterGroup: "🏕️ Björn's Wilderness Adventures",
+    chapterGroup: "🌲 Björn's Wilderness Adventures",
     content,
 }

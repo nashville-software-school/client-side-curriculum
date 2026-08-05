@@ -57,6 +57,13 @@ const fishHTML = fishList()
 
 This code ensures that the `fishList` function is imported from the `fishList.js` module and called to generate the fish list in the aquarium showcase.
 
+<details class="cs-theory">
+    <summary>🏛️ CS Theory Check-in: Encapsulation, Interface Segregation</summary>
+
+You've seen this shape before, back in Surf Shop's `data.js` and `functions.js`. `aquariumData.js` holds the data, `fishList.js` imports only the one thing it needs from it, and `main.js` imports only `fishList` in return. What does `main.js` actually know about how the fish data is stored, and what does it not need to know at all?
+
+</details>
+
 ## Step 4: Render the Fish List
 
 Under the following comment in `main.js`.
